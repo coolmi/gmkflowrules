@@ -1,0 +1,223 @@
+{
+	"id": "food_gdzcbfapply",
+	"handleOnPC":{
+		"tasknode":[
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr","-","mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname","-","mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "主抄送",
+			"component": "textarea",
+			"editablenode": "",
+			"name": "mainModel.mainccnm"
+		},
+		{
+			"title": "固定资产名称",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.gdzcmc"
+		},
+		{
+			"title": "规格型号(IT出厂编号)",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.ggxhccbh"
+		},
+		{
+			"title": "固定资产编号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.gdzcbh"
+		},
+		{
+			"title": "制造商",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.zzs"
+		},
+		{
+			"title": "资产所属公司",
+			"component": "label",
+			"editablenode": "",
+			"middleName":[
+			"mainModel.zcssgs",
+			"bukrs"
+			],
+			"label": ["mainModel.zcssgs",
+			"-",
+			"allT001List.butxt"]
+		},
+		{
+			"title": "资产所属部门",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.zcssbm"
+		},
+		{
+			"title": "资产所属成本中心",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.zcsscbzx"
+		},
+		{
+			"title": "资产所属成本中心描述",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.zcsscbzxms"
+		},
+		{
+			"title": "原值",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.yz"
+		},
+		{
+			"title": "原值大写",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.yzdx"
+		},
+		{
+			"title": "投产时间(IT生产日期)",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.tcsj"
+		},
+		{
+			"title": "已使用年限",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.ysynx"
+		},
+		{
+			"title": "残值",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.cz"
+		},
+		{
+			"title": "预计出售价格",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.yjcsjg"
+		},
+		{
+			"title": "报废理由",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.bfly"
+		},
+		{
+			"title": "备注",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.bz"
+		}]
+		},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}],
+	"refers": {
+
+	}
+}

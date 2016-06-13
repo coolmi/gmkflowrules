@@ -1,0 +1,314 @@
+{
+	"id": "food_budgetyearadjust",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "",
+			"component": "formLabelLink",
+			"tabletype": "looppanel",
+			"basePath": "budgetyearadjustinfolist",
+			"titleIndex":0,
+			"linkForms": [{
+				"title": "预算年",
+				"title1": "预算年",
+				"component": "text",
+				"editablenode": "",
+				"name": "budgetyear"
+			},
+			{
+				"title": "",
+				"title1": "公司代码",
+				"component": "text",
+				"editablenode": "",
+				"name": "cdbutxt"
+			},
+			{
+				"title": "",
+				"title1": "调出部门",
+				"component": "text",
+				"editablenode": "",
+				"name": "outdepartmentxt"
+			},
+			{
+				"title": "",
+				"title1": "调入部门",
+				"component": "text",
+				"editablenode": "",
+				"name": "intodepartmentxt"
+			},
+			{
+				"title": "",
+				"title1": "调出成本中心",
+				"component": "text",
+				"editablenode": "",
+				"name": "outcdkostltxt"
+			}
+			{
+				"title": "",
+				"title1": "调入成本中心",
+				"component": "text",
+				"editablenode": "",
+				"name": "intocdkostltxt"
+			},
+			{
+				"title": "",
+				"title1": "调出项目号",
+				"component": "text",
+				"editablenode": "",
+				"name": "outcolnrtxt"
+			},
+			{
+				"title": "",
+				"title1": "调入项目号",
+				"component": "text",
+				"editablenode": "",
+				"name": "intocolnrtxt"
+			},
+			{
+				"title": "",
+				"title1": "调出子项目号",
+				"component": "text",
+				"editablenode": "",
+				"name": "outsubcolnrtxt"
+			},
+			{
+				"title": "",
+				"title1": "调入子项目号",
+				"component": "text",
+				"editablenode": "",
+				"name": "intosubcolnrtxt"
+			},
+			{
+				"title": "",
+				"title1": "调出会计科目",
+				"component": "text",
+				"editablenode": "",
+				"name": "outkotaltxt"
+			},
+			{
+				"title": "",
+				"title1": "调入会计科目",
+				"component": "text",
+				"editablenode": "",
+				"name": "intokotaltxt"
+			},
+			{
+				"title": "",
+				"title1": "调整金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "amount"
+			},
+			{
+				"title": "",
+				"title1": "金额大写",
+				"component": "text",
+				"editablenode": "",
+				"name": "upamount"
+			},
+			{
+				"title": "",
+				"title1": "一月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month1"
+			},
+			{
+				"title": "",
+				"title1": "二月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month2"
+			},
+			{
+				"title": "",
+				"title1": "三月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month3"
+			},
+			{
+				"title": "",
+				"title1": "四月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month4"
+			},
+			{
+				"title": "",
+				"title1": "五月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month5"
+			},
+			{
+				"title": "",
+				"title1": "六月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month6"
+			},
+			{
+				"title": "",
+				"title1": "七月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month7"
+			},
+			{
+				"title": "",
+				"title1": "八月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month8"
+			},
+			{
+				"title": "",
+				"title1": "九月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month9"
+			},
+			{
+				"title": "",
+				"title1": "十月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month10"
+			},
+			{
+				"title": "",
+				"title1": "十一月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month11"
+			},
+			{
+				"title": "",
+				"title1": "十二月",
+				"component": "text",
+				"editablenode": "",
+				"name": "month12"
+			},
+			{
+				"title": "",
+				"title1": "调整说明",
+				"component": "text",
+				"editablenode": "",
+				"name": "explainv"
+			}]
+		}]
+	},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}]
+}

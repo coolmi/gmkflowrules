@@ -1,0 +1,294 @@
+{
+	"id": "food_repay",
+	"handleOnPC":{
+		"tasknode":[
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "app.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["app.pernr","-","app.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["app.sysbusinessunitname","-","app.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "app.id"
+		}]
+	},
+	{
+		"title": "表单基本信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "付款所属公司",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.compnm"
+		},
+		{
+			"title": "费用承担部门",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.fycdbm"
+		},
+		{
+			"title": "项目名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["proj.projid",
+			"-",
+			"proj.projtxt"]
+		},
+		{
+			"title": "项目名称",
+			"component": "label",
+			"editablenode": "",
+			"label": ["proj.projchildid",
+			"-",
+			"proj.projchildtxt"]
+		},
+		{
+			"title": "供应商名称",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.suppliernm"
+		},
+		{
+			"title": "供应商编号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.supplierid"
+		},
+		{
+			"title": "预算",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.budgettype"
+		},
+		{
+			"title": "汇入地点",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.inplace"
+		},
+		{
+			"title": "汇入行",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.inbanknm"
+		},
+		{
+			"title": "汇入账号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.inbankid"
+		},
+		{
+			"title": "申请金额小写",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.reqmoney"
+		},
+		{
+			"title": "申请金额大写",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.reqmoneydx"
+		},
+		{
+			"title": "币种",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.bz"
+		},
+		{
+			"title": "汇款用途",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.hkyt"
+		},
+		{
+			"title": "付款种类",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.paytype"
+		},
+		{
+			"title": "合同约定到货日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "app.arrivaldt"
+		},
+		{
+			"title": "付款日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "app.paydt"
+		},
+		{
+			"title": "采购订单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.buycode"
+		},
+		{
+			"title": "合同总金额",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.summoney"
+		},
+		{
+			"title": "累计预付款总额",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.ljsum"
+		},
+		{
+			"title": "合同付款条款",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.htpaytk"
+		},
+		{
+			"title": "此笔付款是否用于在建工程",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.inconstruct"
+		},
+		{
+			"title": "是否招标",
+			"component": "radio",
+			"name": "app.sfzb",
+			"options": [{
+				"title": "是",
+				"value": "0"
+			},
+			{
+				"title": "否",
+				"value": "1"
+			}]
+		},
+		{
+			"title": "合同号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.htddh"
+		},
+		{
+			"title": "在建工程编号/资产编号",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.gcbhzcbh"
+		},
+		{
+			"title": "档案室签字备案",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.dasqzba"
+		},
+		{
+			"title": "附件个数",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.fjgs"
+		},
+		{
+			"title": "备注",
+			"component": "text",
+			"editablenode": "",
+			"name": "app.market"
+		}]
+		},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}],
+	"refers": {
+
+	}
+}
