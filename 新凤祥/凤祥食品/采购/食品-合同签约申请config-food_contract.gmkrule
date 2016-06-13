@@ -1,0 +1,637 @@
+{
+	"id": "food_contract",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+	
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.holidaytype"
+		},
+		{
+			"title": "合同终签类型",
+			"component": "select",
+			"name": "mainModel.contractype",
+			"options":[
+				{
+					"text": "一级合同",
+					"value": "A001"
+				},
+				{
+					"text": "二级合同",
+					"value": "A002"
+				},
+				{
+					"text": "三级合同",
+					"value": "A003"
+				}
+			]
+			
+		},
+		{
+			"title": "合同类型",
+			"component": "select",
+			"name": "mainModel.contractsmalltype",
+			"options":[
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "A001001-固定资产、无形资产预算内",
+					"value": "A001001"
+				},
+				{
+					"text": "A001002-固定资产、无形资产预算外",
+					"value": "A001002"
+				},
+				{
+					"text": "A002001-日常合同",
+					"value": "A002001"
+				},
+				{
+					"text": "A002002-战略合同",
+					"value": "A002002"
+				},
+				{
+					"text": "A003001-日常采购",
+					"value": "A003001"
+				},
+				{
+					"text": "A003002-关联采购",
+					"value": "A003002"
+				}
+				
+			]
+		},
+		{
+			"title": "合同名称",
+			"component": "text",
+			"name": "mainModel.contractname"
+		},
+		{
+			"title": "是否战略框架协议",
+			"component": "radio",
+			"name": "mainModel.frameiswork",
+			"options": [{
+				"title": "否",
+				"value": "0"
+			},
+			{
+				"title": "是",
+				"value": "1"
+			}]
+			
+		},
+		{
+			"title": "合同标的",
+			"component": "text",
+			"name": "mainModel.contractsub"
+		},
+		{
+			"title": "业务类型",
+			"component": "select",
+			"name": "mainModel.servicetype",
+			"options":[
+				{
+					"text": "包材类",
+					"value": "V001"
+				},
+				{
+					"text": "广促类",
+					"value": "V002"
+				}
+				
+			]
+		},
+		{
+			"title": "需求类型",
+			"component": "select",
+			"name": "mainModel.demandtype",
+			"options":[
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "采购合同",
+					"value": "1"
+				},
+				{
+					"text": "销售合同",
+					"value": "2"
+				},
+				{
+					"text": "市场合同",
+					"value": "3"
+				},
+				{
+					"text": "其他",
+					"value": "4"
+				}
+				
+			]
+		},
+		{
+			"title": "标的类型",
+			"component": "select",
+			"name": "mainModel.targetype",
+			"options":[
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "技术设计",
+					"value": "1"
+				},
+				{
+					"text": "设备买卖安装",
+					"value": "2"
+				},
+				{
+					"text": "建筑工程",
+					"value": "3"
+				},
+				{
+					"text": "买卖",
+					"value": "4"
+				},
+				{
+					"text": "其他",
+					"value": "5"
+				}
+				
+			]
+		},
+		{
+			"title": "需求部门",
+			"component": "textarea",
+			"rows": "2",
+			"name": "mainModel.demanddepartxt"
+		},
+		{
+			"title": "供应商名称",
+			"component": "text",
+			"display": "none",
+			"name": "mainModel.suppliername"
+		},
+		{
+			"title": "客户名称",
+			"component": "text",
+			"editablenode": "",
+			"display": "none",
+			"name": "mainModel.customername"
+		},
+		
+		{
+			"title": "供应商类型",
+			"component": "select",
+			"display": "none",
+			"name": "mainModel.suppliertype",
+			"options":[
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "合格供应商",
+					"value": "1"
+				},
+				{
+					"text": "一次性供应商",
+					"value": "2"
+				},
+				{
+					"text": "战略合作伙伴",
+					"value": "3"
+				},
+				{
+					"text": "黑名单冻结",
+					"value": "4"
+				}
+			]
+		},
+		{
+			"title": "采购方式",
+			"component": "select",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.procurementmethods",
+			"options": [
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "比价",
+					"value": "1"
+				},
+				{
+					"text": "招标",
+					"value": "2"
+				},
+				{
+					"text": "其他",
+					"value": "3"
+				}
+			]
+		},
+		{
+			"title": "结算方式",
+			"component": "text",
+			
+			"editablenode": "",
+			"name": "mainModel.settlementmethod"
+		},
+		{
+			"title": "合同金额小写",
+			"component": "text",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.contractamount"
+		},
+		{
+			"title": "合同金额大写",
+			"component": "text",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.contractamountup"
+		},
+		{
+			"title": "币种",
+			"component": "select",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.currency",
+			"refer":"currency"
+		},
+		{
+			"title": "付款方式",
+			"display": "none",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.paymentmethod",
+			"refer":"paymentmethod"
+		},
+		{
+			"title": "定价依据",			
+			"component": "textarea",
+			"editablenode": "",
+			"rows":"2",
+			"name": "mainModel.pricingbasis"
+		},
+		{
+			"title": "密级",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.dense",
+			"options": [
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "公开",
+					"value": "1"
+				},
+				{
+					"text": "保密",
+					"value": "2"
+				}
+			]
+			
+		},
+		{
+			"title": "合同页数",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.contractpage"
+		},
+		{
+			"title": "需求部门人员审核",
+			"component": "textarea",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.departauditxt"
+		},
+		{
+			"title": "部门负责人审核",
+			"component": "textarea",
+			"editablenode": "",
+			"name": "mainModel.responsibletxt"
+		},
+		{
+			"title": "合同编号类别",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.contractnumbercategory",
+			"options": [
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "技术设计合同(A)",
+					"value": "A"
+				},
+				{
+					"text": "设备买卖安装合同(B)",
+					"value": "B"
+				},
+				{
+					"text": "建筑工程合同(C)",
+					"value": "C"
+				},
+				{
+					"text": "买卖合同(D)",
+					"value": "D"
+				},
+				{
+					"text": "其他合同(E)",
+					"value": "E"
+				}
+			]
+		},
+		
+		{
+			"title": "公司信息",
+			"component": "text",
+			"name": "mainModel.cdbukrs"
+		},
+		{
+			"title": "是否为补充合同",
+			"component": "radio",
+			"editablenode": "",
+			"name": "mainModel.whethercontract",
+			"options": [{
+				"title": "否",
+				"value": "0"
+			},
+			{
+				"title": "是",
+				"value": "1"
+			}]
+		},
+		{
+			"title": "原合同编号",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.ycontractnumber"
+		},
+		
+		{
+			"title": "合同编号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.contractnumber"
+		},
+		{
+			"title": "用印类型",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.yytype",
+			"options": [
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "普通用印",
+					"value": "1"
+				},
+				{
+					"text": "携章外出",
+					"value": "2"
+				}
+			]
+		},
+		{
+			"title": "印章名称",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.sealnum",
+			"options": [
+				{
+					"text": "全天",
+					"value": "all"
+				},
+				{
+					"text": "上午",
+					"value": "upper"
+				}
+			]
+		},
+		{
+			"title": "陪同人员",
+			"component": "textarea",
+			"display": "none",
+			"editablenode": "",
+			"name": "mainModel.accompersoname"
+		},
+		
+		
+		{
+			"title": "印章类型",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.sealtype"
+		},
+		{
+			"title": "印章使用",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.sealuse"
+		},
+		{
+			"title": "印章使用日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.sdate"
+		},
+		{
+			"title": "计划归还日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.edate"
+		}
+		
+		]
+	},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}],
+	
+	
+	"refers": {
+		"paymentmethod":{
+			"dataType": "array",
+			"data": [{
+				"value": "",
+				"text": "请选择"
+			},
+			{
+				"value": "1",
+				"text": "一卡通"
+			},
+			{
+				"value": "2",
+				"text": "现金支票"
+			},
+			{
+				"value": "3",
+				"text": "汇票"
+			},
+			{
+				"value": "4",
+				"text": "汇款"
+			},
+			{
+				"value": "5",
+				"text": "信用证"
+			},
+			{
+				"value": "6",
+				"text": "清账"
+			},
+			{
+				"value": "7",
+				"text": "银行托收"
+			}]
+		},
+		
+		"currency": {
+			"dataType": "array",
+			"data": [{
+				"value": "",
+				"text": "请选择"
+			},
+			{
+				"value": "1",
+				"text": "人民币"
+			},
+			{
+				"value": "2",
+				"text": "美元"
+			},
+			{
+				"value": "3",
+				"text": "欧元"
+			},
+			{
+				"value": "4",
+				"text": "其他"
+			}]
+		}
+	}
+}

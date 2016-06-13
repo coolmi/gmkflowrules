@@ -1,0 +1,322 @@
+{
+	"id": "food_newleave",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+	
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.holidaytype"
+		},
+		{
+			"title": "员工假期类型",
+			"component": "text",
+			"name": "mainModel.holidaytypename"
+			
+		},
+		{
+			"title": "哺乳假休假方式",
+			"display": "none",
+			"component": "select",
+			"name": "mainModel.brjxjlx",
+			"options":[
+				{
+					"text": "请选择",
+					"value": ""
+				},
+				{
+					"text": "每天",
+					"value": "0"
+				},
+				{
+					"text": "累计",
+					"value": "1"
+				}
+			]
+		},
+		{
+			"title": "存调休小时数",
+			"display": "none",
+			"component": "text",
+			"name": "mainModel.ctxxss"
+		},
+		{
+			"title": "可休调休天数",
+			"display": "none",
+			"component": "text",
+			"name": "mainModel.ctxts"
+		},
+		{
+			"title": "可休调休年假天数",
+			"display": "none",
+			"component": "text",
+			"name": "mainModel.ctxnjts"
+		},
+		{
+			"title": "当月已休事假天数",
+			"display": "none",
+			"component": "text",
+			"name": "mainModel.ljsjtsm"
+		},
+		{
+			"title": "当年已休事假天数",
+			"display": "none",
+			"component": "text",
+			"name": "mainModel.ljsjtsy"
+		},
+		{
+			"title": "请假开始日期",
+			"component": "date1",
+			"name": "mainModel.sdate"
+		},
+		{
+			"title": "请假结束日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.edate"
+		},
+		{
+			"title": "请假开始时间",
+			"display": "none",
+			"component": "date2",
+			"editablenode": "",
+			"name": "mainModel.timea"
+		},
+		
+		{
+			"title": "请假结束时间",
+			"display": "none",
+			"component": "date2",
+			"editablenode": "",
+			"name": "mainModel.timeb"
+		},
+		{
+			"title": "开始日班次",
+			"display": "none",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.dutya",
+			"options": [{
+					"text": "全天",
+					"value": "all"
+				},
+				{
+					"text": "下午",
+					"value": "lower"
+				}
+			]
+		},
+		{
+			"title": "结束日班次",
+			"display": "none",
+			"component": "select",
+			"editablenode": "",
+			"name": "mainModel.dutyb",
+			"options": [{
+					"text": "全天",
+					"value": "all"
+				},
+				{
+					"text": "上午",
+					"value": "upper"
+				}
+			]
+		},
+		{
+			"title": "本次请假天数",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.thisdays"
+		},
+		{
+			"title": "休假经历的自然天数",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.comdays"
+		},
+		{
+			"title": "本次请假时数",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.thishours"
+		},
+		{
+			"title": "享有额度(时)",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.enjoy"
+		},
+		{
+			"title": "已用额度(时)",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.hasuse"
+		},
+		{
+			"title": "剩余额度(时)",
+			"display": "none",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.surplus"
+		},
+		{
+			"title": "生效日期",
+			"display": "none",
+			"component": "date1",
+			"editablenode": "usertask9",
+			"name": "mainModel.effecta"
+		},
+		{
+			"title": "失效日期",
+			"display": "none",
+			"component": "date1",
+			"editablenode": "usertask9",
+			"name": "mainModel.effectb"
+		},
+		{
+			"title": "请假原因",
+			"component": "textarea",
+			"rows" : "3",
+			"editablenode": "",
+			"name": "mainModel.readks"
+		}]
+	},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}],
+	"refers": {
+		"reimtype": {
+			"dataType": "array",
+			"data": [{
+				"value": "1",
+				"text": "差旅往返交通、住宿、餐饮费"
+			},
+			{
+				"value": "2",
+				"text": "差旅交通费"
+			},
+			{
+				"value": "3",
+				"text": "业务招待费"
+			},
+			{
+				"value": "4",
+				"text": "员工其他差旅费"
+			}]
+		}
+	}
+}
