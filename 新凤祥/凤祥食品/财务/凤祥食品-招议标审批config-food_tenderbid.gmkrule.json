@@ -1,0 +1,263 @@
+{
+	"id": "food_tenderbid",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "tenderbid.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "tenderbid.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["tenderbid.pernr",
+			"-",
+			"tenderbid.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["tenderbid.sysbusinessunitname",
+			"-",
+			"tenderbid.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "tenderbid.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "标的物名称",
+			"component": "text",
+			"editablenode": "",
+			"name": "tenderbid.cgwzmc"
+			},
+			{
+			"title": "标的金额",
+			"component": "text",
+			"editablenode": "",
+			"name": "tenderbid.bdje"
+		},
+		{
+			"title": "招标/议标类型",
+			"component": "select",
+			"editablenode": "",
+			"name": "tenderbid.tenderbidtype",
+			"options": [{
+				"text": "采购",
+				"value": "0"
+			},
+			{
+				"text": "销售",
+				"value": "1"
+			}]
+		},
+		{
+			"title": "招标/议标时间",
+			"component": "date1",
+			"editablenode": "",
+			"name": "tenderbid.zybsj"
+		},
+		{
+			"title": "标书编制",
+			"component": "select",
+			"editablenode": "",
+			"name": "tenderbid.preparation",
+			"options": [{
+				"text": "编制标书",
+				"value": "0"
+			},
+			{
+				"text": "不编制标书",
+				"value": "1"
+			}]
+		},
+		{
+			"title": "招标/议标地点",
+			"component": "text",
+			"editablenode": "",
+			"name": "tenderbid.zybdd"
+		},
+		{
+					"id":"zbfs",
+					"title" : "招标方式",
+					"component" : "select",
+					"name" : "tenderbid.cgfs",
+					"options": [{
+					"text": "招标",
+					"value": "0"
+				},
+				{
+					"text": "议标",
+					"value": "1"
+				}]
+			},
+			{
+			"title" : "议标理由",
+			"component" : "text",
+			"name" : "tenderbid.ybly",
+					"showLinkage":[
+							{
+									"id":"zbfs",
+									"values":["1"]
+							}
+					]
+	},
+	{
+		"title": "需求部门负责人",
+		"component": "textarea",
+		"editablenode": "",
+		"name": "tenderbid.xqbmfzr"
+	},
+	{
+		"title": "主抄送",
+		"component": "textarea",
+		"editablenode": "",
+		"name": "tenderbid.mainsendtxt"
+	},
+	{
+		"title": "招标内容描述",
+		"component": "textarea",
+		"editablenode": "",
+		"name": "tenderbid.instruct"
+	}]
+		},
+		{
+			"title": "招标审核信息",
+			"pageid": "zbshxx",
+			"component": "panel",
+			"subComponents": [{
+				"title": "需求部门审核",
+				"component": "textarea",
+				"editablenode": "",
+				"name": "tenderbid.xqbmpw"
+				},
+				{
+				"title": "技术部门审核",
+				"component": "textarea",
+				"editablenode": "",
+				"name": "tenderbid.jsbmpw"
+			}]
+			},
+	{
+		"title": "投标信息",
+		"pageid": "tbxx",
+		"component": "panel",
+		"subComponents": [{
+			"component": "table_ccmx",
+			"basePath": "tenderlifnrlist",
+			"tableForms": [{
+				"title": "供应商名称",
+				"component": "text",
+				"editablenode": "",
+				"name": "lifnrname"
+			},
+			{
+				"title": "联系人",
+				"component": "text",
+				"editablenode": "",
+				"name": "contactper"
+			},
+			{
+				"title": "电话",
+				"component": "text",
+				"editablenode": "",
+				"name": "contacttel"
+			},
+			{
+				"title": "地址",
+				"component": "text",
+				"editablenode": "",
+				"name": "lifnraddress"
+			}]
+		}]
+	},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}]
+}

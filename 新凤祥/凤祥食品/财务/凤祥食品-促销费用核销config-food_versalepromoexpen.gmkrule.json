@@ -1,0 +1,363 @@
+{
+	"id": "food_versalepromoexpen",
+	"handleOnPC":{
+		"tasknode":[
+			"usertask4"
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "标题名称",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.titlename"
+			},
+			{
+			"title": "主抄送",
+			"component": "textarea",
+			"editablenode": "",
+			"name": "mainModel.sendtxt"
+		},
+		{
+				"title" : "项目预算",
+				"component" : "radio",
+				"name" : "mainModel.consistent",
+				"tasknode": "usertask5,usertask6,usertask7",
+				"options": [{
+				"title": "项目预算内",
+				"value": "0"
+			},
+			{
+				"title": "项目预算外",
+				"value": "1"
+			}]
+		},
+		{
+			"title": "公司",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.cdbutxt"
+		},
+		{
+			"title": "费用承担部门成本中心",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.cdkotxt"
+		},
+		{
+			"title": "费用承担部门负责人",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.hxzjpostxt"
+		},
+		{
+			"title": "备注",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.remarks"
+		}]
+		},
+	{
+		"title": "核销费用",
+		"pageid": "hxfy",
+		"component": "panel",
+		"subComponents": [{
+			"component": "table_ccmx",
+			"basePath": "versalepromoexpeninfolist",
+			"tableForms": [{
+				"title": "核销年月",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writedate"
+			},
+			{
+				"title": "预算项目",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_budgetitemdes"
+			},
+			{
+				"title": "核销费用类型",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writetypedes",
+			},
+			{
+				"title": "核销费用细项",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writecostypedes"
+			},
+			{
+				"title": "科目描述",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_subjectcodedec"
+			},
+			{
+				"title": "品项",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_itemsdec"
+			},
+			{
+				"title": "客户/项目编码",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_customer"
+			},
+			{
+				"title": "客户名称",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_customertxt"
+			},
+			{
+				"title": "活动地点",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_activesite"
+			},
+			{
+				"title": "单位",
+				"component": "select",
+				"editablenode": "",
+				"name": "info_company",
+				"options": [{
+					"text": "个",
+					"value": "0"
+				},
+				{
+					"text": "次",
+					"value": "1"
+				},
+				{
+					"text": "年",
+					"value": "2"
+				},
+				{
+					"text": "月",
+					"value": "3"
+				},
+				{
+					"text": "人次",
+					"value": "4"
+				}]
+			},
+			{
+				"title": "数量",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_num"
+			},
+			{
+				"title": "单价",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_unitprice"
+			},
+			{
+				"title": "核销金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writeamount"
+			},
+			{
+				"title": "计提余额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_accruedbalance"
+			},
+			{
+				"title": "冲销计提金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writeoffaccrued"
+			},
+			{
+				"title": "报当前月金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writeoffmonth"
+			}]
+		}]
+	},
+	{
+		"title": "财务审核信息",
+		"pageid": "cwshxx",
+		"component": "panel",
+		"tasknode": "usertask5,usertask6,usertask7",
+		"subComponents": [{
+			"component": "table_ccmx",
+			"basePath": "versalepromoexpencaiwuinfolist",
+			"tableForms": [{
+				"title": "核销年月",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writedate"
+			},
+			{
+				"title": "核销费用类型",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writetypedes"
+			},
+			{
+				"title": "核销费用细项",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writecostypedes"
+			},
+			{
+				"title": "科目描述",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_aftersubjectcodedes"
+			},
+			{
+				"title": "产品",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_itemsdec"
+			},
+			{
+				"title": "调后核销费用类型",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_afterwritetypedes"
+			},
+			{
+				"title": "调后核销费用细项",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_afterwritecostypedes"
+			},
+			{
+				"title": "调后科目",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_aftersubjectcode"
+			},
+			{
+				"title": "调后科目描述",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_aftersubjectcodedes"
+			},
+			{
+				"title": "金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_writeamount"
+			}]
+		}]
+	},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}]
+}
