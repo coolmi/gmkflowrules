@@ -1,0 +1,187 @@
+{
+    "id": "gmk-mobilepur",
+    "commentMustNode":["recAudit"],
+    "commentMustMsg":"结束流程时意见不能为空",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "editablenode": "",
+            "name": "apMobilePur.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "apMobilePur.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["apMobilePur.pernr", "-", "apMobilePur.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["apMobilePur.sysbusinessunitname", "-", "apMobilePur.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "apMobilePur.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "预算控制所在公司",
+            "component": "text",
+            "name": "apMobilePur.ysgs"
+        },
+        {
+            "title": "成本中心编码",
+            "component": "text",
+            "name": "apMobilePur.cbzxcode"
+        },
+        {
+            "title": "期望到位日期",
+            "component": "text",
+            "datatype": "date",
+            "dateFormat": "yyyy-MM-dd",
+            "name": "apMobilePur.expectDate"
+        },
+        {
+            "title": "需求说明",
+            "component": "textarea",
+            "name": "apMobilePur.xqsm"
+        }]
+    },
+    {
+        "title": "申请列表",
+        "pageid": "sqlb",
+        "component": "panel",
+        "subComponents": [{
+            "component": "table",
+            "basePath": "subs",
+            "cells": [{
+                "title": "使用人",
+                "component": "text",
+                "name": "name"
+            },
+            {
+                "title": "手机",
+                "component": "text",
+                "name": "brandname"
+            },
+            {
+                "title": "套餐",
+                "component": "textarea",
+                "name": "pacname"
+            },
+            {
+                "title": "申请原因",
+                "component": "textarea",
+                "name": "reason"
+            }]
+        }]
+    },
+    {
+        "title": "手机管理员",
+        "pageid": "sjgly",
+        "tasknode":"mbmanagerAudit,yshAudit,sendAudit",
+        "component": "panel",
+        "subComponents": [{
+            "title": "采购执行情况",
+            "component": "text",
+            "editablenode":"mbmanagerAudit",
+            "name": "apMobilePur.cgzxtxt",
+            "validation":{
+	              "pageid":"sjgly",
+	              "required":true,
+	              "validateMsg":"请填写采购执行汇报"
+              }
+        },
+        {
+            "title": "收货验货情况",
+            "component": "text",
+            "editablenode":"yshAudit",
+            "tasknode":"yshAudit,sendAudit",
+            "name": "apMobilePur.yszxtxt",
+            "validation":{
+                "pageid":"sjgly",
+                "required":true,
+                "validateMsg":"请填写收获验货情况"
+              }
+        }]
+    },
+    {
+        "title": "附件信息",
+        "pageid": "fjxx",
+        "component": "panel",
+        "subComponents": []
+    },
+    {
+        "title": "审批记录",
+        "pageid": "spjl",
+        "component": "panel",
+        "subComponents": []
+    }]
+}
