@@ -1,187 +1,283 @@
 {
-    "id": "gmk-mobilepur",
-    "commentMustNode":["recAudit"],
-    "commentMustMsg":"结束流程时意见不能为空",
-    "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "editablenode": "",
-            "name": "apMobilePur.appid"
+  "id": "gmk-worktransfer",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "worktransfer.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "apMobilePur.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "worktransfer.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["apMobilePur.pernr", "-", "apMobilePur.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "worktransfer.pernr",
+            "-",
+            "worktransfer.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["apMobilePur.sysbusinessunitname", "-", "apMobilePur.sysdeptname"]
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "worktransfer.sysbusinessunitname",
+            "-",
+            "worktransfer.sysdeptname"
+          ]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.username"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.postid"
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "apMobilePur.id"
-        }]
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.id"
+        }
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "预算控制所在公司",
-            "component": "text",
-            "name": "apMobilePur.ysgs"
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "离岗人员",
+          "component": "text",
+          "name": "worktransfer.dnachn"
         },
         {
-            "title": "成本中心编码",
-            "component": "text",
-            "name": "apMobilePur.cbzxcode"
+          "title": "员工编号",
+          "component": "text",
+          "name": "worktransfer.dpernr"
         },
         {
-            "title": "期望到位日期",
-            "component": "text",
-            "datatype": "date",
-            "dateFormat": "yyyy-MM-dd",
-            "name": "apMobilePur.expectDate"
+          "title": "联系方式",
+          "component": "text",
+          "name": "worktransfer.dtelephone"
         },
         {
-            "title": "需求说明",
-            "component": "textarea",
-            "name": "apMobilePur.xqsm"
-        }]
-    },
-    {
-        "title": "申请列表",
-        "pageid": "sqlb",
-        "component": "panel",
-        "subComponents": [{
-            "component": "table",
-            "basePath": "subs",
-            "cells": [{
-                "title": "使用人",
-                "component": "text",
-                "name": "name"
+          "title": "职位",
+          "component": "text",
+          "name": "worktransfer.djobname"
+        },
+        {
+          "title": "所属部门",
+          "component": "text",
+          "name": "worktransfer.dorgname"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "worktransfer.dcompany"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "worktransfer.entrydate"
+        },
+        {
+          "title": "确认离岗日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "worktransfer.dqrlgrq"
+        },
+        {
+          "title": "变动类型",
+          "component": "select",
+          "name": "worktransfer.bdlx",
+          "options": [
+            {
+              "text": "调岗",
+              "value": "0"
             },
             {
-                "title": "手机",
-                "component": "text",
-                "name": "brandname"
+              "text": "借调",
+              "value": "1"
             },
             {
-                "title": "套餐",
-                "component": "textarea",
-                "name": "pacname"
+              "text": "辞职",
+              "value": "2"
             },
             {
-                "title": "申请原因",
-                "component": "textarea",
-                "name": "reason"
-            }]
-        }]
-    },
-    {
-        "title": "手机管理员",
-        "pageid": "sjgly",
-        "tasknode":"mbmanagerAudit,yshAudit,sendAudit",
-        "component": "panel",
-        "subComponents": [{
-            "title": "采购执行情况",
-            "component": "text",
-            "editablenode":"mbmanagerAudit",
-            "name": "apMobilePur.cgzxtxt",
-            "validation":{
-	              "pageid":"sjgly",
-	              "required":true,
-	              "validateMsg":"请填写采购执行汇报"
-              }
+              "text": "自动离职",
+              "value": "3"
+            },
+            {
+              "text": "辞退",
+              "value": "4"
+            },
+            {
+              "text": "退休",
+              "value": "5"
+            },
+            {
+              "text": "其他",
+              "value": "6"
+            }
+          ]
         },
         {
-            "title": "收货验货情况",
-            "component": "text",
-            "editablenode":"yshAudit",
-            "tasknode":"yshAudit,sendAudit",
-            "name": "apMobilePur.yszxtxt",
-            "validation":{
-                "pageid":"sjgly",
-                "required":true,
-                "validateMsg":"请填写收获验货情况"
-              }
-        }]
+          "title": "是否需要委托离任审计",
+          "component": "radio",
+          "editablenode": "disinternalverify",
+          "name": "worktransfer.wtlzsj",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择是否需要委托离任审计"
+          },
+          "options": [
+            {
+              "title": "需要",
+              "value": "0"
+            },
+            {
+              "title": "不需要",
+              "value": "1"
+            }
+          ]
+        }
+      ]
     },
     {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
+      "title": "交接结果意见",
+      "pageid": "jjjgyjck",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "basePath": "worktransfersituations",
+          "cells": [
+            {
+              "title": "任务名称",
+              "component": "text",
+              "name": "taskdefinitionname"
+            },
+            {
+              "title": "办理人",
+              "component": "text",
+              "name": "username"
+            },
+            {
+              "title": "交接结果",
+              "component": "select",
+              "name": "situation",
+              "options": [
+                {
+                  "text": "已完成本环节得工作交接",
+                  "value": "0"
+                },
+                {
+                  "text": "未完成本环节工作交接",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请选择交接情况",
+          "component": "radio",
+          "notShowOnView": true,
+          "editablenode": "disinternalverify,damgrshgszljj,itcodesbjj,clglssh,cwbjczkql,bmhsgzhsqk,hqglshsswpjj,bmzxcdba",
+          "name": "worktransfer.jjqk",
+          "validation": {
+            "pageid": "jjjgyjck",
+            "required": true,
+            "validateMsg": "请选择交接情况"
+          },
+          "options": [
+            {
+              "title": "已完成本环节得工作交接",
+              "value": "0"
+            },
+            {
+              "title": "未完成本环节工作交接",
+              "value": "1"
+            }
+          ]
+        }
+      ]
     },
     {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
-    }]
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
 }
