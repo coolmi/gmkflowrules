@@ -1,0 +1,293 @@
+{
+    "id": "gmk-dimission",
+    "handleOnPC": {
+        "tasknode": [
+            "rszyzxcdba"
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "dimission.dimissionid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "dimission.dimissionda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": [
+                        "dimission.pernr",
+                        "-",
+                        "dimission.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": [
+                        "dimission.sysbusinessunitname",
+                        "-",
+                        "dimission.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "dimission.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "pageid": "sqxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "离职人员",
+                    "component": "text",
+                    "name": "dimission.dnachn"
+                },
+                {
+                    "title": "员工编号",
+                    "component": "text",
+                    "name": "dimission.dpernr"
+                },
+                {
+                    "title": "学历",
+                    "component": "text",
+                    "name": "dimission.dxl"
+                },
+                {
+                    "title": "专业",
+                    "component": "text",
+                    "name": "dimission.dzy"
+                },
+                {
+                    "title": "毕业时间",
+                    "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "dimission.byrq"
+                },
+                {
+                    "title": "入职时间",
+                    "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "dimission.entrydate"
+                },
+                {
+                    "title": "所属部门",
+                    "component": "text",
+                    "name": "dimission.dorgname"
+                },
+                {
+                    "title": "岗位",
+                    "component": "text",
+                    "name": "dimission.dpostname"
+                },
+                {
+                    "title": "所在公司",
+                    "component": "text",
+                    "name": "dimission.dcompany"
+                },
+                {
+                    "title": "离职类别",
+                    "editablenode": "",
+                    "name": "dimission.massg",
+                    "options": [
+                        {
+                            "text": "辞职",
+                            "value": "0"
+                        },
+                        {
+                            "text": "合同到期",
+                            "value": "1"
+                        },
+                        {
+                            "text": "退休",
+                            "value": "2"
+                        },
+                        {
+                            "text": "其他",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "title": "手机",
+                    "component": "text",
+                    "name": "dimission.dtelephone"
+                },
+                {
+                    "title": "核准离职日期",
+                    "component": "text",
+                    "datatype": "date",
+                    "editablenode": "disinternalverify",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "dimission.dhzlzrq",
+                    "validation": {
+                        "pageid": "sqxx",
+                        "required": "true",
+                        "validateMsg": "请填写核准离职日期",
+                        "regexs": ""
+                    }
+                },
+                {
+                    "title": "离职原因",
+                    "component": "textarea",
+                    "name": "dimission.leavereason"
+                }
+            ]
+        },
+        {
+            "title": "分配车辆",
+            "pageid": "fpcl",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "component": "table",
+                    "basePath": "bases",
+                    "cells": [
+                        {
+                            "title": "车辆编号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carid"
+                        },
+                        {
+                            "title": "车辆类型",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_type"
+                        },
+                        {
+                            "title": "车辆编号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carid"
+                        },
+                        {
+                            "title": "车辆名称",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carnm"
+                        },
+                        {
+                            "title": "车辆照号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_driver"
+                        },
+                        {
+                            "title": "时间费用",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_feeph"
+                        },
+                        {
+                            "title": "里程费用",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_feepk"
+                        },
+                        {
+                            "title": "座位数",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_sum"
+                        },
+                        {
+                            "title": "司机姓名",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_drivernm"
+                        },
+                        {
+                            "title": "手机号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_drivertel"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "附件信息",
+            "pageid": "fjxx",
+            "component": "panel",
+            "subComponents": []
+        },
+        {
+            "title": "审批记录",
+            "pageid": "spjl",
+            "component": "panel",
+            "subComponents": []
+        }
+    ]
+}

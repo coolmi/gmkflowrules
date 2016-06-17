@@ -1,0 +1,310 @@
+{
+    "id": "gmk_carmng",
+    "handleOnPC": {
+        "tasknode": [
+            "usertask3"
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "app.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "app.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": [
+                        "app.pernr",
+                        "-",
+                        "app.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": [
+                        "app.sysbusinessunitname",
+                        "-",
+                        "app.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "app.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "pageid": "sqxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "行驶范围",
+                    "component": "text",
+                    "name": "app.c_type"
+                },
+                {
+                    "title": "车辆用途",
+                    "component": "text",
+                    "name": "app.c_use"
+                },
+                {
+                    "title": "行驶类型",
+                    "component": "text",
+                    "name": "app.c_type"
+                },
+                {
+                    "title": "接待人员级别",
+                    "component": "text",
+                    "name": "app.c_ptype"
+                },
+                {
+                    "title": "用车理由",
+                    "component": "text",
+                    "name": "app.c_reason"
+                },
+                {
+                    "title": "申请人所在区域",
+                    "component": "text",
+                    "name": "app.c_uplace"
+                },
+                {
+                    "title": "发车地点",
+                    "component": "text",
+                    "name": "app.c_splace"
+                },
+                {
+                    "title": "使用人",
+                    "component": "label",
+                    "editablenode": "",
+                    "label": [
+                        "app.c_user",
+                        "-",
+                        "app.c_usernm"
+                    ]
+                },
+                {
+                    "title": "使用人电话",
+                    "component": "text",
+                    "name": "app.c_tel"
+                },
+                {
+                    "title": "所在部门",
+                    "component": "text",
+                    "name": "app.c_deptnm"
+                },
+                {
+                    "title": "乘车人数",
+                    "component": "text",
+                    "name": "app.c_sum"
+                },
+                {
+                    "title": "车辆出发地",
+                    "component": "text",
+                    "name": "app.c_stplace"
+                },
+                {
+                    "title": "车辆目的地",
+                    "component": "text",
+                    "name": "app.c_edplace"
+                },
+                {
+                    "title": "车辆目的地",
+                    "component": "text",
+                    "name": "app.c_edplace"
+                },
+                {
+                    "title": "使用事由",
+                    "component": "textarea",
+                    "name": "app.c_why"
+                },
+                {
+                    "title": "特殊要求",
+                    "component": "textarea",
+                    "name": "app.c_special"
+                },
+                {
+                    "title": "计划启程日期",
+                    "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "app.c_stdate"
+                },
+                {
+                    "title": "计划启程时间",
+                     "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "hh:mm:ss",
+                    "name": "app.c_sttime"
+                },
+                {
+                    "title": "计划返程日期",
+                     "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "app.c_bkdate"
+                },
+                {
+                    "title": "计划返程时间",
+                     "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "hh:mm:ss",
+                    "name": "app.c_bktime"
+                }
+            ]
+        },
+        {
+            "title": "分配车辆",
+            "pageid": "fpcl",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "component": "table",
+                    "basePath": "bases",
+                    "cells": [
+                        {
+                            "title": "车辆编号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carid"
+                        },
+                        {
+                            "title": "车辆类型",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_type"
+                        },
+                        {
+                            "title": "车辆编号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carid"
+                        },
+                        {
+                            "title": "车辆名称",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_carnm"
+                        },
+                        {
+                            "title": "车辆照号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_driver"
+                        },
+                        {
+                            "title": "时间费用",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_feeph"
+                        },
+                        {
+                            "title": "里程费用",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_feepk"
+                        },
+                        {
+                            "title": "座位数",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_sum"
+                        },
+                        {
+                            "title": "司机姓名",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_drivernm"
+                        },
+                        {
+                            "title": "手机号",
+                            "component": "text",
+                            "editablenode": "",
+                            "name": "s_drivertel"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "附件信息",
+            "pageid": "fjxx",
+            "component": "panel",
+            "subComponents": []
+        },
+        {
+            "title": "审批记录",
+            "pageid": "spjl",
+            "component": "panel",
+            "subComponents": []
+        }
+    ]
+}
