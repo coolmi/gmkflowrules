@@ -1,0 +1,337 @@
+{
+    "id": "food_promotionexpenses", 
+    "handleOnPC": {
+        "tasknode": [
+            "usertask10"
+        ], 
+        "flag": [
+            "resubmit"
+        ]
+    }, 
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ], 
+        "beforPop": false
+    }, 
+    "forms": [
+        {
+            "title": "基本信息", 
+            "pageid": "jbxx", 
+            "component": "panel", 
+            "subComponents": [
+                {
+                    "title": "申请单号", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.appid"
+                }, 
+                {
+                    "title": "申请日期", 
+                    "component": "date1", 
+                    "editablenode": "", 
+                    "name": "mainModel.appda"
+                }, 
+                {
+                    "title": "申请人姓名", 
+                    "component": "label", 
+                    "editablenode": "", 
+                    "label": [
+                        "mainModel.pernr", 
+                        "-", 
+                        "mainModel.username"
+                    ]
+                }, 
+                {
+                    "title": "所属部门", 
+                    "component": "label", 
+                    "editablenode": "", 
+                    "label": [
+                        "mainModel.sysbusinessunitname", 
+                        "-", 
+                        "mainModel.sysdeptname"
+                    ]
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.userid"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.username"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.pernr"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.syspostname"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.sysdeptid"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.sysdeptname"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.sysbusinessunitid"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.sysbusinessunitname"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.postid"
+                }, 
+                {
+                    "title": "", 
+                    "component": "hidden", 
+                    "name": "mainModel.id"
+                }
+            ]
+        }, 
+        {
+            "title": "申请信息", 
+            "pageid": "sqxx", 
+            "component": "panel", 
+            "subComponents": [
+                {
+                    "title": "标题名称", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.btitle"
+                }, 
+                {
+                    "title": "主抄送", 
+                    "component": "textarea", 
+                    "editablenode": "", 
+                    "name": "mainModel.zcs"
+                }, 
+                {
+                    "title": "是否跨成本中心", 
+                    "id": "sfkcbzx", 
+                    "component": "radio", 
+                    "editablenode": "", 
+                    "name": "mainModel.sfkcbzx", 
+                    "options": [
+                        {
+                            "text": "是", 
+                            "value": "0"
+                        }, 
+                        {
+                            "text": "否", 
+                            "value": "1"
+                        }
+                    ]
+                }, 
+                {
+                    "title": "费用承担成本中心负责人", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.fycdcbzxfzr", 
+                    "showLinkage": [
+                        {
+                            "id": "sfkcbzx", 
+                            "values": [
+                                "0"
+                            ]
+                        }
+                    ]
+                }, 
+                  {
+                    "title": "费用承担成本中心总监", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.fycdcbzxzj", 
+                    "showLinkage": [
+                        {
+                            "id": "sfkcbzx", 
+                            "values": [
+                                "0"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "所属公司", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.fkbutxt"
+                }, 
+                {
+                    "title": "成本中心", 
+                    "component": "label", 
+                    "editablenode": "", 
+                    "label": ["mainModel.fykotxt",
+						"-",
+						"mainModel.cdbukrsname"]
+                }, 
+                {
+                    "title": "客户编号/项目编号", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.khbh"
+                }, 
+                {
+                    "title": "客户名称/项目描述", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.khmc"
+                }, 
+                {
+                    "title": "预算年", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.ysn"
+                }, 
+                {
+                    "title": "月度预算", 
+                    "component": "radio", 
+                    "editablenode": "", 
+                    "name": "mainModel.ydys", 
+                    "options": [
+                        {
+                            "text": "预算内", 
+                            "value": "0"
+                        }, 
+                        {
+                            "text": "预算外", 
+                            "value": "1"
+                        }
+                    ]
+                }, 
+                {
+                    "title": "申请金额", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "name": "mainModel.sqje"
+
+                }, 
+                {
+                    "title": "是否领用", 
+                    "id":"sflycp",
+                    "component": "radio", 
+                    "editablenode": "", 
+                    "name": "mainModel.sflycp", 
+                    "options": [
+                        {
+                            "text": "是", 
+                            "value": "0"
+                        }, 
+                        {
+                            "text": "否", 
+                            "value": "1"
+                        }
+                    ]
+                }, 
+                {
+                    "title": "申请内容", 
+                    "component": "textarea", 
+                    "editablenode": "", 
+                    "name": "mainModel.sqnr"
+                }
+            ]
+        }, 
+       	{
+		"title": "领用样品明细表", 
+		"pageid": "yplymxb",
+		"component": "panel",
+		"subComponents": [{
+			"component": "table",
+			"table_id":"yplyid",
+			"basePath": "promotionalinfolist",   
+					 "showLinkage":[{
+                    	"id":"sflycp",
+                    	"values":["0"]
+                    	}],  
+			"cells": [{
+				"title": "样品类型",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_fyxm"
+			},
+			{
+				"title": "活动描述",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_hdms"
+			},
+			{
+				"title": "产品线(品项)",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_cpxpx",
+			},
+			{
+				"title": "小写金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_xxje"
+			},
+			{
+				"title": "大写金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_dxje"
+			},
+			{
+				"title": "实际发货金额小写",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_xxjesj"
+			},
+			{
+				"title": "实际发货金额大写",
+				"component": "text",
+				"editablenode": "",
+				"name": "info_dxjesj"
+			}
+			]
+		},
+		{
+                    "title": "合计", 
+                    "component": "text", 
+                    "editablenode": "", 
+                     "showLinkage":[{
+                    	"id":"sflycp",
+                    	"values":["0"]
+                    	}],
+                    "name": "mainModel.hsum"
+                },
+                {
+                    "title": "实际发货合计", 
+                    "component": "text", 
+                    "editablenode": "", 
+                    "tasknode":"usertask10,usertask11",
+                    "name": "mainModel.hsumsj"
+                }
+		]
+		},
+        {
+            "title": "附件信息", 
+            "pageid": "fjxx", 
+            "component": "panel", 
+            "subComponents": [ ]
+        }, 
+        {
+            "title": "审批记录", 
+            "pageid": "spjl", 
+            "component": "panel", 
+            "subComponents": [ ]
+        }
+    ]
+}

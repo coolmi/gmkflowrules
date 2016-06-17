@@ -1,0 +1,265 @@
+{
+    "id": "food_applyregular",
+    "handleOnPC": {
+        "tasknode": [
+            ""
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "editablenode": "",
+                    "name": "mainModel.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "editablenode": "",
+                    "label": [
+                        "mainModel.pernr",
+                        "-",
+                        "mainModel.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "editablenode": "",
+                    "label": [
+                        "mainModel.sysbusinessunitname",
+                        "-",
+                        "mainModel.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "pageid": "sqxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "转正人",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.regularname"
+                },
+                {
+                    "title": "员工ITCODE",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.zzr_itcode"
+                },
+                {
+                    "title": "所在部门",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.deptname"
+                },
+                {
+                    "title": "直属部门",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.deptname"
+                },
+                {
+                    "title": "所在公司名称",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.fkbutxt"
+                },
+                {
+                    "title": "联系电话",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.phone"
+                },
+                {
+                    "title": "电子邮件",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.email"
+                },
+                {
+                    "title": "岗位",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.postname"
+                },
+                {
+                    "title": "入职时间",
+                    "component": "date1",
+                    "editablenode": "",
+                    "name": "mainModel.entrydate"
+                },
+                {
+                    "title": "转正到期时间",
+                    "component": "date1",
+                    "editablenode": "",
+                    "name": "mainModel.expireddate"
+                },
+                {
+                    "title": "适用期时长",
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "mainModel.syqdays"
+                }
+            ]
+        },
+        {
+            "title": "部门内部审核意见",
+            "pageid": "bmnbshyj",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "是否同意转正",
+                    "component": "radio",
+                    "name": "mainModel.isagreed",
+                    "editablenode": "usertask2",
+                    "tasknode": "usertask2,usertask3,usertask4,usertask5",
+                    "options": [
+                        {
+                            "title": "是",
+                            "value": "1"
+                        },
+                        {
+                            "title": "否",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "title": "综合评价",
+                    "component": "textarea",
+                    "editablenode": "usertask2",
+                    "tasknode": "usertask2,usertask3,usertask4,usertask5",
+                    "name": "mainModel.remark"
+                }
+            ]
+        },
+        {
+            "title": "人事行政部意见",
+            "pageid": "bmnbshyj",
+            "component": "panel",
+            "editablenode": "usertask3",
+            "tasknode": "usertask3,usertask4,usertask5",
+            "subComponents": [
+                {
+                    "title": "意见",
+                    "component": "select",
+                    "editablenode": "",
+                    "name": "hradmindept",
+                    "options": [
+                        {
+                            "text": "按期转正",
+                            "value": "01"
+                        },
+                        {
+                            "text": "提前转正",
+                            "value": "02"
+                        },
+                        {
+                            "text": "延长转正",
+                            "value": "03"
+                        },
+                        {
+                            "text": "不与转正",
+                            "value": "04"
+                        }
+                    ]
+                },
+                {
+                    "title": "转正日期",
+                    "component": "date1",
+                    "datetype": "date1",
+                    "editablenode": "usertask3",
+                    "tasknode": "usertask3,usertask4,usertask5",
+                    "name": "mainModel.regular_date"
+                }
+            ]
+        },
+        {
+            "title": "附件信息",
+            "pageid": "fjxx",
+            "component": "panel",
+            "subComponents": []
+        },
+        {
+            "title": "审批记录",
+            "pageid": "spjl",
+            "component": "panel",
+            "subComponents": []
+        }
+    ]
+}
