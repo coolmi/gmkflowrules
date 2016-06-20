@@ -1,0 +1,260 @@
+{
+  "id": "gmk-train",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "train.appid"
+          },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "train.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "train.pernr",
+            "-",
+            "train.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "train.sysbusinessunitname",
+            "-",
+            "train.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "train.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "培训项目",
+          "component": "textarea",
+          "name": "train.trainxm"
+        },
+        {
+          "title": "项目描述",
+          "component": "textarea",
+          "name": "train.descstatus"
+        },
+        {
+          "title": "培训预期效果",
+          "component": "textarea",
+          "name": "train.traineffect"
+        },
+        {
+          "title": "参训人员",
+          "component": "textarea",
+          "name": "train.trainees"
+        },
+        {
+          "title": "参训人数",
+          "component": "text",
+          "name": "train.trainnum"
+        },
+        {
+          "title": "培训方式",
+          "component": "radio",
+          "name": "train.trainmode",
+          "options": [
+            {
+              "title": "外派",
+              "value": "1"
+            },
+            {
+              "title": "外请",
+              "value": "2"
+            },
+            {
+              "title": "内训",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "计划内外",
+          "component": "radio",
+          "name": "train.inoutt",
+          "options": [
+            {
+              "title": "计划内",
+              "value": "1"
+            },
+            {
+              "title": "计划外",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "是否超费用",
+          "component": "radio",
+          "name": "train.whethernot",
+          "options": [
+            {
+              "title": "超费用",
+              "value": "1"
+            },
+            {
+              "title": "不超费用",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "培训地点",
+          "component": "text",
+          "name": "train.trainplace"
+        },
+        {
+          "title": "预计培训时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "train.traintime"
+        },
+        {
+          "title": "培训天数",
+          "component": "text",
+          "name": "train.traindays"
+        },
+        {
+          "title": "推荐培训机构",
+          "component": "text",
+          "name": "train.traininst"
+        },
+        {
+          "title": "培训费总额(含差旅费)",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.trainexpen"
+        },
+        {
+          "title": "课酬费",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.classpay"
+        },
+        {
+          "title": "差旅费",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.travel"
+        },
+        {
+          "title": "食宿费",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.roomboard"
+        },
+        {
+          "title": "会议费",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.confer"
+        },
+        {
+          "title": "其他费用",
+          "component": "text",
+          "datatype":"money",
+          "name": "train.otherexpenses"
+        },
+        {
+          "title": "培训内容",
+          "component": "textarea",
+          "name": "train.traincontent"
+        }
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
+}

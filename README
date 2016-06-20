@@ -51,6 +51,33 @@ text内容如下：
   }
 }
 
+radio:联动
+{
+    "id":"",//唯一标识，确定在文件中唯一,可选，没有时使用处理后的name作为id;
+    "title" : "{页签显示内容}",
+    "component" : "radio",//固定
+    "name" : "{字段key，定位到源数据绝对位置，规则解析器会对些字段进行处理}",
+    "options": [{ //固定
+    "title": "否",//值
+    "value": "1"//key
+  },
+  {
+    "title": "是",//值
+    "value": "0"//key
+  }]
+},
+{
+"title" : "{页签显示内容}",
+"component" : "text",//固定
+"name" : "{字段key，定位到源数据绝对位置，规则解析器会对些字段进行处理}",
+    "showLinkage":[
+        {
+            "id":"sfbcbzx",//radio的id
+            "values":["1"]//联动条件
+        }
+    ]
+}
+
 针对字段属性说明：
 id://唯一标识，解析规则中不可重复
 component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2
