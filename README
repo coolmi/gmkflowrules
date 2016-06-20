@@ -27,6 +27,14 @@ forms中一级内容(page)格式如下：
 
 subComponents中可放如下内容，
 
+hidden内容如下：
+{
+  "id":"",//唯一标识，确定在文件中唯一,可选，没有时使用处理后的name作为id;
+  "component":"hidden",
+  "title":"",
+  "name":""
+}
+
 text内容如下：
 {
   "id":"",//唯一标识，确定在文件中唯一,可选，没有时使用处理后的name作为id;
