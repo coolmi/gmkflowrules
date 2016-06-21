@@ -1,5 +1,5 @@
 {
-    "id": "gmk-dimission",
+    "id": "oa_retire_gmk",
     "handleOnPC": {
         "tasknode": [
             ""
@@ -24,80 +24,80 @@
                     "title": "申请单号",
                     "component": "text",
                     "editablenode": "",
-                    "name": "dimission.appid"
+                    "name": "app.appid"
                 },
                 {
                     "title": "申请日期",
                     "component": "date1",
-                    "name": "dimission.appda"
+                    "name": "app.appda"
                 },
                 {
                     "title": "申请人姓名",
                     "component": "label",
                     "label": [
-                        "dimission.pernr",
+                        "app.pernr",
                         "-",
-                        "dimission.username"
+                        "app.username"
                     ]
                 },
                 {
                     "title": "所属部门",
                     "component": "label",
                     "label": [
-                        "dimission.sysbusinessunitname",
+                        "app.sysbusinessunitname",
                         "-",
-                        "dimission.sysdeptname"
+                        "app.sysdeptname"
                     ]
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.userid"
+                    "name": "app.userid"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.username"
+                    "name": "app.username"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.pernr"
+                    "name": "app.pernr"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.syspostname"
+                    "name": "app.syspostname"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.sysdeptid"
+                    "name": "app.sysdeptid"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.sysdeptname"
+                    "name": "app.sysdeptname"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.sysbusinessunitid"
+                    "name": "app.sysbusinessunitid"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.sysbusinessunitname"
+                    "name": "app.sysbusinessunitname"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.postid"
+                    "name": "app.postid"
                 },
                 {
                     "title": "",
                     "component": "hidden",
-                    "name": "dimission.id"
+                    "name": "app.id"
                 }
             ]
         },
@@ -107,98 +107,81 @@
             "component": "panel",
             "subComponents": [
                 {
-                    "title": "离职人员",
-                    "component": "text",
-                    "name": "dimission.dnachn"
+                    "title": "辞退人",
+                    "component": "label",
+                    "editablenode": "",
+                    "label":["app.t_postid","-","app.t_name","-","app.t_postnm"]
                 },
                 {
                     "title": "员工编号",
                     "component": "text",
-                    "name": "dimission.dpernr"
+                    "name": "app.t_pernr"
                 },
                 {
+                    "title": "所在部门",
+                    "component": "text",
+                    "name": "app.t_objnm"
+                },
+                {
+                    "title": "职位",
+                    "component": "text",
+                    "name": "app.t_postnm"
+                },
+                                {
                     "title": "学历",
                     "component": "text",
-                    "name": "dimission.dxl"
+                    "name": "app.t_xl"
                 },
                 {
                     "title": "专业",
                     "component": "text",
-                    "name": "dimission.dzy"
+                    "name": "app.t_zy"
                 },
                 {
                     "title": "毕业时间",
                     "component": "text",
                     "datatype": "date",
                     "dateFormat": "yyyy-MM-dd",
-                    "name": "dimission.byrq"
+                    "name": "app.t_byrq"
+                },
+                  {
+                    "title": "出生时间",
+                    "component": "text",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "app.t_birth"
                 },
                 {
                     "title": "入职时间",
                     "component": "text",
                     "datatype": "date",
                     "dateFormat": "yyyy-MM-dd",
-                    "name": "dimission.entrydate"
+                    "name": "app.t_indate"
                 },
-                {
-                    "title": "所属部门",
+                 {
+                    "title": "联系方式",
                     "component": "text",
-                    "name": "dimission.dorgname"
+                    "name": "app.t_tel"
                 },
-                {
-                    "title": "岗位",
+                      {
+                    "title": "合同到期时间",
                     "component": "text",
-                    "name": "dimission.dpostname"
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "app.t_enddate"
                 },
                 {
-                    "title": "所在公司",
+                    "title": "建议辞退时间",
                     "component": "text",
-                    "name": "dimission.dcompany"
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+                    "name": "app.t_godate"
                 },
+               
                 {
-                    "title": "离职类别",
-                    "editablenode": "",
-                    "name": "dimission.massg",
-                    "options": [
-                        {
-                            "text": "辞职",
-                            "value": "0"
-                        },
-                        {
-                            "text": "合同到期",
-                            "value": "1"
-                        },
-                        {
-                            "text": "退休",
-                            "value": "2"
-                        },
-                        {
-                            "text": "其他",
-                            "value": "3"
-                        }
-                    ]
-                },
-                {
-                    "title": "手机",
-                    "component": "text",
-                    "name": "dimission.dtelephone"
-                },
-                {
-                    "title": "核准离职日期",
-                    "component": "date1",
-                    "editablenode": "disinternalverify",
-                    "name": "dimission.dhzlzrq",
-                    "validation": {
-                        "pageid": "sqxx",
-                        "required": "true",
-                        "validateMsg": "请填写核准离职日期",
-                        "regexs": ""
-                    }
-                },
-                {
-                    "title": "离职原因",
+                    "title": "辞退原因",
                     "component": "textarea",
-                    "name": "dimission.leavereason"
+                    "name": "app.reason"
                 }
             ]
         },
@@ -206,83 +189,80 @@
             "title": "人力资源部填写",
             "pageid": "rlzybtx",
             "component": "panel",
-            "editablenode":"rszyzxcdba",
-            "islinkage":true,
-            "handleLinkage":[
-                        {
-                            "id":"qtsxsm1",
-                            "values":["3"]
-                        }
-                    ],
             "subComponents": [
                 {
                     "title": "离职执行情况填写",
                     "component": "checkbox",
+                    "tasknode":"usertask8",
                     "id":"lzzxqk",
-                     "tasknode":"rszyzxcdba",
-                    "name": "dimission.zxqktx",
+                    "editablenode":"usertask8",
+                    "name": "app.doresult",
+                    "islinkage":true,
+                    "handleLinkage":[
+                        {
+                            "id":"otherinfo",
+                            "values":["3"]
+                        }
+                    ],
                     "options": [{    
-                         "text": "完成员工通知",
-                         "value": "0"
-                     },
-                     {
-                         "text": "完成薪资结算",
+                         "text": "完成员工通知  ",
                          "value": "1"
                      },
                      {
-                         "text": "其他事项",
+                         "text": "完成薪资转移",
                          "value": "2"
+                     },
+                     {
+                         "text": "其他事项",
+                         "value": "3"
                      }]
                 },
                  {
+                    "id":"otherinfo",
                     "title": "其他事项说明",
-                    "id":"qtsxsm1",
                     "component": "textarea",
-                    "editablenode":"rszyzxcdba",
-                     "tasknode":"rszyzxcdba",
-                    "name": "dimission.zxqkqtsxsm",
+                    "name": "app.otherinfo",
+                     "tasknode":"usertask8",
                     "showLinkage":[{     
                        "id":"lzzxqk",  
-                       "values":["2"]  
+                       "values":["3"]  
                     }]
                 },
                  {
                     "title": "存档、备案情况填写",
                     "component": "checkbox",
                     "id":"cdbaqktx",
-                     "tasknode":"rszyzxcdba",
-                    "editablenode":"rszyzxcdba",
-                    "name": "dimission.cdbaqktx",
+                     "tasknode":"usertask8",
+                    "name": "app.storresult",
                      "islinkage":true,
-                      "handleLinkage":[
+                    "handleLinkage":[
                         {
-                            "id":"qtsxsm2",
+                            "id":"othersm",
                             "values":["3"]
                         }
                     ],
                     "options": [{    
-                         "text": "完成员工通知",
-                         "value": "0"
-                     },
-                     {
-                         "text": "完成备案",
+                         "text": "完成存档  ",
                          "value": "1"
                      },
                      {
-                         "text": "其他事项",
+                         "text": "完成备案",
                          "value": "2"
+                     },
+                     {
+                         "text": "其他事项",
+                         "value": "3"
                      }]
                 },
                  {
                     "title": "其他事项说明",
-                    "id":"qtsxsm2",
+                    "id":"othersm",
                     "component": "textarea",
-                    "editablenode":"rszyzxcdba",
-                    "tasknode":"rszyzxcdba",
-                    "name": "dimission.cdbaqtsxsm",
+                     "tasknode":"usertask8",
+                    "name": "app.otherinfo2",
                     "showLinkage":[{     
                        "id":"cdbaqktx",  
-                       "values":["2"]  
+                       "values":["3"]  
                     }]
                 },
             ]
