@@ -102,16 +102,74 @@
             "title": "其他说明",
             "component": "textarea",
             "name": "orgnew.others",
-            "showLinkage": [{
-                "id": "sqsx",
-                "values": ["其他"]
-            }]
         },
         {
             "title": "申请调整的背景和事由",
             "component": "textarea",
-            "name": "orgnew.matters"
+            "name": "orgnew.matters",
+            "showLinkage": [{
+                "id": "sqsx",
+                "values": ["其他"]
+            }]
         }]
+    },
+    {
+        "title": "人力资源部填写",
+        "pageid": "rlzybtx",
+        "tasknode": "usertask3,usertask4,usertask5",
+        "component": "panel",
+        "subComponents": [{
+            "title": "执行备案情况填写",
+            "component": "checkbox",
+            "id": "zxbaqktx",
+            "editablenode": "usertask3",
+            "tasknode": "usertask3,usertask4,usertask5",
+            "name": "orgnew.record",
+            "islinkage": true,
+            "validation": {
+                "pageid": "rlzybtx",
+                "required": true,
+                "validationMsg": "执行备案情况填写必须"
+            },
+            "handleLinkage": [{
+                "id": "otherinfo",
+                "values": ["4"]
+            }],
+            "options": [{
+                "text": "完成部门通知",
+                "value": "1"
+            },
+            {
+                "text": "完成存档",
+                "value": "2"
+            },
+            {
+                "text": "完成备案",
+                "value": "3"
+            },
+            {
+                "text": "其他事项",
+                "value": "4"
+            }]
+        },
+        {
+            "id": "otherinfo",
+            "title": "其他事项说明",
+            "component": "textarea",
+            "name": "orgnew.reasons",
+            "editablenode": "usertask3",
+            "tasknode": "usertask3,usertask4,usertask5",
+            "validation": {
+                "pageid": "rlzybtx",
+                "required": true,
+                "validationMsg": "其他事项说明不能为空"
+            },
+            "showLinkage": [{
+                "id": "zxbaqktx",
+                "values": ["4"]
+            }]
+        },
+        ]
     },
     {
         "title": "附件信息",

@@ -77,3 +77,56 @@ radio:联动
         }
     ]
 }
+
+//匹配中间key获取值
+{
+			"title": "资产所属公司",
+			"component": "label",
+			"editablenode": "",
+			"middleName":[
+			"mainModel.zcssgs",
+			"bukrs"
+			],
+			"label": ["mainModel.zcssgs",
+			"-",
+			"allT001List.butxt"]
+}
+
+//map
+{
+  "title": "休假人本年度休假情况",
+  "pageid": "xjrbndxjqk",
+  "component": "panel",
+  "subComponents": [{
+    "title": "",
+    "component": "formLabelLink",
+    "basePath": "leavelist",
+    "linkForms": [{
+      "title": "假期类型",
+      "component": "text",
+      "name": "desce",
+    },
+    {
+      "title": "申请次数",
+      "component": "linkToMap",
+      "name":"sqcs",
+      "linkToMap":{
+        "mapBasePath":"maps",
+        "linkMiddle":"num",
+        "linkType":"object",
+        "linkPath":"sum"
+      }
+    },
+    {
+      "title": "累计休假天数",
+      "component": "linkToMap",
+      "name": "ljxjts",
+      "linkToMap":{
+        "mapBasePath":"maps",
+        "linkMiddle":"num",
+        "linkType":"object",
+        "linkPath":"actualdays"
+      }
+    }]
+  }]
+},

@@ -177,7 +177,7 @@
                     "dateFormat": "yyyy-MM-dd",
                     "name": "app.t_godate"
                 },
-               
+
                 {
                     "title": "辞退原因",
                     "component": "textarea",
@@ -209,7 +209,7 @@
                             "values":["3"]
                         }
                     ],
-                    "options": [{    
+                    "options": [{
                          "text": "完成员工通知  ",
                          "value": "1"
                      },
@@ -234,9 +234,9 @@
 			"required":true,
 			"validationMsg":"其他事项说明不能为空"
 		     },
-                    "showLinkage":[{     
-                       "id":"lzzxqk",  
-                       "values":["3"]  
+                    "showLinkage":[{
+                       "id":"lzzxqk",
+                       "values":["3"]
                     }]
                 },
                  {
@@ -258,7 +258,7 @@
                             "values":["3"]
                         }
                     ],
-                    "options": [{    
+                    "options": [{
                          "text": "完成存档  ",
                          "value": "1"
                      },
@@ -283,9 +283,9 @@
 			"required":true,
 			"validationMsg":"其他事项说明不能为空"
 		     },
-                    "showLinkage":[{     
-                       "id":"cdbaqktx",  
-                       "values":["3"]  
+                    "showLinkage":[{
+                       "id":"cdbaqktx",
+                       "values":["3"]
                     }]
                 },
             ]

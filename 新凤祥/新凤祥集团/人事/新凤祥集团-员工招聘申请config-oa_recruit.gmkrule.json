@@ -1,0 +1,182 @@
+{
+    "id": "oa_recruit",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "app.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "app.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["app.pernr", "-", "app.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["app.sysbusinessunitname", "-", "app.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "app.id"
+        }]
+    },
+    {
+        "title": "表单基本信息",
+        "pageid": "bdjbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "招聘岗位",
+            "component": "text",
+            "name": "app.r_postid"
+        },
+        {
+            "title": "人数",
+            "component": "text",
+            "name": "app.r_num"
+        },
+        {
+            "title": "期望到岗日期",
+            "component": "date1",
+            "name": "app.r_indate",
+        },
+        {
+            "title": "工作地点",
+            "component": "text",
+            "name": "app.r_place",
+        },
+        {
+            "title": "岗位职责描述",
+            "component": "textarea",
+            "name": "app.r_task",
+        },
+        {
+            "title": "学历",
+            "component": "text",
+            "name": "app.r_xl",
+        },
+        {
+            "title": "专业",
+            "component": "text",
+            "name": "app.r_zy",
+        },
+        {
+            "title": "年龄范围",
+            "component": "label",
+            "label": ["app.r_old1", "至", "app.r_old2"],
+        },
+        {
+            "title": "性别",
+            "component": "text",
+            "name": "app.r_sex",
+        },
+        {
+            "title": "工作经验",
+            "component": "label",
+            "label": ["app.r_doyear", "年以上", ""],
+        },
+        {
+            "title": "是否招聘应届生",
+            "component": "text",
+            "name": "app.r_postnm",
+        } {
+            "title": "其他",
+            "component": "textarea",
+            "name": "app.r_other",
+        },
+        {
+            "title": "专业素质要求",
+            "component": "textarea",
+            "name": "app.r_mrequest",
+        },
+        {
+            "title": "是否有目标人员",
+            "component": "text",
+            "name": "app.r_has",
+        },
+        {
+            "title": "是否需要猎头",
+            "component": "text",
+            "name": "app.r_headhunt"
+        },
+        {
+            "title": "备注",
+            "component": "textarea",
+            "name": "app.r_remarks"
+        }]
+    },
+    {
+        "title": "附件信息",
+        "pageid": "fjxx",
+        "component": "panel",
+        "subComponents": []
+    },
+    {
+        "title": "审批记录",
+        "pageid": "spjl",
+        "component": "panel",
+        "subComponents": []
+    }]
+}
