@@ -130,3 +130,17 @@ radio:联动
     }]
   }]
 },
+
+针对字段属性说明：
+id://唯一标识，解析规则中不可重复
+component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2
+datatype://组件显示数据类型：string date1 date2 date3 date4 date5 date  money2dx等
+dateFormat://时间显示格式，如yyyy-MM-dd HH:mm:ss.S
+tasknode://可显示环节key，若无则默认显示
+editablenode://可编辑字段环节key，在特定环节时可编辑
+name://数据显示定位，及字段命名
+title://显示的字段label
+validation://字段检验规则说明
+showLinkage://字段联动显示
+islinkage://是否可控件其他字段联动显示
+handleLinkage://所控件字段联动显示说明
