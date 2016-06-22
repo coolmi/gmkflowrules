@@ -1,7 +1,7 @@
 {
     "id": "fxit_saptransfer",
     "handleOnPC": {
-        "tasknode": [""],
+        "tasknode": ["usertask2"],
         "flag": ["resubmit"]
     },
     "selectPerson": {
@@ -15,156 +15,146 @@
         "subComponents": [{
             "title": "申请单号",
             "component": "text",
-            "name": "app.appid"
+            "name": "fxitSapTransfer.appid"
         },
         {
             "title": "申请日期",
             "component": "date1",
-            "name": "app.appda"
+            "name": "fxitSapTransfer.appda"
         },
         {
             "title": "申请人姓名",
             "component": "label",
-            "label": ["app.pernr", "-", "app.username"]
+            "label": ["fxitSapTransfer.pernr", "-", "fxitSapTransfer.username"]
         },
         {
             "title": "所属部门",
             "component": "label",
-            "label": ["app.sysbusinessunitname", "-", "app.sysdeptname"]
+            "label": ["fxitSapTransfer.sysbusinessunitname", "-", "fxitSapTransfer.sysdeptname"]
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.userid"
+            "name": "fxitSapTransfer.userid"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.username"
+            "name": "fxitSapTransfer.username"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.pernr"
+            "name": "fxitSapTransfer.pernr"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.syspostname"
+            "name": "fxitSapTransfer.syspostname"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.sysdeptid"
+            "name": "fxitSapTransfer.sysdeptid"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.sysdeptname"
+            "name": "fxitSapTransfer.sysdeptname"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.sysbusinessunitid"
+            "name": "fxitSapTransfer.sysbusinessunitid"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.sysbusinessunitname"
+            "name": "fxitSapTransfer.sysbusinessunitname"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.postid"
+            "name": "fxitSapTransfer.postid"
         },
         {
             "title": "",
             "component": "hidden",
-            "name": "app.id"
+            "name": "fxitSapTransfer.id"
         }]
     },
     {
-        "title": "表单基本信息",
-        "pageid": "bdjbxx",
+        "title": "申请信息",
+        "pageid": "sqxx",
         "component": "panel",
         "subComponents": [{
-            "title": "招聘岗位",
-            "component": "text",
-            "name": "app.r_postid"
+            "id": "cslx",
+            "title": "传输类型",
+            "component": "radio",
+            "name": "fxitSapTransfer.transtype",
+            "options": [{
+                "title": "SAP需求变更",
+                "value": "1"
+            },
+            {
+                "title": "SAP权限申请",
+                "value": "2"
+            }]
         },
         {
-            "title": "人数",
-            "component": "text",
-            "name": "app.r_num"
-        },
-        {
-            "title": "期望到岗日期",
-            "component": "date1",
-            "name": "app.r_indate",
-        },
-        {
-            "title": "工作地点",
-            "component": "text",
-            "name": "app.r_place",
-        },
-        {
-            "title": "岗位职责描述",
-            "component": "textarea",
-            "name": "app.r_task",
-        },
-        {
-            "title": "学历",
-            "component": "text",
-            "name": "app.r_xl",
-        },
-        {
-            "title": "专业",
-            "component": "text",
-            "name": "app.r_zy",
-        },
-        {
-            "title": "年龄范围",
+            "title": "测试用户",
             "component": "label",
-            "label": ["app.r_old1", "至", "app.r_old2"],
+            "label": ["fxitSapTransfer.keyuser", "-", "fxitSapTransfer.keyusername"]
         },
         {
-            "title": "性别",
+            "title": "SAP变更需求单号",
             "component": "text",
-            "name": "app.r_sex",
+            "name": "fxitSapTransfer.tempa",
+            "showLinkage": [{
+                "id": "cslx",
+                "values": ["1"]
+            }]
         },
         {
-            "title": "工作经验",
-            "component": "label",
-            "label": ["app.r_doyear", "年以上", ""],
-        },
-        {
-            "title": "是否招聘应届生",
+            "title": "SAP权限申请单号",
             "component": "text",
-            "name": "app.r_postnm",
-        } {
-            "title": "其他",
-            "component": "textarea",
-            "name": "app.r_other",
+            "name": "fxitSapTransfer.permissionno",
+            "showLinkage": [{
+                "id": "cslx",
+                "values": ["2"]
+            }]
         },
         {
-            "title": "专业素质要求",
-            "component": "textarea",
-            "name": "app.r_mrequest",
-        },
-        {
-            "title": "是否有目标人员",
-            "component": "text",
-            "name": "app.r_has",
-        },
-        {
-            "title": "是否需要猎头",
-            "component": "text",
-            "name": "app.r_headhunt"
-        },
-        {
-            "title": "备注",
-            "component": "textarea",
-            "name": "app.r_remarks"
+            "component": "table",
+            "basePath": "bases",
+            "cells": [{
+                "title": "请求类型",
+                "component": "text",
+                "name": "rqtype"
+            },
+            {
+                "title": "传输请求号",
+                "component": "text",
+                "name": "rqcode"
+            },
+            {
+                "title": "传输请求说明",
+                "component": "textarea",
+                "name": "rqsemo"
+            },
+            {
+                "title": "是否成功",
+                "component": "text",
+                "tasknode": "usertask3",
+                "name": "tstok"
+            },
+            {
+                "title": "测试结果备注",
+                "component": "textarea",
+                "tasknode": "usertask3",
+                "name": "tstremark"
+            },
+            ]
         }]
     },
     {
