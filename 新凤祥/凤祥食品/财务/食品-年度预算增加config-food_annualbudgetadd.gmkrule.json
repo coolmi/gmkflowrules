@@ -105,6 +105,7 @@
 		"subComponents": [{
 			"title": "",
 			"component": "formLabelLink",
+			"titleIndex":7,
 			"tabletype": "looppanel",
 			"basePath": "annualbudgetinfolist",
 			"linkForms": [{

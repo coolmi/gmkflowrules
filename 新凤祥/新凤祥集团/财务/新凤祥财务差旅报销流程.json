@@ -814,6 +814,7 @@
 		{
 			"title": "付款信息",
 			"component": "panel",
+			"tasknode":"usertask5",
 			"panel_id": "fk",
 			"subComponents": [
 				{

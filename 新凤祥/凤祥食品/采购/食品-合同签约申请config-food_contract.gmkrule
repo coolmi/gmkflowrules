@@ -274,14 +274,22 @@
 			"title": "供应商名称",
 			"component": "text",
 			"display": "none",
-			"name": "mainModel.suppliername"
+			"name": "mainModel.suppliername",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "客户名称",
 			"component": "text",
 			"editablenode": "",
 			"display": "none",
-			"name": "mainModel.customername"
+			"name": "mainModel.customername",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["2"]
+            }]
 		},
 		
 		{
@@ -310,7 +318,11 @@
 					"text": "黑名单冻结",
 					"value": "4"
 				}
-			]
+			],
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "采购方式",
@@ -335,7 +347,11 @@
 					"text": "其他",
 					"value": "3"
 				}
-			]
+			],
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","4"]
+            }]
 		},
 		{
 			"title": "结算方式",
@@ -349,14 +365,22 @@
 			"component": "text",
 			"display": "none",
 			"editablenode": "",
-			"name": "mainModel.contractamount"
+			"name": "mainModel.contractamount",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "合同金额大写",
 			"component": "text",
 			"display": "none",
 			"editablenode": "",
-			"name": "mainModel.contractamountup"
+			"name": "mainModel.contractamountup",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "币种",
@@ -364,7 +388,11 @@
 			"display": "none",
 			"editablenode": "",
 			"name": "mainModel.currency",
-			"refer":"currency"
+			"refer":"currency",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "付款方式",
@@ -372,7 +400,11 @@
 			"component": "select",
 			"editablenode": "",
 			"name": "mainModel.paymentmethod",
-			"refer":"paymentmethod"
+			"refer":"paymentmethod",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","3","4"]
+            }]
 		},
 		{
 			"title": "定价依据",			
@@ -413,7 +445,11 @@
 			"component": "textarea",
 			"display": "none",
 			"editablenode": "",
-			"name": "mainModel.departauditxt"
+			"name": "mainModel.departauditxt",
+			"showLinkage": [{
+                "id": "demandtype",
+                "values": ["1","4"]
+            }]
 		},
 		{
 			"title": "部门负责人审核",
@@ -463,6 +499,7 @@
 			"title": "是否为补充合同",
 			"component": "radio",
 			"editablenode": "",
+			"id": "whethercontract",
 			"name": "mainModel.whethercontract",
 			"options": [{
 				"title": "否",
@@ -478,7 +515,11 @@
 			"display": "none",
 			"component": "text",
 			"editablenode": "",
-			"name": "mainModel.ycontractnumber"
+			"name": "mainModel.ycontractnumber",
+			"showLinkage": [{
+                "id": "whethercontract",
+                "values": ["1"]
+            }]
 		},
 		
 		{
@@ -528,7 +569,11 @@
 			"component": "textarea",
 			"display": "none",
 			"editablenode": "",
-			"name": "mainModel.accompersoname"
+			"name": "mainModel.accompersoname",
+			"showLinkage": [{
+                "id": "yytype",
+                "values": ["2"]
+            }]
 		},
 		
 		
