@@ -190,7 +190,7 @@
                     "component": "textarea",
                     "name": "itequipscrap.assessment",
                     "editablenode": "usertask2",
-                    "tasknode":"usertask2",
+                    "tasknode":"usertask2,usertask3,usertask4,usertask5,usertask6,usertask7",
                     "validation":{      
                         "pageid":"ywgcspgyj",  
                         "required":true,  
@@ -203,98 +203,52 @@
                     "component": "textarea",
                     "name": "itequipscrap.doment",
                     "editablenode": "usertask2",
-                    "tasknode":"usertask2",
+                    "tasknode":"usertask2,usertask3,usertask4,usertask5,usertask6,usertask7",
                     "validation":{      
                         "pageid":"ywgcspgyj",  
                         "required":true,  
                         "validateMsg":"请报废处理意见",     
                         "regexs":""
                     }
-                },
-                {
-                    "title": "设备内部资料备份情况",
-                    "component": "radio",
-                    "name": "itequipscrap.itequipbkstate",
-                    "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8,usertask9",
-                    "editablenode": "usertask4",
-                    "validation":{      
-                    "pageid":"sbdrqr",  
-                    "required":true,  
-                    "validateMsg":"请填写设备内部资料备份情况",     
-                    "regexs":""
-                    },
-                    "options": [
-                        {
-                            "title": "是",
-                            "value": "1"
-                        },
-                        {
-                            "title": "否",
-                            "value": "0"
-                        }
-                    ]
                 }
             ]
         },
-        {
-            "title": "IT部运维支持人员填写",
-            "pageid": "ywzcrytx",
+         {
+            "title": "资产所属单位财务部处理",
+            "pageid": "zcsscwbcl",
             "component": "panel",
             "subComponents": [
                 {
-                    "title": "检查结果及系统确认",
+                    "title": "处理结果汇报",
                     "component": "textarea",
-                    "name": "itequipscrap.itconfirm",
-                    "tasknode": "usertask5,usertask6,usertask7,usertask8,usertask9",
-                    "editablenode": "usertask5",
+                    "name": "itequipscrap.doresultb",
+                    "editablenode": "usertask6",
+                    "tasknode":"usertask6,usertask7",
                     "validation":{      
-                    "pageid":"ywzcrytx",  
-                    "required":true,  
-                    "validateMsg":"请填写检查结果及系统确认",     
-                    "regexs":""
+                        "pageid":"zcsscwbcl",  
+                        "required":true,  
+                        "validateMsg":"请填写处理结果汇报",     
+                        "regexs":""
                     }
                 }
             ]
         },
-          {
-            "title": "调入人确认接收",
-            "pageid": "drrqrjs",
+             {
+            "title": "IT综合管理员处理结果登记",
+            "pageid": "zhglycdjjg",
             "component": "panel",
             "subComponents": [
-                  {
-                    "title": "设备内部资料备份情况",
-                    "component": "radio",
-                    "name": "itequipscrap.receive",
-                    "tasknode": "usertask6",
-                    "editablenode": "usertask6,usertask7,usertask8,usertask9",
-                    "validation":{      
-                    "pageid":"sbdrqr",  
-                    "required":true,  
-                    "validateMsg":"请填写设备内部资料备份情况",     
-                    "regexs":""
-                    },
-                    "options": [
-                        {
-                            "title": "设备正常",
-                            "value": "1"
-                        },
-                        {
-                            "title": "存在问题",
-                            "value": "0"
-                        }
-                    ]
-                },
                 {
-                    "title": "设备问题反馈",
+                    "title": "处理结果",
                     "component": "textarea",
-                    "name": "itequipscrap.feedback",
-                    "tasknode": "usertask6,usertask7,usertask8,usertask9",
-                    "editablenode": "usertask6",
+                    "name": "itequipscrap.doresulta",
+                    "editablenode": "usertask7",
+                    "tasknode":"usertask7",
                     "validation":{      
-                    "pageid":"drrqrjs",  
-                    "required":true,  
-                    "validateMsg":"请填写检查结果及系统确认",     
-                    "regexs":""
+                        "pageid":"zhglycdjjg",  
+                        "required":true,  
+                        "validateMsg":"请填写处理结果",     
+                        "regexs":""
                     }
                 }
             ]
