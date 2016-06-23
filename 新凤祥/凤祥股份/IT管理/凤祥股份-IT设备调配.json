@@ -1,0 +1,312 @@
+{
+    "id": "fxit_equipblend",
+    "handleOnPC": {
+        "tasknode": [
+            "usertask2"
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "name": "fxitequipblend.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "fxitequipblend.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": [
+                        "fxitequipblend.pernr",
+                        "-",
+                        "fxitequipblend.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": [
+                        "fxitequipblend.sysbusinessunitname",
+                        "-",
+                        "fxitequipblend.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "fxitequipblend.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "pageid": "sqxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "调入人姓名",
+                    "component": "label",
+                    "label": [
+                        "fxitequipblend.pernr",
+                        "-",
+                        "fxitequipblend.inpostusernm"
+                    ]
+                },
+                {
+                    "title": "所在部门",
+                    "component": "text",
+                    "name": "fxitequipblend.indeptnm"
+                },
+                {
+                    "title": "归属法人单位",
+                    "component": "text",
+                    "name": "fxitequipblend.inpostjurnm"
+                },
+                {
+                    "title": "所在事业部/中心",
+                    "component": "text",
+                    "name": "fxitequipblend.sysbusinessunitname"
+                },
+                {
+                    "title": "调配原因",
+                    "component": "textarea",
+                    "name": "fxitequipblend.result"
+                }
+            ]
+        },
+        {
+            "title": "IT综合管理员处理",
+            "pageid": "zhglycl",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "IT设备编号",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipid"
+                },
+                {
+                    "title": "IT设备名称",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipnm"
+                },
+                {
+                    "title": "IT设备类别",
+                    "component": "text",
+                    "name": "fxitequipblend.itequiptp"
+                },
+                {
+                    "title": "规格型号",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipversion"
+                },
+                {
+                    "title": "设备状态",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipstate"
+                },
+                {
+                    "title": "设备出厂编号",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipoutcode"
+                },
+                {
+                    "title": "原持有人itcode",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipolditcode"
+                },
+                {
+                    "title": "原持有人姓名",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipoldnm"
+                },
+                {
+                    "title": "原所在部门",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipolddeptnm"
+                },
+                {
+                    "title": "所在事业部/中心",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipoldbusinm"
+                },
+                {
+                    "title": "原使用人公司",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipoldcomp"
+                },
+                {
+                    "title": "归属法人单位",
+                    "component": "text",
+                    "name": "fxitequipblend.itequipoldjurnm"
+                }
+            ]
+        },
+        {
+            "title": "IT设备调出人确认",
+            "pageid": "sbdrqr",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "设备内部资料备份情况",
+                    "component": "radio",
+                    "name": "fxitequipblend.itequipbkstate",
+                    "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask4",
+                    "validation":{      
+                    "pageid":"sbdrqr",  
+                    "required":true,  
+                    "validateMsg":"请填写设备内部资料备份情况",     
+                    "regexs":""
+                    },
+                    "options": [
+                        {
+                            "title": "是",
+                            "value": "1"
+                        },
+                        {
+                            "title": "否",
+                            "value": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "IT部运维支持人员填写",
+            "pageid": "ywzcrytx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "检查结果及系统确认",
+                    "component": "textarea",
+                    "name": "fxitequipblend.itconfirm",
+                    "tasknode": "usertask5,usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask5",
+                    "validation":{      
+                    "pageid":"ywzcrytx",  
+                    "required":true,  
+                    "validateMsg":"请填写检查结果及系统确认",     
+                    "regexs":""
+                    }
+                }
+            ]
+        },
+          {
+            "title": "调入人确认接收",
+            "pageid": "drrqrjs",
+            "component": "panel",
+            "subComponents": [
+                  {
+                    "title": "设备内部资料备份情况",
+                    "component": "radio",
+                    "name": "fxitequipblend.receive",
+                    "tasknode": "usertask6",
+                    "editablenode": "usertask6,usertask7,usertask8,usertask9",
+                    "validation":{      
+                    "pageid":"sbdrqr",  
+                    "required":true,  
+                    "validateMsg":"请填写设备内部资料备份情况",     
+                    "regexs":""
+                    },
+                    "options": [
+                        {
+                            "title": "设备正常",
+                            "value": "1"
+                        },
+                        {
+                            "title": "存在问题",
+                            "value": "0"
+                        }
+                    ]
+                },
+                {
+                    "title": "设备问题反馈",
+                    "component": "textarea",
+                    "name": "fxitequipblend.feedback",
+                    "tasknode": "usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask6",
+                    "validation":{      
+                    "pageid":"drrqrjs",  
+                    "required":true,  
+                    "validateMsg":"请填写检查结果及系统确认",     
+                    "regexs":""
+                    }
+                }
+            ]
+        },
+        {
+            "title": "附件信息",
+            "pageid": "fjxx",
+            "component": "panel",
+            "subComponents": []
+        },
+        {
+            "title": "审批记录",
+            "pageid": "spjl",
+            "component": "panel",
+            "subComponents": []
+        }
+    ]
+}

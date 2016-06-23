@@ -1,0 +1,315 @@
+{
+    "id": "it_equipscrap",
+    "handleOnPC": {
+        "tasknode": [
+            ""
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [
+            ""
+        ],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "name": "itequipscrap.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "itequipscrap.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": [
+                        "itequipscrap.pernr",
+                        "-",
+                        "itequipscrap.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": [
+                        "itequipscrap.sysbusinessunitname",
+                        "-",
+                        "itequipscrap.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "itequipscrap.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "pageid": "sqxx",
+            "component": "panel",
+            "subComponents": [
+                
+                {
+                    "title": "IT设备编号",
+                    "component": "text",
+                    "name": "itequipscrap.itequipid"
+                },
+                {
+                    "title": "IT设备名称",
+                    "component": "text",
+                    "name": "itequipscrap.itequipnm"
+                },
+                {
+                    "title": "IT设备类别",
+                    "component": "text",
+                    "name": "itequipscrap.itequiptp"
+                },
+                {
+                    "title": "规格型号",
+                    "component": "text",
+                    "name": "itequipscrap.itequipversion"
+                },
+                {
+                    "title": "设备出厂编号",
+                    "component": "text",
+                    "name": "itequipscrap.itequipoutcode"
+                },
+                {
+                    "title": "原持有人itcode",
+                    "component": "text",
+                    "name": "itequipscrap.itequipolditcode"
+                },
+                {
+                    "title": "原持有人姓名",
+                    "component": "text",
+                    "name": "itequipscrap.itequipoldnm"
+                },
+                {
+                    "title": "原所在部门",
+                    "component": "text",
+                    "name": "itequipscrap.itequipolddeptnm"
+                },
+                {
+                    "title": "所在事业部/中心",
+                    "component": "text",
+                    "name": "itequipscrap.itequipoldbusinm"
+                },
+                {
+                    "title": "原使用人公司",
+                    "component": "text",
+                    "name": "itequipscrap.itequipoldcomp"
+                },
+                {
+                    "title": "归属法人单位",
+                    "component": "text",
+                    "name": "itequipscrap.itequipoldjurnm"
+                },
+                {
+                    "title": "设备状态",
+                    "component": "text",
+                    "name": "itequipscrap.itequipstate"
+                }
+                {
+                    "title": "报废原因",
+                    "component": "textarea",
+                    "name": "itequipscrap.scrapreason"
+                },
+                 {
+                    "title": "IT设备评估工程师",
+                    "component": "textarea",
+                    "name": "itequipscrap.tempb"
+                }
+               
+               
+            ]
+        },
+        {
+            "title": "IT运维工程师评估",
+            "pageid": "ywgcspgyj",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "评估意见",
+                    "component": "textarea",
+                    "name": "itequipscrap.assessment",
+                    "editablenode": "usertask2",
+                    "tasknode":"usertask2",
+                    "validation":{      
+                        "pageid":"ywgcspgyj",  
+                        "required":true,  
+                        "validateMsg":"请填写评估意见",     
+                        "regexs":""
+                    }
+                },
+                {
+                    "title": "报废处理意见",
+                    "component": "textarea",
+                    "name": "itequipscrap.doment",
+                    "editablenode": "usertask2",
+                    "tasknode":"usertask2",
+                    "validation":{      
+                        "pageid":"ywgcspgyj",  
+                        "required":true,  
+                        "validateMsg":"请报废处理意见",     
+                        "regexs":""
+                    }
+                },
+                {
+                    "title": "设备内部资料备份情况",
+                    "component": "radio",
+                    "name": "itequipscrap.itequipbkstate",
+                    "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask4",
+                    "validation":{      
+                    "pageid":"sbdrqr",  
+                    "required":true,  
+                    "validateMsg":"请填写设备内部资料备份情况",     
+                    "regexs":""
+                    },
+                    "options": [
+                        {
+                            "title": "是",
+                            "value": "1"
+                        },
+                        {
+                            "title": "否",
+                            "value": "0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "IT部运维支持人员填写",
+            "pageid": "ywzcrytx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "检查结果及系统确认",
+                    "component": "textarea",
+                    "name": "itequipscrap.itconfirm",
+                    "tasknode": "usertask5,usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask5",
+                    "validation":{      
+                    "pageid":"ywzcrytx",  
+                    "required":true,  
+                    "validateMsg":"请填写检查结果及系统确认",     
+                    "regexs":""
+                    }
+                }
+            ]
+        },
+          {
+            "title": "调入人确认接收",
+            "pageid": "drrqrjs",
+            "component": "panel",
+            "subComponents": [
+                  {
+                    "title": "设备内部资料备份情况",
+                    "component": "radio",
+                    "name": "itequipscrap.receive",
+                    "tasknode": "usertask6",
+                    "editablenode": "usertask6,usertask7,usertask8,usertask9",
+                    "validation":{      
+                    "pageid":"sbdrqr",  
+                    "required":true,  
+                    "validateMsg":"请填写设备内部资料备份情况",     
+                    "regexs":""
+                    },
+                    "options": [
+                        {
+                            "title": "设备正常",
+                            "value": "1"
+                        },
+                        {
+                            "title": "存在问题",
+                            "value": "0"
+                        }
+                    ]
+                },
+                {
+                    "title": "设备问题反馈",
+                    "component": "textarea",
+                    "name": "itequipscrap.feedback",
+                    "tasknode": "usertask6,usertask7,usertask8,usertask9",
+                    "editablenode": "usertask6",
+                    "validation":{      
+                    "pageid":"drrqrjs",  
+                    "required":true,  
+                    "validateMsg":"请填写检查结果及系统确认",     
+                    "regexs":""
+                    }
+                }
+            ]
+        },
+        {
+            "title": "附件信息",
+            "pageid": "fjxx",
+            "component": "panel",
+            "subComponents": []
+        },
+        {
+            "title": "审批记录",
+            "pageid": "spjl",
+            "component": "panel",
+            "subComponents": []
+        }
+    ]
+}
