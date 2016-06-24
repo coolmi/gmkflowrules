@@ -1,0 +1,312 @@
+{
+    "id": "fx_receiveborrow",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "fxreceiveborrow.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "fxreceiveborrow.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["fxreceiveborrow.pernr", "-", "fxreceiveborrow.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["fxreceiveborrow.sysbusinessunitname", "-", "fxreceiveborrow.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "fxreceiveborrow.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "id": "sqdz",
+            "title": "申请动作",
+            "component": "select",
+            "name": "fxreceiveborrow.appaction",
+            "options": [{
+                "title": "领取",
+                "value": "1"
+            },
+            {
+                "title": "借用",
+                "value": "0"
+            }]
+        },
+        {
+            "title": "设备起始日期",
+            "component": "date1",
+            "name": "fxreceiveborrow.sdate",
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "设备归还日期",
+            "component": "date1",
+            "name": "fxreceiveborrow.edate",
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "IT设备名称",
+            "component": "text",
+            "name": "fxreceiveborrow.itbodenameowner",
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["1"]
+            }]
+        },
+        {
+            "title": "设备数量",
+            "component": "text",
+            "name": "fxreceiveborrow.renum",
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["1"]
+            }]
+        },
+        {
+            "title": "借用设备名称",
+            "component": "text",
+            "name": "fxreceiveborrow.bodename",
+        },
+        {
+            "title": "借用/领取原因",
+            "component": "textarea",
+            "name": "fxreceiveborrow.reasons",
+        }]
+    },
+    {
+        "title": "IT综合管理",
+        "pageid": "ITzhgl",
+        "tasknode":"usertask4,usertask5",
+        "component": "panel",
+        "subComponents": [{
+            "title": "IT设备名称",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.itbodename",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+        },
+        {
+            "title": "是否有货",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.whgoods",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["1"]
+            }]
+        },
+        {
+            "title": "IT设备编号",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.itbodepernr",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "IT设备类别",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.itbodecate",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "规格型号",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.specation",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "设备状态",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.eqstate",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "设备出厂编号",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.eqnumber",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "软件确认",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.softval",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "硬件确认",
+            "component": "text",
+            "editablenode": "usertask4",
+            "name": "fxreceiveborrow.hardval",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "IT综合管理填写必须"
+            },
+            "showLinkage": [{
+                "id": "sqdz",
+                "values": ["0"]
+            }]
+        },
+        {
+            "title": "申请人接受确认",
+            "component": "text",
+            "editablenode": "usertask5",
+            "tasknode": "usertask5",
+            "name": "fxreceiveborrow.confirmapp",
+            "validation": {
+                "pageid": "ITzhgl",
+                "required": true,
+                "validationMsg": "申请人接受确认填写必须"
+            },
+        }]
+    },
+    {
+        "title": "附件信息",
+        "pageid": "fjxx",
+        "component": "panel",
+        "subComponents": []
+    },
+    {
+        "title": "审批记录",
+        "pageid": "spjl",
+        "component": "panel",
+        "subComponents": []
+    }]
+}

@@ -1,0 +1,193 @@
+{
+    "id": "fxit_authorityreview",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "SAP用户名",
+            "component": "text",
+            "name": "mainModel.sapusername",
+        },
+        {
+            "title": "使用人",
+            "component": "textarea",
+            "name": "mainModel.syrname",
+        },
+        {
+            "id": "symk",
+            "title": "使用模块",
+            "component": "comma_concat",
+            "name": "mainModel.symk",
+            "refer": "symk"
+        },
+        {
+            "title": "是否跨事业部",
+            "component": "radio",
+            "name": "mainModel.ksyb",
+            "options": [{
+                "title": "否",
+                "value": "1"
+            },
+            {
+                "title": "是",
+                "value": "0"
+            }]
+        },
+        {
+            "title": "使用部门",
+            "component": "text",
+            "name": "mainModel.sybm",
+        },
+        {
+            "title": "现有权限描述",
+            "component": "textarea",
+            "name": "mainModel.xyqxms",
+        },
+        {
+            "title": "权限处理意见",
+            "component": "textarea",
+            "name": "mainModel.qxclyj",
+        }]
+    },
+    {
+        "title": "附件信息",
+        "pageid": "fjxx",
+        "component": "panel",
+        "subComponents": []
+    },
+    {
+        "title": "审批记录",
+        "pageid": "spjl",
+        "component": "panel",
+        "subComponents": []
+    }],
+    "refers": {
+        "symk": {
+            "dataType": "array",
+            "data": [{
+                "value": "a",
+                "text": "FICO"
+            },
+            {
+                "value": "b",
+                "text": "SD"
+            },
+            {
+                "value": "c",
+                "text": "PM"
+            },
+            {
+                "value": "d",
+                "text": "MDM"
+            },
+            {
+                "value": "e",
+                "text": "WM"
+            },
+            {
+                "value": "f",
+                "text": "MM"
+            },
+            {
+                "value": "g",
+                "text": "PP"
+            },
+            {
+                "value": "h",
+                "text": "QM"
+            },
+            {
+                "value": "i",
+                "text": "HR"
+            },
+            {
+                "value": "j",
+                "text": "YZ"
+            }]
+        },
+    }
+}

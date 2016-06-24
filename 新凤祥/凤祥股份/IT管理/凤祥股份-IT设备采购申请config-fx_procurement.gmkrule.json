@@ -152,7 +152,7 @@
             "validation": {
                 "pageid": "sqxx",
                 "required": true,
-                "validationMsg": "IT设备采购申请填写必须"
+                "`val`idationMsg": "IT设备采购申请填写必须"
             }
         },
         {
@@ -225,19 +225,14 @@
             "component": "text",
             "datatype":"money",
             "name": "procurement.sum"
-        }]
-    },
-    {
-        "title": "IT运维工程师评估原设备情况",
-        "pageid": "ITywgcspgysbqk",
-        "component": "panel",
-        "subComponents": [{
+        },
+        {
             "title": "IT运维工程师评估原设备情况",
             "component": "text",
             "editablenode": "usertask1",
             "name": "procurement.originalement",
             "validation": {
-                "pageid": "ITywgcspgysbqk",
+                "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "IT运维工程师评估原设备情况填写必须"
             },
@@ -245,22 +240,53 @@
                 "id": "cgyy",
                 "values": ["1"]
             }]
-        }]
-    },
-    {
-        "title": "IT综合管理员采购执行情况",
-        "pageid": "ITzhglycgzxqk",
-        "tasknode": "usertask7,usertask8,usertask9,usertaskz,usertask11,usertask12",
-        "component": "panel",
-        "subComponents": [{
+        },
+        {
             "title": "IT综合管理员采购执行情况",
             "component": "text",
+            "tasknode": "usertask7,usertask8,usertask9,usertaskz,usertask11,usertask12",
             "editablenode": "usertask7",
             "name": "procurement.proimplement",
             "validation": {
-                "pageid": "ITzhglycgzxqk",
+                "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "IT综合管理员采购执行情况填写必须"
+            },
+        },
+        {
+            "title": "更改资产主数据",
+            "component": "text",
+            "tasknode": "usertaskz,usertask11,usertask12",
+            "editablenode": "usertaskz",
+            "name": "procurement.erpinsimplement",
+            "validation": {
+                "pageid": "jcxx",
+                "required": true,
+                "validationMsg": "更改资产主数据填写必须"
+            },
+        },
+        {
+            "title": "申请人接受确认",
+            "component": "text",
+            "editablenode": "usertask11",
+            "tasknode": "usertask11,usertask12",
+            "name": "procurement.confirmapp",
+            "validation": {
+                "pageid": "jcxx",
+                "required": true,
+                "validationMsg": "申请人接受确认填写必须"
+            },
+        },
+        {
+            "title": "IT综合管理员回收设备情况",
+            "component": "text",
+            "tasknode": "usertask12",
+            "editablenode": "usertask12",
+            "name": "procurement.recycling",
+            "validation": {
+                "pageid": "jcxx",
+                "required": true,
+                "validationMsg": "IT综合管理员回收设备情况填写必须"
             },
         }]
     },
@@ -273,26 +299,31 @@
             "component": "table",
             "basePath": "deliverylist",
             "cells": [{
+                "id":"zcassetnameL",
                 "title": "资产名称",
                 "component": "text",
                 "name": "zcassetname"
             },
             {
+                "id":"detailedL",
                 "title": "详细信息",
                 "component": "text",
                 "name": "detailed"
             },
             {
+                "id":"theuserL",
                 "title": "使用人",
                 "component": "text",
                 "name": "theuser"
             },
             {
+                "id":"zcassetnumberL",
                 "title": "固定资产编号",
                 "component": "text",
                 "name": "zcassetnumber"
             },
             {
+                "id":"purchasingnumL",
                 "title": "采购凭证号",
                 "component": "text",
                 "name": "purchasingnum"
@@ -332,57 +363,6 @@
                 "component": "text",
                 "name": "yaserialnumber"
             }]
-        }]
-    },
-    {
-        "title": "更改资产主数据",
-        "pageid": "ggzczsj",
-        "tasknode": "usertaskz,usertask11,usertask12",
-        "component": "panel",
-        "subComponents": [{
-            "title": "更改资产主数据",
-            "component": "text",
-            "editablenode": "usertaskz",
-            "name": "procurement.erpinsimplement",
-            "validation": {
-                "pageid": "ggzczsj",
-                "required": true,
-                "validationMsg": "更改资产主数据填写必须"
-            },
-        }]
-    },
-    {
-        "title": "申请人接受确认",
-        "pageid": "sqrjsqr",
-        "tasknode": "usertask11,usertask12",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请人接受确认",
-            "component": "text",
-            "editablenode": "usertask11",
-            "name": "procurement.confirmapp",
-            "validation": {
-                "pageid": "sqrjsqr",
-                "required": true,
-                "validationMsg": "申请人接受确认填写必须"
-            },
-        }]
-    },
-    {
-        "title": "IT综合管理员回收设备情况",
-        "pageid": "ITzhglyhssbqk",
-        "tasknode": "usertask12",
-        "component": "panel",
-        "subComponents": [{
-            "title": "IT综合管理员回收设备情况",
-            "component": "text",
-            "editablenode": "usertask12",
-            "name": "procurement.recycling",
-            "validation": {
-                "pageid": "ITzhglyhssbqk",
-                "required": true,
-                "validationMsg": "IT综合管理员回收设备情况填写必须"
-            },
         }]
     },
     {

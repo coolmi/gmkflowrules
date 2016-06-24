@@ -1,0 +1,160 @@
+{
+    "id": "foodhr_overtime",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "二级部门",
+            "component": "text",
+            "name": "mainModel.m_deptnms",
+        },
+        {
+            "component": "table",
+            "basePath": "overtimesublist",
+            "cells": [{
+                "title": "加班日期",
+                "component": "date1",
+                "name": "s_date"
+            },
+            {
+                "title": "加班开始时间",
+                "component": "text",
+                "datatype":"date",
+                "dateFormat":"HH:mm",
+                "name": "s_starttime"
+            },
+            {
+                "title": "加班结束时间",
+                "component": "text",
+                "datatype":"date",
+                "dateFormat":"HH:mm",
+                "name": "s_endtime"
+            },
+            {
+                "title": "排班开始时间",
+                "component": "text",
+                "datatype":"date",
+                "dateFormat":"HH:mm",
+                "name": "s_work_start"
+            },
+            {
+                "title": "排班结束时间",
+                "component": "text",
+                "datatype":"date",
+                "dateFormat":"HH:mm",
+                "name": "s_work_end"
+            },
+            {
+                "title": "休息时长(小时)",
+                "component": "text",
+                "name": "s_relex_hours"
+            },
+            {
+                "title": "加班时长(小时)",
+                "component": "text",
+                "name": "s_work_hours"
+            },
+            {
+                "title": "加班原因",
+                "component": "textarea",
+                "name": "s_why"
+            }]
+        }]
+    },
+    {
+        "title": "附件信息",
+        "pageid": "fjxx",
+        "component": "panel",
+        "subComponents": []
+    },
+    {
+        "title": "审批记录",
+        "pageid": "spjl",
+        "component": "panel",
+        "subComponents": []
+    }]
+}

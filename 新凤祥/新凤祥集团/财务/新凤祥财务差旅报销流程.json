@@ -14,7 +14,7 @@
 		],
 		"beforPop":false
 	},
-	
+
 	"forms": [{
 		"title": "基本信息",
 		"pageid": "jbxx",
@@ -224,7 +224,7 @@
 			],
 			"label" : ["travelreim.ordernum","","travelreim.orderval"]
 		},
-		
+
 		{
 			"id":"reimtype",
 			"title": "报销类别",
@@ -868,11 +868,11 @@
 				}
 			]
 		}
-		
-		
+
+
 		]
-		
-		
+
+
 	},
 	{
 		"title": "附件信息",
@@ -906,8 +906,8 @@
 				"text": "员工其他差旅费"
 			}]
 		},
-	
-	
+
+
 		"trstsyps": {
 			"dataType": "array",
 			"data": [{
