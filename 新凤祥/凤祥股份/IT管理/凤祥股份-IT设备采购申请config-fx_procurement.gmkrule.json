@@ -251,7 +251,7 @@
                 "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "IT综合管理员采购执行情况填写必须"
-            },
+            }
         },
         {
             "title": "更改资产主数据",
@@ -263,7 +263,7 @@
                 "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "更改资产主数据填写必须"
-            },
+            }
         },
         {
             "title": "申请人接受确认",
@@ -275,7 +275,7 @@
                 "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "申请人接受确认填写必须"
-            },
+            }
         },
         {
             "title": "IT综合管理员回收设备情况",
@@ -287,7 +287,7 @@
                 "pageid": "jcxx",
                 "required": true,
                 "validationMsg": "IT综合管理员回收设备情况填写必须"
-            },
+            }
         }]
     },
     {
