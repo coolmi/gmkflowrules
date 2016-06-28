@@ -15,7 +15,7 @@
     "beforPop": false
   },
   "forms": [
-    {
+	{
       "title": "基本信息",
       "pageid": "jbxx",
       "component": "panel",
@@ -53,6 +53,55 @@
           ]
         },
         {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.bukrs"
+        },
+        
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.id"
+        }
+      ]
+    },
+    {
+      "title": "报销人信息",
+      "pageid": "bxrxx",
+      "component": "panel",
+      "subComponents": [
+        
+        {
           "title": "员工ITCODE",
           "component": "text",
           "editablenode": "",
@@ -75,11 +124,6 @@
           "component": "text",
           "editablenode": "",
           "name": "reimburse.sysbusinessunitname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.bukrs"
         },
         {
           "title": "所在公司",
@@ -122,42 +166,8 @@
           "component": "text",
           "editablenode": "",
           "name": "afuser.banka"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.userid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.username"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.syspostname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.sysdeptid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.sysbusinessunitid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.postid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "reimburse.id"
         }
+        
       ]
     },
     {
