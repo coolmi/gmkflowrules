@@ -131,6 +131,19 @@ radio:联动
   }]
 },
 
+//选人的操作
+"forSelectPerson":{
+		"onclick":"getuser",	//调用的方法
+		"valuetype":["aaa","bbb"],		//实际提交的字段值
+		"showtype":["objid","ccc"],		//实际显示的字段值
+		"postshow":true,
+		"showformname":"",		//
+	},
+
+
+
+
+
 针对字段属性说明：
 id://唯一标识，解析规则中不可重复
 component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2
