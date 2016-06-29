@@ -81,7 +81,13 @@
             "title": "",
             "component": "hidden",
             "name": "fxSapNeedChange.id"
-        }]
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "fxSapNeedChange.proc_inst_id"
+        }
+		]
     },
     {
         "title": "申请信息",

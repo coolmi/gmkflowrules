@@ -1,7 +1,7 @@
 {
     "id": "fxit_saptransfer",
     "handleOnPC": {
-        "tasknode": ["usertask2"],
+        "tasknode": ["usertask2","usertask4","usertask5"],
         "flag": ["resubmit"]
     },
     "selectPerson": {
@@ -144,14 +144,22 @@
             },
             {
                 "title": "是否成功",
-                "component": "text",
-                "tasknode": "usertask3",
-                "name": "tstok"
+                "component": "select",
+                "editablenode": "usertask2",
+                "name": "tstok",
+				"options": [{
+					"title": "是",
+					"value": "是"
+				},
+				{
+					"title": "否",
+					"value": "否"
+				}]
             },
             {
                 "title": "测试结果备注",
                 "component": "textarea",
-                "tasknode": "usertask3",
+                "editablenode": "usertask2",
                 "name": "tstremark"
             },
             ]

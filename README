@@ -1,4 +1,6 @@
 流程规则库
+//后续规则请把 proc_inst_id 作为hidden 型  写上，查看审批记录会用到
+
 
 流程文件体结构如下：
 {
@@ -140,7 +142,17 @@ radio:联动
 		"showformname":"",		//
 	},
 
+//表单详情的点击事件 [根据eventType 查看其它表单、打开网页查看、查看文档等]
 
+"events":{
+		"eventType":"viewOther",			//事件类型 viewOther openUrl openHtml openDocument
+		"openurl":"",
+		"openhtml":"",
+		"otherKey":"fxit_sapneedchangeapp", //写死对应流程key
+		"otherName":"SAP需求变更申请",		//写死对应流程name
+		"procInstId":"fxitSapTransfer.tempa",	//
+		"businessKey":"fxitSapTransfer.tempb"
+	},
 
 
 
