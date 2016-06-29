@@ -153,6 +153,15 @@ radio:联动
 		"procInstId":"fxitSapTransfer.tempa",	//
 		"businessKey":"fxitSapTransfer.tempb"
 	},
+	
+//敏感信息的连接型
+{
+            "title": "使用模块",
+            "component": "comma_concat",
+			"datatype":"sensitive",
+            "name": "sappermissionapplyapp.symksfmg",
+			"refer" : "symk"
+        },
 
 
 

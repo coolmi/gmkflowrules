@@ -77,6 +77,11 @@
             "component": "hidden",
             "name": "fxitSapTransfer.postid"
         },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "fxitSapTransfer.proc_inst_id"
+        },
         {
             "title": "",
             "component": "hidden",
@@ -110,6 +115,13 @@
             "title": "SAP变更需求单号",
             "component": "text",
             "name": "fxitSapTransfer.tempa",
+			"events":{
+				"eventType":"viewOther",
+				"otherKey":"fxit_sapneedchangeapp",
+				"otherName":"SAP需求变更申请",
+				"procInstId":"fxitSapTransfer.tempa",
+				"businessKey":"fxitSapTransfer.tempb"
+			},
             "showLinkage": [{
                 "id": "cslx",
                 "values": ["1"]
@@ -119,6 +131,13 @@
             "title": "SAP权限申请单号",
             "component": "text",
             "name": "fxitSapTransfer.permissionno",
+			"events":{
+				"eventType":"viewOther",
+				"otherKey":"fxit_sappermissionapply",
+				"otherName":"SAP系统权限申请",
+				"procInstId":"fxitSapTransfer.permissionno",
+				"businessKey":"fxitSapTransfer.permissionno_id"
+			},
             "showLinkage": [{
                 "id": "cslx",
                 "values": ["2"]
@@ -164,17 +183,5 @@
             },
             ]
         }]
-    },
-    {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
-    },
-    {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
     }]
 }
