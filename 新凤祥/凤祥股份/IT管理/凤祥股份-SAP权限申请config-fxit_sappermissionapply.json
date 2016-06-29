@@ -1,0 +1,203 @@
+{
+    "id": "fxit_sappermissionapply",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "sappermissionapplyapp.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "sappermissionapplyapp.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["sappermissionapplyapp.pernr", "-", "sappermissionapplyapp.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["sappermissionapplyapp.sysbusinessunitname", "-", "sappermissionapplyapp.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.id"
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "sappermissionapplyapp.proc_inst_id"
+        }
+		]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "使用人",
+            "component": "text",
+            "name": "sappermissionapplyapp.module"
+        },
+		{
+            "title": "ITCode",
+            "component": "text",
+            "name": "sappermissionapplyapp.owneritcode"
+        },
+        {
+            "title": "联系方式",
+            "component": "text",
+            "name": "sappermissionapplyapp.ownermobile"
+        },
+		{
+            "title": "使用人公司",
+            "component": "text",
+            "name": "sappermissionapplyapp.ownersyscompany"
+        },
+		{
+            "title": "使用人部门",
+            "component": "text",
+            "name": "sappermissionapplyapp.ownerdept"
+        },
+		{
+            "title": "使用系统",
+            "component": "text",
+            "name": "sappermissionapplyapp.syxt",
+			"options": [{
+					"text": "",
+					"value": "请选择"
+				},
+				{
+					"text": "生产系统",
+					"value": "0"
+				},
+				{
+					"text": "测试系统",
+					"value": "1"
+				},
+				{
+					"text": "开发系统",
+					"value": "2"
+				}
+			]
+        },
+		{
+            "title": "Sap系统用户名",
+            "component": "text",
+            "name": "sappermissionapplyapp.xtyhm"
+        },
+		{
+            "title": "使用模块",
+            "component": "comma_concat",
+			"datatype":"sensitive",
+            "name": "sappermissionapplyapp.symksfmg",
+			"refer" : "symk"
+        },
+	
+        {
+            "title": "权限申请描述",
+            "component": "textarea",
+			"rows":"3",
+            "name": "sappermissionapplyapp.qxsqms"
+			
+			
+        }]
+    }],
+	"refers": {
+		"symk": {
+			"dataType": "array",
+			"data": [{
+				"value": "FICO",
+				"text": "FICO"
+			},
+			{
+				"value": "MM",
+				"text": "MM"
+			},
+			{
+				"value": "SD",
+				"text": "SD"
+			},
+			{
+				"value": "WM",
+				"text": "WM"
+			},
+			{
+				"value": "PP",
+				"text": "PP"
+			},
+			{
+				"value": "QM",
+				"text": "QM"
+			},
+			{
+				"value": "PM",
+				"text": "PM"
+			},
+			{
+				"value": "HR",
+				"text": "HR"
+			}
+			]
+		}
+	}
+}
