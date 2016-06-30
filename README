@@ -154,7 +154,16 @@ radio:联动
 		"otherKey":"fxit_sapneedchangeapp", //仅限viewOther 写死对应流程key
 		"otherName":"SAP需求变更申请",		//仅限viewOther写死对应流程name
 		"procInstId":"fxitSapTransfer.tempa",	//仅限viewOther 需要改接口
-		"businessKey":"fxitSapTransfer.tempb"	//仅限viewOther	需要改接口
+		"businessKey":"fxitSapTransfer.tempb"	//仅限viewOther	需要改接口 
+		/*
+			注意：
+			代办差旅报销af_feefoodgenerapp 中，查看出差表单，"businessKey":"travelid"
+			SAP需求变更传输申请fxit_saptransfer中，
+			SAP变更需求单号 查看需求变更单  是 tempa tempb
+			SAP权限申请单号 查看权限申请单  是 permissionno 和  permissionno_id
+			
+			
+		*/
 	},
 	
 //敏感信息的连接型

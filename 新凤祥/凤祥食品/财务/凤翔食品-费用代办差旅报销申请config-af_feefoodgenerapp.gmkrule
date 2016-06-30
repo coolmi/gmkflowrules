@@ -260,10 +260,10 @@
           "name": "reimburse.atrlnr",
 		  "events":{
 				"eventType":"viewOther",				
-				"otherKey":"fxsp-cw-ccapp", 
+				"otherKey":"fxsp-cw-ccapp",
 				"otherName":"员工出差申请",		
-				"procInstId":"reimburse.tempa",
-				"businessKey":"reimburse.tempb"
+				"procInstId":"reimburse.atrlnr",
+				"businessKey":"travelid"
 			},
         }
         
