@@ -145,9 +145,9 @@ radio:联动
 //表单详情的点击事件 [根据eventType 查看其它表单、打开网页查看、查看文档等]
 
 "events":{
-		"eventType":"viewOther",			//事件类型 viewOther openUrl openHtml openDocument
+		"eventType":"viewOther",			//事件类型 viewOther openUrl openHtml openDocument  openHtmlContent
 		"openurl":"",	//仅限 openUrl
-		"openhtml":"",	//仅限 openHtml
+		"openhtml":"path.to.html",	//仅限 openHtml
 		"filename":"",	//仅限 openDocument
 		"afrescoid":"", //仅限 openDocument
 		
@@ -161,10 +161,8 @@ radio:联动
 			SAP需求变更传输申请fxit_saptransfer中，
 			SAP变更需求单号 查看需求变更单  是 tempa tempb
 			SAP权限申请单号 查看权限申请单  是 permissionno 和  permissionno_id
-			
-			
 		*/
-	},
+}
 	
 //敏感信息的连接型
 {
