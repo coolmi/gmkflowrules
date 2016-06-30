@@ -95,8 +95,8 @@
         "component": "panel",
         "subComponents": [{
             "title": "使用人",
-            "component": "text",
-            "name": "sappermissionapplyapp.module"
+            "component": "label",
+			"label": ["sappermissionapplyapp.owneritcode", "-", "sappermissionapplyapp.ownername", "-", "sappermissionapplyapp.syspostname"]
         },
 		{
             "title": "ITCode",
@@ -158,8 +158,6 @@
             "component": "textarea",
 			"rows":"3",
             "name": "sappermissionapplyapp.qxsqms"
-			
-			
         }]
     }],
 	"refers": {

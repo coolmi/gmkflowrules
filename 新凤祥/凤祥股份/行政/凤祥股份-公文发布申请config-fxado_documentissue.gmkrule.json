@@ -154,26 +154,38 @@
                 "component": "text",
                 "name": "documentissue.mainsend"
             },
-                {
-                    "title": "抄送",
-                    "component": "text",
-                    "name": "documentissue.copysend"
-                },
-                {
-                    "title": "主题词",
-                    "component": "text",
-                    "name": "documentissue.subword"
-                },
-                {
-                    "title": "份数",
-                    "component": "text",
-                    "name": "documentissue.num"
-                },
-                {
-                    "title": "发布范围",
-                    "component": "textarea",
-                    "name": "documentissue.selscope"
-                }
+			{
+				"title": "抄送",
+				"component": "text",
+				"name": "documentissue.copysend"
+			},
+			{
+				"title": "主题词",
+				"component": "text",
+				"name": "documentissue.subword"
+			},
+			{
+				"title": "份数",
+				"component": "text",
+				"name": "documentissue.num"
+			},
+			{
+				"title": "发布范围",
+				"component": "textarea",
+				"name": "documentissue.selscope"
+			},
+			{
+				"title": "公文附件",
+				"component": "text",
+				"name": "documentissue.docmentafresconame",
+				"events":{
+					"eventType":"openDocument",	
+					"filename":"documentissue.docmentafresconame",
+					"afrescoid":"documentissue.docmentafrescoid",
+					
+				}
+			
+			}
         ]
     }
     ]
