@@ -1,0 +1,337 @@
+{
+  "id": "zitsblyh",
+  "handleOnPC": {
+    "tasknode": [
+      "",
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "budgetadd.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "budgetadd.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "budgetadd.pernr",
+            "-",
+            "budgetadd.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "budgetadd.sysbusinessunitname",
+            "-",
+            "budgetadd.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.id"
+        }
+      ]
+    },
+    {
+      "title": "领用申请详细信息",
+      "pageid": "lysqxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "basePath": "childlist",
+          "cells": [
+            {
+              "title": "资产类别",
+              "component": "select",
+              "name": "ascatg",
+              "options": [
+                {
+                  "title": "办公用品",
+                  "value": "办公用品"
+                },
+                {
+                  "title": "电脑外设",
+                  "value": "电脑外设"
+                },
+                {
+                  "title": "运维材料",
+                  "value": "运维材料"
+                }
+              ]
+            },
+            {
+              "title": "资产描述",
+              "component": "select",
+              "name": "propertyname",
+              "options": [
+                {
+                  "title": "鼠标",
+                  "value": "鼠标"
+                },
+                {
+                  "title": "控制线缆",
+                  "value": "控制线缆"
+                },
+                {
+                  "title": "网线",
+                  "value": "网线"
+                }
+              ]
+
+            },
+            {
+              "title": "领用原因",
+              "component": "text",
+              "name": "zlyyy"
+            },
+            {
+              "title": "使用人ITOCDE",
+              "component": "text",
+              "name": "zsyitcode"
+            },
+            {
+              "title": "申请数量",
+              "component": "textarea",
+              "name": "zsqsl"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            },
+            {
+              "title": "申请日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "zsbffrq"
+            }
+          ]
+        }]
+    },
+    {
+      "title": "领用申请详细信息",
+      "pageid": "lysqxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "basePath": "childlist",
+          "cells": [
+            {
+              "title": "资产类别",
+              "component": "select",
+              "name": "ascatg",
+              "options": [
+                {
+                  "title": "办公用品",
+                  "value": "办公用品"
+                },
+                {
+                  "title": "电脑外设",
+                  "value": "电脑外设"
+                },
+                {
+                  "title": "运维材料",
+                  "value": "运维材料"
+                }
+              ]
+            },
+            {
+              "title": "资产描述",
+              "component": "select",
+              "name": "propertyname",
+              "options": [
+                {
+                  "title": "鼠标",
+                  "value": "鼠标"
+                },
+                {
+                  "title": "控制线缆",
+                  "value": "控制线缆"
+                },
+                {
+                  "title": "网线",
+                  "value": "网线"
+                }
+              ]
+
+            },
+            {
+              "title": "领用原因",
+              "component": "text",
+              "name": "zlyyy"
+            },
+            {
+              "title": "使用人ITOCDE",
+              "component": "text",
+              "name": "zsyitcode"
+            },
+            {
+              "title": "申请数量",
+              "component": "textarea",
+              "name": "zsqsl"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            },
+            {
+              "title": "申请日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "zsbffrq"
+            }
+          ]
+        }]
+    },
+    {
+      "title": "IT固定资产管理员发放信息",
+      "pageid": "ITgdzcglyffxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "basePath": "childlist",
+          "cells": [
+            {
+              "title": "资产类别",
+              "component": "select",
+              "name": "ascatg",
+              "options": [
+                {
+                  "title": "办公用品",
+                  "value": "办公用品"
+                },
+                {
+                  "title": "电脑外设",
+                  "value": "电脑外设"
+                },
+                {
+                  "title": "运维材料",
+                  "value": "运维材料"
+                }
+              ]
+            },
+            {
+              "title": "资产描述",
+              "component": "select",
+              "name": "propertyname",
+              "options": [
+                {
+                  "title": "鼠标",
+                  "value": "鼠标"
+                },
+                {
+                  "title": "控制线缆",
+                  "value": "控制线缆"
+                },
+                {
+                  "title": "网线",
+                  "value": "网线"
+                }
+              ]
+
+            },
+            {
+              "title": "领用原因",
+              "component": "text",
+              "name": "zlyyy"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            }, {
+              "title": "库存数量",
+              "component": "text",
+              "name": "zkcsl"
+            }, {
+              "title": "设备运行状态",
+              "component": "text",
+              "name": "zkcsl"
+            }, {
+              "title": "库存数量",
+              "component": "text",
+              "name": "zkcsl"
+            }, {
+              "title": "库存数量",
+              "component": "text",
+              "name": "zkcsl"
+            },
+          ]
+        }]
+    }]
+}
