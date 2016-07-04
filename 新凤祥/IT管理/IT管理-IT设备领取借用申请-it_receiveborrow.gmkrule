@@ -1,0 +1,374 @@
+{
+  "id": "it_receiveborrow",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+	{
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "receiveborrow.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "receiveborrow.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "receiveborrow.pernr",
+            "-",
+            "receiveborrow.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "receiveborrow.sysbusinessunitname",
+            "-",
+            "receiveborrow.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.bukrs"
+        },
+        
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.id"
+        },
+		{
+          "title": "",
+          "component": "hidden",
+          "name": "receiveborrow.proc_inst_id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请动作",
+          "component": "select",
+		  "id": "appaction",
+          "editablenode": "",
+          "name": "receiveborrow.appaction",
+		  "options": [
+            {
+              "text": "借用",
+              "value": "借用"
+            },
+            {
+              "text": "领取",
+              "value": "领取"
+            }
+          ]
+        },
+		{
+          "title": "设备起始日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "receiveborrow.sdate",
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "设备归还日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "receiveborrow.edate",
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		
+		{
+          "title": "借用设备名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "receiveborrow.bodename"
+        },
+		{
+          "title": "借用/领取原因",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
+          "name": "receiveborrow.reasons"
+        },
+		{
+          "title": "IT设备名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "receiveborrow.itbodenameowner",
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["领取"]
+				}
+			]
+        },
+		{
+          "title": "设备数量",
+          "component": "text",
+          "editablenode": "",
+          "name": "receiveborrow.renum",
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["领取"]
+				}
+			]
+        }
+		
+      ]
+    },
+	{
+      "title": "IT综合管理",
+      "pageid": "itzhgl",
+	  "tasknode":"usertask4,usertask5",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "IT设备名称",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.itbodename",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写IT设备名称",
+				"regexs":""
+		  }
+        },
+		{
+          "title": "是否有货",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.whgoods",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写是否有货",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["领取"]
+				}
+			]
+        },
+		{
+          "title": "IT设备编号",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.itbodepernr",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写IT设备编号",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "IT设备类别",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.itbodecate",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写IT设备类别",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "规格型号",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.specation",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写规格型号",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "设备状态",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.eqstate",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写设备状态",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "设备出厂编号",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.eqnumber",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写设备出厂编号",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "软件确认",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.softval",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写软件确认",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        },
+		{
+          "title": "硬件确认",
+          "component": "text",
+          "editablenode": "usertask4",
+          "name": "receiveborrow.hardval",
+		  "validation":{
+				"pageid":"itzhgl",
+				"required":true,
+				"validateMsg":"请填写硬件确认",
+				"regexs":""
+		  },
+		  "showLinkage":[
+				{
+					"id":"appaction",
+					"values":["借用"]
+				}
+			]
+        }
+		
+		
+      ]
+    },
+	{
+      "title": "申请人接收确认",
+      "pageid": "sqrjsqr",
+	  "tasknode":"usertask5",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "IT设备名称",
+          "component": "textarea",
+          "editablenode": "usertask5",
+          "name": "receiveborrow.confirmapp"
+        }
+		
+      ]
+    }
+	
+	
+  ]
+}
