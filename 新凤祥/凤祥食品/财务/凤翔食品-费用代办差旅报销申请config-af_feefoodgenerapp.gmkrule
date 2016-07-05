@@ -1,5 +1,5 @@
 {
-  "id": "af_feetfoodapp",
+  "id": "af_feefoodgenerapp",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -92,6 +92,11 @@
           "title": "",
           "component": "hidden",
           "name": "reimburse.id"
+        },
+		{
+          "title": "",
+          "component": "hidden",
+          "name": "reimburse.proc_inst_id"
         }
       ]
     },
@@ -103,33 +108,44 @@
         
         {
           "title": "员工ITCODE",
-          "component": "text",
+          "component": "label",
           "editablenode": "",
-          "name": "reimburse.userid"
+		  "label": [
+            "afuser.userid",
+            "-",
+            "afuser.ename"
+          ]
         },
         {
           "title": "员工编号",
           "component": "text",
           "editablenode": "",
-          "name": "reimburse.pernr"
+          "name": "afuser.pernr"
         },
         {
           "title": "员工所在部门",
           "component": "text",
           "editablenode": "",
-          "name": "reimburse.sysdeptname"
+          "name": "afuser.orgeh"
         },
         {
           "title": "职能中心/事业部",
           "component": "text",
           "editablenode": "",
-          "name": "reimburse.sysbusinessunitname"
+          "name": "afuser.stext"
         },
-        {
+		{
           "title": "所在公司",
-          "component": "text",
+          "component": "label",
           "editablenode": "",
-          "name": "reimburse.cdbukrsname"
+		  "middleName":[
+			"afuser.bukrs",
+			"bukrs"
+			],
+		  "label": ["afuser.bukrs",
+			"-",
+			"bukrlists.butxt"],		  
+          "name": "afuser.bukrs"
         },
         {
           "title": "邮箱",
@@ -154,6 +170,12 @@
           "component": "text",
           "editablenode": "",
           "name": "afuser.lifnr"
+        },
+		{
+          "title": "代办手机号",
+          "component": "text",
+          "editablenode": "",
+          "name": "afuser.gtelpr"
         },
         {
           "title": "员工银行账号",
@@ -224,19 +246,27 @@
           "editablenode": "",
           "name": "reimburse.numpg"
         },
-        {
-          "title": "出差申请单号",
-          "component": "text",
-          "editablenode": "",
-          "name": "reimburse.atrlnr"
-        },
-        {
+		{
           "title": "说明",
           "component": "textarea",
           "rows": "3",
           "editablenode": "",
           "name": "reimburse.smemo"
+        },
+        {
+          "title": "出差申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "reimburse.atrlnr",
+		  "events":{
+				"eventType":"viewOther",				
+				"otherKey":"fxsp-cw-ccapp",
+				"otherName":"员工出差申请",		
+				"procInstId":"reimburse.atrlnr",
+				"businessKey":"travelid"
+			},
         }
+        
       ]
     },
     {
@@ -1687,18 +1717,6 @@
           ]
         }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ],
   "refers": {

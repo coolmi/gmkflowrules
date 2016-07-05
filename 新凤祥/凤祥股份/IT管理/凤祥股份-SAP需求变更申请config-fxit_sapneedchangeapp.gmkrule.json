@@ -1,7 +1,7 @@
 {
     "id": "fxit_sapneedchangeapp",
     "handleOnPC": {
-        "tasknode": ["xxglbpd"],
+        "tasknode": [""],
         "flag": ["resubmit"]
     },
     "selectPerson": {
@@ -81,7 +81,13 @@
             "title": "",
             "component": "hidden",
             "name": "fxSapNeedChange.id"
-        }]
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "fxSapNeedChange.proc_inst_id"
+        }
+		]
     },
     {
         "title": "申请信息",
@@ -90,7 +96,7 @@
         "subComponents": [{
             "title": "使用模块",
             "component": "text",
-            "name": "fxSapNeedChange.module",
+            "name": "fxSapNeedChange.module"
         },
         {
             "title": "是否重要",
@@ -121,17 +127,36 @@
         {
             "title": "手机号码",
             "component": "text",
-            "name": "fxSapNeedChange.mobile",
+            "name": "fxSapNeedChange.mobile"
+        },
+		{
+            "title": "ERP内部顾问",
+            "component": "text",
+			"editablenode":"xxglbpd",
+			"notShowOnView":true,
+			"forSelectPerson":{
+				"onclick":"getuser",
+				"postshow":true,
+				"showformname":"nbgwtext",
+				"valuetype":["objid"],
+				"showtype":["objid","nachn","stext"],
+			},
+            "name": "fxSapNeedChange.nbgw",
+			"validation": {
+                "pageid": "sqxx",
+                "required": true,
+                "validationMsg": "请选择内部顾问"
+            }
         },
         {
             "title": "业务现状描述",
             "component": "textarea",
-            "name": "fxSapNeedChange.syscurrentms",
+            "name": "fxSapNeedChange.syscurrentms"
         },
         {
             "title": "未来系统业务描述",
             "component": "textarea",
-            "name": "fxSapNeedChange.sysfuturems",
+            "name": "fxSapNeedChange.sysfuturems"
         },
         {
             "title": "内部顾问给出建议",
@@ -143,7 +168,7 @@
                 "pageid": "sqxx",
                 "required": true,
                 "validationMsg": "内部顾问给出建议填写必须"
-            },
+            }
         }]
     },
     {

@@ -1,4 +1,6 @@
 流程规则库
+//后续规则请把 proc_inst_id 作为hidden 型  写上，查看审批记录会用到
+
 
 流程文件体结构如下：
 {
@@ -92,7 +94,7 @@ radio:联动
 			"allT001List.butxt"]
 }
 
-//map
+//linkToMap
 {
   "title": "休假人本年度休假情况",
   "pageid": "xjrbndxjqk",
@@ -131,10 +133,64 @@ radio:联动
   }]
 },
 
+//表单中的选人的操作 (可参见 新凤祥/凤祥股份/IT管理/凤祥股份-SAP需求变更申请 fxit_sapneedchangeapp )
+"forSelectPerson":{
+		"onclick":"getuser",	//调用的方法
+		"valuetype":["aaa","bbb"],		//实际提交的字段值
+		"showtype":["objid","ccc"],		//实际显示的字段值
+		"postshow":true,
+		"showformname":"",		//
+	},
+
+//表单详情的点击事件 [根据eventType 查看其它表单、打开网页查看、查看文档等]
+
+"events":{
+		"eventType":"viewOther",			//事件类型 viewOther openUrl openHtml openDocument  openHtmlContent
+		"openurl":"",	//仅限 openUrl
+		"openhtml":"path.to.html",	//仅限 openHtml
+		"filename":"",	//仅限 openDocument
+		"afrescoid":"", //仅限 openDocument
+		
+		"otherKey":"fxit_sapneedchangeapp", //仅限viewOther 写死对应流程key
+		"otherName":"SAP需求变更申请",		//仅限viewOther写死对应流程name
+		"procInstId":"fxitSapTransfer.tempa",	//仅限viewOther 需要改接口
+		"businessKey":"fxitSapTransfer.tempb"	//仅限viewOther	需要改接口 
+		/*
+			注意：
+			代办差旅报销af_feefoodgenerapp 中，查看出差表单，"businessKey":"travelid"
+			SAP需求变更传输申请fxit_saptransfer中，
+			SAP变更需求单号 查看需求变更单  是 tempa tempb
+			SAP权限申请单号 查看权限申请单  是 permissionno 和  permissionno_id
+		*/
+}
+	
+//敏感信息的连接型 comma_concat 中的一支，依据datetype 区分
+//接口返回的value值如：",AA1,BB0,CC1,DD1,FF0," 
+//新凤祥/凤祥股份/IT管理/凤祥股份-SAP权限申请具体流程可参见 fxit_sappermissionapply 
+{
+            "title": "使用模块",
+            "component": "comma_concat",
+			"datatype":"sensitive",
+            "name": "sappermissionapplyapp.symksfmg",
+			"refer" : "symk"
+        },
+
+
+		
+		
+		
+		
+//select 的option 的分支，在接口中 指向 maplist (参见 it_itempurch )
+"refersToArray":{
+		"basePath":"maplist",
+		"value":"objid",
+		"text":["nachn","-","stext"]
+	}
+
 针对字段属性说明：
 id://唯一标识，解析规则中不可重复
-component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2
-datatype://组件显示数据类型：string date1 date2 date3 date4 date5 date  money2dx等
+component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2  comma_concat(类似用逗号隔开值"1,2,3,")
+datatype://组件显示数据类型：string date1 date2 date3 date4 date5 date money(取小数点后两位) money2dx等, 新增sensitive[comma_concat 时可用的，敏感的checkbox]
 dateFormat://时间显示格式，如yyyy-MM-dd HH:mm:ss.S
 tasknode://可显示环节key，若无则默认显示
 editablenode://可编辑字段环节key，在特定环节时可编辑

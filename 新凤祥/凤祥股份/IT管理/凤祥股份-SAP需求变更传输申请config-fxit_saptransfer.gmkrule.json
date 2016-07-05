@@ -1,7 +1,7 @@
 {
     "id": "fxit_saptransfer",
     "handleOnPC": {
-        "tasknode": ["usertask2"],
+        "tasknode": ["usertask2","usertask4","usertask5"],
         "flag": ["resubmit"]
     },
     "selectPerson": {
@@ -77,6 +77,11 @@
             "component": "hidden",
             "name": "fxitSapTransfer.postid"
         },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "fxitSapTransfer.proc_inst_id"
+        },
         {
             "title": "",
             "component": "hidden",
@@ -110,6 +115,13 @@
             "title": "SAP变更需求单号",
             "component": "text",
             "name": "fxitSapTransfer.tempa",
+			"events":{
+				"eventType":"viewOther",
+				"otherKey":"fxit_sapneedchangeapp",
+				"otherName":"SAP需求变更申请",
+				"procInstId":"fxitSapTransfer.tempa",
+				"businessKey":"fxitSapTransfer.tempb"
+			},
             "showLinkage": [{
                 "id": "cslx",
                 "values": ["1"]
@@ -119,6 +131,13 @@
             "title": "SAP权限申请单号",
             "component": "text",
             "name": "fxitSapTransfer.permissionno",
+			"events":{
+				"eventType":"viewOther",
+				"otherKey":"fxit_sappermissionapply",
+				"otherName":"SAP系统权限申请",
+				"procInstId":"fxitSapTransfer.permissionno",
+				"businessKey":"fxitSapTransfer.permissionno_id"
+			},
             "showLinkage": [{
                 "id": "cslx",
                 "values": ["2"]
@@ -144,29 +163,25 @@
             },
             {
                 "title": "是否成功",
-                "component": "text",
-                "tasknode": "usertask3",
-                "name": "tstok"
+                "component": "select",
+                "editablenode": "usertask2",
+                "name": "tstok",
+				"options": [{
+					"title": "是",
+					"value": "是"
+				},
+				{
+					"title": "否",
+					"value": "否"
+				}]
             },
             {
                 "title": "测试结果备注",
                 "component": "textarea",
-                "tasknode": "usertask3",
+                "editablenode": "usertask2",
                 "name": "tstremark"
             },
             ]
         }]
-    },
-    {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
-    },
-    {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
     }]
 }

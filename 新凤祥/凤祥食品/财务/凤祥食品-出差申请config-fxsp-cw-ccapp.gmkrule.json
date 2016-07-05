@@ -96,7 +96,12 @@
 			"title": "",
 			"component": "hidden",
 			"name": "travel.id"
-		}]
+		},
+		{
+          "title": "",
+          "component": "hidden",
+          "name": "travel.proc_inst_id"
+        }]
 	},
 	{
 		"title": "出差申请明细",
