@@ -1,0 +1,170 @@
+{
+    "id": "gdzc_inventory",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "归属公司",
+            "component": "text",
+            "name": "mainModel.compnm"
+        },
+        {
+            "title": "归属事业部",
+            "component": "text",
+            "name": "mainModel.ownsybnm"
+        },
+        {
+            "title": "归属成本中心",
+            "component": "text",
+            "name": "mainModel.owncbzxnm"
+        },
+        {
+            "title": "归属成本中心名称",
+            "component": "text",
+            "name": "mainModel.owncbzxnm"
+        },
+        {
+            "component": "table",
+            "basePath": "alist",
+            "cells": [{
+                "title": "盘亏/盘盈",
+                "component": "text",
+                "name": "istate"
+            },
+            {
+                "title": "所属部门",
+                "component": "text",
+                "name": "departmentnm"
+            },
+            {
+                "title": "资产描述",
+                "component": "text",
+                "name": "propertyname"
+            },
+            {
+                "title": "规格",
+                "component": "text",
+                "name": "specification"
+            },
+            {
+                "title": "型号",
+                "component": "text",
+                "name": "model"
+            },
+            {
+                "title": "品牌",
+                "component": "text",
+                "name": "brand"
+            },
+            {
+                "title": "数量",
+                "component": "text",
+                "name": "amount"
+            },
+            {
+                "title": "单位",
+                "component": "text",
+                "name": "prounit"
+            },
+            {
+                "title": "资产评估价值",
+                "component": "text",
+                "name": "valueasset"
+            },
+            {
+                "title": "业务盘点人员",
+                "component": "text",
+                "name": "usernm1"
+            },
+            {
+                "title": "财务核实人员",
+                "component": "text",
+                "name": "usernm2"
+            }]
+        }]
+    }]
+}
