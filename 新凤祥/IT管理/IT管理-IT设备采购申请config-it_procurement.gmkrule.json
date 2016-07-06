@@ -370,17 +370,5 @@
                 "name": "yaserialnumber"
             }]
         }]
-    },
-    {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
-    },
-    {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
     }]
 }

@@ -1,0 +1,225 @@
+{
+    "id": "fxit_sapcheckaccount",
+    "handleOnPC": {
+        "tasknode": ["basisgwcl"],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.proc_inst_id"
+        }
+		]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "使用系统",
+            "component": "select",
+            "name": "mainModel.syxt",
+			"options":[
+				{
+					"text":"祥光集团生产系统",
+					"value":"0"
+				},
+				{
+					"text":"凤祥股份生产系统",
+					"value":"1"
+				},
+				{
+					"text":"祥光集团测试机",
+					"value":"2"
+				},
+				{
+					"text":"凤祥股份测试机",
+					"value":"3"
+				},
+				{
+					"text":"祥光集团开发机",
+					"value":"4"
+				},
+				{
+					"text":"凤祥股份开发机",
+					"value":"5"
+				}
+			
+			]
+			
+        },
+        {
+            "title": "处理类型",
+            "component": "select",
+            "name": "mainModel.cllx",
+			"options":[
+				{
+					"text":"锁定用户",
+					"value":"1"
+				}
+			
+			]
+        },
+		{
+            "title": "排查用户名",
+            "component": "text",
+            "name": "mainModel.pcyhm"
+        },
+		{
+            "title": "查询限制天数",
+            "component": "text",
+            "name": "mainModel.cxxzts"
+        }]
+    },
+    {
+        "title": "查询结果",
+        "pageid": "cxjg",
+        "component": "panel",
+        "subComponents": [
+			{
+              "title": "",
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "tabletype": "looppanel",
+              "basePath": "infolist",
+			  "id": "infolist",
+              "linkForms": [
+                {
+                  "title": "",
+                  "title1": "SAP用户名",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "sapusername"
+                  
+                },
+                {
+                  "title": "",
+                  "title1": "上次登录日期",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "lastlogintime"
+                },
+				{
+				  "title": "",
+				  "title1": "用户类型",
+				  "component": "text",
+				  "editablenode": "",
+				  "name": "yhlx"
+				},
+				{
+				  "title": "",
+				  "title1": "使用人",
+				  "component": "text",
+				  "editablenode": "",
+				  "name": "syr"
+				},
+                {
+                  "title": "",
+                  "title1": "使用部门",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "sybm"
+                },
+                {
+                  "title": "",
+                  "title1": "联系方式",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "lxfs"
+                },
+
+                {
+                  "title": "",
+                  "title1": "备注",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "bz"
+                }
+ 
+              ]
+            }
+		
+
+		]
+    }
+
+	]
+}

@@ -129,6 +129,8 @@ radio:联动
         "linkType":"object",
         "linkPath":"actualdays"
       }
+	  //linkType 可以为 object 、string
+	  // linkPath 在  linkType 为 string 是不需要
     }]
   }]
 },
@@ -186,6 +188,24 @@ radio:联动
 		"value":"objid",
 		"text":["nachn","-","stext"]
 	}
+	
+	
+	
+	
+//表格样式都改成折叠型 table table_form table_ccmx  (tabletype=="looppanel")
+其中，table_ccmx 中含 titleIndex_s 和 titleIndex_e，显示折叠头的出发地和到达地(如 ： 北京-->广州)
+其余的类型是含 titleIndex ，显示折叠头的字段
+
+
+//it_oademandapply 
+// 以checkbox 型 来展现 "HR-SALARYGRANT,HR-TRAVEL,distribution-p" 需要从definitionlist 获取对应name来展现
+
+"linkToArrayForCheckBox":{
+				"basePath":"definitionlist",
+				"linkType":"stringArray",
+				"linkEquireParam":"keyid",
+				"showText":["keyName"]
+			}
 
 针对字段属性说明：
 id://唯一标识，解析规则中不可重复

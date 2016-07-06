@@ -1,5 +1,5 @@
 {
-    "id": "fx_sysaccount",
+    "id": "it_sysaccount",
     "handleOnPC": {
         "tasknode": [
             "ordermanger"
@@ -111,9 +111,9 @@
                     "label": [
                         "sysaccount.itcode",
                         "-",
-                        "sysaccount.OWNERNAME",
+                        "sysaccount.ownername",
                         "-",
-                        "sysaccount.OWNERNAME"
+                        "sysaccount.syspostname"
                     ]
                 },
                 {
@@ -147,7 +147,7 @@
                     "name": "sysaccount.enddate"
                 },
                 {
-                    "title": "使用人部门",
+                    "title": "申请类型",
                     "component": "select",
                     "name": "sysaccount.applytype",
                     "options": [
@@ -162,6 +162,10 @@
                         {
                             "text": "解锁用户",
                             "value": "2"
+                        },
+                        {
+                            "text": "初始密码",
+                            "value": "3"
                         }
                     ]
                 },
@@ -266,18 +270,6 @@
                 }
 
             ]
-        },
-        {
-            "title": "附件信息",
-            "pageid": "fjxx",
-            "component": "panel",
-            "subComponents": []
-        },
-        {
-            "title": "审批记录",
-            "pageid": "spjl",
-            "component": "panel",
-            "subComponents": []
         }
     ]
 }

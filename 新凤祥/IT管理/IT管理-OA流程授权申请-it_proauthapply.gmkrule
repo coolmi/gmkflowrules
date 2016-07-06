@@ -1,0 +1,169 @@
+{
+    "id": "it_proauthapply",
+				
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "bean.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "bean.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["bean.pernr", "-", "bean.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["bean.sysbusinessunitname", "-", "bean.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "bean.id"
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "bean.proc_inst_id"
+        }
+		]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "授权人",
+            "component": "text",
+            "name": "bean.sqpername"
+        },
+        {
+            "title": "被授权人",
+            "component": "text",
+			"editablenode":"",
+            "name": "bean.bsqpername"
+        },
+		{
+            "title": "生效开始时间",
+            "component": "date1",
+            "name": "bean.begda"
+        },
+		{
+            "title": "授权结束日期",
+            "component": "date1",
+            "name": "bean.endda"
+        },
+        {
+            "title": "授权范围",
+            "component": "select",
+			"editablenode":"",
+            "name": "bean.alimits",
+			"options": [
+				{
+					"title": "0-所有流程",
+					"value": "0"
+				},
+				{
+					"title": "1-部分流程",
+					"value": "1"
+				}
+			]
+        },
+        {
+            "title": "授权方式",
+            "component": "select",
+            "name": "bean.authtype",
+			"options": [
+				{
+					"title": "0-绝对授权",
+					"value": "0"
+				},
+				{
+					"title": "1-相对授权",
+					"value": "1"
+				}
+			]
+        },
+        
+        {
+            "title": "部分流程", 
+            "editablenode":"",
+            "component": "linkToMap",
+            "name": "bean.authkey",
+			"linkToMap":{
+				"mapBasePath":"flowList",
+				"linkMiddle":"authkey",
+				"linkType":"string"
+			  }
+        },
+		{
+            "title": "描述",
+            "editablenode":"",
+            "component": "textarea",
+			"value":"相对授权：授权人和被授权人同时收到审批任务，其中一人以签收的方式锁定任务进行审批结束任务。绝对授权：仅被授权人可以收到任务。"
+        }
+		]
+    }]
+}

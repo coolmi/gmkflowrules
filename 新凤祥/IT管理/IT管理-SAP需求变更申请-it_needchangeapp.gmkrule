@@ -1,0 +1,217 @@
+{
+    "id": "it_needchangeapp",
+				
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "itNeedChange.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "itNeedChange.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["itNeedChange.pernr", "-", "itNeedChange.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["itNeedChange.sysbusinessunitname", "-", "itNeedChange.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.id"
+        },
+		{
+            "title": "",
+            "component": "hidden",
+            "name": "itNeedChange.proc_inst_id"
+        }
+		]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "使用模块",
+            "component": "comma_concat",
+            "name": "itNeedChange.module",
+			"refer" : "module"
+        },
+        {
+            "title": "是否重要",
+            "component": "radio",
+			"editablenode":"erpnbgwtxjjfa,ywfxkjlsh",
+            "name": "itNeedChange.major",
+            "options": [{
+                "title": "重要",
+                "value": "1"
+            },
+            {
+                "title": "不重要",
+                "value": "2"
+            }]
+        },
+        {
+            "title": "是否开发",
+            "component": "radio",
+			"editablenode":"erpnbgwtxjjfa,ywfxkjlsh",
+            "name": "itNeedChange.isdev",
+            "options": [{
+                "title": "是",
+                "value": "1"
+            },
+            {
+                "title": "否",
+                "value": "2"
+            }]
+        },
+        {
+            "title": "手机号码",
+            "component": "text",
+            "name": "itNeedChange.mobile"
+        },
+        {
+            "title": "业务现状描述",
+            "component": "textarea",
+            "name": "itNeedChange.syscurrentms"
+        },
+        {
+            "title": "未来系统业务描述",
+            "component": "textarea",
+            "name": "itNeedChange.sysfuturems"
+        },
+		{
+            "title": "ERP内部顾问",
+            "component": "text",
+			"editablenode":"xxglbpd",
+			"tasknode":"xxglbpd",
+			"notShowOnView":true,
+			"forSelectPerson":{
+				"onclick":"getuser",
+				"postshow":true,
+				"showformname":"nbgwtext",
+				"valuetype":["objid"],
+				"showtype":["objid","nachn","stext"],
+			},
+            "name": "itNeedChange.nbgw",
+			"validation": {
+                "pageid": "sqxx",
+                "required": true,
+                "validationMsg": "请选择内部顾问"
+            }
+        },
+        {
+            "title": "内部顾问给出建议",
+            "tasknode":"erpnbgwtxjjfa,ywfxkjlsh,zxrycl",
+            "editablenode":"erpnbgwtxjjfa",
+            "component": "textarea",
+            "name": "itNeedChange.nbgwjy",
+            "validation": {
+                "pageid": "sqxx",
+                "required": true,
+                "validationMsg": "内部顾问给出建议填写必须"
+            }
+        }]
+    }],
+	"refers": {
+		"module": {
+			"dataType": "array",
+			"data": [{
+				"value": "1",
+				"text": "FICO"
+			},
+			{
+				"value": "2",
+				"text": "MM"
+			},
+			{
+				"value": "3",
+				"text": "SD"
+			},
+			{
+				"value": "4",
+				"text": "WM"
+			},
+			{
+				"value": "5",
+				"text": "PP"
+			},
+			{
+				"value": "6",
+				"text": "QM"
+			},
+			{
+				"value": "7",
+				"text": "PM"
+			},
+			{
+				"value": "8",
+				"text": "HR"
+			}
+			]
+		}
+	}
+}
