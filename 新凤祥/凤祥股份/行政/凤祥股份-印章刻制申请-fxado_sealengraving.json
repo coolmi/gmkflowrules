@@ -1,5 +1,5 @@
 {
-	"id": "food_sealengraving",
+	"id": "fxado_sealengraving",
 	"handleOnPC":{
 		"tasknode":[
 			""
@@ -125,73 +125,67 @@
 		"title": "印章刻制明细",
 		"pageid": "yzkzmx",
 		"component": "panel",
-		"subComponents": [{
-			"component": "table_ccmx",
-			"basePath": "sealengravinginfolist",
-			"tableForms": [{
-				"title": "印章刻制说明",
-				"component": "select",
-				"editablenode": "",
-				"name": "info_yzkzsm",
-				"options": [{
-					"text": "第一次刻制",
-					"value": "0"
-				},
-				{
-					"text": "旧章新刻",
-					"value": "1"
-				}]
-			},
+		"subComponents": [
 			{
-				"title": "印章类型",
-				"component": "select",
-				"editablenode": "",
-				"name": "info_yzlx",
-				"options": [{
-					"text": "一级印章",
-					"value": "0"
-				},
-				{
-					"text": "二级印章",
-					"value": "1"
-				}]
-			},
-			{
-				"title": "印章名称",
-				"component": "text",
-				"editablenode": "",
-				"name": "info_yzmc"
-			},
-			{
-				"title": "印章保存/使用地点",
-				"component": "text",
-				"editablenode": "",
-				"name": "info_yzbcsyddms"
-			},
-			{
-				"title": "印章保管人",
-				"component": "text",
-				"editablenode": "",
-				"name": "info_yzbgr"
-			},
-			{
-				"title": "联系方式",
-				"component": "text",
-				"editablenode": "",
-				"name": "info_lxfs"
-			}]
-		}]
-	},
-	{
-		"title": "附件信息",
-		"pageid": "fjxx",
-		"component": "panel",
-		"subComponents": []
-	},
-	{
-		"title": "审批记录",
-		"pageid": "spjl",
-		"component": "panel",
-		"subComponents": []
+              "title": "",
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "tabletype": "looppanel",
+              "basePath": "sealengravinginfolist",
+			  "id": "sealengravinginfolist",
+              "linkForms": [
+                	{
+						"title": "印章刻制说明",
+						"component": "select",
+						"name": "info_yzkzsm",
+						"options": [
+							{
+								"title": "第一次刻制",
+								"value": "0"
+							},
+							{
+								"title": "旧章新刻",
+								"value": "1"
+							}]
+						
+					},
+					{
+						"title": "印章类型",
+						"component": "select",
+						"name": "info_yzlx",
+						"options": [
+							{
+								"title": "一级印章",
+								"value": "0"
+							},
+							{
+								"title": "二级印章",
+								"value": "1"
+							}]
+					},
+					{
+						"title": "印章名称",
+						"component": "text",
+						"name": "info_yzmc"
+					},
+					{
+						"title": "印章保存/使用地点",
+						"component": "text",
+						"name": "info_yzbcsyddms"
+					},
+					{
+						"title": "印章保管人",
+						"component": "text",
+						"name": "info_yzbgr"
+					},
+					{
+						"title": "联系方式",
+						"component": "text",
+						"name": "info_lxfs"
+					}
+              ]
+            }
+		
+		]
 	}]
 }

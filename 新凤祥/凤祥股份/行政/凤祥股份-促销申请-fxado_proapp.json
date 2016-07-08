@@ -1,0 +1,121 @@
+{
+    "id": "fxado_proapp",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+			{
+                "title": "主抄送人员",
+                "component": "textarea",
+				"rows": "5",
+                "name": "mainModel.m_sendnms"
+            },
+			{
+                "title": "标题名称",
+                "component": "text",
+                "name": "mainModel.m_title"
+            },
+			{
+                "title": "开始执行日期",
+                "component": "date1",
+                "name": "mainModel.m_sdate"
+            },
+			{
+                "title": "执行结束日期",
+                "component": "date1",
+                "name": "mainModel.m_endate"
+            },
+			{
+                "title": "申请内容",
+                "component": "textarea",
+                "name": "mainModel.m_content"
+            }
+        ]
+    }
+	
+    ]
+}

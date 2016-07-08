@@ -60,13 +60,13 @@ radio:联动
     "component" : "radio",//固定
     "name" : "{字段key，定位到源数据绝对位置，规则解析器会对些字段进行处理}",
     "options": [{ //固定
-    "title": "否",//值
-    "value": "1"//key
-  },
-  {
-    "title": "是",//值
-    "value": "0"//key
-  }]
+		"title": "否",//值
+		"value": "1"//key
+	  },
+	  {
+		"title": "是",//值
+		"value": "0"//key
+	  }]
 },
 {
 "title" : "{页签显示内容}",
