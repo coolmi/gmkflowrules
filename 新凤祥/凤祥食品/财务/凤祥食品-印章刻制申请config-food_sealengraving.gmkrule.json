@@ -133,10 +133,10 @@
       "title": "印章刻制明细",
       "pageid": "yzkzmx",
       "component": "panel",
-      "titleIndex": "2",
       "subComponents": [
         {
           "component": "table_form",
+          "titleIndex": "2",
           "basePath": "sealengravinginfolist",
           "tableForms": [
             {
