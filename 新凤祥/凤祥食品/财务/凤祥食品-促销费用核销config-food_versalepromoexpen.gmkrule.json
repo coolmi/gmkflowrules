@@ -303,6 +303,7 @@
       "subComponents": [
         {
           "component": "table_form",
+          "titleIndex": 3,
           "basePath": "versalepromoexpencaiwuinfolist",
           "tableForms": [
             {

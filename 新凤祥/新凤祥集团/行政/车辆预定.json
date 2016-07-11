@@ -228,6 +228,7 @@
             "subComponents": [
                 {
                     "component": "table",
+                    "titleIndex": 3,
                     "basePath": "bases",
                     "cells": [
                         {
@@ -241,12 +242,6 @@
                             "component": "text",
                             "editablenode": "",
                             "name": "s_type"
-                        },
-                        {
-                            "title": "车辆编号",
-                            "component": "text",
-                            "editablenode": "",
-                            "name": "s_carid"
                         },
                         {
                             "title": "车辆名称",

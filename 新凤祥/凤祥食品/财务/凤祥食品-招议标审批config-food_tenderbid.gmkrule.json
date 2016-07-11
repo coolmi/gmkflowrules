@@ -240,7 +240,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 0,
           "basePath": "tenderlifnrlist",
           "tableForms": [
             {

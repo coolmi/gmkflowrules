@@ -107,6 +107,7 @@
       "subComponents": [
         {
           "component": "table",
+          "titleIndex":1,
           "basePath": "childlist",
           "cells": [
             {
@@ -186,6 +187,7 @@
       "subComponents": [
         {
           "component": "table",
+          "titleIndex": 1,
           "basePath": "childlist",
           "cells": [
             {
@@ -277,6 +279,7 @@
       "subComponents": [
         {
           "component": "table",
+          "titleIndex": 0,
           "basePath": "childlist",
           "cells": [
             {

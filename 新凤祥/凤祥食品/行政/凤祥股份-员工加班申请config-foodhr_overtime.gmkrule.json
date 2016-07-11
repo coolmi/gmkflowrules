@@ -94,6 +94,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 0,
             "basePath": "overtimesublist",
             "cells": [{
                 "title": "加班日期",

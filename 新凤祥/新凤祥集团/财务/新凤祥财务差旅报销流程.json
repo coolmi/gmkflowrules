@@ -300,6 +300,7 @@
       "subComponents": [
         {
           "component": "table_form",
+          "titleIndex": 1,
           "basePath": "gmpubexlist",
           "tableForms": [
             {
@@ -409,6 +410,7 @@
           "subComponents": [
             {
               "component": "table_form",
+              "titleIndex": 4,
               "basePath": "ltrads",
               "tableForms": [
                 {
@@ -514,6 +516,7 @@
           "subComponents": [
             {
               "component": "table_form",
+              "titleIndex": 0,
               "basePath": "citys",
               "tableForms": [
                 {
@@ -593,6 +596,7 @@
           "subComponents": [
             {
               "component": "table_form",
+              "titleIndex": 0,
               "basePath": "business",
               "tableForms": [
                 {
@@ -684,6 +688,7 @@
             {
               "component": "table_form",
               "basePath": "others",
+              "titleIndex": 2,
               "tableForms": [
                 {
                   "title": "日期",
@@ -743,6 +748,7 @@
           "subComponents": [
             {
               "component": "table_form",
+              "titleIndex": 0,
               "basePath": "summs",
               "tableForms": [
                 {

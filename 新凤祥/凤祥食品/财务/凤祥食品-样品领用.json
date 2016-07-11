@@ -250,6 +250,7 @@
             "subComponents": [
             	{
                     "component": "table",
+                    "titleIndex": 1,
                     "basePath":"promotionalinfolist",
                     "cells":[
            				   {

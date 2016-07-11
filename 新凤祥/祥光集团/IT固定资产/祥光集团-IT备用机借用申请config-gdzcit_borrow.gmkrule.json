@@ -99,6 +99,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 1,
             "basePath": "zitsbjyiList",
             "cells": [{
                 "title": "资产类别",

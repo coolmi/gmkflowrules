@@ -211,6 +211,7 @@
         "tasknode":"wlzxcczcclaudit,ysmywmclaudit,cljgfkaudit",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 1,
             "basePath": "assetsscrapinfos",
             "cells": [{
                 "title": "资产编号",

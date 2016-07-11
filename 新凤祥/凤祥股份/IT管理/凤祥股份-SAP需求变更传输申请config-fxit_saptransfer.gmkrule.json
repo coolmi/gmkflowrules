@@ -145,6 +145,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 2,
             "basePath": "bases",
             "cells": [{
                 "title": "请求类型",

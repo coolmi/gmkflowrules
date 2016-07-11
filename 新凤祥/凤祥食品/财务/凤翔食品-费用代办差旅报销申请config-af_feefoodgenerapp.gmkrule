@@ -453,6 +453,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex":0,
                   "basePath": "reimltradList",
                   "cells": [
                     {
@@ -633,6 +634,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex": 0,
                   "basePath": "reimcityList",
                   "cells": [
                     {
@@ -789,6 +791,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex": 0,
                   "basePath": "reimofficeList",
                   "cells": [
                     {
@@ -966,6 +969,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimealfeeList",
 					  "cells": [
 						{
@@ -1172,6 +1176,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimhotelList",
 					  "cells": [
 						{
@@ -1350,6 +1355,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimtrainList",
 					  "cells": [
 						{
@@ -1484,6 +1490,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimtelnetList",
 					  "cells": [
 						{
@@ -1633,6 +1640,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimgiftfeeList",
 					  "cells": [
 						{
@@ -1667,6 +1675,7 @@
           "subComponents": [
 				{
 					"component": "table",
+					"titleIndex":0,
 					"basePath": "rulist",
 					"cells": [{
 						"title": "费用分类",

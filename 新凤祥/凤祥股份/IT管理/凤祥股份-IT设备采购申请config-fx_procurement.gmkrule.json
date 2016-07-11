@@ -167,6 +167,7 @@
         "component": "panel",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 1,
             "basePath": "procureChilds",
             "cells": [{
                 "title": "资产类别",
@@ -297,6 +298,7 @@
         "component": "panel",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 0,
             "basePath": "deliverylist",
             "cells": [{
                 "id":"zcassetnameL",
@@ -337,6 +339,7 @@
         "component": "panel",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 0,
             "basePath": "fxinsinsplist",
             "cells": [{
                 "title": "资产名称",

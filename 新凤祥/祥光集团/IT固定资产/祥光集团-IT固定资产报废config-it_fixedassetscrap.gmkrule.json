@@ -89,6 +89,7 @@
         "component": "panel",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 3,
             "basePath": "infos",
             "cells": [{
                 "title": "资产编号",

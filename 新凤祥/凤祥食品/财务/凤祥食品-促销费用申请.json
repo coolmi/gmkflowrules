@@ -252,7 +252,8 @@
 		"component": "panel",
 		"subComponents": [{
 			"component": "table",
-			"table_id":"yplyid",
+            "titleIndex": 1,
+            "table_id":"yplyid",
 			"basePath": "promotionalinfolist",   
 					 "showLinkage":[{
                     	"id":"sflycp",

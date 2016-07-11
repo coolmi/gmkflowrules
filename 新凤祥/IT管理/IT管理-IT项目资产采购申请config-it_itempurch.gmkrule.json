@@ -224,6 +224,7 @@
         "subComponents": [
 			{
 				"component": "table",
+                "titleIndex":2,
 				"basePath": "itemchildpurchs",
 				"cells": [{
 					"title": "资产大类",
@@ -277,6 +278,7 @@
         "subComponents": [
 			{
 				"component": "table",
+                "titleIndex":2,
 				"basePath": "itemchildpurchs",
 				"cells": [{
 					"title": "资产大类",

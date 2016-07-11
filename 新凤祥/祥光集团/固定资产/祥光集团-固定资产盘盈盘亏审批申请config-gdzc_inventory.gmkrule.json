@@ -109,6 +109,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 2,
             "basePath": "alist",
             "cells": [{
                 "title": "盘亏/盘盈",

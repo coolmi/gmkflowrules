@@ -109,6 +109,7 @@
 		"component": "panel",
 		"subComponents": [{
 			"component": "table_ccmx",
+		  "titleIndex": 2,
 			"basePath": "bases",
 			"tableForms": [{
 				"title": "出发日期",

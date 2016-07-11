@@ -423,6 +423,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex": 0,
                   "basePath": "reimltradList",
                   "cells": [
                     {
@@ -603,6 +604,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex": 0,
                   "basePath": "reimcityList",
                   "cells": [
                     {
@@ -759,6 +761,7 @@
                 },
                 {
                   "component": "table",
+                  "titleIndex":0,
                   "basePath": "reimofficeList",
                   "cells": [
                     {
@@ -936,6 +939,7 @@
 					},
 					{
 					  "component": "table",
+					  "titleIndex": 0,
 					  "basePath": "reimealfeeList",
 					  "cells": [
 						{

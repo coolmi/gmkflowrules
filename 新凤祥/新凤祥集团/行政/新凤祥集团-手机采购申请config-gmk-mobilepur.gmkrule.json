@@ -120,6 +120,7 @@
         "component": "panel",
         "subComponents": [{
             "component": "table",
+            "titleIndex": 0,
             "basePath": "subs",
             "cells": [{
                 "title": "使用人",

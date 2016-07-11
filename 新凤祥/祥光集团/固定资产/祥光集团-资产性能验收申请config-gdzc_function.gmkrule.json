@@ -94,6 +94,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 3,
             "basePath": "alist",
             "cells": [{
                 "title": "资产编号",
@@ -133,6 +134,7 @@
         },
         {
             "component": "table",
+            "titleIndex": 3,
             "basePath": "blist",
             "cells": [{
                 "title": "购置申请单号",

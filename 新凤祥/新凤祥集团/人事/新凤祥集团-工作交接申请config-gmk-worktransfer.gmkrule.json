@@ -214,6 +214,7 @@
       "subComponents": [
         {
           "component": "table",
+          "titleIndex": 0,
           "basePath": "worktransfersituations",
           "cells": [
             {
