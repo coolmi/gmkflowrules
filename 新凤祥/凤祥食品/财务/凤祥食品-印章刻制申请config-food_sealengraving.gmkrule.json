@@ -136,7 +136,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": "2",
+          "titleIndex": 2,
           "basePath": "sealengravinginfolist",
           "tableForms": [
             {

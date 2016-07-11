@@ -823,7 +823,7 @@
           "subComponents": [
             {
               "component": "table_form",
-              "titleIndex": "0",
+              "titleIndex": 0,
               "basePath": "fiviews",
               "tableForms": [
                 {

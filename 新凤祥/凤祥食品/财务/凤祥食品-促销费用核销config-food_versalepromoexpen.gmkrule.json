@@ -170,7 +170,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": "4",
+          "titleIndex": 4,
           "basePath": "versalepromoexpeninfolist",
           "tableForms": [
             {
