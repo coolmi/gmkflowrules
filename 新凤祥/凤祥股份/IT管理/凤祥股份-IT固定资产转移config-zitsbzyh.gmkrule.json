@@ -1,8 +1,7 @@
 {
-  "id": "zitsblyh",
+  "id": "zitsbzyh",
   "handleOnPC": {
     "tasknode": [
-      "usertask3","usertask4"
     ],
     "flag": [
       "resubmit"
@@ -23,165 +22,146 @@
         {
           "title": "申请单号",
           "component": "text",
-          "name": "budgetadd.appid"
+          "name": "transfer.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
-          "name": "budgetadd.appda"
+          "name": "transfer.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "label": [
-            "budgetadd.pernr",
+            "transfer.pernr",
             "-",
-            "budgetadd.username"
+            "transfer.username"
           ]
         },
         {
           "title": "所属部门",
           "component": "label",
           "label": [
-            "budgetadd.sysbusinessunitname",
+            "transfer.sysbusinessunitname",
             "-",
-            "budgetadd.sysdeptname"
+            "transfer.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.userid"
+          "name": "transfer.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.username"
+          "name": "transfer.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.pernr"
+          "name": "transfer.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.syspostname"
+          "name": "transfer.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysdeptid"
+          "name": "transfer.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysdeptname"
+          "name": "transfer.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysbusinessunitid"
+          "name": "transfer.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysbusinessunitname"
+          "name": "transfer.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.postid"
+          "name": "transfer.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "budgetadd.id"
+          "name": "transfer.id"
         }
       ]
     },
     {
-      "title": "领用申请详细信息",
-      "pageid": "lysqxxxx",
+      "title": "接收人基本信息",
+      "pageid": "jsrjbxx",
       "component": "panel",
       "subComponents": [
         {
-          "component": "table",
-          "basePath": "childlist",
-          "cells": [
-            {
-              "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
-            },
-            {
-              "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
-
-            },
-            {
-              "title": "领用原因",
-              "component": "text",
-              "name": "zlyyy"
-            },
-            {
-              "title": "使用人ITOCDE",
-              "component": "text",
-              "name": "zsyitcode"
-            },
-            {
-              "title": "申请数量",
-              "component": "text",
-              "name": "zsqsl"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "zmeins"
-            },
-            {
-              "title": "申请日期",
-              "component": "text",
-              "datatype": "date",
-              "dateFormat": "yyyy-MM-dd",
-              "name": "zsbffrq"
-            }
+          "title": "接收人ITCODE",
+          "component": "text",
+          "name": "transfer.jsuserid"
+        },
+        {
+          "title": "接收人姓名",
+          "component": "text",
+          "name": "transfer.jsusername"
+        },
+        {
+          "title": "接收人员员工编号",
+          "component": "text",
+          "name": "transfer.jspernr"
+        },
+        {
+          "title": "接收人员所属部门",
+          "component": "text",
+          "name": "transfer.jssysdeptname"
+        },
+        {
+          "title": "接收人岗位",
+          "component": "text",
+          "name": "transfer.jssyspostid"
+        },
+        {
+          "title": "接收人岗位名称",
+          "component": "text",
+          "name": "transfer.jssyspostname"
+        },
+        {
+          "title": "接收人公司id",
+          "component": "label",
+          "label": [
+            "transfer.jsbukrs",
+            "-",
+            "transfer.jsbukrsname"
           ]
-        }]
+        },
+        {
+          "title": "接收人成本中心",
+          "component":"label",
+          "label": [
+            "transfer.jskostl",
+            "-",
+            "transfer.jsktext"
+          ]
+        },
+        {
+          "title": "转移原因",
+          "component": "text",
+          "name": "transfer.zbztxt"
+        }
+      ]
     },
     {
-      "title": "IT固定资产管理员发放信息",
-      "pageid": "ITgdzcglyffxx",
-      "tasknode":"usertask3",
+      "title": "转移详细信息",
+      "pageid": "zyxxxx",
       "component": "panel",
       "subComponents": [
         {
@@ -189,90 +169,52 @@
           "basePath": "childlist",
           "cells": [
             {
-              "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
+              "title": "资产编号",
+              "component": "text",
+              "name": "propertycode"
+            },
+            {
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "资产分类",
+              "component": "text",
+              "name": "ascatg"
             },
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
-
+              "component": "text",
+              "name": "propertyname"
             },
             {
-              "title": "领用原因",
+              "title": "参数",
               "component": "text",
-              "name": "zlyyy"
+              "name": "baspa"
             },
             {
-              "title": "单位",
+              "title": "型号",
               "component": "text",
-              "name": "zmeins"
-            }, {
-              "title": "库存数量",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
               "component": "text",
-              "name": "zkcsl"
-            }, {
-              "title": "设备运行状态",
-              "component": "select",
-              "name": "zsbyxzt",
-              "options": [
-                {
-                  "title": "设备正常",
-                  "value": "1"
-                },
-                {
-                  "title": "存在问题",
-                  "value": "2"
-                }
-              ]
-
-            }, {
-              "title": "问题描述",
+              "name": "brand"
+            },
+            {
+              "title": "出厂编号",
               "component": "text",
-              "editablenode": "usertask3",
-              "name": "zwttxt"
-            }, {
-              "title": "实际发放数量",
-              "component": "text",
-              "editablenode": "usertask3",
-              "name": "zsjffsl"
+              "name": "technicalcode"
             }
           ]
-        }]
+        }
+      ]
     },
     {
-      "title": "接收人接收确认信息",
-      "pageid": "jsrjsqrxx",
-      "tasknode":"usertask4",
+      "title": "转移信息明细",
+      "pageid": "zyxxmx",
       "component": "panel",
       "subComponents": [
         {
@@ -280,47 +222,47 @@
           "basePath": "childlist",
           "cells": [
             {
-              "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
+              "title": "资产编号",
+              "component": "label",
+              "label": [
+                "propertycode",
+                "-",
+                "propertyname"
               ]
-
-            }, {
-              "title": "是否正常使用",
-              "component": "select",
-              "editablenode": "usertask4",
-              "name": "zyszt",
-              "options": [
-                {
-                  "title": "设备正常",
-                  "value": "1"
-                },
-                {
-                  "title": "存在问题",
-                  "value": "2"
-                }
-              ]
-
-            }, {
-              "title": "问题描述",
+            },
+            {
+              "title": "资产分类",
               "component": "text",
-              "editablenode": "usertask4",
-              "name": "zyswt"
+              "name": "ascatg"
+            },
+            {
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "SAP资产编号",
+              "component": "text",
+              "name": "technicalcode"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "参数",
+              "component": "text",
+              "name": "baspa"
             }
           ]
-        }]
-    }]
+        }
+      ]
+    }
+  ]
 }
