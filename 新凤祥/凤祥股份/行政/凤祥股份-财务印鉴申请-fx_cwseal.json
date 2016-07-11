@@ -1,0 +1,149 @@
+{
+    "id": "fx_cwseal",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "cwseal.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "cwseal.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["cwseal.pernr", "-", "cwseal.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["cwseal.sysbusinessunitname", "-", "cwseal.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "cwseal.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+			{
+                "title": "用印类型",
+                "component": "select",
+				"id":"unittype",
+                "name": "cwseal.unittype",
+				"options": [
+					{
+						"title": "普通用印",
+						"value": "0"
+					},
+                    {
+                        "title": "携章外出",
+                        "value": "1"
+                    }]
+				
+
+            },
+            {
+                "title": "印鉴名称",
+                "component": "text",
+                "name": "cwseal.sealname"
+            },
+			{
+                "title": "印章类型",
+                "component": "text",
+                "name": "cwseal.sealtype"
+            },
+			{
+                "title": "印章使用",
+                "component": "label",
+				"label": ["共","cwseal.numm", "份,共计", "cwseal.copies", "枚"]
+            },
+            {
+                "title": "印鉴使用日期",
+                "component": "date1",
+                "name": "cwseal.sealsdate"
+            },
+			{
+                "title": "印鉴归还日期",
+                "component": "date1",
+                "name": "cwseal.sealedate"
+            },
+			{
+				"title": "使用理由",
+				"component": "textarea",
+				"rows": "3",
+				"name": "cwseal.reason"
+			
+			},
+			{
+				"title": "备注",
+				"component": "textarea",
+				"rows": "3",
+				"name": "cwseal.remarks"
+			}
+        ]
+    }
+    ]
+}

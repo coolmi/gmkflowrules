@@ -60,13 +60,13 @@ radio:联动
     "component" : "radio",//固定
     "name" : "{字段key，定位到源数据绝对位置，规则解析器会对些字段进行处理}",
     "options": [{ //固定
-    "title": "否",//值
-    "value": "1"//key
-  },
-  {
-    "title": "是",//值
-    "value": "0"//key
-  }]
+		"title": "否",//值
+		"value": "1"//key
+	  },
+	  {
+		"title": "是",//值
+		"value": "0"//key
+	  }]
 },
 {
 "title" : "{页签显示内容}",
@@ -94,7 +94,7 @@ radio:联动
 			"allT001List.butxt"]
 }
 
-//map
+//linkToMap
 {
   "title": "休假人本年度休假情况",
   "pageid": "xjrbndxjqk",
@@ -129,11 +129,13 @@ radio:联动
         "linkType":"object",
         "linkPath":"actualdays"
       }
+	  //linkType 可以为 object 、string
+	  // linkPath 在  linkType 为 string 是不需要
     }]
   }]
 },
 
-//选人的操作
+//表单中的选人的操作 (可参见 新凤祥/凤祥股份/IT管理/凤祥股份-SAP需求变更申请 fxit_sapneedchangeapp )
 "forSelectPerson":{
 		"onclick":"getuser",	//调用的方法
 		"valuetype":["aaa","bbb"],		//实际提交的字段值
@@ -164,7 +166,9 @@ radio:联动
 		*/
 }
 	
-//敏感信息的连接型
+//敏感信息的连接型 comma_concat 中的一支，依据datetype 区分
+//接口返回的value值如：",AA1,BB0,CC1,DD1,FF0," 
+//新凤祥/凤祥股份/IT管理/凤祥股份-SAP权限申请具体流程可参见 fxit_sappermissionapply 
 {
             "title": "使用模块",
             "component": "comma_concat",
@@ -174,11 +178,39 @@ radio:联动
         },
 
 
+		
+		
+		
+		
+//select 的option 的分支，在接口中 指向 maplist (参见 it_itempurch )
+"refersToArray":{
+		"basePath":"maplist",
+		"value":"objid",
+		"text":["nachn","-","stext"]
+	}
+	
+	
+	
+	
+//表格样式都改成折叠型 table table_form table_ccmx  (tabletype=="looppanel")
+其中，table_ccmx 中含 titleIndex_s 和 titleIndex_e，显示折叠头的出发地和到达地(如 ： 北京-->广州)
+其余的类型是含 titleIndex ，显示折叠头的字段
+
+
+//it_oademandapply 
+// 以checkbox 型 来展现 "HR-SALARYGRANT,HR-TRAVEL,distribution-p" 需要从definitionlist 获取对应name来展现
+
+"linkToArrayForCheckBox":{
+				"basePath":"definitionlist",
+				"linkType":"stringArray",
+				"linkEquireParam":"keyid",
+				"showText":["keyName"]
+			}
 
 针对字段属性说明：
 id://唯一标识，解析规则中不可重复
-component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2
-datatype://组件显示数据类型：string date1 date2 date3 date4 date5 date  money2dx等
+component:组件类型，取值有hidden text  textarea  radio checkbox  select  table table_form  table_ccmx   panel  date1  date2  comma_concat(类似用逗号隔开值"1,2,3,")
+datatype://组件显示数据类型：string date1 date2 date3 date4 date5 date money(取小数点后两位) money2dx等, 新增sensitive[comma_concat 时可用的，敏感的checkbox]
 dateFormat://时间显示格式，如yyyy-MM-dd HH:mm:ss.S
 tasknode://可显示环节key，若无则默认显示
 editablenode://可编辑字段环节key，在特定环节时可编辑
