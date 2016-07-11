@@ -158,7 +158,7 @@
 		"pageid": "hxfy",
 		"component": "panel",
 		"subComponents": [{
-			"component": "table_ccmx",
+			"component": "table_form",
 			"basePath": "versalepromoexpeninfolist",
 			"tableForms": [{
 				"title": "核销年月",
@@ -284,7 +284,7 @@
 		"component": "panel",
 		"tasknode": "usertask5,usertask6,usertask7",
 		"subComponents": [{
-			"component": "table_ccmx",
+			"component": "table_form",
 			"basePath": "versalepromoexpencaiwuinfolist",
 			"tableForms": [{
 				"title": "核销年月",

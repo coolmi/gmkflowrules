@@ -220,7 +220,7 @@
 		"pageid": "tbxx",
 		"component": "panel",
 		"subComponents": [{
-			"component": "table_ccmx",
+			"component": "table_form",
 			"basePath": "tenderlifnrlist",
 			"tableForms": [{
 				"title": "供应商名称",

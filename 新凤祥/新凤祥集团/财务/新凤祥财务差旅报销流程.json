@@ -273,7 +273,7 @@
 		"pageid": "ysxx",
 		"component": "panel",
 		"subComponents": [{
-			"component": "table_ccmx",
+			"component": "table_form",
 			"basePath": "gmpubexlist",
 			"tableForms": [{
 				"title": "公司代码",
@@ -373,7 +373,7 @@
 				}
 			],
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "ltrads",
 				"tableForms": [{
 					"title": "日期",
@@ -474,7 +474,7 @@
 				}
 			],
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "citys",
 				"tableForms": [{
 					"title": "日期",
@@ -549,7 +549,7 @@
 				}
 			],
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "business",
 				"tableForms": [{
 					"title": "招待日期",
@@ -635,7 +635,7 @@
 				}
 			],
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "others",
 				"tableForms": [{
 					"title": "日期",
@@ -691,7 +691,7 @@
 			"component": "panel",
 			"panel_id": "total",
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "summs",
 				"tableForms": [{
 					"title": "日期",
@@ -767,7 +767,7 @@
 			"component": "panel",
 			"panel_id": "cw",
 			"subComponents": [{
-				"component": "table_ccmx",
+				"component": "table_form",
 				"basePath": "fiviews",
 				"tableForms": [{
 					"title": "费用科目",
