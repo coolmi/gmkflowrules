@@ -97,5 +97,39 @@
 			"component": "hidden",
 			"name": "mainModel.id"
 		}]
-	}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [
+			{
+				"title":"成本中心",
+				"component":"text",
+				"name":"mainModel.m_costnm"
+			},
+			{
+				"title":"合计",
+				"component":"text",
+				"name":"mainModel.m_sum"
+			},
+			{
+				"title":"报废原因说明",
+				"component":"text",
+				"name":"mainModel.m_why"
+			},
+			{
+				"title":"直接领导意见",
+				"component":"text",
+				"editablenode":"usertask4",
+				"name":"mainModel.m_first",
+				"validation":{
+					"pageid":"sqxx",
+					"required":true,  
+                    "validateMsg":"请填写意见"
+				}
+			}
+		]
+	}
+	]
 }
