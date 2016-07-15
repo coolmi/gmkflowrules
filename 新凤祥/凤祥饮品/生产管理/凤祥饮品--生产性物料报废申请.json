@@ -127,7 +127,7 @@
         {
           "title": "直接领导意见",
           "component": "text",
-          "tasknode":"usertask4,usertask16",
+          "tasknode":"usertask4,usertask16,usertask14,usertask11,usertask18,usertask17",
           "editablenode": "usertask4",
           "name": "mainModel.m_first",
           "validation": {
@@ -140,7 +140,7 @@
           "title":"质量管理部意见",
           "component":"text",
           "editablenode":"usertask16",
-          "tasknode":"usertask16",
+          "tasknode":"usertask16,usertask14,usertask11,usertask18,usertask17",
           "name":"mainModel.m_material",
           "validation":{
             "pageid": "sqxx",
