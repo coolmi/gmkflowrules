@@ -191,6 +191,113 @@
           ]
         }
       ]
+    },
+    {
+      "title": "付款信息",
+      "pageid": "fkxxsm",
+      "component": "panel",
+      "tasknode": "usertask7",
+      "subComponents": [
+        {
+          "title": "汇率",
+          "component": "text",
+          "name": "deposit.exchrate",
+          "tasknode": "usertask7",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "汇率必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "付款金额",
+          "component": "text",
+          "name": "deposit.payment",
+          "tasknode": "usertask7",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "resegs",
+            "sumParam": "fwbas"
+          },
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款金额必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "结算方式",
+          "component": "select",
+          "name": "deposit.setmode",
+          "tasknode": "usertask7",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "汇款",
+              "value": "汇款"
+            },
+            {
+              "title": "现金",
+              "value": "现金"
+            }
+          ],
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款方式必选",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "银行账户",
+          "component": "text",
+          "name": "deposit.banknn",
+          "tasknode": "usertask7",
+          "tmpValueName": "deposit.bankn",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "银行账号必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "name": "deposit.bankll",
+          "tasknode": "usertask7",
+          "tmpValueName": "deposit.bankl",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "开户行必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "付款通知说明",
+          "component": "checkbox",
+          "name": "deposit.payval",
+          "tasknode": "usertask7",
+          "options": [
+            {
+              "title": "已付款",
+              "value": "1"
+            }
+          ],
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款通知说明必选",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        }
+      ]
     }
   ]
 }
