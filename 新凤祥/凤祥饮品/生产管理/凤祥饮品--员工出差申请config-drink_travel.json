@@ -117,36 +117,39 @@
             {
               "title":"出发日期",
               "component":"text",
+              "editablenode": "",
+              "component": "date1",
               "name":"startda"
             },
             {
               "title":"到达日期",
               "component":"text",
+              "editablenode": "",
+              "component": "date1",
               "name":"endda"
             },
             {
               "title":"出发地点",
               "component":"text",
-              "name":"spalce"
+              "editablenode": "",
+              "name":"splace"
             },
             {
               "title":"到达地点",
               "component":"text",
+              "editablenode": "",
               "name":"eplace"
             },
             {
               "title":"交通方式",
               "component":"text",
+              "editablenode": "",
               "name":"transmode"
             },
             {
               "title":"工作内容",
               "component":"text",
-              "name":"s_num"
-            },
-            {
-              "title":"报废金额",
-              "component":"text",
+              "editablenode": "",
               "name":"workc"
             }
           ]
