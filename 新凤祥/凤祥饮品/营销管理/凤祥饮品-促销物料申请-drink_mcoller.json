@@ -154,18 +154,18 @@
               "component": "text",
               "editablenode": "",
               "name": "s_sum"
-            },
-            {
-            "title": "物料金额",
-            "component": "text",
-            "name": "mainModel.m_wlmcnm"
-            },
-            {
-            "title": "申请内容",
-            "component": "text",
-            "name": "mainModel.m_remark"
             }
           ]
+        },
+        {
+          "title": "物料金额",
+          "component": "text",
+          "name": "mainModel.m_wlmcnm"
+        },
+        {
+          "title": "申请内容",
+          "component": "text",
+          "name": "mainModel.m_remark"
         }
       ]
     }
