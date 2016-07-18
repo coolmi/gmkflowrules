@@ -100,7 +100,7 @@
                 "title": "主抄送",
                 "component": "text",
                 "editablenode": "",
-                "name": "mainModel.maincc"
+                "name": "mainModel.mainccnm"
             },
                 {
                     "title": "固定资产名称",
