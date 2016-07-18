@@ -186,14 +186,14 @@
               "component": "text",
               "editablenode": "",
               "name": "s_fl_je"
-            },
-            {
-              "title": "申请内容",
-              "component": "text",
-              "editablenode": "",
-              "name": "mainModel.m_remark"
             }
           ]
+        },
+        {
+          "title": "申请内容",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.m_remark"
         }
       ]
     }
