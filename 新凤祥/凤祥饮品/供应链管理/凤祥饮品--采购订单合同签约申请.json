@@ -1,101 +1,555 @@
 {
-	"id": "drink_contract",
-	"handleOnPC":{
-		"tasknode":[
-			""
-		],
-		"flag":[
-			"resubmit"
-		]
+  "id": "drink_contract",
+  "handleOnPC": {
+	"tasknode": [""],
+	"flag": ["resubmit"]
+  },
+  "selectPerson": {
+	"tasknode": [""],
+	"beforPop": false
+  },
+  "forms": [{
+	"title": "基本信息",
+	"pageid": "jbxx",
+	"component": "panel",
+	"subComponents": [{
+	  "title": "申请单号",
+	  "component": "text",
+	  "name": "mainModel.appid"
 	},
-	"selectPerson":{
-		"tasknode":[
-			""
-		],
-		"beforPop":false
-	},
+	  {
+		"title": "申请日期",
+		"component": "date1",
+		"name": "mainModel.appda"
+	  },
+	  {
+		"title": "申请人姓名",
+		"component": "label",
+		"label": ["mainModel.pernr", "-", "mainModel.username"]
+	  },
+	  {
+		"title": "所属部门",
+		"component": "label",
+		"label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.userid"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.username"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.pernr"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.syspostname"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.sysdeptid"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.sysdeptname"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.sysbusinessunitid"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.sysbusinessunitname"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.postid"
+	  },
+	  {
+		"title": "",
+		"component": "hidden",
+		"name": "mainModel.id"
+	  }]
+  },
+	{
+	  "title": "申请信息",
+	  "pageid": "sqxx",
+	  "component": "panel",
+	  "subComponents": [
+		{
+		  "title": "合同终签类型",
+		  "component": "text",
+		  "name": "mainModel.contractypetxt"
+		},
+		{
+		  "title": "合同类型",
+		  "component": "text",
+		  "name": "mainModel.contractsmalltype"
+		},
+		{
+		  "title": "合同名称",
+		  "component": "text",
+		  "name": "mainModel.contractname"
+		},
+		{
+		  "title": "是否战略框架协议",
+		  "component": "radio",
+		  "name": "mainModel.m_sfkj",
+		  "options": [
+			{
+			  "title": "否",
+			  "value": "0"
+			},
+			{
+			  "title": "是",
+			  "value": "1"
+			}
+		  ]
+		},
+		{
+		  "title": "合同标的",
+		  "component": "text",
+		  "name": "mainModel.contractsub"
+		},{
+		  "title": "业务类型",
+		  "component": "text",
+		  "name": "mainModel.servicetypetxt"
+		},
+		{
+		  "title": "需求类型",
+		  "component": "select",
+		  "id": "demandtype",
+		  "name": "mainModel.demandtype",
+		  "options": [
+			{
+			  "title": "采购合同",
+			  "value": "1"
+			},
+			{
+			  "title": "销售合同",
+			  "value": "2"
+			},
+			{
+			  "title": "市场合同",
+			  "value": "3"
+			},
+			{
+			  "title": "其他",
+			  "value": "4"
+			}]
+		},{
+		  "title": "标的类型",
+		  "component": "select",
+		  "name": "mainModel.targetype",
+		  "options": [
+			{
+			  "title": "技术设计",
+			  "value": "1"
+			},
+			{
+			  "title": "设备买卖安装",
+			  "value": "2"
+			},
+			{
+			  "title": "建筑工程",
+			  "value": "3"
+			},
+			{
+			  "title": "买卖",
+			  "value": "4"
+			},
+			{
+			  "title": "其他",
+			  "value": "5"
+			}]
+		},{
+		  "title": "需求部门",
+		  "component": "text",
+		  "name": "mainModel.demanddepartxt",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1"]
+			}
+		  ]
+		},{
+		  "title": "客户名称",
+		  "component": "text",
+		  "name": "mainModel.customername",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1"]
+			}
+		  ]
+		},{
+		  "title": "供应商名称",
+		  "component": "text",
+		  "name": "mainModel.suppliername",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3","4"]
+			}
+		  ]
+		},{
+		  "title": "供应商类型",
+		  "component": "text",
+		  "name": "mainModel.suppliertype",
+		  "options": [
+			{
+			  "title": "合格供应商",
+			  "value": "1"
+			},
+			{
+			  "title": "一次性供应商",
+			  "value": "2"
+			},
+			{
+			  "title": "战略合作伙伴",
+			  "value": "3"
+			},
+			{
+			  "title": "黑名单冻结",
+			  "value": "4"
+			}
+		  ],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3","4"]
+			}
+		  ]
+		},{
+		  "title": "采购方式",
+		  "component": "text",
+		  "name": "mainModel.procurementmethods",
+		  "options": [
+			{
+			  "title": "比价",
+			  "value": "1"
+			},
+			{
+			  "title": "招标",
+			  "value": "2"
+			},
+			{
+			  "title": "其他",
+			  "value": "3"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","4"]
+			}
+		  ]
+		},{
+		  "title": "结算方式",
+		  "component": "text",
+		  "name": "mainModel.settlementmethod",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "合同金额小写",
+		  "component": "text",
+		  "name": "mainModel.contractamount",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3"]
+			}
+		  ]
+		},{
+		  "title": "合同金额大写",
+		  "component": "text",
+		  "name": "mainModel.contractamountup",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3","4"]
+			}
+		  ]
+		},{
+		  "title": "币种",
+		  "component": "text",
+		  "name": "mainModel.currency",
+		  "options": [
+			{
+			  "title": "人民币",
+			  "value": "1"
+			},
+			{
+			  "title": "美元",
+			  "value": "2"
+			},{
+			  "title": "欧元",
+			  "value": "3"
+			},
+			{
+			  "title": "其他",
+			  "value": "4"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3","4"]
+			}
+		  ]
+		},{
+		  "title": "付款方式",
+		  "component": "text",
+		  "name": "mainModel.paymentmethod",
+		  "options": [
+			{
+			  "title": "一卡通",
+			  "value": "1"
+			},
+			{
+			  "title": "现金支票",
+			  "value": "2"
+			},{
+			  "title": "汇票",
+			  "value": "3"
+			},
+			{
+			  "title": "汇款",
+			  "value": "4"
+			},{
+			  "title": "信用证",
+			  "value": "5"
+			},
+			{
+			  "title": "清账",
+			  "value": "6"
+			},{
+			  "title": "银行托收",
+			  "value": "7"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","3","4"]
+			}
+		  ]
+		},
+		{
+		  "title": "定价依据",
+		  "component": "text",
+		  "name": "mainModel.pricingbasis",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "密级",
+		  "component": "text",
+		  "name": "mainModel.dense",
+		  "options": [
+			{
+			  "title": "公开",
+			  "value": "1"
+			},
+			{
+			  "title": "保密",
+			  "value": "2"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "合同页数",
+		  "component": "text",
+		  "name": "mainModel.contractpage",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "需求部门人员审核",
+		  "component": "text",
+		  "name": "mainModel.departauditxt",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","4"]
+			}
+		  ]
+		},{
+		  "title": "部门负责人审核",
+		  "component": "text",
+		  "name": "mainModel.responsibletxt",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "合同编号类型",
+		  "component": "text",
+		  "name": "mainModel.contractnumbercategory",
+		  "options": [
+			{
+			  "title": "技术设计合同（A）",
+			  "value": "A"
+			},
+			{
+			  "title": "设备买卖安装合同（B）",
+			  "value": "B"
+			},{
+			  "title": "建筑工程合同（C）",
+			  "value": "C"
+			},
+			{
+			  "title": "买卖合同（D）",
+			  "value": "D"
+			},{
+			  "title": "其他合同（E）",
+			  "value": "E"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},
+		{
+		  "title": "公司信息",
+		  "component": "text",
+		  "name": "mainModel.cdbutxt",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "是否为补充合同",
+		  "component": "radio",
+		  "name": "mainModel.whethercontract",
+		  "options": [
+			{
+			  "title": "否",
+			  "value": "0"
+			},
+			{
+			  "title": "是",
+			  "value": "1"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},
+		{
+		  "title": "合同编号",
+		  "component": "text",
+		  "name": "mainModel.contractnumber",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "用印类型",
+		  "component": "text",
+		  "name": "mainModel.yytype",
+		  "options": [
+			{
+			  "title": "普通用印",
+			  "value": "1"
+			},
+			{
+			  "title": "携章外出",
+			  "value": "2"
+			}],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},
+		{
+		  "title": "印章名称",
+		  "component": "text",
+		  "name": "mainModel.sealname",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "印章类型",
+		  "component": "text",
+		  "name": "mainModel.sealtype",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "印章使用",
+		  "component": "label",
+		  "label": ["一式","mainModel.sealuse", "份,共计", "mainModel.gold", "枚"],
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "印章使用日期",
+		  "component": "date1",
+		  "name": "mainModel.sdate",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		},{
+		  "title": "计划归还日期",
+		  "component": "date1",
+		  "name": "mainModel.edate",
+		  "showLinkage":[
+			{
+			  "id":"demandtype",
+			  "values":["1","2","3","4"]
+			}
+		  ]
+		}
 
-	"forms": [{
-		"title": "基本信息",
-		"pageid": "jbxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "申请单号",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.appid"
-		},
-		{
-			"title": "申请日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.appda"
-		},
-		{
-			"title": "申请人姓名",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.pernr",
-			"-",
-			"mainModel.username"]
-		},
-		{
-			"title": "所属部门",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.sysbusinessunitname",
-			"-",
-			"mainModel.sysdeptname"]
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.userid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.username"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.pernr"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.syspostname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.postid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.id"
-		}]
-	}]
+	  ]
+	}
+  ]
 }

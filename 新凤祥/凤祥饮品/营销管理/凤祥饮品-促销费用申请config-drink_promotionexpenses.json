@@ -1,0 +1,232 @@
+{
+  "id": "drink_promotionexpenses",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask2"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.btitle"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zcs"
+        },
+        {
+          "title": "区域",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hdqy"
+        },
+        {
+          "title": "城市",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hdcs"
+        },
+        {
+          "title": "职能经理",
+          "component": "text",
+          "tasknode": "usertask2,usertask4,usertask6,usertask5,usertask9",
+          "editablenode": "usertask2",
+          "name": "mainModel.znjl"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.fkbutxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.fykotxt",
+            "-",
+            "mainModel.fykostl"
+          ]
+        },
+        {
+          "title": "客户编号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.khbh"
+        },
+        {
+          "title": "客户名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.khmc"
+        },{
+          "title": "预算",
+          "component": "radio",
+          "tasknode":"usertask5,usertask9",
+          "editablenode": "usertask5",
+          "name": "mainModel.ydys",
+          "options": [{
+            "title": "预算内",
+            "value": "0"
+          },
+            {
+              "title": "预算外",
+              "value": "1"
+            }]
+        },
+        {
+          "title": "申请金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sqje"
+        },
+        {
+          "title": "促销活动名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hdmc"
+        },
+        {
+          "title": "活动产品",
+          "component": "label",
+          "editablenode": "",
+          "name": "hdcp",
+          "middleName": [
+            "mainModel.hdcp",
+            "param"
+          ],
+          "label": [
+            "procucts.paramtxt"
+          ]
+        },
+        {
+          "title": "促销费用类型",
+          "component": "label",
+          "editablenode": "",
+          "name": "butype",
+          "middleName": [
+            "mainModel.butype",
+            "mtkey"
+          ],
+          "label": [
+            "butypeList.mtype"
+          ]
+        },
+        {
+          "title": "促销活动内容",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sqnr"
+        }
+      ]
+    }
+  ]
+}
