@@ -1,5 +1,5 @@
 {
-  "id": "drink_productplan",
+  "id": "drink_monthlyproductionplan",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -124,7 +124,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 2,
           "basePath": "monthlyproductionplaninfolist",
           "tableForms": [
             {
