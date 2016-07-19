@@ -2,7 +2,7 @@
   "id": "drink_customermanage",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask4"
     ],
     "flag": [
       "resubmit"
