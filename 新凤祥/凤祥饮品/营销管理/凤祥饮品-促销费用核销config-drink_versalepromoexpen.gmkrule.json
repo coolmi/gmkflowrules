@@ -2,7 +2,7 @@
   "id": "drink_versalepromoexpen",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -120,6 +120,20 @@
           "component": "text",
           "editablenode": "",
           "name": "mainModel.sendtxt"
+        },{
+          "title": "项目预算",
+          "component": "radio",
+          "tasknode":"usertask4,usertask5,usertask6,usertask7,usertask8",
+          "editablenode":"usertask4",
+          "name": "mainModel.consistent",
+          "options": [{
+            "title": "项目预算内",
+            "value": "0"
+          },
+            {
+              "title": "项目预算外",
+              "value": "1"
+            }]
         }, {
           "title": "公司",
           "component": "text",
@@ -275,7 +289,7 @@
       "title": "财务审核信息",
       "pageid": "cwshxx",
       "component": "panel",
-      "tasknode": "usertask5,usertask6,usertask7",
+      "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
       "subComponents": [
         {
           "component": "table_form",
@@ -301,10 +315,14 @@
               "name": "info_writecostypedes"
             },
             {
-              "title": "科目描述",
-              "component": "text",
+              "title": "科目编码",
+              "component": "label",
               "editablenode": "",
-              "name": "info_aftersubjectcodedes"
+              "label": [
+                "info_subjectcode",
+                "-",
+                "info_subjectcodedec"
+              ]
             },
             {
               "title": "产品",
@@ -345,18 +363,6 @@
           ]
         }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }
