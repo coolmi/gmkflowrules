@@ -1,360 +1,361 @@
 {
-	"id": "fxsp_pobcost",
-	"handleOnPC":{
-		"tasknode":[
-			""
-		],
-		"flag":[
-			"resubmit"
-		]
-	},
-	"selectPerson":{
-		"tasknode":[
-			""
-		],
-		"beforPop":false
-	},
-
-	"forms": [{
-		"title": "基本信息",
-		"pageid": "jbxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "申请单号",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.appid"
-		},
-		{
-			"title": "申请日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "pobcost.appda"
-		},
-		{
-			"title": "申请人姓名",
-			"component": "label",
-			"editablenode": "",
-			"label": ["pobcost.pernr",
-			"-",
-			"pobcost.username"]
-		},
-		{
-			"title": "所属部门",
-			"component": "label",
-			"editablenode": "",
-			"label": ["pobcost.sysbusinessunitname",
-			"-",
-			"pobcost.sysdeptname"]
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.userid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.username"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.pernr"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.syspostname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.sysdeptid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.sysdeptname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.sysbusinessunitid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.sysbusinessunitname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.postid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "pobcost.id"
-		}]
-	},
-	{
-		"title": "报销人信息",
-		"pageid": "bxrxx",
-		"component": "panel",
-		"subComponents": [{
-				"title": "员工ITCODE",
-				"component": "label",
-				"editablenode": "",
-				"label": ["pobcost.userid"]
-			},
-			{
-			"title": "员工编号",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.pernr"
-		},
-		{
-			"title": "员工所在部门",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.sysdeptname"
-		},
-		{
-			"title": "职能中心/事业部",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.sysbusinessunitname"
-		},
-		{
-			"title": "所在公司",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.compayname"
-		},
-		{
-			"title": "邮箱",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.pfach"
-		},
-		{
-			"title": "办公电话",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.telnr"
-		},
-		{
-			"title": "手机号",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.telpr"
-		},
-		{
-			"title": "员工财务编码",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.lifnr"
-		},
-		{
-			"title": "员工银行账号",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.bankn_u"
-		},
-		{
-			"title": "开户行",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.banka"
-		}]
-		},
-		{
-			"title": "申请信息",
-			"pageid": "sqxx",
-			"component": "panel",
-			"subComponents": [{
-				"title": "费用承担公司",
-				"component": "text",
-				"editablenode": "",
-				"name": "pobcost.ubukrss"
-			},
-			{
-				"title": "是否跨成本中心",
-				"component": "radio",
-				"name": "pobcost.m_overcost",
-				"options": [{
-					"title": "否",
-					"value": "0"
-				},
-				{
-					"title": "是",
-					"value": "1"
-				}]
-			},
-			{
-				"title": "费用计入年",
-				"component": "text",
-				"editablenode": "",
-				"name": "pobcost.m_fee_year"
-			},
-			{
-				"title": "附件数",
-				"component": "text",
-				"editablenode": "",
-				"name": "pobcost.numpg"
-			},
-			{
-				"title": "说明",
-				"component": "text",
-				"editablenode": "",
-				"name": "pobcost.smemo"
-			}]
-			},
-	{
-		"title": "费用列表",
-		"pageid": "fylb",
-		"component": "panel",
-		"subComponents": [{
-			"title": "",
-			"component": "formLabelLink",
-			"tabletype": "looppanel",
-			"basePath": "bases",
-			"titleIndex":2,
-			"linkForms": [{
-				"title": "",
-				"title1": "成本中心",
-				"component": "text",
-				"editablenode": "",
-				"name": "ubukrsm"
-			},
-			{
-				"title": "",
-				"title1": "费用计入月",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_fee_month"
-			},
-			{
-				"title": "",
-				"title1": "费用类型",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_costctype_nm"
-			},
-			{
-				"title": "",
-				"title1": "项目描述",
-				"component": "text",
-				"editablenode": "",
-				"name": "projectcodenm"
-			},
-			{
-				"title": "",
-				"title1": "业务大类",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_stype_nm"
-			},
-			{
-				"title": "",
-				"title1": "子项目描述",
-				"component": "text",
-				"editablenode": "",
-				"name": "projectcodesubm"
-			},
-			{
-				"title": "",
-				"title1": "业务小类",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_stype_xl_nm"
-			},
-			{
-				"title": "",
-				"title1": "会计科目描述",
-				"component": "text",
-				"editablenode": "",
-				"name": "kstarnm"
-			},
-			{
-				"title": "",
-				"title1": "报账金额",
-				"component": "text",
-				"editablenode": "",
-				"name": "dmbtr"
-			},
-			{
-				"title": "报账金额大写",
-				"editablenode": "",
-				"component": "text",
-				"datatype":"money2dx",
-				"dxname": "udmbtr",
-				"name": "dmbtr"
-			},
-			{
-				"title": "",
-				"title1": "费用部门负责人",
-				"component": "text",
-				"editablenode": "",
-				"name": "feep"
-			},
-			{
-				"title": "",
-				"title1": "冲销计提金额",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_jt_je_sp"
-			},
-			{
-				"title": "",
-				"title1": "报销当前月份金额",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_cur_je_sp"
-			},
-			{
-				"title": "",
-				"title1": "产品/组合编码",
-				"component": "text",
-				"editablenode": "",
-				"name": "s_pro_line_nm"
-			}]
-		}]
-	},
-	{
-		"title": "金额统计",
-		"pageid": "jetj",
-		"component": "panel",
-		"subComponents": [{
-			"title": "总金额",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.zje"
-		},
-		{
-			"title": "付款金额",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.fkje"
-		},
-		{
-			"title": "备注",
-			"component": "text",
-			"editablenode": "",
-			"name": "pobcost.bz"
-		}]
-		},
-	{
-		"title": "附件信息",
-		"pageid": "fjxx",
-		"component": "panel",
-		"subComponents": []
-	},
-	{
-		"title": "审批记录",
-		"pageid": "spjl",
-		"component": "panel",
-		"subComponents": []
-	}]
+  "id": "fxsp_pobcost",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "pobcost.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "pobcost.pernr",
+            "-",
+            "pobcost.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "pobcost.sysbusinessunitname",
+            "-",
+            "pobcost.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pobcost.id"
+        }
+      ]
+    },
+    {
+      "title": "报销人信息",
+      "pageid": "bxrxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工ITCODE",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "pobcost.userid"
+          ]
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.pernr"
+        },
+        {
+          "title": "员工所在部门",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.sysdeptname"
+        },
+        {
+          "title": "职能中心/事业部",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.sysbusinessunitname"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.compayname"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.pfach"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.telnr"
+        },
+        {
+          "title": "手机号",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.telpr"
+        },
+        {
+          "title": "员工财务编码",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.lifnr"
+        },
+        {
+          "title": "员工银行账号",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.bankn_u"
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.banka"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用承担公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.ubukrss"
+        },
+        {
+          "title": "是否跨成本中心",
+          "component": "radio",
+          "name": "pobcost.m_overcost",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "费用计入年",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.m_fee_year"
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.numpg"
+        },
+        {
+          "title": "说明",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.smemo"
+        }
+      ]
+    },
+    {
+      "title": "费用列表",
+      "pageid": "fylb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "tabletype": "looppanel",
+          "basePath": "bases",
+          "titleIndex": 2,
+          "linkForms": [
+            {
+              "title": "",
+              "title1": "成本中心",
+              "component": "text",
+              "editablenode": "",
+              "name": "ubukrsm"
+            },
+            {
+              "title": "",
+              "title1": "费用计入月",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_fee_month"
+            },
+            {
+              "title": "",
+              "title1": "费用类型",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_costctype_nm"
+            },
+            {
+              "title": "",
+              "title1": "项目描述",
+              "component": "text",
+              "editablenode": "",
+              "name": "projectcodenm"
+            },
+            {
+              "title": "",
+              "title1": "业务大类",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_stype_nm"
+            },
+            {
+              "title": "",
+              "title1": "子项目描述",
+              "component": "text",
+              "editablenode": "",
+              "name": "projectcodesubm"
+            },
+            {
+              "title": "",
+              "title1": "业务小类",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_stype_xl_nm"
+            },
+            {
+              "title": "",
+              "title1": "会计科目描述",
+              "component": "text",
+              "editablenode": "",
+              "name": "kstarnm"
+            },
+            {
+              "title": "",
+              "title1": "报账金额",
+              "component": "text",
+              "editablenode": "",
+              "name": "dmbtr"
+            },
+            {
+              "title": "报账金额大写",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "udmbtr",
+              "name": "dmbtr"
+            },
+            {
+              "title": "",
+              "title1": "费用部门负责人",
+              "component": "text",
+              "editablenode": "",
+              "name": "feep"
+            },
+            {
+              "title": "",
+              "title1": "冲销计提金额",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_jt_je_sp"
+            },
+            {
+              "title": "",
+              "title1": "报销当前月份金额",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_cur_je_sp"
+            },
+            {
+              "title": "",
+              "title1": "产品/组合编码",
+              "component": "text",
+              "editablenode": "",
+              "name": "s_pro_line_nm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "金额统计",
+      "pageid": "jetj",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "价税合计",
+          "component": "text",
+          "name": "pobcost.m_sjhj"
+        },
+        {
+          "title": "应付金额",
+          "component": "text",
+          "name": "pobcost.m_yfje"
+        }
+      ]
+    }
+  ]
 }
