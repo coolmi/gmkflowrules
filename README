@@ -233,5 +233,13 @@ handleLinkage://所控件字段联动显示说明
 
 "sumValue":{
     "arrayPath":"path.to.array",
-    "sumParam":"paramName"//number
+    "sumParam":"paramName",//number
+    "sumOthers":[
+        {
+            "type":"{array or object}",
+            "arrayPath":"",
+            "sumParam":"",
+            "valuePath":""
+        }
+    ]
 }
