@@ -230,3 +230,8 @@ handleLinkage://所控件字段联动显示说明
         }
     ]
 }
+
+"sumValue":{
+    "arrayPath":"path.to.array",
+    "sumParam":"paramName"//number
+}
