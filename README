@@ -220,3 +220,13 @@ validation://字段检验规则说明
 showLinkage://字段联动显示
 islinkage://是否可控件其他字段联动显示
 handleLinkage://所控件字段联动显示说明
+
+"pageSelectIndex":{
+    "defaultIndex":0
+    "selectIndexArray":[
+        {
+            "selectIndex":0,
+            "tasknode":["usertask1","usertask2"]
+        }
+    ]
+}
