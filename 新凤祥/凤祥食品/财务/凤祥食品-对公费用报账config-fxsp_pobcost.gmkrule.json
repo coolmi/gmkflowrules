@@ -255,7 +255,7 @@
 				"component": "text",
 				"editablenode": "",
 				"name": "s_stype_nm"
-			}
+			},
 			{
 				"title": "",
 				"title1": "子项目描述",
@@ -290,7 +290,7 @@
 				"component": "text",
 				"datatype":"money2dx",
 				"dxname": "udmbtr",
-				"name": "travelreim.dmbtr"
+				"name": "dmbtr"
 			},
 			{
 				"title": "",
