@@ -1,5 +1,5 @@
 {
-  "id": "drink_monthlyproductionplan",
+  "id": "drink_bommanage",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -23,16 +23,19 @@
         {
           "title": "申请单号",
           "component": "text",
+          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
+          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -42,6 +45,7 @@
         {
           "title": "所属部门",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
@@ -106,61 +110,65 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "月份",
+          "title": "成品物料号",
           "component": "text",
-          "name": "mainModel.monid"
+          "name": "mainModel.materialno"
         },
         {
-          "title": "月度计划总量",
+          "title": "物料描述",
           "component": "text",
-          "name": "mainModel.plantotal"
-        }
-      ]
-    },
-    {
-      "title": "计划表",
-      "pageid": "jhb",
-      "component": "panel",
-      "subComponents": [
+          "name": "mainModel.materialname"
+        },
         {
-          "component": "table_form",
-          "titleIndex": 2,
-          "basePath": "monthlyproductionplaninfolist",
-          "tableForms": [
+          "title": "业务类型",
+          "component": "radio",
+          "name": "mainModel.butype",
+          "options": [
             {
-              "title": "排产开始日期",
-              "component": "date1",
-              "name": "productiondate"
+              "title": "新建",
+              "value": "1"
             },
             {
-              "title": "排产结束日期",
-              "component": "date1",
-              "name": "productionedate"
-            },
+              "title": "变更",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "BOM组件",
+          "pageid": "bomzj",
+          "component": "panel",
+          "subComponents": [
             {
-              "title": "品名",
-              "component": "text",
-              "name": "productname"
-            },
-            {
-              "title": "规格",
-              "component": "text",
-              "name": "specificationsname"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "company"
-            },
-            {
-              "title": "排产量",
-              "component": "text",
-              "name": "yield"
-            },
-            {
-              "title": "备注",
-              "component": "text",
-              "name": "remarks"
+              "component": "table_form",
+              "titleIndex": 1,
+              "basePath": "bommanageinfos",
+              "tableForms": [
+                {
+                  "title": "物料号",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "info_materialno"
+                },
+                {
+                  "title": "物料描述",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "info_materialname"
+                },
+                {
+                  "title": "单位",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "info_unit"
+                },
+                {
+                  "title": "数量",
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "info_num"
+                }
+              ]
             }
           ]
         }

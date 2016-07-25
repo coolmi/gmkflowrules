@@ -142,7 +142,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 4,
+          "titleIndex": 0,
           "basePath": "saleorderlist",
           "tableForms": [
             {

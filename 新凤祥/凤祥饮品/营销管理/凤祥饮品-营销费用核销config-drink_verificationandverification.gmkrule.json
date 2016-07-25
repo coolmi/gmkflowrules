@@ -2,7 +2,7 @@
   "id": "drink_verificationandverification",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -124,23 +124,27 @@
         {
           "title": "项目预算",
           "component": "radio",
-          "tasknode":"usertask4",
+          "tasknode": "usertask4",
           "editablenode": "usertask4",
           "name": "mainModel.ydys",
-          "options": [{
-            "title": "预算内",
-            "value": "0"
-          },
+          "options": [
+            {
+              "title": "预算内",
+              "value": "0"
+            },
             {
               "title": "预算外",
               "value": "1"
-            }]
-        },{
+            }
+          ]
+        },
+        {
           "title": "公司",
           "component": "text",
           "editablenode": "",
           "name": "mainModel.cdbutxt"
-        }, {
+        },
+        {
           "title": "核销所属成本中心",
           "component": "text",
           "editablenode": "",
@@ -161,7 +165,8 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 4,
+          "id":"hxfy1",
+          "titleIndex": 0,
           "basePath": "versalepromoexpeninfolist",
           "tableForms": [
             {
@@ -190,9 +195,13 @@
             },
             {
               "title": "科目描述",
-              "component": "text",
+              "component": "label",
               "editablenode": "",
-              "name": "info_subjectcodedec"
+              "label": [
+                "info_subjectcode",
+                "-",
+                "info_subjectcodedec"
+              ]
             },
             {
               "title": "品项",
@@ -290,7 +299,8 @@
       "title": "财务审核信息",
       "pageid": "cwshxx",
       "component": "panel",
-      "tasknode": "usertask5,usertask6,usertask7",
+      "tasknode": "usertask4,usertask5,usertask6,usertask7",
+      "editablenode": "usertask4",
       "subComponents": [
         {
           "component": "table_form",
@@ -300,78 +310,58 @@
             {
               "title": "核销年月",
               "component": "text",
-              "editablenode": "",
               "name": "info_writedate"
             },
             {
               "title": "核销费用类型",
               "component": "text",
-              "editablenode": "",
               "name": "info_writetypedes"
             },
             {
               "title": "核销费用细项",
               "component": "text",
-              "editablenode": "",
               "name": "info_writecostypedes"
             },
             {
               "title": "科目描述",
               "component": "text",
-              "editablenode": "",
               "name": "info_aftersubjectcodedes"
             },
             {
               "title": "产品",
               "component": "text",
-              "editablenode": "",
               "name": "info_itemsdec"
             },
             {
               "title": "调后核销费用类型",
               "component": "text",
-              "editablenode": "",
+              "editablenode": "usertask4",
               "name": "info_afterwritetypedes"
             },
             {
               "title": "调后核销费用细项",
               "component": "text",
-              "editablenode": "",
+              "editablenode": "usertask4",
               "name": "info_afterwritecostypedes"
             },
             {
               "title": "调后科目",
               "component": "text",
-              "editablenode": "",
               "name": "info_aftersubjectcode"
             },
             {
               "title": "调后科目描述",
               "component": "text",
-              "editablenode": "",
               "name": "info_aftersubjectcodedes"
             },
             {
               "title": "金额",
               "component": "text",
-              "editablenode": "",
               "name": "info_writeamount"
             }
           ]
         }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }
