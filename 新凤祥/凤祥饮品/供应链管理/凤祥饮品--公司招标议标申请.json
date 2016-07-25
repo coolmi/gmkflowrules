@@ -1,0 +1,260 @@
+{
+  "id": "drink_tenderbid",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "tenderbid.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "tenderbid.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "tenderbid.pernr",
+            "-",
+            "tenderbid.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "tenderbid.sysbusinessunitname",
+            "-",
+            "tenderbid.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderbid.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxxse",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标的物名称",
+          "component": "text",
+          "name": "tenderbid.cgwzmc"
+        },
+        {
+          "title": "标的金额",
+          "component": "text",
+          "name": "tenderbid.bdje",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "招标/议标类型",
+          "component": "select",
+          "name": "tenderbid.tenderbidtype",
+          "options": [
+            {
+              "title": "采购",
+              "value": "0"
+            },
+            {
+              "title": "销售",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标/议标时间",
+          "component": "text",
+          "name": "tenderbid.zybsj",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "标书编制",
+          "component": "select",
+          "name": "tenderbid.preparation",
+          "options": [
+            {
+              "title": "编制标书",
+              "value": "0"
+            },
+            {
+              "title": "不编制标书",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标/议标地点",
+          "component": "text",
+          "name": "tenderbid.zybdd"
+        },
+        {
+          "title": "招标方式",
+          "component": "select",
+          "name": "tenderbid.cgfs",
+          "options": [
+            {
+              "title": "招标",
+              "value": "0"
+            },
+            {
+              "title": "议标",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "议标理由",
+          "component": "text",
+          "name": "tenderbid.ybly",
+          "showLinkage": [
+            {
+              "id": "cgfs",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "需求部门负责人",
+          "component": "text",
+          "name": "tenderbid.xqbmfzr"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "tenderbid.mainsendtxt"
+        },
+        {
+          "title": "招标内容描述",
+          "component": "textarea",
+          "name": "tenderbid.instruct",
+          "rows": "4"
+        }
+      ]
+    },
+    {
+      "title": "招标审核信息",
+      "pageid": "zbshxxd",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "需求部门审核",
+          "component": "text",
+          "name": "tenderbid.xqbmpw"
+        },
+        {
+          "title": "财务部门审核",
+          "component": "text",
+          "name": "tenderbid.jsbmpw"
+        }
+      ]
+    },
+    {
+      "title": "投标信息",
+      "pageid": "tbxxddd",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "tenderlifnrlist",
+          "titleIndex": 0,
+          "tableForms": [
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "lifnrname"
+            },
+            {
+              "title": "联系人",
+              "component": "text",
+              "name": "contactper"
+            },
+            {
+              "title": "电话",
+              "component": "text",
+              "name": "contacttel"
+            },
+            {
+              "title": "地址",
+              "component": "text",
+              "name": "lifnraddress"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
