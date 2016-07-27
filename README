@@ -243,3 +243,13 @@ handleLinkage://所控件字段联动显示说明
         }
     ]
 }
+
+"calculateSum":{
+    "baseValue":"",
+    "calArray":[
+        {
+            "valuePath":"",
+            "type":"{add(+) sub(-) mul(*) div(/)}"
+        }
+    ]
+}
