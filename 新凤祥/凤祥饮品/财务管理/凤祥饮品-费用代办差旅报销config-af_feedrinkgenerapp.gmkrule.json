@@ -1,5 +1,5 @@
 {
-  "id": "af_feetdrinkapp",
+  "id": "af_feedrinkgenerapp",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -21,10 +21,7 @@
       {
         "selectIndex": 2,
         "tasknode": [
-          "entrusted",
-          "accout",
-          "accoutmanger",
-          "payment"
+
         ]
       }
     ]
@@ -252,14 +249,13 @@
           "title": "报销类型",
           "component": "select",
           "editablenode": "",
-          "id": "notravle",
+          "id":"notravle",
           "name": "reimburse.notravle",
           "options": [
             {
               "text": "差旅报销",
               "value": "0"
-            },
-            {
+            },{
               "text": "非差旅报销",
               "value": "1"
             }
@@ -301,20 +297,6 @@
           "component": "text",
           "editablenode": "",
           "name": "reimburse.numpg"
-        },
-        {
-          "title": "出差申请单号",
-          "component": "text",
-          "editablenode": "",
-          "name": "reimburse.atrlnr",
-          "showLinkage": [
-            {
-              "id": "notravle",
-              "values": [
-                "0"
-              ]
-            }
-          ]
         },
         {
           "title": "说明",
@@ -458,11 +440,6 @@
               "title": "乘车人",
               "component": "text",
               "name": "enamec"
-            },
-            {
-              "title": "客户名称",
-              "component": "text",
-              "name": "kunamec"
             },
             {
               "title": "金额",
