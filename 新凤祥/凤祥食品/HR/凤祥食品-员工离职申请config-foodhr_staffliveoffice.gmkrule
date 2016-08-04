@@ -167,6 +167,22 @@
 			}]
 		},
 		{
+        "title": "是否离职审计",
+        "component": "radio",
+        "editablenode": "usertask15",
+        "tasknode":"usertask15,usertask16",
+        "name": "mainModel.sflzsj",
+        "options":
+        [{
+        	"title": "不需要",
+        	"value": "0"
+        },
+        {
+        	"title": "需要",
+        	"value": "1"
+        }]
+        },
+		{
 			"title": "计划离职日期",
 			"component": "date1",
 			"editablenode": "",
