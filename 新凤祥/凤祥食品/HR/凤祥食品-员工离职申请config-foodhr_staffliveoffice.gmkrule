@@ -169,8 +169,8 @@
 		{
         "title": "是否离职审计",
         "component": "radio",
-        "editablenode": "usertask15",
-        "tasknode":"usertask15,usertask16",
+        "editablenode": "usertask16",
+        "tasknode":"usertask16,usertask17",
         "name": "mainModel.sflzsj",
         "options":
         [{
