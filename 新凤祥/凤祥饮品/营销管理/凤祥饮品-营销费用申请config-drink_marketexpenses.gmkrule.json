@@ -123,11 +123,9 @@
 		  },
 		  {
 			"title": "成本中心",
-			"component": "label",
+			"component": "text",
 			"editablenode": "",
-			"label": ["mainModel.fykotxt",
-			  "-",
-			  "mainModel.fykostl"]
+			"name": "mainModel.fykotxt"
 		  },{
 			"title": "产品品项",
 			"component": "label",

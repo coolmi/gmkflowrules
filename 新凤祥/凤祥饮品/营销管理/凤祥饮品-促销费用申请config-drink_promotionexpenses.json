@@ -2,7 +2,7 @@
   "id": "drink_promotionexpenses",
   "handleOnPC": {
     "tasknode": [
-      "usertask2"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -137,8 +137,20 @@
           "title": "职能经理",
           "component": "text",
           "tasknode": "usertask2,usertask4,usertask6,usertask5,usertask9",
-          "editablenode": "usertask2",
-          "name": "mainModel.znjl"
+          "editablenode":"usertask2",
+          "forSelectPerson":{
+            "onclick":"getuser",
+            "postshow":true,
+            "showformname":"znjl",
+            "valuetype":["objid"],
+            "showtype":["nachn","stext"]
+          },
+          "name": "mainModel.znjlpostid",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true ,
+            "validateMsg":"请选择执行人员"
+          }
         },
         {
           "title": "所属公司",
