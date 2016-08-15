@@ -136,7 +136,13 @@
               "title": "预算外",
               "value": "1"
             }
-          ]
+          ],
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"项目预算填写必须"
+          }
+
         },
         {
           "title": "公司",
@@ -336,13 +342,23 @@
               "title": "调后核销费用类型",
               "component": "text",
               "editablenode": "usertask4",
-              "name": "info_afterwritetypedes"
+              "name": "info_afterwritetypedes",
+              "validation":{
+                "pageid":"cwshxx",
+                "required":true,
+                "validateMsg":"调后核销费用类型填写必须"
+              }
             },
             {
               "title": "调后核销费用细项",
               "component": "text",
               "editablenode": "usertask4",
-              "name": "info_afterwritecostypedes"
+              "name": "info_afterwritecostypedes",
+              "validation":{
+                "pageid":"cwshxx",
+                "required":true,
+                "validateMsg":"调后核销费用细项填写必须"
+              }
             },
             {
               "title": "调后科目",

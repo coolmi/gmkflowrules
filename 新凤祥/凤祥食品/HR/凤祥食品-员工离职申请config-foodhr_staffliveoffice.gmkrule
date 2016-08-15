@@ -180,7 +180,13 @@
         {
         	"title": "需要",
         	"value": "1"
-        }]
+        }],
+        "validation":{
+          	"pageid":"sqxx",
+          	"required":true,
+          	"validateMsg":"是否离职审计填写必须",
+          	"regexs":""
+          		  }
         },
 		{
 			"title": "计划离职日期",

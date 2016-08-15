@@ -441,7 +441,12 @@
               "text": "项目外",
               "value": "2"
             }
-          ]
+          ],
+          "validation": {
+            "validateMsg": "是否超项目预算必选",
+            "pageid": "fyxx",
+            "required": true
+          }
         },
         {
           "title": "备注",

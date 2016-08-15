@@ -133,7 +133,12 @@
             {
               "title": "设立",
               "value": "1"
-            }]
+            }],
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"业务类型填写必须"
+          }
         },
         {
           "title": "客户编号",
@@ -169,7 +174,12 @@
           "component": "text",
           "tasknode": "usertask4,usertask5",
           "editablenode": "usertask4",
-          "name":"mainModel.tykm"
+          "name":"mainModel.tykm",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"统驭科目填写必须"
+          }
         },
         {
           "title": "申请内容",

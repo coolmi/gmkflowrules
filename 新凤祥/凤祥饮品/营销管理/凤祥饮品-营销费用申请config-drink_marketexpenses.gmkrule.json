@@ -196,7 +196,12 @@
 			  {
 				"title": "预算外",
 				"value": "1"
-			  }]
+			  }],
+			"validation":{
+			  "pageid":"sqxx",
+			  "required":true,
+			  "validateMsg":"预算填写必须"
+			}
 		  },
 		  {
 			"title": "申请金额",

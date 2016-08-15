@@ -245,7 +245,7 @@
             }
           ],
           "validation": {
-            "pageid": "shyj1",
+            "pageid": "shyj",
             "required": true,
             "validateMsg": "请选择是否同意"
           }
@@ -256,7 +256,12 @@
           "editablenode": "usertask2",
           "notShowOnView": true,
           "rows": "3",
-          "name": "mainModel.remark"
+          "name": "mainModel.remark",
+          "validation":{
+            "pageid":"shyj",
+            "required":true,
+            "validateMsg":"综合评价填写必须"
+          }
         }
       ]
     },
@@ -288,14 +293,24 @@
               "text": "不与转正",
               "value": "04"
             }
-          ]
+          ],
+          "validation":{
+            "pageid":"zhglbyj",
+            "required":true,
+            "validateMsg":"意见填写必须"
+          }
         },
         {
           "title": "转正日期",
           "component": "date1",
           "datetype": "date1",
           "editablenode": "usertask7",
-          "name": "mainModel.regular_date"
+          "name": "mainModel.regular_date",
+          "validation":{
+            "pageid":"zhglbyj",
+            "required":true,
+            "validateMsg":"转正日期填写必须"
+          }
         }
       ]
     },
@@ -319,14 +334,24 @@
               "text": "否",
               "value": "2"
             }
-          ]
+          ],
+          "validation":{
+            "pageid":"zjlyj",
+            "required":true,
+            "validateMsg":"是否同意转正填写必须"
+          }
         },
         {
           "title": "评语",
           "component": "textarea",
           "rows": "3",
           "editablenode": "usertask4",
-          "name": "mainModel.py"
+          "name": "mainModel.py",
+          "validation":{
+            "pageid":"zjlyj",
+            "required":true,
+            "validateMsg":"评语填写必须"
+          }
         }
       ]
     }
