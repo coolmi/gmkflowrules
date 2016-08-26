@@ -1,0 +1,212 @@
+{
+  "id": "drink_promotional",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.btitle"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zcs"
+        },
+        {
+          "title": "使用日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.ksrq"
+        },
+        {
+          "title": "费用归属成本中心",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.fygscbzx"
+        },
+        {
+          "title": "申请内容",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sqnr"
+        }
+      ]
+    },
+    {
+      "title": "领用样品明细表",
+      "pageid": "lyypmxb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 1,
+          "basePath": "promotionalinfolist",
+          "cells": [
+            {
+              "title": "业务类型",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_fyxm"
+            },
+            {
+              "title": "品名",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_cpxpx"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_spec"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_num"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_unit"
+            },{
+              "title": "小写金额",
+              "component": "text",
+              "datatype": "money",
+              "editablenode": "",
+              "name": "info_xxje"
+            },{
+              "title": "大写金额",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_dxje"
+            }
+          ]
+        },
+        {
+          "title": "金额合计",
+          "component": "text",
+          "editablenode": "",
+          "datatype": "money",
+          "name": "mainModel.hsum"
+        },{
+          "title": "数量合计",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hsumnum"
+        }
+      ]
+    }
+  ]
+}
