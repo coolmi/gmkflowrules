@@ -303,6 +303,7 @@
         "tasknode": "usertaskz,usertask11,usertask12",
         "component": "panel",
         "subComponents": [{
+            "id":"shzxzcmc",
             "component": "table",
             "titleIndex":0,
             "basePath": "deliverylist",
