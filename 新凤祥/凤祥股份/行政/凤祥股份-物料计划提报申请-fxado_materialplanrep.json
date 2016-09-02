@@ -1,0 +1,202 @@
+{
+  "id": "fxado_materialplanrep",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "计划类型",
+          "component": "text",
+          "name": "mainModel.plantypetxt"
+        },
+        {
+          "title": "是否加急",
+          "component": "radio",
+          "name": "mainModel.whetherurgent",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "rows": "5",
+          "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "变更明细",
+      "pageid": "bgmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "tabletype": "looppanel",
+          "basePath": "materialplanchildreplist",
+          "id": "materialplanchildreplist",
+          "linkForms": [
+            {
+              "title": "",
+              "title1": "物料号",
+              "component": "text",
+              "name": "info_materialnum"
+            },
+            {
+              "title": "",
+              "title1": "物料描述",
+              "component": "text",
+              "name": "info_materialdes"
+            },
+            {
+              "title": "",
+              "title1": "单位",
+              "component": "text",
+              "name": "info_company"
+            },
+            {
+              "title": "",
+              "title1": "类别",
+              "component": "text",
+              "name": "info_category"
+            },
+            {
+              "title": "",
+              "title1": "单价",
+              "component": "money",
+              "name": "info_unitprice"
+            },
+            {
+              "title": "",
+              "title1": "数量",
+              "component": "text",
+              "name": "info_number"
+            },
+            {
+              "title": "",
+              "title1": "金额",
+              "component": "money",
+              "name": "info_amount"
+            },
+            {
+              "title": "",
+              "title1": "需求日期",
+              "component": "date1",
+              "name": "info_demanddate"
+            },
+            {
+              "title": "",
+              "title1": "用途",
+              "component": "text",
+              "name": "info_purpose"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
