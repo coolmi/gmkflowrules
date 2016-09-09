@@ -1,0 +1,182 @@
+{
+  "id": "fxado_blacklist",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "select",
+          "name": "mainModel.ywlx",
+          "options": [
+            {
+              "text": "战略性物资采购",
+              "value": "0"
+            },
+            {
+              "text": "销售",
+              "value": "1"
+            },
+            {
+              "text": "其他",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "id": "sqxx_sub_table",
+          "component": "table_form",
+          "basePath": "blacklistinfos",
+          "titleIndex": 1,
+          "tableForms": [
+            {
+              "title": "供应商类型",
+              "component": "select",
+              "name": "gyslx",
+              "options": [
+                {
+                  "text": "供应商",
+                  "value": "0"
+                },
+                {
+                  "text": "客户",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "title": "公司名称",
+              "component": "text",
+              "name": "gsmc"
+            },
+            {
+              "title": "法人名称",
+              "component": "text",
+              "name": "frmc"
+            },
+            {
+              "title": "sap系统中编号",
+              "component": "text",
+              "name": "sapbh"
+            },
+            {
+              "title": "营业执照号",
+              "component": "text",
+              "name": "yyzzh"
+            },
+            {
+              "title": "组织机构代码",
+              "component": "text",
+              "name": "zzjgdm"
+            },
+            {
+              "title": "纳税人编号",
+              "component": "text",
+              "name": "nsrbh"
+            },
+            {
+              "title": "列入黑名单理由",
+              "component": "text",
+              "name": "reason"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
