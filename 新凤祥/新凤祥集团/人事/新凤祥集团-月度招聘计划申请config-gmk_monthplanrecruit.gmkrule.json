@@ -1,0 +1,167 @@
+{
+  "id": "gmk_monthplanrecruit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "monthplanrecruit.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "monthplanrecruit.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "monthplanrecruit.pernr",
+            "-",
+            "monthplanrecruit.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "monthplanrecruit.sysbusinessunitname",
+            "-",
+            "monthplanrecruit.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "monthplanrecruit.id"
+        }
+      ]
+    },
+    {
+      "title": "需求信息",
+      "pageid": "xqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "计划月份",
+          "component": "text",
+          "name": "monthplanrecruit.r_month"
+        },
+        {
+          "title": "需求岗位",
+          "component": "text",
+          "name": "monthplanrecruit.r_postnm"
+        },
+        {
+          "title": "需求人数",
+          "component": "text",
+          "name": "monthplanrecruit.r_num"
+        },
+        {
+          "title": "需求原因",
+          "component": "select",
+          "name": "monthplanrecruit.r_reason",
+          "options": [
+            {
+              "text": "替补",
+              "value": "1"
+            },
+            {
+              "text": "空编",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "期望到岗日期",
+          "component": "date1",
+          "name": "monthplanrecruit.r_indate"
+        },
+        {
+          "title": "是否招聘应届生",
+          "component": "select",
+          "name": "monthplanrecruit.r_isfresh",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "其他素质要求",
+          "component": "text",
+          "name": "monthplanrecruit.r_request",
+          "rows": "3"
+        }
+      ]
+    }
+  ]
+}
