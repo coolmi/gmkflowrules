@@ -187,7 +187,7 @@
       ]
     },
     {
-      "title": "交接意见",
+      "title": "交接结果",
       "pageid": "jjjgyjck",
       "component": "panel",
       "subComponents": [
@@ -227,8 +227,8 @@
           "title": "请选择交接情况",
           "component": "radio",
           "notShowOnView": true,
-          "tasknode": "disinternalverify,gzjjsign",
-          "editablenode": "disinternalverify,gzjjsign,itcodesbjj,clglssh,cwbjczkql,bmhsgzhsqk,hqglshsswpjj,bmzxcdba",
+          "tasknode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "editablenode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
           "name": "worktransfer.jjqk",
           "validation": {
             "pageid": "jjjgyjck",
