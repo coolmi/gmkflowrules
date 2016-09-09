@@ -112,6 +112,18 @@
           "name": "dimission.dnachn"
         },
         {
+          "title": "合同到期日",
+          "component": "date1",
+          "tasknode": "rszyzxcdba",
+          "editablenode": "rszyzxcdba",
+          "name": "dimission.htdqr",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请填写合同到期日"
+          }
+        },
+        {
           "title": "员工编号",
           "component": "text",
           "name": "dimission.dpernr"
@@ -179,26 +191,39 @@
           ]
         },
         {
-          "title": "手机",
-          "component": "text",
-          "name": "dimission.dtelephone"
+          "title": "申请离职日期",
+          "component": "date1",
+          "tasknode": "disinternalverify,rlzyblzft,rlzyzjaudit,rszyzxcdba",
+          "editablenode": "disinternalverify",
+          "name": "dimission.sqrzrq"
         },
         {
-          "title": "核准离职日期",
-          "component": "date1",
-          "editablenode": "disinternalverify",
-          "name": "dimission.dhzlzrq",
+          "title": "是否需要离职审计",
+          "component": "radio",
+          "tasknode": "disinternalverify,rszyzxcdba",
+          "editablenode": "disinternalverify,rszyzxcdba",
+          "name": "dimission.sfsj",
+          "options": [
+            {
+              "text": "是",
+              "value": "1"
+            },
+            {
+              "text": "否",
+              "value": "0"
+            }
+          ],
           "validation": {
             "pageid": "sqxx",
-            "required": "true",
-            "validateMsg": "请填写核准离职日期",
-            "regexs": ""
+            "required": true,
+            "validateMsg": "请填写是否需要离职审计"
           }
         },
         {
           "title": "离职原因",
           "component": "textarea",
-          "name": "dimission.leavereason"
+          "name": "dimission.leavereason",
+          "rows": "3"
         }
       ]
     },
@@ -208,132 +233,19 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "离职执行情况填写",
-          "component": "checkbox",
-          "id": "lzzxqk",
-          "editablenode": "rszyzxcdba",
-          "tasknode": "rszyzxcdba",
-          "name": "dimission.zxqktx",
-          "islinkage": true,
-          "validation": {
-            "pageid": "rlzybtx",
-            "required": true,
-            "validateMsg": "请选择离职执行情况"
-          },
-          "handleLinkage": [
-            {
-              "id": "qtsxsm1",
-              "values": [
-                "2"
-              ]
-            }
-          ],
-          "options": [
-            {
-              "text": "完成员工通知",
-              "value": "0"
-            },
-            {
-              "text": "完成薪资结算",
-              "value": "1"
-            },
-            {
-              "text": "其他事项",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "title": "其他事项说明",
-          "id": "qtsxsm1",
+          "title": "离职访谈情况",
+          "editablenode": "rlzyblzft",
+          "tasknode": "rlzyblzft,rlzyzjaudit,rszyzxcdba",
           "component": "textarea",
-          "editablenode": "rszyzxcdba",
-          "tasknode": "rszyzxcdba",
+          "name": "dimission.lzft",
+          "rows": "3",
           "validation": {
             "pageid": "rlzybtx",
             "required": true,
-            "validateMsg": "请填写其他事项说明"
-          },
-          "name": "dimission.zxqkqtsxsm",
-          "showLinkage": [
-            {
-              "id": "lzzxqk",
-              "values": [
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "存档、备案情况填写",
-          "component": "checkbox",
-          "id": "cdbaqktx",
-          "tasknode": "rszyzxcdba",
-          "editablenode": "rszyzxcdba",
-          "name": "dimission.cdbaqktx",
-          "islinkage": true,
-          "validation": {
-            "pageid": "rlzybtx",
-            "required": true,
-            "validateMsg": "请选择存档、备案情况"
-          },
-          "handleLinkage": [
-            {
-              "id": "qtsxsm2",
-              "values": [
-                "2"
-              ]
-            }
-          ],
-          "options": [
-            {
-              "text": "完成员工通知",
-              "value": "0"
-            },
-            {
-              "text": "完成备案",
-              "value": "1"
-            },
-            {
-              "text": "其他事项",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "title": "其他事项说明",
-          "id": "qtsxsm2",
-          "component": "textarea",
-          "editablenode": "rszyzxcdba",
-          "tasknode": "rszyzxcdba",
-          "name": "dimission.cdbaqtsxsm",
-          "validation": {
-            "pageid": "rlzybtx",
-            "required": true,
-            "validateMsg": "请填写其他事项说明"
-          },
-          "showLinkage": [
-            {
-              "id": "cdbaqktx",
-              "values": [
-                "2"
-              ]
-            }
-          ]
-        },
+            "validateMsg": "请填写离职访谈情况"
+          }
+        }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }
