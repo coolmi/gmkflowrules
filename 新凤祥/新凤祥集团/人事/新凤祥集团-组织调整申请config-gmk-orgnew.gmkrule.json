@@ -108,8 +108,18 @@
         {
           "id": "sqsx",
           "title": "申请事项",
-          "component": "text",
-          "name": "orgnew.appmattername"
+          "component": "select",
+          "name": "orgnew.appmatter",
+          "options": [
+            {
+              "text": "部门组织架构调整",
+              "value": "1006"
+            },
+            {
+              "text": "部门职位编制调整",
+              "value": "1007"
+            }
+          ]
         },
         {
           "title": "拟调整职能中心/部门",
@@ -126,44 +136,228 @@
         {
           "title": "调整前部门名称",
           "component": "text",
-          "name": "orgnew.adjustbeforedepartment"
+          "name": "orgnew.adjustbeforedepartment",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整后部门名称",
           "component": "text",
-          "name": "orgnew.adjustafterdepartment"
+          "name": "orgnew.adjustafterdepartment",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整前部门职位数",
           "component": "text",
-          "name": "orgnew.adjustbeforepositionnum"
+          "name": "orgnew.adjustbeforepositionnum",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整后部门职位数",
           "component": "text",
-          "name": "orgnew.adjustafterpositionnum"
+          "name": "orgnew.adjustafterpositionnum",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整前部门编制数",
           "component": "text",
-          "name": "orgnew.adjustbeforedepartnum"
+          "name": "orgnew.adjustbeforedepartnum",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整后部门编制数",
           "component": "text",
-          "name": "orgnew.adjustafterdepartnum"
+          "name": "orgnew.adjustafterdepartnum",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "调整原因",
           "component": "textarea",
           "name": "orgnew.matters",
-          "rows": "3"
+          "rows": "3",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
         },
         {
           "title": "其他主要变化",
           "component": "textarea",
           "name": "orgnew.others",
-          "rows": "3"
+          "rows": "3",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "部门职位编制调整",
+      "pageid": "bmzwbztz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "demandchildplanlist",
+          "tableForms": [
+            {
+              "title": "拟调整职位",
+              "component": "text",
+              "name": "info_demandnumber",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整性质描述",
+              "component": "text",
+              "name": "info_materialdescription",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整前编制数",
+              "component": "text",
+              "name": "info_oridemandquantity",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整后编制数",
+              "component": "text",
+              "name": "info_changedemandquantity",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整前部门编制数",
+              "component": "text",
+              "name": "orgnew.adjustbeforedepartnum",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整后部门编制数",
+              "component": "text",
+              "name": "info_reason",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整原因",
+              "component": "textarea",
+              "name": "orgnew.matters",
+              "rows": "3",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "调整分工简述",
+              "component": "textarea",
+              "name": "info_remark",
+              "rows": "3",
+              "showLinkage": [
+                {
+                  "id": "sqsx",
+                  "values": [
+                    "1007"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
