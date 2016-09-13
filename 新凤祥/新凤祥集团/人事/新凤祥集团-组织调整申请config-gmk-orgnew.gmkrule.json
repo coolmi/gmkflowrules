@@ -2,7 +2,7 @@
   "id": "gmk-orgnew",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask3"
     ],
     "flag": [
       "resubmit"
@@ -212,6 +212,20 @@
           ]
         },
         {
+          "title": "调整后部门负责人",
+          "component": "text",
+          "tasknode": "usertask3,usertask7,usertask4,usertask5",
+          "name": "orgnew.adjustafterpositiontxt",
+          "showLinkage": [
+            {
+              "id": "sqsx",
+              "values": [
+                "1006"
+              ]
+            }
+          ]
+        },
+        {
           "title": "调整原因",
           "component": "textarea",
           "name": "orgnew.matters",
@@ -261,7 +275,7 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             },
@@ -275,7 +289,7 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             },
@@ -289,7 +303,7 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             },
@@ -303,42 +317,14 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
-                }
-              ]
-            },
-            {
-              "title": "调整前部门编制数",
-              "component": "text",
-              "name": "orgnew.adjustbeforedepartnum",
-              "showLinkage": [
-                {
-                  "id": "sqsx",
-                  "values": [
-                    "1007"
-                  ],
-                  "linkFlag":"normal"
-                }
-              ]
-            },
-            {
-              "title": "调整后部门编制数",
-              "component": "text",
-              "name": "info_reason",
-              "showLinkage": [
-                {
-                  "id": "sqsx",
-                  "values": [
-                    "1007"
-                  ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             },
             {
               "title": "调整原因",
               "component": "textarea",
-              "name": "orgnew.matters",
+              "name": "info_reason",
               "rows": "3",
               "showLinkage": [
                 {
@@ -346,7 +332,7 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             },
@@ -361,7 +347,7 @@
                   "values": [
                     "1007"
                   ],
-                  "linkFlag":"normal"
+                  "linkFlag": "normal"
                 }
               ]
             }
