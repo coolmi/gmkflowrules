@@ -102,6 +102,7 @@
         {
           "title": "用印申请类型",
           "component": "select",
+          "id":"sealusetypeid",
           "name": "sealapp.sealusetype",
           "options": [
             {
@@ -120,6 +121,40 @@
           "name": "sealapp.datebegin",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "印章归还日期",
+          "component": "date1",
+          "name": "sealapp.dateend",
+          "showLinkage":[
+            {
+              "id":"sealusetypeid",
+              "values":["1"]
+            }
+          ]
+        },
+        {
+          "title": "同行人",
+          "component": "label",
+          "name": "sealapp.anameen",
+          "label": ["sealapp.peerid", "-", "sealapp.peername"],
+          "showLinkage":[
+            {
+              "id":"sealusetypeid",
+              "values":["1"]
+            }
+          ]
+        },
+        {
+          "title": "联系方式",
+          "component": "text",
+          "name": "sealapp.phone",
+          "showLinkage":[
+            {
+              "id":"sealusetypeid",
+              "values":["1"]
+            }
+          ]
         },
         {
           "title": "用印文件类型",
