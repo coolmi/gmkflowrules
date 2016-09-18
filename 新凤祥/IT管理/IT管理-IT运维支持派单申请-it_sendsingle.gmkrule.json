@@ -401,7 +401,7 @@
       "title": "用户反馈",
       "pageid": "yhfk",
       "component": "panel",
-      "tasknode": "usertask3",
+      "tasknode": "usertask3,usertask5",
       "subComponents": [
         {
           "title": "是否满意",
@@ -478,6 +478,27 @@
             "required": true,
             "validateMsg": "请选择不满意项"
           }
+        },
+        {
+          "title": "选择环节",
+          "component": "select",
+          "editablenode": "usertask5",
+          "name": "sendsingle.link",
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择环节"
+          },
+          "options": [
+            {
+              "text": "客户信息反馈环节",
+              "value": "是"
+            },
+            {
+              "text": "结束环节",
+              "value": "否"
+            }
+          ]
         }
       ]
     }
