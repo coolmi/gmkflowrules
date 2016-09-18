@@ -1,0 +1,267 @@
+{
+  "id": "ap_sealapp",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx_trademarkregistrationauth",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "sealapp.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "sealapp.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "sealapp.pernr",
+            "-",
+            "sealapp.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "sealapp.sysbusinessunitname",
+            "-",
+            "sealapp.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ealapp.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sealapp.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx_sealapp",
+      "subComponents": [
+        {
+          "title": "用印申请类型",
+          "component": "select",
+          "name": "sealapp.sealusetype",
+          "options": [
+            {
+              "text": "普通用印",
+              "value": "0"
+            },
+            {
+              "text": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "使用日期",
+          "component": "text",
+          "name": "sealapp.datebegin",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "用印文件类型",
+          "component": "text",
+          "name": "sealapp.filetypename"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id":"filetypechaldkey",
+          "name": "sealapp.filetypechald"
+        },
+        {
+          "title": "文件小类",
+          "component": "text",
+          "id":"filetypechaldnamekey",
+          "name": "sealapp.filetypechaldname"
+        },
+        {
+          "title": "涉及金额(万元)",
+          "component": "text",
+          "name": "sealapp.money",
+          "showLinkage":[
+            {
+              "id":"filetypechaldkey",
+              "values":["1001","1003","1004"]
+            }
+          ]
+        },
+
+        {
+          "title": "添加附件",
+          "component": "select",
+          "id":"addfileskey",
+          "name": "sealapp.addfiles",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "法务审核环节人员",
+          "component": "text",
+          "name": "sealapp.legalauditname",
+          "emptyHidden":true
+        },
+        {
+          "title": "无附件原由",
+          "component": "textarea",
+          "rows":"3",
+          "name": "sealapp.wureason",
+          "showLinkage":[
+            {
+              "id":"addfileskey",
+              "values":["否"]
+            }
+          ]
+        },
+        {
+          "title": "使用原由",
+          "component": "textarea",
+          "rows":"3",
+          "name": "sealapp.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows":"3",
+          "name": "sealapp.texta"
+        }
+
+      ]
+    },
+    {
+      "title": "印章需求印章明细",
+      "component": "panel",
+      "pageid": "xcffmx_sealapp",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "id": "xcffmxbhxm",
+          "basePath": "sealdetails",
+          "cells": [
+            {
+              "title": "印章名称",
+              "component": "text",
+              "name": "sealname"
+            },
+            {
+              "title": "印章类型",
+              "component": "label",
+              "label": [
+                "sealtypeid",
+                "-",
+                "sealtypename"
+              ]
+            },
+            {
+              "title": "印章管理员",
+              "component": "text",
+              "name": "cname"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "印章需求文件明细",
+      "component": "panel",
+      "pageid": "xcffmx_a_sealapp",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "id": "xcffmxbhxm_v",
+          "basePath": "sealfiledatails",
+          "cells": [
+            {
+              "title": "文件名称",
+              "component": "text",
+              "name": "filenames"
+            },
+            {
+              "title": "页数",
+              "component": "text",
+              "name": "pagenum"
+            },
+            {
+              "title": "份数",
+              "component": "text",
+              "name": "copy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
