@@ -427,13 +427,23 @@
               "text": "不满意",
               "value": "不满意"
             }
-          ]
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择是否满意"
+          }
         },
         {
           "title": "反馈意见",
           "component": "text",
           "editablenode": "usertask3",
-          "name": "sendsingle.feedback"
+          "name": "sendsingle.feedback",
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择反馈意见"
+          }
         },
         {
           "title": "不满意项",
@@ -462,7 +472,12 @@
               "text": "响应时间",
               "value": "NO3"
             }
-          ]
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择不满意项"
+          }
         }
       ]
     }
