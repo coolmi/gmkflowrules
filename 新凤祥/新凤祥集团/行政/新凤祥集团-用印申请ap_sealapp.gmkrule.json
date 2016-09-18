@@ -142,6 +142,7 @@
           "title": "涉及金额(万元)",
           "component": "text",
           "name": "sealapp.money",
+          "datatype":"money",
           "showLinkage":[
             {
               "id":"filetypechaldkey",
