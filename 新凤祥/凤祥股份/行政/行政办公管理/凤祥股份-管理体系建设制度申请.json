@@ -1,0 +1,154 @@
+{
+  "id": "fxado_sysconstruction",
+  "handleOnPC": {
+    "tasknode": [
+      "gkbmrwff"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "self_sqxx_rule_list",
+          "basePath": "sysconstructioninfolist",
+          "tableForms": [
+            {
+              "title": "建议/制度名称",
+              "component": "text",
+              "name": "info_jyzdmc"
+            },
+            {
+              "title": "目的",
+              "component": "text",
+              "name": "info_md"
+            },
+            {
+              "title": "隶属管理要素",
+              "component": "text",
+              "name": "info_lsglys"
+            },
+            {
+              "title": "控制活动要求",
+              "component": "textarea",
+              "name": "info_kzhdyq"
+            },
+            {
+              "title": "分解说明",
+              "component": "textarea",
+              "name": "info_fjsm"
+            },
+            {
+              "title": "归口管理部门",
+              "component": "text",
+              "name": "info_gkdept"
+            },
+            {
+              "title": "归口管理部门管理者",
+              "component": "text",
+              "name": "info_gkdeptmgr"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
