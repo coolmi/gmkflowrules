@@ -149,6 +149,7 @@ radio:联动
 "events":{
 		"eventType":"viewOther",			//事件类型 viewOther openUrl openHtml openDocument  openHtmlContent
 		"openurl":"",	//仅限 openUrl
+		"title": "" 	//仅限 openHtml
 		"openhtml":"path.to.html",	//仅限 openHtml
 		"filename":"",	//仅限 openDocument
 		"afrescoid":"", //仅限 openDocument
