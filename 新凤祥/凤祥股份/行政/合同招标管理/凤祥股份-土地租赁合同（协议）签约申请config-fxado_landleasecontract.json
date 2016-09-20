@@ -1,0 +1,384 @@
+{
+  "id": "fxado_landleasecontract",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.ssgsname"
+        },
+        {
+          "title": "承包单位",
+          "component": "text",
+          "name": "mainModel.cbdw"
+        },
+        {
+          "title": "标的使用部门",
+          "component": "text",
+          "name": "mainModel.bdsybm"
+        },
+        {
+          "title": "对方法定代表",
+          "component": "text",
+          "name": "mainModel.dffddbr"
+        },
+        {
+          "title": "对方代理人",
+          "component": "text",
+          "name": "mainModel.dfdlr"
+        },
+        {
+          "title": "我方合同承办人",
+          "component": "text",
+          "name": "mainModel.wfhtcbr"
+        },
+        {
+          "title": "对方联系电话",
+          "component": "text",
+          "name": "mainModel.dflxdh"
+        },
+        {
+          "title": "我方合同承办人电话",
+          "component": "text",
+          "name": "mainModel.wfhtcbrdh"
+        }
+      ]
+    },
+    {
+      "title": "合同协议情况",
+      "pageid": "htxyqk",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.xmmc"
+        },
+        {
+          "title": "合同性质及状况",
+          "component": "radio",
+          "name": "mainModel.htxzjzk",
+          "options": [
+            {
+              "title": "固定资产投资",
+              "value": "0"
+            },
+            {
+              "title": "生产经营",
+              "value": "1"
+            },
+            {
+              "title": "新订",
+              "value": "2"
+            },
+            {
+              "title": "更改",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "主要标的物",
+          "component": "text",
+          "name": "mainModel.zybdw"
+        },
+        {
+          "title": "合同约定亩数",
+          "component": "text",
+          "name": "mainModel.htydms"
+        },
+        {
+          "title": "合同履行期限",
+          "component": "text",
+          "name": "mainModel.htlxqx"
+        }
+      ]
+    },
+    {
+      "title": "合同号信息",
+      "pageid": "hthxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同编号类别",
+          "component": "select",
+          "name": "mainModel.htbhlb",
+          "refersToArray": {
+            "basePath": "snclist",
+            "value": "nccode",
+            "text": [
+              "nccode",
+              "-",
+              "ncname"
+            ]
+          }
+        },
+        {
+          "title": "公司信息",
+          "component": "text",
+          "name": "mainModel.gsxxname"
+        },
+        {
+          "title": "是否为补充类合同",
+          "component": "radio",
+          "name": "mainModel.sfwbclht",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 4,
+          "basePath": "infolist",
+          "tableForms": [
+            {
+              "title": "土地用途",
+              "component": "text",
+              "name": "tdyt"
+            },
+            {
+              "title": "出租方",
+              "component": "text",
+              "name": "czf"
+            },
+            {
+              "title": "合同编号",
+              "component": "text",
+              "name": "htbh"
+            },
+            {
+              "title": "合同亩数",
+              "component": "text",
+              "name": "htms"
+            },
+            {
+              "title": "对方法人代表",
+              "component": "text",
+              "name": "dffrdb"
+            },
+            {
+              "title": "合同份数",
+              "component": "text",
+              "name": "htfs"
+            },
+            {
+              "title": "合同页数",
+              "component": "text",
+              "name": "htys"
+            },
+            {
+              "title": "附件份数",
+              "component": "text",
+              "name": "fjfs"
+            },
+            {
+              "title": "附件页数",
+              "component": "text",
+              "name": "fjys"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "印章信息",
+      "pageid": "yzxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "用印类型",
+          "component": "radio",
+          "name": "mainModel.yylx",
+          "options": [
+            {
+              "title": "普通用印",
+              "value": "0"
+            },
+            {
+              "title": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "text",
+          "name": "mainModel.yzmcname"
+        },
+        {
+          "title": "印章类型",
+          "component": "text",
+          "name": "mainModel.yzlx"
+        },
+        {
+          "title": "印章使用",
+          "component": "label",
+          "label": [
+            "一式",
+            "mainModel.yzsyfs",
+            "份,共计",
+            "mainModel.yzsyms",
+            "枚"
+          ]
+        },
+        {
+          "title": "印章使用日期",
+          "component": "date1",
+          "name": "mainModel.yzsyrq"
+        },
+        {
+          "title": "计划归还日期",
+          "component": "date1",
+          "name": "mainModel.jhghrq"
+        }
+      ]
+    },
+    {
+      "title": "审批人信息",
+      "pageid": "sprxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "综合管理部审批人",
+          "component": "text",
+          "name": "mainModel.zhglbspr"
+        },
+        {
+          "title": "养殖建设项目部审批人",
+          "component": "text",
+          "name": "mainModel.yzjsxmbspr"
+        },
+        {
+          "title": "法律办审批人",
+          "component": "text",
+          "name": "mainModel.flbspr"
+        },
+        {
+          "title": "财务部审批人",
+          "component": "text",
+          "name": "mainModel.cwbspr"
+        },
+        {
+          "title": "分管副总指挥长",
+          "component": "text",
+          "name": "mainModel.fgfzzhz"
+        },
+        {
+          "title": "档案室存档操作人",
+          "component": "text",
+          "name": "mainModel.dascdczr"
+        }
+      ]
+    }
+  ]
+}
