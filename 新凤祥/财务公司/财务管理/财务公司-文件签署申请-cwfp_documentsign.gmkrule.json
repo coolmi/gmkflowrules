@@ -1,0 +1,280 @@
+{
+    "id": "cwfp_documentsign",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "documentsign.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "documentsign.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["documentsign.pernr", "-", "documentsign.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["documentsign.sysbusinessunitname", "-", "documentsign.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "documentsign.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+			{
+                "title": "文件签署人",
+                "component": "textarea",
+                "rows":"3",
+                "name": "documentsign.signedname"
+            },
+            {
+                "title": "文件保送单位",
+                "component": "textarea",
+                "rows":"3",
+                "name": "documentsign.documentunit"
+            },
+			{
+                "title": "用途",
+                "component": "textarea",
+                "rows":"3",
+                "name": "documentsign.usenote"
+            },
+			{
+                "title": "需要加盖印章",
+                "component": "select",
+                "id":"needstampid",
+                "name": "documentsign.needstamp",
+                "options":[
+                  {
+                  "title":"是",
+                  "value":"1"
+                  },
+                  {
+                  "title":"否",
+                  "value":"0"
+                  }
+                ]
+            },
+            {
+              "title": "用印类型",
+              "component": "select",
+              "name": "documentsign.ustype",
+              "options":[
+                {
+                  "title":"携章外出",
+                  "value":"1"
+                },
+                {
+                  "title":"普通用印",
+                  "value":"0"
+                }
+              ],
+              "showLinkage":[
+                {
+                  "id":"needstampid",
+                  "values":["1"]
+                }
+              ]
+            },
+            {
+              "title": "印章使用",
+              "component": "label",
+              "label": [
+                "一式",
+                "documentsign.copy",
+                "份共计",
+                "documentsign.gold",
+                "枚"
+              ],
+              "showLinkage":[
+                {
+                  "id":"needstampid",
+                  "values":["1"]
+                }
+              ]
+            },
+            {
+              "title": "印章使用日期",
+              "component": "text",
+              "name": "documentsign.begdar",
+              "datatype":"date",
+              "dateFormat":"yyyy-MM-dd",
+              "showLinkage":[
+                {
+                  "id":"needstampid",
+                  "values":["1"]
+                }
+              ]
+            },
+            {
+              "title": "计划归还日期",
+              "component": "text",
+              "name": "documentsign.enddar",
+              "datatype":"date",
+              "dateFormat":"yyyy-MM-dd",
+              "showLinkage":[
+                {
+                  "id":"needstampid",
+                  "values":["1"]
+                }
+              ]
+            },
+            {
+              "title": "使用说明",
+              "component": "textarea",
+              "rows":"3",
+              "name": "documentsign.remarks",
+              "showLinkage":[
+                {
+                  "id":"needstampid",
+                  "values":["1"]
+                }
+              ]
+            }
+
+
+
+        ]
+    },
+      {
+        "title": "印章需求印章明细",
+        "pageid": "yzxqmx",
+        "component": "panel",
+        "subComponents": [
+          {
+            "title": "",
+            "component": "formLabelLink",
+            "titleIndex": 0,
+            "tabletype": "looppanel",
+            "basePath": "sealDetails",
+            "id": "sealdetails",
+            "linkForms": [
+              {
+                "title": "",
+                "title1": "印章名称",
+                "component": "text",
+                "name": "sealname"
+
+              },
+              {
+                "title": "",
+                "title1": "印章类型",
+                "component": "text",
+                "name": "sealtypename"
+              },
+              {
+                "title": "",
+                "title1": "印章管理员",
+                "component": "text",
+                "name": "cname"
+              }
+
+            ]
+          }
+
+
+        ]
+      },
+      {
+        "title": "签署文件名称与数量",
+        "pageid": "yzxqwjmx",
+        "component": "panel",
+        "subComponents": [
+          {
+            "title": "",
+            "component": "formLabelLink",
+            "titleIndex": 0,
+            "tabletype": "looppanel",
+            "basePath": "bases",
+            "id": "baseslist",
+            "linkForms": [
+              {
+                "title": "",
+                "title1": "文件名称",
+                "component": "text",
+                "name": "filenames"
+
+              },
+              {
+                "title": "",
+                "title1": "数量(份)",
+                "component": "text",
+                "name": "numbers"
+              }
+
+
+            ]
+          }
+        ]
+
+      }
+    ]
+
+}
