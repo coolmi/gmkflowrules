@@ -1,7 +1,9 @@
 {
   "id": "HR-DIMISSION",
   "handleOnPC": {
-    "tasknode": [""],
+    "tasknode": [
+      ""
+    ],
     "flag": [
       "resubmit"
     ]
@@ -107,7 +109,8 @@
           "title": "离职人员",
           "component": "text",
           "name": "dimission.dnachn"
-        },{
+        },
+        {
           "title": "离职岗位",
           "component": "text",
           "name": "dimission.dpostname"
@@ -136,6 +139,8 @@
           "title": "离职访谈",
           "component": "checkbox",
           "name": "dimission.interviewleavereason",
+          "id": "interviewleavereason_on_handle",
+          "notShowOnView": true,
           "editablenode": "hrdisinterview",
           "refersToArray": {
             "basePath": "dimissreasons.reasons",
@@ -144,10 +149,23 @@
               "reason"
             ]
           }
+        },
+        {
+          "title": "离职访谈",
+          "component": "checkbox",
+          "name": "dimission.interviewleavereason",
+          "id": "interviewleavereason_on_view",
+          "notShowOnHandle": true,
+          "editablenode": "hrdisinterview",
+          "refersToArray": {
+            "basePath": "dimission.interviewleavereason.reasons",
+            "value": "id",
+            "text": [
+              "reason"
+            ]
+          }
         }
       ]
     }
-
-
   ]
 }
