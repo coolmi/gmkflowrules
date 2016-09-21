@@ -183,40 +183,19 @@
               "value": "6"
             }
           ]
-        },
-        {
-          "title": "是否需要委托离任审计",
-          "component": "radio",
-          "editablenode": "disinternalverify",
-          "name": "worktransfer.wtlzsj",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请选择是否需要委托离任审计"
-          },
-          "options": [
-            {
-              "title": "需要",
-              "value": "0"
-            },
-            {
-              "title": "不需要",
-              "value": "1"
-            }
-          ]
         }
       ]
     },
     {
-      "title": "交接结果意见",
+      "title": "交接结果",
       "pageid": "jjjgyjck",
       "component": "panel",
       "subComponents": [
         {
-          "component": "table",
+          "component": "table_form",
           "titleIndex": 0,
           "basePath": "worktransfersituations",
-          "cells": [
+          "tableForms": [
             {
               "title": "任务名称",
               "component": "text",
@@ -248,7 +227,8 @@
           "title": "请选择交接情况",
           "component": "radio",
           "notShowOnView": true,
-          "editablenode": "disinternalverify,damgrshgszljj,itcodesbjj,clglssh,cwbjczkql,bmhsgzhsqk,hqglshsswpjj,bmzxcdba",
+          "tasknode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "editablenode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
           "name": "worktransfer.jjqk",
           "validation": {
             "pageid": "jjjgyjck",
@@ -267,18 +247,6 @@
           ]
         }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }

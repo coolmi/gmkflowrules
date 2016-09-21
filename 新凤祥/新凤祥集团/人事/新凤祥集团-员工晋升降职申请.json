@@ -1,0 +1,220 @@
+{
+  "id": "gmk_promote",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "拟调整人员",
+          "component": "text",
+          "name": "mainModel.m_usernm"
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "mainModel.m_pernr"
+        },
+        {
+          "title": "所在部门名称",
+          "component": "text",
+          "name": "mainModel.m_deptnm"
+        },
+        {
+          "title": "职位",
+          "component": "text",
+          "name": "mainModel.m_jobnm"
+        },
+        {
+          "title": "参加工作时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.m_jointime"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.m_joindate"
+        },
+        {
+          "title": "学历",
+          "component": "select",
+          "name": "mainModel.m_xl",
+          "options": [
+            {
+              "text": "请选择",
+              "value": "请选择"
+            },
+            {
+              "text": "博士",
+              "value": "0"
+            },
+            {
+              "text": "硕士",
+              "value": "1"
+            },
+            {
+              "text": "本科",
+              "value": "2"
+            },
+            {
+              "text": "专科",
+              "value": "3"
+            },
+            {
+              "text": "其他",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "职业(执业)资格",
+          "component": "text",
+          "name": "mainModel.m_zyzg"
+        },
+        {
+          "title": "变动类型",
+          "component": "select",
+          "name": "mainModel.m_type",
+          "options": [
+            {
+              "text": "晋升",
+              "value": "0"
+            },
+            {
+              "text": "降职",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "拟变动日期",
+          "component": "text",
+          "name": "mainModel.m_changedate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "调整岗位名称",
+          "component": "text",
+          "name": "mainModel.m_cpostnm"
+        },
+        {
+          "title": "调整岗位编号",
+          "component": "text",
+          "name": "mainModel.m_cpostid"
+        },
+        {
+          "title": "任职情况描述",
+          "component": "textarea",
+          "rows": 4,
+          "name": "mainModel.m_remark"
+        }
+      ]
+    }
+  ]
+}

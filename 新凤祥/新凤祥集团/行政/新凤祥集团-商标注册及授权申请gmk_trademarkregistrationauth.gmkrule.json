@@ -1,0 +1,197 @@
+{
+  "id": "gmk_trademarkregistrationauth",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx_trademarkregistrationauth",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.buktxt"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx_trademarkregistrationauth",
+      "subComponents": [
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.entryname"
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.servicetypetxt"
+        },
+        {
+          "title": "申请商标名称",
+          "component": "text",
+          "name": "mainModel.trademarktxt"
+        },
+        {
+          "title": "被授权商标名称",
+          "component": "text",
+          "name": "mainModel.authlicenseetxt"
+        },
+        {
+          "title": "许可人",
+          "component": "text",
+          "name": "mainModel.licensortxt"
+        },
+        {
+          "title": "被许可人",
+          "component": "text",
+          "name": "mainModel.authlicenseetxt"
+        },
+        {
+          "title": "授权使用费",
+          "component": "select",
+          "id": "authmoney",
+          "name": "mainModel.authmoney",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "商标诠释",
+          "component": "textarea",
+          "rows":"3",
+          "name": "mainModel.trademarkinter"
+        },
+        {
+          "title": "用途描述",
+          "component": "textarea",
+          "rows":"3",
+          "name": "mainModel.usedescription"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows":"3",
+          "name": "mainModel.remarks"
+        },
+        {
+          "title": "用印类型",
+          "component": "select",
+          "id": "sealtype",
+          "name": "mainModel.sealtype",
+          "options": [
+            {
+              "text": "普通用印",
+              "value": "B1"
+            },
+            {
+              "text": "携章外出",
+              "value": "B2"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "textarea",
+          "rows":"2",
+          "name": "mainModel.sealtxt"
+        }
+
+      ]
+    }
+  ]
+}

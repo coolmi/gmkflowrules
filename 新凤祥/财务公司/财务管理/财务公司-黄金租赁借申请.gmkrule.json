@@ -1,0 +1,443 @@
+{
+  "id": "cwfp-leaseuse",
+  "handleOnPC": {
+    "tasknode": [
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      			"account"
+
+    ],
+    "beforPop": true
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "goldlease.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "goldlease.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "goldlease.pernr",
+            "-",
+            "goldlease.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "goldlease.sysbusinessunitname",
+            "-",
+            "goldlease.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "goldlease.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "jbxx_leaseuse",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "公司名称",
+					"component": "text",
+					"id": "goldlease_companyname",
+					"editablenode": "",
+					"name": "goldlease.companyname"
+				},
+				{
+					"title": "银行名称",
+					"component": "text",
+					"id": "goldlease_loanbankname",
+					"editablenode": "",
+					"name": "goldlease.loanbankname"
+				},
+				{
+					"title": "租借品种",
+					"component": "text",
+					"id": "goldlease_loanvariet",
+					"editablenode": "",
+					"name": "goldlease.loanvariet"
+				},
+				{
+					"title": "租借数量（克）",
+					"component": "text",
+					"id": "goldlease_loannumber",
+					"editablenode": "",
+					"name": "goldlease.loannumber"
+				},
+				{
+					"title": "单价",
+					"component": "text",
+					"id": "goldlease_singleprice",
+					"editablenode": "",
+					"name": "goldlease.singleprice",
+					"datatype": "money"
+				},
+				{
+					"title": "金额",
+					"component": "text",
+					"id": "goldlease_amount",
+					"editablenode": "",
+					"name": "goldlease.amount",
+					"datatype": "money"
+				},
+				{
+					"title": "租借期限起",
+					"component": "text",
+					"id": "goldlease_loanperiod",
+					"editablenode": "",
+					"name": "goldlease.loanperiod",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "租借期限止",
+					"component": "text",
+					"id": "goldlease_loanperiodd",
+					"editablenode": "",
+					"name": "goldlease.loanperiodd",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "租借费率",
+					"component": "text",
+					"id": "goldlease_loanrates",
+					"editablenode": "",
+					"name": "goldlease.loanrates"
+				},
+				{
+					"title": "租借费",
+					"component": "text",
+					"id": "goldlease_loanfee",
+					"editablenode": "",
+					"name": "goldlease.loanfee",
+					"datatype": "money"
+				},
+				{
+					"title": "银行是否保值",
+					"component": "select",
+					"id": "goldlease_bankhed",
+					"editablenode": "",
+					"name": "goldlease.bankhed",
+					"options": [
+						{
+							"text": "是",
+							"value": "0",
+						},
+						{
+							"text": "否",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "保值费率",
+					"component": "text",
+					"id": "goldlease_thedgrate",
+					"editablenode": "",
+					"name": "goldlease.thedgrate"
+				},
+				{
+					"title": "保值费用",
+					"component": "text",
+					"id": "goldlease_thedgrateuse",
+					"editablenode": "",
+					"name": "goldlease.thedgrateuse"
+				},
+				{
+					"title": "租借费支付方式",
+					"component": "text",
+					"id": "goldlease_loanpayment",
+					"editablenode": "",
+					"name": "goldlease.loanpayment"
+				},
+				{
+					"title": "归还方式",
+					"component": "select",
+					"id": "goldlease_retrunway",
+					"editablenode": "",
+					"name": "goldlease.retrunway",
+					"options": [
+						{
+							"text": "还黄金",
+							"value": "0",
+						},
+						{
+							"text": "还款",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "保证金金额",
+					"component": "text",
+					"id": "goldlease_margin",
+					"editablenode": "",
+					"name": "goldlease.margin",
+					"datatype": "money"
+				},
+				{
+					"title": "保证金利率",
+					"component": "text",
+					"id": "goldlease_marginrate",
+					"editablenode": "",
+					"name": "goldlease.marginrate"
+				},
+				{
+					"title": "担保情况",
+					"component": "text",
+					"id": "goldlease_guarantee",
+					"editablenode": "",
+					"name": "goldlease.guarantee"
+				},
+				{
+					"title": "备注",
+					"component": "text",
+					"id": "goldlease_tsemo",
+					"editablenode": "",
+					"name": "goldlease.tsemo"
+				}
+			]
+		},
+		{
+			"title": "财务核算人员填写",
+			"pageid": "cwhsrytx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "核算人员处理汇报",
+					"component": "text",
+					"id": "goldlease_report",
+					"tasknode": "account,report",
+					"editablenode": "account",
+					"validation":{
+						"pageid":"cwhsrytx",
+						"required":true,
+						"validateMsg":"请填写核算人员处理汇报",
+						"regexs":""
+					},
+					"name": "goldlease.report"
+				}
+			]
+		},
+		{
+			"title": "业务人员交割情况报告",
+			"pageid": "ywryjgqkbg",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "交割时间",
+					"component": "date1",
+					"id": "goldlease_deliverytime",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":true,
+						"validateMsg":"请填写交割时间",
+						"regexs":""
+					},
+					"name": "goldlease.deliverytime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "交割数量",
+					"component": "text",
+					"id": "goldlease_deliverynumber",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":true,
+						"validateMsg":"请填写交割数量",
+						"regexs":""
+					},
+					"name": "goldlease.deliverynumber"
+				},
+				{
+					"title": "交易金额",
+					"component": "text",
+					"id": "goldlease_deliveryamount",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":false,
+						"validateMsg":"请填写交易金额",
+						"regexs":""
+					},
+					"name": "goldlease.deliveryamount",
+					"datatype": "money"
+				},
+				{
+					"title": "交割费率",
+					"component": "text",
+					"id": "goldlease_deliveryrates",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":true,
+						"validateMsg":"请填写交割费率",
+						"regexs":""
+					},
+					"name": "goldlease.deliveryrates"
+				},
+				{
+					"title": "交割费用",
+					"component": "text",
+					"id": "goldlease_deliveryfee",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":false,
+						"validateMsg":"请填写交割费用",
+						"regexs":""
+					},
+					"name": "goldlease.deliveryfee",
+					"datatype": "money"
+				},
+				{
+					"title": "保值费用",
+					"component": "text",
+					"id": "goldlease_hedgcost",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":false,
+						"validateMsg":"请填写保值费用",
+						"regexs":""
+					},
+					"name": "goldlease.hedgcost",
+					"datatype": "money"
+				},
+				{
+					"title": "保值情况",
+					"component": "text",
+					"id": "goldlease_hedgstion",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":false,
+						"validateMsg":"请填写保值情况",
+						"regexs":""
+					},
+					"name": "goldlease.hedgstion"
+				},
+				{
+					"title": "备注",
+					"component": "text",
+					"id": "goldlease_note",
+					"tasknode": "report",
+					"editablenode": "report",
+					"validation":{
+						"pageid":"ywryjgqkbg",
+						"required":false,
+						"validateMsg":"请填写备注",
+						"regexs":""
+					},
+					"name": "goldlease.note"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

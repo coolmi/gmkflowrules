@@ -1,0 +1,288 @@
+{
+  "id": "gmk_payrollepm",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "title": "类别",
+          "component": "select",
+          "id": "yearid",
+          "name": "mainModel.categorytxt",
+          "options": [
+            {
+              "text": "年度",
+              "value": "年度"
+            },
+            {
+              "text": "月度",
+              "value": "月度"
+            },
+            {
+              "text": "其他奖金",
+              "value": "其他奖金"
+            }
+          ]
+        },
+        {
+          "title": "年份",
+          "component": "text",
+          "name": "mainModel.payearth"
+        },
+        {
+          "title": "是否预算内",
+          "component": "text",
+          "name": "mainModel.whetherinside"
+        },
+        {
+          "title": "月份",
+          "component": "select",
+          "name": "mainModel.paymonth",
+          "showLinkage": [
+            {
+              "id": "yearid",
+              "values": [
+                "月度"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "一月",
+              "value": "1"
+            },
+            {
+              "text": "二月",
+              "value": "2"
+            },
+            {
+              "text": "三月",
+              "value": "3"
+            },
+            {
+              "text": "四月",
+              "value": "4"
+            },
+            {
+              "text": "五月",
+              "value": "5"
+            },
+            {
+              "text": "六月",
+              "value": "6"
+            },
+            {
+              "text": "七月",
+              "value": "7"
+            },
+            {
+              "text": "八月",
+              "value": "8"
+            },
+            {
+              "text": "九月",
+              "value": "9"
+            },
+            {
+              "text": "十月",
+              "value": "10"
+            },
+            {
+              "text": "十一月",
+              "value": "11"
+            },
+            {
+              "text": "十二月",
+              "value": "12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "当前主要变化说明",
+      "component": "panel",
+      "pageid": "dqzybhsm",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 1,
+          "id": "dqzybhxm",
+          "basePath": "gmk_payrollchildlist",
+          "cells": [
+            {
+              "title": "变化项目",
+              "component": "text",
+              "name": "projectchange"
+            },
+            {
+              "title": "变化内容",
+              "component": "text",
+              "name": "contentchange"
+            },
+            {
+              "title": "薪酬应用",
+              "component": "text",
+              "name": "compensationapplication"
+            },
+            {
+              "title": "信息来源",
+              "component": "text",
+              "name": "informationsources"
+            },
+            {
+              "title": "审批人",
+              "component": "text",
+              "name": "examinationapprovalpeople"
+            },
+            {
+              "title": "其他情况说明",
+              "component": "text",
+              "name": "descriptioncase"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "薪酬发放明细",
+      "component": "panel",
+      "pageid": "xcffmx",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 1,
+          "id": "xcffmxbhxm",
+          "basePath": "gmk_payrollchildpaylist",
+          "cells": [
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "company"
+            },
+            {
+              "title": "人员类别",
+              "component": "text",
+              "name": "paymentaccount"
+            },
+            {
+              "title": "实发金额",
+              "component": "text",
+              "name": "amountpayment"
+            },
+            {
+              "title": "较上月变化情况",
+              "component": "text",
+              "name": "changelastmonth"
+            },
+            {
+              "title": "变化原因",
+              "component": "text",
+              "name": "reasonschange"
+            },
+            {
+              "title": "发放金额及明细",
+              "component": "text",
+              "name": "ssuingbank"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
