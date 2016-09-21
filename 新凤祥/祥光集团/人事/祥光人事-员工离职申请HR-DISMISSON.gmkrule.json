@@ -138,7 +138,7 @@
           "name": "dimission.interviewleavereason",
           "editablenode": "hrdisinterview",
           "refersToArray": {
-            "basePath": "dimission.interviewleavereason.reasons",
+            "basePath": "dimissreasons.reasons",
             "value": "id",
             "text": [
               "reason"
