@@ -1,0 +1,175 @@
+{
+  "id": "fxcw_breedbudgetorover",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "jbxx_breedbudgetorover",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "标题名称",
+					"component": "text",
+					"id": "mainModel_title",
+					"editablenode": "",
+					"name": "mainModel.title"
+				},
+				{
+					"title": "主抄送",
+					"component": "text",
+					"id": "mainModel_send",
+					"editablenode": "",
+					"name": "mainModel.send"
+				},
+				{
+					"title": "类别",
+					"component": "select",
+					"id": "mainModel_stype",
+					"editablenode": "",
+					"name": "mainModel.stype",
+					"options": [
+						{
+							"text": "预算申请",
+							"value": "1"
+						},
+						{
+							"text": "超预算申请",
+							"value": "2"
+						}
+					]
+				},
+              {
+                "title": "申请内容",
+                "component": "textarea",
+                "id": "mainModel_appcontent",
+                "editablenode": "",
+                "rows": "3",
+                "name": "mainModel.appcontent"
+              }
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
