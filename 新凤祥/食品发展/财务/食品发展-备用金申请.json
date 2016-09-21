@@ -1,0 +1,348 @@
+{
+  "id": "fooddevcw_deposit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "deposit.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "deposit.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "deposit.pernr",
+            "-",
+            "deposit.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "deposit.sysbusinessunitname",
+            "-",
+            "deposit.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "deposit.pernrval"
+        },
+        {
+          "title": "员工ITCODE",
+          "component": "text",
+          "name": "deposit.useridval"
+        },
+        {
+          "title": "员工所在部门",
+          "component": "text",
+          "name": "deposit.deptval"
+        },
+        {
+          "title": "职能中心/事业部",
+          "component": "text",
+          "name": "deposit.bunisval"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "deposit.bukrsval"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "name": "deposit.tello"
+        },
+        {
+          "title": "手机号",
+          "component": "text",
+          "name": "deposit.phone"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "name": "deposit.email"
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "name": "deposit.numpg"
+        },
+        {
+          "title": "员工财务编号",
+          "component": "text",
+          "name": "deposit.lifnr"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "deposit.bukrsval"
+        },
+        {
+          "title": "员工银行账户",
+          "component": "text",
+          "name": "deposit.bankn"
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "name": "deposit.bankl"
+        },
+        {
+          "title": "费用承担公司",
+          "component": "label",
+          "label": [
+            "deposit.cdbukrs",
+            "-",
+            "deposit.cdbukrsname"
+          ]
+        },
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "label": [
+            "deposit.cdkostls",
+            "-",
+            "deposit.cdkostlsname"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "备用金汇总",
+      "pageid": "byjhz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 2,
+          "basePath": "resegs",
+          "tableForms": [
+            {
+              "title": "备用金类型",
+              "component": "text",
+              "name": "stype"
+            },
+            {
+              "title": "预计归还日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "edate"
+            },
+            {
+              "title": "预借金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "fwbas"
+            },
+            {
+              "title": "预借金额(大写)",
+              "component": "text",
+              "name": "fwbas1"
+            },
+            {
+              "title": "申请事由",
+              "component": "text",
+              "name": "smemo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "付款信息",
+      "pageid": "fkxxsm",
+      "component": "panel",
+      "tasknode": "usertask7",
+      "subComponents": [
+        {
+          "title": "汇率",
+          "component": "text",
+          "name": "deposit.exchrate",
+          "tasknode": "usertask7",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "汇率必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "付款金额",
+          "component": "text",
+          "name": "deposit.payment",
+          "tasknode": "usertask7",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "resegs",
+            "sumParam": "fwbas"
+          },
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款金额必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "结算方式",
+          "component": "select",
+          "name": "deposit.setmode",
+          "tasknode": "usertask7",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "汇款",
+              "value": "汇款"
+            },
+            {
+              "title": "现金",
+              "value": "现金"
+            }
+          ],
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款方式必选",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "银行账户",
+          "component": "text",
+          "name": "deposit.banknn",
+          "tasknode": "usertask7",
+          "tmpValueName": "deposit.bankn",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "银行账号必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "name": "deposit.bankll",
+          "tasknode": "usertask7",
+          "tmpValueName": "deposit.bankl",
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "开户行必填",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        },
+        {
+          "title": "付款通知说明",
+          "component": "checkbox",
+          "name": "deposit.payval",
+          "tasknode": "usertask7",
+          "options": [
+            {
+              "title": "已付款",
+              "value": "1"
+            }
+          ],
+          "editablenode": "usertask7",
+          "validation": {
+            "validateMsg": "付款通知说明必选",
+            "pageid": "fkxxsm",
+            "required": true
+          }
+        }
+      ]
+    }
+  ]
+}
