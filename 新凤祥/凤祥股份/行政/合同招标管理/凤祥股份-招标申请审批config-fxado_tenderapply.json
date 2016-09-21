@@ -106,250 +106,291 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "所属公司",
+          "title": "标的物名称",
           "component": "text",
-          "name": "mainModel.ssgsname"
+          "name": "mainModel.bdwmc"
         },
         {
-          "title": "承包单位",
+          "title": "标的金额",
           "component": "text",
-          "name": "mainModel.cbdw"
+          "name": "mainModel.bdjexx"
         },
         {
-          "title": "标的使用部门",
+          "title": "标的金额大写",
           "component": "text",
-          "name": "mainModel.bdsybm"
+          "name": "mainModel.bdjedx"
         },
         {
-          "title": "主要标的物",
-          "component": "text",
-          "name": "mainModel.zybdw"
-        },
-        {
-          "title": "我方合同承办人",
-          "component": "text",
-          "name": "mainModel.wfhtcbr"
-        },
-        {
-          "title": "合同履行期限",
-          "component": "text",
-          "name": "mainModel.htlxqx"
-        },
-        {
-          "title": "我方合同承办人电话",
-          "component": "text",
-          "name": "mainModel.wfhtcbrdh"
-        },
-        {
-          "title": "合同性质及状况",
+          "title": "招标类型",
           "component": "radio",
-          "name": "mainModel.htxzjzk",
+          "id": "id_zblx",
+          "name": "mainModel.zblx",
           "options": [
             {
-              "title": "固定资产投资",
+              "text": "采购",
               "value": "0"
             },
             {
-              "title": "生产经营",
+              "text": "销售",
               "value": "1"
-            },
-            {
-              "title": "新订",
-              "value": "2"
-            },
-            {
-              "title": "更改",
-              "value": "3"
             }
           ]
+        },
+        {
+          "title": "生产类固定资产采购",
+          "component": "radio",
+          "name": "mainModel.sclgdzccg",
+          "options": [
+            {
+              "text": "是",
+              "value": "0"
+            },
+            {
+              "text": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标项目类别",
+          "component": "select",
+          "name": "mainModel.zbxmlb",
+          "options": [
+            {
+              "text": "经营类",
+              "value": "0"
+            },
+            {
+              "text": "工程类",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标形式",
+          "component": "radio",
+          "name": "mainModel.zbxs",
+          "options": [
+            {
+              "text": "招标",
+              "value": "0"
+            },
+            {
+              "text": "议标",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "标的物用途",
+          "component": "text",
+          "name": "mainModel.bdwyt"
+        },
+        {
+          "title": "标书编制",
+          "component": "radio",
+          "name": "mainModel.bsbz",
+          "options": [
+            {
+              "text": "编制标书",
+              "value": "0"
+            },
+            {
+              "text": "不编制标书,招标要求已在本表描述",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标地点",
+          "component": "text",
+          "name": "mainModel.zbdd"
+        },
+        {
+          "title": "参加部门负责人",
+          "component": "text",
+          "name": "mainModel.cjbmfzr"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "mainModel.zcs"
+        },
+        {
+          "title": "招标人资质要求",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.zbrzzyq"
+        },
+        {
+          "title": "技术要求",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.jsyq"
+        },
+        {
+          "title": "报价方式",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.bjfs"
+        },
+        {
+          "title": "评标方式方法",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.pbfsff"
+        },
+        {
+          "title": "投标保证金要求",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.tbbzjyq"
+        },
+        {
+          "title": "其他",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.qt"
+        },
+        {
+          "title": "需求部门负责人审核",
+          "component": "text",
+          "name": "mainModel.xqbmfzr",
+          "showLinkage": [
+            {
+              "id": "id_zblx",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "技术部门审核",
+          "component": "text",
+          "name": "mainModel.jsbmr",
+          "showLinkage": [
+            {
+              "id": "id_zblx",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "招标负责人审核",
+          "component": "text",
+          "name": "mainModel.zbfzr"
         }
       ]
     },
     {
-      "title": "合同协议情况",
-      "pageid": "htxyqk",
+      "title": "投标者信息",
+      "pageid": "tbzxx",
       "component": "panel",
       "subComponents": [
-        {
-          "title": "合同编号类别",
-          "component": "select",
-          "name": "mainModel.htbhlb",
-          "refersToArray": {
-            "basePath": "snclist",
-            "value": "nccode",
-            "text": [
-              "nccode",
-              "-",
-              "ncname"
-            ]
-          }
-        },
-        {
-          "title": "公司信息",
-          "component": "text",
-          "name": "mainModel.gsxxname"
-        },
-        {
-          "title": "是否为补充类合同",
-          "component": "radio",
-          "name": "mainModel.sfwbclht",
-          "options": [
-            {
-              "title": "是",
-              "value": "0"
-            },
-            {
-              "title": "否",
-              "value": "1"
-            }
-          ]
-        },
         {
           "component": "table_form",
-          "titleIndex": 4,
-          "basePath": "infolist",
+          "titleIndex": 1,
+          "basePath": "tenderlists",
           "tableForms": [
             {
-              "title": "工程项目地点",
+              "title": "姓名",
               "component": "text",
-              "name": "gcxmdd"
+              "name": "tender_name"
             },
             {
-              "title": "合同承包方",
+              "title": "传真",
               "component": "text",
-              "name": "htcbf"
+              "name": "tender_fax"
             },
             {
-              "title": "合同编号",
+              "title": "电话",
               "component": "text",
-              "name": "htbh"
+              "name": "tender_phone"
             },
             {
-              "title": "合同金额",
+              "title": "邮箱",
               "component": "text",
-              "name": "htje"
+              "name": "tender_email"
             },
             {
-              "title": "对方法人代表",
+              "title": "单位",
               "component": "text",
-              "name": "dffrdb"
-            },
-            {
-              "title": "对方代理人",
-              "component": "text",
-              "name": "dfdlr"
-            },
-            {
-              "title": "合同份数",
-              "component": "text",
-              "name": "htfs"
-            },
-            {
-              "title": "合同页数",
-              "component": "text",
-              "name": "htys"
-            },
-            {
-              "title": "附件份数",
-              "component": "text",
-              "name": "fjfs"
-            },
-            {
-              "title": "附件页数",
-              "component": "text",
-              "name": "fjys"
+              "name": "tender_company"
             }
           ]
         }
       ]
     },
     {
-      "title": "印章信息",
-      "pageid": "yzxx",
+      "title": "审计部分配信息",
+      "pageid": "sjbfpxx",
       "component": "panel",
+      "tasknode": "sjbmfp",
       "subComponents": [
         {
-          "title": "用印类型",
-          "component": "radio",
-          "name": "mainModel.yylx",
+          "title": "提交至",
+          "component": "select",
+          "id": "sjbmfpnexttaskkey_id",
+          "editablenode": "sjbmfp",
+          "name": "sjbmfpnexttaskkey",
+          "islinkage": true,
+          "handleLinkage": [
+            {
+              "id": "sjbmcspostid_id",
+              "values": [
+                "sjbmcs"
+              ]
+            }
+          ],
           "options": [
             {
-              "title": "普通用印",
-              "value": "0"
+              "text": "审计部初审",
+              "value": "sjbmcs"
             },
             {
-              "title": "携章外出",
-              "value": "1"
+              "text": "审计部复审",
+              "value": "sjbmfs"
+            },
+            {
+              "text": "法务部门审核",
+              "value": "usertask7"
             }
           ]
         },
         {
-          "title": "印章名称",
+          "title": "审计部初审人员",
           "component": "text",
-          "name": "mainModel.yzmcname"
-        },
-        {
-          "title": "印章类型",
-          "component": "text",
-          "name": "mainModel.yzlx"
-        },
-        {
-          "title": "印章使用",
-          "component": "label",
-          "label": [
-            "一式",
-            "mainModel.yzsyfs",
-            "份,共计",
-            "mainModel.yzsyms",
-            "枚"
-          ]
-        },
-        {
-          "title": "印章使用日期",
-          "component": "date1",
-          "name": "mainModel.yzsyrq"
-        },
-        {
-          "title": "计划归还日期",
-          "component": "date1",
-          "name": "mainModel.jhghrq"
-        }
-      ]
-    },
-    {
-      "title": "审批人信息",
-      "pageid": "sprxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "立项、经办单位审批人",
-          "component": "text",
-          "name": "mainModel.zhglbspr"
-        },
-        {
-          "title": "预算部审批人",
-          "component": "text",
-          "name": "mainModel.ysbspr"
-        },
-        {
-          "title": "法律办审批人",
-          "component": "text",
-          "name": "mainModel.flbspr"
-        },
-        {
-          "title": "财务部审批人",
-          "component": "text",
-          "name": "mainModel.cwbspr"
-        },
-        {
-          "title": "总经理/总指挥长",
-          "component": "text",
-          "name": "mainModel.fgfzzhz"
-        },
-        {
-          "title": "档案室存档操作人",
-          "component": "text",
-          "name": "mainModel.dascdczr"
+          "id": "sjbmcspostid_id",
+          "editablenode": "sjbmfp",
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "sjbmcspost",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "nachn",
+              "stext"
+            ]
+          },
+          "name": "mainModel.sjbmcspostid",
+          "showLinkage": [
+            {
+              "id": "sjbmfpnexttaskkey_id",
+              "values": [
+                "sjbmcs"
+              ]
+            }
+          ],
+          "validation": {
+            "pageid": "tbzxx",
+            "required": true,
+            "validateMsg": "请选择审计部初审人"
+          }
         }
       ]
     }
