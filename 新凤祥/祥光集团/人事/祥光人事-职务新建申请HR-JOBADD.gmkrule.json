@@ -1,5 +1,5 @@
 {
-  "id": "HR-DIMISSION",
+  "id": "HR-JOBADD",
   "handleOnPC": {
     "tasknode": [""],
     "flag": [
@@ -21,80 +21,80 @@
         {
           "title": "申请单号",
           "component": "text",
-          "name": "dimission.appid"
+          "name": "jobadd.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
-          "name": "dimission.appda"
+          "name": "jobadd.appda"
         },
         {
-          "title": "申请人编号",
-          "component": "hidden",
+          "title": "申请人",
+          "component": "label",
           "label": [
-            "dimission.pernr",
+            "jobadd.pernr",
             "-",
-            "dimission.username"
+            "jobadd.username"
           ]
         },
         {
           "title": "所属部门",
-          "component": "hidden",
+          "component": "label",
           "label": [
-            "dimission.sysbusinessunitname",
+            "jobadd.sysbusinessunitname",
             "-",
-            "dimission.sysdeptname"
+            "jobadd.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.userid"
+          "name": "jobadd.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.username"
+          "name": "jobadd.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.pernr"
+          "name": "jobadd.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.syspostname"
+          "name": "jobadd.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.sysdeptid"
+          "name": "jobadd.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.sysdeptname"
+          "name": "jobadd.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.sysbusinessunitid"
+          "name": "jobadd.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.sysbusinessunitname"
+          "name": "jobadd.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.postid"
+          "name": "jobadd.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "dimission.id"
+          "name": "jobadd.id"
         }
       ]
     },
@@ -104,47 +104,50 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "离职人员",
+          "title": "职务名称",
           "component": "text",
-          "name": "dimission.dnachn"
+          "name": "jobadd.jobname"
         },{
-          "title": "离职岗位",
-          "component": "text",
-          "name": "dimission.dpostname"
-        },
-        {
-          "title": "所属部门",
-          "component": "text",
-          "name": "dimission.dorgname"
-        },
-        {
-          "title": "入职时间",
+          "title": "生效时间",
           "component": "date1",
-          "name": "dimission.entrydate"
+          "name": "jobadd.jobbegda"
         },
         {
-          "title": "离职时间",
-          "component": "date1",
-          "name": "dimission.leavedate"
-        },
-        {
-          "title": "离职原因",
+          "title": "新增原因",
           "component": "text",
-          "name": "dimission.leavereason"
+          "name": "jobadd.reason"
         },
         {
-          "title": "离职访谈",
-          "component": "checkbox",
-          "name": "dimission.interviewleavereason",
-          "editablenode": "hrdisinterview",
-          "refersToArray": {
-            "basePath": "dimission.interviewleavereason.reasons",
-            "value": "id",
-            "text": [
-              "reason"
-            ]
+          "title": "所属组织",
+          "component": "text",
+          "name": "jobadd.ofbunitname"
+        },
+        {
+          "title": "地点",
+          "component": "text",
+          "name": "jobadd.orgsite"
+        },
+        {
+          "title": "职务等级",
+          "component": "text",
+          "name": "jobadd.joblevelname"
+        },
+        {
+          "title": "职务序列",
+          "component": "text",
+          "name": "jobadd.joblistname"
+        },
+        {
+          "title": "职务说明书",
+          "component": "text",
+          "name": "jobadd.docmentafresconame",
+          "events": {
+            "eventType": "openDocument",
+            "filename": "jobadd.docmentafresconame",
+            "afrescoid": "jobadd.docmentafrescoid"
           }
         }
+
       ]
     }
 
