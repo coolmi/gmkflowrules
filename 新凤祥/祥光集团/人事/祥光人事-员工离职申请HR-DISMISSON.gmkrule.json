@@ -1,0 +1,153 @@
+{
+  "id": "HR-DIMISSION",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "dimission.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "dimission.appda"
+        },
+        {
+          "title": "申请人编号",
+          "component": "hidden",
+          "label": [
+            "dimission.pernr",
+            "-",
+            "dimission.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "dimission.sysbusinessunitname",
+            "-",
+            "dimission.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dimission.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "离职人员",
+          "component": "text",
+          "name": "dimission.dnachn"
+        },{
+          "title": "离职岗位",
+          "component": "text",
+          "name": "dimission.dpostname"
+        },
+        {
+          "title": "所属部门",
+          "component": "text",
+          "name": "dimission.dorgname"
+        },
+        {
+          "title": "入职时间",
+          "component": "date1",
+          "name": "dimission.entrydate"
+        },
+        {
+          "title": "离职时间",
+          "component": "date1",
+          "name": "dimission.leavedate"
+        },
+        {
+          "title": "离职原因",
+          "component": "text",
+          "name": "dimission.leavereason"
+        },
+        {
+          "title": "离职访谈",
+          "component": "checkbox",
+          "name": "dimission.interviewleavereason",
+          "editablenode": "hrdisinterview",
+          "refersToArray": {
+            "basePath": "dimission.interviewleavereason.reasons",
+            "value": "id",
+            "text": [
+              "reason"
+            ]
+          }
+        }
+      ]
+    }
+
+
+  ]
+}
