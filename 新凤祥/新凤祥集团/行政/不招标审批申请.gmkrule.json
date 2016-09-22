@@ -1,0 +1,352 @@
+{
+  "id": "gmk_notenderbid",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "notenderbid.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "notenderbid.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "notenderbid.pernr",
+            "-",
+            "notenderbid.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "notenderbid.sysbusinessunitname",
+            "-",
+            "notenderbid.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "notenderbid.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "授权类型",
+					"component": "select",
+					"id": "notenderbid_sqlx",
+					"editablenode": "",
+					"name": "notenderbid.sqlx",
+					"options": [
+						{
+							"text": "一级",
+							"value": "0",
+						},
+						{
+							"text": "二级",
+							"value": "1",
+						},
+						{
+							"text": "三级",
+							"value": "2",
+						}
+					]
+				},
+				{
+					"title": "一级授权审批人",
+					"component": "text",
+					"id": "notenderbid_yjsqspr",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "notenderbid_sqlx",
+							"values": [
+								"0"
+							]
+						}
+					],
+					"name": "notenderbid.yjsqspr"
+				},
+				{
+					"title": "有效授权审批人",
+					"component": "label",
+					"label":["notenderbid.userid","-","notenderbid.username","-","notenderbid.syspostname"],
+					"showLinkage": [
+					  {
+						"id": "notenderbid_sqlx",
+						"values": [
+						  "1","2"
+						]
+					  }
+					]
+				},
+				{
+					"title": "申请状态",
+					"component": "radio",
+					"id": "notenderbid_zxstatus",
+					"editablenode": "",
+					"name": "notenderbid.zxstatus",
+					"options": [
+						{
+							"text": "正常",
+							"value": "0",
+						},
+						{
+							"text": "后补",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "采购预算",
+					"component": "text",
+					"id": "notenderbid_hbyy",
+					"editablenode": "",
+					"name": "notenderbid.hbyy"
+				},
+				{
+					"title": "类型需求",
+					"component": "select",
+					"id": "notenderbid_xqlx",
+					"editablenode": "",
+					"name": "notenderbid.xqlx",
+					"options": [
+						{
+							"text": "工程",
+							"value": "0",
+						},
+						{
+							"text": "常规",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "采购物资类型",
+					"component": "select",
+					"id": "notenderbid_cgwzlx",
+					"editablenode": "",
+					"name": "notenderbid.cgwzlx",
+					"options": [
+						{
+							"text": "设备",
+							"value": "0",
+						},
+						{
+							"text": "土建",
+							"value": "1",
+						},
+						{
+							"text": "安装",
+							"value": "2",
+						},
+						{
+							"text": "材料",
+							"value": "3",
+						},
+						{
+							"text": "服务",
+							"value": "4",
+						},
+						{
+							"text": "安环",
+							"value": "5",
+						},
+						{
+							"text": "其他",
+							"value": "6",
+						}
+					]
+				},
+				{
+					"title": "采购物资名称",
+					"component": "text",
+					"id": "notenderbid_cgwzmc",
+					"editablenode": "",
+					"name": "notenderbid.cgwzmc"
+				},
+				{
+					"title": "需求部门",
+					"component": "text",
+					"id": "notenderbid_xqbm",
+					"editablenode": "",
+					"name": "notenderbid.xqbm"
+				},
+				{
+					"title": "需求部门负责人",
+					"component": "text",
+					"id": "notenderbid_xqbmfzr",
+					"editablenode": "",
+					"name": "notenderbid.xqbmfzr"
+				},
+				{
+					"title": "申请理由",
+					"component": "select",
+					"id": "notenderbid_cgfs",
+					"editablenode": "",
+					"name": "notenderbid.cgfs",
+					"options": [
+						{
+							"text": "唯一采购渠道",
+							"value": "0",
+						},
+						{
+							"text": "品牌指定",
+							"value": "1",
+						},
+						{
+							"text": "投标企业不足三家",
+							"value": "2",
+						},
+						{
+							"text": "紧急采购",
+							"value": "3",
+						},
+						{
+							"text": "其他",
+							"value": "4",
+						}
+					]
+				},
+				{
+					"title": "理由描述",
+					"component": "text",
+					"id": "notenderbid_remarks",
+					"editablenode": "",
+					"name": "notenderbid.remarks"
+				},
+				{
+					"title": "申请采购方式",
+					"component": "select",
+					"id": "notenderbid_cgfsk",
+					"editablenode": "",
+					"name": "notenderbid.cgfsk",
+					"options": [
+						{
+							"text": "议标",
+							"value": "0",
+						},
+						{
+							"text": "比价",
+							"value": "1",
+						},
+						{
+							"text": "单一方向采购",
+							"value": "2",
+						},
+						{
+							"text": "其他",
+							"value": "3",
+						}
+					]
+				},
+				{
+					"title": "其他",
+					"component": "text",
+					"id": "notenderbid_cgwzjs",
+					"editablenode": "",
+					"name": "notenderbid.cgwzjs"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

@@ -1,0 +1,135 @@
+{
+    "id": "ADM_MEETSUMMARY",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "meetsummary.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "meetsummary.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["meetsummary.pernr", "-", "meetsummary.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["meetsummary.sysbusinessunitname", "-", "meetsummary.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "meetsummary.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [{
+                "title": "会议主持人",
+                "component": "text",
+                "name": "meetsummary.username"
+
+            },
+
+            {
+                "title": "会议时间",
+                "component": "text",
+                "datatype": "date",
+                "dateFormat": "yyyy-MM-dd",
+                "name": "meetsummary.startda"
+            },
+            {
+                "title": "会议纪要文号",
+                "component": "text",
+                "name": "meetsummary.meetsymbol"
+            },
+            {
+                "title": "会议名称",
+                "component": "text",
+                "name": "meetsummary.meetname"
+            },
+
+			{
+				"title": "发布范围",
+				"component": "textarea",
+				"name": "meetsummary.selscope"
+			},
+			{
+				"title": "会议纪要预览",
+				"component": "text",
+				"name": "hyjyfile.filename",
+				"events":{
+					"eventType":"openDocument",	
+					"filename":"hyjyfile.filename",
+					"afrescoid":"hyjyfile.afrescoid"
+					
+				}
+			
+			}
+        ]
+    }
+    ]
+}
