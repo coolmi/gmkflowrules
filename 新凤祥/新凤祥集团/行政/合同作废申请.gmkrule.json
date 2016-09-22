@@ -175,6 +175,10 @@
 					"name": "contractvoid.fkzk",
 					"options": [
 						{
+						  "text": "请选择",
+						  "value": ""
+						},
+						{
 							"text": "已付款",
 							"value": "0"
 						},
