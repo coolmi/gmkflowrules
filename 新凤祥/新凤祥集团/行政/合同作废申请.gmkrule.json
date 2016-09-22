@@ -138,7 +138,7 @@
 						},
 						{
 							"text": "已生效",
-							"value": " 1"
+							"value": "1"
 						}
 					]
 				},
@@ -155,7 +155,7 @@
 						},
 						{
 							"text": "终止",
-							"value": " 1"
+							"value": "1"
 						}
 					]
 				},
@@ -180,7 +180,7 @@
 						},
 						{
 							"text": "未付款",
-							"value": " 1"
+							"value": "1"
 						}
 					]
 				},
@@ -320,13 +320,7 @@
 					"editablenode": "",
 					"name": "contractvoid.bz"
 				},
-				{
-					"title": "付款比例，付款金额",
-					"component": "text",
-					"id": "contractvoid_fkbl",
-					"editablenode": "",
-					"name": "contractvoid.fkbl"
-				},
+
 				{
 					"title": "法务部分派-提交至",
 					"component": "text",
@@ -334,13 +328,7 @@
 					"editablenode": "",
 					"name": "contractvoid.lawsubmittask"
 				},
-				{
-					"title": "付款状况 0:已付款, 1:未付款",
-					"component": "text",
-					"id": "contractvoid_fkzk",
-					"editablenode": "",
-					"name": "contractvoid.fkzk"
-				},
+
 				{
 					"title": "需求部门编号",
 					"component": "text",
