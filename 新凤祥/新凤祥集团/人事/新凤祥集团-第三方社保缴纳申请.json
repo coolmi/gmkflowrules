@@ -166,6 +166,7 @@
         {
           "title": "社保缴费基数",
           "component": "text",
+          "editablenode": "usertask9",
           "name": "mainModel.m_sbjfjs"
         },
         {
