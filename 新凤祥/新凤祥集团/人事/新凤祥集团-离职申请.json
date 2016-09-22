@@ -200,17 +200,17 @@
         {
           "title": "是否需要离职审计",
           "component": "radio",
-          "tasknode": "disinternalverify,rszyzxcdba",
-          "editablenode": "disinternalverify,rszyzxcdba",
+          "tasknode": "disinternalverify,rlzyblzft,rszyzxcdba",
+          "editablenode": "disinternalverify,rlzyblzft",
           "name": "dimission.sfsj",
           "options": [
             {
               "text": "是",
-              "value": "1"
+              "value": "0"
             },
             {
               "text": "否",
-              "value": "0"
+              "value": "1"
             }
           ],
           "validation": {

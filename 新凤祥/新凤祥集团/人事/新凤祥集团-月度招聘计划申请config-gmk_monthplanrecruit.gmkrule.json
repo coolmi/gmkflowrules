@@ -157,7 +157,7 @@
         },
         {
           "title": "其他素质要求",
-          "component": "text",
+          "component": "textarea",
           "name": "monthplanrecruit.r_request",
           "rows": "3"
         }
