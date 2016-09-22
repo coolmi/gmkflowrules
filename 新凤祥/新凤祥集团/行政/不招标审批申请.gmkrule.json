@@ -135,15 +135,15 @@
 					"options": [
 						{
 							"text": "一级",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "二级",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "三级",
-							"value": "2",
+							"value": "2"
 						}
 					]
 				},

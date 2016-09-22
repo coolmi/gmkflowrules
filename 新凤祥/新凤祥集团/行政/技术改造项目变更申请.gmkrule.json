@@ -142,19 +142,19 @@
 					"options": [
 						{
 							"text": "取消立项",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "延迟",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "修改技术方案",
-							"value": "3",
+							"value": "3"
 						},
 						{
 							"text": "增加预算",
-							"value": "4",
+							"value": "4"
 						}
 					]
 				},

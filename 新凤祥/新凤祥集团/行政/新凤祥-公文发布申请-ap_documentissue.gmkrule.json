@@ -167,7 +167,6 @@
 				"component": "text",
 				"name": "documentissue.copysend"
 			},
-
 			{
 				"title": "发布范围",
 				"component": "textarea",
