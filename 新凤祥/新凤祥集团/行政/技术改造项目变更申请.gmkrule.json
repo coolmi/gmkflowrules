@@ -1,0 +1,267 @@
+{
+  "id": "ap_technicalchange",
+  "handleOnPC": {
+    "tasknode": [
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "sqxi",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": " 申请单号",
+					"component": "text",
+					"id": "mainModel_approvalid",
+					"editablenode": "",
+					"name": "mainModel.approvalid"
+				},
+				{
+					"title": "变更类型",
+					"component": "select",
+					"id": "mainModel_changetype",
+					"editablenode": "",
+					"name": "mainModel.changetype",
+					"options": [
+						{
+							"text": "取消立项",
+							"value": "1",
+						},
+						{
+							"text": "延迟",
+							"value": "2",
+						},
+						{
+							"text": "修改技术方案",
+							"value": "3",
+						},
+						{
+							"text": "增加预算",
+							"value": "4",
+						}
+					]
+				},
+				{
+					"title": "技改项目名称",
+					"component": "text",
+					"id": "mainModel_jgxmname",
+					"editablenode": "",
+					"name": "mainModel.jgxmname"
+				},
+				{
+					"title": "技改项目负责人",
+					"component": "text",
+					"id": "mainModel_jgxmfzr",
+					"editablenode": "",
+					"name": "mainModel.jgxmfzr"
+				},
+				{
+					"title": "项目承担单位",
+					"component": "text",
+					"id": "mainModel_xmcddw",
+					"editablenode": "",
+					"name": "mainModel.xmcddw"
+				},
+				{
+					"title": "项目计划起始时间",
+					"component": "date1",
+					"id": "mainModel_xmjhstartdate",
+					"editablenode": "",
+					"name": "mainModel.xmjhstartdate"
+				},
+				{
+					"title": "预算费用(元)",
+					"component": "text",
+					"id": "mainModel_ysfy",
+					"editablenode": "",
+					"name": "mainModel.ysfy"
+				},
+				{
+					"title": "第二联络人姓名",
+					"component": "text",
+					"id": "mainModel_secondllrxm",
+					"editablenode": "",
+					"name": "mainModel.secondllrxm"
+				},
+				{
+					"title": "第二联络人电话",
+					"component": "text",
+					"id": "mainModel_secondllrdh",
+					"editablenode": "",
+					"name": "mainModel.secondllrdh"
+				},
+				{
+					"title": "原因说明",
+					"component": "textarea",
+					"id": "mainModel_changereason",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.changereason"
+				},
+				{
+					"title": "延迟至日期",
+					"component": "date1",
+					"id": "mainModel_delaytodate",
+					"editablenode": "",
+					"name": "mainModel.delaytodate"
+				},
+				{
+					"title": "增加预算费用(元)",
+					"component": "text",
+					"id": "mainModel_addbudgetcost",
+					"editablenode": "",
+					"name": "mainModel.addbudgetcost"
+				}
+			]
+		},
+		{
+			"title": "责任工程师指定技术委员会组织成员",
+			"pageid": "gcsxz",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "技术委员会成员",
+					"component": "text",
+					"id": "mainModel_jswydeptid",
+					"tasknode": "usertask5",
+					"editablenode": "usertask5",
+					"validation":{
+						"pageid":"gcsxz",
+						"required":true,
+						"validateMsg":"请填写技术委员会成员",
+						"regexs":""
+					},
+					"name": "mainModel.jswydeptid",
+					"forSelectPerson":{
+						"onclick":"getuser",
+						"postshow":true,
+						"showformname":"jswydeptname",
+						"valuetype":["objid"],
+						"showtype":["nachn","stext"]
+					}
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
