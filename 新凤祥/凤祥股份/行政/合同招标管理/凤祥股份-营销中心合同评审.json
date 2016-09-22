@@ -2,7 +2,7 @@
   "id": "fxado_marketingcontract",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "createsapht"
     ],
     "flag": [
       "resubmit"
@@ -107,8 +107,26 @@
       "subComponents": [
         {
           "title": "合同产品业务分类",
-          "component": "text",
-          "name": "mainModel."
+          "component": "select",
+          "name": "mainModel.htcpywfl",
+          "options": [
+            {
+              "text": "出口熟食",
+              "value": "0"
+            },
+            {
+              "text": "快餐熟食",
+              "value": "1"
+            },
+            {
+              "text": "快餐生食",
+              "value": "2"
+            },
+            {
+              "text": "出口生食",
+              "value": "3"
+            }
+          ]
         },
         {
           "title": "客户编号",
@@ -118,7 +136,225 @@
         {
           "title": "客户名称",
           "component": "text",
-          "name": "mainModel."
+          "name": "mainModel.khmc"
+        }
+      ]
+    },
+    {
+      "title": "合同信息",
+      "pageid": "jbxx_htxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "infos",
+          "titleIndex": 1,
+          "tableForms": [
+            {
+              "title": "物料编号",
+              "component": "text",
+              "name": "wlbh"
+            },
+            {
+              "title": "物料描述",
+              "component": "text",
+              "name": "wlms"
+            },
+            {
+              "title": "数量(吨)",
+              "component": "text",
+              "name": "snum"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "price",
+              "datatype": "money"
+            },
+            {
+              "title": "货币单位",
+              "component": "text",
+              "name": "hbdw"
+            },
+            {
+              "title": "合同毛利率(%)",
+              "component": "text",
+              "name": "htmlv"
+            },
+            {
+              "title": "合同金额(元)",
+              "component": "text",
+              "name": "htjey",
+              "datatype": "money"
+            },
+            {
+              "title": "合同金额(美元)",
+              "component": "text",
+              "name": "htjem"
+            },
+            {
+              "title": "合同期限(月)",
+              "component": "text",
+              "name": "htqx"
+            },
+            {
+              "title": "有效起始日期",
+              "component": "text",
+              "name": "sdate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "有效截止日期",
+              "component": "text",
+              "name": "edate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "产品工艺描述",
+              "component": "text",
+              "name": "cpgyms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "合同抬头",
+      "component": "panel",
+      "pageid": "saphttt",
+      "notShowInHandle": true,
+      "subComponents": [
+        {
+          "title": "合同类型",
+          "component": "text",
+          "name": "mainModel.saphtlx"
+        },
+        {
+          "title": "售达方",
+          "component": "text",
+          "name": "mainModel.sapsdf"
+        },
+        {
+          "title": "有效起始日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.sapyxrqstart"
+        },
+        {
+          "title": "有效期到",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.sapyxrqend"
+        },
+        {
+          "title": "定价日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.sapdjdate"
+        },
+        {
+          "title": "销售组织",
+          "component": "text",
+          "name": "mainModel.sapxszz"
+        },
+        {
+          "title": "分销渠道",
+          "component": "text",
+          "name": "mainModel.sapfxqd"
+        },
+        {
+          "title": "产品组",
+          "component": "text",
+          "name": "mainModel.sapcpz"
+        },
+        {
+          "title": "销售组",
+          "component": "text",
+          "name": "mainModel.sapxsz"
+        },
+        {
+          "title": "销售部门",
+          "component": "text",
+          "name": "mainModel.sapxsbm"
+        }
+      ]
+    },
+    {
+      "title": "合同行项目",
+      "component": "panel",
+      "pageid": "hthxm",
+      "notShowInHandle": true,
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "sapinfos",
+          "tableForms": [
+            {
+              "title": "物料编号",
+              "component": "text",
+              "name": "sap_wlbh"
+            },
+            {
+              "title": "物料描述	",
+              "component": "text",
+              "name": "sap_wlms"
+            },
+            {
+              "title": "数量(吨)",
+              "component": "text",
+              "name": "sap_snum"
+            },
+            {
+              "title": "数量单位",
+              "component": "text",
+              "name": "sap_sldw"
+            },
+            {
+              "title": "工厂",
+              "component": "text",
+              "name": "sap_factory"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "sap_price",
+              "datatype": "money"
+            },
+            {
+              "title": "货币单位",
+              "component": "text",
+              "name": "sap_hbdw"
+            },
+            {
+              "title": "定价单位",
+              "component": "text",
+              "name": "sap_djdw"
+            },
+            {
+              "title": "定价数量",
+              "component": "text",
+              "name": "sap_djsl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "返回标识",
+      "component": "panel",
+      "pageid": "fhbssss",
+      "notShowInHandle": true,
+      "subComponents": [
+        {
+          "title": "合同号",
+          "component": "text",
+          "name": "mainModel.sapbackhth"
         }
       ]
     }

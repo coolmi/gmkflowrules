@@ -1,0 +1,156 @@
+{
+  "id": "HR-JOBADD",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "jobadd.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "jobadd.appda"
+        },
+        {
+          "title": "申请人",
+          "component": "label",
+          "label": [
+            "jobadd.pernr",
+            "-",
+            "jobadd.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "jobadd.sysbusinessunitname",
+            "-",
+            "jobadd.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "jobadd.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "职务名称",
+          "component": "text",
+          "name": "jobadd.jobname"
+        },{
+          "title": "生效时间",
+          "component": "date1",
+          "name": "jobadd.jobbegda"
+        },
+        {
+          "title": "新增原因",
+          "component": "text",
+          "name": "jobadd.reason"
+        },
+        {
+          "title": "所属组织",
+          "component": "text",
+          "name": "jobadd.ofbunitname"
+        },
+        {
+          "title": "地点",
+          "component": "text",
+          "name": "jobadd.orgsite"
+        },
+        {
+          "title": "职务等级",
+          "component": "text",
+          "name": "jobadd.joblevelname"
+        },
+        {
+          "title": "职务序列",
+          "component": "text",
+          "name": "jobadd.joblistname"
+        },
+        {
+          "title": "职务说明书",
+          "component": "text",
+          "name": "jobadd.docmentafresconame",
+          "events": {
+            "eventType": "openDocument",
+            "filename": "jobadd.docmentafresconame",
+            "afrescoid": "jobadd.docmentafrescoid"
+          }
+        }
+
+      ]
+    }
+
+
+  ]
+}

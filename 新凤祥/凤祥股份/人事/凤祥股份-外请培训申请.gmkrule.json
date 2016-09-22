@@ -1,0 +1,271 @@
+{
+  "id": "fx_outsidetrain",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "fjxx_outsidetrain",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "抄送",
+					"component": "textarea",
+					"id": "mainModel_send",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.send"
+				},
+				{
+					"title": "培训课题",
+					"component": "text",
+					"id": "mainModel_trainproject",
+					"editablenode": "",
+					"name": "mainModel.trainproject"
+				},
+				{
+					"title": "年度计划内/外",
+					"component": "select",
+					"id": "mainModel_planned",
+					"editablenode": "",
+					"name": "mainModel.planned",
+					"options": [
+						{
+							"text": "计划内",
+							"value": "0",
+						},
+						{
+							"text": "计划外",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "新增原因",
+					"component": "textarea",
+					"id": "mainModel_newreasons",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "mainModel_planned",
+							"values": [
+								"1"
+							]
+						}
+					],
+					"rows": "3",
+					"name": "mainModel.newreasons"
+				},
+				{
+					"title": "培训目的",
+					"component": "textarea",
+					"id": "mainModel_trainvisit",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.trainvisit"
+				},
+				{
+					"title": "参训对象",
+					"component": "textarea",
+					"id": "mainModel_trainobject",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.trainobject"
+				},
+				{
+					"title": "计划培训时间",
+					"component": "text",
+					"id": "mainModel_studytime",
+					"editablenode": "",
+					"name": "mainModel.studytime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "附件个数",
+					"component": "text",
+					"id": "mainModel_enclosure",
+					"editablenode": "",
+					"name": "mainModel.enclosure"
+				},
+				{
+					"title": "预算费用",
+					"component": "text",
+					"id": "mainModel_classfee",
+					"editablenode": "",
+					"name": "mainModel.classfee",
+					"datatype": "money"
+				},
+				{
+					"title": "预算费用大写",
+					"component": "text",
+					"id": "mainModel_classfeeup",
+					"editablenode": "",
+					"name": "mainModel.classfeeup"
+				},
+				{
+					"title": "通过培训期望达到的业务收益?",
+					"component": "textarea",
+					"id": "mainModel_incometrainexpectations",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.incometrainexpectations"
+				},
+				{
+					"title": "期望培训后,学员的行为有何变化?",
+					"component": "textarea",
+					"id": "mainModel_anychange",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.anychange"
+				},
+				{
+					"title": "学员行为改变主要依据是什么?",
+					"component": "textarea",
+					"id": "mainModel_behavior",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.behavior"
+				},
+				{
+					"title": "培训（项目）成功的具体标准是什么?",
+					"component": "textarea",
+					"id": "mainModel_standard",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.standard"
+				},
+				{
+					"title": "备注说明",
+					"component": "textarea",
+					"id": "mainModel_stexts",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.stexts"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
