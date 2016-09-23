@@ -1,0 +1,224 @@
+{
+  "id": "of_officemerplan",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "officeplan.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "officeplan.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officeplan.pernr",
+            "-",
+            "officeplan.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officeplan.sysbusinessunitname",
+            "-",
+            "officeplan.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "办公物资紧急",
+			"pageid": "fjxx_officemerplan",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "table_form",
+					"titleIndex": 0,
+					"basePath": "chidplans",
+					"id": "LA_fjxx_officemerplan",
+					"tableForms": [
+                      {
+                        "title": "物料名称",
+                        "component": "hidden",
+                        "name": "matename"
+                      },
+				{
+					"title": "计划类型名称",
+					"component": "text",
+					"id": "pantypetext",
+					"editablenode": "",
+					"name": "pantypetext"
+				},
+				{
+					"title": "物资类别",
+					"component": "label",
+					"id": "ed55fb5cd2f54e79826b277099338972",
+					"editablenode": "",
+					"label": [
+						"matetype","-",
+						"matetypename"
+					]
+				},
+				{
+					"title": "物料名称",
+					"component": "label",
+					"id": "b5d3711bf11049288fa20071e51afa92",
+					"editablenode": "",
+					"label": [
+						"mateno","-",
+						"matename"
+					]
+				},
+				{
+					"title": "单位",
+					"component": "label",
+					"id": "3a93a2070be94868b9776f2c6fe69a4c",
+					"editablenode": "",
+					"label": [
+						"munit","-",
+						"munitname"
+					]
+				},
+				{
+					"title": "需求量",
+					"component": "text",
+					"id": "demand",
+					"editablenode": "",
+					"name": "demand"
+				},
+				{
+					"title": "需求时间",
+					"component": "text",
+					"id": "demandate",
+                    "datatype": "date",
+                    "dateFormat": "yyyy-MM-dd",
+					"editablenode": "",
+					"name": "demandate"
+				},
+				{
+					"title": "需求部门名称",
+					"component": "text",
+					"id": "deptment",
+					"editablenode": "",
+					"name": "deptment"
+				},
+				{
+					"title": "联系人",
+					"component": "text",
+					"id": "contact",
+					"editablenode": "",
+					"name": "contact"
+				},
+				{
+					"title": "联系电话",
+					"component": "text",
+					"id": "contacknum",
+					"editablenode": "",
+					"name": "contacknum"
+				}
+					]
+				},
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

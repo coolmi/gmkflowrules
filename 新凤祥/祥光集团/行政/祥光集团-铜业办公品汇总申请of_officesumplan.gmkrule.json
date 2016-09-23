@@ -1,0 +1,217 @@
+{
+  "id": "of_officesumplan",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "officeplan.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "officeplan.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officeplan.pernr",
+            "-",
+            "officeplan.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officeplan.sysbusinessunitname",
+            "-",
+            "officeplan.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officeplan.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "办公物资汇总提报表",
+			"pageid": "fjxx_chidplans",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "table_form",
+					"titleIndex": 0,
+					"basePath": "chidplans",
+					"id": "LA_fjxx_chidplans",
+					"tableForms": [
+                      {
+                        "title": "物资名称",
+                        "component": "hidden",
+                        "id": "dfda673ae47f41e1a637709fc3265f9611",
+                        "editablenode": "",
+                        "name": "matename"
+                      },
+				{
+					"title": "计划类型名称",
+					"component": "text",
+					"id": "pantypetext",
+					"editablenode": "",
+					"name": "pantypetext"
+				},
+				{
+					"title": "月份",
+					"component": "text",
+					"id": "monthy",
+					"editablenode": "",
+					"name": "monthy",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM"
+				},
+				{
+					"title": "物资类别",
+					"component": "label",
+					"id": "a7e7b0110d204d0183fb6a5f1aee96e3",
+					"editablenode": "",
+					"label": [
+						"matetype",
+                        "-",
+                        "matetypename"
+					]
+				},
+				{
+					"title": "物资名称",
+					"component": "label",
+					"id": "dfda673ae47f41e1a637709fc3265f96",
+					"editablenode": "",
+					"label": [
+						"mateno",
+                        "-",
+                        "matename"
+					]
+				},
+				{
+					"title": "单位",
+					"component": "label",
+					"id": "19dbd847fbb240b09bc6110e0ac9eb5f",
+					"editablenode": "",
+					"label": [
+						"munit",
+                        "-",
+                        "munitname"
+					]
+				},
+				{
+					"title": "需求量",
+					"component": "text",
+					"id": "demand",
+					"editablenode": "",
+					"name": "demand"
+				},
+				{
+					"title": "批次号",
+					"component": "text",
+					"id": "conno",
+					"editablenode": "",
+					"name": "conno"
+				}
+
+
+					]
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
