@@ -1,0 +1,229 @@
+{
+  "id": "gmk_warranty",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "warranty.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "warranty.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "warranty.pernr",
+            "-",
+            "warranty.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "warranty.sysbusinessunitname",
+            "-",
+            "warranty.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "warranty.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "sqxx_warranty",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "采购订单号",
+					"component": "text",
+					"id": "warranty_ordernum",
+					"editablenode": "",
+					"name": "warranty.ordernum"
+				},
+				{
+					"title": "合同号",
+					"component": "text",
+					"id": "warranty_contractnum",
+					"editablenode": "",
+					"name": "warranty.contractnum"
+				},
+				{
+					"title": "供应商编号",
+					"component": "text",
+					"id": "warranty_supplier",
+					"editablenode": "",
+					"name": "warranty.supplier"
+				},
+				{
+					"title": "供应商名称",
+					"component": "text",
+					"id": "warranty_suppliername",
+					"editablenode": "",
+					"name": "warranty.suppliername"
+				},
+				{
+					"title": "质保金额小写",
+					"component": "text",
+					"id": "warranty_warrantymo",
+					"editablenode": "",
+					"name": "warranty.warrantymo",
+					"datatype": "money"
+				},
+				{
+					"title": "质保金额大写",
+					"component": "text",
+					"id": "warranty_warrantyup",
+					"editablenode": "",
+					"name": "warranty.warrantyup"
+				},
+				{
+					"title": "质保期条款约定",
+					"component": "textarea",
+					"id": "warranty_warranty",
+					"editablenode": "",
+					"rows": "3",
+					"name": "warranty.warranty"
+				},
+				{
+					"title": "车间主任审核",
+					"component": "text",
+					"id": "warranty_odirectorname",
+					"editablenode": "",
+					"name": "warranty.odirectorname"
+				},
+				{
+					"title": "厂(部)审核",
+					"component": "text",
+					"id": "warranty_ofactoryname",
+					"editablenode": "",
+					"name": "warranty.ofactoryname"
+				},
+				{
+					"title": "采购部业务经办人审核",
+					"component": "text",
+					"id": "warranty_omembername",
+					"editablenode": "",
+					"name": "warranty.omembername"
+				},
+				{
+					"title": "采购部门负责人审核",
+					"component": "text",
+					"id": "warranty_odepartheadname",
+					"editablenode": "",
+					"name": "warranty.odepartheadname"
+				},
+				{
+					"title": "财务会计审核",
+					"component": "text",
+					"id": "warranty_ofinacouname",
+					"editablenode": "",
+					"name": "warranty.ofinacouname"
+				},
+				{
+					"title": "财务会计主管审核",
+					"component": "text",
+					"id": "warranty_ofinasupername",
+					"editablenode": "",
+					"name": "warranty.ofinasupername"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
