@@ -1,0 +1,828 @@
+{
+  "id": "gmkado_reception",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "sqxx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "通知单位",
+					"component": "text",
+					"id": "mainModel_m_djr",
+					"editablenode": "",
+					"name": "mainModel.m_djr"
+				},
+				{
+					"title": "通知人及联系方式",
+					"component": "text",
+					"id": "mainModel_m_tel",
+					"editablenode": "",
+					"name": "mainModel.m_tel"
+				},
+				{
+					"title": "来访单位",
+					"component": "text",
+					"id": "mainModel_m_comedept",
+					"editablenode": "",
+					"name": "mainModel.m_comedept"
+				},
+				{
+					"title": "来访主要领导",
+					"component": "text",
+					"id": "mainModel_m_mainleaders",
+					"editablenode": "",
+					"name": "mainModel.m_mainleaders"
+				},
+				{
+					"title": "来访目的",
+					"component": "text",
+					"id": "mainModel_m_forwhat",
+					"editablenode": "",
+					"name": "mainModel.m_forwhat"
+				},
+				{
+					"title": "来宾人数",
+					"component": "text",
+					"id": "mainModel_m_num",
+					"editablenode": "",
+					"name": "mainModel.m_num"
+				},
+				{
+					"title": "到达方式",
+					"component": "select",
+					"id": "mainModel_m_cometype",
+					"editablenode": "",
+					"name": "mainModel.m_cometype",
+					"options": [
+						{
+							"text": "自驾车",
+							"value": "0",
+						},
+						{
+							"text": "汽车",
+							"value": "1",
+						},
+						{
+							"text": "火车",
+							"value": "2",
+						},
+						{
+							"text": "飞机",
+							"value": "3",
+						},
+						{
+							"text": "其他",
+							"value": "4",
+						}
+					]
+				},
+				{
+					"title": "接站/接机",
+					"component": "select",
+					"id": "mainModel_m_jzjj",
+					"editablenode": "",
+					"name": "mainModel.m_jzjj",
+					"options": [
+						{
+							"text": "是",
+							"value": "0",
+						},
+						{
+							"text": "否",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "来访日期(始)",
+					"component": "date1",
+					"id": "mainModel_m_comest",
+					"editablenode": "",
+					"name": "mainModel.m_comest"
+				},
+				{
+					"title": "来访日期(末)",
+					"component": "date1",
+					"id": "mainModel_m_comeed",
+					"editablenode": "",
+					"name": "mainModel.m_comeed"
+				},
+				{
+					"title": "各级陪同领导",
+					"component": "text",
+					"id": "mainModel_m_gjleaders",
+					"editablenode": "",
+					"name": "mainModel.m_gjleaders"
+				},
+				{
+					"title": "集团陪同人员",
+					"component": "text",
+					"id": "mainModel_m_jtptleaders",
+					"editablenode": "",
+					"name": "mainModel.m_jtptleaders"
+				},
+				{
+					"title": "接待级别",
+					"component": "select",
+					"id": "mainModel_m_jdlevel",
+					"editablenode": "",
+					"name": "mainModel.m_jdlevel",
+					"options": [
+						{
+							"text": "一级",
+							"value": "1",
+						},
+						{
+							"text": "二级",
+							"value": "2",
+						},
+						{
+							"text": "三级",
+							"value": "3",
+						}
+					]
+				},
+				{
+					"title": "最终审批人",
+					"component": "text",
+					"id": "mainModel_m_jdsprnm",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "mainModel_m_jdlevel",
+							"values": [
+								"1","2"
+							]
+						}
+					],
+					"name": "mainModel.m_jdsprnm"
+				},
+				{
+					"title": "是否需电视台跟踪报道",
+					"component": "select",
+					"id": "mainModel_m_tv",
+					"editablenode": "",
+					"name": "mainModel.m_tv",
+					"options": [
+						{
+							"text": "否",
+							"value": "0",
+						},
+						{
+							"text": "是",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "接待明细",
+					"component": "checkbox",
+					"id": "mainModel_m_jddetail",
+					"editablenode": "",
+					"name": "mainModel.m_jddetail",
+					"options": [
+						{
+							"text": "迎宾方案",
+							"value": "0",
+						},
+						{
+							"text": "住宿方案",
+							"value": "1",
+						},
+						{
+							"text": "就餐方案",
+							"value": "2",
+						},
+						{
+							"text": "参观方案",
+							"value": "3",
+						},
+						{
+							"text": "会见交流方案",
+							"value": "4",
+						},
+						{
+							"text": "游览方案",
+							"value": "5",
+						},
+						{
+							"text": "送宾方案",
+							"value": "6",
+						}
+					]
+				},
+				{
+					"title": "日程安排",
+					"component": "textarea",
+					"id": "mainModel_m_rcap",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_rcap"
+				}
+			]
+		},
+		{
+			"title": "基本明细",
+			"pageid": "jbmx_jbmx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "table_form",
+					"titleIndex": 0,
+					"basePath": "basicinfolist",
+					"id": "LA_jbmx_jbmx",
+					"tableForms": [
+				{
+					"title": "姓名",
+					"component": "text",
+					"id": "s_jb_nm",
+					"editablenode": "",
+					"name": "s_jb_nm"
+				},
+				{
+					"title": "性别",
+					"component": "select",
+					"id": "s_jb_sex",
+					"editablenode": "",
+					"name": "s_jb_sex",
+					"options": [
+						{
+							"text": "男",
+							"value": "0",
+						},
+						{
+							"text": "女",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "单位及职务",
+					"component": "text",
+					"id": "s_jb_zw",
+					"editablenode": "",
+					"name": "s_jb_zw"
+				},
+				{
+					"title": "到达时间",
+					"component": "text",
+					"id": "s_jb_ddtm",
+					"editablenode": "",
+					"name": "s_jb_ddtm"
+				},
+				{
+					"title": "到达地点",
+					"component": "text",
+					"id": "s_jb_ddpl",
+					"editablenode": "",
+					"name": "s_jb_ddpl"
+				},
+				{
+					"title": "航班/车次",
+					"component": "text",
+					"id": "s_jb_hb",
+					"editablenode": "",
+					"name": "s_jb_hb"
+				},
+				{
+					"title": "备注",
+					"component": "text",
+					"id": "s_jb_bz",
+					"editablenode": "",
+					"name": "s_jb_bz"
+				}
+					]
+				},
+				{
+					"title": "来访单位",
+					"component": "text",
+					"id": "mainModel_m_comedept_s",
+					"editablenode": "",
+					"name": "mainModel.m_comedept_s"
+				},
+				{
+					"title": "来访日期",
+					"component": "text",
+					"id": "mainModel_m_comedt_s",
+					"editablenode": "",
+					"name": "mainModel.m_comedt_s",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "来访目的",
+					"component": "text",
+					"id": "mainModel_m_forwhat_s",
+					"editablenode": "",
+					"name": "mainModel.m_forwhat_s"
+				},
+				{
+					"title": "其他特殊要求",
+					"component": "textarea",
+					"id": "mainModel_m_special",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_special"
+				}
+			]
+		},
+		{
+			"title": "迎宾明细",
+			"pageid": "ybmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "迎宾时间",
+					"component": "text",
+					"id": "mainModel_m_ybtm",
+					"editablenode": "",
+					"name": "mainModel.m_ybtm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "迎宾地点",
+					"component": "text",
+					"id": "mainModel_m_ybpl",
+					"editablenode": "",
+					"name": "mainModel.m_ybpl"
+				},
+				{
+					"title": "迎宾人员",
+					"component": "text",
+					"id": "mainModel_m_ybpersons",
+					"editablenode": "",
+					"name": "mainModel.m_ybpersons"
+				},
+				{
+					"title": "迎宾车辆",
+					"component": "text",
+					"id": "mainModel_m_ybcar",
+					"editablenode": "",
+					"name": "mainModel.m_ybcar"
+				},
+				{
+					"title": "迎宾布置",
+					"component": "checkbox",
+					"id": "mainModel_m_ybbuzhi",
+					"editablenode": "",
+					"name": "mainModel.m_ybbuzhi",
+					"options": [
+						{
+							"text": "接待活动指南",
+							"value": "0",
+						},
+						{
+							"text": "在迎接地点举欢迎牌",
+							"value": "1",
+						},
+						{
+							"text": "LED屏幕",
+							"value": "2",
+						},
+						{
+							"text": "鲜花",
+							"value": "3",
+						},
+						{
+							"text": "地毯",
+							"value": "4",
+						},
+						{
+							"text": "喷泉",
+							"value": "5",
+						},
+						{
+							"text": "摄像",
+							"value": "6",
+						}
+					]
+				},
+				{
+					"title": "迎宾方案",
+					"component": "textarea",
+					"id": "mainModel_m_ybfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_ybfa"
+				}
+			]
+		},
+		{
+			"title": "住宿明细",
+			"pageid": "zsmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "入驻酒店",
+					"component": "text",
+					"id": "mainModel_m_zshotel",
+					"editablenode": "",
+					"name": "mainModel.m_zshotel"
+				},
+				{
+					"title": "入驻时间(始)",
+					"component": "text",
+					"id": "mainModel_m_zstm",
+					"editablenode": "",
+					"name": "mainModel.m_zstm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "入驻时间(末)",
+					"component": "text",
+					"id": "mainModel_m_zstme",
+					"editablenode": "",
+					"name": "mainModel.m_zstme",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "其他要求",
+					"component": "checkbox",
+					"id": "mainModel_m_zsqtyq",
+					"editablenode": "",
+					"name": "mainModel.m_zsqtyq",
+					"options": [
+						{
+							"text": "提前入住手续",
+							"value": "0",
+						},
+						{
+							"text": "含早餐",
+							"value": "1",
+						},
+						{
+							"text": "国内长途",
+							"value": "2",
+						},
+						{
+							"text": "鲜花",
+							"value": "3",
+						},
+						{
+							"text": "水果",
+							"value": "4",
+						},
+						{
+							"text": "公司宣传资料",
+							"value": "5",
+						}
+					]
+				},
+				{
+					"title": "方案",
+					"component": "textarea",
+					"id": "mainModel_m_zsfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_zsfa"
+				}
+			]
+		},
+		{
+			"title": "就餐明细",
+			"pageid": "jcmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "就餐地点",
+					"component": "text",
+					"id": "mainModel_m_jcdd",
+					"editablenode": "",
+					"name": "mainModel.m_jcdd"
+				},
+				{
+					"title": "就餐时间",
+					"component": "text",
+					"id": "mainModel_m_jctime",
+					"editablenode": "",
+					"name": "mainModel.m_jctime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "陪同人员",
+					"component": "text",
+					"id": "mainModel_m_jcptry",
+					"editablenode": "",
+					"name": "mainModel.m_jcptry"
+				},
+				{
+					"title": "方案",
+					"component": "textarea",
+					"id": "mainModel_m_jcfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_jcfa"
+				}
+			]
+		},
+		{
+			"title": "参观明细",
+			"pageid": "cgmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "参观时间",
+					"component": "text",
+					"id": "mainModel_m_cgtm",
+					"editablenode": "",
+					"name": "mainModel.m_cgtm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "参观地点",
+					"component": "text",
+					"id": "mainModel_m_cgdd",
+					"editablenode": "",
+					"name": "mainModel.m_cgdd"
+				},
+				{
+					"title": "陪同人员",
+					"component": "text",
+					"id": "mainModel_m_cgptry",
+					"editablenode": "",
+					"name": "mainModel.m_cgptry"
+				},
+				{
+					"title": "参观车辆",
+					"component": "text",
+					"id": "mainModel_m_cgcar",
+					"editablenode": "",
+					"name": "mainModel.m_cgcar"
+				},
+				{
+					"title": "方案",
+					"component": "textarea",
+					"id": "mainModel_m_cgfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_cgfa"
+				}
+			]
+		},
+		{
+			"title": "会见交流明细",
+			"pageid": "hjjlmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "会议时间(到分)",
+					"component": "text",
+					"id": "mainModel_m_hjtm",
+					"editablenode": "",
+					"name": "mainModel.m_hjtm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "会议地点",
+					"component": "text",
+					"id": "mainModel_m_hjpl",
+					"editablenode": "",
+					"name": "mainModel.m_hjpl"
+				},
+				{
+					"title": "参会人数",
+					"component": "text",
+					"id": "mainModel_m_hjpersons",
+					"editablenode": "",
+					"name": "mainModel.m_hjpersons"
+				},
+				{
+					"title": "会议名称",
+					"component": "text",
+					"id": "mainModel_m_hjhynm",
+					"editablenode": "",
+					"name": "mainModel.m_hjhynm"
+				},
+				{
+					"title": "方案",
+					"component": "text",
+					"id": "mainModel_m_hjfa",
+					"editablenode": "",
+					"name": "mainModel.m_hjfa"
+				}
+			]
+		},
+		{
+			"title": "游览明细",
+			"pageid": "ylmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "游览时间",
+					"component": "text",
+					"id": "mainModel_m_yltm",
+					"editablenode": "",
+					"name": "mainModel.m_yltm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "游览景点",
+					"component": "text",
+					"id": "mainModel_m_yljd",
+					"editablenode": "",
+					"name": "mainModel.m_yljd"
+				},
+				{
+					"title": "游览人数",
+					"component": "text",
+					"id": "mainModel_m_ylpersons",
+					"editablenode": "",
+					"name": "mainModel.m_ylpersons"
+				},
+				{
+					"title": "陪同人员",
+					"component": "text",
+					"id": "mainModel_m_ylptry",
+					"editablenode": "",
+					"name": "mainModel.m_ylptry"
+				},
+				{
+					"title": "方案",
+					"component": "textarea",
+					"id": "mainModel_m_ylfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_ylfa"
+				}
+			]
+		},
+		{
+			"title": "送宾明细",
+			"pageid": "sbmx_reception",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "送行时间",
+					"component": "text",
+					"id": "mainModel_m_sbtm",
+					"editablenode": "",
+					"name": "mainModel.m_sbtm",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd HH:mm"
+				},
+				{
+					"title": "送行地点",
+					"component": "text",
+					"id": "mainModel_m_sbpl",
+					"editablenode": "",
+					"name": "mainModel.m_sbpl"
+				},
+				{
+					"title": "送行方式",
+					"component": "text",
+					"id": "mainModel_m_sbtype",
+					"editablenode": "",
+					"name": "mainModel.m_sbtype"
+				},
+				{
+					"title": "送行人员",
+					"component": "text",
+					"id": "mainModel_m_sbpersons",
+					"editablenode": "",
+					"name": "mainModel.m_sbpersons"
+				},
+				{
+					"title": "送行方案",
+					"component": "textarea",
+					"id": "mainModel_m_sbfa",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.m_sbfa"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
