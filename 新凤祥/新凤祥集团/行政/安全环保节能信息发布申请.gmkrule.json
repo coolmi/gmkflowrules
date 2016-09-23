@@ -1,8 +1,8 @@
 {
-  "id": "ap_technicalacceptance",
+  "id": "gmk_environmental",
   "handleOnPC": {
     "tasknode": [
-      "usertask5","usertask7"
+      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +10,7 @@
   },
   "selectPerson": {
     "tasknode": [
-      
+
     ],
     "beforPop": false
   },
@@ -35,22 +35,22 @@
           "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "environmental.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "environmental.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
-            "mainModel.pernr",
+            "environmental.pernr",
             "-",
-            "mainModel.username"
+            "environmental.username"
           ]
         },
         {
@@ -58,126 +58,120 @@
           "component": "label",
           "editablenode": "",
           "label": [
-            "mainModel.sysbusinessunitname",
+            "environmental.sysbusinessunitname",
             "-",
-            "mainModel.sysdeptname"
+            "environmental.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "environmental.bukrs"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "environmental.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "environmental.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "environmental.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "environmental.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "environmental.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "environmental.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "environmental.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "environmental.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "environmental.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "environmental.id"
         }
       ]
     },
 
     		{
 			"title": "申请信息",
-			"pageid": "sqxx",
+			"pageid": "sqxx_environmental",
 			"component": "panel",
 			"subComponents": [
 				{
-					"title": "项目立项单号",
+					"title": "标题",
 					"component": "text",
-					"id": "mainModel_approvalid",
+					"id": "environmental_title",
 					"editablenode": "",
-					"name": "mainModel.approvalid"
+					"name": "environmental.title"
 				},
 				{
-					"title": "技改项目名称",
+					"title": "起草日期",
 					"component": "text",
-					"id": "mainModel_jgxmname",
+					"id": "environmental_qcrq",
 					"editablenode": "",
-					"name": "mainModel.jgxmname"
+					"name": "environmental.qcrq"
 				},
 				{
-					"title": "项目负责人",
+					"title": "信息类型名称",
 					"component": "text",
-					"id": "mainModel_jgxmfzr",
+					"id": "environmental_xxlxname",
 					"editablenode": "",
-					"name": "mainModel.jgxmfzr"
+					"name": "environmental.xxlxname"
 				},
 				{
-					"title": "项目承担单位",
+					"title": "子信息类型名称",
 					"component": "text",
-					"id": "mainModel_xmcddw",
+					"id": "environmental_zxxlxname",
 					"editablenode": "",
-					"name": "mainModel.xmcddw"
+					"name": "environmental.zxxlxname"
 				},
 				{
-					"title": "项目计划起始时间",
-					"component": "date1",
-					"id": "mainModel_xmjhstartdate",
+					"title": "发布公司",
+					"component": "text",
+					"id": "environmental_fbcompany",
 					"editablenode": "",
-					"name": "mainModel.xmjhstartdate"
+					"name": "environmental.fbcompany"
 				},
 				{
-					"title": "项目实际结束时间",
-					"component": "date1",
-					"id": "mainModel_xmsjenddate",
+					"title": "发布对象",
+					"component": "text",
+					"id": "environmental_fbdx",
 					"editablenode": "",
-					"name": "mainModel.xmsjenddate"
-				},
-				{
-					"title": "结项说明",
-					"component": "textarea",
-					"id": "mainModel_jxsm",
-					"editablenode": "",
-					"rows": "3",
-					"name": "mainModel.jxsm"
+					"name": "environmental.fbdx"
 				}
 			]
 		}
+
+
   ],
   "refers": {
   }

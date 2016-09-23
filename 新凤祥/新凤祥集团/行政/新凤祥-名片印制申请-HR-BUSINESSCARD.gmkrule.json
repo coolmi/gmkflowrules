@@ -200,6 +200,7 @@
 				"type": "money",
                 "name": "businesscard.account"
             },
+
             {
                 "title": "备注",
                 "component": "textarea",
