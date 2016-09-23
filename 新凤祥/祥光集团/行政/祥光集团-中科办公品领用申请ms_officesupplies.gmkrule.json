@@ -1,0 +1,209 @@
+{
+  "id": "ms_officesupplies",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "officesupplies.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "officesupplies.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officesupplies.pernr",
+            "-",
+            "officesupplies.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "officesupplies.sysbusinessunitname",
+            "-",
+            "officesupplies.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "officesupplies.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "物品信息",
+			"pageid": "fjxx_officesuppliesa",
+			"component": "panel",
+			"subComponents": [
+              {
+                "title": "总金额",
+                "component": "text",
+                "id": "officesupplies_summ",
+                "editablenode": "",
+                "name": "officesupplies.summ",
+                "datatype": "money"
+              },
+				{
+					"title": "",
+					"component": "table",
+					"titleIndex": 0,
+					"basePath": "procureChilds",
+					"id": "LA_fjxx_officesuppliesa",
+					"cells": [
+                      {
+                        "title": "物品名称",
+                        "component": "hidden",
+                        "id": "b277063f095445958d2a76e1d4781e74aa",
+                        "name": "matename"
+                      },
+				{
+					"title": "物品名称",
+					"component": "label",
+					"id": "b277063f095445958d2a76e1d4781e74",
+					"editablenode": "",
+					"label": [
+						"mateno",
+						"matename"
+					]
+				},
+				{
+					"title": "物资类别",
+					"component": "label",
+					"id": "721119118e3146b3b839094b241bea3c",
+					"editablenode": "",
+					"label": [
+						"matetype",
+						"matetypename"
+					]
+				},
+				{
+					"title": "单价",
+					"component": "text",
+					"id": "unitprice",
+					"editablenode": "",
+					"name": "unitprice"
+				},
+				{
+					"title": "数量",
+					"component": "text",
+					"id": "inboundnum",
+					"editablenode": "",
+					"name": "inboundnum"
+				},
+				{
+					"title": "单位",
+					"component": "text",
+					"id": "munit",
+					"editablenode": "",
+					"name": "munit"
+				},
+				{
+					"title": "备注",
+					"component": "textarea",
+					"id": "remark",
+					"editablenode": "",
+					"rows": "3",
+					"name": "remark"
+				}
+					]
+				}
+
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
