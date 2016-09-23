@@ -1,360 +1,360 @@
 {
   "id": "ap_contractvoid",
   "handleOnPC": {
-    "tasknode": [
-      
-    ],
-    "flag": [
-      "resubmit"
-    ]
+	"tasknode": [
+	  "financeaudit"
+	],
+	"flag": [
+	  "resubmit"
+	]
   },
   "selectPerson": {
-    "tasknode": [
-      
-    ],
-    "beforPop": false
+	"tasknode": [
+
+	],
+	"beforPop": false
   },
   "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
+	"defaultIndex": 0,
+	"selectIndexArray": [
+	  {
+		"selectIndex": 0,
+		"tasknode": [
 
-        ]
-      }
-    ]
+		]
+	  }
+	]
   },
   "forms": [
-    {
-      "title": "基本信息",
-      "pageid": "jbxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "申请单号",
-          "component": "text",
-          "editablenode": "",
-          "name": "contractvoid.appid"
-        },
-        {
-          "title": "申请日期",
-          "component": "date1",
-          "editablenode": "",
-          "name": "contractvoid.appda"
-        },
-        {
-          "title": "申请人姓名",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "contractvoid.pernr",
-            "-",
-            "contractvoid.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "contractvoid.sysbusinessunitname",
-            "-",
-            "contractvoid.sysdeptname"
-          ]
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.bukrs"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.userid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.username"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.pernr"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.syspostname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.sysdeptid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.sysdeptname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.sysbusinessunitid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.sysbusinessunitname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.postid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "contractvoid.id"
-        }
-      ]
-    },
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx_contractvoid",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "执行状态 ",
-					"component": "select",
-					"id": "contractvoid_zxzt",
-					"editablenode": "",
-					"name": "contractvoid.zxzt",
-					"options": [
-						{
-							"text": "审批中",
-							"value": "0"
-						},
-						{
-							"text": "已生效",
-							"value": "1"
-						}
-					]
-				},
-				{
-					"title": "申请内容 ",
-					"component": "select",
-					"id": "contractvoid_sqnr",
-					"editablenode": "",
-					"name": "contractvoid.sqnr",
-					"options": [
-						{
-							"text": "作废",
-							"value": "0"
-						},
-						{
-							"text": "终止",
-							"value": "1"
-						}
-					]
-				},
-				{
-					"title": "付款状况",
-					"component": "select",
-					"id": "contractvoid_fkzk",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "contractvoid_zxzt",
-							"values": [
-								"1"
-							]
-						}
-					],
-					"name": "contractvoid.fkzk",
-					"options": [
-						{
-						  "text": "请选择",
-						  "value": ""
-						},
-						{
-							"text": "已付款",
-							"value": "0"
-						},
-						{
-							"text": "未付款",
-							"value": "1"
-						}
-					]
-				},
-				{
-					"title": "付款比例",
-					"component": "text",
-					"id": "contractvoid_fkbl",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "contractvoid_fkzk",
-							"values": [
-								"0"
-							]
-						}
-					],
-					"name": "contractvoid.fkbl"
-				},
-				{
-					"title": "付款金额",
-					"component": "text",
-					"id": "contractvoid_fkje",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "contractvoid_fkzk",
-							"values": [
-								"0"
-							]
-						}
-					],
-					"name": "contractvoid.fkje"
-				},
-				{
-					"title": "作废合同申请单号",
-					"component": "text",
-					"id": "contractvoid_zfhtdh",
-					"editablenode": "",
-					"name": "contractvoid.zfhtdh"
-				},
-				{
-					"title": "合同编号",
-					"component": "text",
-					"id": "contractvoid_htbh",
-					"editablenode": "",
-					"name": "contractvoid.htbh"
-				},
-				{
-					"title": "合同标的物",
-					"component": "text",
-					"id": "contractvoid_htbdw",
-					"editablenode": "",
-					"name": "contractvoid.htbdw"
-				},
-				{
-					"title": "需求部门",
-					"component": "text",
-					"id": "contractvoid_xqbm",
-					"editablenode": "",
-					"name": "contractvoid.xqbm"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "contractvoid_gysmc",
-					"editablenode": "",
-					"name": "contractvoid.gysmc"
-				},
-				{
-					"title": "合同金额（小写）",
-					"component": "text",
-					"id": "contractvoid_htjexx",
-					"editablenode": "",
-					"name": "contractvoid.htjexx"
-				},
-				{
-					"title": "合同金额（大写）",
-					"component": "text",
-					"id": "contractvoid_htjedx",
-					"editablenode": "",
-					"name": "contractvoid.htjedx"
-				},
-				{
-					"title": "合同份数",
-					"component": "text",
-					"id": "contractvoid_htfs",
-					"editablenode": "",
-					"name": "contractvoid.htfs"
-				},
-				{
-					"title": "合同页数",
-					"component": "text",
-					"id": "contractvoid_htys",
-					"editablenode": "",
-					"name": "contractvoid.htys"
-				},
-				{
-					"title": "作废/终止原因",
-					"component": "textarea",
-					"id": "contractvoid_voidreason",
-					"editablenode": "",
-					"rows": "3",
-					"name": "contractvoid.voidreason"
-				},
-				{
-					"title": "法务部审核人员",
-					"component": "text",
-					"id": "contractvoid_lawauditassignee",
-					"editablenode": "",
-					"name": "contractvoid.lawauditassignee"
-				},
-				{
-					"title": "审计部分派-提交至",
-					"component": "text",
-					"id": "contractvoid_auditsubmittask",
-					"editablenode": "",
-					"name": "contractvoid.auditsubmittask"
-				},
-				{
-					"title": "审计部初审人员",
-					"component": "text",
-					"id": "contractvoid_audittrialassignee",
-					"editablenode": "",
-					"name": "contractvoid.audittrialassignee"
-				},
-				{
-					"title": "审计部初审人员ID",
-					"component": "text",
-					"id": "contractvoid_audittrialassigneeid",
-					"editablenode": "",
-					"name": "contractvoid.audittrialassigneeid"
-				},
-				{
-					"title": "币种  0:人名币  1:美元,  2:欧元,  3:英镑",
-					"component": "text",
-					"id": "contractvoid_bz",
-					"editablenode": "",
-					"name": "contractvoid.bz"
-				},
-
-				{
-					"title": "法务部分派-提交至",
-					"component": "text",
-					"id": "contractvoid_lawsubmittask",
-					"editablenode": "",
-					"name": "contractvoid.lawsubmittask"
-				},
-
-				{
-					"title": "需求部门编号",
-					"component": "text",
-					"id": "contractvoid_xqbmid",
-					"editablenode": "",
-					"name": "contractvoid.xqbmid"
-				},
-				{
-					"title": "审计部初审-提交至",
-					"component": "text",
-					"id": "contractvoid_auditcssubmittask",
-					"editablenode": "",
-					"name": "contractvoid.auditcssubmittask"
-				},
-				{
-					"title": "法务部审核人员ID",
-					"component": "text",
-					"id": "contractvoid_lawauditassigneeid",
-					"editablenode": "",
-					"name": "contractvoid.lawauditassigneeid"
-				}
-			]
+	{
+	  "title": "基本信息",
+	  "pageid": "jbxx",
+	  "component": "panel",
+	  "subComponents": [
+		{
+		  "title": "申请单号",
+		  "component": "text",
+		  "editablenode": "",
+		  "name": "contractvoid.appid"
+		},
+		{
+		  "title": "申请日期",
+		  "component": "date1",
+		  "editablenode": "",
+		  "name": "contractvoid.appda"
+		},
+		{
+		  "title": "申请人姓名",
+		  "component": "label",
+		  "editablenode": "",
+		  "label": [
+			"contractvoid.pernr",
+			"-",
+			"contractvoid.username"
+		  ]
+		},
+		{
+		  "title": "所属部门",
+		  "component": "label",
+		  "editablenode": "",
+		  "label": [
+			"contractvoid.sysbusinessunitname",
+			"-",
+			"contractvoid.sysdeptname"
+		  ]
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.bukrs"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.userid"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.username"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.pernr"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.syspostname"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.sysdeptid"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.sysdeptname"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.sysbusinessunitid"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.sysbusinessunitname"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.postid"
+		},
+		{
+		  "title": "",
+		  "component": "hidden",
+		  "name": "contractvoid.id"
 		}
+	  ]
+	},
+	{
+	  "title": "申请信息",
+	  "pageid": "sqxx_contractvoid",
+	  "component": "panel",
+	  "subComponents": [
+		{
+		  "title": "执行状态 ",
+		  "component": "select",
+		  "id": "contractvoid_zxzt",
+		  "editablenode": "",
+		  "name": "contractvoid.zxzt",
+		  "options": [
+			{
+			  "text": "审批中",
+			  "value": "0"
+			},
+			{
+			  "text": "已生效",
+			  "value": "1"
+			}
+		  ]
+		},
+		{
+		  "title": "申请内容 ",
+		  "component": "select",
+		  "id": "contractvoid_sqnr",
+		  "editablenode": "",
+		  "name": "contractvoid.sqnr",
+		  "options": [
+			{
+			  "text": "作废",
+			  "value": "0"
+			},
+			{
+			  "text": "终止",
+			  "value": "1"
+			}
+		  ]
+		},
+		{
+		  "title": "付款状况",
+		  "component": "select",
+		  "id": "contractvoid_fkzk",
+		  "editablenode": "",
+		  "showLinkage": [
+			{
+			  "id": "contractvoid_zxzt",
+			  "values": [
+				"1"
+			  ]
+			}
+		  ],
+		  "name": "contractvoid.fkzk",
+		  "options": [
+			{
+			  "text": "请选择",
+			  "value": ""
+			},
+			{
+			  "text": "已付款",
+			  "value": "0"
+			},
+			{
+			  "text": "未付款",
+			  "value": "1"
+			}
+		  ]
+		},
+		{
+		  "title": "付款比例",
+		  "component": "text",
+		  "id": "contractvoid_fkbl",
+		  "editablenode": "",
+		  "showLinkage": [
+			{
+			  "id": "contractvoid_fkzk",
+			  "values": [
+				"0"
+			  ]
+			}
+		  ],
+		  "name": "contractvoid.fkbl"
+		},
+		{
+		  "title": "付款金额",
+		  "component": "text",
+		  "id": "contractvoid_fkje",
+		  "editablenode": "",
+		  "showLinkage": [
+			{
+			  "id": "contractvoid_fkzk",
+			  "values": [
+				"0"
+			  ]
+			}
+		  ],
+		  "name": "contractvoid.fkje"
+		},
+		{
+		  "title": "作废合同申请单号",
+		  "component": "text",
+		  "id": "contractvoid_zfhtdh",
+		  "editablenode": "",
+		  "name": "contractvoid.zfhtdh"
+		},
+		{
+		  "title": "合同编号",
+		  "component": "text",
+		  "id": "contractvoid_htbh",
+		  "editablenode": "",
+		  "name": "contractvoid.htbh"
+		},
+		{
+		  "title": "合同标的物",
+		  "component": "text",
+		  "id": "contractvoid_htbdw",
+		  "editablenode": "",
+		  "name": "contractvoid.htbdw"
+		},
+		{
+		  "title": "需求部门",
+		  "component": "text",
+		  "id": "contractvoid_xqbm",
+		  "editablenode": "",
+		  "name": "contractvoid.xqbm"
+		},
+		{
+		  "title": "供应商名称",
+		  "component": "text",
+		  "id": "contractvoid_gysmc",
+		  "editablenode": "",
+		  "name": "contractvoid.gysmc"
+		},
+		{
+		  "title": "合同金额（小写）",
+		  "component": "text",
+		  "id": "contractvoid_htjexx",
+		  "editablenode": "",
+		  "name": "contractvoid.htjexx"
+		},
+		{
+		  "title": "合同金额（大写）",
+		  "component": "text",
+		  "id": "contractvoid_htjedx",
+		  "editablenode": "",
+		  "name": "contractvoid.htjedx"
+		},
+		{
+		  "title": "合同份数",
+		  "component": "text",
+		  "id": "contractvoid_htfs",
+		  "editablenode": "",
+		  "name": "contractvoid.htfs"
+		},
+		{
+		  "title": "合同页数",
+		  "component": "text",
+		  "id": "contractvoid_htys",
+		  "editablenode": "",
+		  "name": "contractvoid.htys"
+		},
+		{
+		  "title": "作废/终止原因",
+		  "component": "textarea",
+		  "id": "contractvoid_voidreason",
+		  "editablenode": "",
+		  "rows": "3",
+		  "name": "contractvoid.voidreason"
+		},
+		{
+		  "title": "法务部审核人员",
+		  "component": "text",
+		  "id": "contractvoid_lawauditassignee",
+		  "editablenode": "",
+		  "name": "contractvoid.lawauditassignee"
+		},
+		{
+		  "title": "审计部分派-提交至",
+		  "component": "text",
+		  "id": "contractvoid_auditsubmittask",
+		  "editablenode": "",
+		  "name": "contractvoid.auditsubmittask"
+		},
+		{
+		  "title": "审计部初审人员",
+		  "component": "text",
+		  "id": "contractvoid_audittrialassignee",
+		  "editablenode": "",
+		  "name": "contractvoid.audittrialassignee"
+		},
+		{
+		  "title": "审计部初审人员ID",
+		  "component": "text",
+		  "id": "contractvoid_audittrialassigneeid",
+		  "editablenode": "",
+		  "name": "contractvoid.audittrialassigneeid"
+		},
+		{
+		  "title": "币种  0:人名币  1:美元,  2:欧元,  3:英镑",
+		  "component": "text",
+		  "id": "contractvoid_bz",
+		  "editablenode": "",
+		  "name": "contractvoid.bz"
+		},
+
+		{
+		  "title": "法务部分派-提交至",
+		  "component": "text",
+		  "id": "contractvoid_lawsubmittask",
+		  "editablenode": "",
+		  "name": "contractvoid.lawsubmittask"
+		},
+
+		{
+		  "title": "需求部门编号",
+		  "component": "text",
+		  "id": "contractvoid_xqbmid",
+		  "editablenode": "",
+		  "name": "contractvoid.xqbmid"
+		},
+		{
+		  "title": "审计部初审-提交至",
+		  "component": "text",
+		  "id": "contractvoid_auditcssubmittask",
+		  "editablenode": "",
+		  "name": "contractvoid.auditcssubmittask"
+		},
+		{
+		  "title": "法务部审核人员ID",
+		  "component": "text",
+		  "id": "contractvoid_lawauditassigneeid",
+		  "editablenode": "",
+		  "name": "contractvoid.lawauditassigneeid"
+		}
+	  ]
+	}
   ]
 }
