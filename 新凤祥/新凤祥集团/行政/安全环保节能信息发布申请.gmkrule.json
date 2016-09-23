@@ -1,0 +1,172 @@
+{
+  "id": "gmk_environmental",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "environmental.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "environmental.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "environmental.pernr",
+            "-",
+            "environmental.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "environmental.sysbusinessunitname",
+            "-",
+            "environmental.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "environmental.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx_environmental",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "id": "environmental_title",
+          "editablenode": "",
+          "name": "environmental.title"
+        },
+        {
+          "title": "起草日期",
+          "component": "text",
+          "id": "environmental_qcrq",
+          "editablenode": "",
+          "name": "environmental.qcrq"
+        },
+        {
+          "title": "信息类型名称",
+          "component": "text",
+          "id": "environmental_xxlxname",
+          "editablenode": "",
+          "name": "environmental.xxlxname"
+        },
+        {
+          "title": "子信息类型名称",
+          "component": "text",
+          "id": "environmental_zxxlxname",
+          "editablenode": "",
+          "name": "environmental.zxxlxname"
+        },
+        {
+          "title": "发布公司",
+          "component": "text",
+          "id": "environmental_fbcompany",
+          "editablenode": "",
+          "name": "environmental.fbcompany"
+        },
+        {
+          "title": "",
+          "component": "text",
+          "id": "environmental_fbdx",
+          "editablenode": "",
+          "name": "environmental.fbdx"
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
