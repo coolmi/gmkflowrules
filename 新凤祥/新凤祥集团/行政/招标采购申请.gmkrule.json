@@ -1,0 +1,417 @@
+{
+  "id": "ap_tenderpuchaseapply",
+  "handleOnPC": {
+    "tasknode": [
+      "cgfzr"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "tenderpurapply.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "tenderpurapply.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "tenderpurapply.pernr",
+            "-",
+            "tenderpurapply.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "tenderpurapply.sysbusinessunitname",
+            "-",
+            "tenderpurapply.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "tenderpurapply.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "sqxx_tenderpuchaseapply",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "授权类型",
+					"component": "select",
+					"id": "tenderpurapply_sqlx",
+					"editablenode": "",
+					"name": "tenderpurapply.sqlx",
+					"options": [
+						{
+							"text": "一级",
+							"value": "0",
+						},
+						{
+							"text": "二级",
+							"value": "1",
+						},
+						{
+							"text": "三级",
+							"value": "2",
+						}
+					]
+				},
+				{
+					"title": "一级授权审批人",
+					"component": "select",
+					"id": "tenderpurapply_yjsqspr",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_sqlx",
+							"values": [
+								"0"
+							]
+						}
+					],
+					"name": "tenderpurapply.yjsqspr",
+					"options": [
+						{
+							"text": "总裁岗位",
+							"value": "20003286",
+						},
+						{
+							"text": "董事长岗位",
+							"value": "20004971",
+						}
+					]
+				},
+				{
+					"title": "有效授权审批人",
+					"component": "text",
+					"id": "tenderpurapply_yxsqspr",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_sqlx",
+							"values": [
+								"1","2"
+							]
+						}
+					],
+					"name": "tenderpurapply.yxsqspr"
+				},
+				{
+					"title": "需求类型",
+					"component": "select",
+					"id": "tenderpurapply_xqlx",
+					"editablenode": "",
+					"name": "tenderpurapply.xqlx",
+					"options": [
+						{
+							"text": "工程",
+							"value": "0",
+						},
+						{
+							"text": "常规",
+							"value": "1",
+						},
+						{
+							"text": "外协",
+							"value": "2",
+						}
+					]
+				},
+				{
+					"title": "采购物资类型",
+					"component": "select",
+					"id": "tenderpurapply_cgwzlx",
+					"editablenode": "",
+					"name": "tenderpurapply.cgwzlx",
+					"options": [
+						{
+							"text": "设备",
+							"value": "0",
+						},
+						{
+							"text": "土建",
+							"value": "1",
+						},
+						{
+							"text": "安装",
+							"value": "2",
+						},
+						{
+							"text": "材料",
+							"value": "3",
+						},
+						{
+							"text": "服务",
+							"value": "4",
+						},
+						{
+							"text": "安环",
+							"value": "5",
+						},
+						{
+							"text": "其他",
+							"value": "6",
+						}
+					]
+				},
+				{
+					"title": "其他",
+					"component": "text",
+					"id": "tenderpurapply_qt",
+					"editablenode": "",
+					"name": "tenderpurapply.qt"
+				},
+				{
+					"title": "需求部门",
+					"component": "text",
+					"id": "tenderpurapply_xqbm",
+					"editablenode": "",
+					"name": "tenderpurapply.xqbm"
+				},
+				{
+					"title": "需求部门负责人",
+					"component": "text",
+					"id": "xqbmfzrname",
+					"editablenode": "",
+					"name": "xqbmfzrname"
+				},
+				{
+					"title": "是否进口设备",
+					"component": "select",
+					"id": "tenderpurapply_sfjksb",
+					"editablenode": "",
+					"name": "tenderpurapply.sfjksb",
+					"options": [
+						{
+							"text": "是",
+							"value": "0",
+						},
+						{
+							"text": "否",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "签约合同审批单号",
+					"component": "text",
+					"id": "tenderpurapply_htbh",
+					"editablenode": "",
+					"name": "tenderpurapply.htbh"
+				},
+				{
+					"title": "需求描述",
+					"component": "textarea",
+					"id": "tenderpurapply_xqms",
+					"editablenode": "",
+					"rows": "3",
+					"name": "tenderpurapply.xqms"
+				},
+				{
+					"title": "供应商需求",
+					"component": "select",
+					"id": "tenderpurapply_gysxq",
+					"editablenode": "",
+					"name": "tenderpurapply.gysxq",
+					"options": [
+						{
+							"text": "推荐供应商",
+							"value": "0",
+						},
+						{
+							"text": "指定供应商",
+							"value": "1",
+						},
+						{
+							"text": "无",
+							"value": "2",
+						}
+					]
+				},
+				{
+					"title": "推荐供应商",
+					"component": "text",
+					"id": "tenderpurapply_tjgys",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_gysxq",
+							"values": [
+								"0"
+							]
+						}
+					],
+					"name": "tenderpurapply.tjgys"
+				},
+				{
+					"title": "推荐理由",
+					"component": "text",
+					"id": "tenderpurapply_tjly",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_gysxq",
+							"values": [
+								"0"
+							]
+						}
+					],
+					"name": "tenderpurapply.tjly"
+				},
+				{
+					"title": "指定供应商",
+					"component": "text",
+					"id": "tenderpurapply_zdgys",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_gysxq",
+							"values": [
+								"1"
+							]
+						}
+					],
+					"name": "tenderpurapply.zdgys"
+				},
+				{
+					"title": "指定理由",
+					"component": "text",
+					"id": "tenderpurapply_zdly",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "tenderpurapply_gysxq",
+							"values": [
+								"1"
+							]
+						}
+					],
+					"name": "tenderpurapply.zdly"
+				},
+				{
+					"title": "预算提交人",
+					"component": "text",
+					"id": "ystjrname",
+					"editablenode": "",
+					"name": "ystjrname"
+				},
+				{
+					"title": "采购预算",
+					"component": "text",
+					"id": "tenderpurapply_cgys",
+					"editablenode": "",
+					"name": "tenderpurapply.cgys"
+				},
+				{
+					"title": "采购负责人",
+					"component": "text",
+					"id": "cgfzrname",
+					"editablenode": "",
+					"name": "cgfzrname"
+				},
+				{
+					"title": "技术负责人",
+					"component": "text",
+					"id": "tenderpurapply_jsfzr",
+					"editablenode": "",
+					"name": "tenderpurapply.jsfzr"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
