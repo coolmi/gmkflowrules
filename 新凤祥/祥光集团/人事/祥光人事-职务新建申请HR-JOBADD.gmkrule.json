@@ -140,17 +140,16 @@
         {
           "title": "职务说明书",
           "component": "text",
-          "name": "jobadd.docmentafresconame",
+          "name": "docmenttmp",
+          "value":"点击查看",
           "events": {
-            "eventType": "openDocument",
-            "filename": "jobadd.docmentafresconame",
-            "afrescoid": "jobadd.docmentafrescoid"
+            "eventType": "openReports",
+            "prefixUrl": "https://192.168.5.109:8443/api/forreports/findReports/findHtmlReport/HR-JOBADD/%s/gwsms",
+            "params": ["jobadd.jobid"]
           }
         }
 
       ]
     }
-
-
   ]
 }
