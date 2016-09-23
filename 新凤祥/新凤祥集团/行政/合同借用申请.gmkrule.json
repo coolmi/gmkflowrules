@@ -1,8 +1,8 @@
 {
-  "id": "ap_contractborrowapp",
+  "id": "ap_contractborrow",
   "handleOnPC": {
     "tasknode": [
-      
+      "tgbmzxryscfile"
     ],
     "flag": [
       "resubmit"
@@ -10,9 +10,9 @@
   },
   "selectPerson": {
     "tasknode": [
-      
+      "tgbmzxzgfpzxryaudit"
     ],
-    "beforPop": false
+    "beforPop": true
   },
   "pageSelectIndex": {
     "defaultIndex": 0,
@@ -135,7 +135,7 @@
 				},
 				{
 					"title": "使用日期",
-					"component": "text",
+					"component": "date1",
 					"id": "contractborrow_syrq",
 					"editablenode": "",
 					"name": "contractborrow.syrq"
@@ -156,30 +156,42 @@
 				},
 				{
 					"title": "文本类型",
-					"component": "text",
+					"component": "checkbox",
 					"id": "contractborrow_wblx",
 					"editablenode": "",
-					"name": "contractborrow.wblx"
+					"name": "contractborrow.wblx",
+					"options": [
+						{
+							"text": "电子版",
+							"value": "0",
+						},
+						{
+							"text": "原价",
+							"value": "1",
+						}
+					]
 				},
 				{
 					"title": "归还日期",
-					"component": "text",
+					"component": "date1",
 					"id": "contractborrow_ghrq",
 					"editablenode": "",
 					"name": "contractborrow.ghrq"
 				},
 				{
 					"title": "借用原因",
-					"component": "text",
+					"component": "textarea",
 					"id": "contractborrow_jyyy",
 					"editablenode": "",
+					"rows": "3",
 					"name": "contractborrow.jyyy"
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "contractborrow_bz",
 					"editablenode": "",
+					"rows": "3",
 					"name": "contractborrow.bz"
 				}
 			]
