@@ -1,0 +1,229 @@
+{
+  "id": "gmk_payroll",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "类别",
+          "component": "text",
+          "name": "mainModel.categorytxt"
+        },
+        {
+          "title": "年度",
+          "component": "text",
+          "name": "mainModel.payearth"
+        },
+        {
+          "title": "是否预算内",
+          "component": "text",
+          "name": "mainModel.whetherinside"
+        },
+        {
+          "title": "薪酬是否变动",
+          "component": "text",
+          "name": "mainModel.comstandards"
+        }
+      ]
+    },
+    {
+      "title": "主要变化说明",
+      "pageid": "zybhsm",
+      "component": "panel",
+      "subComponents": [
+        {
+          "titleIndex": 1,
+          "title": "",
+          "component": "table_form",
+          "id": "self_zybhsm_tmp",
+          "basePath": "gmk_payrollchildlist",
+          "tableForms": [
+            {
+              "title": "变化项目",
+              "name": "projectchange",
+              "component": "text"
+            },
+            {
+              "title": "变化内容",
+              "name": "contentchange",
+              "component": "text"
+            },
+            {
+              "title": "薪酬应用",
+              "name": "compensationapplication",
+              "component": "text"
+            },
+
+            {
+              "title": "信息来源",
+              "name": "informationsources",
+              "component": "text"
+            },
+            {
+
+              "title": "审批人",
+              "name": "examinationapprovalpeople",
+              "component": "text"
+            },
+            {
+              "title": "其它情况说明",
+              "name": "descriptioncase",
+              "component": "text"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "title": "薪酬发放明细",
+      "pageid": "xcffmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "titleIndex": 1,
+          "title": "",
+          "component": "table_form",
+          "id": "self_sbqkzb_tmp",
+          "basePath": "gmk_payrollchildpaylist",
+          "tableForms": [
+            {
+              "title": "单位",
+              "name": "company",
+              "component": "text"
+            },
+            {
+              "title": "人员类别",
+              "name": "paymentaccount",
+              "component": "text"
+            },
+            {
+              "title": "实发金额",
+              "name": "amountpayment",
+              "component": "text",
+              "datatype":"money"
+            },
+
+            {
+              "title": "较上月变化",
+              "name": "changelastmonth",
+              "component": "text"
+            },
+            {
+
+              "title": "主要变化原因",
+              "name": "reasonschange",
+              "component": "text"
+            },
+            {
+              "title": "发放金额及银行明细",
+              "name": "ssuingbank",
+              "component": "text"
+            }
+          ]
+        }
+      ]
+
+    }
+
+  ]
+}
