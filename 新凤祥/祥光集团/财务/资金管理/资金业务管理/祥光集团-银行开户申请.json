@@ -1,5 +1,5 @@
 {
-  "id": "fp_travle",
+  "id": "fp_openaccount",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -24,22 +24,22 @@
           "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "travle.appid"
+          "name": "openaccount.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "travle.appda"
+          "name": "openaccount.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
-            "travle.pernr",
+            "openaccount.pernr",
             "-",
-            "travle.username"
+            "openaccount.username"
           ]
         },
         {
@@ -47,133 +47,157 @@
           "component": "label",
           "editablenode": "",
           "label": [
-            "travle.sysbusinessunitname",
+            "openaccount.sysbusinessunitname",
             "-",
-            "travle.sysdeptname"
+            "openaccount.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.userid"
+          "name": "openaccount.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.username"
+          "name": "openaccount.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.pernr"
+          "name": "openaccount.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.syspostname"
+          "name": "openaccount.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptid"
+          "name": "openaccount.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptname"
+          "name": "openaccount.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitid"
+          "name": "openaccount.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitname"
+          "name": "openaccount.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.postid"
+          "name": "openaccount.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travle.id"
+          "name": "openaccount.id"
         }
       ]
     },
     {
-      "title": "出差申请明细",
-      "pageid": "ccmx",
+      "title": "申请信息",
+      "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
         {
-          "title": "是否提高标准",
+          "title": "公司名称",
+          "component": "text",
+          "name": "openaccount.companyname"
+        },
+        {
+          "title": "开户行名称",
+          "component": "textarea",
+          "rows": 2,
+          "name": "openaccount.bankname"
+        },
+        {
+          "title": "申请类型",
           "component": "select",
-          "name": "travle.beup",
+          "name": "openaccount.applytype",
           "options": [
             {
-              "text": "否",
+              "text": "内资银行",
               "value": "0"
             },
             {
-              "text": "是",
+              "text": "外资或境外银行",
               "value": "1"
             }
           ]
         },
         {
-          "component": "table_ccmx",
-          "titleIndex": 1,
-          "basePath": "bases",
-          "tableForms": [
+          "title": "账户用途",
+          "component": "select",
+          "name": "openaccount.accountpurpose",
+          "options": [
             {
-              "title":"出发日期",
-              "component":"text",
-              "editablenode": "",
-              "component": "date1",
-              "name":"startda"
+              "text": "经营性质",
+              "value": "0"
             },
             {
-              "title":"到达日期",
-              "component":"text",
-              "editablenode": "",
-              "component": "date1",
-              "name":"endda"
-            },
-            {
-              "title":"出发地点",
-              "component":"text",
-              "editablenode": "",
-              "name":"splace"
-            },
-            {
-              "title":"到达地点",
-              "component":"text",
-              "editablenode": "",
-              "name":"eplace"
-            },
-            {
-              "title":"交通方式",
-              "component":"text",
-              "editablenode": "",
-              "name":"transmode"
-            },
-            {
-              "title":"是否签约宾馆",
-              "component":"text",
-              "editablenode": "",
-              "name":"besign"
-            },
-            {
-              "title":"工作内容",
-              "component":"text",
-              "editablenode": "",
-              "name":"workc"
+              "text": "融资性质",
+              "value": "1"
             }
           ]
+        },
+        {
+          "title": "账户类型",
+          "component": "radio",
+          "name": "openaccount.accountype",
+          "options": [
+            {
+              "text": "收入账户",
+              "value": "0"
+            },
+            {
+              "text": "支出账户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户性质",
+          "component": "radio",
+          "name": "openaccount.accountnature",
+          "options": [
+            {
+              "text": "基本户",
+              "value": "0"
+            },
+            {
+              "text": "一般户",
+              "value": "1"
+            },
+            {
+              "text": "专项户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "开户原因",
+          "component": "textarea",
+          "name": "openaccount.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "openaccount.bz"
+        },
+        {
+          "title": "业务执行人员",
+          "component": "text",
+          "name": "businessexecutivesname"
         }
       ]
     }
