@@ -1,5 +1,5 @@
 {
-  "id": "af_feeapp",
+  "id": "af_feetapp",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -289,7 +289,6 @@
             "reimburse.cdbukrsname"
           ]
         },
-
         {
           "title": "附件数",
           "component": "text",
