@@ -1,0 +1,257 @@
+{
+  "id": "fooddev_expatriatetrain",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "fjxx_expatriatetrain",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "抄送",
+					"component": "textarea",
+					"id": "mainModel_send",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.send"
+				},
+				{
+					"title": "培训课题",
+					"component": "text",
+					"id": "mainModel_trainproject",
+					"editablenode": "",
+					"name": "mainModel.trainproject"
+				},
+				{
+					"title": "年度计划内/外",
+					"component": "select",
+					"id": "mainModel_planned",
+					"editablenode": "",
+					"name": "mainModel.planned",
+					"options": [
+						{
+							"text": "计划内",
+							"value": "0",
+						},
+						{
+							"text": "计划外",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "新增原因",
+					"component": "textarea",
+					"id": "mainModel_newreasons",
+					"editablenode": "",
+					"showLinkage": [
+						{
+							"id": "mainModel_planned",
+							"values": [
+								"1"
+							]
+						}
+					],
+					"rows": "3",
+					"name": "mainModel.newreasons"
+				},
+				{
+					"title": "外出参观交流",
+					"component": "select",
+					"id": "mainModel_outovisit",
+					"editablenode": "",
+					"name": "mainModel.outovisit",
+					"options": [
+						{
+							"text": "否",
+							"value": "0",
+						},
+						{
+							"text": "是",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "学习/参观地点",
+					"component": "text",
+					"id": "mainModel_studyvisit",
+					"editablenode": "",
+					"name": "mainModel.studyvisit"
+				},
+				{
+					"title": "培训/参观交流目的",
+					"component": "textarea",
+					"id": "mainModel_trainvisit",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.trainvisit"
+				},
+				{
+					"title": "学习/参观时间",
+					"component": "text",
+					"id": "mainModel_studytime",
+					"editablenode": "",
+					"name": "mainModel.studytime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "费用总预算",
+					"component": "text",
+					"id": "mainModel_totalcost",
+					"editablenode": "",
+					"name": "mainModel.totalcost"
+				},
+				{
+					"title": "学习总结报告递交时间",
+					"component": "text",
+					"id": "mainModel_learnreporttime",
+					"editablenode": "",
+					"name": "mainModel.learnreporttime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "培训转化时间",
+					"component": "text",
+					"id": "mainModel_transformationtime",
+					"editablenode": "",
+					"name": "mainModel.transformationtime",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "附件个数",
+					"component": "text",
+					"id": "mainModel_enclosure",
+					"editablenode": "",
+					"name": "mainModel.enclosure"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
