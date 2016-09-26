@@ -915,16 +915,6 @@
               "name": "smemof"
             }
           ]
-        },
-        {
-          "title": "冲备用金",
-          "component": "text",
-          "name": "reimburse.reserve"
-        },
-        {
-          "title": "冲备用金说明",
-          "component": "text",
-          "name": "reimburse.reservconent"
         }
       ]
     },
@@ -959,38 +949,34 @@
           "name": "lifnrview"
         },
         {
+          "title": "员工银行账号",
+          "component": "text",
+          "tmpValueName": "bankn",
+          "name": "fipay.banknp"
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "tmpValueName": "banka",
+          "name": "fipay.banklp"
+        },
+        {
           "title": "应付金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "tmpValueName": "sumfwbasfval",
-          "name": "cdmbtrp"
+          "name": "fipay.cdmbtrp"
         },
         {
           "title": "冲备用金",
           "component": "text",
-          "tmpValueName": "reimburse.reserve",
-          "name": "dmbtrp"
+          "datatype": "money",
+          "name": "fipay.dmbtrp"
         },
         {
           "title": "付款金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "cdmbtrpf",
-          "calculateSum": {
-            "baseValue": "sumfwbasfval",
-            "calArray": [
-              {
-                "valuePath": "reimburse.reserve",
-                "type": "sub"
-              }
-            ]
-          }
-        },
-        {
-          "title": "冲备用金说明",
-          "component": "text",
-          "tmpValueName": "reimburse.reservconent",
-          "name": "rstgrp"
+          "name": "fipay.cdmbtrpf"
         }
       ]
     }
