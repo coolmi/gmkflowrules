@@ -271,7 +271,7 @@
 				"postshow":true,
 				"showformname":"dealPersontext",
 				"valuetype":["objid"],
-				"showtype":["objid","nachn","stext"],
+				"showtype":["objid","nachn","stext"]
 			}
         },
 		{
