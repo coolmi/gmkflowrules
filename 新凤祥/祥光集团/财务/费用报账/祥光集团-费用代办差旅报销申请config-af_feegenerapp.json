@@ -1,5 +1,5 @@
 {
-  "id": "af_feeapp",
+  "id": "af_feegenerapp",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -289,7 +289,15 @@
             "reimburse.cdbukrsname"
           ]
         },
-
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "label": [
+            "reimburse.cdkostls",
+            "",
+            "reimburse.cdkostlsname"
+          ]
+        },
         {
           "title": "附件数",
           "component": "text",
@@ -959,6 +967,7 @@
           "title": "应付金额（RMB）",
           "component": "text",
           "datatype": "money",
+          "tmpValueName": "sumfwbasfval",
           "name": "fipay.cdmbtrp"
         },
         {
