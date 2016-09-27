@@ -1,0 +1,161 @@
+{
+    "id": "fooddevado_nebom",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+			{
+                "title": "工厂名称",
+                "component": "text",
+                "name": "mainModel.gcmc"
+
+            },
+            {
+                "title": "工厂代码",
+                "component": "text",
+                "name": "mainModel.gcdm"
+            },
+            {
+                "title": "申请类型",
+                "component": "radio",
+                "name": "mainModel.sqlx",
+				"options": [
+					{
+						"title": "新建",
+						"value": "0"
+					},
+                    {
+                        "title": "变更",
+                        "value": "1"
+                    }]
+            },
+            {
+                "title": "申请原因",
+                "component": "textarea",
+				"rows": "3",
+                "name": "mainModel.sqyy"
+            },
+            {
+                "title": "主抄送",
+                "component": "text",
+                "name": "mainModel.zcsrname"
+            },
+            {
+                "title": "研发工程师/BOM管理员",
+                "component": "text",
+                "name": "mainModel.bomglyname"
+            },
+            {
+                "title": "车间主任",
+                "component": "text",
+                "name": "mainModel.cjzrname"
+            },
+            {
+                "title": "厂长",
+                "component": "text",
+                "name": "mainModel.czname"
+            },
+			{
+				"title": "研发部经理",
+				"component": "text",
+				"name": "mainModel.yfbjlname"
+			},
+			{
+				"title": "食品事业部财务成本会计",
+				"component": "text",
+				"name": "mainModel.cwcbkjname"
+				
+			},
+			{
+				"title": "研发部生产BOM执行人员",
+				"component": "text",
+				"name": "mainModel.bomzxryname"
+			}
+        ]
+    }
+    ]
+}
