@@ -1,5 +1,5 @@
 {
-  "id": "af_budgetadd",
+  "id": "af_specialbudgetadd",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -131,7 +131,7 @@
               ]
             },
             {
-              "title": "子号",
+              "title": "项目子号",
               "component": "label",
               "label": [
                 "childcolnr",
@@ -149,12 +149,19 @@
               ]
             },
             {
-              "title": "成本中心",
-              "component": "label",
+              "title": "内部订单号",
+              "component": "text",
+              "name": "aufnr"
+            },
+            {
+              "title": "部门名称",
+              "component": "labelLink",
+              "name": "orgidd",
+              "link_name": "objid",
               "label": [
-                "kostl",
+                "orgidd",
                 "-",
-                "ktext"
+                "hrp1000s.stext"
               ]
             },
             {
