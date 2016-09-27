@@ -1,0 +1,214 @@
+{
+  "id": "FP_DISCOUNTBILL",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "discountbill.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "discountbill.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "discountbill.pernr",
+            "-",
+            "discountbill.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "discountbill.sysbusinessunitname",
+            "-",
+            "discountbill.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "discountbill.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "出票单位",
+          "component": "text",
+          "name": "discountbill.drawerunit"
+        },
+        {
+          "title": "承兑银行(单位)",
+          "component": "text",
+          "name": "discountbill.honourbank"
+        },
+        {
+          "title": "收款单位",
+          "component": "text",
+          "name": "discountbill.payee"
+        },
+        {
+          "title": "金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "discountbill.money"
+        },
+        {
+          "title": "票据金额(大写)",
+          "component": "text",
+          "name": "discountbill.moneyb"
+        },
+        {
+          "title": "出票日期",
+          "component": "text",
+          "name": "discountbill.drawerdate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "结束日期",
+          "component": "text",
+          "name": "discountbill.duedate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "数量(张)",
+          "component": "text",
+          "name": "discountbill.countn"
+        },
+        {
+          "title": "保证金比例(%)",
+          "component": "text",
+          "name": "discountbill.bondrate"
+        }
+      ]
+    },
+    {
+      "title": "认定情况",
+      "component": "panel",
+      "pageid": "txrdqk",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "bases",
+          "tableForms": [
+            {
+              "title": "报价银行(单位)",
+              "component": "text",
+              "name": "banckname"
+            },
+            {
+              "title": "利率(年%)",
+              "component": "text",
+              "name": "rate"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "remark"
+            }
+          ]
+        },
+        {
+          "title":"认定贴现银行(单位)",
+          "component":"text",
+          "name":"discountbill.believebank"
+        },
+        {
+          "title":"认定贴现利率(年%)",
+          "component":"text",
+          "name":"discountbill.believerate"
+        },
+        {
+          "title":"申请贴现公司",
+          "component":"text",
+          "name":"discountbill.appbusi"
+        },
+        {
+          "title":"说明",
+          "component":"textarea",
+          "name":"discountbill.remarks"
+        }
+      ]
+    }
+  ]
+}
