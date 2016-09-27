@@ -235,7 +235,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "1"
+              "values": [
+                "1"
+              ]
             }
           ],
           "subComponents": [
@@ -342,6 +344,14 @@
                   "value": "2"
                 }
               ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "1"
+                  ]
+                }
+              ],
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
@@ -377,7 +387,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "2"
+              "values": [
+                "2"
+              ]
             }
           ],
           "subComponents": [
@@ -453,6 +465,14 @@
                   "value": "2"
                 }
               ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "2"
+                  ]
+                }
+              ],
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
@@ -488,7 +508,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "3"
+              "values": [
+                "3"
+              ]
             }
           ],
           "subComponents": [
@@ -569,7 +591,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "4"
+              "values": [
+                "4"
+              ]
             }
           ],
           "subComponents": [
@@ -623,6 +647,14 @@
                   "value": "2"
                 }
               ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "4"
+                  ]
+                }
+              ],
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
@@ -658,7 +690,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "5"
+              "values": [
+                "5"
+              ]
             }
           ],
           "subComponents": [
@@ -734,7 +768,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "6"
+              "values": [
+                "6"
+              ]
             }
           ],
           "subComponents": [
@@ -807,7 +843,7 @@
               "tableForms": [
                 {
                   "title": "类型",
-                  "component": "date1",
+                  "component": "text",
                   "name": "stype"
                 },
                 {
@@ -831,7 +867,7 @@
             {
               "title": "合计",
               "component": "text",
-              "datatype":"money",
+              "datatype": "money",
               "name": "travelreim.wdmbtr1",
               "sumValue": {
                 "arrayPath": "nsums",

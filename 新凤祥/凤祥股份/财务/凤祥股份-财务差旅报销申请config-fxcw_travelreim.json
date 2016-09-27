@@ -240,7 +240,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "1"
+              "values": [
+                "1"
+              ]
             }
           ],
           "subComponents": [
@@ -362,7 +364,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "2"
+              "values": [
+                "2"
+              ]
             }
           ],
           "subComponents": [
@@ -421,6 +425,14 @@
                   "value": "2"
                 }
               ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "2"
+                  ]
+                }
+              ],
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
@@ -456,7 +468,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "3"
+              "values": [
+                "3"
+              ]
             }
           ],
           "subComponents": [
@@ -537,7 +551,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "5"
+              "values": [
+                "5"
+              ]
             }
           ],
           "subComponents": [
@@ -613,7 +629,9 @@
           "showLinkage": [
             {
               "id": "reimtype",
-              "value": "4"
+              "values": [
+                "4"
+              ]
             }
           ],
           "subComponents": [
@@ -765,7 +783,8 @@
                   "component": "text",
                   "datatype": "money",
                   "name": "reimmoney"
-                },{
+                },
+                {
                   "title": "超额",
                   "component": "text",
                   "datatype": "money",
@@ -774,7 +793,7 @@
                 {
                   "title": "扣款金额",
                   "component": "text",
-                  "tasknode":"usertask9",
+                  "tasknode": "usertask9",
                   "datatype": "money",
                   "name": "debit"
                 },
