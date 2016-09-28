@@ -1,0 +1,169 @@
+{
+  "id": "fp_foreignfinancial",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "titleList": [
+    ],
+    "beforPop": true
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "foreignfinancial.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "foreignfinancial.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "foreignfinancial.pernr",
+            "-",
+            "foreignfinancial.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "foreignfinancial.sysbusinessunitname",
+            "-",
+            "foreignfinancial.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "foreignfinancial.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "公司名称",
+          "component": "text",
+          "name": "foreignfinancial.companyname"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "foreignfinancial.applytype",
+          "options": [
+            {
+              "text": "报表",
+              "value": "0"
+            },
+            {
+              "text": "数据",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "数据时间/所属期间",
+          "component": "text",
+          "name": "foreignfinancial.datatime"
+        },
+        {
+          "title": "报送单位或范围",
+          "component": "text",
+          "name": "foreignfinancial.subunit"
+        },
+        {
+          "title": "相关情况说明",
+          "component": "textarea",
+          "name": "foreignfinancial.relexplanation"
+        }
+      ]
+    },
+    {
+      "title": "执行汇报",
+      "component": "panel",
+      "pageid": "zxhb",
+      "tasknode": "financialcenterexcute",
+      "subComponents": [
+        {
+          "title": "执行汇报",
+          "component": "textarea",
+          "name": "foreignfinancial.excutereport",
+          "editablenode": "financialcenterexcute",
+          "validation": {
+            "pageid": "zxhb",
+            "required": true,
+            "validateMsg": "请填写执行汇报"
+          }
+        }
+      ]
+    }
+  ]
+}
