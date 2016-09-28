@@ -1,0 +1,218 @@
+{
+  "id": "ADM_COLLABORATION",
+  "handleOnPC": {
+    "tasknode": [
+      			"usertask4",
+			"usertask5"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "collaboration.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "collaboration.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "collaboration.pernr",
+            "-",
+            "collaboration.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "collaboration.sysbusinessunitname",
+            "-",
+            "collaboration.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "collaboration.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "panel_sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "任务标题",
+					"component": "text",
+					"id": "collaboration_tasktitle",
+					"editablenode": "",
+					"name": "collaboration.tasktitle"
+				},
+        {
+          "title": "责任人",
+          "component": "text",
+          "id": "collaboration_zrrpostid",
+          "editablenode": "",
+          "name": "zrrname"
+        },
+				{
+					"title": "责任人岗位编号",
+					"component": "text",
+					"id": "collaboration_zrrpostid",
+					"editablenode": "",
+					"name": "collaboration.zrrpostid"
+				},
+				{
+					"title": "计划开始日期",
+					"component": "text",
+					"id": "collaboration_startda",
+					"editablenode": "",
+					"name": "collaboration.startda",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "计划完成日期",
+					"component": "text",
+					"id": "collaboration_endda",
+					"editablenode": "",
+					"name": "collaboration.endda",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "任务内容",
+					"component": "text",
+					"id": "collaboration_taskcontent",
+					"editablenode": "",
+					"name": "collaboration.taskcontent"
+				},
+				{
+					"title": "任务要求",
+					"component": "text",
+					"id": "collaboration_taskyq",
+					"editablenode": "",
+					"name": "collaboration.taskyq"
+				},
+				{
+					"title": "处理结果",
+					"component": "text",
+					"id": "collaboration_result",
+					"tasknode": "usertask4,usertask5",
+					"editablenode": "usertask4",
+					"validation":{
+						"pageid":"panel_sqxx",
+						"required":true,
+						"validateMsg":"请填写处理结果",
+						"regexs":""
+					},
+					"name": "collaboration.result"
+				},
+				{
+					"title": "申请人确认信息",
+					"component": "text",
+					"id": "collaboration_reok",
+					"tasknode": "usertask5",
+					"editablenode": "usertask5",
+					"validation":{
+						"pageid":"panel_sqxx",
+						"required":true,
+						"validateMsg":"请填写申请人确认信息",
+						"regexs":""
+					},
+					"name": "collaboration.reok"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "id": "HR-ORGCOALITION",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "orgcoalition.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "orgcoalition.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "orgcoalition.sysbusinessunitname",
+            "-",
+            "orgcoalition.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcoalition.id"
+        }
+      ]
+    },
+    {
+      "title": "合并后组织",
+      "pageid": "hbhzz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "组织名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "orgcoalition.cnsorgname"
+        },
+        {
+          "title": "上级组织",
+          "component": "label",
+          "editablenode": "",
+          "middleName":[
+            "orgcoalition.ptorgid",
+            "objid"
+          ],
+          "label": [
+            "deptList.stext"]
+        },
+        {
+          "title":"组织层级",
+          "component":"label",
+          "editablenode": "",
+          "middleName":[
+            "orgcoalition.orglevel",
+            "id"
+          ],
+          "label": [
+            "zbzzcjList.zzdzzcjms"]
+
+        },
+        {
+          "title":"组织总编",
+          "component": "text",
+          "editablenode": "",
+          "name": "orgcoalition.orglgt"
+        },
+        {
+          "title": "组织信息",
+          "pageid": "ccmx",
+          "component": "panel",
+          "subComponents": [
+
+            {
+              "component": "table_ccmx",
+              "titleIndex": 1,
+              "basePath": "bases",
+              "tableForms": [
+                {
+                  "title":"拟合并组织",
+                  "component":"text",
+                  "name":"cldorgname"
+                },
+                {
+                  "title":"组织层级",
+                  "component":"text",
+                  "name":"orglevlname"
+                },
+                {
+                  "title":"组织类型",
+                  "component":"text",
+                  "editablenode": "",
+                  "name":"orgstyname"
+                },
+                {
+                  "title":"所属公司",
+                  "component":"text",
+                  "editablenode": "",
+                  "name":"comname"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

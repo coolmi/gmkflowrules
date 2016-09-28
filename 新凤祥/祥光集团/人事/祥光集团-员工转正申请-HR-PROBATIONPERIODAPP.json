@@ -1,0 +1,192 @@
+{
+  "id": "HR-PROBATIONPERIODAPP",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "pperiodcentral.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "pperiodcentral.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "pperiodcentral.pernr",
+            "-",
+            "username"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "pperiodcentral.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "转正人",
+          "component": "label",
+          "editablenode": "",
+          "label":["nachn"]
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "pperiodcentral.apernr"
+        },
+        {
+          "title": "岗位",
+          "component": "text",
+          "name": "stext"
+        },
+        {
+          "title": "岗位等级",
+          "component": "text",
+          "name": "pperiodcentral.tempb"
+        },
+        {
+          "title": "所在部门",
+          "component": "text",
+          "name": "deptnm"
+        },
+        {
+          "title": "试用期",
+          "component": "text",
+          "name": "pperiodcentral.probation"
+        },
+        {
+          "title": "转正类型",
+
+          "component": "label",
+          "middleName":[
+            "pperiodcentral.apptype",
+            "massg"
+          ],
+          "label": [
+            "czlx.mgtxt"]
+
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "name": "indate"
+        },
+        {
+          "title": "转正日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "pperiodcentral.bedate"
+        },
+        {
+          "title": "毕业院校",
+          "component": "text",
+          "name": "graduate"
+        },{
+          "title": "学历",
+          "component": "text",
+          "name": "education"
+        },{
+          "title": "专业",
+          "component": "text",
+          "name": "specialty"
+        },{
+          "title": "毕业日期",
+          "component": "text",
+          "name": "graduated"
+        },{
+          "title": "个人总结",
+          "component": "textarea",
+          "name": "pperiodcentral.sumwork"
+        }
+
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "id": "fxhr_betweentransfer",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "panal_sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "调动前岗位名称",
+					"component": "text",
+					"id": "mainModel_m_postnm_before",
+					"editablenode": "",
+					"name": "mainModel.m_postnm_before"
+				},
+				{
+					"title": "调整前职务级别",
+					"component": "text",
+					"id": "m_joblevel_before_ms",
+					"editablenode": "",
+					"name": "m_joblevel_before_ms"
+				},
+				{
+					"title": "学历",
+					"component": "select",
+					"id": "mainModel_m_xl",
+					"editablenode": "",
+					"name": "mainModel.m_xl",
+					"options": [
+						{
+							"text": "大专以下",
+							"value": "1",
+						},
+						{
+							"text": "大专以上",
+							"value": "0",
+						}
+					]
+				},
+				{
+					"title": "调动原因",
+					"component": "text",
+					"id": "mainModel_m_reason",
+					"editablenode": "",
+					"name": "mainModel.m_reason"
+				},
+				{
+					"title": "计划离岗日期",
+					"component": "text",
+					"id": "mainModel_m_leavedate",
+					"editablenode": "",
+					"name": "mainModel.m_leavedate",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "调整后岗位",
+					"component": "text",
+					"id": "mainModel_m_postnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_postnm_after"
+				},
+				{
+					"title": "调整后职务级别",
+					"component": "text",
+					"id": "m_joblevel_after_ms",
+					"editablenode": "",
+					"name": "m_joblevel_after_ms"
+				},
+				{
+					"title": "调整后部门名称",
+					"component": "text",
+					"id": "mainModel_m_deptnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_deptnm_after"
+				},
+				{
+					"title": "调整后科室名称",
+					"component": "text",
+					"id": "mainModel_m_officenm_after",
+					"editablenode": "",
+					"name": "mainModel.m_officenm_after"
+				},
+				{
+					"title": "调整后工段名称",
+					"component": "text",
+					"id": "mainModel_m_gdnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_gdnm_after"
+				},
+				{
+					"title": "调整后班组",
+					"component": "text",
+					"id": "mainModel_m_bznm_after",
+					"editablenode": "",
+					"name": "mainModel.m_bznm_after"
+				},
+				{
+					"title": "实际到岗日期",
+					"component": "date1",
+					"id": "mainModel_m_indate",
+					"tasknode": "usertask7",
+					"editablenode": "usertask7",
+					"validation":{
+						"pageid":"panal_sqxx",
+						"required":true,
+						"validateMsg":"请填写实际到岗日期",
+						"regexs":""
+					},
+					"name": "mainModel.m_indate"
+				},
+				{
+					"title": "中心各科之间调动",
+					"component": "radio",
+					"id": "mainModel_m_bebetween",
+					"editablenode": "",
+					"name": "mainModel.m_bebetween",
+					"options": [
+						{
+							"text": "否",
+							"value": "0",
+						},
+						{
+							"text": "是",
+							"value": "1",
+						}
+					]
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
