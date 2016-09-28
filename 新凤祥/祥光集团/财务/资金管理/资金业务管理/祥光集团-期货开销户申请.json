@@ -214,6 +214,25 @@
           "name": "futuresopenpin.note"
         }
       ]
+    },
+    {
+      "title": "处理汇报",
+      "pageid": "ywryclhb",
+      "component": "panel",
+      "tasknode": "busprocess",
+      "subComponents": [
+        {
+          "title": "业务人员处理汇报",
+          "component": "textarea",
+          "validation": {
+            "pageid": "ywryclhb",
+            "required": true,
+            "validateMsg": "请填写处理汇报"
+          },
+          "editablenode": "busprocess",
+          "name": "futuresopenpin.report"
+        }
+      ]
     }
   ]
 }
