@@ -1,0 +1,454 @@
+{
+  "id": "fxhr_innertransfer",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "panal_sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "调动前岗位",
+					"component": "text",
+					"id": "mainModel_m_postnm_before",
+					"editablenode": "",
+					"name": "mainModel.m_postnm_before"
+				},
+				{
+					"title": "调动前职务级别",
+					"component": "select",
+					"id": "m_joblevel_before_ms",
+					"editablenode": "usertask2",
+					"validation":{
+						"pageid":"panal_sqxx",
+						"required":true,
+						"validateMsg":"请填写调动前职务级别",
+						"regexs":""
+					},
+					"name": "m_joblevel_before_ms",
+					"options": [
+						{
+							"text": "高级经理",
+							"value": "M13",
+						},
+						{
+							"text": "一线员工/生产辅助岗位",
+							"value": "M30",
+						},
+						{
+							"text": "特聘技术专家/顾问",
+							"value": "M12",
+						},
+						{
+							"text": "副总监",
+							"value": "M11",
+						},
+						{
+							"text": "总监",
+							"value": "M10",
+						},
+						{
+							"text": "副经理",
+							"value": "M18",
+						},
+						{
+							"text": "经理助理",
+							"value": "M19",
+						},
+						{
+							"text": "部长助理",
+							"value": "M16",
+						},
+						{
+							"text": "经理",
+							"value": "M17",
+						},
+						{
+							"text": "部长",
+							"value": "M14",
+						},
+						{
+							"text": "副部长",
+							"value": "M15",
+						},
+						{
+							"text": "主任",
+							"value": "M20",
+						},
+						{
+							"text": "主任助理",
+							"value": "M22",
+						},
+						{
+							"text": "副主任",
+							"value": "M21",
+						},
+						{
+							"text": "副科长",
+							"value": "M24",
+						},
+						{
+							"text": "科长",
+							"value": "M23",
+						},
+						{
+							"text": "总经理",
+							"value": "M07",
+						},
+						{
+							"text": "主管",
+							"value": "M25",
+						},
+						{
+							"text": "副总经理",
+							"value": "M08",
+						},
+						{
+							"text": "副主管",
+							"value": "M26",
+						},
+						{
+							"text": "总经理助理",
+							"value": "M09",
+						},
+						{
+							"text": "工段长",
+							"value": "M27",
+						},
+						{
+							"text": "副工段长",
+							"value": "M28",
+						},
+						{
+							"text": "科员",
+							"value": "M29",
+						},
+						{
+							"text": "高级副总裁",
+							"value": "M04",
+						},
+						{
+							"text": "副总裁",
+							"value": "M05",
+						},
+						{
+							"text": "助理总裁",
+							"value": "M06",
+						}
+					]
+				},
+				{
+					"title": "调动原因",
+					"component": "text",
+					"id": "mainModel_m_reason",
+					"editablenode": "",
+					"name": "mainModel.m_reason"
+				},
+				{
+					"title": "计划离岗日期",
+					"component": "text",
+					"id": "mainModel_m_leavedate",
+					"editablenode": "",
+					"name": "mainModel.m_leavedate",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "调整后岗位",
+					"component": "text",
+					"id": "mainModel_m_postnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_postnm_after"
+				},
+				{
+					"title": "调动后职务级别",
+					"component": "select",
+					"id": "m_joblevel_after_ms",
+					"editablenode": "usertask2",
+					"validation":{
+						"pageid":"panal_sqxx",
+						"required":true,
+						"validateMsg":"请填写调动后职务级别",
+						"regexs":""
+					},
+					"name": "m_joblevel_after_ms",
+					"options": [
+						{
+							"text": "高级经理",
+							"value": "M13",
+						},
+						{
+							"text": "一线员工/生产辅助岗位",
+							"value": "M30",
+						},
+						{
+							"text": "特聘技术专家/顾问",
+							"value": "M12",
+						},
+						{
+							"text": "副总监",
+							"value": "M11",
+						},
+						{
+							"text": "总监",
+							"value": "M10",
+						},
+						{
+							"text": "副经理",
+							"value": "M18",
+						},
+						{
+							"text": "经理助理",
+							"value": "M19",
+						},
+						{
+							"text": "部长助理",
+							"value": "M16",
+						},
+						{
+							"text": "经理",
+							"value": "M17",
+						},
+						{
+							"text": "部长",
+							"value": "M14",
+						},
+						{
+							"text": "副部长",
+							"value": "M15",
+						},
+						{
+							"text": "主任",
+							"value": "M20",
+						},
+						{
+							"text": "主任助理",
+							"value": "M22",
+						},
+						{
+							"text": "副主任",
+							"value": "M21",
+						},
+						{
+							"text": "副科长",
+							"value": "M24",
+						},
+						{
+							"text": "科长",
+							"value": "M23",
+						},
+						{
+							"text": "总经理",
+							"value": "M07",
+						},
+						{
+							"text": "主管",
+							"value": "M25",
+						},
+						{
+							"text": "副总经理",
+							"value": "M08",
+						},
+						{
+							"text": "副主管",
+							"value": "M26",
+						},
+						{
+							"text": "总经理助理",
+							"value": "M09",
+						},
+						{
+							"text": "工段长",
+							"value": "M27",
+						},
+						{
+							"text": "副工段长",
+							"value": "M28",
+						},
+						{
+							"text": "科员",
+							"value": "M29",
+						},
+						{
+							"text": "高级副总裁",
+							"value": "M04",
+						},
+						{
+							"text": "副总裁",
+							"value": "M05",
+						},
+						{
+							"text": "助理总裁",
+							"value": "M06",
+						}
+					]
+				},
+				{
+					"title": "调整后部门",
+					"component": "text",
+					"id": "mainModel_m_deptnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_deptnm_after"
+				},
+				{
+					"title": "调整后工段",
+					"component": "text",
+					"id": "mainModel_m_gdnm_after",
+					"editablenode": "",
+					"name": "mainModel.m_gdnm_after"
+				},
+				{
+					"title": "调整后科室",
+					"component": "text",
+					"id": "mainModel_m_officenm_after",
+					"editablenode": "",
+					"name": "mainModel.m_officenm_after"
+				},
+				{
+					"title": "调整后班组",
+					"component": "text",
+					"id": "mainModel_m_bznm_after",
+					"editablenode": "",
+					"name": "mainModel.m_bznm_after"
+				},
+				{
+					"title": "实际到岗日期",
+					"component": "date1",
+					"id": "mainModel_m_indate",
+					"tasknode": "usertask7",
+					"editablenode": "usertask7",
+					"validation":{
+						"pageid":"panal_sqxx",
+						"required":true,
+						"validateMsg":"请填写实际到岗日期",
+						"regexs":""
+					},
+					"name": "mainModel.m_indate"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
