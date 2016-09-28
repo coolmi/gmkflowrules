@@ -1,0 +1,219 @@
+{
+  "id": "fp_futuresopenpin",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "futuresopenpin.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "futuresopenpin.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "futuresopenpin.pernr",
+            "-",
+            "futuresopenpin.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "futuresopenpin.sysbusinessunitname",
+            "-",
+            "futuresopenpin.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "futuresopenpin.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "业务类型",
+          "component": "select",
+          "name": "futuresopenpin.busnesstype",
+          "options": [
+            {
+              "text": "开户",
+              "value": "1"
+            },
+            {
+              "text": "销户",
+              "value": "0"
+            },
+            {
+              "text": "延期账户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "申请公司",
+          "component": "text",
+          "name": "futuresopenpin.company"
+        },
+        {
+          "title": "经纪公司",
+          "component": "text",
+          "name": "futuresopenpin.brokecompany"
+        },
+        {
+          "title": "交易所",
+          "component": "text",
+          "name": "futuresopenpin.exchange",
+          "showLinkage": [
+            {
+              "id": "busnesstype",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "保证金标准",
+          "component": "text",
+          "name": "futuresopenpin.margin",
+          "showLinkage": [
+            {
+              "id": "busnesstype",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "手续费",
+          "component": "text",
+          "showLinkage": [
+            {
+              "id": "busnesstype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "futuresopenpin.poundage"
+        },
+        {
+          "title": "授信的额度",
+          "component": "text",
+          "showLinkage": [
+            {
+              "id": "busnesstype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "futuresopenpin.credit"
+        },
+        {
+          "title": "交易员名单",
+          "component": "textarea",
+          "showLinkage": [
+            {
+              "id": "busnesstype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "futuresopenpin.traders"
+        },
+        {
+          "title": "开户/注销/延期原因",
+          "component": "textarea",
+          "name": "futuresopenpin.why"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "futuresopenpin.note"
+        }
+      ]
+    }
+  ]
+}
