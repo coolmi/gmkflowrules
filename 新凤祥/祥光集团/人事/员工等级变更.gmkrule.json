@@ -1,0 +1,195 @@
+{
+  "id": "ABILITYLEVELCHANGE",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "ability.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "ability.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "ability.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "text",
+          "editablenode": "",
+          "name": "dorgname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "ability.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "fjxx_abc",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "能力变更人编号",
+					"component": "label",
+					"editablenode": "",
+                    "middleName":[
+                    "ability.chgepernr",
+                    "pernr"
+                    ],
+                    "label":["ability.chgepernr","-","personlist.nachn"]
+                },
+				{
+					"title": "生效时间",
+					"component": "date1",
+					"id": "ability_begdate",
+					"editablenode": "",
+					"name": "ability.begdate"
+				},
+				{
+					"title": "所在岗位、岗级",
+					"component": "label",
+					"id": "89655c7f07af471ca118c17a4d2d99e7",
+					"editablenode": "",
+					"label": [
+						"dpostname","-",
+						"dpostlevelname"
+					]
+				},
+				{
+					"title": "所属组织",
+					"component": "text",
+					"id": "objidbefchan",
+					"editablenode": "",
+					"name": "objidbefchan"
+				},
+				{
+					"title": "变更前等级名称",
+					"component": "text",
+					"id": "ability_levelbeftext",
+					"editablenode": "",
+					"name": "ability.levelbeftext"
+				},
+				{
+					"title": "变更后等级",
+					"component": "label",
+					"id": "ability_levelaft",
+					"editablenode": "",
+                    "middleName":[
+                      "ability.levelaft",
+                      "zzdgwpgdj"
+                    ],
+					"label": [
+						"levellist.zzdpgdjms"
+					]
+
+				},
+				{
+					"title": "变更原因",
+					"component": "textarea",
+					"id": "ability_chgereason",
+                    "rows":3,
+					"editablenode": "",
+					"name": "ability.chgereason"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
