@@ -1,0 +1,520 @@
+{
+  "id": "gmk_xfxpubexpense",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "xfxpubexpense.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "xfxpubexpense.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "xfxpubexpense.pernr",
+            "-",
+            "xfxpubexpense.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "xfxpubexpense.sysbusinessunitname",
+            "-",
+            "xfxpubexpense.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xfxpubexpense.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "xfxpubexpense.fkbukrs",
+            "-",
+            "xfxpubexpense.fkbutxt"
+          ]
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "xfxpubexpense.gysmc"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "xfxpubexpense.gysbh"
+        },
+        {
+          "title": "费用类型",
+          "component": "radio",
+          "name": "xfxpubexpense.fylx",
+          "options": [
+            {
+              "title": "通用管理费用",
+              "value": "0"
+            },
+            {
+              "title": "专项项目费用",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "业务内容",
+          "component": "radio",
+          "name": "xfxpubexpense.ywnr",
+          "options": [
+            {
+              "title": "本部门业务",
+              "value": "0"
+            },
+            {
+              "title": "非本部门业务",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "费用承担部门",
+          "component": "text",
+          "name": "xfxpubexpense.fycdbm"
+        },
+        {
+          "title": "费用承担部门总经理/总监",
+          "component": "text",
+          "name": "xfxpubexpense.fycdbmmgr"
+        },
+        {
+          "title": "是否总经理/总监费用",
+          "component": "radio",
+          "name": "xfxpubexpense.mgrfy",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "内部订单号",
+          "component": "label",
+          "label": [
+            "xfxpubexpense.ordernum",
+            "",
+            "xfxpubexpense.ordernumtxt"
+          ]
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "xfxpubexpense.hrh"
+        },
+        {
+          "title": "汇入账号",
+          "component": "text",
+          "name": "xfxpubexpense.hrzh"
+        },
+        {
+          "title": "付款种类",
+          "component": "select",
+          "name": "xfxpubexpense.fkzl",
+          "options": [
+            {
+              "title": "电汇",
+              "value": "0"
+            },
+            {
+              "title": "汇票",
+              "value": "1"
+            },
+            {
+              "title": "支票",
+              "value": "2"
+            },
+            {
+              "title": "承兑",
+              "value": "3"
+            },
+            {
+              "title": "信用证",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "name": "xfxpubexpense.htyddhrq"
+        },
+        {
+          "title": "汇款用途",
+          "component": "text",
+          "name": "xfxpubexpense.hkyt"
+        },
+        {
+          "title": "申请金额(小写)",
+          "component": "text",
+          "name": "xfxpubexpense.sqjexx"
+        },
+        {
+          "title": "申请金额(大写)",
+          "component": "text",
+          "name": "xfxpubexpense.sqjedx"
+        },
+        {
+          "title": "核减金额",
+          "component": "text",
+          "editablenode": "cwkjaudit",
+          "name": "xfxpubexpense.hjjexx"
+        },
+        {
+          "title": "核减金额(大写)",
+          "component": "text",
+          "name": "xfxpubexpense.hjjedx"
+        },
+        {
+          "title": "实付金额",
+          "component": "text",
+          "name": "xfxpubexpense.xfjexx"
+        },
+        {
+          "title": "实付金额(大写)",
+          "component": "text",
+          "name": "xfxpubexpense.xfjedx"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "xfxpubexpense.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "xfxpubexpense.ysqyfkjedx"
+        },
+        {
+          "title": "补(退)金额(小写)",
+          "component": "text",
+          "name": "xfxpubexpense.btjexx"
+        },
+        {
+          "title": "补(退)金额(大写)",
+          "component": "text",
+          "name": "xfxpubexpense.btjedx"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "name": "xfxpubexpense.fkrq"
+        },
+        {
+          "title": "此笔付款是否在建工程",
+          "component": "radio",
+          "name": "xfxpubexpense.zjgcfk",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "是否招标",
+          "component": "radio",
+          "name": "xfxpubexpense.sfzb",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同/订单号",
+          "component": "text",
+          "name": "xfxpubexpense.htddh"
+        },
+        {
+          "title": "在建工程编号/资产编号",
+          "component": "text",
+          "name": "xfxpubexpense.gcbhzcbh"
+        },
+        {
+          "title": "档案室签字备案",
+          "component": "text",
+          "name": "xfxpubexpense.dasqzba"
+        },
+        {
+          "title": "附件个数",
+          "component": "text",
+          "name": "xfxpubexpense.fjgs"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows":"3",
+          "name": "xfxpubexpense.bz"
+        }
+      ]
+    },
+    {
+      "title": "付款信息",
+      "pageid": "fkxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "basePath": "fkxxList",
+          "id": "fkxx_ysnw",
+          "titleIndex": 2,
+          "linkForms": [
+            {
+              "title": "预算内外",
+              "component": "select",
+              "name": "fkxx_ysnw",
+              "options": [
+                {
+                  "title": "内",
+                  "value": "0"
+                },
+                {
+                  "title": "外",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "title": "业务类型",
+              "component": "select",
+              "name": "fkxx_ywlx",
+              "options": [
+                {
+                  "title": "报账单",
+                  "value": "01"
+                },
+                {
+                  "title": "差旅长途交通",
+                  "value": "02"
+                },
+                {
+                  "title": "差旅住宿费",
+                  "value": "03"
+                },
+                {
+                  "title": "差旅餐饮费补助",
+                  "value": "04"
+                },
+                {
+                  "title": "差旅超标准大项",
+                  "value": "05"
+                },
+                {
+                  "title": "差旅扣除餐饮费",
+                  "value": "06"
+                },
+                {
+                  "title": "差旅市内交通",
+                  "value": "07"
+                },
+                {
+                  "title": "差旅业务招待",
+                  "value": "08"
+                },
+                {
+                  "title": "差旅员工其他费用",
+                  "value": "09"
+                },
+                {
+                  "title": "其它",
+                  "value": "10"
+                },
+                {
+                  "title": "非差旅通讯费",
+                  "value": "11"
+                },
+                {
+                  "title": "非差旅市内交通",
+                  "value": "12"
+                },
+                {
+                  "title": "非差旅业务招待",
+                  "value": "13"
+                },
+                {
+                  "title": "非差旅餐饮费",
+                  "value": "14"
+                },
+                {
+                  "title": "非差旅其他费用",
+                  "value": "15"
+                },
+                {
+                  "title": "公关费用",
+                  "value": "17"
+                }
+              ]
+            },
+            {
+              "title": "费用科目名称",
+              "component": "text",
+              "name": "fkxx_fykmmc"
+            },
+            {
+              "title": "成本中心描述",
+              "component": "text",
+              "name": "fkxx_cbzxmc"
+            },
+            {
+              "title": "费用金额",
+              "component": "text",
+              "name": "fkxx_fyje"
+            },
+            {
+              "title": "费用金额(大写)",
+              "component": "text",
+              "name": "fkxx_fyjedx"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "fkxx_bz"
+            },
+            {
+              "title": "",
+              "component": "text",
+              "name": "fkje"
+            },
+            {
+              "title": "",
+              "title1": "付款方式",
+              "component": "text",
+              "name": "fkfs"
+            },
+            {
+              "title": "",
+              "title1": "是否质保金",
+              "component": "text",
+              "name": "isdel"
+            },
+            {
+              "title": "",
+              "title1": "供应商开户行",
+              "component": "text",
+              "name": "gyskhh"
+            },
+            {
+              "title": "",
+              "title1": "供应商账号",
+              "component": "text",
+              "name": "gyszh"
+            },
+            {
+              "title": "",
+              "title1": "采购组织",
+              "component": "text",
+              "name": "cgzz"
+            },
+            {
+              "title": "",
+              "title1": "凭证编号",
+              "component": "text",
+              "name": "pzbh"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
