@@ -1,5 +1,5 @@
 {
-  "id": "xtfico_engcontract",
+  "id": "xtfico_predevcontract",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -23,80 +23,80 @@
         {
           "title": "申请单号",
           "component": "text",
-          "name": "engcontract.appid"
+          "name": "predevcontract.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
-          "name": "engcontract.appda"
+          "name": "predevcontract.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "label": [
-            "engcontract.pernr",
+            "predevcontract.pernr",
             "-",
-            "engcontract.username"
+            "predevcontract.username"
           ]
         },
         {
           "title": "所属部门",
           "component": "label",
           "label": [
-            "engcontract.sysbusinessunitname",
+            "predevcontract.sysbusinessunitname",
             "-",
-            "engcontract.sysdeptname"
+            "predevcontract.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.userid"
+          "name": "predevcontract.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.username"
+          "name": "predevcontract.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.pernr"
+          "name": "predevcontract.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.syspostname"
+          "name": "predevcontract.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.sysdeptid"
+          "name": "predevcontract.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.sysdeptname"
+          "name": "predevcontract.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.sysbusinessunitid"
+          "name": "predevcontract.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.sysbusinessunitname"
+          "name": "predevcontract.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.postid"
+          "name": "predevcontract.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "engcontract.id"
+          "name": "predevcontract.id"
         }
       ]
     },
@@ -108,17 +108,17 @@
         {
           "title": "合同名称",
           "component": "text",
-          "name": "engcontract.htmc"
+          "name": "predevcontract.htmc"
         },
         {
           "title": "需求部门",
           "component": "text",
-          "name": "engcontract.xqbm"
+          "name": "predevcontract.xqbm"
         },
         {
           "title": "合同执行状态",
           "component": "select",
-          "name": "engcontract.htzxzt",
+          "name": "predevcontract.htzxzt",
           "options": [
             {
               "text": "正常",
@@ -133,7 +133,7 @@
         {
           "title": "预算类别",
           "component": "select",
-          "name": "engcontract.yslb",
+          "name": "predevcontract.yslb",
           "options": [
             {
               "text": "预算内",
@@ -148,7 +148,7 @@
         {
           "title": "币种",
           "component": "select",
-          "name": "engcontract.bz",
+          "name": "predevcontract.bz",
           "options": [
             {
               "text": "人民币",
@@ -171,17 +171,17 @@
         {
           "title": "合同金额(小写)",
           "component": "text",
-          "name": "engcontract.htjexx"
+          "name": "predevcontract.htjexx"
         },
         {
           "title": "合同金额大写",
           "component": "text",
-          "name": "engcontract.htjedx"
+          "name": "predevcontract.htjedx"
         },
         {
           "title": "需求类型",
           "component": "select",
-          "name": "engcontract.xqlx",
+          "name": "predevcontract.xqlx",
           "options": [
             {
               "text": "工程",
@@ -208,7 +208,7 @@
         {
           "title": "合同页数",
           "component": "text",
-          "name": "engcontract.htys"
+          "name": "predevcontract.htys"
         }
       ]
     },
@@ -220,12 +220,12 @@
         {
           "title": "供应商名称(全称)",
           "component": "text",
-          "name": "engcontract.gysmc"
+          "name": "predevcontract.gysmc"
         },
         {
           "title": "供应商类型",
           "component": "select",
-          "name": "engcontract.gyslx",
+          "name": "predevcontract.gyslx",
           "id": "self_sqxx_gyslx",
           "options": [
             {
@@ -249,7 +249,7 @@
         {
           "title": "采购方式",
           "component": "select",
-          "name": "engcontract.jgqdfs",
+          "name": "predevcontract.jgqdfs",
           "id": "self_sqxx_gyslx",
           "options": [
             {
@@ -269,7 +269,7 @@
         {
           "title": "其他",
           "component": "text",
-          "name": "engcontract.qtjgqdfs",
+          "name": "predevcontract.qtjgqdfs",
           "showLinkage": [
             {
               "id": "self_sqxx_gyslx",
@@ -289,7 +289,7 @@
         {
           "title": "是否为补充类合同",
           "component": "select",
-          "name": "engcontract.sfwbclht",
+          "name": "predevcontract.sfwbclht",
           "id": "self_hthxx_bclht",
           "options": [
             {
@@ -305,7 +305,7 @@
         {
           "title": "原合同编号",
           "component": "text",
-          "name": "engcontract.bcthbh",
+          "name": "predevcontract.bcthbh",
           "showLinkage": [
             {
               "id": "self_hthxx_bclht",
@@ -318,7 +318,7 @@
         {
           "title": "合同编号类别",
           "component": "select",
-          "name": "engcontract.htbhlb",
+          "name": "predevcontract.htbhlb",
           "refersToArray": {
             "basePath": "snclist",
             "value": "nccode",
@@ -333,11 +333,11 @@
           "title": "公司信息",
           "component": "label",
           "middleName": [
-            "engcontract.gsxx",
+            "predevcontract.gsxx",
             "bukrs"
           ],
           "label": [
-            "engcontract.gsxx",
+            "predevcontract.gsxx",
             "-",
             "t001list.butxt"
           ]
@@ -345,7 +345,7 @@
         {
           "title": "合同编号",
           "component": "text",
-          "name": "engcontract.htbh"
+          "name": "predevcontract.htbh"
         }
       ]
     },
@@ -357,7 +357,7 @@
         {
           "title": "用印类型",
           "component": "select",
-          "name": "engcontract.yylx",
+          "name": "predevcontract.yylx",
           "options": [
             {
               "text": "普通用印",
@@ -374,7 +374,7 @@
           "component": "label",
           "editablenode": "",
           "middleName": [
-            "engcontract.yzmc",
+            "predevcontract.yzmc",
             "sealid"
           ],
           "label": [
@@ -391,9 +391,9 @@
           "component": "label",
           "label": [
             "一式",
-            "engcontract.yzsyfs",
+            "predevcontract.yzsyfs",
             "份,共",
-            "engcontract.yzsyms",
+            "predevcontract.yzsyms",
             "枚"
           ]
         },
@@ -402,14 +402,14 @@
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "engcontract.yzsyrq"
+          "name": "predevcontract.yzsyrq"
         },
         {
           "title": "计划归还日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "engcontract.jhghrq"
+          "name": "predevcontract.jhghrq"
         }
       ]
     }
