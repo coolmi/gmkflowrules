@@ -2,7 +2,7 @@
   "id": "gm_feegenerapp",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "accout","payment"
     ],
     "flag": [
       "resubmit"
