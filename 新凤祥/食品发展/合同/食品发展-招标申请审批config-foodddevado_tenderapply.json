@@ -2,7 +2,7 @@
   "id": "fooddevado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "sjbmfp","sjbmcs"
     ],
     "flag": [
       "resubmit"
@@ -292,7 +292,7 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 0,
           "basePath": "tenderlists",
           "tableForms": [
             {
@@ -334,7 +334,6 @@
           "title": "提交至",
           "component": "select",
           "id": "sjbmfpnexttaskkey_id",
-          "editablenode": "sjbmfp",
           "name": "sjbmfpnexttaskkey",
           "islinkage": true,
           "handleLinkage": [
@@ -364,7 +363,6 @@
           "title": "审计部初审人员",
           "component": "text",
           "id": "sjbmcspostid_id",
-          "editablenode": "sjbmfp",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
