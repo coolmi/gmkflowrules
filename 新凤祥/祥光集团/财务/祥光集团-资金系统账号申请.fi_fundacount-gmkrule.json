@@ -1,0 +1,217 @@
+{
+  "id": "fi_fundacount",
+  "handleOnPC": {
+    "tasknode": [
+      			"usertask4"
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "fundacount.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "fundacount.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "fundacount.pernr",
+            "-",
+            "fundacount.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "fundacount.sysbusinessunitname",
+            "-",
+            "fundacount.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundacount.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "panel_sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "帐号有效开始日期",
+					"component": "text",
+					"id": "fundacount_startda",
+					"editablenode": "",
+					"name": "fundacount.startda"
+				},
+				{
+					"title": "帐号有效截止日期",
+					"component": "text",
+					"id": "fundacount_endda",
+					"editablenode": "",
+					"name": "fundacount.endda"
+				},
+				{
+					"title": "使用人岗位",
+					"component": "text",
+					"id": "fundacount_uuser",
+					"editablenode": "",
+					"name": "uname"
+				},
+				{
+					"title": "申请类型",
+					"component": "select",
+					"id": "fundacount_apptype",
+					"editablenode": "",
+					"name": "fundacount.apptype",
+                    "options": [
+                      {
+                        "text": "新建用户",
+                        "value": "0"
+                      },
+                      {
+                        "text": "用户权限调整",
+                        "value": "1"
+                      },
+                      {
+                        "text": "锁定用户",
+                        "value": "2"
+                      },
+                      {
+                        "text": "解锁用户",
+                        "value": "3"
+                      },
+                      {
+                        "text": "初始密码",
+                        "value": "4"
+                      },
+                      {
+                        "text": "延期用户",
+                        "value": "5"
+                      },
+                      {
+                        "text": "其他类型",
+                        "value": "6"
+                      }
+                    ]
+				},
+				{
+					"title": "使用模块",
+					"component": "text",
+					"id": "fundacount_usetype",
+					"editablenode": "",
+					"name": "fundacount.usetype"
+				},
+				{
+					"title": "具体权限描述",
+					"component": "textarea",
+					"id": "fundacount_authtext",
+					"editablenode": "",
+					"rows": "3",
+					"name": "fundacount.authtext"
+				},
+				{
+					"title": "处理结果",
+					"component": "text",
+					"id": "fundacount_doresult",
+					"editablenode": "",
+					"name": "fundacount.doresult"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

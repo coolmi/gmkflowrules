@@ -1,0 +1,278 @@
+{
+  "id": "xtzy_openaccount",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      "cwmgraudit",
+      "advancezjmgraudit"
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "xtzyopenaccount.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "xtzyopenaccount.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "xtzyopenaccount.pernr",
+            "-",
+            "xtzyopenaccount.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "xtzyopenaccount.sysbusinessunitname",
+            "-",
+            "xtzyopenaccount.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "xtzyopenaccount.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "开/销户类型",
+          "component": "select",
+          "name": "xtzyopenaccount.opcatype",
+          "options": [
+            {
+              "text": "开户",
+              "value": "0"
+            },
+            {
+              "text": "销户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "公司名称",
+          "component": "text",
+          "name": "xtzyopenaccount.companyname"
+        },
+        {
+          "title": "开户行名称",
+          "component": "textarea",
+          "rows": 2,
+          "name": "xtzyopenaccount.bankname"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "xtzyopenaccount.applytype",
+          "options": [
+            {
+              "text": "内资银行",
+              "value": "0"
+            },
+            {
+              "text": "外资或境外银行",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户用途",
+          "component": "select",
+          "name": "xtzyopenaccount.accountpurpose",
+          "options": [
+            {
+              "text": "经营性质",
+              "value": "0"
+            },
+            {
+              "text": "融资性质",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户类型",
+          "component": "radio",
+          "name": "xtzyopenaccount.accountype",
+          "options": [
+            {
+              "text": "收入账户",
+              "value": "0"
+            },
+            {
+              "text": "支出账户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户性质",
+          "component": "radio",
+          "name": "xtzyopenaccount.accountnature",
+          "options": [
+            {
+              "text": "基本户",
+              "value": "0"
+            },
+            {
+              "text": "一般户",
+              "value": "1"
+            },
+            {
+              "text": "专项户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "账户管理员",
+          "component": "label",
+          "label": [
+            "xtzyopenaccount.userid",
+            "-",
+            "xtzyopenaccount.username",
+            "-",
+            "xtzyopenaccount.syspostname"
+          ]
+        },
+        {
+          "title": "开销户原因",
+          "component": "textarea",
+          "rows": "2",
+          "name": "xtzyopenaccount.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "2",
+          "name": "xtzyopenaccount.bz"
+        }
+      ]
+    },
+    {
+      "title": "执行情况",
+      "pageid": "khryzxqkhb",
+      "component": "panel",
+      "tasknode": "ywrykxhaudit,beian",
+      "subComponents": [
+        {
+          "title": "开户信息(账号)",
+          "component": "text",
+          "editablenode": "ywrykxhaudit",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写银行账号"
+          },
+          "name": "xtzyopenaccount.bankaccount"
+        },
+        {
+          "title": "开户人员执行情况汇报",
+          "component": "textarea",
+          "editablenode": "ywrykxhaudit",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写执行情况"
+          },
+          "name": "xtzyopenaccount.debrief"
+        }
+      ]
+    },
+    {
+      "title": "处理情况",
+      "pageid": "yhzhglyclqkhb",
+      "component": "panel",
+      "tasknode": "beian",
+      "subComponents": [
+        {
+          "title": "处理情况汇报",
+          "component": "textarea",
+          "name": "xtzyopenaccount.treatment",
+          "editablenode": "beian",
+          "validation": {
+            "pageid": "yhzhglyclqkhb",
+            "required": true,
+            "validateMsg": "请填写处理情况"
+          }
+        }
+      ]
+    }
+  ]
+}
