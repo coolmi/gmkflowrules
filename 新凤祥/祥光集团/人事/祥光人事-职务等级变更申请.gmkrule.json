@@ -1,0 +1,155 @@
+{
+  "id": "HR-JOBLEVELCHANGEAPP",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "joblevelchangeapp.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "joblevelchangeapp.appda"
+        },
+        {
+          "title": "申请人编号",
+          "component": "label",
+          "label": [
+            "joblevelchangeapp.pernr",
+            "-",
+            "joblevelchangeapp.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "joblevelchangeapp.sysbusinessunitname",
+            "-",
+            "joblevelchangeapp.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "joblevelchangeapp.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "职位名称",
+          "component": "text",
+          "name": "jobnm"
+        },
+        {
+          "title": "生效时间",
+          "component": "date1",
+          "name": "joblevelchangeapp.starttm"
+        },{
+          "title": "变更原因",
+          "component": "select",
+          "name": "joblevelchangeapp.massg",
+          "editablenode": "",
+          "refersToArray": {
+            "basePath": "z530",
+            "value": "massg",
+            "text": [
+              "mgtxt"
+            ]
+          }
+        },
+        {
+          "title": "变更前等级",
+          "component": "text",
+          "name": "joblevelchangeapp.beflevel"
+        },
+        {
+          "title": "变更后等级",
+          "component": "text",
+          "name": "joblevelchangeapp.aftlevel"
+        },
+        {
+          "title": "职务说明书",
+          "component": "text",
+          "name": "docmenttmp",
+          "value":"点击查看",
+          "events": {
+            "eventType": "openReports",
+            "prefixUrl": "https://192.168.5.109:8443/api/forreports/findReports/findHtmlReport/HR-JOBLEVELCHANGEAPP/%s/zwsms",
+            "params": ["joblevelchangeapp.jobid"]
+          }
+        }
+
+      ]
+    }
+
+
+  ]
+}

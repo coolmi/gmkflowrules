@@ -1,5 +1,5 @@
 {
-  "id": "fp_openaccount",
+  "id": "xtzy_openaccount",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -10,7 +10,8 @@
   },
   "selectPerson": {
     "tasknode": [
-      ""
+      "cwmgraudit",
+      "advancezjmgraudit"
     ],
     "beforPop": false
   },
@@ -24,22 +25,22 @@
           "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "openaccount.appid"
+          "name": "xtzyopenaccount.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "openaccount.appda"
+          "name": "xtzyopenaccount.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
-            "openaccount.pernr",
+            "xtzyopenaccount.pernr",
             "-",
-            "openaccount.username"
+            "xtzyopenaccount.username"
           ]
         },
         {
@@ -47,60 +48,60 @@
           "component": "label",
           "editablenode": "",
           "label": [
-            "openaccount.sysbusinessunitname",
+            "xtzyopenaccount.sysbusinessunitname",
             "-",
-            "openaccount.sysdeptname"
+            "xtzyopenaccount.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.userid"
+          "name": "xtzyopenaccount.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.username"
+          "name": "xtzyopenaccount.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.pernr"
+          "name": "xtzyopenaccount.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.syspostname"
+          "name": "xtzyopenaccount.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysdeptid"
+          "name": "xtzyopenaccount.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysdeptname"
+          "name": "xtzyopenaccount.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysbusinessunitid"
+          "name": "xtzyopenaccount.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysbusinessunitname"
+          "name": "xtzyopenaccount.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.postid"
+          "name": "xtzyopenaccount.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.id"
+          "name": "xtzyopenaccount.id"
         }
       ]
     },
@@ -110,20 +111,35 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "开/销户类型",
+          "component": "select",
+          "name": "xtzyopenaccount.opcatype",
+          "options": [
+            {
+              "text": "开户",
+              "value": "0"
+            },
+            {
+              "text": "销户",
+              "value": "1"
+            }
+          ]
+        },
+        {
           "title": "公司名称",
           "component": "text",
-          "name": "openaccount.companyname"
+          "name": "xtzyopenaccount.companyname"
         },
         {
           "title": "开户行名称",
           "component": "textarea",
           "rows": 2,
-          "name": "openaccount.bankname"
+          "name": "xtzyopenaccount.bankname"
         },
         {
           "title": "申请类型",
           "component": "select",
-          "name": "openaccount.applytype",
+          "name": "xtzyopenaccount.applytype",
           "options": [
             {
               "text": "内资银行",
@@ -138,7 +154,7 @@
         {
           "title": "账户用途",
           "component": "select",
-          "name": "openaccount.accountpurpose",
+          "name": "xtzyopenaccount.accountpurpose",
           "options": [
             {
               "text": "经营性质",
@@ -153,7 +169,7 @@
         {
           "title": "账户类型",
           "component": "radio",
-          "name": "openaccount.accountype",
+          "name": "xtzyopenaccount.accountype",
           "options": [
             {
               "text": "收入账户",
@@ -168,7 +184,7 @@
         {
           "title": "账户性质",
           "component": "radio",
-          "name": "openaccount.accountnature",
+          "name": "xtzyopenaccount.accountnature",
           "options": [
             {
               "text": "基本户",
@@ -185,38 +201,27 @@
           ]
         },
         {
-          "title": "开户原因",
+          "title": "账户管理员",
+          "component": "label",
+          "label": [
+            "xtzyopenaccount.userid",
+            "-",
+            "xtzyopenaccount.username",
+            "-",
+            "xtzyopenaccount.syspostname"
+          ]
+        },
+        {
+          "title": "开销户原因",
           "component": "textarea",
-          "name": "openaccount.reason"
+          "rows": "2",
+          "name": "xtzyopenaccount.reason"
         },
         {
           "title": "备注",
           "component": "textarea",
-          "name": "openaccount.bz"
-        },
-        {
-          "title": "业务执行人员",
-          "component": "text",
-          "name": "openaccount.businessexecutives",
-          "editablenode": "internalaudit,dbddaudit",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请选择业务执行人员"
-          },
-          "forSelectPerson": {
-            "onclick": "getuser",
-            "postshow": true,
-            "showformname": "businessexecutivesname",
-            "valuetype": [
-              "objid"
-            ],
-            "showtype": [
-              "objid",
-              "nachn",
-              "stext"
-            ]
-          }
+          "rows": "2",
+          "name": "xtzyopenaccount.bz"
         }
       ]
     },
@@ -224,29 +229,29 @@
       "title": "执行情况",
       "pageid": "khryzxqkhb",
       "component": "panel",
-      "tasknode":"bpopenaccount,adminrecord",
+      "tasknode": "ywrykxhaudit,beian",
       "subComponents": [
         {
-          "title":"开户信息(账号)",
-          "component":"text",
-          "editablenode":"bpopenaccount",
+          "title": "开户信息(账号)",
+          "component": "text",
+          "editablenode": "ywrykxhaudit",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
             "validateMsg": "请填写银行账号"
           },
-          "name":"openaccount.bankaccount"
+          "name": "xtzyopenaccount.bankaccount"
         },
         {
-          "title":"开户人员执行情况汇报",
-          "component":"textarea",
-          "editablenode":"bpopenaccount",
+          "title": "开户人员执行情况汇报",
+          "component": "textarea",
+          "editablenode": "ywrykxhaudit",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
             "validateMsg": "请填写执行情况"
           },
-          "name":"openaccount.debrief"
+          "name": "xtzyopenaccount.debrief"
         }
       ]
     },
@@ -254,13 +259,13 @@
       "title": "处理情况",
       "pageid": "yhzhglyclqkhb",
       "component": "panel",
-      "tasknode":"adminrecord",
+      "tasknode": "beian",
       "subComponents": [
         {
-          "title":"处理情况汇报",
-          "component":"textarea",
-          "name":"openaccount.treatment",
-          "editablenode":"adminrecord",
+          "title": "处理情况汇报",
+          "component": "textarea",
+          "name": "xtzyopenaccount.treatment",
+          "editablenode": "beian",
           "validation": {
             "pageid": "yhzhglyclqkhb",
             "required": true,

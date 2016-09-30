@@ -1,0 +1,255 @@
+{
+  "id": "gmk_leave",
+  "handleOnPC": {
+    "tasknode": ["usertask8"],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "leave.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "leave.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "leave.pernr",
+            "-",
+            "leave.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "leave.sysbusinessunitname",
+            "-",
+            "leave.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "leave.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "休假人员",
+          "component": "text",
+          "name": "leave.leavename"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "leave.education"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "leave.profess"
+        },
+        {
+          "title": "毕业日期",
+          "component": "date1",
+          "name": "leave.gradate"
+        },
+        {
+          "title": "出生日期",
+          "component": "date1",
+          "name": "leave.birthdate"
+        },
+        {
+          "title": "职位",
+          "component": "text",
+          "name": "leave.positions"
+        },
+        {
+          "title": "性别",
+          "component": "select",
+          "name": "leave.gender",
+          "options": [
+            {
+              "text": "女",
+              "value": "0"
+            },
+            {
+              "text": "男",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "参加工作日期",
+          "component": "date1",
+          "name": "leave.workdate"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "name": "leave.entrydate"
+        },
+        {
+          "title": "所在部门",
+          "component": "text",
+          "name": "leave.department"
+        },
+        {
+          "title": "休假类型",
+          "component": "select",
+          "name": "entrytype",
+          "editablenode": "",
+          "refersToArray": {
+            "basePath": "leavetype",
+            "value": "num",
+            "text": [
+              "desce"
+            ]
+          }
+        },
+        {
+          "title": "休假原因",
+          "component": "text",
+          "name": "leave.reasions"
+        },
+        {
+          "title": "休假开始日期",
+          "component": "date1",
+          "name": "leave.sdate"
+        },
+        {
+          "title": "休假结束日期",
+          "component": "text",
+          "name": "leave.edate"
+        },
+        {
+          "title": "休假天数",
+          "component": "text",
+          "name": "leave.vacatdays"
+        },
+        {
+          "title": "执行情况",
+          "component": "checkbox",
+          "name": "leave.notification",
+          "options":[
+            {
+              "text": "完成员工通知",
+              "value": "1"
+            },
+            {
+              "text": "完成薪资结算",
+              "value": "2"
+            },
+            {
+              "text": "其他事项",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "执行其它情况",
+          "component": "text",
+          "name": "leave.smatters"
+        },
+        {
+          "title": "存档备案",
+          "component": "checkbox",
+          "name": "leave.record",
+          "options":[
+            {
+              "text": "完成员工通知",
+              "value": "1"
+            },
+            {
+              "text": "完成薪资结算",
+              "value": "2"
+            },
+            {
+              "text": "其他事项",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "备案其它情况",
+          "component": "text",
+          "name": "leave.ematters"
+        },
+        {
+          "title": "发送",
+          "component": "text",
+          "name": "leave.sendtxt"
+        }
+      ]
+    }
+  ]
+}

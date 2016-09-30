@@ -1,0 +1,320 @@
+{
+  "id": "fi_creditea",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask1",
+      "usertask4"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "creditaddedit.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "creditaddedit.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "creditaddedit.pernr",
+            "-",
+            "creditaddedit.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "creditaddedit.sysbusinessunitname",
+            "-",
+            "creditaddedit.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "creditaddedit.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "panel_sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请公司",
+          "component": "text",
+          "id": "creditaddedit_appcompany",
+          "editablenode": "",
+          "name": "creditaddedit.appcompany"
+        },
+        {
+          "title": "信用证类型",
+          "component": "text",
+          "id": "creditaddedit_credittype",
+          "editablenode": "",
+          "name": "creditaddedit.credittype"
+        },
+        {
+          "title": "开证行",
+          "component": "text",
+          "id": "creditaddedit_issuingbank",
+          "editablenode": "",
+          "name": "creditaddedit.issuingbank"
+        },
+        {
+          "title": "修改原因",
+          "component": "text",
+          "id": "creditaddedit_reason",
+          "editablenode": "",
+          "name": "creditaddedit.reason"
+        },
+        {
+          "title": "卖方名称",
+          "component": "text",
+          "id": "creditaddedit_seller",
+          "editablenode": "",
+          "name": "creditaddedit.seller"
+        },
+        {
+          "title": "信用证号码",
+          "component": "text",
+          "id": "creditaddedit_creditnumber",
+          "editablenode": "",
+          "name": "creditaddedit.creditnumber"
+        },
+        {
+          "title": "开证金额",
+          "component": "text",
+          "id": "creditaddedit_tonnage",
+          "editablenode": "",
+          "name": "creditaddedit.tonnage"
+        },
+        {
+          "title": "改证费用承担方",
+          "component": "text",
+          "id": "creditaddedit_expenses",
+          "editablenode": "",
+          "name": "creditaddedit.expenses"
+        },
+        {
+          "title": "开证数量",
+          "component": "text",
+          "id": "creditaddedit_amount",
+          "editablenode": "",
+          "name": "creditaddedit.amount"
+        },
+        {
+          "title": "开证金额大写",
+          "component": "text",
+          "id": "creditaddedit_amountbig",
+          "editablenode": "",
+          "name": "creditaddedit.amountbig"
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "id": "creditaddedit_contract_no",
+          "editablenode": "",
+          "name": "creditaddedit.contract_no"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "id": "creditaddedit_currency",
+          "editablenode": "",
+          "name": "creditaddedit.currency"
+        },
+        {
+          "title": "修改类型",
+          "component": "text",
+          "id": "creditaddedit_stcredittype",
+          "editablenode": "",
+          "name": "creditaddedit.stcredittype"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "id": "creditaddedit_rtfnotes",
+          "editablenode": "",
+          "name": "creditaddedit.rtfnotes"
+        },
+        {
+          "title": "修改方案",
+          "component": "textarea",
+          "id": "creditaddedit_rtfchangeprogram",
+          "editablenode": "",
+          "name": "creditaddedit.rtfchangeprogram"
+        },
+        {
+          "title": "执行情况汇报",
+          "component": "text",
+          "id": "creditaddedit_rtfsituation",
+          "editablenode": "",
+          "name": "creditaddedit.rtfsituation"
+        }
+      ]
+    },
+    {
+      "title": "历史修改",
+      "pageid": "panel_lsxg",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "edits",
+          "id": "LA_panel_lsxg",
+          "tableForms": [
+            {
+              "title": "金额",
+              "component": "text",
+              "id": "money",
+              "name": "money"
+            },
+            {
+              "title": "到期日",
+              "component": "text",
+              "id": "enddate",
+              "name": "enddate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "id": "amountarray",
+              "editablenode": "",
+              "name": "amountarray"
+            },
+            {
+              "title": "装船日期",
+              "component": "text",
+              "id": "shipdate",
+              "editablenode": "",
+              "name": "shipdate"
+            },
+            {
+              "title": "修改种类",
+              "component": "text",
+              "id": "modifytype",
+              "editablenode": "",
+              "name": "modifytype"
+            },
+            {
+              "title": "修改原因",
+              "component": "text",
+              "id": "modifyreason",
+              "editablenode": "",
+              "name": "modifyreason"
+            },
+            {
+              "title": "修改方案",
+              "component": "text",
+              "id": "modifyscheme",
+              "editablenode": "",
+              "name": "modifyscheme"
+            },
+            {
+              "title": "改证费用承担方",
+              "component": "text",
+              "id": "expensebearingparty",
+              "editablenode": "",
+              "name": "expensebearingparty"
+            },
+            {
+              "title": "手续费",
+              "component": "text",
+              "id": "handlingcharge_sub",
+              "editablenode": "",
+              "name": "handlingcharge_sub"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

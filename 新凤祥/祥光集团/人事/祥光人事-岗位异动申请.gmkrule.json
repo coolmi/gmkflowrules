@@ -1,0 +1,183 @@
+{
+  "id": "HR_POSTBELONGCHANGEMAINAPP",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "postbelongchange.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "postbelongchange.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "postbelongchange.pernr",
+            "-",
+            "postbelongchange.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "postbelongchange.sysbusinessunitname",
+            "-",
+            "postbelongchange.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "postbelongchange.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "事项原因",
+          "component": "text",
+          "name": "postbelongchange.reason"
+        },
+        {
+          "title": "生效日期",
+          "component": "date1",
+          "name": "postbelongchange.begdate"
+        }
+      ]
+    },
+    {
+      "title": "岗位异动信息",
+      "pageid": "zpxqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "bases",
+          "tableForms": [
+
+            {
+              "title": "异动前岗位",
+              "component": "select",
+              "name": "bcpostid",
+              "editablenode": "",
+              "refersToArray":{
+                "basePath":"postList",
+                "value":"objid",
+                "text":["objid","-","stext"]
+              }
+            },
+            {
+              "title": "异前等级",
+              "component": "text",
+              "name": "bfpstlevelid"
+            },
+            {
+              "title": "异前编制",
+              "component": "text",
+              "name": "bfpostnum"
+            },
+            {
+              "title": "异前所属组织",
+              "component": "select",
+              "name": "bfptorgid",
+              "editablenode": "",
+              "refersToArray":{
+                "basePath":"deptList",
+                "value":"objid",
+                "text":["objid","-","stext"]
+              }
+
+            },
+
+            {
+              "title": "异后所属组织",
+              "component": "select",
+              "name": "afptorgid",
+              "editablenode": "",
+              "refersToArray":{
+                "basePath":"deptList",
+                "value":"objid",
+                "text":["objid","-","stext"]
+              }
+            }
+
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+
+

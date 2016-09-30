@@ -1,0 +1,210 @@
+{
+  "id": "HR-EMPDIMISSION",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "retireapp.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "retireapp.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "retireapp.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "stext"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "retireapp.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "辞退人",
+          "component": "label",
+          "editablenode": "",
+          "label":["rname"]
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "retireapp.compcode"
+        },
+        {
+          "title": "岗位",
+          "component": "text",
+          "name": "retireapp.rpostname"
+        },
+        {
+          "title": "岗位等级",
+          "component": "text",
+          "name": "retireapp.postlevel"
+        },
+        {
+          "title": "所在部门",
+          "component": "text",
+          "name": "retireapp.rdeptname"
+        },
+        {
+          "title": "入司时间",
+          "component": "text",
+          "name": "entrydate"
+        },
+        {
+          "title": "离司时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "retireapp.leavedate"
+        },
+        {
+          "title": "经济补偿金",
+          "component": "text",
+          "name": "retireapp.retirefee",
+          "editablenode": "usertask7",
+          "tasknode":"usertask7,usertask8,usertask9,usertask10",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validationMsg":"经济补偿金不能为空"
+          }
+        },
+        {
+          "title": "代通知金",
+          "component": "text",
+          "name": "retireapp.retirefeed",
+          "editablenode": "usertask7",
+          "tasknode":"usertask7,usertask8,usertask9,usertask10",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validationMsg":"代通知金不能为空"
+          }
+        },
+        {
+          "title": "辞退原因",
+
+          "component": "label",
+          "middleName":[
+            "retireapp.leavereason",
+            "id"
+          ],
+          "label": [
+            "reasons.reason"]
+
+        },
+        {
+          "title": "调查沟通结果",
+          "component": "textarea",
+          "name": "retireapp.dcresult",
+          "editablenode": "usertask7",
+          "tasknode":"usertask7,usertask8,usertask9,usertask10",
+
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validationMsg":"经济补偿金不能为空"
+          }
+
+        }
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
+}

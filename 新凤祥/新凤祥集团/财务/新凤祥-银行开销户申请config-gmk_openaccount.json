@@ -1,5 +1,5 @@
 {
-  "id": "fp_openaccount",
+  "id": "gmk_openaccount",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -110,6 +110,21 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "开/销户类型",
+          "component": "select",
+          "name": "openaccount.opcatype",
+          "options": [
+            {
+              "text": "开户",
+              "value": "0"
+            },
+            {
+              "text": "销户",
+              "value": "1"
+            }
+          ]
+        },
+        {
           "title": "公司名称",
           "component": "text",
           "name": "openaccount.companyname"
@@ -185,38 +200,16 @@
           ]
         },
         {
-          "title": "开户原因",
+          "title": "开销户原因",
           "component": "textarea",
+          "rows":"2",
           "name": "openaccount.reason"
         },
         {
           "title": "备注",
           "component": "textarea",
+          "rows":"2",
           "name": "openaccount.bz"
-        },
-        {
-          "title": "业务执行人员",
-          "component": "text",
-          "name": "openaccount.businessexecutives",
-          "editablenode": "internalaudit,dbddaudit",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请选择业务执行人员"
-          },
-          "forSelectPerson": {
-            "onclick": "getuser",
-            "postshow": true,
-            "showformname": "businessexecutivesname",
-            "valuetype": [
-              "objid"
-            ],
-            "showtype": [
-              "objid",
-              "nachn",
-              "stext"
-            ]
-          }
         }
       ]
     },
@@ -224,12 +217,12 @@
       "title": "执行情况",
       "pageid": "khryzxqkhb",
       "component": "panel",
-      "tasknode":"bpopenaccount,adminrecord",
+      "tasknode":"gshszyzx,beian",
       "subComponents": [
         {
           "title":"开户信息(账号)",
           "component":"text",
-          "editablenode":"bpopenaccount",
+          "editablenode":"gshszyzx",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
@@ -240,7 +233,7 @@
         {
           "title":"开户人员执行情况汇报",
           "component":"textarea",
-          "editablenode":"bpopenaccount",
+          "editablenode":"gshszyzx",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
@@ -254,13 +247,13 @@
       "title": "处理情况",
       "pageid": "yhzhglyclqkhb",
       "component": "panel",
-      "tasknode":"adminrecord",
+      "tasknode":"beian",
       "subComponents": [
         {
           "title":"处理情况汇报",
           "component":"textarea",
           "name":"openaccount.treatment",
-          "editablenode":"adminrecord",
+          "editablenode":"beian",
           "validation": {
             "pageid": "yhzhglyclqkhb",
             "required": true,

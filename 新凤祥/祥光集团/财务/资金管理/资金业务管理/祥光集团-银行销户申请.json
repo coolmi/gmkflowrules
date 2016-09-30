@@ -1,5 +1,5 @@
 {
-  "id": "fp_openaccount",
+  "id": "fp_cancelaccount",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -24,22 +24,22 @@
           "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "openaccount.appid"
+          "name": "cancelaccount.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "openaccount.appda"
+          "name": "cancelaccount.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
-            "openaccount.pernr",
+            "cancelaccount.pernr",
             "-",
-            "openaccount.username"
+            "cancelaccount.username"
           ]
         },
         {
@@ -47,60 +47,60 @@
           "component": "label",
           "editablenode": "",
           "label": [
-            "openaccount.sysbusinessunitname",
+            "cancelaccount.sysbusinessunitname",
             "-",
-            "openaccount.sysdeptname"
+            "cancelaccount.sysdeptname"
           ]
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.userid"
+          "name": "cancelaccount.userid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.username"
+          "name": "cancelaccount.username"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.pernr"
+          "name": "cancelaccount.pernr"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.syspostname"
+          "name": "cancelaccount.syspostname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysdeptid"
+          "name": "cancelaccount.sysdeptid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysdeptname"
+          "name": "cancelaccount.sysdeptname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysbusinessunitid"
+          "name": "cancelaccount.sysbusinessunitid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.sysbusinessunitname"
+          "name": "cancelaccount.sysbusinessunitname"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.postid"
+          "name": "cancelaccount.postid"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "openaccount.id"
+          "name": "cancelaccount.id"
         }
       ]
     },
@@ -112,18 +112,18 @@
         {
           "title": "公司名称",
           "component": "text",
-          "name": "openaccount.companyname"
+          "name": "cancelaccount.companyname"
         },
         {
           "title": "开户行名称",
           "component": "textarea",
           "rows": 2,
-          "name": "openaccount.bankname"
+          "name": "cancelaccount.bankname"
         },
         {
           "title": "申请类型",
           "component": "select",
-          "name": "openaccount.applytype",
+          "name": "cancelaccount.applytype",
           "options": [
             {
               "text": "内资银行",
@@ -138,7 +138,7 @@
         {
           "title": "账户用途",
           "component": "select",
-          "name": "openaccount.accountpurpose",
+          "name": "cancelaccount.accountpurpose",
           "options": [
             {
               "text": "经营性质",
@@ -153,7 +153,7 @@
         {
           "title": "账户类型",
           "component": "radio",
-          "name": "openaccount.accountype",
+          "name": "cancelaccount.accountype",
           "options": [
             {
               "text": "收入账户",
@@ -168,7 +168,7 @@
         {
           "title": "账户性质",
           "component": "radio",
-          "name": "openaccount.accountnature",
+          "name": "cancelaccount.accountnature",
           "options": [
             {
               "text": "基本户",
@@ -187,18 +187,18 @@
         {
           "title": "开户原因",
           "component": "textarea",
-          "name": "openaccount.reason"
+          "name": "cancelaccount.reason"
         },
         {
           "title": "备注",
           "component": "textarea",
-          "name": "openaccount.bz"
+          "name": "cancelaccount.bz"
         },
         {
           "title": "业务执行人员",
           "component": "text",
-          "name": "openaccount.businessexecutives",
-          "editablenode": "internalaudit,dbddaudit",
+          "name": "cancelaccount.businessexecutives",
+          "editablenode":"sfmsmaudit,financeaudit",
           "validation": {
             "pageid": "sqxx",
             "required": true,
@@ -221,32 +221,21 @@
       ]
     },
     {
-      "title": "执行情况",
-      "pageid": "khryzxqkhb",
+      "title": "销户情况",
+      "pageid": "ywryxhqkbg",
       "component": "panel",
-      "tasknode":"bpopenaccount,adminrecord",
+      "tasknode":"cancelaudit,amrecord",
       "subComponents": [
         {
-          "title":"开户信息(账号)",
-          "component":"text",
-          "editablenode":"bpopenaccount",
-          "validation": {
-            "pageid": "khryzxqkhb",
-            "required": true,
-            "validateMsg": "请填写银行账号"
-          },
-          "name":"openaccount.bankaccount"
-        },
-        {
-          "title":"开户人员执行情况汇报",
+          "title":"销户情况汇报",
           "component":"textarea",
-          "editablenode":"bpopenaccount",
+          "name":"cancelaccount.debrief",
+          "editablenode":"cancelaudit",
           "validation": {
-            "pageid": "khryzxqkhb",
+            "pageid": "ywryxhqkbg",
             "required": true,
-            "validateMsg": "请填写执行情况"
-          },
-          "name":"openaccount.debrief"
+            "validateMsg": "请填写销户情况"
+          }
         }
       ]
     },
@@ -254,13 +243,13 @@
       "title": "处理情况",
       "pageid": "yhzhglyclqkhb",
       "component": "panel",
-      "tasknode":"adminrecord",
+      "tasknode":"amrecord",
       "subComponents": [
         {
           "title":"处理情况汇报",
           "component":"textarea",
-          "name":"openaccount.treatment",
-          "editablenode":"adminrecord",
+          "name":"cancelaccount.treatment",
+          "editablenode":"amrecord",
           "validation": {
             "pageid": "yhzhglyclqkhb",
             "required": true,

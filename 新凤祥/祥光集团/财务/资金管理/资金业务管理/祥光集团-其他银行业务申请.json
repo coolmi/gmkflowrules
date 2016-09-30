@@ -1,0 +1,191 @@
+{
+  "id": "FP_OTHERBANK",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "titleList": [
+    ],
+    "beforPop": true
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "otherbank.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "otherbank.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "otherbank.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "otherbank.sysbusinessunitname",
+            "-",
+            "otherbank.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "otherbank.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "银行单位",
+          "component": "text",
+          "name": "otherbank.bankunit"
+        },
+        {
+          "title": "拟承担业务公司",
+          "component": "text",
+          "name": "otherbank.bearcomany"
+        },
+        {
+          "title": "申请业务名称",
+          "component": "text",
+          "name": "otherbank.appbusiname"
+        },
+        {
+          "title": "申请业务金额",
+          "component": "text",
+          "name": "otherbank.appbusimoney"
+        }
+      ]
+    },
+    {
+      "title": "授信情况",
+      "component": "panel",
+      "pageid": "yhsxqk",
+      "subComponents": [
+        {
+          "title": "项目贷款",
+          "component": "text",
+          "name": "otherbank.projectloan"
+        },
+        {
+          "title": "流动资金贷款",
+          "component": "text",
+          "name": "otherbank.flowmoney"
+        },
+        {
+          "title": "银行承兑",
+          "component": "text",
+          "name": "otherbank.bankhonor"
+        },
+        {
+          "title": "贸易融资",
+          "component": "text",
+          "name": "otherbank.tradefinance"
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "name": "otherbank.other"
+        },
+        {
+          "title": "申请业务说明",
+          "component": "text",
+          "name": "otherbank.remark"
+        }
+      ]
+    },
+    {
+      "title": "调配方案",
+      "component": "panel",
+      "pageid": "tpfasm",
+      "tasknode": "usertask5",
+      "subComponents": [
+        {
+          "title": "调配方案说明",
+          "component": "textarea",
+          "name": "otherbank.mixremark",
+          "editablenode": "usertask5",
+          "validation": {
+            "pageid": "tpfasm",
+            "required": true,
+            "validateMsg": "请填写调配方案"
+          }
+        }
+      ]
+    }
+  ]
+}
