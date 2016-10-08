@@ -141,13 +141,15 @@
               "component": "text",
               "datatype": "money"
             },
+
             {
               "title": "金额大写",
               "name": "s_jedx",
               "component": "text"
             },
             {
-              "title": "结算类别",
+
+           "title": "结算类别",
               "name": "s_jslb",
               "component": "text"
             },
@@ -164,6 +166,8 @@
           ]
         }
       ]
+
     }
+
   ]
 }
