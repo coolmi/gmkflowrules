@@ -1,0 +1,202 @@
+{
+  "id": "it_largefixedassets",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "维修合同号",
+          "component": "text",
+          "name": "mainModel.wxhth"
+        },
+        {
+          "title": "合同金额",
+          "component": "text",
+          "name": "mainModel.htje"
+        },
+        {
+          "title": "合同有效期始",
+          "component": "text",
+          "name": "mainModel.htyxqstart",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "合同有效期止",
+          "component": "text",
+          "name": "mainModel.htyxqend",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.ygsmc"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "mainModel.biz"
+        }
+      ]
+    },
+    {
+      "title": "详细信息",
+      "pageid": "xxxxppd",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": "3",
+          "basePath": "infos",
+          "tableForms": [
+            {
+              "title": "资产编号",
+              "component": "text",
+              "name": "propertycode"
+            },
+            {
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatg"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "baspa"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "出厂编号",
+              "component": "text",
+              "name": "ccbh"
+            },
+            {
+              "title": "所属法人公司",
+              "component": "text",
+              "name": "bukrsnm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

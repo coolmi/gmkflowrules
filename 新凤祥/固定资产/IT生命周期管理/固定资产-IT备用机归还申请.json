@@ -1,0 +1,251 @@
+{
+  "id": "zitsbgh",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask3"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "zitsbgh.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "zitsbgh.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "zitsbgh.pernr",
+            "-",
+            "zitsbgh.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "zitsbgh.sysbusinessunitname",
+            "-",
+            "zitsbgh.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "zitsbgh.id"
+        }
+      ]
+    },
+    {
+      "title": "归还信息",
+      "pageid": "ghjyxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "设备借用申请单",
+          "component": "text",
+          "name": "zitsbgh.zjysqno"
+        },
+        {
+          "title": "归还原因",
+          "component": "text",
+          "name": "zitsbgh.zghyy"
+        }
+      ]
+    },
+    {
+      "title": "设备明细",
+      "pageid": "ghsqxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "childlist",
+          "tableForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatgname"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "使用人ITCODE",
+              "component": "text",
+              "name": "useritcode"
+            },
+            {
+              "title": "借用原因",
+              "component": "text",
+              "name": "zjyyy"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "meins"
+            },
+            {
+              "title": "设备借用日期",
+              "component": "text",
+              "name": "jydate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "预计归还日期",
+              "component": "text",
+              "name": "enddate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "确认信息",
+      "pageid": "ywglyqrxx",
+      "component": "panel",
+      "notShowOnHandle": "true",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "childlist",
+          "id": "ywglyqrxx_table",
+          "tableForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatgname"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "使用人ITCODE",
+              "component": "text",
+              "name": "useritcode"
+            },
+            {
+              "title": "借用原因",
+              "component": "text",
+              "name": "zjyyy"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "meins"
+            },
+            {
+              "title": "实际归还日期",
+              "component": "text",
+              "name": "zghrq",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "设备运行状态",
+              "component": "select",
+              "name": "zsbyxzt",
+              "options": [
+                {
+                  "text": "设备正常",
+                  "value": "1"
+                },
+                {
+                  "text": "存在问题",
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "title": "",
+              "component": "text",
+              "name": "zbztxt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

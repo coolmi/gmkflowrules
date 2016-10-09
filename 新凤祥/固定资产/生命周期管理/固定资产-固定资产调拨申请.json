@@ -1,0 +1,244 @@
+{
+  "id": "cp_transfer",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "transfer.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "transfer.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "transfer.pernr",
+            "-",
+            "transfer.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "transfer.sysbusinessunitname",
+            "-",
+            "transfer.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "transfer.id"
+        }
+      ]
+    },
+    {
+      "title": "调拨信息",
+      "pageid": "dbxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "childlist",
+          "tableForms": [
+            {
+              "title": "调拨资产编号",
+              "component": "text",
+              "name": "propertycode"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "SAP资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "SAP资产子编号",
+              "component": "text",
+              "name": "anln2"
+            },
+            {
+              "title": "技术标识号",
+              "component": "text",
+              "name": "technicalcode"
+            },
+            {
+              "title": "原安装地点",
+              "component": "text",
+              "name": "stort"
+            },
+            {
+              "title": "调出部门",
+              "component": "label",
+              "label": [
+                "tcbmid",
+                "-",
+                "tcbmname"
+              ]
+            },
+            {
+              "title": "调出成本中心",
+              "component": "label",
+              "label": [
+                "tccompcode",
+                "-",
+                "tccomcodename"
+              ]
+            },
+            {
+              "title": "调入部门",
+              "component": "label",
+              "label": [
+                "trbmid",
+                "-",
+                "trbmname"
+              ]
+            },
+            {
+              "title": "调入成本中心",
+              "component": "text",
+              "name": "trcomcodename"
+            },
+            {
+              "title": "调入安装地点",
+              "component": "text",
+              "name": "trstort"
+            },
+            {
+              "title": "调拨事由",
+              "component": "text",
+              "name": "transferreason"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "执行信息",
+      "pageid": "gdzcglyzxxx",
+      "component": "panel",
+      "tasknode": "usertask5",
+      "subComponents": [
+        {
+          "title": "调拨方式",
+          "component": "select",
+          "name": "transfer.tbflag",
+          "editablenode": "usertask5",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "厂内调拨",
+              "value": "1"
+            },
+            {
+              "text": "非厂内调拨",
+              "value": "0"
+            }
+          ],
+          "validation": {
+            "pageid": "gdzcglyzxxx",
+            "required": true,
+            "validationMsg": "请选择调拨方式"
+          }
+        },
+        {
+          "title": "调入分管领导",
+          "component": "text",
+          "editablenode": "usertask5",
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "zctrbmfgldname",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "nachn",
+              "stext"
+            ]
+          },
+          "name": "transfer.zctrbmfgld",
+          "validation": {
+            "pageid": "gdzcglyzxxx",
+            "required": true,
+            "validationMsg": "请选择调入分管领导"
+          }
+        }
+      ]
+    }
+  ]
+}
