@@ -2,7 +2,7 @@
   "id": "af_feefoodgenerapp",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "accout","payment"
     ],
     "flag": [
       "resubmit"
@@ -264,7 +264,7 @@
 				"otherName":"员工出差申请",		
 				"procInstId":"reimburse.atrlnr",
 				"businessKey":"travelid"
-			},
+			}
         }
         
       ]
@@ -534,7 +534,7 @@
 						{
 						  "text": "境外",
 						  "value": "1"
-						},
+						}
 					  ]
 				},
 				{
@@ -702,7 +702,7 @@
 						{
 						  "text": "境外",
 						  "value": "1"
-						},
+						}
 					  ]
 				},
 				{
@@ -859,7 +859,7 @@
 						{
 						  "text": "境外",
 						  "value": "1"
-						},
+						}
 					  ]
 				},
 					{
@@ -1037,7 +1037,7 @@
 							{
 							  "text": "境外",
 							  "value": "1"
-							},
+							}
 						  ]
 					},
 					{
@@ -1258,7 +1258,7 @@
 							{
 							  "text": "境外",
 							  "value": "1"
-							},
+							}
 						  ]
 					},
 					{
@@ -1423,7 +1423,7 @@
 							{
 							  "text": "境外",
 							  "value": "1"
-							},
+							}
 						  ]
 					},
 					{
@@ -1540,7 +1540,7 @@
 					  "linkToMap": {
 						"linkToLable": "true",
 						"mapBasePath": "mapByBukrs",
-						"linkMiddle": "stypeg",
+						"linkMiddle": "stypet",
 						"linkType": "string"
 					  }
 					},
@@ -1558,7 +1558,7 @@
 							{
 							  "text": "境外",
 							  "value": "1"
-							},
+							}
 						  ]
 					},
 					{

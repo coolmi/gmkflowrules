@@ -1,0 +1,1366 @@
+{
+  "id": "fooddevcw_travelnoreim",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask9"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "travelnoreim.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "travelnoreim.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "travelnoreim.pernr",
+            "-",
+            "travelnoreim.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "travelnoreim.sysbusinessunitname",
+            "-",
+            "travelnoreim.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.id"
+        }
+      ]
+    },
+    {
+      "title": "申请人信息",
+      "pageid": "sqrxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "travelnoreim.pernrval"
+        },
+        {
+          "title": "员工itcode",
+          "component": "text",
+          "name": "travelnoreim.useridval"
+        },
+        {
+          "title": "员工所在部门",
+          "component": "text",
+          "name": "travelnoreim.deptval"
+        },
+        {
+          "title": "职能中心/事业部",
+          "component": "text",
+          "name": "travelnoreim.bunisval"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "travelnoreim.bukrsval"
+        },
+        {
+          "title": "手机号码",
+          "component": "text",
+          "name": "travelnoreim.phone"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "name": "travelnoreim.email"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算内/外",
+          "component": "radio",
+          "name": "travelnoreim.inside",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "1"
+            },
+            {
+              "title": "预算外",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.cdbukrs"
+        },
+        {
+          "title": "费用承担公司",
+          "component": "text",
+          "name": "travelnoreim.cdbukrsname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelnoreim.cdkostlsname"
+        },
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "name": "cdkostlsvalname",
+          "label": [
+            "travelnoreim.cdkostls",
+            "",
+            "travelnoreim.cdkostlsname"
+          ]
+        },
+        {
+          "id": "reimtype",
+          "title": "报销类别",
+          "component": "comma_concat",
+          "name": "travelnoreim.reimtype",
+          "refer": "reimtype"
+        },
+        {
+          "title": "员工财务编号",
+          "component": "text",
+          "name": "travelnoreim.lifnr"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "travelnoreim.waers",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "CNY"
+            }
+          ]
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "name": "travelnoreim.numpg"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "3",
+          "name": "travelnoreim.remarks"
+        }
+      ]
+    },
+    {
+      "title": "申请明细",
+      "pageid": "sqxxmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "通讯费",
+          "component": "panel",
+          "panel_id": "txf",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 1,
+              "basePath": "telfees",
+              "id": "txf_sdate",
+              "tableForms": [
+                {
+                  "title": "月份",
+                  "component": "select",
+                  "name": "mon",
+                  "options": [
+                    {
+                      "text": "一月",
+                      "value": "1"
+                    },
+                    {
+                      "text": "二月",
+                      "value": "2"
+                    },
+                    {
+                      "text": "三月",
+                      "value": "3"
+                    },
+                    {
+                      "text": "四月",
+                      "value": "4"
+                    },
+                    {
+                      "text": "五月",
+                      "value": "5"
+                    },
+                    {
+                      "text": "六月",
+                      "value": "6"
+                    },
+                    {
+                      "text": "七月",
+                      "value": "7"
+                    },
+                    {
+                      "text": "八月",
+                      "value": "8"
+                    },
+                    {
+                      "text": "九月",
+                      "value": "9"
+                    },
+                    {
+                      "text": "十月",
+                      "value": "10"
+                    },
+                    {
+                      "text": "十一月",
+                      "value": "11"
+                    },
+                    {
+                      "text": "十二月",
+                      "value": "12"
+                    }
+                  ]
+                },
+                {
+                  "title": "通讯费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "comulfee"
+                },
+                {
+                  "title": "超标准费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "outulfee"
+                }
+              ]
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.dmbtr1"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "dmbtr1cap",
+              "name": "travelnoreim.dmbtr1"
+            },
+            {
+              "title": "超额",
+              "component": "radio",
+              "name": "travelnoreim.clremarkout",
+              "editablenode": "usertask2,usertask5",
+              "options": [
+                {
+                  "title": "同意",
+                  "value": "1"
+                },
+                {
+                  "title": "财务制度执行",
+                  "value": "2"
+                }
+              ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "1"
+                  ]
+                }
+              ],
+              "validation": {
+                "pageid": "sqxxmx",
+                "required": true,
+                "validateMsg": "通讯费是否超额必选",
+                "regexs": ""
+              }
+            },
+            {
+              "title": "超标金额(小写)",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.dmbtr2"
+            },
+            {
+              "title": "超标金额(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "dmbtr2cap",
+              "name": "travelnoreim.dmbtr2"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.clremark"
+            }
+          ]
+        },
+        {
+          "title": "交通费",
+          "component": "panel",
+          "panel_id": "jt",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "2"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 3,
+              "id": "jt_sdate",
+              "basePath": "traffices",
+              "tableForms": [
+                {
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "sdate"
+                },
+                {
+                  "title": "出发地",
+                  "component": "text",
+                  "name": "saddr"
+                },
+                {
+                  "title": "到达地",
+                  "component": "text",
+                  "name": "eaddr"
+                },
+                {
+                  "title": "具体地点",
+                  "component": "text",
+                  "name": "specificc"
+                },
+                {
+                  "title": "类别",
+                  "component": "select",
+                  "refer": "trstsyps",
+                  "name": "stype"
+                },
+                {
+                  "title": "席位",
+                  "component": "select",
+                  "refer": "matlevels",
+                  "name": "kuname"
+                },
+                {
+                  "title": "交通金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "sumdmbtr1"
+                },
+                {
+                  "title": "事由",
+                  "component": "text",
+                  "name": "traffreason"
+                },
+                {
+                  "title": "超标准费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "sumdmbtr6"
+                }
+              ]
+            },
+            {
+              "title": "超额",
+              "component": "radio",
+              "name": "travelnoreim.jtremarkout",
+              "editablenode": "usertask2,usertask5",
+              "options": [
+                {
+                  "title": "同意",
+                  "value": "1"
+                },
+                {
+                  "title": "财务制度执行",
+                  "value": "2"
+                }
+              ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "2"
+                  ]
+                }
+              ],
+              "validation": {
+                "pageid": "sqxxmx",
+                "required": true,
+                "validateMsg": "交通费是否超额必选",
+                "regexs": ""
+              }
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.jtdmbtr"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "jtdmbtrcap",
+              "name": "travelnoreim.jtdmbtr"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.jtremark"
+            }
+          ]
+        },
+        {
+          "title": "业务招待费",
+          "component": "panel",
+          "panel_id": "bu",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "3"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 3,
+              "basePath": "businessno",
+              "id": "bu_sdate",
+              "tableForms": [
+                {
+                  "title": "招待日期",
+                  "component": "date1",
+                  "name": "bdate"
+                },
+                {
+                  "title": "出席员工姓名",
+                  "component": "text",
+                  "name": "battend"
+                },
+                {
+                  "title": "客户",
+                  "component": "text",
+                  "name": "bcustom"
+                },
+                {
+                  "title": "招待地点",
+                  "component": "text",
+                  "name": "baddress"
+                },
+                {
+                  "title": "用餐人数",
+                  "component": "text",
+                  "name": "bnumber"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "bmoney"
+                },
+                {
+                  "title": "事由说明",
+                  "component": "text",
+                  "name": "breason"
+                },
+                {
+                  "title": "备注",
+                  "component": "text",
+                  "name": "bremarks"
+                }
+              ]
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.budmbtr"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "budmbtrcap",
+              "name": "travelnoreim.budmbtr"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.buremark"
+            }
+          ]
+        },
+        {
+          "title": "餐饮费",
+          "component": "panel",
+          "panel_id": "cy",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "4"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 3,
+              "basePath": "catefees",
+              "id": "cy_sdate",
+              "tableForms": [
+                {
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "sdatec"
+                },
+                {
+                  "title": "发生地",
+                  "component": "text",
+                  "name": "eaddrc"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "citydmbtr"
+                },
+                {
+                  "title": "事由说明",
+                  "component": "text",
+                  "name": "reason"
+                },
+                {
+                  "title": "超标准",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "ulfee"
+                }
+              ]
+            },
+            {
+              "title": "超额",
+              "component": "radio",
+              "name": "travelnoreim.cateremarkout",
+              "editablenode": "usertask2,usertask5",
+              "options": [
+                {
+                  "title": "同意",
+                  "value": "1"
+                },
+                {
+                  "title": "财务制度执行",
+                  "value": "2"
+                }
+              ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "4"
+                  ]
+                }
+              ],
+              "validation": {
+                "pageid": "sqxxmx",
+                "required": true,
+                "validateMsg": "餐饮费是否超额必选",
+                "regexs": ""
+              }
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.catedmbtr"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "catedmbtrcap",
+              "name": "travelnoreim.catedmbtr"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.cateremark"
+            }
+          ]
+        },
+        {
+          "title": "公关费用",
+          "component": "panel",
+          "panel_id": "ggfy",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "5"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 3,
+              "id": "gg_sdate",
+              "basePath": "ocationalnos",
+              "tableForms": [
+                {
+                  "title": "招待日期",
+                  "component": "date1",
+                  "name": "ocdateno"
+                },
+                {
+                  "title": "出席员工姓名",
+                  "component": "text",
+                  "name": "ocattendno"
+                },
+                {
+                  "title": "客户",
+                  "component": "text",
+                  "name": "occustomno"
+                },
+                {
+                  "title": "招待地点",
+                  "component": "text",
+                  "name": "ocaddressno"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "ocmoneyno"
+                },
+                {
+                  "title": "事由说明",
+                  "component": "text",
+                  "name": "ocreasonno"
+                },
+                {
+                  "title": "备注",
+                  "component": "text",
+                  "name": "ocremarksno"
+                }
+              ]
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.ocdmbtrno"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "ocdmbtrcapno",
+              "name": "travelnoreim.ocdmbtrno"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.ocremarkno"
+            }
+          ]
+        },
+        {
+          "title": "员工其他差旅费用",
+          "component": "panel",
+          "panel_id": "other",
+          "showLinkage": [
+            {
+              "id": "reimtype",
+              "values": [
+                "6"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "formLabelLink",
+              "basePath": "others",
+              "id": "other_sdate",
+              "titleIndex": 2,
+              "linkForms": [
+                {
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "odate"
+                },
+                {
+                  "title": "金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "omoney"
+                },
+                {
+                  "title": "科目",
+                  "component": "linkToMap",
+                  "name": "kmmc",
+                  "linkToMap": {
+                    "linkToLable": "true",
+                    "mapBasePath": "mapkstarlevels",
+                    "linkMiddle": "okstar",
+                    "linkType": "string"
+                  }
+                },
+                {
+                  "title": "内容",
+                  "component": "text",
+                  "name": "ocontent"
+                }
+              ]
+            },
+            {
+              "title": "总计（小写）",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelnoreim.otherdmbtr"
+            },
+            {
+              "title": "总计（大写）",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "travelreimcap",
+              "name": "travelnoreim.otherdmbtr"
+            },
+            {
+              "title": "个人超限额说明",
+              "component": "textarea",
+              "rows": "2",
+              "name": "travelnoreim.otherremark"
+            }
+          ]
+        },
+        {
+          "title": "非差旅费汇总",
+          "component": "panel",
+          "panel_id": "total",
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 3,
+              "basePath": "nsums",
+              "id": "sums_sdate",
+              "tableForms": [
+                {
+                  "title": "类型",
+                  "component": "text",
+                  "name": "stype"
+                },
+                {
+                  "title": "开始日期",
+                  "component": "text",
+                  "name": "sdate"
+                },
+                {
+                  "title": "结束日期",
+                  "component": "text",
+                  "name": "edate"
+                },
+                {
+                  "title": "金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "summ"
+                }
+              ]
+            },
+            {
+              "title": "合计",
+              "component": "text",
+              "datatype": "money",
+              "name": "travelreim.wdmbtr1",
+              "sumValue": {
+                "arrayPath": "nsums",
+                "sumParam": "summ"
+              }
+            }
+          ]
+        },
+        {
+          "title": "财务审核",
+          "component": "panel",
+          "panel_id": "cw",
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 0,
+              "basePath": "fiviews",
+              "id": "cwsh_sdate",
+              "tableForms": [
+                {
+                  "title": "费用科目",
+                  "component": "text",
+                  "name": "excout"
+                },
+                {
+                  "title": "科目编号",
+                  "component": "text",
+                  "name": "subnum"
+                },
+                {
+                  "title": "报销金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "reimmoney"
+                },
+                {
+                  "title": "超额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "outmoney"
+                },
+                {
+                  "title": "扣款金额",
+                  "component": "text",
+                  "tasknode": "usertask9",
+                  "datatype": "money",
+                  "name": "debit"
+                },
+                {
+                  "title": "实付金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "report"
+                },
+                {
+                  "title": "扣款说明",
+                  "component": "text",
+                  "name": "fromrem"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "付款信息",
+          "component": "panel",
+          "tasknode": "usertask9",
+          "panel_id": "fk",
+          "subComponents": [
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "travelnoreim.exchrate"
+            },
+            {
+              "title": "付款金额",
+              "component": "text",
+              "name": "travelnoreim.exchrate",
+              "sumValue": {
+                "arrayPath": "fiviews",
+                "sumParam": "reimmoney"
+              }
+            },
+            {
+              "title": "结算方式",
+              "component": "select",
+              "name": "travelnoreim.setmode",
+              "options": [
+                {
+                  "text": "汇款",
+                  "value": "汇款"
+                },
+                {
+                  "text": "现金",
+                  "value": "现金"
+                }
+              ],
+              "validation": {
+                "pageid": "fk",
+                "required": true,
+                "validateMsg": "结算方式必选"
+              }
+            },
+            {
+              "title": "银行账户",
+              "component": "text",
+              "name": "travelnoreim.banknn",
+              "validation": {
+                "pageid": "fk",
+                "required": true,
+                "validateMsg": "银行账户填写必须"
+              }
+            },
+            {
+              "title": "开户行",
+              "component": "text",
+              "inputlimit": "digit",
+              "name": "travelnoreim.bankll"
+            },
+            {
+              "title": "付款通知说明",
+              "component": "select",
+              "name": "travelnoreim.payval",
+              "options": [
+                {
+                  "text": "已付款",
+                  "value": "1"
+                },
+                {
+                  "text": "未付款",
+                  "value": "0"
+                }
+              ],
+              "validation": {
+                "pageid": "fk",
+                "required": true,
+                "validateMsg": "付款通知说明必填"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+    "reimtype": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "1",
+          "text": "通讯费"
+        },
+        {
+          "value": "2",
+          "text": "交通费"
+        },
+        {
+          "value": "3",
+          "text": "业务招待费"
+        },
+        {
+          "value": "4",
+          "text": "餐饮费"
+        },
+        {
+          "value": "5",
+          "text": "公关费"
+        },
+        {
+          "value": "6",
+          "text": "员工其他费用"
+        }
+      ]
+    },
+    "trstsyps": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "01",
+          "text": "飞机"
+        },
+        {
+          "value": "02",
+          "text": "高铁"
+        },
+        {
+          "value": "03",
+          "text": "动车"
+        },
+        {
+          "value": "04",
+          "text": "火车400km以上"
+        },
+        {
+          "value": "05",
+          "text": "火车400km以下"
+        },
+        {
+          "value": "06",
+          "text": "轮船"
+        },
+        {
+          "value": "07",
+          "text": "汽车"
+        }
+      ]
+    },
+    "matlevels": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "0101",
+          "text": "飞机"
+        },
+        {
+          "value": "0201",
+          "text": "二等座"
+        },
+        {
+          "value": "0202",
+          "text": "无限制"
+        },
+        {
+          "value": "0301",
+          "text": "无限制"
+        },
+        {
+          "value": "0302",
+          "text": "二等座"
+        },
+        {
+          "value": "0401",
+          "text": "软卧"
+        },
+        {
+          "value": "0402",
+          "text": "硬卧"
+        },
+        {
+          "value": "0501",
+          "text": "软卧"
+        },
+        {
+          "value": "0502",
+          "text": "硬卧"
+        },
+        {
+          "value": "0503",
+          "text": "硬席"
+        },
+        {
+          "value": "0601",
+          "text": "一等舱"
+        },
+        {
+          "value": "0602",
+          "text": "二等舱"
+        },
+        {
+          "value": "0701",
+          "text": "无限制"
+        }
+      ]
+    },
+    "citys": {
+      "dataType": "array",
+      "data": [
+        {
+          "text": "请选择",
+          "value": ""
+        },
+        {
+          "text": "北京",
+          "value": "北京"
+        },
+        {
+          "text": "上海",
+          "value": "上海"
+        },
+        {
+          "text": "广州",
+          "value": "广州"
+        },
+        {
+          "text": "深圳",
+          "value": "深圳"
+        },
+        {
+          "text": "青岛",
+          "value": "青岛"
+        },
+        {
+          "text": "苏州",
+          "value": "苏州"
+        },
+        {
+          "text": "南京",
+          "value": "南京"
+        },
+        {
+          "text": "无锡",
+          "value": "无锡"
+        },
+        {
+          "text": "宁波",
+          "value": "宁波"
+        },
+        {
+          "text": "温州",
+          "value": "温州"
+        },
+        {
+          "text": "杭州",
+          "value": "杭州"
+        },
+        {
+          "text": "济南",
+          "value": "济南"
+        },
+        {
+          "text": "厦门",
+          "value": "厦门"
+        },
+        {
+          "text": "福州",
+          "value": "福州"
+        },
+        {
+          "text": "南宁",
+          "value": "南宁"
+        },
+        {
+          "text": "海口",
+          "value": "海口"
+        },
+        {
+          "text": "三亚",
+          "value": "三亚"
+        },
+        {
+          "text": "重庆",
+          "value": "重庆"
+        },
+        {
+          "text": "成都",
+          "value": "成都"
+        },
+        {
+          "text": "兰州",
+          "value": "兰州"
+        },
+        {
+          "text": "银川",
+          "value": "银川"
+        },
+        {
+          "text": "西宁",
+          "value": "西宁"
+        },
+        {
+          "text": "拉萨",
+          "value": "拉萨"
+        },
+        {
+          "text": "乌鲁木齐",
+          "value": "乌鲁木齐"
+        },
+        {
+          "text": "昆明",
+          "value": "昆明"
+        },
+        {
+          "text": "贵阳",
+          "value": "贵阳"
+        },
+        {
+          "text": "天津",
+          "value": "天津"
+        },
+        {
+          "text": "石家庄",
+          "value": "石家庄"
+        },
+        {
+          "text": "沈阳",
+          "value": "沈阳"
+        },
+        {
+          "text": "大连",
+          "value": "大连"
+        },
+        {
+          "text": "长春",
+          "value": "长春"
+        },
+        {
+          "text": "哈尔滨",
+          "value": "哈尔滨"
+        },
+        {
+          "text": "呼和浩特",
+          "value": "呼和浩特"
+        },
+        {
+          "text": "太原",
+          "value": "太原"
+        },
+        {
+          "text": "合肥",
+          "value": "合肥"
+        },
+        {
+          "text": "南昌",
+          "value": "南昌"
+        },
+        {
+          "text": "武汉",
+          "value": "武汉"
+        },
+        {
+          "text": "长沙",
+          "value": "长沙"
+        },
+        {
+          "text": "郑州",
+          "value": "郑州"
+        },
+        {
+          "text": "其他广东城市",
+          "value": "其他广东城市"
+        },
+        {
+          "text": "聊城",
+          "value": "聊城"
+        },
+        {
+          "text": "除聊城外其他城市",
+          "value": "除聊城外其他城市"
+        }
+      ]
+    },
+    "month": {
+      "dataType": "array",
+      "data": [
+        {
+          "text": "一月",
+          "value": "1"
+        },
+        {
+          "text": "二月",
+          "value": "2"
+        },
+        {
+          "text": "三月",
+          "value": "3"
+        },
+        {
+          "text": "四月",
+          "value": "4"
+        },
+        {
+          "text": "五月",
+          "value": "5"
+        },
+        {
+          "text": "六月",
+          "value": "6"
+        },
+        {
+          "text": "七月",
+          "value": "7"
+        },
+        {
+          "text": "八月",
+          "value": "8"
+        },
+        {
+          "text": "九月",
+          "value": "9"
+        },
+        {
+          "text": "十月",
+          "value": "10"
+        },
+        {
+          "text": "十一月",
+          "value": "11"
+        },
+        {
+          "text": "十二月",
+          "value": "12"
+        }
+      ]
+    }
+  }
+}
