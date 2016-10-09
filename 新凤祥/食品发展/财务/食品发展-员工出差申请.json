@@ -1,0 +1,196 @@
+{
+  "id": "fooddevcw_travel",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "travel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "travel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "travel.pernr",
+            "-",
+            "travel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "travel.sysbusinessunitname",
+            "-",
+            "travel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travel.id"
+        }
+      ]
+    },
+    {
+      "title": "出差申请明细",
+      "pageid": "ccmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "是否出国",
+          "component": "select",
+          "name": "travel.beup",
+          "options": [
+            {
+              "text": "不出国",
+              "value": "0"
+            },
+            {
+              "text": "出国",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "出差类型",
+          "component": "select",
+          "name": "travel.traveltype",
+          "options": [
+            {
+              "text": "出差",
+              "value": "0"
+            },
+            {
+              "text": "外出培训",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "component": "table_ccmx",
+          "titleIndex": 1,
+          "basePath": "bases",
+          "tableForms": [
+            {
+              "title":"出发日期",
+              "component":"text",
+              "editablenode": "",
+              "component": "date1",
+              "name":"startda"
+            },
+            {
+              "title":"到达日期",
+              "component":"text",
+              "editablenode": "",
+              "component": "date1",
+              "name":"endda"
+            },
+            {
+              "title":"出发地点",
+              "component":"text",
+              "editablenode": "",
+              "name":"splace"
+            },
+            {
+              "title":"到达地点",
+              "component":"text",
+              "editablenode": "",
+              "name":"eplace"
+            },
+            {
+              "title":"交通方式",
+              "component":"text",
+              "editablenode": "",
+              "name":"transmode"
+            },
+            {
+              "title":"是否签约宾馆",
+              "component":"text",
+              "editablenode": "",
+              "name":"besign"
+            },
+            {
+              "title":"工作内容",
+              "component":"text",
+              "editablenode": "",
+              "name":"workc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
