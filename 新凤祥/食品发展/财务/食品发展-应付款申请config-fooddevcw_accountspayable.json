@@ -1,0 +1,299 @@
+{
+	"id": "fooddevcw_accountspayable",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [{
+				"title": "付款所属公司",
+				"component": "label",
+				"editablenode": "",
+				"label": ["mainModel.fkbutxt"]
+			},
+			{
+			"title": "项目名",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.xmmone"
+		},
+		{
+			"title": "项目名称",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.xmmc"
+		},
+		{
+			"title": "公司代码",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.gsdm"
+		},
+		{
+			"title": "运行日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.yxdate"
+		},
+		{
+			"title": "标识",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.bs"
+		},
+		{
+			"title": "SAP用户名",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.sapusername"
+		},
+		{
+			"title": "分配",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.fp"
+		}]
+		},
+	{
+		"title": "付款信息",
+		"pageid": "fkxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "",
+			"component": "formLabelLink",
+			"tabletype": "looppanel",
+			"basePath": "apinfos",
+			"titleIndex":0,
+			"linkForms": [{
+				"title": "供应商编号",
+				"title1": "供应商编号",
+				"component": "text",
+				"editablenode": "",
+				"name": "gysbh"
+			},
+			{
+				"title": "",
+				"title1": "供应商名称",
+				"component": "text",
+				"editablenode": "",
+				"name": "gysmc"
+			},
+			{
+				"title": "",
+				"title1": "行文本",
+				"component": "text",
+				"editablenode": "",
+				"name": "hwb"
+			},
+			{
+				"title": "",
+				"title1": "采购组",
+				"component": "text",
+				"editablenode": "",
+				"name": "cgz"
+			},
+			{
+				"title": "",
+				"title1": "拖延天数",
+				"component": "text",
+				"editablenode": "",
+				"name": "tyts"
+			}
+			{
+				"title": "",
+				"title1": "货币",
+				"component": "text",
+				"editablenode": "",
+				"name": "hb"
+			},
+			{
+				"title": "",
+				"title1": "总金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "zje"
+			},
+			{
+				"title": "",
+				"title1": "付款金额",
+				"component": "text",
+				"editablenode": "",
+				"name": "fkje"
+			},
+			{
+				"title": "",
+				"title1": "付款方式",
+				"component": "text",
+				"editablenode": "",
+				"name": "fkfs"
+			},
+			{
+				"title": "",
+				"title1": "是否质保金",
+				"component": "text",
+				"editablenode": "",
+				"name": "isdel"
+			},
+			{
+				"title": "",
+				"title1": "供应商开户行",
+				"component": "text",
+				"editablenode": "",
+				"name": "gyskhh"
+			},
+			{
+				"title": "",
+				"title1": "供应商账号",
+				"component": "text",
+				"editablenode": "",
+				"name": "gyszh"
+			},
+			{
+				"title": "",
+				"title1": "采购组织",
+				"component": "text",
+				"editablenode": "",
+				"name": "cgzz"
+			},
+			{
+				"title": "",
+				"title1": "凭证编号",
+				"component": "text",
+				"editablenode": "",
+				"name": "pzbh"
+			}]
+		}]
+	},
+	{
+		"title": "金额统计",
+		"pageid": "jetj",
+		"component": "panel",
+		"subComponents": [{
+			"title": "总金额",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.zje"
+		},
+		{
+			"title": "付款金额",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.fkje"
+		},
+		{
+			"title": "备注",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.bz"
+		}]
+		},
+	{
+		"title": "附件信息",
+		"pageid": "fjxx",
+		"component": "panel",
+		"subComponents": []
+	},
+	{
+		"title": "审批记录",
+		"pageid": "spjl",
+		"component": "panel",
+		"subComponents": []
+	}]
+}

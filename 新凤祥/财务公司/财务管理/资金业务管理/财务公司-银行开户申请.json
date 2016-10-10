@@ -1,0 +1,273 @@
+{
+  "id": "cwfp_openaccount",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "openaccount.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "openaccount.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "openaccount.pernr",
+            "-",
+            "openaccount.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "openaccount.sysbusinessunitname",
+            "-",
+            "openaccount.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "openaccount.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "公司名称",
+          "component": "text",
+          "name": "openaccount.companyname"
+        },
+        {
+          "title": "开户行名称",
+          "component": "textarea",
+          "rows": 2,
+          "name": "openaccount.bankname"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "openaccount.applytype",
+          "options": [
+            {
+              "text": "内资银行",
+              "value": "0"
+            },
+            {
+              "text": "外资或境外银行",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户用途",
+          "component": "select",
+          "name": "openaccount.accountpurpose",
+          "options": [
+            {
+              "text": "经营性质",
+              "value": "0"
+            },
+            {
+              "text": "融资性质",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户类型",
+          "component": "radio",
+          "name": "openaccount.accountype",
+          "options": [
+            {
+              "text": "收入账户",
+              "value": "0"
+            },
+            {
+              "text": "支出账户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户性质",
+          "component": "radio",
+          "name": "openaccount.accountnature",
+          "options": [
+            {
+              "text": "基本户",
+              "value": "0"
+            },
+            {
+              "text": "一般户",
+              "value": "1"
+            },
+            {
+              "text": "专项户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "开户原因",
+          "component": "textarea",
+          "name": "openaccount.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "openaccount.bz"
+        },
+        {
+          "title": "业务执行人员",
+          "component": "text",
+          "name": "openaccount.businessexecutives",
+          "editablenode": "internalaudit,dbddaudit",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择业务执行人员"
+          },
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "businessexecutivesname",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "objid",
+              "nachn",
+              "stext"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "执行情况",
+      "pageid": "khryzxqkhb",
+      "component": "panel",
+      "tasknode":"bpopenaccount,adminrecord",
+      "subComponents": [
+        {
+          "title":"开户信息(账号)",
+          "component":"text",
+          "editablenode":"bpopenaccount",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写银行账号"
+          },
+          "name":"openaccount.bankaccount"
+        },
+        {
+          "title":"开户人员执行情况汇报",
+          "component":"textarea",
+          "editablenode":"bpopenaccount",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写执行情况"
+          },
+          "name":"openaccount.debrief"
+        }
+      ]
+    },
+    {
+      "title": "处理情况",
+      "pageid": "yhzhglyclqkhb",
+      "component": "panel",
+      "tasknode":"adminrecord",
+      "subComponents": [
+        {
+          "title":"处理情况汇报",
+          "component":"textarea",
+          "name":"openaccount.treatment",
+          "editablenode":"adminrecord",
+          "validation": {
+            "pageid": "yhzhglyclqkhb",
+            "required": true,
+            "validateMsg": "请填写处理情况"
+          }
+        }
+      ]
+    }
+  ]
+}

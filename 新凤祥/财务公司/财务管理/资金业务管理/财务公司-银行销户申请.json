@@ -1,0 +1,262 @@
+{
+  "id": "cwfp_cancelaccount",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "cancelaccount.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "cancelaccount.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "cancelaccount.pernr",
+            "-",
+            "cancelaccount.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "cancelaccount.sysbusinessunitname",
+            "-",
+            "cancelaccount.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cancelaccount.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "公司名称",
+          "component": "text",
+          "name": "cancelaccount.companyname"
+        },
+        {
+          "title": "开户行名称",
+          "component": "textarea",
+          "rows": 2,
+          "name": "cancelaccount.bankname"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "cancelaccount.applytype",
+          "options": [
+            {
+              "text": "内资银行",
+              "value": "0"
+            },
+            {
+              "text": "外资或境外银行",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户用途",
+          "component": "select",
+          "name": "cancelaccount.accountpurpose",
+          "options": [
+            {
+              "text": "经营性质",
+              "value": "0"
+            },
+            {
+              "text": "融资性质",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户类型",
+          "component": "radio",
+          "name": "cancelaccount.accountype",
+          "options": [
+            {
+              "text": "收入账户",
+              "value": "0"
+            },
+            {
+              "text": "支出账户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户性质",
+          "component": "radio",
+          "name": "cancelaccount.accountnature",
+          "options": [
+            {
+              "text": "基本户",
+              "value": "0"
+            },
+            {
+              "text": "一般户",
+              "value": "1"
+            },
+            {
+              "text": "专项户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "销户原因",
+          "component": "textarea",
+          "name": "cancelaccount.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "cancelaccount.bz"
+        },
+        {
+          "title": "业务执行人员",
+          "component": "text",
+          "name": "cancelaccount.businessexecutives",
+          "editablenode":"sfmsmaudit,financeaudit,usertask1",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择业务执行人员"
+          },
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "businessexecutivesname",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "objid",
+              "nachn",
+              "stext"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "销户情况",
+      "pageid": "ywryxhqkbg",
+      "component": "panel",
+      "tasknode":"cancelaudit,amrecord",
+      "subComponents": [
+        {
+          "title":"销户情况汇报",
+          "component":"textarea",
+          "name":"cancelaccount.debrief",
+          "editablenode":"cancelaudit",
+          "validation": {
+            "pageid": "ywryxhqkbg",
+            "required": true,
+            "validateMsg": "请填写销户情况"
+          }
+        }
+      ]
+    },
+    {
+      "title": "处理情况",
+      "pageid": "yhzhglyclqkhb",
+      "component": "panel",
+      "tasknode":"amrecord",
+      "subComponents": [
+        {
+          "title":"处理情况汇报",
+          "component":"textarea",
+          "name":"cancelaccount.treatment",
+          "editablenode":"amrecord",
+          "validation": {
+            "pageid": "yhzhglyclqkhb",
+            "required": true,
+            "validateMsg": "请填写处理情况"
+          }
+        }
+      ]
+    }
+  ]
+}
