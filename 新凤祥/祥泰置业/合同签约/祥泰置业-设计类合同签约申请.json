@@ -1,0 +1,417 @@
+{
+  "id": "xtfico_designcontract",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      "financeaudit"
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "designcontract.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "designcontract.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "designcontract.pernr",
+            "-",
+            "designcontract.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "designcontract.sysbusinessunitname",
+            "-",
+            "designcontract.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "designcontract.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同名称",
+          "component": "text",
+          "name": "designcontract.htmc"
+        },
+        {
+          "title": "需求部门",
+          "component": "text",
+          "name": "designcontract.xqbm"
+        },
+        {
+          "title": "合同执行状态",
+          "component": "select",
+          "name": "designcontract.htzxzt",
+          "options": [
+            {
+              "text": "正常",
+              "value": "0"
+            },
+            {
+              "text": "后补",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "预算类别",
+          "component": "select",
+          "name": "designcontract.yslb",
+          "options": [
+            {
+              "text": "预算内",
+              "value": "0"
+            },
+            {
+              "text": "预算外",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "designcontract.bz",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "0"
+            },
+            {
+              "text": "美元",
+              "value": "1"
+            },
+            {
+              "text": "欧元",
+              "value": "2"
+            },
+            {
+              "text": "英镑",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "合同金额(小写)",
+          "component": "text",
+          "name": "designcontract.htjexx"
+        },
+        {
+          "title": "合同金额大写",
+          "component": "text",
+          "name": "designcontract.htjedx"
+        },
+        {
+          "title": "需求类型",
+          "component": "select",
+          "name": "designcontract.xqlx",
+          "options": [
+            {
+              "text": "工程",
+              "value": "0"
+            },
+            {
+              "text": "常规",
+              "value": "1"
+            },
+            {
+              "text": "外协",
+              "value": "2"
+            },
+            {
+              "text": "IT",
+              "value": "3"
+            },
+            {
+              "text": "其他",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "合同页数",
+          "component": "text",
+          "name": "designcontract.htys"
+        }
+      ]
+    },
+    {
+      "title": "供应商信息",
+      "component": "panel",
+      "pageid": "gysxx",
+      "subComponents": [
+        {
+          "title": "供应商名称(全称)",
+          "component": "text",
+          "name": "designcontract.gysmc"
+        },
+        {
+          "title": "供应商类型",
+          "component": "select",
+          "name": "designcontract.gyslx",
+          "id": "self_sqxx_gyslx",
+          "options": [
+            {
+              "text": "合格供应商",
+              "value": "0"
+            },
+            {
+              "text": "一次供应商",
+              "value": "1"
+            },
+            {
+              "text": "战略合作伙伴",
+              "value": "2"
+            },
+            {
+              "text": "黑名单解冻",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "采购方式",
+          "component": "select",
+          "name": "designcontract.jgqdfs",
+          "id": "self_sqxx_gyslx",
+          "options": [
+            {
+              "text": "公开招标",
+              "value": "0"
+            },
+            {
+              "text": "邀请招标",
+              "value": "1"
+            },
+            {
+              "text": "其他",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "name": "designcontract.qtjgqdfs",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_gyslx",
+              "values": [
+                "4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "合同号信息",
+      "component": "panel",
+      "pageid": "hthxx",
+      "subComponents": [
+        {
+          "title": "是否为补充类合同",
+          "component": "select",
+          "name": "designcontract.sfwbclht",
+          "id": "self_hthxx_bclht",
+          "options": [
+            {
+              "text": "是",
+              "value": "0"
+            },
+            {
+              "text": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "原合同编号",
+          "component": "text",
+          "name": "designcontract.bcthbh",
+          "showLinkage": [
+            {
+              "id": "self_hthxx_bclht",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同编号类别",
+          "component": "select",
+          "name": "designcontract.htbhlb",
+          "refersToArray": {
+            "basePath": "snclist",
+            "value": "nccode",
+            "text": [
+              "nccode",
+              "-",
+              "ncname"
+            ]
+          }
+        },
+        {
+          "title": "公司信息",
+          "component": "label",
+          "middleName": [
+            "designcontract.gsxx",
+            "bukrs"
+          ],
+          "label": [
+            "designcontract.gsxx",
+            "-",
+            "t001list.butxt"
+          ]
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "designcontract.htbh"
+        }
+      ]
+    },
+    {
+      "title": "印章信息",
+      "component": "panel",
+      "pageid": "yzxx",
+      "subComponents": [
+        {
+          "title": "用印类型",
+          "component": "select",
+          "name": "designcontract.yylx",
+          "options": [
+            {
+              "text": "普通用印",
+              "value": "0"
+            },
+            {
+              "text": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "label",
+          "editablenode": "",
+          "middleName": [
+            "designcontract.yzmc",
+            "sealid"
+          ],
+          "label": [
+            "sealeInforList.sealtext"
+          ]
+        },
+        {
+          "title": "印章管理员",
+          "component": "text",
+          "name": "designcontract.yzgly"
+        },
+        {
+          "title": "印章使用",
+          "component": "label",
+          "label": [
+            "一式",
+            "designcontract.yzsyfs",
+            "份,共",
+            "designcontract.yzsyms",
+            "枚"
+          ]
+        },
+        {
+          "title": "印章使用日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "designcontract.yzsyrq"
+        },
+        {
+          "title": "计划归还日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "designcontract.jhghrq"
+        }
+      ]
+    }
+  ]
+}

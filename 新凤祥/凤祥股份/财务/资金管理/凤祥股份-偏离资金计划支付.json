@@ -1,0 +1,216 @@
+{
+  "id": "fxcw_deviateplan",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "类别",
+          "component": "select",
+          "name": "mainModel.sqlb",
+          "options": [
+            {
+              "text": "工程项目类",
+              "value": "0"
+            },
+            {
+              "text": "非工程项目类",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "资金调拨",
+          "component": "select",
+          "name": "mainModel.zjdb",
+          "options": [
+            {
+              "text": "无需资金调拨",
+              "value": "0"
+            },
+            {
+              "text": "需资金调拨",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "汇入单位",
+          "component": "text",
+          "name": "mainModel.hrdw"
+        },
+        {
+          "title": "要求付款日期",
+          "component": "date1",
+          "name": "mainModel.yqfkrq"
+        },
+        {
+          "title": "付款用途",
+          "component": "text",
+          "name": "mainModel.fkyt"
+        },
+        {
+          "title": "汇入地点",
+          "component": "text",
+          "name": "mainModel.hrdd"
+
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "mainModel.hrh"
+        },
+        {
+          "title": "收款人",
+          "component": "text",
+          "name": "mainModel.skr"
+        },
+        {
+          "title": "账户",
+          "component": "text",
+          "name": "mainModel.zh"
+        },
+        {
+          "title": "申请金额(小写)",
+          "component": "text",
+          "name": "mainModel.sqjexx"
+        },
+        {
+          "title": "申请金额(大写)",
+          "component": "text",
+          "name": "mainModel.sqjedx"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "mainModel.biz",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "1"
+            },
+            {
+              "text": "美元",
+              "value": "2"
+            },
+            {
+              "text": "英镑",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "偏离计划原因",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.pljhreason"
+        }
+      ]
+    }
+  ]
+}
