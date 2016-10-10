@@ -1,0 +1,282 @@
+{
+  "id": "cp_budgetadd",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "budgetadd.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "budgetadd.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "budgetadd.pernr",
+            "-",
+            "budgetadd.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "budgetadd.sysbusinessunitname",
+            "-",
+            "budgetadd.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算增加原因",
+          "component": "textarea",
+          "rows": 4,
+          "name": "budgetadd.yszjyy"
+        }
+      ]
+    },
+    {
+      "title": "详细信息",
+      "pageid": "ysxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 7,
+          "basePath": "childlist",
+          "tableForms": [
+            {
+              "title": "日期",
+              "component": "text",
+              "name": "sdate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "预算年",
+              "component": "text",
+              "name": "gjahr"
+            },
+            {
+              "title": "公司",
+              "component": "label",
+              "label": [
+                "bukrs",
+                "-",
+                "bukrsname"
+              ]
+            },
+            {
+              "title": "部门",
+              "component": "label",
+              "label": [
+                "branchid",
+                "-",
+                "branch"
+              ]
+            },
+            {
+              "title": "项目类型",
+              "component": "label",
+              "label": [
+                "itype",
+                "-",
+                "itypename"
+              ]
+            },
+            {
+              "title": "资产大类",
+              "component": "label",
+              "label": [
+                "ktorg",
+                "-",
+                "ktorgname"
+              ]
+            },
+            {
+              "title": "资产分类",
+              "component": "label",
+              "label": [
+                "anlkl",
+                "-",
+                "anlklname"
+              ]
+            },
+            {
+              "title": "预算项目",
+              "component": "label",
+              "label": [
+                "itemid",
+                "-",
+                "item"
+              ]
+            },
+            {
+              "title": "项目号",
+              "component": "label",
+              "label": [
+                "colnr",
+                "-",
+                "colnrname"
+              ]
+            },
+            {
+              "title": "子项目号",
+              "component": "text",
+              "name": "buzei"
+            },
+            {
+              "title": "成本中心",
+              "component": "label",
+              "label": [
+                "kostl",
+                "-",
+                "orgeh"
+              ]
+            },
+            {
+              "title": "需求部门",
+              "component": "text",
+              "name": "orgeh"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "number"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "waers"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "exchangerate"
+            },
+            {
+              "title": "预算单价(元)",
+              "component": "text",
+              "name": "perhslall",
+              "datatype": "money"
+            },
+            {
+              "title": "预算总额(元)",
+              "component": "text",
+              "name": "hslall",
+              "datatype": "money"
+            },
+            {
+              "title": "预算说明",
+              "component": "text",
+              "name": "smemo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "审批人信息",
+      "pageid": "spryxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "事业部/预算对接人",
+          "component": "text",
+          "name": "budgetadd.sybdjrname"
+        },
+        {
+          "title": "事业部总经理",
+          "component": "text",
+          "name": "budgetadd.sybzjlname"
+        },
+        {
+          "title": "集团/固定资产管理员",
+          "component": "text",
+          "name": "budgetadd.cwysfzrname"
+        }
+      ]
+    }
+  ]
+}
