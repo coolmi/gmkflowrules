@@ -1,0 +1,210 @@
+{
+  "id": "gmk_resignateion",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "resignateion.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "resignateion.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "resignateion.pernr",
+            "-",
+            "resignateion.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "resignateion.sysbusinessunitname",
+            "-",
+            "resignateion.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "resignateion.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "离职人员",
+          "component": "text",
+          "name": "resignateion.dnachn"
+        },
+        {
+          "title": "合同到期日",
+          "component": "date1",
+          "editablenode": "usertask3",
+          "name": "resignateion.contractdate"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "resignateion.dxl"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "resignateion.dzy"
+        },
+        {
+          "title": "毕业日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "resignateion.byrq"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "resignateion.entrydate"
+        },
+        {
+          "title": "个人联系方式",
+          "component": "text",
+          "name": "resignateion.dtelephone"
+        },
+        {
+          "title": "出生日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "resignateion.bireth"
+        },
+        {
+          "title": "所属部门",
+          "component": "text",
+          "name": "resignateion.dorgname"
+        },
+        {
+          "title": "职位",
+          "component": "text",
+          "name": "resignateion.dpostname"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "resignateion.dcompany"
+        },
+        {
+          "title": "离职类别",
+          "editablenode": "",
+          "component": "select",
+          "name": "resignateion.massg",
+          "options": [
+            {
+              "text": "辞职",
+              "value": "0"
+            },
+            {
+              "text": "合同到期",
+              "value": "1"
+            },
+            {
+              "text": "退休",
+              "value": "2"
+            },
+            {
+              "text": "其他",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "申请离职日期",
+          "component": "date1",
+          "editablenode": "usertask1,usertask2",
+          "name": "resignateion.dhzlzrq"
+        },
+        {
+          "title": "离职原因",
+          "component": "textarea",
+          "name": "resignateion.leavereason",
+          "rows": "3"
+        }
+      ]
+    }
+  ]
+}

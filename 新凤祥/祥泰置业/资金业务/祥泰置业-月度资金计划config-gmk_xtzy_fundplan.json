@@ -1,0 +1,163 @@
+{
+  "id": "gmk_xtzy_fundplan",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "app.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "app.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "app.pernr",
+            "-",
+            "app.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "app.sysbusinessunitname",
+            "-",
+            "app.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.id"
+        }
+      ]
+    },
+    {
+      "title": "资金计划信息",
+      "pageid": "zjjhxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "id": "table_zjjx",
+          "titleIndex": 3,
+          "basePath": "bases",
+          "tableForms": [
+            {
+              "title": "用款开始日期",
+              "component": "date1",
+              "name": "s_sdate"
+            },
+            {
+              "title": "用款结束日期",
+              "component": "date1",
+              "name": "s_edate"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_money"
+            },
+            {
+              "title": "公司名称",
+              "component": "text",
+              "name": "s_compnm"
+            },
+            {
+              "title": "用途",
+              "component": "textarea",
+              "rows": "2",
+              "name": "s_uses"
+            }
+          ]
+        },
+        {
+          "title": "提报周报",
+          "component": "text",
+          "name": "app.c_period"
+        },
+        {
+          "title": "合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.c_count"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "2",
+          "name": "app.c_remark"
+        }
+      ]
+    }
+  ]
+}
