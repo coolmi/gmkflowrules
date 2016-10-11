@@ -1,0 +1,175 @@
+{
+  "id": "fooddevcw_planment",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+
+        {
+          "title": "提报周期",
+          "component": "select",
+          "name": "mainModel.tbzq",
+          "options": [
+            {
+              "text": "日常",
+              "value": "0"
+            },
+            {
+              "text": "月度",
+              "value": "1"
+            },
+            {
+              "text": "季度",
+              "value": "2"
+            },
+            {
+              "text": "年度",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "提报公司",
+          "component": "text",
+          "name": "mainModel.tbgs"
+        },
+        {
+          "title": "类别",
+          "component": "select",
+          "name": "mainModel.sqlb",
+          "options": [
+            {
+              "text": "工程项目类",
+              "value": "0"
+            },
+            {
+              "text": "非工程项目类",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "计划开始",
+          "component": "date1",
+          "name": "mainModel.jhrqstart"
+        },
+        {
+          "title": "计划结束",
+          "component": "date1",
+          "name": "mainModel.jhrqend"
+        },
+        {
+          "title": "计划说明",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.jhsm"
+        }
+      ]
+    }
+  ]
+}

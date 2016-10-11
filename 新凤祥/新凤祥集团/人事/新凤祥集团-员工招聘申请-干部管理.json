@@ -1,0 +1,142 @@
+{
+    "id": "gmk_cadrerecruit",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "name": "cadrerecruit.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "cadrerecruit.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": ["cadrerecruit.pernr", "-", "cadrerecruit.username"]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": ["cadrerecruit.sysbusinessunitname", "-", "cadrerecruit.sysdeptname"]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "cadrerecruit.id"
+                }
+            ]
+        },
+        {
+            "title": "表单基本信息",
+            "pageid": "bdjbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                "title": "所属公司",
+                "component": "text",
+                "name": "cadrerecruit.r_butxt"
+                },
+                    {
+                    "title": "招聘需求岗位",
+                    "component": "text",
+                    "name": "cadrerecruit.r_postnm"
+                },
+                {
+                    "title": "需求人数",
+                    "component": "text",
+                    "name": "cadrerecruit.r_num"
+                },
+                {
+                    "title": "需求原因",
+                    "component": "select",
+                    "name": "cadrerecruit.r_reason",
+                    "options": [
+                        {
+                            "text": "替补",
+                            "value": "1"
+                        },
+                        {
+                            "text": "空编",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "title": "期望到岗日期",
+                    "component": "date1",
+                    "name": "cadrerecruit.r_indate"
+                },
+                {
+                    "title": "需求岗位发起人",
+                    "component": "text",
+                    "name": "cadrerecruit.r_applyname"
+                },
+                {
+                    "title": "其他素质要求",
+                    "component": "textarea",
+                    "name": "cadrerecruit.r_request"
+                }
+            ]
+        }
+    ]
+}

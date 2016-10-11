@@ -1,0 +1,394 @@
+{
+  "id": "gmk_cadretransfer",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "cadretransfer.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "cadretransfer.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "cadretransfer.pernr",
+            "-",
+            "cadretransfer.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "cadretransfer.sysbusinessunitname",
+            "-",
+            "cadretransfer.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadretransfer.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "变动类型",
+          "component": "text",
+          "name": "cadretransfer.t_type"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "cadretransfer.t_butxt_a"
+        },
+         {
+          "title": "拟变动人",
+          "component": "label",
+          "label": ["cadretransfer.t_postid_b","-","cadretransfer.t_name","-","cadretransfer.t_postnm_b"]
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "cadretransfer.t_pernr"
+        },
+        {
+          "title": "所在部门",
+          "component": "text",
+          "name": "cadretransfer.t_xl"
+        },
+        {
+          "title": "所在岗位",
+          "component": "text",
+          "name": "cadretransfer.t_pernr"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "cadretransfer.t_xl"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "cadretransfer.t_zy"
+        },
+        {
+          "title": "毕业日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "cadretransfer.t_byrq"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "cadretransfer.t_indate"
+        },
+        {
+          "title": "手机",
+          "component": "text",
+          "name": "cadretransfer.t_tel"
+        },
+        {
+          "title": "出生日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "cadretransfer.t_birth"
+        }
+      ]
+    },
+    {
+      "title": "调动前信息",
+      "pageid": "bgqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "拟调出公司",
+          "component": "text",
+          "name": "cadretransfer.t_butxt_b"
+        },
+        {
+          "title": "拟调出部门",
+          "component": "text",
+          "name": "cadretransfer.t_objnm_b"
+        },
+         {
+          "title": "拟调出岗位",
+          "component": "text",
+          "name": "cadretransfer.t_postnm_b"
+        },
+        {
+          "title": "拟调出职务",
+          "component": "text",
+          "name": "cadretransfer.t_jobnm_b"
+        },
+         {
+          "title": "拟调出级别",
+          "component": "text",
+          "name": "cadretransfer.t_level_b"
+        },
+        {
+          "title": "进入岗位日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "cadretransfer.t_indate_b"
+        },
+        {
+          "title": "事由",
+          "component": "textarea",
+          "name": "cadretransfer.reason"
+        }
+      ]
+    },    
+    {
+      "title": "拟调整信息",
+      "pageid": "bghxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "拟调整公司",
+          "component": "text",
+          "name": "cadretransfer.t_butxt_a"
+        },
+        {
+          "title": "拟调整部门",
+          "component": "text",
+          "name": "cadretransfer.t_objnm_a"
+        },
+         {
+          "title": "拟调整岗位",
+          "component": "label",
+          "label": ["cadretransfer.t_postid_a","-","cadretransfer.t_postnm_a"]
+        },
+        {
+          "title": "拟调整职务",
+          "component": "text",
+          "name": "cadretransfer.t_jobnm_a"
+        },
+         {
+          "title": "拟调整级别",
+          "component": "text",
+          "name": "cadretransfer.t_level_a"
+        },
+        {
+          "title": "建议到岗日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "cadretransfer.t_indate_a"
+        }
+      ]
+    },
+    {
+      "title": "人力资源部填写",
+      "pageid": "rlzybtx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "执行情况填写",
+          "component": "checkbox",
+          "id": "lzzxqk",
+          "editablenode": "usertask8",
+          "tasknode": "usertask8",
+          "name": "cadretransfer.doresult",
+          "islinkage": true,
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请选择执行情况"
+          },
+          "handleLinkage": [
+            {
+              "id": "qtsxsm1",
+              "values": [
+                "3"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "完成员工通知",
+              "value": "1"
+            },
+            {
+              "text": "完成薪资结算",
+              "value": "2"
+            },
+            {
+              "text": "其他事项",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "其他事项说明",
+          "id": "qtsxsm1",
+          "component": "textarea",
+          "editablenode": "usertask8",
+          "tasknode": "usertask8",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写其他事项说明"
+          },
+          "name": "cadretransfer.otherinfo",
+          "showLinkage": [
+            {
+              "id": "lzzxqk",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "存档、备案情况填写",
+          "component": "checkbox",
+          "id": "cdbaqktx",
+          "tasknode": "usertask8",
+          "editablenode": "usertask8",
+          "name": "cadretransfer.storresult",
+          "islinkage": true,
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请选择存档、备案情况"
+          },
+          "handleLinkage": [
+            {
+              "id": "qtsxsm2",
+              "values": [
+                "3"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "完成存档",
+              "value": "1"
+            },
+            {
+              "text": "完成备案",
+              "value": "2"
+            },
+            {
+              "text": "其他事项",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "其他事项说明",
+          "id": "qtsxsm2",
+          "component": "textarea",
+          "editablenode": "usertask8",
+          "tasknode": "usertask8",
+          "name": "cadretransfer.otherinfo2",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写其他事项说明"
+          },
+          "showLinkage": [
+            {
+              "id": "cdbaqktx",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "id": "fxhr_workhandover",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "异动人姓名",
+          "component": "text",
+          "name": "mainModel.dnachn"
+        },
+        {
+          "title": "异动人岗位名称",
+          "component": "text",
+          "name": "mainModel.djobname"
+        },
+        {
+          "title": "异动人所属部门",
+          "component": "text",
+          "name": "mainModel.dorgname"
+        },
+        {
+          "title": "异动人职务",
+          "component": "text",
+          "name": "mainModel.dorgname"
+        },
+        {
+          "title": "IT资源清单自查",
+          "component": "text",
+          "name": "mainModel.dtelephone"
+        },
+        {
+          "title": "宿舍号码",
+          "component": "text",
+          "name": "mainModel.dcompany"
+        },
+        {
+          "title": "备用金额",
+          "component": "text",
+          "name": "mainModel.entrydate"
+        },
+        {
+          "title": "员工固定资产使用",
+          "component": "text",
+          "name": "mainModel.dqrlgrq"
+        },
+        {
+          "title": "公司档案借用",
+          "component": "text",
+          "name": "mainModel.entrydate"
+        },
+        {
+          "title": "培训协议",
+          "component": "text",
+          "name": "mainModel.dqrlgrq"
+        },
+        {
+          "title": "异动类型",
+          "component": "select",
+          "name": "mainModel.bdlx",
+          "options": [
+            {
+              "text": "员工离职",
+              "value": "1"
+            },
+            {
+              "text": "员工调动",
+              "value": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "交接结果",
+      "pageid": "jjjgyjck",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "mainModelsituations",
+          "tableForms": [
+            {
+              "title": "任务名称",
+              "component": "text",
+              "name": "taskdefinitionname"
+            },
+            {
+              "title": "办理人",
+              "component": "text",
+              "name": "username"
+            },
+            {
+              "title": "交接结果",
+              "component": "select",
+              "name": "situation",
+              "options": [
+                {
+                  "text": "已完成本环节得工作交接",
+                  "value": "0"
+                },
+                {
+                  "text": "未完成本环节工作交接",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请选择交接情况",
+          "component": "radio",
+          "notShowOnView": true,
+          "tasknode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "editablenode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "name": "mainModel.jjqk",
+          "validation": {
+            "pageid": "jjjgyjck",
+            "required": true,
+            "validateMsg": "请选择交接情况"
+          },
+          "options": [
+            {
+              "title": "已完成本环节得工作交接",
+              "value": "0"
+            },
+            {
+              "title": "未完成本环节工作交接",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

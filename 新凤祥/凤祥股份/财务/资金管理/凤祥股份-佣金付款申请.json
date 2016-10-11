@@ -1,0 +1,209 @@
+{
+  "id": "fxcw_commissionpay",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "付款所属公司",
+          "component": "text",
+          "name": "mainModel.fkbutxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.fkotxt"
+        },
+        {
+          "title": "标题名称",
+          "component": "text",
+          "name": "mainModel.btmc"
+        },
+        {
+          "title": "重要程度",
+          "component": "radio",
+          "name": "mainModel.zycd",
+          "options": [
+            {
+              "text": "普通",
+              "value": "0"
+            },
+            {
+              "text": "重要",
+              "value": "1"
+            }
+          ]
+
+        },
+        {
+          "title": "金额(小写)",
+          "component": "text",
+          "name": "mainModel.jexx"
+        },
+        {
+          "title": "金额(大写)",
+          "component": "text",
+          "name": "mainModel.jedx"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "mainModel.gysdm"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.gysmc"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "mainModel.biz",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "0"
+            },
+            {
+              "text": "美元",
+              "value": "1"
+            },
+            {
+              "text": "欧元",
+              "value": "2"
+            },
+            {
+              "text": "英镑",
+              "value": "2"
+            },
+            {
+              "text": "加元",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "name": "mainModel.fjnum"
+        },
+        {
+          "title": "申请事由",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.sqsy"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "mainModel.zcsr"
+        }
+      ]
+    }
+  ]
+}

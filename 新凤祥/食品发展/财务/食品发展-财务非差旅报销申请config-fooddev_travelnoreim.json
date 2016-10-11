@@ -331,6 +331,8 @@
             },
             {
               "title": "超额",
+              "panel_id": "txf",
+
               "component": "radio",
               "name": "travelnoreim.clremarkout",
               "editablenode": "usertask2,usertask5",
@@ -353,6 +355,7 @@
                 }
               ],
               "validation": {
+                "panel_id": "txf",
                 "pageid": "sqxxmx",
                 "required": true,
                 "validateMsg": "通讯费是否超额必选",
@@ -474,6 +477,7 @@
                 }
               ],
               "validation": {
+                "panel_id": "jt",
                 "pageid": "sqxxmx",
                 "required": true,
                 "validateMsg": "交通费是否超额必选",
@@ -656,6 +660,7 @@
                 }
               ],
               "validation": {
+                "panel_id": "cy",
                 "pageid": "sqxxmx",
                 "required": true,
                 "validateMsg": "餐饮费是否超额必选",
