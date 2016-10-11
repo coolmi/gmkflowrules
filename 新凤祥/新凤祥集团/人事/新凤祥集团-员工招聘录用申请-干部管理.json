@@ -1,0 +1,296 @@
+{
+  "id": "gmk_cadrehire",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "cadrehire.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "cadrehire.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "cadrehire.pernr",
+            "-",
+            "cadrehire.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "cadrehire.sysbusinessunitname",
+            "-",
+            "cadrehire.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "cadrehire.id"
+        }
+      ]
+    },
+    {
+      "title": "应聘者信息",
+      "pageid": "ypzxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "姓名",
+          "component": "text",
+          "name": "cadrehire.r_name"
+        },
+        {
+          "title": "出生日期",
+          "component": "date1",
+          "name": "cadrehire.r_birthdate"
+        },
+        {
+          "title": "性别",
+          "component": "radio",
+          "name": "cadrehire.r_gender",
+          "options": [
+            {
+              "text": "女",
+              "value": "女"
+            },
+            {
+              "text": "男",
+              "value": "男"
+            }
+          ]
+        },
+        {
+          "title": "籍贯",
+          "component": "text",
+          "name": "cadrehire.r_nativeplace"
+        },
+        {
+          "title": "联系方式",
+          "component": "text",
+          "name": "cadrehire.r_contacts"
+        },
+        {
+          "title": "婚姻状况",
+          "component": "radio",
+          "name": "cadrehire.r_marital",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "最高学历",
+          "component": "text",
+          "name": "cadrehire.r_education"
+        },
+        {
+          "title": "毕业时间",
+          "component": "date1",
+          "name": "cadrehire.r_graduatetime"
+        },
+        {
+          "title": "毕业院校",
+          "component": "text",
+          "name": "cadrehire.r_graduateschool"
+        },
+        {
+          "title": "专业",
+          "component": "date1",
+          "name": "cadrehire.r_major"
+        },
+        {
+          "title": "合同期",
+          "component": "select",
+          "name": "cadrehire.r_contractperiod",
+          "options": [
+            {
+              "text": "三年",
+              "value": "三年"
+            },
+            {
+              "text": "五年",
+              "value": "五年"
+            }
+          ]
+        },
+        {
+          "title": "试用期",
+          "component": "text",
+          "name": "cadrehire.r_trialperiod"
+        },
+        {
+          "title": "合同履约地",
+          "component": "text",
+          "name": "cadrehire.r_contractsite"
+        },
+        {
+          "title": "社保缴纳地",
+          "component": "text",
+          "name": "cadrehire.r_securitysite"
+        },
+        {
+          "title": "社保缴纳基数",
+          "component": "text",
+          "name": "cadrehire.r_securitybase"
+        },
+        {
+          "title": "报到时间",
+          "component": "text",
+          "name": "cadrehire.r_registerdate"
+        },
+        {
+          "title": "初试时间",
+          "component": "date1",
+          "name": "cadrehire.r_examinetime"
+        },
+        {
+          "title": "初试人",
+          "component": "text",
+          "name": "cadrehire.r_examineper"
+        },
+        {
+          "title": "复试时间",
+          "component": "date1",
+          "name": "cadrehire.r_reexaminetime"
+        },
+        {
+          "title": "复试人",
+          "component": "text",
+          "name": "cadrehire.r_reexamineper"
+        },
+        {
+          "title": "简历来源",
+          "component": "text",
+          "name": "cadrehire.r_resumesource"
+        },
+        {
+          "title": "简历及背调",
+          "component": "text",
+          "name": "cadrehire.docmentafresconame",
+          "events": {
+            "eventType": "openDocument",
+            "filename": "cadrehire.docmentafresconame",
+            "afrescoid": "cadrehire.docmentafrescoid"
+          }
+        }
+      ]
+    },
+    {
+      "title": "面试意见",
+      "component": "panel",
+      "pageid": "msyj",
+      "subComponents": [
+        {
+          "title": "面试评价",
+          "component": "textarea",
+          "tasknode": "usertask2,usertask3,usertask10,usertask4,usertask8",
+          "editablenode": "usertask2",
+          "name": "cadrehire.r_interviewidea",
+          "rows": "3",
+          "validation": {
+            "pageid": "msyj",
+            "required": true,
+            "validateMsg": "请填写面试意见"
+          }
+        }
+      ]
+    },
+    {
+      "title": "薪酬意见",
+      "component": "panel",
+      "pageid": "xcyj",
+      "subComponents": [
+        {
+          "title": "薪酬依据",
+          "component": "textarea",
+          "tasknode": "usertask3,usertask10,usertask4,usertask8",
+          "editablenode": "usertask3",
+          "name": "cadrehire.r_salarybasis",
+          "rows": "3",
+          "validation": {
+            "pageid": "xcyj",
+            "required": true,
+            "validateMsg": "请填写薪酬依据"
+          }
+        }
+      ]
+    }
+  ]
+}

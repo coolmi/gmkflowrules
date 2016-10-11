@@ -1,8 +1,7 @@
 {
-  "id": "gmk_needmoney",
+  "id": "it_largefixedassets",
   "handleOnPC": {
     "tasknode": [
-      ""
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      ""
     ],
     "beforPop": false
   },
@@ -23,7 +21,6 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
@@ -107,67 +104,99 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "请款类型",
+          "title": "维修合同号",
           "component": "text",
-          "name": "mainModel.m_typenm"
+          "name": "mainModel.wxhth"
+        },
+        {
+          "title": "合同金额",
+          "component": "text",
+          "name": "mainModel.htje"
+        },
+        {
+          "title": "合同有效期始",
+          "component": "text",
+          "name": "mainModel.htyxqstart",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "合同有效期止",
+          "component": "text",
+          "name": "mainModel.htyxqend",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.ygsmc"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "mainModel.biz"
         }
       ]
     },
     {
-      "title": "请款子表",
-      "pageid": "sbqkzb",
+      "title": "详细信息",
+      "pageid": "xxxxppd",
       "component": "panel",
       "subComponents": [
         {
-          "titleIndex": 1,
-          "title": "",
           "component": "table_form",
-          "id": "self_sbqkzb_tmp",
-          "basePath": "needmoney_sublist",
+          "titleIndex": "3",
+          "basePath": "infos",
           "tableForms": [
             {
-              "title": "所属公司",
-              "name": "s_compnm",
-              "component": "text"
-            },
-            {
-              "title": "请款用途",
-              "name": "s_uses",
-              "component": "text"
-            },
-            {
-              "title": "请款金额",
-              "name": "s_je",
+              "title": "资产编号",
               "component": "text",
-              "datatype": "money"
-            },
-
-            {
-              "title": "金额大写",
-              "name": "s_jedx",
-              "component": "text"
+              "name": "propertycode"
             },
             {
-
-           "title": "结算类别",
-              "name": "s_jslb",
-              "component": "text"
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "anln1"
             },
             {
-              "title": "供应商",
-              "name": "s_gys",
-              "component": "text"
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatg"
             },
             {
-              "title": "银行账号",
-              "name": "s_zh",
-              "component": "text"
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "baspa"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "出厂编号",
+              "component": "text",
+              "name": "ccbh"
+            },
+            {
+              "title": "所属法人公司",
+              "component": "text",
+              "name": "bukrsnm"
             }
           ]
         }
       ]
-
     }
-
   ]
 }

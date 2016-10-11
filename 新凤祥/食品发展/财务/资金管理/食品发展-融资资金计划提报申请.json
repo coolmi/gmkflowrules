@@ -1,5 +1,5 @@
 {
-  "id": "gmk_needmoney",
+  "id": "fooddevcw_planment",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -29,11 +29,13 @@
         {
           "title": "申请日期",
           "component": "date1",
+          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -43,6 +45,7 @@
         {
           "title": "所属部门",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
@@ -106,68 +109,67 @@
       "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
-        {
-          "title": "请款类型",
-          "component": "text",
-          "name": "mainModel.m_typenm"
-        }
-      ]
-    },
-    {
-      "title": "请款子表",
-      "pageid": "sbqkzb",
-      "component": "panel",
-      "subComponents": [
-        {
-          "titleIndex": 1,
-          "title": "",
-          "component": "table_form",
-          "id": "self_sbqkzb_tmp",
-          "basePath": "needmoney_sublist",
-          "tableForms": [
-            {
-              "title": "所属公司",
-              "name": "s_compnm",
-              "component": "text"
-            },
-            {
-              "title": "请款用途",
-              "name": "s_uses",
-              "component": "text"
-            },
-            {
-              "title": "请款金额",
-              "name": "s_je",
-              "component": "text",
-              "datatype": "money"
-            },
 
+        {
+          "title": "提报周期",
+          "component": "select",
+          "name": "mainModel.tbzq",
+          "options": [
             {
-              "title": "金额大写",
-              "name": "s_jedx",
-              "component": "text"
+              "text": "日常",
+              "value": "0"
             },
             {
-
-           "title": "结算类别",
-              "name": "s_jslb",
-              "component": "text"
+              "text": "月度",
+              "value": "1"
             },
             {
-              "title": "供应商",
-              "name": "s_gys",
-              "component": "text"
+              "text": "季度",
+              "value": "2"
             },
             {
-              "title": "银行账号",
-              "name": "s_zh",
-              "component": "text"
+              "text": "年度",
+              "value": "3"
             }
           ]
+        },
+        {
+          "title": "提报公司",
+          "component": "text",
+          "name": "mainModel.tbgs"
+        },
+        {
+          "title": "类别",
+          "component": "select",
+          "name": "mainModel.sqlb",
+          "options": [
+            {
+              "text": "工程项目类",
+              "value": "0"
+            },
+            {
+              "text": "非工程项目类",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "计划开始",
+          "component": "date1",
+          "name": "mainModel.jhrqstart"
+        },
+        {
+          "title": "计划结束",
+          "component": "date1",
+          "name": "mainModel.jhrqend"
+        },
+        {
+          "title": "计划说明",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.jhsm"
         }
       ]
-
     }
-
   ]
 }

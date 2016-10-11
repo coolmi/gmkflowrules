@@ -1,0 +1,248 @@
+{
+  "id": "fooddevcw_financialnumber",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "bhbgsq",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "申请类型",
+					"component": "radio",
+					"id": "mainModel_sqlx",
+					"editablenode": "",
+					"name": "mainModel.sqlx",
+					"options": [
+						{
+							"text": "申请",
+							"value": "0",
+						},
+						{
+							"text": "变更",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "申请人所属公司",
+					"component": "text",
+					"id": "mainModel_fkbutxt",
+					"editablenode": "",
+					"name": "mainModel.fkbutxt"
+				},
+				{
+					"title": "员工姓名",
+					"component": "text",
+					"id": "mainModel_nachn",
+					"editablenode": "",
+					"name": "mainModel.nachn"
+				},
+				{
+					"title": "员工ITCODE",
+					"component": "text",
+					"id": "mainModel_ygitcode",
+					"editablenode": "",
+					"name": "mainModel.ygitcode"
+				},
+				{
+					"title": "员工编号",
+					"component": "text",
+					"id": "mainModel_pernr",
+					"editablenode": "",
+					"name": "mainModel.pernr"
+				},
+				{
+					"title": "员工手机号码",
+					"component": "text",
+					"id": "mainModel_ygtelephone",
+					"editablenode": "",
+					"name": "mainModel.ygtelephone"
+				},
+				{
+					"title": "员工电话",
+					"component": "text",
+					"id": "mainModel_ygmobile",
+					"editablenode": "",
+					"name": "mainModel.ygmobile"
+				},
+				{
+					"title": "是否业务部门",
+					"component": "radio",
+					"id": "mainModel_sfywbm",
+					"editablenode": "",
+					"name": "mainModel.sfywbm",
+					"options": [
+						{
+							"text": "是",
+							"value": "0",
+						},
+						{
+							"text": "否",
+							"value": "1",
+						}
+					]
+				},
+				{
+					"title": "员工级别",
+					"component": "text",
+					"id": "mainModel_yglevel",
+					"editablenode": "",
+					"name": "mainModel.yglevel"
+				},
+				{
+					"title": "员工标识",
+					"component": "text",
+					"id": "mainModel_ygbs",
+					"editablenode": "",
+					"name": "mainModel.ygbs"
+				},
+				{
+					"title": "银行开户行",
+					"component": "text",
+					"id": "mainModel_yhkhh",
+					"editablenode": "",
+					"name": "mainModel.yhkhh"
+				},
+				{
+					"title": "银行账户信息",
+					"component": "text",
+					"id": "mainModel_yhzhxx",
+					"editablenode": "",
+					"name": "mainModel.yhzhxx"
+				},
+				{
+					"title": "员工变动情况说明",
+					"component": "textarea",
+					"id": "mainModel_ygbdqksm",
+					"editablenode": "",
+					"rows": "3",
+					"name": "mainModel.ygbdqksm"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}

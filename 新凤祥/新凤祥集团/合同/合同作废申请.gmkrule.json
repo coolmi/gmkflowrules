@@ -2,7 +2,7 @@
   "id": "ap_contractvoid",
   "handleOnPC": {
 	"tasknode": [
-	  "financeaudit"
+	  "financeaudit","auditpie","audittrial","auditreview","lawpie"
 	],
 	"flag": [
 	  "resubmit"
@@ -288,72 +288,15 @@
 		  "editablenode": "",
 		  "rows": "3",
 		  "name": "contractvoid.voidreason"
-		},
-		{
-		  "title": "法务部审核人员",
-		  "component": "text",
-		  "id": "contractvoid_lawauditassignee",
-		  "editablenode": "",
-		  "name": "contractvoid.lawauditassignee"
-		},
-		{
-		  "title": "审计部分派-提交至",
-		  "component": "text",
-		  "id": "contractvoid_auditsubmittask",
-		  "editablenode": "",
-		  "name": "contractvoid.auditsubmittask"
-		},
-		{
-		  "title": "审计部初审人员",
-		  "component": "text",
-		  "id": "contractvoid_audittrialassignee",
-		  "editablenode": "",
-		  "name": "contractvoid.audittrialassignee"
-		},
-		{
-		  "title": "审计部初审人员ID",
-		  "component": "text",
-		  "id": "contractvoid_audittrialassigneeid",
-		  "editablenode": "",
-		  "name": "contractvoid.audittrialassigneeid"
-		},
-		{
-		  "title": "币种  0:人名币  1:美元,  2:欧元,  3:英镑",
-		  "component": "text",
-		  "id": "contractvoid_bz",
-		  "editablenode": "",
-		  "name": "contractvoid.bz"
-		},
-
-		{
-		  "title": "法务部分派-提交至",
-		  "component": "text",
-		  "id": "contractvoid_lawsubmittask",
-		  "editablenode": "",
-		  "name": "contractvoid.lawsubmittask"
-		},
-
-		{
-		  "title": "需求部门编号",
-		  "component": "text",
-		  "id": "contractvoid_xqbmid",
-		  "editablenode": "",
-		  "name": "contractvoid.xqbmid"
-		},
-		{
-		  "title": "审计部初审-提交至",
-		  "component": "text",
-		  "id": "contractvoid_auditcssubmittask",
-		  "editablenode": "",
-		  "name": "contractvoid.auditcssubmittask"
-		},
-		{
-		  "title": "法务部审核人员ID",
-		  "component": "text",
-		  "id": "contractvoid_lawauditassigneeid",
-		  "editablenode": "",
-		  "name": "contractvoid.lawauditassigneeid"
 		}
+	  ]
+	},
+	{
+	  "title": "审计部审核信息",
+	  "pageid": "sjcs",
+	  "component": "panel",
+	  "subComponents": [
+
 	  ]
 	}
   ]

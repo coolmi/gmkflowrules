@@ -1,0 +1,316 @@
+{
+  "id": "fooddevcw_ledgerdeposit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "付款所属公司",
+          "component": "label",
+          "editablenode": "",
+          "middleName": [
+            "mainModel.bukrs",
+            "bukrs"
+          ],
+          "label": [
+            "mainModel.bukrs",
+            "-",
+            "t001List.butxt"
+          ]
+        },
+        {
+          "title": "项目类别",
+          "component": "select",
+          "editablenode": "",
+          "id": "xmlb",
+          "name": "mainModel.xmlb",
+          "options": [
+            {
+              "title": "工伤",
+              "value": "0"
+            },
+            {
+              "title": "生育",
+              "value": "1"
+            },
+            {
+              "title": "押金",
+              "value": "2"
+            },
+            {
+              "title": "其他",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "性别",
+          "component": "radio",
+          "editablenode": "",
+          "name": "mainModel.sexb",
+          "options": [
+            {
+              "title": "男",
+              "value": "0"
+            },
+            {
+              "title": "女",
+              "value": "1"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": [
+                "0",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "身份证号码",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sfzhm",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": [
+                "0",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "事故发生时间",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sgfsdate",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "治疗医院",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zlyy",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "工伤认定结论",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.gsrdjl",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "生育保险卡号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sybxkh",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["1"]
+            }
+          ]
+        },
+        {
+          "title": "生产医院",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.scyy",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["1"]
+            }
+          ]
+        },
+        {
+          "title": "押金单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.yjdh",
+          "showLinkage": [
+            {
+              "id": "xmlb",
+              "values": ["2"]
+            }
+          ]
+        },
+        {
+          "title": "单位名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.gysmc"
+        },
+        {
+          "title": "汇入地点",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hrdd"
+        },
+        {
+          "title": "单位开户行",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.gyskhh"
+        },
+        {
+          "title": "单位账户",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.gyszh"
+        },
+        {
+          "title": "汇款用途",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
+          "name": "mainModel.hkyt"
+        },
+        {
+          "title": "申请金额小写",
+          "component": "money",
+          "editablenode": "",
+          "name": "mainModel.sqjexx"
+        },
+        {
+          "title": "申请金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sqjedx"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
+          "name": "mainModel.bz"
+        }
+      ]
+    }
+  ]
+}

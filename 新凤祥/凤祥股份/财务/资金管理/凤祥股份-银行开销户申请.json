@@ -1,5 +1,5 @@
 {
-  "id": "gmk_needmoney",
+  "id": "fxcw_openaccount",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -29,11 +29,13 @@
         {
           "title": "申请日期",
           "component": "date1",
+          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -43,6 +45,7 @@
         {
           "title": "所属部门",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
@@ -107,67 +110,111 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "请款类型",
+          "title": "公司名称",
           "component": "text",
-          "name": "mainModel.m_typenm"
+          "name": "mainModel.companyname"
+        },
+        {
+          "title": "开/销户行",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.khh"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "mainModel.sqlx",
+          "options": [
+            {
+              "text": "开户",
+              "value": "0"
+            },
+            {
+              "text": "销户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户用途",
+          "component": "select",
+          "name": "mainModel.zhyt",
+          "options": [
+            {
+              "text": "经营性质",
+              "value": "0"
+            },
+            {
+              "text": "融资性质",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户类型",
+          "component": "radio",
+          "name": "mainModel.zhlx",
+          "options": [
+            {
+              "text": "收入账户",
+              "value": "0"
+            },
+            {
+              "text": "支出账户",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "账户性质",
+          "component": "radio",
+          "name": "mainModel.zhxz",
+          "options": [
+            {
+              "text": "基本户",
+              "value": "0"
+            },
+            {
+              "text": "一般户",
+              "value": "1"
+            },
+            {
+              "text": "专项户",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "开户原因",
+          "component": "textarea",
+          "name": "mainModel.reason"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.bz"
         }
+
       ]
     },
     {
-      "title": "请款子表",
-      "pageid": "sbqkzb",
+      "title": "处理情况",
+      "pageid": "yhzhglyclqkhb",
       "component": "panel",
+      "tasknode":"zhglycl",
       "subComponents": [
         {
-          "titleIndex": 1,
-          "title": "",
-          "component": "table_form",
-          "id": "self_sbqkzb_tmp",
-          "basePath": "needmoney_sublist",
-          "tableForms": [
-            {
-              "title": "所属公司",
-              "name": "s_compnm",
-              "component": "text"
-            },
-            {
-              "title": "请款用途",
-              "name": "s_uses",
-              "component": "text"
-            },
-            {
-              "title": "请款金额",
-              "name": "s_je",
-              "component": "text",
-              "datatype": "money"
-            },
-
-            {
-              "title": "金额大写",
-              "name": "s_jedx",
-              "component": "text"
-            },
-            {
-
-           "title": "结算类别",
-              "name": "s_jslb",
-              "component": "text"
-            },
-            {
-              "title": "供应商",
-              "name": "s_gys",
-              "component": "text"
-            },
-            {
-              "title": "银行账号",
-              "name": "s_zh",
-              "component": "text"
-            }
-          ]
+          "title":"处理情况汇报",
+          "component":"textarea",
+          "name":"mainModel.clqkhb",
+          "editablenode":"zhglycl",
+          "validation": {
+            "pageid": "yhzhglyclqkhb",
+            "required": true,
+            "validateMsg": "请填写处理情况"
+          }
         }
       ]
-
     }
-
   ]
 }

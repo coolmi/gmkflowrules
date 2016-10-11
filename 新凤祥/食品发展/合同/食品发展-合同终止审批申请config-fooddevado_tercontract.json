@@ -1,5 +1,5 @@
 {
-  "id": "gmk_needmoney",
+  "id": "fooddevado_tercontract",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -23,7 +23,6 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
@@ -107,67 +106,41 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "请款类型",
+          "title": "合同名称",
           "component": "text",
-          "name": "mainModel.m_typenm"
-        }
-      ]
-    },
-    {
-      "title": "请款子表",
-      "pageid": "sbqkzb",
-      "component": "panel",
-      "subComponents": [
+          "name": "mainModel.htmc"
+        },
         {
-          "titleIndex": 1,
-          "title": "",
-          "component": "table_form",
-          "id": "self_sbqkzb_tmp",
-          "basePath": "needmoney_sublist",
-          "tableForms": [
+          "title": "合同编号",
+          "component": "text",
+          "name": "mainModel.htbh"
+        },
+        {
+          "title": "是否战略物资、是否销售客户",
+          "component": "select",
+          "name": "mainModel.sfzlwzxskh",
+          "options": [
             {
-              "title": "所属公司",
-              "name": "s_compnm",
-              "component": "text"
+              "title": "采购",
+              "value": "0"
             },
             {
-              "title": "请款用途",
-              "name": "s_uses",
-              "component": "text"
+              "title": "战略物资采购",
+              "value": "1"
             },
             {
-              "title": "请款金额",
-              "name": "s_je",
-              "component": "text",
-              "datatype": "money"
-            },
-
-            {
-              "title": "金额大写",
-              "name": "s_jedx",
-              "component": "text"
-            },
-            {
-
-           "title": "结算类别",
-              "name": "s_jslb",
-              "component": "text"
-            },
-            {
-              "title": "供应商",
-              "name": "s_gys",
-              "component": "text"
-            },
-            {
-              "title": "银行账号",
-              "name": "s_zh",
-              "component": "text"
+              "title": "销售",
+              "value": "2"
             }
           ]
+        },
+        {
+          "title": "合同终止原因",
+          "component": "textarea",
+          "rows":"3",
+          "name": "mainModel.htzzyy"
         }
       ]
-
     }
-
   ]
 }

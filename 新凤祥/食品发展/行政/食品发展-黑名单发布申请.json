@@ -1,17 +1,11 @@
 {
-  "id": "gmk_needmoney",
+  "id": "fooddevado_blacklist",
   "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
+    "tasknode": [""],
+    "flag": ["resubmit"]
   },
   "selectPerson": {
-    "tasknode": [
-      ""
-    ],
+    "tasknode": [""],
     "beforPop": false
   },
   "forms": [
@@ -23,7 +17,6 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
@@ -107,67 +100,83 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "请款类型",
-          "component": "text",
-          "name": "mainModel.m_typenm"
-        }
-      ]
-    },
-    {
-      "title": "请款子表",
-      "pageid": "sbqkzb",
-      "component": "panel",
-      "subComponents": [
-        {
-          "titleIndex": 1,
           "title": "",
+          "component": "select",
+          "name": "mainModel.ywlx",
+          "options": [
+            {
+              "text": "战略性物资采购",
+              "value": "0"
+            },
+            {
+              "text": "销售",
+              "value": "1"
+            },
+            {
+              "text": "其他",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "id": "sqxx_sub_table",
           "component": "table_form",
-          "id": "self_sbqkzb_tmp",
-          "basePath": "needmoney_sublist",
+          "basePath": "blacklistinfos",
+          "titleIndex": 1,
           "tableForms": [
             {
-              "title": "所属公司",
-              "name": "s_compnm",
-              "component": "text"
+              "title": "供应商类型",
+              "component": "select",
+              "name": "gyslx",
+              "options": [
+                {
+                  "text": "供应商",
+                  "value": "0"
+                },
+                {
+                  "text": "客户",
+                  "value": "1"
+                }
+              ]
             },
             {
-              "title": "请款用途",
-              "name": "s_uses",
-              "component": "text"
-            },
-            {
-              "title": "请款金额",
-              "name": "s_je",
+              "title": "公司名称",
               "component": "text",
-              "datatype": "money"
-            },
-
-            {
-              "title": "金额大写",
-              "name": "s_jedx",
-              "component": "text"
+              "name": "gsmc"
             },
             {
-
-           "title": "结算类别",
-              "name": "s_jslb",
-              "component": "text"
+              "title": "法人名称",
+              "component": "text",
+              "name": "frmc"
             },
             {
-              "title": "供应商",
-              "name": "s_gys",
-              "component": "text"
+              "title": "sap系统中编号",
+              "component": "text",
+              "name": "sapbh"
             },
             {
-              "title": "银行账号",
-              "name": "s_zh",
-              "component": "text"
+              "title": "营业执照号",
+              "component": "text",
+              "name": "yyzzh"
+            },
+            {
+              "title": "组织机构代码",
+              "component": "text",
+              "name": "zzjgdm"
+            },
+            {
+              "title": "纳税人编号",
+              "component": "text",
+              "name": "nsrbh"
+            },
+            {
+              "title": "列入黑名单理由",
+              "component": "text",
+              "name": "reason"
             }
           ]
         }
       ]
-
     }
-
   ]
 }
