@@ -1,7 +1,7 @@
 {
   "id": "xg_cost_profit",
   "handleOnPC": {
-    "tasknode": [],
+    "tasknode": ["afk"],
     "flag": ["resubmit"]
   },
   "selectPerson": {
@@ -140,14 +140,9 @@
                 {
                   "title": "成本中心编码",
                   "component": "text",
-                  "editablenode":"afk",
-                  "name": "s_costid",
-                  "validation":{
-                    "panel_id":"cbzxmx",
-                    "required":true,
-                    "validateMsg":"请填写成本中心编码",
-                    "regexs":""
-                  }
+
+                  "name": "s_costid"
+
                 },
                 {
                   "title": "成本中心名称",
@@ -162,13 +157,6 @@
                 {
                   "title": "对应利润中心",
                   "component": "text",
-                  "editablenode":"afk",
-                  "validation":{
-                    "panel_id":"cbzxmx",
-                    "required":true,
-                    "validateMsg":"请填写对应利润中心",
-                    "regexs":""
-                  },
                   "name": "s_profit"
                 }
               ]
@@ -194,15 +182,8 @@
               "tableForms": [
                 {
                   "title": "利润中心编码",
-                  "editablenode":"afk",
                   "component": "text",
-                  "name": "s_profitid",
-                  "validation":{
-                    "panel_id":"lrzxmx",
-                    "required":true,
-                    "validateMsg":"请填写利润中心编码",
-                    "regexs":""
-                  }
+                  "name": "s_profitid"
                 },
                 {
                   "title": "利润中心名称",
@@ -221,12 +202,12 @@
                 },
                 {
                   "title": "有效开始时间",
-                  "component": "date1",
+                  "component": "text",
                   "name": "s_start"
                 },
                 {
                   "title": "有效结束时间",
-                  "component": "date1",
+                  "component": "text",
                   "name": "s_end"
                 }
               ]
