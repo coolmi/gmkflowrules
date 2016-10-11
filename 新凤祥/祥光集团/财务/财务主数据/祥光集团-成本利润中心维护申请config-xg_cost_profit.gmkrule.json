@@ -140,7 +140,14 @@
                 {
                   "title": "成本中心编码",
                   "component": "text",
-                  "name": "s_costid"
+                  "editablenode":"afk",
+                  "name": "s_costid",
+                  "validation":{
+                    "panel_id":"cbzxmx",
+                    "required":true,
+                    "validateMsg":"请填写成本中心编码",
+                    "regexs":""
+                  }
                 },
                 {
                   "title": "成本中心名称",
@@ -155,6 +162,13 @@
                 {
                   "title": "对应利润中心",
                   "component": "text",
+                  "editablenode":"afk",
+                  "validation":{
+                    "panel_id":"cbzxmx",
+                    "required":true,
+                    "validateMsg":"请填写对应利润中心",
+                    "regexs":""
+                  },
                   "name": "s_profit"
                 }
               ]
@@ -180,8 +194,15 @@
               "tableForms": [
                 {
                   "title": "利润中心编码",
+                  "editablenode":"afk",
                   "component": "text",
-                  "name": "s_profitid"
+                  "name": "s_profitid",
+                  "validation":{
+                    "panel_id":"lrzxmx",
+                    "required":true,
+                    "validateMsg":"请填写利润中心编码",
+                    "regexs":""
+                  }
                 },
                 {
                   "title": "利润中心名称",
