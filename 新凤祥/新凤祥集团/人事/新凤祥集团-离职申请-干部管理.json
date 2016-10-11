@@ -114,6 +114,7 @@
         {
           "title": "合同到期日",
           "component": "date1",
+          "editablenode": "usertask3",
           "name": "resignateion.contractdate"
         },
         {
@@ -170,6 +171,7 @@
         {
           "title": "离职类别",
           "editablenode": "",
+          "component": "select",
           "name": "resignateion.massg",
           "options": [
             {
@@ -193,6 +195,7 @@
         {
           "title": "申请离职日期",
           "component": "date1",
+          "editablenode": "usertask1,usertask2",
           "name": "resignateion.dhzlzrq"
         },
         {
