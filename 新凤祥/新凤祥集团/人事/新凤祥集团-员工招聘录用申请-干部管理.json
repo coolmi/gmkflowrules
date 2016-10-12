@@ -181,12 +181,12 @@
           "name": "cadrehire.r_contractperiod",
           "options": [
             {
-              "text": "三年",
-              "value": "三年"
+              "text": "3年",
+              "value": "3年"
             },
             {
-              "text": "五年",
-              "value": "五年"
+              "text": "5年",
+              "value": "5年"
             }
           ]
         },
@@ -212,7 +212,7 @@
         },
         {
           "title": "报到时间",
-          "component": "text",
+          "component": "date1",
           "name": "cadrehire.r_registerdate"
         },
         {
@@ -253,26 +253,6 @@
       ]
     },
     {
-      "title": "面试意见",
-      "component": "panel",
-      "pageid": "msyj",
-      "subComponents": [
-        {
-          "title": "面试评价",
-          "component": "textarea",
-          "tasknode": "usertask2,usertask3,usertask10,usertask4,usertask8",
-          "editablenode": "usertask2",
-          "name": "cadrehire.r_interviewidea",
-          "rows": "3",
-          "validation": {
-            "pageid": "msyj",
-            "required": true,
-            "validateMsg": "请填写面试意见"
-          }
-        }
-      ]
-    },
-    {
       "title": "薪酬意见",
       "component": "panel",
       "pageid": "xcyj",
@@ -280,8 +260,8 @@
         {
           "title": "薪酬依据",
           "component": "textarea",
-          "tasknode": "usertask3,usertask10,usertask4,usertask8",
-          "editablenode": "usertask3",
+          "tasknode": "usertask4,usertask1,usertask2",
+          "editablenode": "usertask4",
           "name": "cadrehire.r_salarybasis",
           "rows": "3",
           "validation": {
