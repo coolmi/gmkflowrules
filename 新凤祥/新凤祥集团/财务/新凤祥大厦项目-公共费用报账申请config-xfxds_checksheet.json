@@ -1,0 +1,311 @@
+{
+  "id": "xfxds_checksheet",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      "internalaudit"
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "dschecksheet.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "dschecksheet.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "dschecksheet.pernr",
+            "-",
+            "dschecksheet.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "dschecksheet.sysbusinessunitname",
+            "-",
+            "dschecksheet.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "dschecksheet.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "付款所属公司",
+          "component": "label",
+          "label": [
+            "dschecksheet.fkbukrs",
+            "-",
+            "dschecksheet.fkbutxt"
+          ]
+        },
+        {
+          "title": "选择执行组长复核负责人",
+          "component": "text",
+          "name": "dschecksheet.zxzcfhfzr"
+        },
+        {
+          "title": "文件编号",
+          "component": "text",
+          "name": "dschecksheet.mcontext"
+        },
+        {
+          "title": "付款类别",
+          "component": "select",
+          "name": "dschecksheet.fklb",
+          "options": [
+            {
+              "text": "设计合同付款",
+              "value": "0"
+            },
+            {
+              "text": "施工合同付款",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "dschecksheet.gysmc"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "dschecksheet.gysbh"
+        },
+        {
+          "title": "业务内容",
+          "component": "text",
+          "name": "dschecksheet.ywnr"
+        },
+        {
+          "title": "本次报账金额(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "dschecksheet.bzjexx"
+        },
+        {
+          "title": "本次报账金额(大写)",
+          "component": "text",
+          "name": "dschecksheet.bzjedx"
+        },
+        {
+          "title": "核减金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "dschecksheet.hjje"
+        },
+        {
+          "title": "实付金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "dschecksheet.sfje"
+        },
+        {
+          "title": "涉及业务部门",
+          "component": "radio",
+          "name": "dschecksheet.sjywbm",
+          "options": [
+            {
+              "text": "本部门业务",
+              "value": "0"
+            },
+            {
+              "text": "非本部门业务",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "dschecksheet.hrh"
+        },
+        {
+          "title": "汇入账号",
+          "component": "text",
+          "name": "dschecksheet.hrzh"
+        },
+        {
+          "title": "预算",
+          "component": "radio",
+          "name": "dschecksheet.yslx",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "1"
+            },
+            {
+              "title": "预算外",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "项目名称",
+          "component": "select",
+          "name": "dschecksheet.xmmc",
+          "options": [
+            {
+              "title": "资产类业务",
+              "value": "0"
+            },
+            {
+              "title": "费用类业务",
+              "value": "1"
+            },
+            {
+              "title": "内部关联业务",
+              "value": "2"
+            },
+            {
+              "title": "员工费用",
+              "value": "3"
+            },
+            {
+              "title": "其他费用",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "name": "dschecksheet.htyddhrq"
+        },
+        {
+          "title": "汇款用途",
+          "component": "text",
+          "name": "dschecksheet.hkyt"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "dschecksheet.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "dschecksheet.ysqyfkjedx"
+        },
+        {
+          "title": "补(退)金额(小写)",
+          "component": "text",
+          "name": "dschecksheet.btjexx"
+        },
+        {
+          "title": "补(退)金额(大写)",
+          "component": "text",
+          "name": "dschecksheet.btjedx"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "name": "dschecksheet.fkrq"
+        },
+        {
+          "title": "此笔付款是否在建工程",
+          "component": "radio",
+          "name": "dschecksheet.sfyyzjgc",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "附件个数",
+          "component": "text",
+          "name": "dschecksheet.fjgs"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "3",
+          "name": "dschecksheet.bz"
+        }
+      ]
+    }
+  ]
+}
