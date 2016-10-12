@@ -1,0 +1,508 @@
+{
+  "id": "fx_newleave",
+  "handleOnPC": {
+    "tasknode": [""],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.ltype",
+          "id": "ltype"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "请假信息",
+          "component": "panel",
+          "panel_id": "qjxx",
+          "showLinkage": [
+            {
+              "id": "ltype",
+              "values": ["0"]
+            }
+          ],
+          "subComponents": [
+            {
+              "title": "",
+              "component": "hidden",
+              "id": "holidaytype",
+              "name": "mainModel.holidaytype"
+            },
+            {
+              "title": "休假类型",
+              "component": "text",
+              "name": "mainModel.holidaytypename"
+            },
+            {
+              "title": "计划休假开始日期",
+              "component": "date1",
+              "name": "mainModel.sdate"
+            },
+            {
+              "title": "计划休假结束日期",
+              "component": "date1",
+              "name": "mainModel.edate"
+            },
+            {
+              "title": "计划休假天数",
+              "component": "text",
+              "name": "mainModel.thisdays"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "mainModel.readks"
+            },
+            {
+              "title": "享有额度",
+              "component": "text",
+              "name": "mainModel.enjoy",
+              "showLinkage": [
+                {
+                  "id": "holidaytype",
+                  "values": [
+                    "J01",
+                    "A02"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "已用额度",
+              "component": "text",
+              "name": "mainModel.hasuse",
+              "showLinkage": [
+                {
+                  "id": "holidaytype",
+                  "values": [
+                    "J01",
+                    "A02"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "剩余额度",
+              "component": "text",
+              "name": "mainModel.surplus",
+              "showLinkage": [
+                {
+                  "id": "holidaytype",
+                  "values": [
+                    "J01",
+                    "A02"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "开始时间",
+              "component": "text",
+              "name": "mainModel.timeaval",
+              "showLinkage": [
+                {
+                  "id": "holidaytype",
+                  "values": [
+                    "A11"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "结束时间",
+              "component": "text",
+              "name": "mainModel.timebval",
+              "showLinkage": [
+                {
+                  "id": "holidaytype",
+                  "values": [
+                    "A11"
+                  ]
+                }
+              ]
+            }
+            ]
+        }
+        ,
+        {
+          "title": "考勤信息",
+          "panel_id": "kqxx",
+          "component": "panel",
+          "showLinkage": [
+            {
+              "id": "ltype",
+              "values": ["0"]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "id":"kqxx_id",
+              "titleIndex": 1,
+              "basePath": "newinfors",
+              "tableForms": [
+                {
+                  "title": "日期类型",
+                  "component": "text",
+                  "name": "param1"
+                },
+                {
+                  "title": "班别名称",
+                  "component": "text",
+                  "name": "param2"
+                },
+                {
+                  "title": "排班开始日期",
+                  "component": "date1",
+                  "name": "param3"
+                },
+                {
+                  "title": "排班结束日期",
+                  "component": "date1",
+                  "name": "param4"
+                },
+                {
+                  "title": "上班时间",
+                  "component": "text",
+                  "name": "param6val"
+                },
+                {
+                  "title": "下班时间",
+                  "component": "text",
+                  "name": "param7val"
+                },
+                {
+                  "title": "休息方式",
+                  "component": "select",
+                  "name": "param5",
+                  "options": [
+                    {
+                      "title": "相对",
+                      "value": "upp"
+                    },
+                    {
+                      "title": "固定",
+                      "value": ""
+                    }
+                  ]
+                },
+                {
+                  "title": "休息开始",
+                  "component": "text",
+                  "name": "param9val"
+                },
+                {
+                  "title": "休息结束",
+                  "component": "text",
+                  "name": "param10val"
+                },
+                {
+                  "title": "休息时长",
+                  "component": "text",
+                  "name": "param11"
+                },
+                {
+                  "title": "打卡次数",
+                  "component": "text",
+                  "name": "param8"
+                },
+                {
+                  "title": "请假开始",
+                  "component": "text",
+                  "name": "param12val"
+                },
+                {
+                  "title": "请假结束",
+                  "component": "text",
+                  "name": "param13val"
+                },
+                {
+                  "title": "请假班次",
+                  "component": "select",
+                  "name": "param14",
+                  "options": [
+                    {
+                      "title": "上半班次",
+                      "value": "upper"
+                    },
+                    {
+                      "title": "下半班次",
+                      "value": "lower"
+                    },
+                    {
+                      "title": "全天",
+                      "value": "all"
+                    },
+                    {
+                      "title": "自定义",
+                      "value": "costom"
+                    }
+                  ]
+                },
+                {
+                  "title": "包含休息时间",
+                  "component": "select",
+                  "name": "param15",
+                  "options": [
+                    {
+                      "title": "是",
+                      "value": "yes"
+                    },
+                    {
+                      "title": "否",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+
+            {
+              "title": "审核部门",
+              "component": "label",
+              "showLinkage": [
+                {
+                  "id": "ltype",
+                  "values": ["1"]
+                }
+              ],
+              "label": ["mainModel.deptkeyname"]
+            },
+            {
+              "title": "请假明细",
+              "component": "panel",
+              "panel_id": "qjmx",
+              "showLinkage": [
+                {
+                  "id": "ltype",
+                  "values": ["1"]
+                }
+              ],
+              "subComponents": [
+                {
+                  "component": "table_form",
+                  "titleIndex": 1,
+                  "id": "qjmx_id",
+                  "basePath": "leavebatchlist",
+                  "tableForms": [
+                    {
+                      "title": "员工编号",
+                      "component": "text",
+                      "name": "fxpernr"
+                    },
+                    {
+                      "title": "姓名",
+                      "component": "text",
+                      "name": "fxname"
+                    },
+                    {
+                      "title": "员工假期类型",
+                      "component": "hidden",
+                      "id": "fxstype",
+                      "name": "fxstype"
+                    },
+                    {
+                      "title": "员工假期类型",
+                      "component": "text",
+                      "name": "fxstypename"
+                    },
+                    {
+                      "title": "请假开始日期",
+                      "component": "date1",
+                      "name": "fxsdate"
+                    },
+                    {
+                      "title": "请假结束日期",
+                      "component": "date1",
+                      "name": "fxedate"
+                    },
+                    {
+                      "title": "本次请假天数",
+                      "component": "text",
+                      "name": "fxnum"
+                    },
+                    {
+                      "title": "备注",
+                      "component": "text",
+                      "name": "fxbz"
+                    },
+                    {
+                      "title": "享有额度",
+                      "component": "text",
+                      "name": "enjoy",
+                      "showLinkage": [
+                        {
+                          "id": "fxstype",
+                          "values": [
+                            "J01",
+                            "A02"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "已用额度",
+                      "component": "text",
+                      "name": "hasuse",
+                      "showLinkage": [
+                        {
+                          "id": "fxstype",
+                          "values": [
+                            "J01",
+                            "A02"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "剩余额度",
+                      "component": "text",
+                      "name": "surplus",
+                      "showLinkage": [
+                        {
+                          "id": "fxstype",
+                          "values": [
+                            "J01",
+                            "A02"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "开始时间",
+                      "component": "text",
+                      "name": "timeaval",
+                      "showLinkage": [
+                        {
+                          "id": "fxstype",
+                          "values": [
+                            "A11"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "结束时间",
+                      "component": "text",
+                      "name": "timebval",
+                      "showLinkage": [
+                        {
+                          "id": "fxstype",
+                          "values": [
+                            "A11"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+      ]
+    }
+  ]
+}
+
+
