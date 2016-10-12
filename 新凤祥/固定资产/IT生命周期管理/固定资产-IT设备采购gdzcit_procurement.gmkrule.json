@@ -1,256 +1,491 @@
 {
-    "id": "gdzcit_procurement",
-    "handleOnPC": {
-        "tasknode": [
-            ""
-        ],
-        "flag": [
-            "resubmit"
-        ]
-    },
-    "selectPerson": {
-        "tasknode": [
-            ""
-        ],
-        "beforPop": false
-    },
-    "forms": [
-        {
-            "title": "基本信息",
-            "pageid": "jbxx",
-            "component": "panel",
-            "subComponents": [
-                {
-                    "title": "申请单号",
-                    "component": "text",
-                    "editablenode": "",
-                    "name": "mainModel.appid"
-                },
-                {
-                    "title": "申请日期",
-                    "component": "date1",
-                    "name": "mainModel.appda"
-                },
-                {
-                    "title": "申请人姓名",
-                    "component": "label",
-                    "label": [
-                        "mainModel.pernr",
-                        "-",
-                        "mainModel.username"
-                    ]
-                },
-                {
-                    "title": "所属部门",
-                    "component": "label",
-                    "label": [
-                        "mainModel.sysbusinessunitname",
-                        "-",
-                        "mainModel.sysdeptname"
-                    ]
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.userid"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.username"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.pernr"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.syspostname"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.sysdeptid"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.sysdeptname"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.sysbusinessunitid"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.sysbusinessunitname"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.postid"
-                },
-                {
-                    "title": "",
-                    "component": "hidden",
-                    "name": "mainModel.id"
-                }
-            ]
-        },
-        {
-            "title": "申请信息",
-            "pageid": "sqxx",
-            "component": "panel",
-            "subComponents": [
-                {
-                    "title": "ITCODE",
-                    "component": "text",
-                    "editablenode": "",
-                    "name": "mainModel.iTCODE"
-                },
-                {
-                  "title": "邮箱",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "mainModel.email"
-                },
-                {
-                    "title": "事业部/职能中心",
-                    "component": "text",
-                    "editablenode": "",
-                    "name": "mainModel.buniess"
-                },
-                {
-                    "title": "所属公司",
-                    "component": "text",
-                    "editablenode": "",
-                    "name": "mainModel.bukrsname"
-                },
-                {
-                  "title": "移动手机",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "mainModel.phone"
-                },
-                {
-                    "title": "办公电话",
-                    "component": "text",
-                    "editablenode": "",
-                    "name": "mainModel.tel"
-                }
-
-            ]
-        },
-      {
-        "title": "表单信息",
-        "pageid": "yzxqmx_itprtabiapplist",
-        "component": "panel",
-        "subComponents": [
-          {
-            "title": "",
-            "component": "formLabelLink",
-            "titleIndex": 0,
-            "basePath": "itprtabiapplist",
-            "id": "itprtabiapplist",
-            "linkForms": [
-              {
-                "title": "资产类别",
-                "component": "text",
-                "name": "propertypename"
-              },
-              {
-                "title": "资产描述",
-                "component": "text",
-                "name": "propertynumname"
-              },
-              {
-                "title": "使用人",
-                "component": "text",
-                "name": "ernamname"
-              },
-              {
-                "title": "成本中心",
-                "component": "text",
-                "name": "kostlname"
-              },
-              {
-                "title": "预算项目",
-                "component": "text",
-                "name": "item"
-              },
-              {
-                "title": "资产大类",
-                "component": "text",
-                "name": "ktorgname"
-              },
-              {
-                "title": "资产分类",
-                "component": "text",
-                "name": "anlklname"
-              },
-              {
-                "title": "资产类别",
-                "component": "text",
-                "name": "propertypename"
-              },
-              {
-                "title": "品牌",
-                "component": "text",
-                "name": "brand"
-              },
-              {
-                "title": "型号",
-                "component": "text",
-                "name": "model"
-              },
-              {
-                "title": "参数",
-                "component": "textarea",
-                "rows":5,
-                "name": "property"
-              },
-              {
-                "title": "数量",
-                "component": "text",
-                "name": "menge"
-              },
-              {
-                "title": "单位",
-                "component": "text",
-                "name": "meins"
-              },
-              {
-                "title": "单价",
-                "component": "text",
-                "datatype":"money",
-                "name": "price"
-              },
-              {
-                "title": "总价",
-                "component": "text",
-                "datatype":"money",
-                "name": "totalprice"
-              },
-              {
-                "title": "采购原因",
-                "component": "text",
-                "name": "proson"
-              },
-              {
-                "title": "需求说明",
-                "component": "textarea",
-                "rows":3,
-                "name": "meins"
-              }
-            ]
-          }
-
-
-        ]
-      },
+  "id": "gdzcit_procurement",
+  "handleOnPC": {
+    "tasknode": [
+      "usertaskn",
+      "usertask17",
+      "usertask9"
+    ],
+    "flag": [
+      "resubmit"
     ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "ITCODE",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.email"
+        },
+        {
+          "title": "事业部/职能中心",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.buniess"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.bukrsname"
+        },
+        {
+          "title": "移动手机",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.phone"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.tel"
+        }
+      ]
+    },
+    {
+      "title": "表单信息",
+      "pageid": "yzxqmx_itprtabiapplist",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "basePath": "itprtabiapplist",
+          "id": "itprtabiapplist",
+          "linkForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "propertypename"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertynumname"
+            },
+            {
+              "title": "使用人",
+              "component": "text",
+              "name": "ernamname"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "kostlname"
+            },
+            {
+              "title": "预算项目",
+              "component": "text",
+              "name": "item"
+            },
+            {
+              "title": "资产大类",
+              "component": "text",
+              "name": "ktorgname"
+            },
+            {
+              "title": "资产分类",
+              "component": "text",
+              "name": "anlklname"
+            },
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "propertypename"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "参数",
+              "component": "textarea",
+              "rows": 5,
+              "name": "property"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "menge"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "meins"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "datatype": "money",
+              "name": "price"
+            },
+            {
+              "title": "总价",
+              "component": "text",
+              "datatype": "money",
+              "name": "totalprice"
+            },
+            {
+              "title": "采购原因",
+              "component": "text",
+              "name": "proson"
+            },
+            {
+              "title": "需求说明",
+              "component": "textarea",
+              "rows": 3,
+              "name": "meins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "采购执行",
+      "component": "panel",
+      "pageid": "itcgglycgzx_page",
+      "tasknode": "usertask7",
+      "subComponents": [
+        {
+          "title": "IT采购管理员采购执行",
+          "component": "textarea",
+          "name": "mainModel.caigouzhixing",
+          "editablenode": "usertask7",
+          "validation": {
+            "pageid": "itcgglycgzx_page",
+            "required": true,
+            "validateMsg": "请选择采购执行情况"
+          }
+        }
+      ]
+    },
+    {
+      "title": "收货汇报",
+      "pageid": "itcgglyshhb",
+      "component": "panel",
+      "tasknode": "usertask11,usertask12",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "itcgglyshhb_table",
+          "basePath": "itprtabiapplist",
+          "tableForms": [
+            {
+              "component": "text",
+              "title": "资产类别",
+              "name": "propertypename"
+            },
+            {
+              "component": "text",
+              "title": "资产描述",
+              "name": "propertynumname"
+            },
+            {
+              "component": "text",
+              "title": "品牌",
+              "name": "brand"
+            },
+            {
+              "component": "text",
+              "title": "型号",
+              "name": "model"
+            },
+            {
+              "component": "textarea",
+              "title": "参数",
+              "name": "property"
+            },
+            {
+              "component": "text",
+              "title": "单位",
+              "name": "meins"
+            },
+            {
+              "component": "text",
+              "title": "数量",
+              "name": "menge"
+            },
+            {
+              "component": "text",
+              "title": "供应商",
+              "name": "lifnr"
+            },
+            {
+              "component": "text",
+              "title": "单价",
+              "name": "newprice",
+              "datatype": "money"
+            },
+            {
+              "component": "text",
+              "title": "质保期",
+              "name": "zbq"
+            },
+            {
+              "component": "text",
+              "title": "质保期单位",
+              "name": "zbqdw"
+            },
+            {
+              "component": "text",
+              "title": "总价",
+              "name": "totalprice",
+              "datatype": "money"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "验收/收货",
+      "pageid": "ytywgcsyssh_page",
+      "component": "panel",
+      "tasknode": "usertask11,usertask12",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "itprtabiapplist",
+          "id": "ytywgcsyssh_table",
+          "tableForms": [
+            {
+              "component": "text",
+              "title": "资产描述",
+              "name": "propertynumname"
+            },
+            {
+              "component": "text",
+              "title": "使用人",
+              "name": "afnamname"
+            },
+            {
+              "component": "text",
+              "title": "固定资产编号",
+              "name": "anln1"
+            },
+            {
+              "component": "text",
+              "title": "单位",
+              "name": "meins"
+            },
+            {
+              "component": "text",
+              "title": "数量",
+              "name": "menge"
+            },
+            {
+              "component": "text",
+              "title": "出厂编号",
+              "name": "factnum"
+            },
+            {
+              "component": "text",
+              "title": "验收日期",
+              "name": "ysdate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "component": "text",
+              "title": "运维工程师",
+              "name": "itname"
+            },
+            {
+              "component": "text",
+              "title": "软件需求",
+              "id": "office_need_flag",
+              "name": "office"
+            },
+            {
+              "title": "软件需求信息",
+              "component": "panel",
+              "panel_id": "ididi_rjxqxx_panel",
+              "subComponents": [
+                {
+                  "component": "table_form",
+                  "basePath": "itprtabkapplist",
+                  "tableForms": [
+                    {
+                      "component": "text",
+                      "title": "资产编号",
+                      "name": "propertycode"
+                    },
+                    {
+                      "component": "textarea",
+                      "title": "资产类别",
+                      "name": "propertypename"
+                    },
+                    {
+                      "component": "textarea",
+                      "title": "资产描述",
+                      "name": "propertynumname"
+                    },
+                    {
+                      "component": "text",
+                      "title": "品牌",
+                      "name": "brand"
+                    },
+                    {
+                      "component": "text",
+                      "title": "版本",
+                      "name": "model"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "接收确认",
+      "pageid": "sqrjsqr_page",
+      "component": "panel",
+      "tasknode": "usertask11,usertask12",
+      "subComponents": [
+        {
+          "component": "textarea",
+          "title": "申请人接受确认",
+          "name": "mainModel.confirmapp",
+          "editablenode": "usertask11",
+          "validation": {
+            "pageid": "sqrjsqr_page",
+            "required": true,
+            "validateMsg": "请选择接受确认情况"
+          }
+        }
+      ]
+    },
+    {
+      "title": "回收情况",
+      "pageid": "itzhglyhssbqk_page",
+      "component": "panel",
+      "tasknode": "usertask12",
+      "subComponents": [
+        {
+          "title": "IT综合管理员回收设备情况",
+          "component": "textarea",
+          "name": "mainModel.recycling",
+          "editablenode": "usertask12",
+          "validation": {
+            "pageid": "itzhglyhssbqk_page",
+            "required": true,
+            "validateMsg": "请选择回收设备情况"
+          }
+        }
+      ]
+    }
+  ]
 }
