@@ -406,44 +406,6 @@
               "title": "软件需求",
               "id": "office_need_flag",
               "name": "office"
-            },
-            {
-              "title": "软件需求信息",
-              "component": "panel",
-              "panel_id": "ididi_rjxqxx_panel",
-              "subComponents": [
-                {
-                  "component": "table_form",
-                  "basePath": "itprtabkapplist",
-                  "tableForms": [
-                    {
-                      "component": "text",
-                      "title": "资产编号",
-                      "name": "propertycode"
-                    },
-                    {
-                      "component": "textarea",
-                      "title": "资产类别",
-                      "name": "propertypename"
-                    },
-                    {
-                      "component": "textarea",
-                      "title": "资产描述",
-                      "name": "propertynumname"
-                    },
-                    {
-                      "component": "text",
-                      "title": "品牌",
-                      "name": "brand"
-                    },
-                    {
-                      "component": "text",
-                      "title": "版本",
-                      "name": "model"
-                    }
-                  ]
-                }
-              ]
             }
           ]
         }
