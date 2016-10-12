@@ -147,6 +147,7 @@
         {
           "title": "变动类型",
           "component": "select",
+          "id":"gmkcadreworktransfer_bdlx",
           "name": "gmkcadreworktransfer.bdlx",
           "options": [
             {
@@ -183,6 +184,17 @@
           "title": "申请交接人员",
           "component": "text",
           "name": "gmkcadreworktransfer.rnachn"
+        },
+        {
+          "title": "离职申请单号",
+          "component": "text",
+          "name": "gmkcadreworktransfer.dappid",
+          "showLinkage":[
+            {
+              "id":"gmkcadreworktransfer_bdlx",
+              "values":["2"]
+            }
+          ]
         }
       ]
     },
@@ -227,9 +239,9 @@
           "title": "请选择交接情况",
           "component": "radio",
           "notShowOnView": true,
-          "tasknode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
-          "editablenode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
-          "name": "gmkcadreworktransfer.jjqk",
+          "tasknode": "usertask1,usertask2,usertask3,usertask4,usertask5,usertask6,usertask7,usertask8,usertask9,usertask10",
+          "editablenode": "usertask1,usertask2,usertask3,usertask4,usertask5,usertask6,usertask7,usertask8,usertask9,usertask10",
+          "name": "jjqk",
           "validation": {
             "pageid": "jjjgyjck",
             "required": true,

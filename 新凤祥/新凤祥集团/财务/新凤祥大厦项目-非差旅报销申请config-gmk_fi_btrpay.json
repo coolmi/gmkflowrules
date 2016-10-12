@@ -1,0 +1,770 @@
+{
+  "id": "gmk_fi_btrpay",
+  "handleOnPC": {
+    "tasknode": [
+      "accout",
+      "payment"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 7,
+        "tasknode": [
+          "usertask2"
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "app.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "app.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "app.pernr",
+            "-",
+            "app.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "app.sysbusinessunitname",
+            "-",
+            "app.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用承担公司",
+          "component": "text",
+          "name": "app.m_fcompnm"
+        },
+        {
+          "title": "报销类别",
+          "component": "checkbox",
+          "id": "m_retp_id",
+          "name": "app.m_retp",
+          "options": [
+            {
+              "title": "通讯费",
+              "value": "1"
+            },
+            {
+              "title": "交通费",
+              "value": "2"
+            },
+            {
+              "title": "业务招待费",
+              "value": "3"
+            },
+            {
+              "title": "餐饮费",
+              "value": "4"
+            },
+            {
+              "title": "其他费用",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "app.m_costnm"
+        },
+        {
+          "title": "交办人财务编号",
+          "component": "text",
+          "name": "app.m_dfinum"
+        },
+        {
+          "title": "币种",
+          "component": "checkbox",
+          "name": "app.m_fcode",
+          "options": [
+            {
+              "title": "人民币",
+              "value": "0"
+            },
+            {
+              "title": "美元",
+              "value": "1"
+            },
+            {
+              "title": "欧元",
+              "value": "2"
+            },
+            {
+              "title": "英镑",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "name": "app.m_ftel"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "app.m_remark"
+        }
+      ]
+    },
+    {
+      "title": "通讯费",
+      "component": "panel",
+      "pageid": "txf",
+      "id": "txf1",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 1,
+          "id": "txfyf",
+          "basePath": "txfs",
+          "linkForms": [
+            {
+              "title": "月份",
+              "component": "select",
+              "name": "txf_month",
+              "options": [
+                {
+                  "text": "一月",
+                  "value": "1"
+                },
+                {
+                  "text": "二月",
+                  "value": "2"
+                },
+                {
+                  "text": "三月",
+                  "value": "3"
+                },
+                {
+                  "text": "四月",
+                  "value": "4"
+                },
+                {
+                  "text": "五月",
+                  "value": "5"
+                },
+                {
+                  "text": "六月",
+                  "value": "6"
+                },
+                {
+                  "text": "七月",
+                  "value": "7"
+                },
+                {
+                  "text": "八月",
+                  "value": "8"
+                },
+                {
+                  "text": "九月",
+                  "value": "9"
+                },
+                {
+                  "text": "十月",
+                  "value": "10"
+                },
+                {
+                  "text": "十一月",
+                  "value": "11"
+                },
+                {
+                  "text": "十二月",
+                  "value": "12"
+                }
+              ]
+            },
+            {
+              "title": "通讯费用",
+              "component": "text",
+              "datatype": "money",
+              "name": "txf_f"
+            },
+            {
+              "title": "超标准费用",
+              "component": "text",
+              "datatype": "money",
+              "name": "txf_cf"
+            }
+          ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.txf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.txf_fee_dx",
+          "name": "app.txf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.txf_cfee"
+        },
+        {
+          "title": "个人超限说明",
+          "component": "textarea",
+          "rows": "3",
+          "name": "app.txf_cremark"
+        }
+      ]
+    },
+    {
+      "title": "交通费",
+      "component": "panel",
+      "pageid": "jtf",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 4,
+          "id": "jtfjtfs",
+          "basePath": "jtfs",
+          "linkForms": [
+            {
+              "title": "日期",
+              "component": "date1",
+              "name": "jtf_date"
+            },
+            {
+              "title": "出发地",
+              "component": "text",
+              "name": "jtf_splace"
+            },
+            {
+              "title": "到达地",
+              "component": "text",
+              "name": "jtf_eplace"
+            },
+            {
+              "title": "具体地点",
+              "component": "text",
+              "name": "jtf_dplace"
+            },
+            {
+              "title": "类别",
+              "component": "linkToMap",
+              "name": "lb",
+              "linkToMap": {
+                "linkToLable": "true",
+                "mapBasePath": "jtlb",
+                "linkMiddle": "jtf_type"
+              }
+            },
+            {
+              "title": "席别",
+              "component": "text",
+              "name": "jtf_xb"
+            },
+            {
+              "title": "交通金额",
+              "component": "text",
+              "name": "jtf_f"
+            },
+            {
+              "title": "事由",
+              "component": "textarea",
+              "rows": "3",
+              "name": "jtf_why"
+            },
+            {
+              "title": "超标准费用",
+              "component": "text",
+              "datatype": "money",
+              "name": "jtf_cf"
+            }
+          ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.jtf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.jtf_fee_dx",
+          "name": "app.jtf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.jtf_cfee"
+        }
+      ]
+    },
+    {
+      "title": "业务招待费",
+      "component": "panel",
+      "pageid": "ywzdf",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 2,
+          "id": "ywzdtfs",
+          "basePath": "zdfs",
+          "tableForms": [
+            {
+              "title": "招待日期",
+              "component": "date1",
+              "name": "zdf_date"
+            },
+            {
+              "title": "出席员工姓名",
+              "component": "text",
+              "name": "zdf_nms"
+            },
+            {
+              "title": "客户",
+              "component": "text",
+              "name": "zdf_guests"
+            },
+            {
+              "title": "招待地点",
+              "component": "text",
+              "name": "zdf_place"
+            },
+            {
+              "title": "用餐人数",
+              "component": "text",
+              "name": "zdf_sums"
+            },
+            {
+              "title": "消费金额",
+              "component": "text",
+              "name": "zdf_f"
+            },
+            {
+              "title": "超标准金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "zdf_cf"
+            },
+            {
+              "title": "事由",
+              "component": "textarea",
+              "rows": "3",
+              "name": "zdf_why"
+            },
+            {
+              "title": "备注",
+              "component": "textarea",
+              "rows": "3",
+              "name": "zdf_rmk"
+            }
+          ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.zdf_fee_dx",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_cfee"
+        }
+      ]
+    },
+    {
+      "title": "餐饮费",
+      "component": "panel",
+      "pageid": "cyf",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "id": "cyfzzslx",
+          "basePath": "cyfs",
+          "tableForms": [
+            {
+              "title": "日期",
+              "component": "date1",
+              "name": "cyf_date"
+            },
+            {
+              "title": "发生地",
+              "component": "text",
+              "name": "cyf_place"
+            },
+            {
+              "title": "消费金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "cyf_f"
+            },
+            {
+              "title": "事由",
+              "component": "textarea",
+              "rows": "3",
+              "name": "cyf_why"
+            },
+            {
+              "title": "超标准费用",
+              "component": "text",
+              "datatype": "money",
+              "name": "cyf_cf"
+            }
+          ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.cyf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.cyf_fee_dx",
+          "name": "app.cyf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.cyf_cfee"
+        }
+      ]
+    },
+    {
+      "title": "其他费用",
+      "component": "panel",
+      "pageid": "snjt",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 4,
+          "id": "snjtjtfs",
+          "basePath": "qtfs",
+          "linkForms": [
+            {
+              "title": "日期",
+              "component": "date1",
+              "name": "qtf_date"
+            },
+            {
+              "title": "消费金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "qtf_f"
+            },
+            {
+              "title": "公司代码",
+              "component": "labelLink",
+              "editablenode": "",
+              "name": "qtf_km",
+              "link_name": "KSTAR",
+              "label": [
+                "qtkms.SMEMO"
+              ]
+            },
+            {
+              "title": "内容",
+              "component": "textarea",
+              "rows": "3",
+              "name": "qtf_content"
+            },
+            {
+              "title": "超标准金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "qtf_cf"
+            }
+          ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.qtf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.qtf_fee_dx",
+          "name": "app.qtf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.qtf_cfee"
+        }
+      ]
+    },
+    {
+      "title": "财务审批信息",
+      "component": "panel",
+      "pageid": "cwspxx",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "cwspxxrq",
+          "basePath": "ficos",
+          "tableForms": [
+            {
+              "title": "费用科目",
+              "component": "text",
+              "name": "fico_kmnm"
+            },
+            {
+              "title": "科目编码",
+              "component": "text",
+              "name": "fico_km"
+            },
+            {
+              "title": "报销金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "fico_bxfee"
+            },
+            {
+              "title": "扣款金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "fico_divfee"
+            },
+            {
+              "title": "实报金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "fico_actfee"
+            },
+            {
+              "title": "扣款说明",
+              "component": "textarea",
+              "rows": "3",
+              "name": "fico_remark"
+            }
+          ]
+        },
+        {
+          "title": "合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.m_reqmoney"
+        },
+        {
+          "title": "实报金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.m_actmoney"
+        }
+      ]
+    },
+    {
+      "title": "付款信息",
+      "component": "panel",
+      "tasknode": "usertask7",
+      "pageid": "fkxx",
+      "subComponents": [
+        {
+          "title": "付款金额（小写）",
+          "component": "text",
+          "editablenode": "usertask7",
+          "tmpValueName": "app.m_reqmoney",
+          "name": "app.m_paymoney_r"
+        }, {
+          "title": "付款金额（大写）",
+          "component": "text",
+          "editablenode": "usertask7",
+          "name": "app.m_paymoney_r",
+          "dxname":"app.fkxx_fee_dx"
+        }, {
+          "title": "汇率",
+          "component": "text",
+          "editablenode": "usertask7",
+          "name": "app.m_payrate"
+        },
+        {
+          "title": "汇款金额",
+          "component": "text",
+          "datatype":"money",
+          "editablenode": "usertask7",
+          "name": "app.m_paymoney"
+        },
+        {
+          "title": "结算方式",
+          "component": "select",
+          "editablenode": "usertask7",
+          "name": "app.setmode",
+          "options": [
+            {
+              "text": "汇款",
+              "value": "1"
+            },
+            {
+              "text": "现金",
+              "value": "2"
+            }
+          ],
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "结算方式必选"
+          }
+        },
+        {
+          "title": "个人银行账户",
+          "component": "text",
+          "editablenode": "usertask7",
+          "name": "app.m_account",
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "银行账户填写必须"
+          }
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "inputlimit": "digit",
+          "editablenode": "usertask7",
+          "name": "app.m_acbank"
+        },{
+          "title": "备注",
+          "component": "text",
+          "editablenode": "usertask7",
+          "name": "app.m_remark1"
+        },
+        {
+          "title": "付款通知说明",
+          "component": "select",
+          "editablenode": "usertask7",
+          "name": "app.m_paystate",
+          "options": [
+            {
+              "text": "已付款",
+              "value": "1"
+            },
+            {
+              "text": "未付款",
+              "value": "0"
+            }
+          ],
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "付款通知说明必填"
+          }
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
