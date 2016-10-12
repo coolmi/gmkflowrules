@@ -676,7 +676,7 @@
           "title": "付款金额（小写）",
           "component": "text",
           "editablenode": "usertask7",
-          "tmpValueName": "app.m_reqmoney",
+          "tmpValueName": "app.m_actmoney",
           "name": "app.m_paymoney_r"
         }, {
           "title": "付款金额（大写）",

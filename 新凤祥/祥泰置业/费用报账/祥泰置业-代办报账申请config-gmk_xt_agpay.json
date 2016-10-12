@@ -1,5 +1,5 @@
 {
-  "id": "fxgf_agpay",
+  "id": "gmk_xt_agpay",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -19,9 +19,18 @@
     "defaultIndex": 0,
     "selectIndexArray": [
       {
+        "selectIndex": 7,
+        "tasknode": [
+          "usertask1",
+          "innermange",
+          "accoutmanger",
+          "accout"
+        ]
+      },
+      {
         "selectIndex": 8,
         "tasknode": [
-          "usertask2"
+          "payment"
         ]
       }
     ]
@@ -128,9 +137,9 @@
           "label": [
             "app.m_fcode",
             "-",
-            "app.m_fpostid",
+            "app.m_fnm",
             "-",
-            "app.m_fnm"
+            "app.m_fpostnm"
           ]
         },
         {
@@ -154,19 +163,24 @@
           "name": "app.m_ftel"
         },
         {
-          "title": "交办人财务编号",
-          "component": "text",
-          "name": "app.m_dfinum"
-        },
-        {
           "title": "费用承担公司",
           "component": "text",
           "name": "app.m_fcompnm"
         },
         {
-          "title": "交办人成本中心",
-          "component": "text",
-          "name": "app.m_costnm"
+          "title": "预算类型",
+          "component": "radio",
+          "name": "app.m_frepaytp",
+          "options": [
+            {
+              "text": "预算内",
+              "value": "1"
+            },
+            {
+              "text": "预算外",
+              "value": "2"
+            }
+          ]
         },
         {
           "title": "报销类别",
@@ -191,14 +205,20 @@
               "value": "4"
             },
             {
-              "title": "公关费",
-              "value": "5"
-            },
-            {
               "title": "其他费用",
-              "value": "6"
+              "value": "5"
             }
           ]
+        },
+        {
+          "title": "交办人成本中心",
+          "component": "text",
+          "name": "app.m_costnm"
+        },
+        {
+          "title": "交办人财务编号",
+          "component": "text",
+          "name": "app.m_dfinum"
         },
         {
           "title": "备注",
@@ -306,12 +326,6 @@
           "component": "text",
           "datatype": "money",
           "name": "app.txf_cfee"
-        },
-        {
-          "title": "个人超限说明",
-          "component": "textarea",
-          "rows": "3",
-          "name": "app.txf_cremark"
         }
       ]
     },
@@ -482,6 +496,25 @@
               "name": "zdf_rmk"
             }
           ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.zdf_fee_dx",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_cfee"
         }
       ]
     },
@@ -548,93 +581,16 @@
       ]
     },
     {
-      "title": "公关费",
-      "component": "panel",
-      "pageid": "ggf",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 2,
-          "id": "zdfjtfs",
-          "basePath": "ggfs",
-          "tableForms": [
-            {
-              "title": "招待日期",
-              "component": "date1",
-              "name": "ggf_date"
-            },
-            {
-              "title": "出席员工姓名",
-              "component": "text",
-              "name": "ggf_nms"
-            },
-            {
-              "title": "客户",
-              "component": "text",
-              "name": "ggf_guests"
-            },
-            {
-              "title": "招待地点",
-              "component": "text",
-              "name": "ggf_place"
-            },
-            {
-              "title": "消费金额",
-              "component": "text",
-              "name": "ggf_f"
-            },
-            {
-              "title": "超标准金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "ggf_cf"
-            },
-            {
-              "title": "事由",
-              "component": "textarea",
-              "rows": "3",
-              "name": "ggf_why"
-            },
-            {
-              "title": "备注",
-              "component": "textarea",
-              "rows": "3",
-              "name": "ggf_rmk"
-            }
-          ]
-        },
-        {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.ggf_fee"
-        },
-        {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.ggf_fee_dx",
-          "name": "app.ggf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.ggf_cfee"
-        }
-      ]
-    },
-    {
       "title": "其他费用",
       "component": "panel",
       "pageid": "snjt",
       "subComponents": [
         {
-          "component": "formLabelLink",
+          "component": "table_form",
           "titleIndex": 4,
           "id": "snjtjtfs",
           "basePath": "qtfs",
-          "linkForms": [
+          "tableForms": [
             {
               "title": "日期",
               "component": "date1",
@@ -648,12 +604,33 @@
             },
             {
               "title": "公司代码",
-              "component": "labelLink",
-              "editablenode": "",
+              "component": "select",
               "name": "qtf_km",
-              "link_name": "KSTAR",
-              "label": [
-                "qtkms.SMEMO"
+              "options": [
+                {
+                  "text": "职工薪酬-职工教育经费",
+                  "value": "6602005001"
+                },
+                {
+                  "text": "办公费-IT设备耗材",
+                  "value": "6602014001"
+                },
+                {
+                  "text": "办公费-其他办公耗材",
+                  "value": "6602014002"
+                },
+                {
+                  "text": "办公费-邮寄费",
+                  "value": "6602014003"
+                },
+                {
+                  "text": "办公费-其他办公费",
+                  "value": "6602014004"
+                },
+                {
+                  "text": "会务费-会议费",
+                  "value": "6602016004"
+                }
               ]
             },
             {
@@ -753,69 +730,103 @@
       ]
     },
     {
-      "title": "财务付款",
-      "pageid": "cwfk",
-      "tasknode": "payment",
+      "title": "付款信息",
       "component": "panel",
+      "tasknode": "payment",
+      "pageid": "fkxx",
       "subComponents": [
         {
-          "title": "员工ITCODE",
+          "title": "付款金额（小写）",
           "component": "text",
-          "tmpValueName": "app.userd",
-          "name": "itcodeview"
+          "editablenode": "payment",
+          "tmpValueName": "app.m_actmoney",
+          "name": "app.m_paymoney_r"
         },
         {
-          "title": "所在部门",
+          "title": "付款金额（大写）",
           "component": "text",
-          "tmpValueName": "app.orgeh",
-          "name": "deptview"
+          "editablenode": "payment",
+          "name": "app.m_paymoney_r",
+          "dxname": "app.fkxx_fee_dx"
         },
         {
-          "title": "手机号",
+          "title": "汇率",
           "component": "text",
-          "tmpValueName": "app.telpr",
-          "name": "phoneview"
+          "editablenode": "payment",
+          "name": "app.m_payrate"
         },
         {
-          "title": "员工财务编号",
-          "component": "text",
-          "tmpValueName": "app.lifnr",
-          "name": "lifnrview"
-        },
-        {
-          "title": "应付金额（RMB）",
+          "title": "汇款金额",
           "component": "text",
           "datatype": "money",
-          "tmpValueName": "sumfwbasfval",
-          "name": "cdmbtrp"
+          "editablenode": "payment",
+          "name": "app.m_paymoney"
         },
         {
-          "title": "冲备用金",
-          "component": "text",
-          "datatype": "money",
-          "tmpValueName": "app.reserve",
-          "name": "dmbtrp"
-        },
-        {
-          "title": "付款金额（RMB）",
-          "component": "text",
-          "datatype": "money",
-          "name": "cdmbtrpf",
-          "calculateSum": {
-            "baseValue": "sumfwbasfval",
-            "calArray": [
-              {
-                "valuePath": "app.reserve",
-                "type": "sub"
-              }
-            ]
+          "title": "结算方式",
+          "component": "select",
+          "editablenode": "payment",
+          "name": "app.setmode",
+          "options": [
+            {
+              "text": "汇款",
+              "value": "1"
+            },
+            {
+              "text": "现金",
+              "value": "2"
+            }
+          ],
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "结算方式必选"
           }
         },
         {
-          "title": "冲备用金说明",
+          "title": "个人银行账户",
           "component": "text",
-          "tmpValueName": "app.reservconent",
-          "name": "rstgrp"
+          "editablenode": "payment",
+          "name": "app.m_account",
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "银行账户填写必须"
+          }
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "inputlimit": "digit",
+          "editablenode": "payment",
+          "name": "app.m_acbank"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "editablenode": "payment",
+          "name": "app.m_remark1"
+        },
+        {
+          "title": "付款通知说明",
+          "component": "select",
+          "editablenode": "payment",
+          "name": "app.m_paystate",
+          "options": [
+            {
+              "text": "已付款",
+              "value": "1"
+            },
+            {
+              "text": "未付款",
+              "value": "0"
+            }
+          ],
+          "validation": {
+            "pageid": "fk",
+            "required": true,
+            "validateMsg": "付款通知说明必填"
+          }
         }
       ]
     }
