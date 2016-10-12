@@ -2,6 +2,7 @@
   "id": "cp_transfer",
   "handleOnPC": {
     "tasknode": [
+      "usertask5"
     ],
     "flag": [
       "resubmit"
@@ -179,6 +180,18 @@
               "title": "调拨事由",
               "component": "text",
               "name": "transferreason"
+            },
+            {
+              "title": "调出厂部领导",
+              "component": "text",
+              "tasknode": "usertask9",
+              "name": "tcbmcbldname"
+            },
+            {
+              "title": "调出分管领导",
+              "component": "text",
+              "tasknode": "usertask9",
+              "name": "tcbmfgldname"
             }
           ]
         }
@@ -188,7 +201,7 @@
       "title": "执行信息",
       "pageid": "gdzcglyzxxx",
       "component": "panel",
-      "tasknode": "usertask5",
+      "tasknode": "usertask5,usertask9",
       "subComponents": [
         {
           "title": "调拨方式",
