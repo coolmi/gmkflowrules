@@ -2,6 +2,8 @@
   "id": "gdzcit_prywh",
   "handleOnPC": {
     "tasknode": [
+      "usertask4",
+      "usertask5"
     ],
     "flag": [
       "resubmit"
@@ -139,6 +141,7 @@
             {
               "component": "table_form",
               "basePath": "zitsbjyiList",
+              "id": "sqxxmx_table",
               "titleIndex": 0,
               "tableForms": [
                 {
@@ -192,6 +195,130 @@
                   "title": "参考总价",
                   "datatype": "money",
                   "name": "totalprice"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "采购明细",
+          "panel_id": "cgmx_panel",
+          "component": "panel",
+          "notShowOnHandle": true,
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "zitsbjyiList",
+              "titleIndex": 0,
+              "id": "cgmx_table",
+              "tableForms": [
+                {
+                  "component": "text",
+                  "title": "资产描述",
+                  "name": "propertynumname"
+                },
+                {
+                  "component": "text",
+                  "title": "品牌",
+                  "name": "brand"
+                },
+                {
+                  "component": "text",
+                  "title": "型号",
+                  "name": "zsbmodel"
+                },
+                {
+                  "component": "text",
+                  "title": "参数",
+                  "name": "property"
+                },
+                {
+                  "component": "text",
+                  "title": "数量",
+                  "name": "menge"
+                },
+                {
+                  "component": "text",
+                  "title": "单位",
+                  "name": "meins"
+                },
+                {
+                  "component": "text",
+                  "title": "供应商",
+                  "name": "lifnr"
+                },
+                {
+                  "component": "text",
+                  "title": "单价",
+                  "datatype": "money",
+                  "name": "lprice"
+                },
+                {
+                  "component": "text",
+                  "title": "总价",
+                  "datatype": "money",
+                  "name": "ltotalprice"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "验收信息",
+          "panel_id": "ysxx_panel",
+          "component": "panel",
+          "notShowOnHandle": true,
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "zitsbjyiList",
+              "id": "ysxx_table",
+              "titleIndex": 0,
+              "tableForms": [
+                {
+                  "component": "text",
+                  "title": "资产描述",
+                  "name": "propertynumname"
+                },
+                {
+                  "component": "text",
+                  "title": "品牌",
+                  "name": "brand"
+                },
+                {
+                  "component": "text",
+                  "title": "型号",
+                  "name": "zsbmodel"
+                },
+                {
+                  "component": "text",
+                  "title": "参数",
+                  "name": "property"
+                },
+                {
+                  "component": "text",
+                  "title": "数量",
+                  "name": "menge"
+                },
+                {
+                  "component": "text",
+                  "title": "单位",
+                  "name": "meins"
+                },
+                {
+                  "component": "text",
+                  "title": "供应商",
+                  "name": "lifnr"
+                },
+                {
+                  "component": "text",
+                  "title": "验收数量",
+                  "name": "grqty"
+                },
+                {
+                  "component": "text",
+                  "title": "验收日期",
+                  "name": "arrival"
                 }
               ]
             }
