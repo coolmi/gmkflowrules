@@ -1,7 +1,7 @@
 {
   "id": "fi_accounttitlemaintenance",
   "handleOnPC": {
-    "tasknode": ["afk"],
+    "tasknode": [""],
     "flag": ["resubmit"]
   },
   "selectPerson": {
@@ -108,7 +108,7 @@
               "component": "table_form",
               "titleIndex": 1,
               "id": "kjkmmmx_id",
-              "basePath": "costdetaillist",
+              "basePath": "accounttitlesubs",
               "tableForms": [
                 {
                   "title": "控制范围",

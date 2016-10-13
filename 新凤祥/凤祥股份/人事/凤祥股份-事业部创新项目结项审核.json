@@ -2,7 +2,7 @@
   "id": "fx_innovateknotapply",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask4"
     ],
     "flag": [
       "resubmit"
