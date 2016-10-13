@@ -252,10 +252,66 @@
       ]
     },
     {
+      "title": "财务会计",
+      "pageid": "cwgjfpgdzccwbh_page",
+      "notShowOnHandle": true,
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "itprtabiapplist",
+          "id": "cwgjfpgdzccwbh_table",
+          "tableForms": [
+            {
+              "component": "text",
+              "title": "资产大类",
+              "name": "ktorgname"
+            },
+            {
+              "component": "text",
+              "title": "资产分类",
+              "name": "anlklname"
+            },
+            {
+              "component": "text",
+              "title": "资产描述",
+              "name": "propertynumname"
+            },
+            {
+              "component": "text",
+              "title": "成本中心",
+              "name": "kostlname"
+            },
+            {
+              "component": "text",
+              "title": "品牌",
+              "name": "brand"
+            },
+            {
+              "component": "text",
+              "title": "型号",
+              "name": "model"
+            },
+            {
+              "component": "textarea",
+              "title": "参数",
+              "name": "property"
+            },
+            {
+              "component": "text",
+              "title": "固定资产编号",
+              "name": "anln1"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "采购执行",
       "component": "panel",
       "pageid": "itcgglycgzx_page",
       "tasknode": "usertask7",
+      "notShowOnView": true,
       "subComponents": [
         {
           "title": "IT采购管理员采购执行",
@@ -406,6 +462,44 @@
               "title": "软件需求",
               "id": "office_need_flag",
               "name": "office"
+            },
+            {
+              "title": "软件需求信息",
+              "component": "panel",
+              "panel_id": "ididi_rjxqxx_panel",
+              "subComponents": [
+                {
+                  "component": "table_form",
+                  "basePath": "itprtabkapps",
+                  "tableForms": [
+                    {
+                      "component": "text",
+                      "title": "资产编号",
+                      "name": "propertycode"
+                    },
+                    {
+                      "component": "textarea",
+                      "title": "资产类别",
+                      "name": "propertypename"
+                    },
+                    {
+                      "component": "textarea",
+                      "title": "资产描述",
+                      "name": "propertynumname"
+                    },
+                    {
+                      "component": "text",
+                      "title": "品牌",
+                      "name": "brand"
+                    },
+                    {
+                      "component": "text",
+                      "title": "版本",
+                      "name": "model"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
