@@ -233,11 +233,6 @@
               "component": "text",
               "datatype": "money",
               "name": "ulfees"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrs"
             }
           ]
         }
@@ -381,11 +376,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnr"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnr"
             }
           ]
         }
@@ -465,11 +455,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnrc"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrc"
             }
           ]
         }
@@ -522,11 +507,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnro"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnro"
             }
           ]
         }
@@ -585,11 +565,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnrm"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrm"
             }
           ]
         }
@@ -671,11 +646,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnrh"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrh"
             }
           ]
         }
@@ -738,11 +708,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnrt"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrt"
             }
           ]
         }
@@ -788,11 +753,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnre"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnre"
             }
           ]
         }
@@ -850,11 +810,6 @@
               "title": "项目号",
               "component": "text",
               "name": "colnrg"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrg"
             }
           ]
         }
