@@ -141,6 +141,7 @@
             {
               "component": "table_form",
               "basePath": "zitsbjyiList",
+              "id": "sqxxmx_table",
               "titleIndex": 0,
               "tableForms": [
                 {
@@ -209,6 +210,7 @@
               "component": "table_form",
               "basePath": "zitsbjyiList",
               "titleIndex": 0,
+              "id": "cgmx_table",
               "tableForms": [
                 {
                   "component": "text",
@@ -270,6 +272,7 @@
             {
               "component": "table_form",
               "basePath": "zitsbjyiList",
+              "id": "ysxx_table",
               "titleIndex": 0,
               "tableForms": [
                 {
