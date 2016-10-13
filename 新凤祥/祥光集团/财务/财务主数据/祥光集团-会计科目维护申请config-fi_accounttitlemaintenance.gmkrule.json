@@ -1,7 +1,7 @@
 {
   "id": "fi_accounttitlemaintenance",
   "handleOnPC": {
-    "tasknode": [""],
+    "tasknode": ["usertask5"],
     "flag": ["resubmit"]
   },
   "selectPerson": {
@@ -151,6 +151,23 @@
                 }
               ]
             }
+          ]
+        }
+      ,{
+          "title": "是否存在科目",
+          "component": "radio",
+          "name": "hasaccount",
+          "editablenode":"usertask4",
+          "options":[
+            {
+              "title":"否",
+              "value":"0"
+            },
+            {
+              "title":"是",
+              "value":"1"
+            }
+
           ]
         }
 
