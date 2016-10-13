@@ -1,0 +1,222 @@
+{
+  "id": "fooddev_innovateknotapply",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask4"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+      {
+        "title": "结项基本信息",
+        "pageid": "jxjbxx",
+        "component": "panel",
+        "subComponents": [
+            {
+                "title": "项目编号",
+                "component": "text",
+                "id": "mainModel_jbxxxmbh",
+                "editablenode": "",
+                "name": "mainModel.jbxxxmbh"
+            },
+            {
+                "title": "项目名称",
+                "component": "text",
+                "id": "mainModel_jbxxxmmc",
+                "editablenode": "",
+                "name": "mainModel.jbxxxmmc"
+            },
+            {
+                "title": "项目申报人",
+                "component": "text",
+                "id": "mainModel_jbxxxmsbr",
+                "editablenode": "",
+                "name": "mainModel.jbxxxmsbr"
+            },
+            {
+                "title": "项目参与人",
+                "component": "text",
+                "id": "mainModel_jbxxxmcyr",
+                "editablenode": "",
+                "name": "mainModel.jbxxxmcyr"
+            },
+            {
+                "title": "提报部门",
+                "component": "text",
+                "id": "mainModel_jbxxtbbm",
+                "editablenode": "",
+                "name": "mainModel.jbxxtbbm"
+            },
+            {
+                "title": "所在事业部",
+                "component": "text",
+                "id": "mainModel_jbxxszsyb",
+                "editablenode": "",
+                "name": "mainModel.jbxxszsyb"
+            },
+            {
+                "title": "预期效益",
+                "component": "text",
+                "id": "mainModel_jbxxyqsy",
+                "editablenode": "",
+                "name": "mainModel.jbxxyqsy"
+            },
+            {
+                "title": "风险评估",
+                "component": "text",
+                "id": "mainModel_jbxxfxpg",
+                "editablenode": "",
+                "name": "mainModel.jbxxfxpg"
+            },
+            {
+                "title": "立项主要内容",
+                "component": "text",
+                "id": "mainModel_jbxxzynr",
+                "editablenode": "",
+                "name": "mainModel.jbxxzynr"
+            },
+            {
+                "title": "项目周期",
+                "component": "text",
+                "id": "mainModel_smzq",
+                "editablenode": "",
+                "name": "mainModel.smzq"
+            },
+            {
+                "title": "立项等级",
+                "component": "text",
+                "id": "mainModel_lxdjname",
+                "editablenode": "",
+                "name": "mainModel.lxdjname"
+            },
+            {
+                "title": "事业部执行情况",
+                "component": "text",
+                "id": "mainModel_sybzxlxqkname",
+                "editablenode": "",
+                "name": "mainModel.sybzxlxqkname"
+            },
+            {
+                "title": "公司执行情况",
+                "component": "text",
+                "id": "mainModel_gszxlxqkname",
+                "editablenode": "",
+                "name": "mainModel.gszxlxqkname"
+            },
+            {
+                "title": "验证部门",
+                "component": "text",
+                "id": "mainModel_jxzxyzbm",
+                "editablenode": "",
+                "name": "mainModel.jxzxyzbm"
+            },
+            {
+                "title": "效益部门",
+                "component": "text",
+                "id": "mainModel_jxzxxybm",
+                "editablenode": "",
+                "name": "mainModel.jxzxxybm"
+            }
+        ]
+    }
+
+  ]
+}
