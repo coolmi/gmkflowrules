@@ -1,0 +1,561 @@
+{
+  "id": "fi_payment_my",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "doNot": [
+      {
+        "key": "fi_dealpayment",
+        "taskKey": [
+          "generalmgraudit"
+        ]
+      }
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "payment.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "payment.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "payment.pernr",
+            "-",
+            "payment.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "payment.sysbusinessunitname",
+            "-",
+            "payment.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "payment.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx_page",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "select",
+          "title": "结算类别",
+          "name": "payment.paytype",
+          "id": "payment_type_flag_select",
+          "options": [
+            {
+              "text": "资金调拨",
+              "value": "Allocation"
+            },
+            {
+              "text": "预付款",
+              "value": "AdvancePayment"
+            },
+            {
+              "text": "应付款",
+              "value": "AccountPayable"
+            }
+          ]
+        },
+        {
+          "component": "hidden",
+          "title": "",
+          "name": "payadvId",
+          "tmpValueName": "payadv.id",
+          "editable": true,
+          "showLinkage": [
+            {
+              "id": "payment_type_flag_select",
+              "values": [
+                "AdvancePayment"
+              ]
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "title": "业务所属公司",
+          "name": "proinfo.comname"
+        },
+        {
+          "component": "label",
+          "title": "项目名称",
+          "label": [
+            "proinfo.projectcode",
+            "-",
+            "proinfo.projectext"
+          ]
+        },
+        {
+          "title": "应付款信息",
+          "component": "panel",
+          "panel_id": "account_payable_panel",
+          "showLinkage": [
+            {
+              "id": "payment_type_flag_select",
+              "values": [
+                "AccountPayable"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "acchls",
+              "id": "account_payable_table",
+              "titleIndex": 1,
+              "tableForms": [
+                {
+                  "component": "text",
+                  "title": "供应商编号",
+                  "name": "splcode"
+                },
+                {
+                  "component": "text",
+                  "title": "供应商名称",
+                  "name": "splname"
+                },
+                {
+                  "component": "text",
+                  "title": "行文本",
+                  "name": "linetxt"
+                },
+                {
+                  "component": "text",
+                  "title": "发票号",
+                  "name": "invceno"
+                },
+                {
+                  "component": "text",
+                  "title": "拖延天数",
+                  "name": "dlydays"
+                },
+                {
+                  "component": "text",
+                  "title": "货币",
+                  "name": "curcy"
+                },
+                {
+                  "component": "text",
+                  "title": "总金额",
+                  "name": "ttmoney"
+                },
+                {
+                  "component": "text",
+                  "title": "付款金额",
+                  "name": "pymoney"
+                },
+                {
+                  "component": "text",
+                  "title": "付款日期",
+                  "name": "paydate",
+                  "datatype": "date",
+                  "dateFormat": "yyyy-MM-dd"
+                },
+                {
+                  "component": "text",
+                  "title": "结算类别",
+                  "name": "paytype"
+                },
+                {
+                  "component": "text",
+                  "title": "质保金",
+                  "name": "isrete"
+                },
+                {
+                  "component": "text",
+                  "title": "应付余额",
+                  "name": "accblce"
+                },
+                {
+                  "component": "text",
+                  "title": "未清预付",
+                  "name": "outadv"
+                },
+                {
+                  "component": "text",
+                  "title": "总余额",
+                  "name": "totalblce"
+                },
+                {
+                  "component": "text",
+                  "title": "备注",
+                  "name": "rmk"
+                }
+              ]
+            },
+            {
+              "title": "金额统计",
+              "component": "panel",
+              "panel_id": "payment_account_payable_jetj_panel",
+              "subComponents": [
+                {
+                  "component": "text",
+                  "title": "总金额",
+                  "name": "payacc.sumsum"
+                },
+                {
+                  "component": "text",
+                  "title": "付款金额",
+                  "name": "payacc.paycctotal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "预付款信息",
+          "panel_id": "payment_advance_pay_panel",
+          "component": "panel",
+          "showLinkage": [
+            {
+              "id": "payment_type_flag_select",
+              "values": [
+                "AdvancePayment"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "title": "供应商编号",
+              "component": "text",
+              "name": "payadv.splcode"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "payadv.splname"
+            },
+            {
+              "title": "采购订单号/行号",
+              "component": "text",
+              "name": "payadv.purordno"
+            },
+            {
+              "title": "利润中心",
+              "component": "text",
+              "name": "payadv.profitct"
+            },
+            {
+              "title": "原因代码",
+              "component": "text",
+              "name": "payadv.reasoncd"
+            },
+            {
+              "title": "汇入地点",
+              "component": "text",
+              "name": "payadv.remtplace"
+            },
+            {
+              "title": "结算类别",
+              "component": "text",
+              "name": "payadv.paychannel"
+            },
+            {
+              "title": "汇入行",
+              "component": "text",
+              "name": "payadv.remtbank"
+            },
+            {
+              "title": "汇入行账号",
+              "component": "text",
+              "name": "payadv.remtact"
+            },
+            {
+              "title": "汇款用途",
+              "component": "text",
+              "name": "payadv.remtfor"
+            },
+            {
+              "title": "合同约定到货日期",
+              "component": "text",
+              "name": "payadv.ctrctdate",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "付款日期",
+              "component": "text",
+              "name": "payadv.paymentdate"
+            },
+            {
+              "title": "申请金额",
+              "component": "text",
+              "name": "payadv.appmoney"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "payadv.currency"
+            },
+            {
+              "title": "申请金额(大写)",
+              "component": "text",
+              "name": "payadv.moneycn"
+            },
+            {
+              "title": "订单总额",
+              "component": "text",
+              "name": "payadv.totalorder"
+            },
+            {
+              "title": "累计预付之和(含本次预付)",
+              "component": "text",
+              "name": "payadv.addup"
+            },
+            {
+              "title": "未付金额",
+              "component": "text",
+              "name": "payadv.sumnum"
+            },
+            {
+              "title": "此款是否用于在建工程",
+              "component": "text",
+              "name": "payadv.isforbulding"
+            },
+            {
+              "title": "是否招标",
+              "component": "text",
+              "name": "payadv.isbidding"
+            },
+            {
+              "title": "合同号",
+              "component": "text",
+              "name": "payadv.ctrctordno"
+            },
+            {
+              "title": "在建工程编号/资产编号",
+              "component": "text",
+              "name": "payadv.budastcode"
+            },
+            {
+              "title": "档案室签字备案",
+              "component": "text",
+              "name": "payadv.archives"
+            },
+            {
+              "title": "重量",
+              "component": "text",
+              "editablenode": "apply",
+              "validation": {
+                "pageid": "sqxx_page",
+                "panel_id": "payment_advance_pay_panel",
+                "required": true,
+                "validateMsg": "请填写重量"
+              },
+              "showLinkage": [
+                {
+                  "id": "payment_type_flag_select",
+                  "values": [
+                    "AdvancePayment"
+                  ]
+                }
+              ],
+              "name": "payadv.weight"
+            },
+            {
+              "title": "计量单位",
+              "component": "select",
+              "name": "payadv.measurementunit",
+              "editablenode": "apply",
+              "showLinkage": [
+                {
+                  "id": "payment_type_flag_select",
+                  "values": [
+                    "AdvancePayment"
+                  ]
+                }
+              ],
+              "validation": {
+                "pageid": "sqxx_page",
+                "panel_id": "payment_advance_pay_panel",
+                "required": true,
+                "validateMsg": "请选择计量单位"
+              },
+              "options": [
+                {
+                  "text": "请选择",
+                  "value": ""
+                },
+                {
+                  "text": "吨",
+                  "value": "0"
+                },
+                {
+                  "text": "公斤",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "editablenode": "apply",
+              "showLinkage": [
+                {
+                  "id": "payment_type_flag_select",
+                  "values": [
+                    "AdvancePayment"
+                  ]
+                }
+              ],
+              "validation": {
+                "pageid": "sqxx_page",
+                "panel_id": "payment_advance_pay_panel",
+                "required": true,
+                "validateMsg": "请填写备注"
+              },
+              "name": "payadv.rmk"
+            }
+          ]
+        },
+        {
+          "title": "资金调拨信息",
+          "component": "panel",
+          "panel_id": "payment_allocation_panel",
+          "showLinkage": [
+            {
+              "id": "payment_type_flag_select",
+              "values": [
+                "Allocation"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "funstransfers",
+              "id": "payment_allocation_table",
+              "titleIndex": 0,
+              "tableForms": [
+                {
+                  "component": "text",
+                  "title": "付款单位",
+                  "name": "paycom"
+                },
+                {
+                  "component": "text",
+                  "title": "付款单位开户行",
+                  "name": "paycombank"
+                },
+                {
+                  "component": "text",
+                  "title": "付款单位账号",
+                  "name": "paycomacct"
+                },
+                {
+                  "component": "text",
+                  "title": "币种",
+                  "name": "curcy"
+                },
+                {
+                  "component": "text",
+                  "title": "金额",
+                  "name": "money"
+                },
+                {
+                  "component": "text",
+                  "title": "摘要",
+                  "name": "abstra"
+                },
+                {
+                  "component": "text",
+                  "title": "收款单位",
+                  "name": "receivcom"
+                },
+                {
+                  "component": "text",
+                  "title": "收款单位开户行",
+                  "name": "receivcombank"
+                },
+                {
+                  "component": "text",
+                  "title": "收款单位账号",
+                  "name": "receivcomacct"
+                },
+                {
+                  "component": "text",
+                  "title": "备注",
+                  "name": "rmk"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
