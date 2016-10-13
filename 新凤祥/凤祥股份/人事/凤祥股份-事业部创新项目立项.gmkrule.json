@@ -171,6 +171,30 @@
                       "title": "项目周期",
                       "component": "text",
                       "name": "smzq"
+                    },
+                    {
+                      "title": "立项情况",
+                      "component": "text",
+                      "emptyHidden":true,
+                      "name": "sybzxlxqkname"
+                    },
+                    {
+                      "title": "验证部门",
+                      "component": "text",
+                      "emptyHidden":true,
+                      "name": "sybzxyzbm"
+                    },
+                    {
+                      "title": "效益核算部门",
+                      "component": "text",
+                      "emptyHidden":true,
+                      "name": "sybzxxybm"
+                    },
+                    {
+                      "title": "备注",
+                      "component": "text",
+                      "emptyHidden":true,
+                      "name": "sybzxbz"
                     }
                   ]
                 }
