@@ -129,12 +129,12 @@
         {
           "title": "所在部门",
           "component": "text",
-          "name": "cadretransfer.t_xl"
+          "name": "cadretransfer.t_objnm_b"
         },
         {
           "title": "所在岗位",
           "component": "text",
-          "name": "cadretransfer.t_pernr"
+          "name": "cadretransfer.t_postnm_b"
         },
         {
           "title": "学历",
@@ -266,8 +266,8 @@
           "title": "执行情况填写",
           "component": "checkbox",
           "id": "lzzxqk",
-          "editablenode": "usertask8",
-          "tasknode": "usertask8",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
           "name": "cadretransfer.doresult",
           "islinkage": true,
           "validation": {
@@ -302,8 +302,8 @@
           "title": "其他事项说明",
           "id": "qtsxsm1",
           "component": "textarea",
-          "editablenode": "usertask8",
-          "tasknode": "usertask8",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
           "validation": {
             "pageid": "rlzybtx",
             "required": true,
@@ -323,8 +323,8 @@
           "title": "存档、备案情况填写",
           "component": "checkbox",
           "id": "cdbaqktx",
-          "tasknode": "usertask8",
-          "editablenode": "usertask8",
+          "tasknode": "usertask3",
+          "editablenode": "usertask3",
           "name": "cadretransfer.storresult",
           "islinkage": true,
           "validation": {
@@ -359,8 +359,8 @@
           "title": "其他事项说明",
           "id": "qtsxsm2",
           "component": "textarea",
-          "editablenode": "usertask8",
-          "tasknode": "usertask8",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
           "name": "cadretransfer.otherinfo2",
           "validation": {
             "pageid": "rlzybtx",
@@ -376,19 +376,91 @@
             }
           ]
         },
+        {
+          "title": "职务编号(8位)",
+          "component": "text",
+          "name": "cadretransfer.sap_jobid",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写职务编号"
+          }
+        },
+        {
+          "title": "人事范围",
+          "component": "text",
+          "name": "cadretransfer.sap_pfw",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写人事范围"
+          }
+        },
+        {
+          "title": "人事子范围",
+          "component": "text",
+          "name": "cadretransfer.sap_pzfw",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写人事子范围"
+          }
+        },
+        {
+          "title": "员工组",
+          "component": "text",
+          "name": "cadretransfer.sap_ygz",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写员工组"
+          }
+        },
+        {
+          "title": "员工子组",
+          "component": "text",
+          "name": "cadretransfer.sap_ygzz",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写员工子组"
+          }
+        },
+        {
+          "title": "工资范围",
+          "component": "text",
+          "name": "cadretransfer.sap_gz",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写工资范围"
+          }
+        },
+        {
+          "title": "工作合同",
+          "component": "text",
+          "name": "cadretransfer.sap_ht",
+          "editablenode": "usertask3",
+          "tasknode": "usertask3",
+          "validation": {
+            "pageid": "rlzybtx",
+            "required": true,
+            "validateMsg": "请填写工作合同"
+          }
+        }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }

@@ -200,7 +200,7 @@
           "editablenode": "",
           "tasknode": "internalaudit,usertask3,usertask5,usertask6,usertask7,usertask8,usertask9,,usertask10,,usertask11",
           "component": "select",
-          "name": "mainModel.yxczg",
+          "name": "yxczg",
           "options": [
             {
               "text": "一线操作工",
@@ -273,7 +273,7 @@
           "validation": {
             "pageid": "rlzybtx",
             "required": true,
-            "validateMsg": "请填写员工实际离职类型"
+            "validateMsg": "请填写员工实际离职类型核实"
           }
         }
       ]

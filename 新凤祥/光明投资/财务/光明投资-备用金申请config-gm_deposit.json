@@ -1,0 +1,193 @@
+{
+  "id": "gm_deposit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "deposit.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "deposit.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "deposit.pernr",
+            "-",
+            "deposit.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "deposit.sysbusinessunitname",
+            "-",
+            "deposit.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "deposit.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "deposit.pernr"
+        },
+        {
+          "title": "员工ITCODE",
+          "component": "text",
+          "name": "deposit.userid"
+        },
+        {
+          "title": "费用承担公司",
+          "component": "label",
+          "label": [
+            "deposit.cdbukrs",
+            "-",
+            "deposit.cdbukrsname"
+          ]
+        },
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "label": [
+            "deposit.akostl",
+            "-",
+            "deposit.aktext"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "备用金汇总",
+      "pageid": "byjhz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 2,
+          "basePath": "resegs",
+          "tableForms": [
+            {
+              "title": "备用金类型",
+              "component": "text",
+              "name": "stype"
+            },
+            {
+              "title": "预计归还日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "edate"
+            },
+            {
+              "title": "预借金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "fwbas"
+            },
+            {
+              "title": "预借金额(大写)",
+              "component": "text",
+              "name": "fwbas1"
+            },
+            {
+              "title": "申请事由",
+              "component": "text",
+              "name": "smemo"
+            },
+            {
+              "title": "付款金额",
+              "component": "text",
+              "tasknode": "aft",
+              "datatype": "money",
+              "name": "dmbtr"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
