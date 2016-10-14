@@ -1,0 +1,148 @@
+{
+  "id": "af_equipexarepair",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "equipexarepair.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "equipexarepair.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "equipexarepair.pernr",
+            "-",
+            "equipexarepair.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "equipexarepair.sysbusinessunitname",
+            "-",
+            "equipexarepair.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "equipexarepair.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "equipexarepair.zcsrmc"
+        },
+        {
+          "title": "检修项目名称",
+          "component": "text",
+          "name": "equipexarepair.jxxmmc"
+        },
+        {
+          "title": "检修费用金额(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "equipexarepair.jxfyje"
+        },
+        {
+          "title": "检修费用金额(大写)",
+          "component": "text",
+          "name": "equipexarepair.jxfyjedx"
+        },
+        {
+          "title": "检修车间/厂部名称",
+          "component": "text",
+          "name": "equipexarepair.jxcjcbmc"
+        },
+        {
+          "title": "成本中心-代码名称",
+          "component": "text",
+          "name": "equipexarepair.cbzxmc"
+        },
+        {
+          "title": "申请内容描述",
+          "component": "textarea",
+          "rows": "2",
+          "name": "equipexarepair.sqnrms"
+        }
+      ]
+    }
+  ]
+}
