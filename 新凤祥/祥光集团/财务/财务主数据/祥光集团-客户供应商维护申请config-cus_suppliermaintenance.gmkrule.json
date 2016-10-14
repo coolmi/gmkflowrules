@@ -1,0 +1,380 @@
+{
+  "id": "cus_suppliermaintenance",
+  "handleOnPC": {
+    "tasknode": ["usertask7"],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label":
+            ["mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label":
+           [ "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "基本信息",
+          "panel_id": "jbxxanother",
+          "component": "panel",
+          "subComponents": [
+            {
+              "title": "申请类型",
+              "component": "select",
+              "id": "sqlx_id",
+              "name": "mainModel.applicationtype",
+              "options": [
+                {
+                  "text": "客户",
+                  "value": "A"
+                },
+                {
+                  "text": "供应商",
+                  "value": "B"
+                }
+              ]
+            },
+            {
+              "title": "公司代码",
+              "component": "text",
+              "name": "mainModel.companycodetxt",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["A","B"]
+                }
+              ]
+            },
+            {
+              "title": "是否维护信用额度",
+              "component": "text",
+              "name": "mainModel.whethercreditline",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["A"]
+                }
+              ]
+            },
+            {
+              "title": "销售组织",
+              "component": "text",
+              "name": "mainModel.salesorgtxt",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["A"]
+                }
+              ]
+            },
+            {
+              "title": "采购组织",
+              "component": "text",
+              "name": "mainModel.procurementorgtxt",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["B"]
+                }
+              ]
+            },
+            {
+              "title": "产品组",
+              "component": "text",
+              "name": "mainModel.productgrouptxt",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["A"]
+                }
+              ]
+            },
+            {
+              "title": "订单货币",
+              "component": "text",
+              "name": "mainModel.ordercurrencytxt",
+              "showLinkage": [
+                {
+                  "id": "sqlx_id",
+                  "values": ["A","B"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "控制数据",
+          "panel_id": "kzsj",
+          "component": "panel",
+          "subComponents": [
+            {
+              "title": "供应商/客户sap号",
+              "component": "text",
+
+              "name": "mainModel.suppliercussapnum"
+            },
+            {
+              "title": "行业",
+              "component": "text",
+              "name": "mainModel.industrytxt"
+            },
+            {
+              "title": "客户科目组",
+              "component": "text",
+              "name": "mainModel.customeraccountgrouptxt"
+            }
+          ]
+        },
+        {
+          "title": "通用数据",
+          "panel_id": "tysj",
+          "component": "panel",
+          "subComponents": [
+            {
+              "title": "称谓",
+              "component": "text",
+              "name": "mainModel.appellationtxt"
+            },
+            {
+              "title": "公司类型",
+              "component": "text",
+              "name": "mainModel.companytypetxt"
+            },
+            {
+              "title": "供应商/客户简称",
+              "component": "text",
+              "name": "mainModel.suppliercustomercn"
+            },
+            {
+              "title": "供应商/客户全称",
+              "component": "text",
+              "name": "mainModel.suppliercustomerfullnamecn"
+            },
+            {
+              "title": "供应商/客户简称(英文)",
+              "component": "text",
+              "name": "mainModel.suppliercustomeren"
+            },
+            {
+              "title": "供应商/客户全称(英文)",
+              "component": "text",
+              "name": "mainModel.suppliercustomerfullnameen"
+            },
+            {
+              "title": "法人",
+              "component": "text",
+              "name": "mainModel.legalperson"
+            },
+            {
+              "title": "国家",
+              "component": "text",
+              "name": "mainModel.countrytxt"
+            },
+            {
+              "title": "注册资本货币",
+              "component": "text",
+              "name": "mainModel.registeredcapitalcurrencytxt"
+            },
+            {
+              "title": "注册资本",
+              "component": "money",
+              "name": "mainModel.registeredcapital"
+            },
+            {
+              "title": "实际注册资本",
+              "component": "money",
+              "name": "mainModel.actualregisteredcapital"
+            },
+            {
+              "title": "成立日期",
+              "component": "date1",
+              "name": "mainModel.costdate"
+            },
+            {
+              "title": "税号",
+              "component": "money",
+              "name": "mainModel.dutyparagraph"
+            },
+            {
+              "title": "联系人",
+              "component": "text",
+              "name": "mainModel.contacts"
+            },
+            {
+              "title": "注册地址(中)",
+              "component": "text",
+              "name": "mainModel.registeredaddresscn"
+            },
+            {
+              "title": "注册地址(英)",
+              "component": "text",
+              "name": "mainModel.registeredaddressen"
+            },
+            {
+              "title": "办公地址(中)",
+              "component": "text",
+              "name": "mainModel.officeaddresscn"
+            },
+            {
+              "title": "办公地址(英)",
+              "component": "text",
+              "name": "mainModel.officeaddressen"
+            },
+            {
+              "title": "地区",
+              "component": "text",
+              "name": "mainModel.regiontxt"
+            },
+            {
+              "title": "邮编",
+              "component": "text",
+              "name": "mainModel.zipcode"
+            },
+            {
+              "title": "城市",
+              "component": "text",
+              "name": "mainModel.city"
+            },
+            {
+              "title": "传真",
+              "component": "text",
+              "name": "mainModel.fax"
+            },
+            {
+              "title": "电话",
+              "component": "text",
+              "name": "mainModel.telephone"
+            },{
+              "title": "移动电话",
+              "component": "text",
+              "name": "mainModel.mobilephone"
+            },
+            {
+              "title": "email",
+              "component": "text",
+              "name": "mainModel.emailn"
+            }
+
+
+
+
+          ]
+        },
+        {
+          "title": "银行数据",
+          "panel_id": "yhsj",
+          "component": "panel",
+          "subComponents": [
+            {
+              "title": "国家",
+              "component": "text",
+              "name": "mainModel.country2txt"
+            },
+            {
+              "title": "银行代码",
+              "component": "text",
+              "name": "mainModel.bankcode"
+            },
+            {
+              "title": "银行账户",
+              "component": "text",
+              "name": "mainModel.bankaccount"
+            },
+            {
+              "title": "银行类型",
+              "component": "text",
+              "name": "mainModel.banktype"
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}
