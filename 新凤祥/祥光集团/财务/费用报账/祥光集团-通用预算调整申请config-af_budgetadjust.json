@@ -1,0 +1,260 @@
+{
+  "id": "af_budgetadjust",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "budgetadjustapp.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "budgetadjustapp.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "budgetadjustapp.pernr",
+            "-",
+            "budgetadjustapp.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "budgetadjustapp.sysbusinessunitname",
+            "-",
+            "budgetadjustapp.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadjustapp.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "basePath": "budgetadjustappsub",
+          "titleIndex": 1,
+          "linkForms": [
+            {
+              "title": "调整日期",
+              "component": "date1",
+              "name": "sdate"
+            },
+            {
+              "title": "年份",
+              "component": "text",
+              "name": "year"
+            },
+            {
+              "title": "源项目号",
+              "component": "label",
+              "label": [
+                "sourcecolnr",
+                "-",
+                "sourceconam"
+              ]
+            },
+            {
+              "title": "源项目子号",
+              "component": "label",
+              "label": [
+                "sourcechildcolnr",
+                "-",
+                "sourcechildconam"
+              ]
+            },
+            {
+              "title": "目标项目号",
+              "component": "label",
+              "label": [
+                "targetcolnr",
+                "-",
+                "targetconam"
+              ]
+            },
+            {
+              "title": "目标项目子号",
+              "component": "label",
+              "label": [
+                "targetchildcolnr",
+                "-",
+                "targetchildconam"
+              ]
+            },
+            {
+              "title": "科目",
+              "component": "label",
+              "label": [
+                "kstar",
+                "-",
+                "kstarv"
+              ]
+            },
+            {
+              "title": "成本中心",
+              "component": "label",
+              "label": [
+                "kostl",
+                "-",
+                "ktext"
+              ]
+            },
+            {
+              "title": "调整说明",
+              "component": "textarea",
+              "rows":"2",
+              "name": "smemo"
+            },
+            {
+              "title": "一月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl01"
+            },
+            {
+              "title": "二月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl02"
+            },
+            {
+              "title": "三月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl03"
+            },
+            {
+              "title": "四月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl04"
+            },
+            {
+              "title": "五月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl05"
+            },
+            {
+              "title": "六月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl06"
+            },
+            {
+              "title": "七月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl07"
+            },
+            {
+              "title": "八月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl08"
+            },
+            {
+              "title": "九月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl09"
+            },
+            {
+              "title": "十月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl10"
+            },
+            {
+              "title": "十一月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl11"
+            },
+            {
+              "title": "十二月份",
+              "component": "text",
+              "datatype": "money",
+              "name": "hsl12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
