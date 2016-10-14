@@ -1,0 +1,174 @@
+{
+  "id": "fi_fundplan_my_app",
+  "handleOnPC": {
+    "tasknode": [
+      "apply"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "doNot": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "fundplan.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "fundplan.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "fundplan.pernr",
+            "-",
+            "fundplan.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "fundplan.sysbusinessunitname",
+            "-",
+            "fundplan.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fundplan.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "text",
+          "title": "业务所属公司",
+          "name": "proinfo.comname"
+        },
+        {
+          "component": "label",
+          "title": "项目名称",
+          "label": [
+            "proinfo.projectcode",
+            "-",
+            "proinfo.projectext"
+          ]
+        },
+        {
+          "component": "textarea",
+          "title": "备注",
+          "name": "fundplan.bzs",
+          "editable": true,
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "备注不能为空"
+          }
+        },
+        {
+          "title": "详细信息",
+          "component": "panel",
+          "panel_id": "fundplan_xxxx_panel",
+          "subComponents": [
+            {
+              "component": "text",
+              "title": "详细信息",
+              "name": "fundplan.report",
+              "events": {
+                "eventType": "openUrl",
+                "openUrl": "fundplan.scrlink"
+              }
+            }
+          ]
+        },
+        {
+          "title": "业务附件",
+          "component": "panel",
+          "panel_id": "ywfj_fundplan_panel",
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "files",
+              "id": "ywfj_fundplan_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openUrl",
+                    "openUrl": "fileurl"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
