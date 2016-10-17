@@ -30,16 +30,7 @@
           "label": [
             "salary.pernr",
             "-",
-            "salary.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "label",
-          "label": [
-            "salary.sysbusinessunitname",
-            "-",
-            "salary.sysdeptname"
+            "nachn"
           ]
         },
         {
