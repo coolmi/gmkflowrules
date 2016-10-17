@@ -1,0 +1,139 @@
+{
+  "id": "HRORGCANCEL",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "orgcancel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "orgcancel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "orgcancel.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgcancel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "title": "组织名称",
+          "component": "label",
+          "label": [
+            "orgcancel.objid",
+            "-",
+            "orgcancel.stext"
+          ]
+        },
+        {
+          "title": "生效时间",
+          "component": "date1",
+          "name": "orgcancel.settime"
+        },
+        {
+          "title": "操作原因",
+          "component": "text",
+          "name": "orgcancel.massgtext"
+        },
+        {
+          "title": "上级组织",
+          "component": "text",
+          "name": "orgcancel.parestext"
+        },
+        {
+          "title": "地点",
+          "component": "text",
+          "name": "orgcancel.orgsite"
+        },
+        {
+          "title": "组织类型",
+          "component": "text",
+          "name": "orgcancel.zzdzzlx"
+        },
+        {
+          "title": "组织层级",
+          "component": "label",
+          "label": [
+            "orgcancel.zzdzzcj",
+            "-",
+            "orgcancel.zzdzzcjtext"
+          ]
+        }
+      ]
+    }
+  ]
+}
