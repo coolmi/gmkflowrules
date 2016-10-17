@@ -1,0 +1,327 @@
+{
+  "id": "ap_companysys",
+  "handleOnPC": {
+    "tasknode": [
+      "gly"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "bean.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "bean.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "bean.pernr",
+            "-",
+            "bean.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "bean.sysbusinessunitname",
+            "-",
+            "bean.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "bean.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "name": "bean.title"
+        },
+        {
+          "title": "制度编号",
+          "component": "text",
+          "name": "bean.companysyscode"
+        },
+        {
+          "title": "制度类型",
+          "component": "select",
+          "name": "bean.companysysflag",
+          "options": [
+            {
+              "text": "通用制度",
+              "value": "Q"
+            },
+            {
+              "text": "专用制度",
+              "value": "XG"
+            }
+          ]
+        },
+        {
+          "title": "制度分类",
+          "component": "select",
+          "name": "bean.companysystype",
+          "options": [
+            {
+              "text": "管理规章制度",
+              "value": "GL"
+            },
+            {
+              "text": "技术规章制度",
+              "value": "JS"
+            },
+            {
+              "text": "工作规章制度",
+              "value": "GZ"
+            }
+          ]
+        },
+        {
+          "title": "制度管理内容",
+          "component": "select",
+          "name": "bean.syscontenttype",
+          "options": [
+            {
+              "text": "管理基础",
+              "value": "JC"
+            },
+            {
+              "text": "行政管理",
+              "value": "XZ"
+            },
+            {
+              "text": "人力资源管理",
+              "value": "HR"
+            },
+            {
+              "text": "财务管理",
+              "value": "CW"
+            },
+            {
+              "text": "资本管理",
+              "value": "ZB"
+            },
+            {
+              "text": "设备与资产管理",
+              "value": "SB"
+            },
+            {
+              "text": "规划计划管理",
+              "value": "GH"
+            },
+            {
+              "text": "技术管理",
+              "value": "JS"
+            },
+            {
+              "text": "经营管理",
+              "value": "JY"
+            },
+            {
+              "text": "工程建设管理",
+              "value": "GC"
+            },
+            {
+              "text": "安全管理",
+              "value": "AQ"
+            },
+            {
+              "text": "质量管理",
+              "value": "ZL"
+            },
+            {
+              "text": "能源管理",
+              "value": "NY"
+            },
+            {
+              "text": "环境管理",
+              "value": "HB"
+            },
+            {
+              "text": "物流管理",
+              "value": "WL"
+            },
+            {
+              "text": "采购管理",
+              "value": "WZ"
+            },
+            {
+              "text": "信息管理",
+              "value": "XX"
+            },
+            {
+              "text": "审计监督管理",
+              "value": "SJ"
+            }
+          ]
+        },
+        {
+          "title": "版本代号",
+          "component": "text",
+          "name": "bean.sysversioncode"
+        },{
+          "title": "发布公司",
+          "component": "text",
+          "name": "bean.burksname"
+        },
+        {
+          "title": "发布部门",
+          "component": "select",
+          "name": "bean.draftdepart",
+          "options": [
+            {
+              "text": "山东祥光集团有限公司",
+              "value": "XG"
+            },
+            {
+              "text": "阳谷祥光铜业有限公司",
+              "value": "XGTY"
+            },
+            {
+              "text": "山东祥瑞铜材有限公司",
+              "value": "XRTC"
+            },
+            {
+              "text": "决策委员会",
+              "value": "JC"
+            },
+            {
+              "text": "技术委员会",
+              "value": "JS"
+            },
+            {
+              "text": "人事行政中心－行政信息",
+              "value": "XZ"
+            },
+            {
+              "text": "人事行政中心－人力资源",
+              "value": "HR"
+            },
+            {
+              "text": "经营核算部",
+              "value": "JH"
+            },
+            {
+              "text": "有色贸易事业部",
+              "value": "MY"
+            },
+            {
+              "text": "审计部",
+              "value": "SJ"
+            },
+            {
+              "text": "期货部",
+              "value": "QH"
+            },
+            {
+              "text": "财务中心",
+              "value": "CW"
+            },
+            {
+              "text": "物流中心",
+              "value": "WL"
+            },
+            {
+              "text": "战略投资部",
+              "value": "ZL"
+            }
+          ]
+        },
+        {
+          "title": "发布范围",
+          "component": "text",
+          "name": "bean.selscope"
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
