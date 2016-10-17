@@ -1,0 +1,158 @@
+{
+  "id": "hrorgtransfer",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask3"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "orgtransfer.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "orgtransfer.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "orgtransfer.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgtransfer.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "拟转移组织名称",
+          "component": "text",
+          "name": "orgtransfer.trforgname"
+        },
+        {
+          "title": "转移前上级组织",
+          "component": "text",
+          "name": "orgtransfer.trforgname"
+        },
+        {
+          "title": "转移后组织名称",
+          "component": "text",
+          "name": "orgtransfer.aforgname"
+        },
+        {
+          "title": "转移后上级组织",
+          "component": "text",
+          "name": "orgtransfer.afptorgname"
+        },
+        {
+          "title": "转移前组织层级",
+          "component": "label",
+          "middleName": [
+            "orgtransfer.bforglevel",
+            "zzdzzcj"
+          ],
+          "label": [
+            "orgtransfer.bforglevel",
+            "-",
+            "zbzzcj.zzdzzcjms"
+          ]
+        },
+        {
+          "title": "转移后组织层级",
+          "component": "label",
+          "middleName": [
+            "orgtransfer.aforglevel",
+            "zzdzzcj"
+          ],
+          "label": [
+            "orgtransfer.aforglevel",
+            "-",
+            "zbzzcj.zzdzzcjms"
+          ]
+        },
+        {
+          "title": "事项原因",
+          "component": "text",
+          "name": "orgtransfer.reason"
+        },
+        {
+          "title": "生效日期",
+          "component": "date1",
+          "name": "orgtransfer.begdate"
+        }
+      ]
+    }
+  ]
+}
