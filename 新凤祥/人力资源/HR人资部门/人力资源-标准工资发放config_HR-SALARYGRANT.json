@@ -1,0 +1,175 @@
+{
+  "id": "HR-SALARYGRANT",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "salary.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "salary.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "salary.pernr",
+            "-",
+            "salary.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "salary.sysbusinessunitname",
+            "-",
+            "salary.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "title": "类别",
+          "component": "select",
+          "id": "slytype",
+          "name": "salary.slytype",
+          "options": [
+            {
+              "text": "月度工资",
+              "value": "10"
+            },
+            {
+              "text": "年度绩效工资",
+              "value": "30"
+            }
+          ]
+        },
+        {
+          "title": "年份",
+          "component": "text",
+          "name": "salary.yearid"
+        },
+        {
+          "title": "月份",
+          "component": "text",
+          "name": "salary.monthid",
+          "showLinkage": [
+            {
+              "id": "slytype",
+              "values": [
+                "10"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "申请明细",
+      "component": "panel",
+      "pageid": "sqmx",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "id": "dqzybhxm",
+          "basePath": "bases",
+          "tableForms": [
+            {
+              "title": "报批公司名称",
+              "component": "text",
+              "name": "company"
+            },
+            {
+              "title": "人数",
+              "component": "text",
+              "name": "persnum"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "sumoney"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "texta"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
