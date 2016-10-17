@@ -156,7 +156,7 @@
           "component": "formLabelLink",
           "titleIndex": 0,
           "basePath": "itprtabiapplist",
-          "id": "itprtabiapplist",
+          "id": "itprtabiapplist_id",
           "linkForms": [
             {
               "title": "资产类别",
