@@ -169,7 +169,14 @@
         },
         {
           "title": "印章名称",
-          "component": "text",
+          "component": "label",
+          "middleName": [
+            "documentsign.sealname",
+            "sealid"
+          ],
+          "label": [
+            "sealinfors.sealtext"
+          ],
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -177,12 +184,18 @@
                 "1"
               ]
             }
-          ],
-          "name": "documentsign.sealname"
+          ]
         },
         {
           "title": "印章类型",
-          "component": "text",
+          "component": "label",
+          "middleName": [
+            "documentsign.sealtype",
+            "sealid"
+          ],
+          "label": [
+            "sealetypes.sealename"
+          ],
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -190,8 +203,7 @@
                 "1"
               ]
             }
-          ],
-          "name": "documentsign.sealtype"
+          ]
         },
         {
           "title": "印章使用",
