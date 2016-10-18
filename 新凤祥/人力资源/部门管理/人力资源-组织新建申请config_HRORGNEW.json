@@ -121,8 +121,26 @@
         },
         {
           "title": "组织类型",
-          "component": "text",
-          "name": "orgcancel.zzdzzlx"
+          "component": "select",
+          "name": "orgcancel.zzdzzlx",
+          "options": [
+            {
+              "text": "正式组织",
+              "value": "O1"
+            },
+            {
+              "text": "临时组织",
+              "value": "O2"
+            },
+            {
+              "text": "工作组织",
+              "value": "O3"
+            },
+            {
+              "text": "汇报组织",
+              "value": "O4"
+            }
+          ]
         },
         {
           "title": "组织层级",
