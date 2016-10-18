@@ -2,7 +2,6 @@
   "id": "HRPOSTEXTEND",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -116,120 +113,149 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "fjxx_abc",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "岗位名称",
-					"component": "text",
-					"editablenode": "",
-                    "name":"extend.belorgtext"
-                },
-				{
-					"title": "岗位等级",
-					"component": "text",
-					"editablenode": "",
-					"name": "extend.zzdpgdjms"
-				},
-				{
-					"title": "新建时间",
-					"component": "date1",
-					"id": "89655c7f07af471ca118c17a4d2d99e7",
-					"editablenode": "",
-					"name": "extend.begda"
-				},
-				{
-					"title": "所属组织",
-					"component": "text",
-					"id": "extend_belorgtext",
-					"editablenode": "",
-					"name": "extend.belorgtext"
-				},
-				{
-					"title": "岗位地点",
-					"component": "text",
-					"id": "extend_postsite",
-					"editablenode": "",
-					"name": "extend.postsite"
-				},
-				{
-					"title": "岗位序列",
-					"component": "text",
-					"id": "extend_zzdgwxl",
-					"editablenode": "",
-					"name": "extend.zzdgwxl"
-				},
-				{
-					"title": "",
-					"component": "hidden",
-					"id": "istruek",
-					"editablenode": "",
-					"name": "istruek"
-				},
-				{
-					"title": "延长/撤销",
-					"component": "select",
-					"id": "extend_extdorcanl",
-                    "rows":3,
-					"editablenode": "",
-					"name": "extend.extdorcanl",
-                    "options":[
-                      {"text":"延长","value":"0"},
-                      {"text":"撤销","value":"1"}
-                    ]
-				},
-                {
-                  "title": "延长原由",
-                  "component": "textarea",
-                  "id": "reasons",
-                  "editablenode": "",
-                  "rows":3,
-                  "name": "extend.reasons",
-                  "showLinkage":[
-                    {
-                      "id":"extend_extdorcanl",
-                      "values":["0"]
-                    }
-                  ]
-                },
-                {
-                  "title": "延长截止日期",
-                  "component": "date1",
-                  "id": "extend_extdate",
-                  "editablenode": "",
-                  "datatype":"date",
-                  "dateFormat":"yyyy-MM-dd",
-                  "name": "extend.extdate",
-                  "showLinkage":[
-                    {
-                      "id":"extend_extdorcanl",
-                      "values":["0"]
-                    }
-                  ]
-                },
-                {
-                  "title": "撤销日期",
-                  "component": "date1",
-                  "id": "extend_cancldate",
-                  "editablenode": "",
-                  "datatype":"date",
-                  "dateFormat":"yyyy-MM-dd",
-                  "name": "extend.cancldate",
-                  "showLinkage":[
-                    {
-                      "id":"extend_extdorcanl",
-                      "values":["1"]
-                    }
-                  ]
-                }
-
-			]
-		}
-
-
+    {
+      "title": "申请信息",
+      "pageid": "fjxx_abc",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "岗位名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "extend.belorgtext"
+        },
+        {
+          "title": "岗位等级",
+          "component": "text",
+          "editablenode": "",
+          "name": "extend.zzdpgdjms"
+        },
+        {
+          "title": "新建时间",
+          "component": "date1",
+          "id": "89655c7f07af471ca118c17a4d2d99e7",
+          "editablenode": "",
+          "name": "extend.begda"
+        },
+        {
+          "title": "所属组织",
+          "component": "text",
+          "id": "extend_belorgtext",
+          "editablenode": "",
+          "name": "extend.belorgtext"
+        },
+        {
+          "title": "岗位地点",
+          "component": "text",
+          "id": "extend_postsite",
+          "editablenode": "",
+          "name": "extend.postsite"
+        },
+        {
+          "title": "岗位序列",
+          "component": "text",
+          "id": "extend_zzdgwxl",
+          "editablenode": "",
+          "name": "extend.zzdgwxl"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id": "istruek",
+          "editablenode": "",
+          "name": "istruek"
+        },
+        {
+          "title": "延长/撤销",
+          "component": "select",
+          "id": "extend_extdorcanl",
+          "rows": 3,
+          "tasknode": "auditwithindept,usertask1,hrmanger",
+          "editablenode": "auditwithindept",
+          "name": "extend.extdorcanl",
+          "islinkage": true,
+          "options": [
+            {
+              "text": "延长",
+              "value": "0"
+            },
+            {
+              "text": "撤销",
+              "value": "1"
+            }
+          ],
+          "handleLinkage": [
+            {
+              "id": "reasons",
+              "values": [
+                "0"
+              ]
+            },
+            {
+              "id": "extend_extdate",
+              "values": [
+                "0"
+              ]
+            },{
+              "id": "extend_cancldate",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "延长原由",
+          "component": "textarea",
+          "id": "reasons",
+          "tasknode": "auditwithindept,usertask1,hrmanger",
+          "editablenode": "auditwithindept",
+          "rows": 3,
+          "name": "extend.reasons",
+          "showLinkage": [
+            {
+              "id": "extend_extdorcanl",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "延长截止日期",
+          "component": "date1",
+          "id": "extend_extdate",
+          "tasknode": "auditwithindept,usertask1,hrmanger",
+          "name": "extend.extdate",
+          "showLinkage": [
+            {
+              "id": "extend_extdorcanl",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "撤销日期",
+          "component": "date1",
+          "id": "extend_cancldate",
+          "tasknode": "auditwithindept,usertask1,hrmanger",
+          "editablenode": "auditwithindept",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "extend.cancldate",
+          "showLinkage": [
+            {
+              "id": "extend_extdorcanl",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
   "refers": {
   }
