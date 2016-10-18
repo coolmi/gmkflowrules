@@ -1,0 +1,157 @@
+{
+  "id": "oa_salaryregulation",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "salary.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "salary.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "salary.pernr",
+            "-",
+            "salary.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "salary.sysbusinessunitname",
+            "-",
+            "salary.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "salary.id"
+        }
+      ]
+    },
+    {
+      "title": "薪酬调整明细",
+      "component": "panel",
+      "pageid": "xctzmx",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "id": "dqzybhxm",
+          "basePath": "base",
+          "tableForms": [
+            {
+              "title": "拟调整人员",
+              "component": "text",
+              "name": "objidoritcodename"
+            },
+            {
+              "title": "岗位等级",
+              "component": "text",
+              "name": "postgrade"
+            },
+            {
+              "title": "能力等级",
+              "component": "text",
+              "name": "abilitylevel"
+            },
+            {
+              "title": "调前年薪",
+              "component": "text",
+              "name": "bnnualsalary"
+            },
+            {
+              "title": "调后年薪",
+              "component": "text",
+              "name": "annualsalary"
+            },
+            {
+              "title": "增长额",
+              "component": "text",
+              "name": "expectgrow",
+            },
+            {
+              "title": "增长率%",
+              "component": "text",
+              "name": "expectrate"
+            },
+            {
+              "title": "建议执行时间",
+              "component": "date1",
+              "name": "sdate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
