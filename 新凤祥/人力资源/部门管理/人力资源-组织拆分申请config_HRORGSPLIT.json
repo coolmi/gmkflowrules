@@ -1,0 +1,151 @@
+{
+  "id": "HRORGSPLIT",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "orgsplit.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "orgsplit.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "orgsplit.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "orgsplit.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "id": "fylbfylx",
+          "basePath": "orgchilds",
+          "titleIndex": 2,
+          "linkForms": [
+            {
+              "title": "拆分后组织名称",
+              "component": "text",
+              "name": "cldorgname"
+            },
+            {
+              "title": "组织层级",
+              "component": "labelLink",
+              "name": "cldorglevlid",
+              "link_name": "zzdzzcj",
+              "label": [
+                "cldorglevlid",
+                "-",
+                "zbzzcjs.zzdzzcjms"
+              ]
+            },
+            {
+              "title": "组织编制",
+              "component": "text",
+              "name": "cldorgcom"
+            },
+            {
+              "title": "是否符合要求",
+              "component": "select",
+              "name": "tempa",
+              "options": [
+                {
+                  "text": "是",
+                  "value": "1"
+                },
+                {
+                  "text": "否",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "title": "所属公司",
+              "component": "labelLink",
+              "name": "comnum",
+              "link_name": "bukrs",
+              "label": [
+                "comnum",
+                "-",
+                "t001s.butxt"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

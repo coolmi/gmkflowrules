@@ -1,0 +1,405 @@
+{
+  "id": "HR-TRAINCOST",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "traincost.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "traincost.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "traincost.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "traincost.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "title": "培训课程及目的",
+          "component": "textarea",
+          "rows": "3",
+          "name": "traincost.item"
+        },
+        {
+          "title": "培训费",
+          "component": "text",
+          "datatype": "money",
+          "name": "traincost.traincost"
+        },
+        {
+          "title": "预估差旅费",
+          "component": "text",
+          "datatype": "money",
+          "name": "traincost.travel"
+        },
+        {
+          "title": "培训地点",
+          "component": "text",
+          "name": "traincost.trainarea"
+        },
+        {
+          "title": "占用工作日（天数）",
+          "component": "text",
+          "name": "traincost.traindates"
+        },
+        {
+          "title": "预算",
+          "component": "select",
+          "tasknode": "trainspecialist,hrmanager,president,usertask1",
+          "editablenode": "trainspecialist",
+          "name": "traincost.budget",
+          "options": [
+            {
+              "text": "预算外",
+              "value": "预算外"
+            },
+            {
+              "text": "预算内",
+              "value": "预算内"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "预算必填"
+          }
+        },
+        {
+          "title": "是否需要签协议",
+          "component": "select",
+          "tasknode": "trainspecialist,hrmanager,president,usertask1",
+          "editablenode": "trainspecialist",
+          "name": "traincost.agreement",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "是否需要协议必填"
+          }
+        },
+        {
+          "title": "培训类别",
+          "component": "select",
+          "tasknode": "trainspecialist,hrmanager,president,usertask1",
+          "editablenode": "trainspecialist",
+          "name": "traincost.traintype",
+          "options": [
+            {
+              "text": "01-管理",
+              "value": "01-管理"
+            },
+            {
+              "text": "02-专业",
+              "value": "02-专业"
+            },
+            {
+              "text": "03-技能",
+              "value": "03-技能"
+            },
+            {
+              "text": "04-其他",
+              "value": "04-其他"
+            },
+            {
+              "text": "05-内训",
+              "value": "05-内训"
+            },
+            {
+              "text": "0601-必训-特种作业类",
+              "value": "0601-必训-特种作业类"
+            },
+            {
+              "text": "0602-必训-安全环保",
+              "value": "0602-必训-安全环保"
+            },
+            {
+              "text": "0603-必训-资质",
+              "value": "0603-必训-资质"
+            },
+            {
+              "text": "0604-必训-设备",
+              "value": "0604-必训-设备"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "培训类别必填"
+          }
+        },
+        {
+          "title": "实际培训日期",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "component": "text",
+          "name": "traincost.usertraindate",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "实际培训日期必填"
+          }
+        },
+        {
+          "title": "培训机构",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "component": "text",
+          "name": "traincost.traininst",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "培训机构必填"
+          }
+        },
+        {
+          "title": "满意度",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "component": "select",
+          "name": "traincost.satisone",
+          "options": [
+            {
+              "text": "非常满意",
+              "value": "1"
+            },
+            {
+              "text": "满意",
+              "value": "2"
+            },
+            {
+              "text": "一般满意",
+              "value": "3"
+            },
+            {
+              "text": "不满意",
+              "value": "4"
+            },
+            {
+              "text": "很不满意",
+              "value": "5"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "是否满意必填"
+          }
+        },
+        {
+          "title": "是否取证",
+          "component": "select",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "id": "usertraincert_id",
+          "name": "traincost.usertraincert",
+          "options": [
+            {
+              "text": "是",
+              "value": "1"
+            },
+            {
+              "text": "否",
+              "value": "0"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "是否取证必填"
+          },
+          "islinkage": true,
+          "handleLinkage": [
+            {
+              "id": "usertrainrecord_id",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "证书名称",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "component": "text",
+          "name": "traincost.usertrainrecord",
+          "id": "usertrainrecord_id",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "证书名称必填"
+          },
+          "showLinkage": [
+            {
+              "id": "usertraincert_id",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "培训效果总结",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "component": "textarea",
+          "rows": "3",
+          "name": "traincost.reason",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "培训效果总结必填"
+          }
+        },
+        {
+          "title": "是否集体",
+          "component": "select",
+          "id": "collective",
+          "name": "traincost.collective",
+          "options": [
+            {
+              "text": "是",
+              "value": "1"
+            },
+            {
+              "text": "否",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "参训人员",
+          "component": "panel",
+          "panel_id": "cxry",
+          "showLinkage": [
+            {
+              "id": "collective",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "formLabelLink",
+              "titleIndex": 2,
+              "id": "cwssxxkmms",
+              "basePath": "bases",
+              "linkForms": [
+                {
+                  "title": "参训人员姓名",
+                  "component": "labelLink",
+                  "name": "pernr",
+                  "link_name": "pernr",
+                  "label": [
+                    "users.name"
+                  ]
+                },
+                {
+                  "title": "岗位编号-名称",
+                  "component": "text",
+                  "name": "objidstext"
+                },
+                {
+                  "title": "岗位等级",
+                  "component": "text",
+                  "name": "zzdpgdjms"
+                },
+                {
+                  "title": "所属部门名称",
+                  "component": "text",
+                  "name": "orgstext"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
