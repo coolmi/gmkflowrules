@@ -1,0 +1,221 @@
+{
+  "id": "foodhr_liveofficehandover",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask16"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "离职人",
+          "component": "text",
+          "name": "mainModel.zlzrxm"
+        },
+        {
+          "title": "员工ITCODE",
+          "component": "text",
+          "name": "mainModel.zlzritcode"
+        },
+        {
+          "title": "事业部/职能中心",
+          "component": "text",
+          "name": "mainModel.zlzrszbm"
+        },
+        {
+          "title": "直属部门",
+          "component": "text",
+          "name": "mainModel.zlzrzsbm"
+        },
+        {
+          "title": "所在公司名称",
+          "component": "text",
+          "name": "mainModel.zlzrszgsmc"
+        },
+        {
+          "title": "联系电话",
+          "component": "text",
+          "name": "mainModel.zlzrphone"
+        },
+        {
+          "title": "电子邮箱",
+          "component": "text",
+          "name": "mainModel.zlzremail"
+        },
+        {
+          "title": "岗位",
+          "component": "text",
+          "name": "mainModel.zlzrpostname"
+        },
+        {
+          "title": "离职类型",
+          "component": "radio",
+          "name": "mainModel.lzlx",
+          "options": [
+            {
+              "title": "辞职",
+              "value": "0"
+            },
+            {
+              "title": "合同到期不续签",
+              "value": "1"
+            },
+            {
+              "title": "辞退",
+              "value": "2"
+            },
+            {
+              "title": "退休",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "计划离职日期",
+          "component": "date1",
+          "name": "mainModel.jhlzrq"
+        },
+        {
+          "title": "离职后联系地址",
+          "component": "text",
+          "name": "mainModel.lzhlxdz"
+        },
+        {
+          "title": "离职后联系方式",
+          "component": "text",
+          "name": "mainModel.lzhlxfs"
+        },
+        {
+          "title": "宿舍号码",
+          "component": "text",
+          "name": "mainModel.ssshm"
+        },
+        {
+          "title": "是否需要离职审计",
+          "component": "select",
+          "name": "mainModel.sflzsj",
+          "options": [
+            {
+              "text": "需要",
+              "value": "1"
+            },
+            {
+              "text": "不需要",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "实际离岗时间",
+          "component": "date1",
+          "name": "mainModel.sjlgsj"
+        },
+        {
+          "title": "工作交接人",
+          "component": "text",
+          "name": "mainModel.gzjjr"
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
