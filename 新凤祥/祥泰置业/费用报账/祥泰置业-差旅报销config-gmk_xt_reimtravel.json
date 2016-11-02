@@ -328,9 +328,17 @@
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
-                "validateMsg": "差旅交通费是否超额必选",
+                "validateMsg": "差旅往返交通、住宿、餐饮费是否超额必选",
                 "regexs": ""
-              }
+              },
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "1"
+                  ]
+                }
+              ]
             },
             {
               "title": "个人超限额说明",
