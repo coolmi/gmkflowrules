@@ -528,7 +528,7 @@
         {
           "title": "印章管理员",
           "component": "text",
-          "name": "fooddevcookedcontractsigning.yzgly"
+          "name": "sealuser"
         },
         {
           "title": "印章使用",
