@@ -1,0 +1,561 @@
+{
+  "id": "fooddevcooked_contractsigning",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      "financeaudit"
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "fooddevcookedcontractsigning.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "fooddevcookedcontractsigning.pernr",
+            "-",
+            "fooddevcookedcontractsigning.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "fooddevcookedcontractsigning.sysbusinessunitname",
+            "-",
+            "fooddevcookedcontractsigning.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fooddevcookedcontractsigning.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同类型",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.sqlx",
+          "id": "self_sqxx_htlx",
+          "options": [
+            {
+              "text": "采购",
+              "value": "0"
+            },
+            {
+              "text": "销售",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同终签类型",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.yjsqspr",
+          "options": [
+            {
+              "text": "一类合同",
+              "value": "1"
+            },
+            {
+              "text": "二类合同",
+              "value": "2"
+            },
+            {
+              "text": "三类合同",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "合同名称",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htmc"
+        },
+        {
+          "title": "定价依据",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.djyj"
+        },
+        {
+          "title": "合同标的物",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htbdw"
+        },
+        {
+          "title": "需求部门",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.xqbm"
+        },
+        {
+          "title": "需求类型",
+          "id": "self_xqlx_div",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.xqlx",
+          "options": [
+            {
+              "text": "工程类",
+              "value": "0"
+            },
+            {
+              "text": "工艺设备类",
+              "value": "1"
+            },
+            {
+              "text": "工艺安装类",
+              "value": "2"
+            },
+            {
+              "text": "信息工程类",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "客户名称(全称)",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.khmc",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_htlx",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "采购方式",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.jgqdfs",
+          "id": "self_sqxx_cgfs",
+          "options": [
+            {
+              "text": "比价",
+              "value": "0"
+            },
+            {
+              "text": "招标或议标",
+              "value": "1"
+            },
+            {
+              "text": "依据其他合同",
+              "value": "2"
+            },
+            {
+              "text": "特批/会议定价",
+              "value": "3"
+            },
+            {
+              "text": "其他",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "招标议标申请单号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.zbybjgspdh",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_cgfs",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "其他合同的合同号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.qthtdhth",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_cgfs",
+              "values": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "会议纪要单号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.hyjydh",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_cgfs",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.qtjgqdfs",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_cgfs",
+              "values": [
+                "4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "供应商名称(全称)",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.gysmc"
+        },
+        {
+          "title": "供应商类型",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.gyslx",
+          "id": "self_sqxx_gyslx",
+          "options": [
+            {
+              "text": "合格供应商",
+              "value": "0"
+            },
+            {
+              "text": "一次供应商",
+              "value": "1"
+            },
+            {
+              "text": "战略合作伙伴",
+              "value": "2"
+            },
+            {
+              "text": "黑名单解冻",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "战略合作伙伴",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.zlhzhb",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_gyslx",
+              "values": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "黑名单解冻原因",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.hmdjdyy",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_gyslx",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "付款方式",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.yslb",
+          "options": [
+            {
+              "text": "一卡通",
+              "value": "0"
+            },
+            {
+              "text": "现金",
+              "value": "1"
+            },
+            {
+              "text": "支票",
+              "value": "2"
+            },
+            {
+              "text": "汇款",
+              "value": "3"
+            },
+            {
+              "text": "汇票",
+              "value": "4"
+            },
+            {
+              "text": "信用证",
+              "value": "5"
+            },
+            {
+              "text": "清帐",
+              "value": "6"
+            },
+            {
+              "text": "银行托收",
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.bz",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "0"
+            },
+            {
+              "text": "美元",
+              "value": "1"
+            },
+            {
+              "text": "欧元",
+              "value": "2"
+            },
+            {
+              "text": "英镑",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "合同金额(小写)",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htjexx",
+          "datatype": "money"
+        },
+        {
+          "title": "合同金额大写",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htjedx"
+        },
+        {
+          "title": "密级",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.mj",
+          "options": [
+            {
+              "text": "公开",
+              "value": "0"
+            },
+            {
+              "text": "保密",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同页数",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htys"
+        }
+      ]
+    },
+    {
+      "title": "合同号信息",
+      "component": "panel",
+      "pageid": "hthxx",
+      "subComponents": [
+        {
+          "title": "是否为补充类合同",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.sfwbclht",
+          "id": "self_hthxx_bclht",
+          "options": [
+            {
+              "text": "是",
+              "value": "0"
+            },
+            {
+              "text": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "原合同编号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.bcthbh",
+          "showLinkage": [
+            {
+              "id": "self_hthxx_bclht",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同编号类别",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.htbhlb",
+          "refersToArray": {
+            "basePath": "snclist",
+            "value": "nccode",
+            "text": [
+              "nccode",
+              "-",
+              "ncname"
+            ]
+          }
+        },
+        {
+          "title": "公司信息",
+          "component": "label",
+          "middleName": [
+            "fooddevcookedcontractsigning.gsxx",
+            "bukrs"
+          ],
+          "label": [
+            "fooddevcookedcontractsigning.gsxx",
+            "-",
+            "t001list.butxt"
+          ]
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.htbh"
+        }
+      ]
+    },
+    {
+      "title": "印章信息",
+      "component": "panel",
+      "pageid": "yzxx",
+      "subComponents": [
+        {
+          "title": "用印类型",
+          "component": "select",
+          "name": "fooddevcookedcontractsigning.yylx",
+          "options": [
+            {
+              "text": "普通用印",
+              "value": "0"
+            },
+            {
+              "text": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.yzmcname"
+        },
+        {
+          "title": "印章类型",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.yzlx"
+        },
+        {
+          "title": "印章管理员",
+          "component": "text",
+          "name": "fooddevcookedcontractsigning.yzgly"
+        },
+        {
+          "title": "印章使用",
+          "component": "label",
+          "label": [
+            "一式",
+            "fooddevcookedcontractsigning.yzsyfs",
+            "份,共",
+            "fooddevcookedcontractsigning.yzsyms",
+            "枚"
+          ]
+        },
+        {
+          "title": "印章使用日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "fooddevcookedcontractsigning.yzsyrq"
+        },
+        {
+          "title": "计划归还日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "fooddevcookedcontractsigning.jhghrq"
+        }
+      ]
+    }
+  ]
+}
