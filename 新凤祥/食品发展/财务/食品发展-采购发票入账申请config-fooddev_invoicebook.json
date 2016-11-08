@@ -1,0 +1,363 @@
+{
+  "id": "fooddev_invoicebook",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "invoicebook.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "invoicebook.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "invoicebook.pernr",
+            "-",
+            "invoicebook.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "invoicebook.sysbusinessunitname",
+            "-",
+            "invoicebook.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "invoicebook.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用承担公司",
+          "component": "label",
+          "label": [
+            "invoicebook.fkbukrs",
+            "-",
+            "invoicebook.fkbutxt"
+          ]
+        },
+        {
+          "title": "费用发生部门",
+          "component": "text",
+          "name": "invoicebook.fycdbm"
+        },
+        {
+          "title": "费用承担人",
+          "component": "text",
+          "name": "invoicebook.fycdbmmgr"
+        },
+        {
+          "title": "项目类型",
+          "component": "select",
+          "name": "invoicebook.xmlx",
+          "options": [
+            {
+              "text": "工程类",
+              "value": "1"
+            },
+            {
+              "text": "信息工程类",
+              "value": "2"
+            },
+            {
+              "text": "工艺设备类",
+              "value": "3"
+            },
+            {
+              "text": "工艺安装类",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "invoicebook.gysbh"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "invoicebook.gysmc"
+        },
+        {
+          "title": "付款方式",
+          "component": "select",
+          "name": "invoicebook.fkzl",
+          "options": [
+            {
+              "title": "电汇",
+              "value": "0"
+            },
+            {
+              "title": "汇票",
+              "value": "1"
+            },
+            {
+              "title": "支票",
+              "value": "2"
+            },
+            {
+              "title": "承兑",
+              "value": "3"
+            },
+            {
+              "title": "信用证",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "汇入地点",
+          "component": "text",
+          "name": "invoicebook.hrdd"
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "invoicebook.hrh"
+        },
+        {
+          "title": "汇入账号",
+          "component": "text",
+          "name": "invoicebook.hrzh"
+        },
+        {
+          "title": "汇款用途",
+          "component": "text",
+          "name": "invoicebook.hkyt"
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "name": "invoicebook.htyddhrq"
+        },
+        {
+          "title": "发票金额",
+          "component": "text",
+          "name": "invoicebook.sqjexx"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "invoicebook.biz",
+          "options": [
+            {
+              "text": "人民币",
+              "value": "人民币"
+            },
+            {
+              "text": "美元",
+              "value": "美元"
+            },
+            {
+              "text": "欧元",
+              "value": "欧元"
+            },
+            {
+              "text": "日元",
+              "value": "日元"
+            },
+            {
+              "text": "澳大利亚元",
+              "value": "澳大利亚元"
+            },
+            {
+              "text": "加拿大元",
+              "value": "加拿大元"
+            }
+          ]
+        },
+        {
+          "title": "发票金额(大写)",
+          "component": "text",
+          "name": "invoicebook.sqjedx"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "name": "invoicebook.fkrq"
+        },
+        {
+          "title": "此笔付款是否在建工程",
+          "component": "radio",
+          "id": "zjgcfk",
+          "name": "invoicebook.zjgcfk",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "是否招标",
+          "component": "radio",
+          "id": "sfzb",
+          "name": "invoicebook.sfzb",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "zjgcfk",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "id": "htddh",
+          "name": "invoicebook.htddh",
+          "showLinkage": [
+            {
+              "id": "zjgcfk",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "在建工程编号/资产编号",
+          "component": "text",
+          "id": "gcbhzcbh",
+          "name": "invoicebook.gcbhzcbh",
+          "showLinkage": [
+            {
+              "id": "zjgcfk",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "档案室签字备案",
+          "component": "text",
+          "id": "dasqzba",
+          "name": "invoicebook.dasqzba",
+          "showLinkage": [
+            {
+              "id": "zjgcfk",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "invoicebook.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "invoicebook.ysqyfkjedx"
+        },
+        {
+          "title": "补(退)金额(小写)",
+          "component": "text",
+          "name": "invoicebook.btjexx"
+        },
+        {
+          "title": "补(退)金额(大写)",
+          "component": "text",
+          "name": "invoicebook.btjedx"
+        }
+      ]
+    }
+  ]
+}
