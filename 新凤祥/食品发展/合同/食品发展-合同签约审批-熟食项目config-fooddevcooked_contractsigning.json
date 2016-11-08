@@ -226,6 +226,76 @@
           ]
         },
         {
+          "title": "报价家数",
+          "component": "select",
+          "name": "fxcontractsigning.bjjs",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_cgfs",
+              "values": [
+                "0"
+              ]
+            }
+          ],
+          "id": "self_sqxx_bjjs",
+          "options": [
+            {
+              "text": "1家",
+              "value": "0"
+            },
+            {
+              "text": "2家",
+              "value": "1"
+            },
+            {
+              "text": "3家及以上",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "少于三家原因",
+          "component": "select",
+          "name": "fxcontractsigning.sysjyy",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_bjjs",
+              "values": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "id": "self_sqxx_sysjyy",
+          "options": [
+            {
+              "text": "指定品牌",
+              "value": "0"
+            },
+            {
+              "text": "唯一供应商",
+              "value": "1"
+            },
+            {
+              "text": "其他",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "name": "fxcontractsigning.qtyy",
+          "showLinkage": [
+            {
+              "id": "self_sqxx_sysjyy",
+              "values": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
           "title": "招标议标申请单号",
           "component": "text",
           "name": "fooddevcookedcontractsigning.zbybjgspdh",
