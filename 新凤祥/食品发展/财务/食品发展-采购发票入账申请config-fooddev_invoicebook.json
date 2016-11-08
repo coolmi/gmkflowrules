@@ -120,7 +120,7 @@
           "name": "invoicebook.fycdbm"
         },
         {
-          "title": "费用承担人",
+          "title": "费用发生人",
           "component": "text",
           "name": "invoicebook.fycdbmmgr"
         },
