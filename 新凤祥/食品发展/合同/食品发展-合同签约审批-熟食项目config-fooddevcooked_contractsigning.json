@@ -228,7 +228,7 @@
         {
           "title": "报价家数",
           "component": "select",
-          "name": "fxcontractsigning.bjjs",
+          "name": "fooddevcookedcontractsigning.bjjs",
           "showLinkage": [
             {
               "id": "self_sqxx_cgfs",
@@ -256,7 +256,7 @@
         {
           "title": "少于三家原因",
           "component": "select",
-          "name": "fxcontractsigning.sysjyy",
+          "name": "fooddevcookedcontractsigning.sysjyy",
           "showLinkage": [
             {
               "id": "self_sqxx_bjjs",
@@ -285,7 +285,7 @@
         {
           "title": "其他",
           "component": "text",
-          "name": "fxcontractsigning.qtyy",
+          "name": "fooddevcookedcontractsigning.qtyy",
           "showLinkage": [
             {
               "id": "self_sqxx_sysjyy",
