@@ -2,6 +2,7 @@
   "id": "fxgf_agpay",
   "handleOnPC": {
     "tasknode": [
+      "usertask4",
       "accout",
       "payment"
     ],
@@ -482,6 +483,25 @@
               "name": "zdf_rmk"
             }
           ]
+        },
+        {
+          "title": "总计(小写)",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "总计(大写)",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "app.zdf_fee_dx",
+          "name": "app.zdf_fee"
+        },
+        {
+          "title": "费用超标金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.zdf_cfee"
         }
       ]
     },
@@ -727,6 +747,15 @@
             {
               "title": "实报金额",
               "component": "text",
+              "id":"temp",
+              "tasknode":"usertask2,usertask3",
+              "datatype": "money",
+              "name": "fico_bxfee"
+            },
+            {
+              "title": "实报金额",
+              "component": "text",
+              "tasknode":"usertask5,usertask7",
               "datatype": "money",
               "name": "fico_actfee"
             },
@@ -742,13 +771,34 @@
           "title": "合计",
           "component": "text",
           "datatype": "money",
-          "name": "app.m_reqmoney"
+          "name": "app.m_reqmoney",
+          "sumValue": {
+            "arrayPath": "ficos",
+            "sumParam": "fico_bxfee"
+          }
         },
         {
           "title": "实报金额",
           "component": "text",
+          "id":"tempsum",
+          "tasknode":"usertask2,usertask3",
           "datatype": "money",
-          "name": "app.m_actmoney"
+          "name": "app.m_actmoney",
+          "sumValue": {
+            "arrayPath": "ficos",
+            "sumParam": "fico_bxfee"
+          }
+        },
+        {
+          "title": "实报金额",
+          "component": "text",
+          "tasknode":"usertask5,usertask7",
+          "datatype": "money",
+          "name": "app.m_actmoney",
+          "sumValue": {
+            "arrayPath": "ficos",
+            "sumParam": "fico_actfee"
+          }
         }
       ]
     },

@@ -113,7 +113,8 @@
           "title": "员工编号",
           "component": "text",
           "name": "deposit.pernrval"
-        },{
+        },
+        {
           "title": "员工ITCODE",
           "component": "text",
           "name": "deposit.useridval"
@@ -132,27 +133,33 @@
           "title": "所在公司",
           "component": "text",
           "name": "deposit.bukrsval"
-        },{
+        },
+        {
           "title": "手机号",
           "component": "text",
           "name": "deposit.phone"
-        },{
+        },
+        {
           "title": "邮箱",
           "component": "text",
           "name": "deposit.email"
-        },{
+        },
+        {
           "title": "附件数",
           "component": "text",
           "name": "deposit.numpg"
-        },{
+        },
+        {
           "title": "员工财务编号",
           "component": "text",
           "name": "deposit.lifnr"
-        },{
+        },
+        {
           "title": "员工银行账户",
           "component": "text",
           "name": "deposit.bankn"
-        },{
+        },
+        {
           "title": "开户行",
           "component": "text",
           "name": "deposit.bankl"
@@ -231,12 +238,7 @@
           "component": "text",
           "name": "deposit.exchrate",
           "tasknode": "usertask7",
-          "editablenode": "usertask7",
-          "validation": {
-            "validateMsg": "汇率必填",
-            "pageid": "fkxxsm",
-            "required": true
-          }
+          "editablenode": "usertask7"
         },
         {
           "title": "付款金额",
