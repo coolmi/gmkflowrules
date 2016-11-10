@@ -354,6 +354,11 @@
                   "values": [
                     "1"
                   ]
+                },{
+                  "id": "ltradout",
+                  "values": [
+                    "true"
+                  ]
                 }
               ]
             },
@@ -438,6 +443,12 @@
                   "id": "reimtype",
                   "values": [
                     "2"
+                  ]
+                },
+                {
+                  "id": "cityout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],
