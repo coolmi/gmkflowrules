@@ -2,7 +2,7 @@
   "id": "fooddevado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      "sjbmfp","sjbmcs"
+      "sjbmcs"
     ],
     "flag": [
       "resubmit"
@@ -385,7 +385,7 @@
             }
           ],
           "validation": {
-            "pageid": "tbzxx",
+            "pageid": "sjbfpxx",
             "required": true,
             "validateMsg": "请选择审计部初审人"
           }
