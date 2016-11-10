@@ -342,6 +342,19 @@
                   "value": "2"
                 }
               ],
+              "showLinkage": [
+                {
+                  "id": "reimtype",
+                  "values": [
+                    "1"
+                  ]
+                },{
+                  "id": "ltradout",
+                  "values": [
+                    "true"
+                  ]
+                }
+              ],
               "validation": {
                 "pageid": "sqxxmx",
                 "required": true,
@@ -430,6 +443,12 @@
                   "id": "reimtype",
                   "values": [
                     "2"
+                  ]
+                },
+                {
+                  "id": "cityout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],

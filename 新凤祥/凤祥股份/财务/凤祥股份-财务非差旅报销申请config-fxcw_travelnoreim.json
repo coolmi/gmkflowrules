@@ -97,6 +97,24 @@
           "title": "",
           "component": "hidden",
           "name": "travelnoreim.id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "trafficfeeout",
+          "id":"trafficfeeout"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "catefeelout",
+          "id":"catefeelout"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "telfeeout",
+          "id":"telfeeout"
         }
       ]
     },
@@ -350,6 +368,13 @@
                   "values": [
                     "1"
                   ]
+                },
+                {
+
+                  "id": "telfeeout",
+                  "values": [
+                    "true"
+                  ]
                 }
               ],
               "validation": {
@@ -470,6 +495,13 @@
                   "id": "reimtype",
                   "values": [
                     "2"
+                  ]
+                },
+                {
+
+                  "id": "trafficfeeout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],
@@ -652,6 +684,12 @@
                   "id": "reimtype",
                   "values": [
                     "4"
+                  ]
+                },{
+
+                  "id": "catefeelout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],

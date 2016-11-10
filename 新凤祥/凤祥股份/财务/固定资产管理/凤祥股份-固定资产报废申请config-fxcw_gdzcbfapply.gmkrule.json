@@ -1,7 +1,7 @@
 {
     "id": "fxcw_gdzcbfapply",
     "handleOnPC": {
-        "tasknode": [""],
+        "tasknode": ["usertask12"],
         "flag": ["resubmit"]
     },
     "selectPerson": {
@@ -89,159 +89,105 @@
         "title": "申请信息",
         "pageid": "sqxx",
         "component": "panel",
-        "subComponents": [{
-            "id": "sqlx",
-            "title": "申请类型",
-            "component": "radio",
-            "name": "mainModel.sqlx",
-            "options": [{
-                "title": "变更",
-                "value": "1"
-            },
-            {
-                "title": "申请",
-                "value": "0"
-            }]
-        },
+        "subComponents": [
+
         {
-            "title": "申请人所属公司",
-            "component": "label",
-            "middleName": ["mainModel.fkbukrs", "bukrs"],
-            "label": ["mainModel.fkbukrs", "-", "t001List.butxt"]
-        },
-        {
-            "title": "员工姓名",
+            "title": "主抄送",
             "component": "text",
-            "name": "mainModel.nachn"
+            "name": "mainModel.maincc"
         },
         {
-            "title": "员工ITCODE",
+            "title": "固定资产名称",
             "component": "text",
-            "name": "mainModel.ygitcode"
+            "name": "mainModel.gdzcmc"
         },
         {
-            "title": "员工编号",
+            "title": "规格型号",
             "component": "text",
-            "name": "mainModel.ygpernr"
+            "name": "mainModel.ggxhccbh"
         },
         {
-            "title": "员工手机号码",
+            "title": "固定资产编号",
             "component": "text",
-            "name": "mainModel.ygtelephone"
+            "name": "mainModel.gdzcbh"
         },
         {
-            "title": "员工电话",
+            "title": "制造商",
             "component": "text",
-            "name": "mainModel.ygmobile"
+            "name": "mainModel.zzs"
         },
         {
-            "title": "是否业务部门",
-            "component": "radio",
-            "name": "mainModel.sfywbm",
-            "options": [{
-                "title": "否",
-                "value": "1"
-            },
-            {
-                "title": "是",
-                "value": "0"
-            }]
+          "title": "资产所属公司",
+          "component": "label",
+          "editablenode": "",
+          "middleName":[
+            "mainModel.zcssgs",
+            "bukrs"
+          ],
+          "label": ["mainModel.zcssgs",
+            "-",
+            "allT001List.butxt"]
         },
         {
-            "title": "员工级别",
+            "title": "资产所属部门",
             "component": "text",
-            "name": "mainModel.yglevel"
+            "name": "mainModel.zcssbm"
         },
         {
-            "title": "员工标识",
+            "title": "资产所属成本中心",
             "component": "text",
-            "name": "mainModel.ygbs"
+            "name": "mainModel.zcsscbzx"
         },
-        {
-						"id":"yyhkhh",
-            "title": "原银行开户行",
+          {
+            "title": "资产所属成本中心描述",
             "component": "text",
-            "name": "mainModel.yhkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-						"id":"yyhzhxx",
-            "title": "原银行账户信息",
+            "name": "mainModel.zcsscbzxms"
+          },
+          {
+            "title": "原值",
             "component": "text",
-            "name": "mainModel.yhzhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "旧员工财务编号",
+            "name": "mainModel.yz"
+          },
+          {
+            "title": "原值大写",
             "component": "text",
-            "name": "mainModel.oldygcwbh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "新开户行",
+            "name": "mainModel.yzdx"
+          },
+          {
+            "title": "投产时间",
+            "component": "date1",
+            "name": "mainModel.tcsj"
+          },
+          {
+            "title": "已使用年限",
             "component": "text",
-            "name": "mainModel.newkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "新银行信息",
+            "name": "mainModel.ysynx"
+          },
+          {
+            "title": "残值",
             "component": "text",
-            "name": "mainModel.newyhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "注释变更原因",
-            "component": "textarea",
-            "name": "mainModel.zsbgyy",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "银行开户行",
+            "name": "mainModel.cz"
+          },
+          {
+            "title": "预计出售价格",
             "component": "text",
-            "name": "mainModel.yhkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        },
-        {
-            "title": "银行账户信息",
+
+            "name": "mainModel.yjcsjg"
+
+          },
+
+          {
+            "title": "报废理由",
             "component": "text",
-            "name": "mainModel.yhzhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        },
-        {
-            "title": "员工变动情况说明",
-            "component": "textarea",
-            "name": "mainModel.ygbdqksm",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        }]
-    },
-    {
+            "name": "mainModel.bfly"
+          },
+          {
+            "title": "备注",
+            "component": "text",
+            "name": "mainModel.bz"
+          }
+          ]},
+          {
         "title": "附件信息",
         "pageid": "fjxx",
         "component": "panel",

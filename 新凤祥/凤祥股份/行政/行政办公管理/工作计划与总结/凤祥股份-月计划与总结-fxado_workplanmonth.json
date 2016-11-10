@@ -84,7 +84,7 @@
         }]
     },
     {
-        "title": "工作周报",
+        "title": "工作月报",
         "pageid": "gzzb",
         "component": "panel",
         "subComponents": [
@@ -121,7 +121,7 @@
         ]
     },
 	{
-        "title": "本周工作计划",
+        "title": "本月工作计划",
         "pageid": "bzgzjh",
         "component": "panel",
         "subComponents": [
@@ -158,7 +158,7 @@
         ]
     },
 	{
-        "title": "本周工作总结",
+        "title": "本月工作总结",
         "pageid": "bzgzzj",
         "component": "panel",
         "subComponents": [
@@ -190,7 +190,7 @@
         ]
     },
 	{
-        "title": "下周工作计划",
+        "title": "下月工作计划",
         "pageid": "xzgzjh",
         "component": "panel",
         "subComponents": [
