@@ -1,256 +1,202 @@
 {
-    "id": "fooddevcw_gdzcbfapply",
-    "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
+  "id": "fooddevcw_gdzcbfapply",
+  "handleOnPC": {
+    "tasknode": ["usertask12"],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
 
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "editablenode": "",
-            "name": "mainModel.appid"
+  "forms": [{
+    "title": "基本信息",
+    "pageid": "jbxx",
+    "component": "panel",
+    "subComponents": [{
+      "title": "申请单号",
+      "component": "text",
+      "editablenode": "",
+      "name": "mainModel.appid"
+    },
+      {
+        "title": "申请日期",
+        "component": "date1",
+        "name": "mainModel.appda"
+      },
+      {
+        "title": "申请人姓名",
+        "component": "label",
+        "label": ["mainModel.pernr", "-", "mainModel.username"]
+      },
+      {
+        "title": "所属部门",
+        "component": "label",
+        "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.userid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.username"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.pernr"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.syspostname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.sysdeptid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.sysdeptname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.sysbusinessunitid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.sysbusinessunitname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.postid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "mainModel.id"
+      }]
+  },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "mainModel.maincc"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "mainModel.appda"
+          "title": "固定资产名称",
+          "component": "text",
+          "name": "mainModel.gdzcmc"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["mainModel.pernr", "-", "mainModel.username"]
+          "title": "规格型号",
+          "component": "text",
+          "name": "mainModel.ggxhccbh"
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+          "title": "固定资产编号",
+          "component": "text",
+          "name": "mainModel.gdzcbh"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.userid"
+          "title": "制造商",
+          "component": "text",
+          "name": "mainModel.zzs"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.username"
+          "title": "资产所属公司",
+          "component": "label",
+          "editablenode": "",
+          "middleName":[
+            "mainModel.zcssgs",
+            "bukrs"
+          ],
+          "label": ["mainModel.zcssgs",
+            "-",
+            "allT001List.butxt"]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.pernr"
+          "title": "资产所属部门",
+          "component": "text",
+          "name": "mainModel.zcssbm"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.syspostname"
+          "title": "资产所属成本中心",
+          "component": "text",
+          "name": "mainModel.zcsscbzx"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptid"
+          "title": "资产所属成本中心描述",
+          "component": "text",
+          "name": "mainModel.zcsscbzxms"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptname"
+          "title": "原值",
+          "component": "text",
+          "name": "mainModel.yz"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitid"
+          "title": "原值大写",
+          "component": "text",
+          "name": "mainModel.yzdx"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitname"
+          "title": "投产时间",
+          "component": "date1",
+          "name": "mainModel.tcsj"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.postid"
+          "title": "已使用年限",
+          "component": "text",
+          "name": "mainModel.ysynx"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.id"
-        }]
+          "title": "残值",
+          "component": "text",
+          "name": "mainModel.cz"
+        },
+        {
+          "title": "预计出售价格",
+          "component": "text",
+
+          "name": "mainModel.yjcsjg"
+
+        },
+
+        {
+          "title": "报废理由",
+          "component": "text",
+          "name": "mainModel.bfly"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "mainModel.bz"
+        }
+      ]},
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "id": "sqlx",
-            "title": "申请类型",
-            "component": "radio",
-            "name": "mainModel.sqlx",
-            "options": [{
-                "title": "变更",
-                "value": "1"
-            },
-            {
-                "title": "申请",
-                "value": "0"
-            }]
-        },
-        {
-            "title": "申请人所属公司",
-            "component": "label",
-            "middleName": ["mainModel.fkbukrs", "bukrs"],
-            "label": ["mainModel.fkbukrs", "-", "t001List.butxt"]
-        },
-        {
-            "title": "员工姓名",
-            "component": "text",
-            "name": "mainModel.nachn"
-        },
-        {
-            "title": "员工ITCODE",
-            "component": "text",
-            "name": "mainModel.ygitcode"
-        },
-        {
-            "title": "员工编号",
-            "component": "text",
-            "name": "mainModel.ygpernr"
-        },
-        {
-            "title": "员工手机号码",
-            "component": "text",
-            "name": "mainModel.ygtelephone"
-        },
-        {
-            "title": "员工电话",
-            "component": "text",
-            "name": "mainModel.ygmobile"
-        },
-        {
-            "title": "是否业务部门",
-            "component": "radio",
-            "name": "mainModel.sfywbm",
-            "options": [{
-                "title": "否",
-                "value": "1"
-            },
-            {
-                "title": "是",
-                "value": "0"
-            }]
-        },
-        {
-            "title": "员工级别",
-            "component": "text",
-            "name": "mainModel.yglevel"
-        },
-        {
-            "title": "员工标识",
-            "component": "text",
-            "name": "mainModel.ygbs"
-        },
-        {
-						"id":"yyhkhh",
-            "title": "原银行开户行",
-            "component": "text",
-            "name": "mainModel.yhkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-						"id":"yyhzhxx",
-            "title": "原银行账户信息",
-            "component": "text",
-            "name": "mainModel.yhzhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "旧员工财务编号",
-            "component": "text",
-            "name": "mainModel.oldygcwbh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "新开户行",
-            "component": "text",
-            "name": "mainModel.newkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "新银行信息",
-            "component": "text",
-            "name": "mainModel.newyhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "注释变更原因",
-            "component": "textarea",
-            "name": "mainModel.zsbgyy",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "银行开户行",
-            "component": "text",
-            "name": "mainModel.yhkhh",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        },
-        {
-            "title": "银行账户信息",
-            "component": "text",
-            "name": "mainModel.yhzhxx",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        },
-        {
-            "title": "员工变动情况说明",
-            "component": "textarea",
-            "name": "mainModel.ygbdqksm",
-            "showLinkage": [{
-                "id": "sqlx",
-                "values": ["0"]
-            }]
-        }]
-    },
-    {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
-    },
-    {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
     }]
 }
