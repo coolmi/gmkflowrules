@@ -352,6 +352,13 @@
                   "values": [
                     "1"
                   ]
+                },
+                {
+
+                  "id": "telfeeout",
+                  "values": [
+                    "true"
+                  ]
                 }
               ],
               "validation": {
@@ -473,6 +480,13 @@
                   "id": "reimtype",
                   "values": [
                     "2"
+                  ]
+                },
+                {
+
+                  "id": "trafficfeeout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],
@@ -656,6 +670,12 @@
                   "id": "reimtype",
                   "values": [
                     "4"
+                  ]
+                },{
+
+                  "id": "catefeelout",
+                  "values": [
+                    "true"
                   ]
                 }
               ],
