@@ -137,6 +137,13 @@
           ]
         },
         {
+          "title":"招标时间",
+          "component":"text",
+          "datatype":"date",
+          "dateFormat":"yyyy-MM-dd",
+          "name":"mainModel.zbsj"
+        },
+        {
           "title": "生产类固定资产采购",
           "component": "radio",
           "name": "mainModel.sclgdzccg",
