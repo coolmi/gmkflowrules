@@ -120,6 +120,11 @@
           ]
         },
         {
+          "title":"合计",
+          "component":"text",
+          "name":"mainModel.sumoney"
+        },
+        {
           "title": "备注",
           "component": "text",
           "rows": "5",
@@ -128,7 +133,7 @@
       ]
     },
     {
-      "title": "变更明细",
+      "title": "申请明细",
       "pageid": "bgmx",
       "component": "panel",
       "subComponents": [

@@ -2,7 +2,7 @@
   "id": "fxado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      "sjbmfp","sjbmcs"
+      "sjbmcs"
     ],
     "flag": [
       "resubmit"
@@ -135,6 +135,13 @@
               "value": "1"
             }
           ]
+        },
+        {
+          "title":"招标时间",
+          "component":"text",
+          "datatype":"date",
+          "dateFormat":"yyyy-MM-dd",
+          "name":"mainModel.zbsj"
         },
         {
           "title": "生产类固定资产采购",
@@ -387,7 +394,7 @@
             }
           ],
           "validation": {
-            "pageid": "tbzxx",
+            "pageid": "sjbfpxx",
             "required": true,
             "validateMsg": "请选择审计部初审人"
           }

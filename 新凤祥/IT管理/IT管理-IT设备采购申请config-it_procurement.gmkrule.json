@@ -1,378 +1,426 @@
 {
-    "id": "it_procurement",
-    "handleOnPC": {
-        "tasknode": ["usertask8","usertask9"],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "procurement.appid"
+  "id": "it_procurement",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask8",
+      "usertask9"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "procurement.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "procurement.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "procurement.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["procurement.pernr", "-", "procurement.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "procurement.pernr",
+            "-",
+            "procurement.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["procurement.sysbusinessunitname", "-", "procurement.sysdeptname"]
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "procurement.sysbusinessunitname",
+            "-",
+            "procurement.sysdeptname"
+          ]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.username"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.postid"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.id"
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.id"
         },
-		{
-            "title": "",
-            "component": "hidden",
-            "name": "procurement.proc_inst_id"
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "procurement.proc_inst_id"
         }
-		]
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "预算控制所在公司",
-            "component": "label",
-            "label": ["procurement.cdbukrs", "-", "procurement.cdbukrsname"]
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算控制所在公司",
+          "component": "label",
+          "label": [
+            "procurement.cdbukrs",
+            "-",
+            "procurement.cdbukrsname"
+          ]
         },
         {
-            "title": "预算控制部门",
-            "component": "text",
-            "name": "procurement.cddeptname"
+          "title": "预算控制部门",
+          "component": "text",
+          "name": "procurement.cddeptname"
         },
         {
-            "id": "cgyy",
-            "title": "采购原因",
-            "component": "select",
-            "name": "procurement.reasons",
-            "options": [{
-                "title": "新员工增加需求",
-                "value": "0"
+          "id": "cgyy",
+          "title": "采购原因",
+          "component": "select",
+          "name": "procurement.reasons",
+          "options": [
+            {
+              "title": "新员工增加需求",
+              "value": "0"
             },
             {
-                "title": "报废替换",
-                "value": "1"
+              "title": "报废替换",
+              "value": "1"
             },
             {
-                "title": "岗位调整",
-                "value": "2"
+              "title": "岗位调整",
+              "value": "2"
             },
             {
-                "title": "业务需求",
-                "value": "3"
-            }]
-        },
-        {
-            "title": "成本中心",
-            "component": "text",
-            "name": "procurement.cbzxtext"
-        },
-        {
-            "id": "sfcys",
-            "title": "是否超预算",
-            "component": "radio",
-            "editablenode": "usertaskn",
-            "name": "procurement.outmoney",
-            "validation": {
-                "pageid": "sqxx",
-                "required": true,
-                "validationMsg": "IT设备采购申请填写必须"
-            },
-            "options": [{
-                "title": "是",
-                "value": "是"
-            },
-            {
-                "title": "否",
-                "value": "否"
-            }]
-        },
-        {
-            "title": "固定资产号",
-            "component": "text",
-            "editablenode": "usertaskn",
-            "name": "procurement.assetnums",
-            "validation": {
-                "pageid": "sqxx",
-                "required": true,
-                "`val`idationMsg": "IT设备采购申请填写必须"
+              "title": "业务需求",
+              "value": "3"
             }
+          ]
         },
         {
-            "title": "需求说明",
-            "component": "textarea",
-            "name": "procurement.requirement"
-        }]
+          "title": "成本中心",
+          "component": "text",
+          "name": "procurement.cbzxtext"
+        },
+        {
+          "id": "sfcys",
+          "title": "是否超预算",
+          "component": "radio",
+          "editablenode": "usertaskn",
+          "name": "procurement.outmoney",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "IT设备采购申请填写必须"
+          },
+          "options": [
+            {
+              "title": "是",
+              "value": "是"
+            },
+            {
+              "title": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "固定资产号",
+          "component": "text",
+          "editablenode": "usertaskn",
+          "name": "procurement.assetnums",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "`val`idationMsg": "IT设备采购申请填写必须"
+          }
+        },
+        {
+          "title": "需求说明",
+          "component": "textarea",
+          "name": "procurement.requirement"
+        }
+      ]
     },
     {
-        "title": "硬件设备信息",
-        "pageid": "yjsbxx",
-        "component": "panel",
-        "subComponents": [{
-            "component": "table",
-            "titleIndex":1,
-            "basePath": "procureChilds",
-            "cells": [{
-                "title": "资产类别",
-                "component": "text",
-                "name": "asset"
+      "title": "硬件设备信息",
+      "pageid": "yjsbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 1,
+          "id": "yjsbxx_table",
+          "basePath": "procureChilds",
+          "cells": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "asset"
             },
             {
-                "title": "资产名称",
-                "component": "text",
-                "name": "assetname"
+              "title": "资产名称",
+              "component": "text",
+              "name": "assetname"
             },
             {
-                "title": "品牌",
-                "component": "text",
-                "name": "brand"
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
             },
             {
-                "title": "型号",
-                "component": "text",
-                "name": "modelval"
+              "title": "型号",
+              "component": "text",
+              "name": "modelval"
             },
             {
-                "title": "参数",
-                "component": "textarea",
-                "name": "can"
+              "title": "参数",
+              "component": "textarea",
+              "name": "can"
             },
             {
-                "title": "单位",
-                "component": "text",
-                "name": "comval"
+              "title": "单位",
+              "component": "text",
+              "name": "comval"
             },
             {
-                "title": "数量",
-                "component": "text",
-                "name": "numberval"
+              "title": "数量",
+              "component": "text",
+              "name": "numberval"
             },
             {
-                "title": "参考价格",
-                "component": "text",
-                "datatype":"money",
-                "name": "refeproce"
-            }]
-        }]
+              "title": "参考价格",
+              "component": "text",
+              "datatype": "money",
+              "name": "refeproce"
+            }
+          ]
+        }
+      ]
     },
     {
-        "title": "基础信息",
-        "pageid": "jcxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "期望到位日期",
-            "component": "date1",
-            "name": "procurement.sdate"
+      "title": "基础信息",
+      "pageid": "jcxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "期望到位日期",
+          "component": "date1",
+          "name": "procurement.sdate"
         },
         {
-            "title": "预算总合计",
-            "component": "text",
-            "datatype":"money",
-            "name": "procurement.sum"
+          "title": "预算总合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "procurement.sum"
         },
         {
-            "title": "IT运维工程师评估原设备情况",
-            "component": "text",
-            "editablenode": "usertask1",
-            "name": "procurement.originalement",
-            "validation": {
-                "pageid": "jcxx",
-                "required": true,
-                "validationMsg": "IT运维工程师评估原设备情况填写必须"
-            },
-            "showLinkage": [{
-                "id": "cgyy",
-                "values": ["1"]
-            }]
-        },
-        {
-            "title": "IT综合管理员采购执行情况",
-            "component": "text",
-            "tasknode": "usertask7,usertask8,usertask9,usertaskz,usertask11,usertask12",
-            "editablenode": "usertask7",
-            "name": "procurement.proimplement",
-            "validation": {
-                "pageid": "jcxx",
-                "required": true,
-                "validationMsg": "IT综合管理员采购执行情况填写必须"
+          "title": "IT运维工程师评估原设备情况",
+          "component": "text",
+          "editablenode": "usertask1",
+          "name": "procurement.originalement",
+          "validation": {
+            "pageid": "jcxx",
+            "required": true,
+            "validationMsg": "IT运维工程师评估原设备情况填写必须"
+          },
+          "showLinkage": [
+            {
+              "id": "cgyy",
+              "values": [
+                "1"
+              ]
             }
+          ]
         },
         {
-            "title": "更改资产主数据",
-            "component": "text",
-            "tasknode": "usertaskz,usertask11,usertask12",
-            "editablenode": "usertaskz",
-            "name": "procurement.erpinsimplement",
-            "validation": {
-                "pageid": "jcxx",
-                "required": true,
-                "validationMsg": "更改资产主数据填写必须"
-            }
+          "title": "IT综合管理员采购执行情况",
+          "component": "text",
+          "tasknode": "usertask7,usertask8,usertask9,usertaskz,usertask11,usertask12",
+          "editablenode": "usertask7",
+          "name": "procurement.proimplement",
+          "validation": {
+            "pageid": "jcxx",
+            "required": true,
+            "validationMsg": "IT综合管理员采购执行情况填写必须"
+          }
         },
         {
-            "title": "申请人接受确认",
-            "component": "text",
-            "editablenode": "usertask11",
-            "tasknode": "usertask11,usertask12",
-            "name": "procurement.confirmapp",
-            "validation": {
-                "pageid": "jcxx",
-                "required": true,
-                "validationMsg": "申请人接受确认填写必须"
-            }
+          "title": "更改资产主数据",
+          "component": "text",
+          "tasknode": "usertaskz,usertask11,usertask12",
+          "editablenode": "usertaskz",
+          "name": "procurement.erpinsimplement",
+          "validation": {
+            "pageid": "jcxx",
+            "required": true,
+            "validationMsg": "更改资产主数据填写必须"
+          }
         },
         {
-            "title": "IT综合管理员回收设备情况",
-            "component": "text",
-            "tasknode": "usertask12",
-            "editablenode": "usertask12",
-            "name": "procurement.recycling",
-            "validation": {
-                "pageid": "jcxx",
-                "required": true,
-                "validationMsg": "IT综合管理员回收设备情况填写必须"
-            }
-        }]
+          "title": "申请人接受确认",
+          "component": "text",
+          "editablenode": "usertask11",
+          "tasknode": "usertask11,usertask12",
+          "name": "procurement.confirmapp",
+          "validation": {
+            "pageid": "jcxx",
+            "required": true,
+            "validationMsg": "申请人接受确认填写必须"
+          }
+        },
+        {
+          "title": "IT综合管理员回收设备情况",
+          "component": "text",
+          "tasknode": "usertask12",
+          "editablenode": "usertask12",
+          "name": "procurement.recycling",
+          "validation": {
+            "pageid": "jcxx",
+            "required": true,
+            "validationMsg": "IT综合管理员回收设备情况填写必须"
+          }
+        }
+      ]
     },
     {
-        "title": "IT综合管理员收货执行",
-        "pageid": "ITzhglyshzx",
-        "tasknode": "usertaskz,usertask11,usertask12",
-        "component": "panel",
-        "subComponents": [{
-            "id":"shzxzcmc",
-            "component": "table",
-            "titleIndex":0,
-            "basePath": "deliverylist",
-            "cells": [{
-                "id":"zcassetnameL",
-                "title": "资产名称",
-                "component": "text",
-                "name": "zcassetname"
+      "title": "IT综合管理员收货执行",
+      "pageid": "ITzhglyshzx",
+      "tasknode": "usertaskz,usertask11,usertask12",
+      "component": "panel",
+      "subComponents": [
+        {
+          "id": "shzxzcmc",
+          "component": "table",
+          "titleIndex": 0,
+          "basePath": "deliverylist",
+          "cells": [
+            {
+              "id": "zcassetnameL",
+              "title": "资产名称",
+              "component": "text",
+              "name": "zcassetname"
             },
             {
-                "id":"detailedL",
-                "title": "详细信息",
-                "component": "text",
-                "name": "detailed"
+              "id": "detailedL",
+              "title": "详细信息",
+              "component": "text",
+              "name": "detailed"
             },
             {
-                "id":"theuserL",
-                "title": "使用人",
-                "component": "text",
-                "name": "theuser"
+              "id": "theuserL",
+              "title": "使用人",
+              "component": "text",
+              "name": "theuser"
             },
             {
-                "id":"zcassetnumberL",
-                "title": "固定资产编号",
-                "component": "text",
-                "name": "zcassetnumber"
+              "id": "zcassetnumberL",
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "zcassetnumber"
             },
             {
-                "id":"purchasingnumL",
-                "title": "采购凭证号",
-                "component": "text",
-                "name": "purchasingnum"
-            }]
-        }]
+              "id": "purchasingnumL",
+              "title": "采购凭证号",
+              "component": "text",
+              "name": "purchasingnum"
+            }
+          ]
+        }
+      ]
     },
     {
-        "title": "IT运维工程师安装/验货/维护资料卡片",
-        "pageid": "ITywgcsazyhwhzlkp",
-        "tasknode": "usertaskz,usertask11,usertask12",
-        "component": "panel",
-        "subComponents": [{
-            "component": "table",
-            "titleIndex":0,
-            "basePath": "fxinsinsplist",
-            "cells": [{
-                "title": "资产名称",
-                "component": "text",
-                "name": "yazcassetname"
+      "title": "IT运维工程师安装/验货/维护资料卡片",
+      "pageid": "ITywgcsazyhwhzlkp",
+      "tasknode": "usertaskz,usertask11,usertask12",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "id":"ITywgcsazyhwhzlkp_table",
+          "basePath": "fxinsinsplist",
+          "cells": [
+            {
+              "title": "资产名称",
+              "component": "text",
+              "name": "yazcassetname"
             },
             {
-                "title": "详细信息",
-                "component": "text",
-                "name": "yadetailed"
+              "title": "详细信息",
+              "component": "text",
+              "name": "yadetailed"
             },
             {
-                "title": "使用人",
-                "component": "text",
-                "name": "yatheuser"
+              "title": "使用人",
+              "component": "text",
+              "name": "yatheuser"
             },
             {
-                "title": "固定资产编号",
-                "component": "text",
-                "name": "yazcassetnumber"
+              "title": "固定资产编号",
+              "component": "text",
+              "name": "yazcassetnumber"
             },
             {
-                "title": "出厂编号",
-                "component": "text",
-                "name": "yaserialnumber"
-            }]
-        }]
-    }]
+              "title": "出厂编号",
+              "component": "text",
+              "name": "yaserialnumber"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
