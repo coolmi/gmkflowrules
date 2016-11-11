@@ -97,6 +97,24 @@
           "title": "",
           "component": "hidden",
           "name": "travelnoreim.id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "trafficfeeout",
+          "id":"trafficfeeout"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "catefeelout",
+          "id":"catefeelout"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "telfeeout",
+          "id":"telfeeout"
         }
       ]
     },

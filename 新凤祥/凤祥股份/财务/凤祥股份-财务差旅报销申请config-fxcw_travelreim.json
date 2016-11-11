@@ -97,6 +97,16 @@
           "title": "",
           "component": "hidden",
           "name": "travelreim.id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelreim.ltradout"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travelreim.cityout"
         }
       ]
     },
