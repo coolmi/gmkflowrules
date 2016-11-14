@@ -1,0 +1,172 @@
+{
+  "id": "fico_fixedassetsdailypurchase",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用公司",
+          "component": "text",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.suppliername"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "mainModel.suppliernum"
+        },
+        {
+          "title": "采购订单",
+          "component": "text",
+          "name": "mainModel.purchaseorder"
+        },
+        {
+          "title": "是否验收入库",
+          "component": "text",
+          "name": "mainModel.whetheracceptance"
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "mainModel.contractnum"
+        },
+        {
+          "title": "应付款比例 ",
+          "component": "text",
+          "name": "mainModel.proportionaccounts"
+        },
+        {
+          "title": "发票金额小写",
+          "component": "text",
+          "name": "mainModel.invoiceamount"
+        },
+        {
+          "title": "已支付金额小写",
+          "component": "text",
+          "name": "mainModel.amount"
+        },
+        {
+          "title": "发票金额大写",
+          "component": "text",
+          "name": "mainModel.amountup"
+        },
+        {
+          "title": "档案室是否存档",
+          "component": "text",
+          "name": "mainModel.recordroom"
+        },
+        {
+          "title": "报账事由",
+          "component": "textarea",
+          "rows": 4,
+          "name": "mainModel.reasons"
+        }
+      ]
+    }
+  ]
+}
