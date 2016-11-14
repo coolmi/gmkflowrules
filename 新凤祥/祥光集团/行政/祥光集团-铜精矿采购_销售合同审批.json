@@ -1,0 +1,201 @@
+{
+  "id": "adm_purchasesalecontract",
+  "handleOnPC": {
+    "tasknode": [
+      "internalaudit",
+      "usertask2"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同类型",
+          "component": "select",
+          "name": "mainModel.htlx",
+          "options": [
+            {
+              "text": "采购",
+              "value": "0"
+            },
+            {
+              "text": "销售",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "法人单位",
+          "component": "text",
+          "name": "mainModel.frbutxt"
+        },
+        {
+          "title": "供应商名称/采购商",
+          "component": "text",
+          "name": "mainModel.gysmc"
+        },
+        {
+          "title": "原采购合同供应商编码",
+          "component": "text",
+          "name": "mainModel.ycghtgysbm",
+          "showLinkage": [
+            {
+              "id": "htlx",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "业务类型",
+          "component": "select",
+          "name": "mainModel.ywlx",
+          "options": [
+            {
+              "text": "长单",
+              "value": "0"
+            },
+            {
+              "text": "现货",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同号",
+          "component": "text",
+          "name": "mainModel.hth"
+        },
+        {
+          "title": "法务审核人员",
+          "component": "text",
+          "name": "mainModel.fwshry"
+        },
+        {
+          "title": "资金审核人员",
+          "component": "text",
+          "name": "mainModel.zjshry"
+        },
+        {
+          "title": "物流审核人员",
+          "component": "text",
+          "name": "mainModel.wlshry"
+        },
+        {
+          "title": "风控审核人员",
+          "component": "text",
+          "name": "mainModel.fkshry"
+        },
+        {
+          "title": "原料事业部审核人员",
+          "component": "text",
+          "name": "mainModel.ylshry"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "4",
+          "name": "mainModel.biz"
+        }
+      ]
+    }
+  ]
+}
