@@ -235,7 +235,13 @@
           "title": "核减金额",
           "component": "text",
           "editablenode":"usertask3",
-          "name": "pubexpense.hjjexx"
+          "name": "pubexpense.hjjexx",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"核减金额填写必须",
+            "regexs":""
+          }
         },
         {
           "title": "核减金额(大写)",

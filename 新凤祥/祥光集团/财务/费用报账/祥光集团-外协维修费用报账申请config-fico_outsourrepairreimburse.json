@@ -1,5 +1,5 @@
 {
-  "id": "fxcw_gdzcbfapply",
+  "id": "fico_outsourrepairreimburse",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -23,7 +23,6 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
@@ -107,118 +106,73 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "主抄送",
+          "title": "费用公司",
           "component": "text",
-          "name": "mainModel.maincc"
+          "name": "mainModel.cdbutxt"
         },
         {
-          "title": "固定资产名称",
+          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.gdzcmc"
+          "name": "mainModel.suppliername"
         },
         {
-          "title": "规格型号",
+          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.ggxhccbh"
+          "name": "mainModel.suppliernum"
         },
         {
-          "title": "固定资产编号",
+          "title": "合同编号",
           "component": "text",
-          "name": "mainModel.gdzcbh"
+          "name": "mainModel.contractnum"
         },
         {
-          "title": "制造商",
+          "title": "订单号",
           "component": "text",
-          "name": "mainModel.zzs"
+          "name": "mainModel.ordernum"
         },
         {
-          "title": "资产所属公司",
-          "component": "label",
-          "editablenode": "",
-          "middleName": [
-            "mainModel.zcssgs",
-            "bukrs"
-          ],
-          "label": [
-            "mainModel.zcssgs",
-            "-",
-            "allT001List.butxt"
-          ]
-        },
-        {
-          "title": "资产所属部门",
+          "title": "已付款比例",
           "component": "text",
-          "name": "mainModel.zcssbm"
+          "name": "mainModel.alpaypersent"
         },
         {
-          "title": "资产所属成本中心",
+          "title": "已支付金额小写",
           "component": "text",
-          "name": "mainModel.zcsscbzx"
+          "name": "mainModel.alpayamount"
         },
         {
-          "title": "资产所属成本中心描述",
+          "title": "本次付款比例",
           "component": "text",
-          "name": "mainModel.zcsscbzxms"
+          "name": "mainModel.curpaypersent"
         },
         {
-          "title": "原值",
+          "title": "币种",
           "component": "text",
-          "name": "mainModel.yz"
+          "name": "mainModel.currencytxt"
         },
         {
-          "title": "原值大写",
+          "title": "报账金额小写",
           "component": "text",
-          "name": "mainModel.yzdx"
+          "name": "mainModel.invoiceamount"
         },
         {
-          "title": "投产时间",
-          "component": "date1",
-          "name": "mainModel.tcsj"
-        },
-        {
-          "title": "已使用年限",
+          "title": "报账金额大写",
           "component": "text",
-          "name": "mainModel.ysynx"
+          "name": "mainModel.invoiceamountup"
         },
         {
-          "title": "残值",
-          "component": "text",
-          "name": "mainModel.cz"
-        },
-        {
-          "title": "预计出售价格",
-          "component": "text",
-          "editablenode": "usertask12",
-          "name": "mainModel.yjcsjg",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "预计出售价格必填"
-          }
-        },
-        {
-          "title": "报废理由",
-          "component": "text",
-          "name": "mainModel.bfly"
+          "title": "报账事由",
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.reasons"
         },
         {
           "title": "备注",
-          "component": "text",
-          "name": "mainModel.bz"
+          "component": "textarea",
+          "rows": 2,
+          "name": "mainModel.remarks"
         }
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }
