@@ -721,7 +721,7 @@
           "subComponents": [
             {
               "component": "table_form",
-              "titleIndex": 3,
+              "titleIndex": 9,
               "basePath": "summs",
               "id": "sums_sdate",
               "tableForms": [
