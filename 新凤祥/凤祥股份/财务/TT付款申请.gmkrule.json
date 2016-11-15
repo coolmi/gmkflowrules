@@ -2,7 +2,6 @@
   "id": "af_ttpayment",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,184 +117,210 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "kkkiu",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "付款单位",
-					"component": "select",
-					"id": "ttpayment_fkdw",
-					"editablenode": "",
-					"name": "ttpayment.fkdw",
-					"options": [
-						{
-							"text": "1000-阳谷铜业有限公司",
-							"value": "1000",
-						},
-						{
-							"text": "1085-香港祥光国际控股有限公司",
-							"value": "1085",
-						},
-						{
-							"text": "1086-香港鸿润国际控股有限公司",
-							"value": "1086",
-						}
-					]
-				},
-				{
-					"title": "合同号",
-					"component": "text",
-					"id": "ttpayment_htbh",
-					"editablenode": "",
-					"name": "ttpayment.htbh"
-				},
-				{
-					"title": "供应商编号",
-					"component": "text",
-					"id": "ttpayment_lifnrp",
-					"editablenode": "",
-					"name": "ttpayment.lifnrp"
-				},
-				{
-					"title": "供应商描述",
-					"component": "text",
-					"id": "ttpayment_lifnrtext",
-					"editablenode": "",
-					"name": "ttpayment.lifnrtext"
-				},
-				{
-					"title": "采购订单编号",
-					"component": "text",
-					"id": "ttpayment_orderno",
-					"editablenode": "",
-					"name": "ttpayment.orderno"
-				},
-				{
-					"title": "付款方式",
-					"component": "text",
-					"id": "ttpayment_fkfs",
-					"editablenode": "",
-					"name": "ttpayment.fkfs"
-				},
-				{
-					"title": "汇款用途",
-					"component": "radio",
-					"id": "ttpayment_hkyt",
-					"editablenode": "",
-					"name": "ttpayment.hkyt",
-					"options": [
-						{
-							"text": "货款",
-							"value": "0",
-						},
-						{
-							"text": "滞费期，2：其他费用",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "申请付款日期",
-					"component": "date1",
-					"id": "ttpayment_fkrq",
-					"editablenode": "",
-					"name": "ttpayment.fkrq"
-				},
-				{
-					"title": "付款金额",
-					"component": "text",
-					"id": "ttpayment_fkje",
-					"editablenode": "",
-					"name": "ttpayment.fkje"
-				},
-				
-				{
-					"title": "币种",
-					"component": "select",
-					"id": "ttpayment_bz",
-					"editablenode": "",
-					"name": "ttpayment.bz",
-					"options": [
-						{
-							"text": "日元",
-							"value": "JPY",
-						},
-						{
-							"text": "人民币",
-							"value": "CNY",
-						},		
-						{
-							"text": "欧元",
-							"value": "EUR",
-						},
-						{
-							"text": "港币",
-							"value": "HKD",
-						},
-						{
-							"text": "美元",
-							"value": "USD",
-						},
-						{
-							"text": "加拿大元",
-							"value": "CAD",
-						},
-						{
-							"text": "澳大利亚元",
-							"value": "AUD",
-						},
-						{
-							"text": "英镑",
-							"value": "GBP",
-						}
-					]
-				},
-				{
-					"title": "付款金额大写",
-					"component": "text",
-					"datatype":"money2dx",
-					"editablenode": "",
-					"id": "ttpayment_fkjeup",
-					"editablenode": "",
-					"name": "ttpayment.fkje",
-					"dxname":"fkjeup"
-				},
-				{
-					"title": "汇款路径",
-					"component": "text",
-					"id": "ttpayment_hklj",
-					"editablenode": "",
-					"name": "ttpayment.hklj"
-				},
-				{
-					"title": "收款银行",
-					"component": "text",
-					"id": "ttpayment_recbank",
-					"editablenode": "",
-					"name": "ttpayment.recbank"
-				},
-				{
-					"title": "收款账号",
-					"component": "text",
-					"id": "ttpayment_recbankno",
-					"editablenode": "",
-					"name": "ttpayment.recbankno"
-				},
-				{
-					"title": "备注",
-					"component": "text",
-					"id": "ttpayment_note",
-					"editablenode": "",
-					"name": "ttpayment.note"
-				}
-			]
-		}
-
-
-  ],
-  "refers": {
-  }
+    {
+      "title": "申请信息",
+      "pageid": "kkkiu",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "付款单位",
+          "component": "select",
+          "id": "ttpayment_fkdw",
+          "editablenode": "",
+          "name": "ttpayment.fkdw",
+          "options": [
+            {
+              "text": "1000-阳谷铜业有限公司",
+              "value": "1000"
+            },
+            {
+              "text": "1085-香港祥光国际控股有限公司",
+              "value": "1085"
+            },
+            {
+              "text": "1086-香港鸿润国际控股有限公司",
+              "value": "1086"
+            }
+          ]
+        },
+        {
+          "title": "合同号",
+          "component": "text",
+          "id": "ttpayment_htbh",
+          "editablenode": "",
+          "name": "ttpayment.htbh"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "id": "ttpayment_lifnrp",
+          "editablenode": "",
+          "name": "ttpayment.lifnrp"
+        },
+        {
+          "title": "供应商描述",
+          "component": "text",
+          "id": "ttpayment_lifnrtext",
+          "editablenode": "",
+          "name": "ttpayment.lifnrtext"
+        },
+        {
+          "title": "采购订单编号",
+          "component": "text",
+          "id": "ttpayment_orderno",
+          "editablenode": "",
+          "name": "ttpayment.orderno"
+        },
+        {
+          "title": "付款方式",
+          "component": "text",
+          "id": "ttpayment_fkfs",
+          "editablenode": "",
+          "name": "ttpayment.fkfs"
+        },
+        {
+          "title": "汇款用途",
+          "component": "radio",
+          "id": "ttpayment_hkyt",
+          "editablenode": "",
+          "name": "ttpayment.hkyt",
+          "options": [
+            {
+              "text": "货款",
+              "value": "0"
+            },
+            {
+              "text": "滞费期，2：其他费用",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "申请付款日期",
+          "component": "date1",
+          "id": "ttpayment_fkrq",
+          "editablenode": "",
+          "name": "ttpayment.fkrq"
+        },
+        {
+          "title": "付款金额",
+          "component": "text",
+          "id": "ttpayment_fkje",
+          "editablenode": "",
+          "name": "ttpayment.fkje"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "id": "ttpayment_bz",
+          "editablenode": "",
+          "name": "ttpayment.bz",
+          "options": [
+            {
+              "text": "日元",
+              "value": "JPY",
+            },
+            {
+              "text": "人民币",
+              "value": "CNY",
+            },
+            {
+              "text": "欧元",
+              "value": "EUR"
+            },
+            {
+              "text": "港币",
+              "value": "HKD"
+            },
+            {
+              "text": "美元",
+              "value": "USD"
+            },
+            {
+              "text": "加拿大元",
+              "value": "CAD"
+            },
+            {
+              "text": "澳大利亚元",
+              "value": "AUD"
+            },
+            {
+              "text": "英镑",
+              "value": "GBP"
+            }
+          ]
+        },
+        {
+          "title": "付款金额大写",
+          "component": "text",
+          "datatype": "money2dx",
+          "editablenode": "",
+          "id": "ttpayment_fkjeup",
+          "editablenode": "",
+          "name": "ttpayment.fkje",
+          "dxname": "fkjeup"
+        },
+        {
+          "title": "汇款路径",
+          "component": "text",
+          "id": "ttpayment_hklj",
+          "editablenode": "",
+          "name": "ttpayment.hklj"
+        },
+        {
+          "title": "收款银行",
+          "component": "text",
+          "id": "ttpayment_recbank",
+          "editablenode": "",
+          "name": "ttpayment.recbank"
+        },
+        {
+          "title": "收款账号",
+          "component": "text",
+          "id": "ttpayment_recbankno",
+          "editablenode": "",
+          "name": "ttpayment.recbankno"
+        },
+        {
+          "title": "信用证号",
+          "component": "text",
+          "name": "ttpayment.xyzh"
+        },
+        {
+          "title": "付款种类",
+          "component": "select",
+          "name": "ttpayment.fkzl",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "一次临时付款",
+              "value": "0"
+            },
+            {
+              "text": "二次临时付款",
+              "value": "2"
+            },
+            {
+              "text": "三次临时付款",
+              "value": "3"
+            },
+            {
+              "text": "最终付款",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "id": "ttpayment_note",
+          "editablenode": "",
+          "name": "ttpayment.note"
+        }
+      ]
+    }
+  ]
 }
