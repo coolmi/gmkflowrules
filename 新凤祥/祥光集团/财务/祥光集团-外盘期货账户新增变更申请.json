@@ -1,0 +1,172 @@
+{
+  "id": "fico_outerdiscaccount",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "新增/变更",
+          "component": "select",
+          "name": "mainModel.butype",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "新增",
+              "value": "1"
+            },
+            {
+              "text": "变更",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "所属法人",
+          "component": "label",
+          "label": [
+            "mainModel.frbukrs",
+            "-",
+            "mainModel.frbutxt"
+          ]
+        },
+        {
+          "title": "期货账户",
+          "component": "label",
+          "label": [
+            "mainModel.qhzh",
+            "-",
+            "mainModel.qhzhmc"
+          ]
+        },
+        {
+          "title": "电子盘授权交易员",
+          "component": "label",
+          "label": [
+            "mainModel.dzpsqjyy",
+            "-",
+            "mainModel.dzpsqjyyname"
+          ]
+        },
+        {
+          "title": "电话下单授权交易员",
+          "component": "label",
+          "label": [
+            "mainModel.dhxdsqjyy",
+            "-",
+            "mainModel.dhxdsqjyyname"
+          ]
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": 4,
+          "name": "mainModel.bz"
+        }
+      ]
+    }
+  ]
+}
