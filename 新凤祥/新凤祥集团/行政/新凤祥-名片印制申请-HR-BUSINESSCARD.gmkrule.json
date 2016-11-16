@@ -40,15 +40,6 @@
           ]
         },
         {
-          "title": "所属部门",
-          "component": "hidden",
-          "label": [
-            "businesscard.sysbusinessunitname",
-            "-",
-            "businesscard.sysdeptname"
-          ]
-        },
-        {
           "title": "",
           "component": "hidden",
           "name": "businesscard.userid"

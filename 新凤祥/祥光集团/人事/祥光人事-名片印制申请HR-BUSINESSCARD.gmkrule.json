@@ -1,7 +1,9 @@
 {
   "id": "HR-BUSINESSCARD",
   "handleOnPC": {
-    "tasknode": [""],
+    "tasknode": [
+      ""
+    ],
     "flag": [
       "resubmit"
     ]
@@ -35,15 +37,6 @@
             "businesscard.pernr",
             "-",
             "businesscard.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "hidden",
-          "label": [
-            "businesscard.sysbusinessunitname",
-            "-",
-            "businesscard.sysdeptname"
           ]
         },
         {
@@ -217,7 +210,6 @@
           "component": "text",
           "name": "businesscard.remark"
         }
-
       ]
     }
   ]
