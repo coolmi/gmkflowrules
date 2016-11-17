@@ -323,7 +323,7 @@
       "tasknode": "usertask3,usertask4,usertask5",
       "subComponents": [
         {
-          "title": "意见",
+          "title": "转正类型",
           "component": "select",
           "editablenode": "",
           "name": "hradmindept",
@@ -344,7 +344,12 @@
               "text": "不与转正",
               "value": "04"
             }
-          ]
+          ],
+          "validation": {
+            "pageid": "zhglbyj",
+            "required": true,
+            "validateMsg": "请选择转正类型"
+          }
         },
         {
           "title": "转正日期",
@@ -352,7 +357,12 @@
           "datetype": "date1",
           "editablenode": "usertask3",
           "tasknode": "usertask3,usertask4,usertask5",
-          "name": "mainModel.regular_date"
+          "name": "mainModel.regular_date",
+          "validation": {
+            "pageid": "zhglbyj",
+            "required": true,
+            "validateMsg": "请填写转正日期"
+          }
         }
       ]
     },
