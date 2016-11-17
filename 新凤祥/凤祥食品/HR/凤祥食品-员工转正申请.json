@@ -192,14 +192,16 @@
               "title": "是否同意转正",
               "component": "select",
               "name": "isagree",
-              "options":[{
-                "title": "是",
-                "value": "1"
-               },
+              "options": [
+                {
+                  "title": "是",
+                  "value": "1"
+                },
                 {
                   "title": "否",
                   "value": "2"
-                }]
+                }
+              ]
             },
             {
               "title": "综合评价",
@@ -232,7 +234,7 @@
           }
         },
         {
-          "title": "总经理综合评价",
+          "title": "部门内部审核综合评价",
           "component": "textarea",
           "editablenode": "usertask2",
           "tasknode": "usertask2,usertask3,usertask4,usertask5,usertask8",
