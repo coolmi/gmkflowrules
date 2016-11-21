@@ -2,7 +2,12 @@
   "id": "ap_tenderbid",
   "handleOnPC": {
     "tasknode": [
-      "xqbmfzrsh","jsbmfzrsh","fwbmfzrsh","sjbmfzrsh","zbsqr","zbfzrsh","zbfzrsh"
+      "xqbmfzrsh",
+      "jsbmfzrsh",
+      "sjbmfzrsh",
+      "zbsqr",
+      "zbfzrsh",
+      "zbfzrsh"
     ],
     "flag": [
       "resubmit"
@@ -10,7 +15,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +24,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,360 +123,373 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "申请单号",
-					"component": "text",
-					"id": "tenderbid_appid",
-					"editablenode": "",
-					"name": "tenderbid.appid"
-				},
-				{
-					"title": "授权类型",
-					"component": "select",
-					"id": "tenderbid_sqlx",
-					"editablenode": "",
-					"name": "tenderbid.sqlx",
-					"options": [
-						{
-							"text": "一级",
-							"value": "0",
-						},
-						{
-							"text": "二级",
-							"value": "1",
-						},
-						{
-							"text": "三级",
-							"value": "2",
-						}
-					]
-				},
-				{
-					"title": "有效授权审批人",
-					"component": "label",
-					"id": "tenderbid_yxsqspr",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tenderbid_sqlx",
-							"values": [
-								"1","2"
-							]
-						}
-					],
-					"label": [
-					  "tenderbid.yxsqspr",
-					  "-",
-					  "yxsqsprname"
-					]
-
-				},
-				{
-					"title": "一级授权审批人",
-					"component": "text",
-					"id": "tenderbid_yjsqspr",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tenderbid_sqlx",
-							"values": [
-								"0"
-							]
-						}
-					],
-					"name": "tenderbid.yjsqspr"
-				},
-				{
-					"title": "招标／议标执行状态 ",
-					"component": "select",
-					"id": "tenderbid_zxstatus",
-					"editablenode": "",
-					"name": "tenderbid.zxstatus",
-					"options": [
-						{
-							"text": "正常",
-							"value": "0",
-						},
-						{
-							"text": "后补",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "后补原因",
-					"component": "text",
-					"id": "tenderbid_hbyy",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tenderbid_zxstatus",
-							"values": [
-								"1"
-							]
-						}
-					],
-					"name": "tenderbid.hbyy"
-				},
-				{
-					"title": "预算类别 ",
-					"component": "select",
-					"id": "tenderbid_yslb",
-					"editablenode": "",
-					"name": "tenderbid.yslb",
-					"options": [
-						{
-							"text": "预算内",
-							"value": "0",
-						},
-						{
-							"text": "预算外",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "需求类型",
-					"component": "select",
-					"id": "tenderbid_xqlx",
-					"editablenode": "",
-					"name": "tenderbid.xqlx",
-					"options": [
-						{
-							"text": "工程",
-							"value": "0",
-						},
-						{
-							"text": "常规",
-							"value": "1",
-						},
-						{
-							"text": "外协",
-							"value": "2",
-						}
-					]
-				},
-				{
-					"title": "采购物资类型",
-					"component": "select",
-					"id": "tenderbid_cgwzlx",
-					"editablenode": "",
-					"name": "tenderbid.cgwzlx",
-					"options": [
-						{
-							"text": "设备",
-							"value": "0",
-						},
-						{
-							"text": "土建",
-							"value": "1",
-						},
-						{
-							"text": "安装",
-							"value": "2",
-						},
-						{
-							"text": "材料",
-							"value": "3",
-						},
-						{
-							"text": "服务",
-							"value": "4",
-						},
-						{
-							"text": "安环",
-							"value": "5",
-						},
-						{
-							"text": "其他",
-							"value": "6",
-						}
-					]
-				},
-				{
-					"title": "采购物资名称",
-					"component": "text",
-					"id": "tenderbid_cgwzmc",
-					"editablenode": "",
-					"name": "tenderbid.cgwzmc"
-				},
-				{
-					"title": "采购物资简述",
-					"component": "text",
-					"id": "tenderbid_cgwzjs",
-					"editablenode": "",
-					"name": "tenderbid.cgwzjs"
-				},
-				{
-					"title": "采购方式",
-					"component": "select",
-					"id": "tenderbid_cgfs",
-					"editablenode": "",
-					"name": "tenderbid.cgfs",
-					"options": [
-						{
-							"text": "招标",
-							"value": "0",
-						},
-						{
-							"text": "议标",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "议标理由",
-					"component": "text",
-					"id": "tenderbid_ybly",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tenderbid_cgfs",
-							"values": [
-								"1"
-							]
-						}
-					],
-					"name": "tenderbid.ybly"
-				},
-				{
-					"title": "标的金额",
-					"component": "text",
-					"id": "tenderbid_bdje",
-					"editablenode": "",
-					"name": "tenderbid.bdje"
-				},
-				{
-					"title": "招/议标时间",
-					"component": "date1",
-					"id": "tenderbid_zybsj",
-					"editablenode": "",
-					"name": "tenderbid.zybsj"
-				},
-				{
-					"title": "招议标地点",
-					"component": "text",
-					"id": "tenderbid_zybdd",
-					"editablenode": "",
-					"name": "tenderbid.zybdd"
-				},
-				{
-					"title": "需求部门",
-					"component": "text",
-					"id": "tenderbid_xqbm",
-					"editablenode": "",
-					"name": "tenderbid.xqbm"
-				},
-				{
-					"title": "招标负责人",
-					"component": "text",
-					"id": "tenderbid_zbfzr",
-					"editablenode": "",
-					"name": "tenderbid.zbfzr"
-				},
-				{
-					"title": "需求部门负责人",
-					"component": "text",
-					"id": "xqbmfzrname",
-					"editablenode": "",
-					"name": "xqbmfzrname"
-				},
-				{
-				  "title": "招标负责人",
-				  "component": "text",
-				  "id": "tenderbid_zbfzr",
-				  "editablenode": "",
-				  "name": "tenderbid.zbfzr"
-				},
-				{
-				  "title": "采购方式变更",
-				  "component": "select",
-				  "id": "tenderbid_cgfsbg",
-				  "tasknode": "zbfzrsh",
-				  "name": "tenderbid.cgfsbg",
-				  "options": [
-					{
-					  "text": "招标改议标",
-					  "value": "0",
-					},
-					{
-					  "text": "议标改招标",
-					  "value": "1",
-					},
-					{
-					  "text": "其他",
-					  "value": "2",
-					}
-				  ]
-				},
-				{
-				  "title": "变更原因",
-				  "component": "text",
-				  "id": "tenderbid_bgyy",
-				  "tasknode": "zbfzrsh",
-				  "name": "tenderbid.bgyy",
-				  "showLinkage": [
-					{
-					  "id": "tenderbid_cgfsbg",
-					  "values": [
-						"1","0"
-					  ]
-					}
-				  ],
-				},
-			]
-		},
-			{
-			  "title": "投标企业信息",
-			  "pageid": "tbqyxx",
-			  "component": "panel",
-			  "subComponents": [
-				{
-				  "title": "",
-				  "component": "table_form",
-				  "titleIndex": 0,
-				  "basePath": "tenderlifnrlist",
-				  "id": "LA_tbqyxx",
-				  "tableForms": [
-					{
-					  "title": "供应商名称",
-					  "component": "text",
-					  "id": "lifnrname",
-					  "editablenode": "",
-					  "name": "lifnrname"
-					},
-					{
-					  "title": "联系人",
-					  "component": "text",
-					  "id": "contactper",
-					  "editablenode": "",
-					  "name": "contactper"
-					},
-					{
-					  "title": "电话",
-					  "component": "text",
-					  "id": "contacttel",
-					  "editablenode": "",
-					  "name": "contacttel"
-					},
-					{
-					  "title": " 地址",
-					  "component": "text",
-					  "id": "lifnraddress",
-					  "editablenode": "",
-					  "name": "lifnraddress"
-					}
-				  ]
-				},
-			  ]
-			}
-
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "id": "tenderbid_appid",
+          "editablenode": "",
+          "name": "tenderbid.appid"
+        },
+        {
+          "title": "授权类型",
+          "component": "select",
+          "id": "tenderbid_sqlx",
+          "editablenode": "",
+          "name": "tenderbid.sqlx",
+          "options": [
+            {
+              "text": "一级",
+              "value": "0",
+            },
+            {
+              "text": "二级",
+              "value": "1",
+            },
+            {
+              "text": "三级",
+              "value": "2",
+            }
+          ]
+        },
+        {
+          "title": "有效授权审批人",
+          "component": "label",
+          "id": "tenderbid_yxsqspr",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tenderbid_sqlx",
+              "values": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "label": [
+            "tenderbid.yxsqspr",
+            "-",
+            "yxsqsprname"
+          ]
+        },
+        {
+          "title": "一级授权审批人",
+          "component": "select",
+          "id": "tenderbid_yjsqspr",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tenderbid_sqlx",
+              "values": [
+                "0"
+              ]
+            }
+          ],
+          "name": "tenderbid.yjsqspr",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "总裁岗位",
+              "value": "20003286"
+            },
+            {
+              "text": "董事长岗位",
+              "value": "20004971"
+            }
+          ]
+        },
+        {
+          "title": "招标／议标执行状态 ",
+          "component": "select",
+          "id": "tenderbid_zxstatus",
+          "editablenode": "",
+          "name": "tenderbid.zxstatus",
+          "options": [
+            {
+              "text": "正常",
+              "value": "0",
+            },
+            {
+              "text": "后补",
+              "value": "1",
+            }
+          ]
+        },
+        {
+          "title": "后补原因",
+          "component": "text",
+          "id": "tenderbid_hbyy",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tenderbid_zxstatus",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "tenderbid.hbyy"
+        },
+        {
+          "title": "预算类别 ",
+          "component": "select",
+          "id": "tenderbid_yslb",
+          "editablenode": "",
+          "name": "tenderbid.yslb",
+          "options": [
+            {
+              "text": "预算内",
+              "value": "0",
+            },
+            {
+              "text": "预算外",
+              "value": "1",
+            }
+          ]
+        },
+        {
+          "title": "需求类型",
+          "component": "select",
+          "id": "tenderbid_xqlx",
+          "editablenode": "",
+          "name": "tenderbid.xqlx",
+          "options": [
+            {
+              "text": "工程",
+              "value": "0",
+            },
+            {
+              "text": "常规",
+              "value": "1",
+            },
+            {
+              "text": "外协",
+              "value": "2",
+            }
+          ]
+        },
+        {
+          "title": "采购物资类型",
+          "component": "select",
+          "id": "tenderbid_cgwzlx",
+          "editablenode": "",
+          "name": "tenderbid.cgwzlx",
+          "options": [
+            {
+              "text": "设备",
+              "value": "0",
+            },
+            {
+              "text": "土建",
+              "value": "1",
+            },
+            {
+              "text": "安装",
+              "value": "2",
+            },
+            {
+              "text": "材料",
+              "value": "3",
+            },
+            {
+              "text": "服务",
+              "value": "4",
+            },
+            {
+              "text": "安环",
+              "value": "5",
+            },
+            {
+              "text": "其他",
+              "value": "6",
+            }
+          ]
+        },
+        {
+          "title": "采购物资名称",
+          "component": "text",
+          "id": "tenderbid_cgwzmc",
+          "editablenode": "",
+          "name": "tenderbid.cgwzmc"
+        },
+        {
+          "title": "采购物资简述",
+          "component": "text",
+          "id": "tenderbid_cgwzjs",
+          "editablenode": "",
+          "name": "tenderbid.cgwzjs"
+        },
+        {
+          "title": "采购方式",
+          "component": "select",
+          "id": "tenderbid_cgfs",
+          "editablenode": "",
+          "name": "tenderbid.cgfs",
+          "options": [
+            {
+              "text": "招标",
+              "value": "0",
+            },
+            {
+              "text": "议标",
+              "value": "1",
+            }
+          ]
+        },
+        {
+          "title": "议标理由",
+          "component": "text",
+          "id": "tenderbid_ybly",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tenderbid_cgfs",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "tenderbid.ybly"
+        },
+        {
+          "title": "标的金额",
+          "component": "text",
+          "id": "tenderbid_bdje",
+          "editablenode": "",
+          "name": "tenderbid.bdje"
+        },
+        {
+          "title": "招/议标时间",
+          "component": "date1",
+          "id": "tenderbid_zybsj",
+          "editablenode": "",
+          "name": "tenderbid.zybsj"
+        },
+        {
+          "title": "招议标地点",
+          "component": "text",
+          "id": "tenderbid_zybdd",
+          "editablenode": "",
+          "name": "tenderbid.zybdd"
+        },
+        {
+          "title": "需求部门",
+          "component": "text",
+          "id": "tenderbid_xqbm",
+          "editablenode": "",
+          "name": "tenderbid.xqbm"
+        },
+        {
+          "title": "招标负责人",
+          "component": "text",
+          "id": "tenderbid_zbfzr",
+          "editablenode": "",
+          "name": "tenderbid.zbfzr"
+        },
+        {
+          "title": "需求部门负责人",
+          "component": "text",
+          "id": "xqbmfzrname",
+          "editablenode": "",
+          "name": "xqbmfzrname"
+        },
+        {
+          "title": "招标负责人",
+          "component": "text",
+          "id": "tenderbid_zbfzr",
+          "editablenode": "",
+          "name": "tenderbid.zbfzr"
+        },
+        {
+          "title": "采购方式变更",
+          "component": "select",
+          "id": "tenderbid_cgfsbg",
+          "tasknode": "zbfzrsh",
+          "name": "tenderbid.cgfsbg",
+          "options": [
+            {
+              "text": "招标改议标",
+              "value": "0",
+            },
+            {
+              "text": "议标改招标",
+              "value": "1",
+            },
+            {
+              "text": "其他",
+              "value": "2",
+            }
+          ]
+        },
+        {
+          "title": "变更原因",
+          "component": "text",
+          "id": "tenderbid_bgyy",
+          "tasknode": "zbfzrsh",
+          "name": "tenderbid.bgyy",
+          "showLinkage": [
+            {
+              "id": "tenderbid_cgfsbg",
+              "values": [
+                "1",
+                "0"
+              ]
+            }
+          ],
+        },
+      ]
+    },
+    {
+      "title": "投标企业信息",
+      "pageid": "tbqyxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "tenderlifnrlist",
+          "id": "LA_tbqyxx",
+          "tableForms": [
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "id": "lifnrname",
+              "editablenode": "",
+              "name": "lifnrname"
+            },
+            {
+              "title": "联系人",
+              "component": "text",
+              "id": "contactper",
+              "editablenode": "",
+              "name": "contactper"
+            },
+            {
+              "title": "电话",
+              "component": "text",
+              "id": "contacttel",
+              "editablenode": "",
+              "name": "contacttel"
+            },
+            {
+              "title": " 地址",
+              "component": "text",
+              "id": "lifnraddress",
+              "editablenode": "",
+              "name": "lifnraddress"
+            }
+          ]
+        },
+      ]
+    }
   ],
   "refers": {
   }

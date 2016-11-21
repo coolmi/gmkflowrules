@@ -2,7 +2,7 @@
   "id": "ap_contractvoid",
   "handleOnPC": {
 	"tasknode": [
-	  "auditpie","audittrial","auditreview","lawpie"
+	  "auditpie","audittrial","lawpie"
 	],
 	"flag": [
 	  "resubmit"
