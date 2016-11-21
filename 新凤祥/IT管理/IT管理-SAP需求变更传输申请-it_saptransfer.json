@@ -1,0 +1,227 @@
+{
+  "id": "it_saptransfer",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask2",
+      "usertask4",
+      "usertask5"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "saptransfer.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "saptransfer.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "saptransfer.pernr",
+            "-",
+            "saptransfer.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "saptransfer.sysbusinessunitname",
+            "-",
+            "saptransfer.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.proc_inst_id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "saptransfer.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "id": "cslx",
+          "title": "传输类型",
+          "component": "radio",
+          "name": "saptransfer.transtype",
+          "options": [
+            {
+              "title": "SAP需求变更",
+              "value": "1"
+            },
+            {
+              "title": "SAP权限申请",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "测试用户",
+          "component": "label",
+          "label": [
+            "saptransfer.keyuser",
+            "-",
+            "saptransfer.keyusername"
+          ]
+        },
+        {
+          "title": "SAP变更需求单号",
+          "component": "text",
+          "name": "saptransfer.tempa",
+          "events": {
+            "eventType": "viewOther",
+            "otherKey": "fxit_sapneedchangeapp",
+            "otherName": "SAP需求变更申请",
+            "procInstId": "saptransfer.tempa",
+            "businessKey": "saptransfer.tempb"
+          },
+          "showLinkage": [
+            {
+              "id": "cslx",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "SAP权限申请单号",
+          "component": "text",
+          "name": "saptransfer.permissionno",
+          "events": {
+            "eventType": "viewOther",
+            "otherKey": "fxit_sappermissionapply",
+            "otherName": "SAP系统权限申请",
+            "procInstId": "saptransfer.permissionno",
+            "businessKey": "saptransfer.permissionno_id"
+          },
+          "showLinkage": [
+            {
+              "id": "cslx",
+              "values": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "basePath": "bases",
+          "cells": [
+            {
+              "title": "请求类型",
+              "component": "text",
+              "name": "rqtype"
+            },
+            {
+              "title": "传输请求号",
+              "component": "text",
+              "name": "rqcode"
+            },
+            {
+              "title": "传输请求说明",
+              "component": "textarea",
+              "name": "rqsemo"
+            },
+            {
+              "title": "是否成功",
+              "component": "select",
+              "editablenode": "usertask2",
+              "name": "tstok",
+              "options": [
+                {
+                  "title": "是",
+                  "value": "是"
+                },
+                {
+                  "title": "否",
+                  "value": "否"
+                }
+              ]
+            },
+            {
+              "title": "测试结果备注",
+              "component": "textarea",
+              "editablenode": "usertask2",
+              "name": "tstremark"
+            },
+          ]
+        }
+      ]
+    }
+  ]
+}
