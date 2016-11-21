@@ -143,10 +143,10 @@
           "name": "saptransfer.tempa",
           "events": {
             "eventType": "viewOther",
-            "otherKey": "fxit_sapneedchangeapp",
+            "otherKey": "it_needchangeapp",
             "otherName": "SAP需求变更申请",
-            "procInstId": "saptransfer.tempa",
-            "businessKey": "saptransfer.tempb"
+            "procInstId": "tempa",
+            "businessKey": "tempb"
           },
           "showLinkage": [
             {
