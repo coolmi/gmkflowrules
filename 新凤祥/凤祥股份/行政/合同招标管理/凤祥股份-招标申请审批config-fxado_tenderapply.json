@@ -2,7 +2,6 @@
   "id": "fxado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      "sjbmcs"
     ],
     "flag": [
       "resubmit"
