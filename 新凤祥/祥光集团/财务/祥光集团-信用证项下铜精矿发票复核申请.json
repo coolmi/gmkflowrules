@@ -205,6 +205,12 @@
               "nachn",
               "stext"
             ]
+
+          },
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"请填写资金经理办理人"
           }
         }
       ]
