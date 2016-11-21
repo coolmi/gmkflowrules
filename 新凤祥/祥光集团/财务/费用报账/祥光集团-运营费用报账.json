@@ -182,6 +182,8 @@
         {
           "component": "table_form",
           "titleIndex": 2,
+          "lTitleIndex": 2,
+          "rTitleIndex": 4,
           "basePath": "operatecostinfolist",
           "id": "fylb_table",
           "tableForms": [
