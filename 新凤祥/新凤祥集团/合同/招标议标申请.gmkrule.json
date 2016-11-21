@@ -2,7 +2,7 @@
   "id": "ap_tenderbid",
   "handleOnPC": {
     "tasknode": [
-      "bmfzr","xqbmfzrsh","jsbmfzrsh","fwbmfzrsh","sjbmfzrsh","zbsqr","zbfzrsh","zbfzrsh"
+      "xqbmfzrsh","jsbmfzrsh","fwbmfzrsh","sjbmfzrsh","zbsqr","zbfzrsh","zbfzrsh"
     ],
     "flag": [
       "resubmit"
