@@ -132,11 +132,11 @@
           "options": [
             {
               "text": "一级授权",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "二级授权",
-              "value": "1",
+              "value": "1"
             }
           ]
         },
@@ -157,11 +157,11 @@
           "options": [
             {
               "text": "总裁岗位",
-              "value": "20003286",
+              "value": "20003286"
             },
             {
               "text": "董事长岗位",
-              "value": "20004971",
+              "value": "20004971"
             }
           ]
         },
@@ -174,11 +174,11 @@
           "options": [
             {
               "text": "正常",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "后补",
-              "value": "1",
+              "value": "1"
             }
           ]
         },
@@ -220,11 +220,11 @@
           "options": [
             {
               "text": "预算内",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "预算外",
-              "value": "1",
+              "value": "1"
             }
           ]
         },
@@ -237,19 +237,19 @@
           "options": [
             {
               "text": "人名币",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "美元",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "欧元",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "英镑",
-              "value": "3",
+              "value": "3"
             }
           ]
         },
@@ -276,23 +276,23 @@
           "options": [
             {
               "text": "工程",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "常规",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "外协",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "IT",
-              "value": "3",
+              "value": "3"
             },
             {
               "text": "其他",
-              "value": "4",
+              "value": "4"
             }
           ]
         },
@@ -334,19 +334,19 @@
           "options": [
             {
               "text": "合格供应商",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "一次供应商",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "战略合作伙伴",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "黑名单解冻",
-              "value": "3",
+              "value": "3"
             }
           ]
         },
@@ -389,27 +389,27 @@
           "options": [
             {
               "text": "请选择",
-              "value": "",
+              "value": ""
             },
             {
               "text": "比价",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "招标或议标",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "依据其/他合同",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "特批会议定价",
-              "value": "3",
+              "value": "3"
             },
             {
               "text": "其他",
-              "value": "4",
+              "value": "4"
             }
           ]
         },
@@ -430,15 +430,15 @@
           "options": [
             {
               "text": "1家",
-              "value": " 0",
+              "value": " 0"
             },
             {
               "text": "2家",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "3家及以上",
-              "value": "2",
+              "value": "2"
             }
           ]
         },
@@ -460,15 +460,15 @@
           "options": [
             {
               "text": "制定品牌",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "唯一供应商",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "其他",
-              "value": "2",
+              "value": "2"
             }
           ]
         },
@@ -541,11 +541,11 @@
           "options": [
             {
               "text": "公开",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "保密",
-              "value": "1",
+              "value": "1"
             }
           ]
         },
@@ -572,11 +572,11 @@
           "options": [
             {
               "text": "是",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "否",
-              "value": "1",
+              "value": "1"
             }
           ]
         },
