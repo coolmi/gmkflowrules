@@ -158,7 +158,7 @@
           "id": "sfcys",
           "title": "是否超预算",
           "component": "radio",
-          "editablenode": "usertaskn",
+          "editablenode": "usertask16",
           "name": "procurement.outmoney",
           "validation": {
             "pageid": "sqxx",
@@ -390,7 +390,7 @@
         {
           "component": "table",
           "titleIndex": 0,
-          "id":"ITywgcsazyhwhzlkp_table",
+          "id": "ITywgcsazyhwhzlkp_table",
           "basePath": "fxinsinsplist",
           "cells": [
             {

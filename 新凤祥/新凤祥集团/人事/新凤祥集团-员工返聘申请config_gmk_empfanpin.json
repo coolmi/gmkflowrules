@@ -143,6 +143,10 @@
           "name": "mainModel.fanpinapproval",
           "options": [
             {
+              "title": "请选择",
+              "value": ""
+            },
+            {
               "title": "总裁",
               "value": "GMK10000001"
             },
@@ -150,7 +154,12 @@
               "title": "董事长",
               "value": "GMK10000000"
             }
-          ]
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "返聘审批人必选"
+          }
         },
         {
           "title": "拟返聘岗位",
