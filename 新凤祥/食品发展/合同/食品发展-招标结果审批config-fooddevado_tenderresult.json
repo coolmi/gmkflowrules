@@ -2,7 +2,7 @@
   "id": "fooddevado_tenderresult",
   "handleOnPC": {
     "tasknode": [
-      "sjbmfp","sjbmcs"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -148,7 +148,7 @@
         {
           "title": "标的金额",
           "component": "text",
-          "name": "mainModel.bdje",
+          "name": "mainModel.bdje"
         },
         {
           "title": "生产类固定资产采购",
