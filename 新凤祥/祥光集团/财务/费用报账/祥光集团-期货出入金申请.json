@@ -163,11 +163,13 @@
         {
           "title": "申请金额",
           "component": "text",
+          "color":"#FF3030",
           "name": "mainModel.m_reqmoney"
         },
         {
           "title": "金额大写",
           "component": "text",
+          "color":"#FF3030",
           "name": "mainModel.m_jedx"
         },
         {
