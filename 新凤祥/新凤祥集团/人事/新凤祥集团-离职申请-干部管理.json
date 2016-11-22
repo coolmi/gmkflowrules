@@ -115,7 +115,12 @@
           "title": "合同到期日",
           "component": "date1",
           "editablenode": "usertask3",
-          "name": "resignateion.contractdate"
+          "name": "resignateion.contractdate",
+          "validation":{
+            "pageid":"sqxx",
+            "required": true,
+            "validateMsg": "合同到期日必须"
+          }
         },
         {
           "title": "学历",
