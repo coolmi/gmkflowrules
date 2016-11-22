@@ -2,7 +2,7 @@
   "id": "fooddevado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      "sjbmcs"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -342,6 +342,7 @@
           "component": "select",
           "id": "sjbmfpnexttaskkey_id",
           "name": "sjbmfpnexttaskkey",
+          "editablenode": "sjbmfp",
           "islinkage": true,
           "handleLinkage": [
             {
@@ -370,6 +371,7 @@
           "title": "审计部初审人员",
           "component": "text",
           "id": "sjbmcspostid_id",
+          "editablenode": "sjbmfp",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,

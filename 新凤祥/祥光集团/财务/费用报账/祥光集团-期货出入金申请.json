@@ -121,7 +121,7 @@
           "name": "mainModel.m_spotzh"
         },
         {
-          "title": "期货账户nm",
+          "title": "期货账户",
           "component": "text",
           "name": "mainModel.m_spotzhnm"
         },
@@ -152,7 +152,7 @@
         },
         {
           "title": "申请付款日期",
-          "component": "text",
+          "component": "date1",
           "name": "mainModel.m_paydate"
         },
         {
@@ -163,11 +163,13 @@
         {
           "title": "申请金额",
           "component": "text",
+          "color":"#FF3030",
           "name": "mainModel.m_reqmoney"
         },
         {
           "title": "金额大写",
           "component": "text",
+          "color":"#FF3030",
           "name": "mainModel.m_jedx"
         },
         {

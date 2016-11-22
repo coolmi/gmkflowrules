@@ -2,7 +2,7 @@
   "id": "fxado_tenderresult",
   "handleOnPC": {
     "tasknode": [
-      "sjbmfp","sjbmcs"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -255,6 +255,7 @@
           "title": "提交至",
           "component": "select",
           "id": "sjbmfpnexttaskkey_id",
+          "editablenode": "sjbmfp",
           "name": "sjbmfpnexttaskkey",
           "islinkage": true,
           "handleLinkage": [
@@ -284,6 +285,7 @@
           "title": "审计部初审人员",
           "component": "text",
           "id": "sjbmcspostid_id",
+          "editablenode": "sjbmfp",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
