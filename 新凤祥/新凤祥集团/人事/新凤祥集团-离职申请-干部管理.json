@@ -119,7 +119,7 @@
           "validation":{
             "pageid":"sqxx",
             "required": true,
-            "validateMsg": "合同到期日必须"
+            "validateMsg": "合同到期日必填"
           }
         },
         {
