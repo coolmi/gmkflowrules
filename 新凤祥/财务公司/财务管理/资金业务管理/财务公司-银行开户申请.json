@@ -198,7 +198,7 @@
           "title": "业务执行人员",
           "component": "text",
           "name": "openaccount.businessexecutives",
-          "editablenode": "internalaudit,dbddaudit",
+          "editablenode": "internalaudit,dbddaudit,cwgsrzglbmgraudit,cwgsjcbaudit",
           "validation": {
             "pageid": "sqxx",
             "required": true,
@@ -224,29 +224,53 @@
       "title": "执行情况",
       "pageid": "khryzxqkhb",
       "component": "panel",
-      "tasknode":"bpopenaccount,adminrecord",
+      "tasknode": "khjbrzxqkhb,adminrecord",
       "subComponents": [
         {
-          "title":"开户信息(账号)",
-          "component":"text",
-          "editablenode":"bpopenaccount",
+          "title": "开户信息(账号)",
+          "component": "text",
+          "editablenode": "khjbrzxqkhb",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
             "validateMsg": "请填写银行账号"
           },
-          "name":"openaccount.bankaccount"
+          "name": "openaccount.bankaccount"
         },
         {
-          "title":"开户人员执行情况汇报",
-          "component":"textarea",
-          "editablenode":"bpopenaccount",
+          "title": "开户日期",
+          "component": "date1",
+          "name": "openaccount.khrq",
+          "editablenode": "khjbrzxqkhb",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写开户日期"
+          }
+        },
+        {
+          "title": "开户人员执行情况汇报",
+          "component": "textarea",
+          "rows": 5,
+          "editablenode": "khjbrzxqkhb",
           "validation": {
             "pageid": "khryzxqkhb",
             "required": true,
             "validateMsg": "请填写执行情况"
           },
-          "name":"openaccount.debrief"
+          "name": "openaccount.debrief"
+        },
+        {
+          "title": "预留印鉴说明",
+          "component": "textarea",
+          "rows": 5,
+          "name": "openaccount.ylyjsm",
+          "editablenode": "khjbrzxqkhb",
+          "validation": {
+            "pageid": "khryzxqkhb",
+            "required": true,
+            "validateMsg": "请填写预留印鉴说明"
+          }
         }
       ]
     },
@@ -254,13 +278,13 @@
       "title": "处理情况",
       "pageid": "yhzhglyclqkhb",
       "component": "panel",
-      "tasknode":"adminrecord",
+      "tasknode": "adminrecord",
       "subComponents": [
         {
-          "title":"处理情况汇报",
-          "component":"textarea",
-          "name":"openaccount.treatment",
-          "editablenode":"adminrecord",
+          "title": "处理情况汇报",
+          "component": "textarea",
+          "name": "openaccount.treatment",
+          "editablenode": "adminrecord",
           "validation": {
             "pageid": "yhzhglyclqkhb",
             "required": true,

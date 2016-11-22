@@ -1,5 +1,5 @@
 {
-  "id": "gmk_empfanpin",
+  "id": "fico_sparepartsapprovalmaterials",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -17,8 +17,8 @@
   "forms": [
     {
       "title": "基本信息",
-      "component": "panel",
       "pageid": "jbxx",
+      "component": "panel",
       "subComponents": [
         {
           "title": "申请单号",
@@ -102,80 +102,70 @@
     },
     {
       "title": "申请信息",
-      "component": "panel",
       "pageid": "sqxx",
+      "component": "panel",
       "subComponents": [
         {
-          "title": "拟返聘人员姓名",
+          "title": "费用公司",
           "component": "text",
-          "name": "mainModel.rehiredstaffname"
+          "name": "mainModel.cdbutxt"
         },
         {
-          "title": "员工编码",
+          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.empcode"
+          "name": "mainModel.suppliername"
         },
         {
-          "title": "联系方式",
+          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.contactinfor"
+          "name": "mainModel.suppliernum"
         },
         {
-          "title": "出生日期",
-          "component": "date1",
-          "name": "mainModel.dateofbirth"
-        },
-        {
-          "title": "所在部门",
+          "title": "订单号",
           "component": "text",
-          "name": "mainModel.department"
+          "name": "mainModel.purchaseorder"
         },
         {
-          "title": "所在公司",
+          "title": "验收入库",
           "component": "text",
-          "name": "mainModel.companytxt"
+          "name": "mainModel.whetheracceptance"
         },
         {
-          "title": "返聘审批人",
-          "component": "radio",
-          "tasknode": "usertask4,usertask5",
-          "editablenode": "usertask4",
-          "name": "mainModel.fanpinapproval",
-          "options": [
-            {
-              "title": "请选择",
-              "value": ""
-            },
-            {
-              "title": "总裁",
-              "value": "GMK10000001"
-            },
-            {
-              "title": "董事长",
-              "value": "GMK10000000"
-            }
-          ],
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "返聘审批人必选"
-          }
-        },
-        {
-          "title": "拟返聘岗位",
+          "title": "合同编号",
           "component": "text",
-          "name": "mainModel.fanpinpostxt"
+          "name": "mainModel.contractnum"
         },
         {
-          "title": "拟返聘期限",
+          "title": "已支付金额小写",
           "component": "text",
-          "name": "mainModel.quasifanpindate"
+          "name": "mainModel.amount"
         },
         {
-          "title": "返聘原因",
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.currencytxt"
+        },
+        {
+          "title": "报账金额小写",
+          "component": "text",
+          "name": "mainModel.invoiceamount"
+        },
+        {
+          "title": "报账金额大写",
+          "component": "text",
+          "name": "mainModel.amountup"
+        },
+        {
+          "title": "报账事由",
           "component": "textarea",
-          "name": "mainModel.fanpinreason",
-          "rows": "3"
+          "rows": 4,
+          "name": "mainModel.reasons"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": 4,
+          "name": "mainModel.remarks"
         }
       ]
     }

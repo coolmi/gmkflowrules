@@ -1,213 +1,221 @@
 {
-    "id": "HR-BUSINESSCARD",
-    "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "businesscard.appid"
+  "id": "HR-BUSINESSCARD",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "businesscard.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "businesscard.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "businesscard.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["businesscard.pernr", "-", "businesscard.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "businesscard.pernr",
+            "-",
+            "businesscard.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["businesscard.sysbusinessunitname", "-", "businesscard.sysdeptname"]
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.username"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.postid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "businesscard.id"
-        }]
+          "title": "",
+          "component": "hidden",
+          "name": "businesscard.id"
+        }
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [
-			{
-                "title": "名片人姓名",
-                "component": "label",
-                "label": ["businesscard.apernr","-","businesscard.anamecn"]
-
-            },
-            {
-                "title": "英文姓名",
-                "component": "text",
-                "name": "businesscard.anameen"
-            },
-            {
-                "title": "电话",
-                "component": "text",
-                "name": "businesscard.telephna"
-            },
-            {
-                "title": "传真",
-                "component": "text",
-                "name": "businesscard.faxa"
-            },
-            {
-                "title": "手机",
-                "component": "text",
-                "name": "businesscard.mbphona"
-            },
-            {
-                "title": "Email",
-                "component": "text",
-                "name": "businesscard.emaila"
-            },
-            {
-                "title": "职务名称",
-                "component": "text",
-                "name": "businesscard.apostcn"
-            },
-            {
-                "title": "职务英文",
-                "component": "text",
-                "name": "businesscard.aposten"
-            },
-			{
-				"title": "公司信息",
-				"component": "text",
-				"name": "businesscard.company",
-			},
-			{
-				"title": "地址1",
-				"component": "text",
-				"name": "businesscard.addressa",
-
-			},
-			{
-				"title": "网址",
-				"component": "text",
-				"name": "businesscard.netsite"
-			},
-			{
-				"title": "地址2",
-				"component": "text",
-				"name": "businesscard.addressb",
-			},
-			{
-				"title": "邮编",
-				"component": "text",
-				"name": "businesscard.zipcode"
-			},
-			{
-				"title": "备注",
-				"component": "textarea",
-				"rows": "3",
-				"name": "businesscard.tempa"
-			
-			}
-        ]
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "名片人姓名",
+          "component": "label",
+          "label": [
+            "businesscard.apernr",
+            "-",
+            "businesscard.anamecn"
+          ]
+        },
+        {
+          "title": "英文姓名",
+          "component": "text",
+          "name": "businesscard.anameen"
+        },
+        {
+          "title": "电话",
+          "component": "text",
+          "name": "businesscard.telephna"
+        },
+        {
+          "title": "传真",
+          "component": "text",
+          "name": "businesscard.faxa"
+        },
+        {
+          "title": "手机",
+          "component": "text",
+          "name": "businesscard.mbphona"
+        },
+        {
+          "title": "Email",
+          "component": "text",
+          "name": "businesscard.emaila"
+        },
+        {
+          "title": "职务名称",
+          "component": "text",
+          "name": "businesscard.apostcn"
+        },
+        {
+          "title": "职务英文",
+          "component": "text",
+          "name": "businesscard.aposten"
+        },
+        {
+          "title": "公司信息",
+          "component": "text",
+          "name": "businesscard.company",
+        },
+        {
+          "title": "地址1",
+          "component": "text",
+          "name": "businesscard.addressa",
+        },
+        {
+          "title": "网址",
+          "component": "text",
+          "name": "businesscard.netsite"
+        },
+        {
+          "title": "地址2",
+          "component": "text",
+          "name": "businesscard.addressb",
+        },
+        {
+          "title": "邮编",
+          "component": "text",
+          "name": "businesscard.zipcode"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "3",
+          "name": "businesscard.tempa"
+        }
+      ]
     },
-	{
-        "title": "印制信息",
-        "pageid": "yzxx",
-        "component": "panel",
-        "subComponents": [
-			{
-                "title": "是否加急",
-                "component": "select",
-                "name": "businesscard.urgent",
-				"options": [
-					{
-						"title": "不加急",
-						"value": "1"
-					},
-					{
-						"title": "加急",
-						"value": "0"
-					}]
-
+    {
+      "title": "印制信息",
+      "pageid": "yzxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "是否加急",
+          "component": "select",
+          "name": "businesscard.urgent",
+          "options": [
+            {
+              "title": "不加急",
+              "value": "1"
             },
             {
-                "title": "单价",
-                "component": "text",
-                "name": "businesscard.unitprice"
-            },
-            {
-                "title": "数量",
-                "component": "text",
-                "name": "businesscard.amount"
-            },
-            {
-                "title": "金额",
-                "component": "text",
-				"type": "money",
-                "name": "businesscard.account"
-            },
-
-            {
-                "title": "备注",
-                "component": "textarea",
-				"rows": "3",
-                "name": "businesscard.remark"
+              "title": "加急",
+              "value": "0"
             }
-        ]
+          ]
+        },
+        {
+          "title": "单价",
+          "component": "text",
+          "name": "businesscard.unitprice"
+        },
+        {
+          "title": "数量",
+          "component": "text",
+          "name": "businesscard.amount"
+        },
+        {
+          "title": "金额",
+          "component": "text",
+          "type": "money",
+          "name": "businesscard.account"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": "3",
+          "name": "businesscard.remark"
+        }
+      ]
     }
-    ]
+  ]
 }

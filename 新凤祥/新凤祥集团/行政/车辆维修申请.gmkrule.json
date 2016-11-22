@@ -2,7 +2,6 @@
   "id": "cr_carrepair",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,160 +117,158 @@
         }
       ]
     },
-    		{
-			"title": "申请信息",
-			"pageid": "wererrrwq",
-			"component": "panel",
-			"subComponents": [			
-				{
-					"title": "维修保养类型",
-					"component": "select",
-					"id": "carrepair_urgentflag",
-					"editablenode": "",
-					"name": "carrepair.urgentflag",
-					"options": [
-						{
-							"text": "正常保养",
-							"value": "0",
-						},
-						{
-							"text": "正常维修",
-							"value": "1",
-						},
-						{
-							"text": "紧急维修",
-							"value": "2",
-						}
-					]
-				},
-				{
-					"title": "维修日期",
-					"component": "text",
-					"id": "carrepair_repairdate",
-					"editablenode": "",
-					"name": "carrepair.repairdate"
-				},
-				{
-					"title": "车号",
-					"component": "text",
-					"id": "carrepair_carnumber",
-					"editablenode": "",
-					"name": "carrepair.carnumber"
-				},
-				{
-					"title": "驾驶员",
-					"component": "text",
-					"id": "carrepair_driver",
-					"editablenode": "",
-					"name": "carrepair.driver"
-				},
-				{
-					"title": "里程表指码",
-					"component": "text",
-					"id": "carrepair_odometercode",
-					"editablenode": "",
-					"name": "carrepair.odometercode"
-				},
-				{
-					"title": "汽修厂",
-					"component": "text",
-					"id": "carrepair_garage",
-					"editablenode": "",
-					"name": "carrepair.garage"
-				},
-				{
-					"title": "备注",
-					"component": "textarea",
-					"id": "carrepair_remarks",
-					"editablenode": "",
-					"rows": "3",
-					"name": "carrepair.remarks"
-				},
-				{
-					"title": "费用合计",
-					"component": "text",
-					"id": "carrepair_totalmoney",
-					"editablenode": "",
-					"name": "carrepair.totalmoney"
-				}
-			]
-		},
-
-    		{
-			"title": "配件信息",
-			"pageid": "wewrwr",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "",
-					"component": "table_form",
-					"titleIndex": 0,
-					"basePath": "matriallist",
-					"id": "LA_wewrwr",
-					"tableForms": [
-				{
-					"title": "分类",
-					"component": "text",
-					"id": "partsclass",
-					"editablenode": "",
-					"name": "partsclass"
-				},
-				{
-					"title": "配件",
-					"component": "text",
-					"id": "partsname",
-					"editablenode": "",
-					"name": "partsname"
-				},
-				{
-					"title": "数量",
-					"component": "text",
-					"id": "amount",
-					"editablenode": "",
-					"name": "amount"
-				},
-				{
-					"title": "单价",
-					"component": "text",
-					"id": "unitprice",
-					"editablenode": "",
-					"name": "unitprice"
-				},
-				{
-					"title": "维修工时费",
-					"component": "text",
-					"id": "manhours",
-					"editablenode": "",
-					"name": "manhours"
-				},
-				{
-					"title": "保质期",
-					"component": "text",
-					"id": "shelflife",
-					"editablenode": "",
-					"name": "shelflife"
-				},
-				{
-					"title": "保质方式",
-					"component": "text",
-					"id": "qualityoflife",
-					"editablenode": "",
-					"name": "qualityoflife"
-				},
-				{
-					"title": "维修内容",
-					"component": "text",
-					"id": "repaircontent",
-					"editablenode": "",
-					"name": "repaircontent"
-				}
-					]
-				},
-			]
-		}
-		
-
-
+    {
+      "title": "申请信息",
+      "pageid": "wererrrwq",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "维修保养类型",
+          "component": "select",
+          "id": "carrepair_urgentflag",
+          "editablenode": "",
+          "name": "carrepair.urgentflag",
+          "options": [
+            {
+              "text": "正常保养",
+              "value": "0"
+            },
+            {
+              "text": "正常维修",
+              "value": "1"
+            },
+            {
+              "text": "紧急维修",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "维修日期",
+          "component": "text",
+          "id": "carrepair_repairdate",
+          "editablenode": "",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "carrepair.repairdate"
+        },
+        {
+          "title": "车号",
+          "component": "text",
+          "id": "carrepair_carnumber",
+          "editablenode": "",
+          "name": "carrepair.carnumber"
+        },
+        {
+          "title": "驾驶员",
+          "component": "text",
+          "id": "carrepair_driver",
+          "editablenode": "",
+          "name": "carrepair.driver"
+        },
+        {
+          "title": "里程表指码",
+          "component": "text",
+          "id": "carrepair_odometercode",
+          "editablenode": "",
+          "name": "carrepair.odometercode"
+        },
+        {
+          "title": "汽修厂",
+          "component": "text",
+          "id": "carrepair_garage",
+          "editablenode": "",
+          "name": "carrepair.garage"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "carrepair_remarks",
+          "editablenode": "",
+          "rows": "3",
+          "name": "carrepair.remarks"
+        },
+        {
+          "title": "费用合计",
+          "component": "text",
+          "id": "carrepair_totalmoney",
+          "editablenode": "",
+          "name": "carrepair.totalmoney"
+        }
+      ]
+    },
+    {
+      "title": "配件信息",
+      "pageid": "wewrwr",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "matriallist",
+          "id": "LA_wewrwr",
+          "tableForms": [
+            {
+              "title": "分类",
+              "component": "text",
+              "id": "partsclass",
+              "editablenode": "",
+              "name": "partsclass"
+            },
+            {
+              "title": "配件",
+              "component": "text",
+              "id": "partsname",
+              "editablenode": "",
+              "name": "partsname"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "id": "amount",
+              "editablenode": "",
+              "name": "amount"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "id": "unitprice",
+              "editablenode": "",
+              "name": "unitprice"
+            },
+            {
+              "title": "维修工时费",
+              "component": "text",
+              "id": "manhours",
+              "editablenode": "",
+              "name": "manhours"
+            },
+            {
+              "title": "保质期",
+              "component": "text",
+              "id": "shelflife",
+              "editablenode": "",
+              "name": "shelflife"
+            },
+            {
+              "title": "保质方式",
+              "component": "text",
+              "id": "qualityoflife",
+              "editablenode": "",
+              "name": "qualityoflife"
+            },
+            {
+              "title": "维修内容",
+              "component": "text",
+              "id": "repaircontent",
+              "editablenode": "",
+              "name": "repaircontent"
+            }
+          ]
+        },
+      ]
+    }
   ],
   "refers": {
   }

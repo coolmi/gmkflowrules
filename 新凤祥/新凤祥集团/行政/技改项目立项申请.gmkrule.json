@@ -2,7 +2,10 @@
   "id": "ap_technicalapproval",
   "handleOnPC": {
     "tasknode": [
-      "scpsbg","psryqrbg","zcrgcscbg","jswygzzcyqrbgaudit"
+      "scpsbg",
+      "psryqrbg",
+      "zcrgcscbg",
+      "jswygzzcyqrbgaudit"
     ],
     "flag": [
       "resubmit"
@@ -10,8 +13,7 @@
   },
   "selectPerson": {
     "tasknode": [
-      			"cjzraudit"
-
+      "cjzraudit"
     ],
     "beforPop": true
   },
@@ -21,7 +23,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -121,203 +122,182 @@
         }
       ]
     },
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx_technicalapproval",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "",
-					"component": "text",
-					"id": "mainModel_cydeptid",
-					"editablenode": "",
-					"name": "mainModel.cydeptid"
-				},
-				{
-					"title": "",
-					"component": "text",
-					"id": "mainModel_cydeptname",
-					"editablenode": "",
-					"name": "mainModel.cydeptname"
-				},
-				{
-					"title": "",
-					"component": "text",
-					"id": "mainModel_jswydeptid",
-					"editablenode": "",
-					"name": "mainModel.jswydeptid"
-				},
-				{
-					"title": "",
-					"component": "text",
-					"id": "mainModel_jswydeptname",
-					"editablenode": "",
-					"name": "mainModel.jswydeptname"
-				},
-				{
-					"title": "立项级别",
-					"component": "radio",
-					"id": "mainModel_lxjb",
-					"editablenode": "",
-					"name": "mainModel.lxjb",
-					"options": [
-						{
-							"text": "车间",
-							"value": "0",
-						},
-						{
-							"text": "厂部级",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "技改项目所属部门",
-					"component": "text",
-					"id": "mainModel_jgxmdeptname",
-					"editablenode": "",
-					"name": "mainModel.jgxmdeptname"
-				},
-				{
-					"title": "技改项目名称",
-					"component": "text",
-					"id": "mainModel_jgxmname",
-					"editablenode": "",
-					"name": "mainModel.jgxmname"
-				},
-				{
-					"title": "技改项目负责人",
-					"component": "text",
-					"id": "mainModel_jgxmfzr",
-					"editablenode": "",
-					"name": "mainModel.jgxmfzr"
-				},
-				{
-					"title": "项目组成员",
-					"component": "text",
-					"id": "mainModel_xmzcy",
-					"editablenode": "",
-					"name": "mainModel.xmzcy"
-				},
-				{
-					"title": "项目承担单位",
-					"component": "text",
-					"id": "mainModel_xmcddw",
-					"editablenode": "",
-					"name": "mainModel.xmcddw"
-				},
-				{
-					"title": "项目计划起始时间",
-					"component": "date1",
-					"id": "mainModel_xmjhstartdate",
-					"editablenode": "",
-					"name": "mainModel.xmjhstartdate"
-				},
-				{
-					"title": " 预算费用(元)",
-					"component": "text",
-					"id": "mainModel_ysfy",
-					"editablenode": "",
-					"name": "mainModel.ysfy",
-					"datatype": "money"
-				},
-				{
-					"title": "第二联络人姓名",
-					"component": "text",
-					"id": "mainModel_secondllrxm",
-					"editablenode": "",
-					"name": "mainModel.secondllrxm"
-				},
-				{
-					"title": "第二联络人电话",
-					"component": "text",
-					"id": "mainModel_secondllrdh",
-					"editablenode": "",
-					"name": "mainModel.secondllrdh"
-				},
-				{
-					"title": "项目立项背景和依据",
-					"component": "textarea",
-					"id": "mainModel_xmlxbjyj",
-					"editablenode": "",
-					"rows": "3",
-					"name": "mainModel.xmlxbjyj"
-				},
-				{
-					"title": "技改项目主要内容",
-					"component": "textarea",
-					"id": "mainModel_jgxmzynr",
-					"editablenode": "",
-					"rows": "3",
-					"name": "mainModel.jgxmzynr"
-				},
-				{
-					"title": "预期效果",
-					"component": "textarea",
-					"id": "mainModel_yqxg",
-					"editablenode": "",
-					"rows": "3",
-					"name": "mainModel.yqxg"
-				}
-			]
-		},
-			{
-			  "title": "评审人员确认报告结果",
-			  "pageid": "sqxx_psqr",
-			  "tasknode": "zcrgcscbg,jswygzzcyqrbgaudit,zleaderaudit,zrgcszx",
-			  "component": "panel",
-			  "subComponents": [{
-								  "component": "table",
-								  "titleIndex": 0,
-								  "basePath": "psresults",
-								  "cells": [{
-											  "title": "评审人",
-											  "component": "text",
-											  "name": "psryname"
-											},
-											{
-											  "title": "评审结果",
-											  "component": "select",
-											  "emptyHidden":true,
-											  "name": "psresult",
-											  "options": [
-												{
-												  "text": "已确认",
-												  "value": "0"
-												}
-											  ]
-											}]
-								}]
-			},
-			{
-			  "title": "技术委员会成员确认报告结果",
-			  "pageid": "jswyhqr",
-			  "tasknode": "zleaderaudit,zrgcszx",
-			  "component": "panel",
-			  "subComponents": [{
-								  "component": "table",
-								  "titleIndex": 0,
-								  "basePath": "qrresults",
-								  "cells": [{
-											  "title": "评审人",
-											  "component": "text",
-											  "name": "psryname"
-											},
-											{
-											  "title": "评审结果",
-											  "component": "select",
-											  "emptyHidden":true,
-											  "name": "psresult",
-											  "options": [
-												{
-												  "text": "已确认",
-												  "value": "0"
-												}
-											  ]
-											}]
-								}]
-			}
-
+    {
+      "title": "申请信息",
+      "pageid": "sqxx_technicalapproval",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "立项级别",
+          "component": "radio",
+          "id": "mainModel_lxjb",
+          "editablenode": "",
+          "name": "mainModel.lxjb",
+          "options": [
+            {
+              "text": "车间",
+              "value": "0",
+            },
+            {
+              "text": "厂部级",
+              "value": "1",
+            }
+          ]
+        },
+        {
+          "title": "技改项目所属部门",
+          "component": "text",
+          "id": "mainModel_jgxmdeptname",
+          "editablenode": "",
+          "name": "mainModel.jgxmdeptname"
+        },
+        {
+          "title": "技改项目名称",
+          "component": "text",
+          "id": "mainModel_jgxmname",
+          "editablenode": "",
+          "name": "mainModel.jgxmname"
+        },
+        {
+          "title": "技改项目负责人",
+          "component": "text",
+          "id": "mainModel_jgxmfzr",
+          "editablenode": "",
+          "name": "mainModel.jgxmfzr"
+        },
+        {
+          "title": "项目组成员",
+          "component": "text",
+          "id": "mainModel_xmzcy",
+          "editablenode": "",
+          "name": "mainModel.xmzcy"
+        },
+        {
+          "title": "项目承担单位",
+          "component": "text",
+          "id": "mainModel_xmcddw",
+          "editablenode": "",
+          "name": "mainModel.xmcddw"
+        },
+        {
+          "title": "项目计划起始时间",
+          "component": "date1",
+          "id": "mainModel_xmjhstartdate",
+          "editablenode": "",
+          "name": "mainModel.xmjhstartdate"
+        },
+        {
+          "title": " 预算费用(元)",
+          "component": "text",
+          "id": "mainModel_ysfy",
+          "editablenode": "",
+          "name": "mainModel.ysfy",
+          "datatype": "money"
+        },
+        {
+          "title": "第二联络人姓名",
+          "component": "text",
+          "id": "mainModel_secondllrxm",
+          "editablenode": "",
+          "name": "mainModel.secondllrxm"
+        },
+        {
+          "title": "第二联络人电话",
+          "component": "text",
+          "id": "mainModel_secondllrdh",
+          "editablenode": "",
+          "name": "mainModel.secondllrdh"
+        },
+        {
+          "title": "项目立项背景和依据",
+          "component": "textarea",
+          "id": "mainModel_xmlxbjyj",
+          "editablenode": "",
+          "rows": "3",
+          "name": "mainModel.xmlxbjyj"
+        },
+        {
+          "title": "技改项目主要内容",
+          "component": "textarea",
+          "id": "mainModel_jgxmzynr",
+          "editablenode": "",
+          "rows": "3",
+          "name": "mainModel.jgxmzynr"
+        },
+        {
+          "title": "预期效果",
+          "component": "textarea",
+          "id": "mainModel_yqxg",
+          "editablenode": "",
+          "rows": "3",
+          "name": "mainModel.yqxg"
+        }
+      ]
+    },
+    {
+      "title": "评审人员确认报告结果",
+      "pageid": "sqxx_psqr",
+      "tasknode": "zcrgcscbg,jswygzzcyqrbgaudit,zleaderaudit,zrgcszx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "basePath": "psresults",
+          "cells": [
+            {
+              "title": "评审人",
+              "component": "text",
+              "name": "psryname"
+            },
+            {
+              "title": "评审结果",
+              "component": "select",
+              "emptyHidden": true,
+              "name": "psresult",
+              "options": [
+                {
+                  "text": "已确认",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "技术委员会成员确认报告结果",
+      "pageid": "jswyhqr",
+      "tasknode": "zleaderaudit,zrgcszx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table",
+          "titleIndex": 0,
+          "basePath": "qrresults",
+          "cells": [
+            {
+              "title": "评审人",
+              "component": "text",
+              "name": "psryname"
+            },
+            {
+              "title": "评审结果",
+              "component": "select",
+              "emptyHidden": true,
+              "name": "psresult",
+              "options": [
+                {
+                  "text": "已确认",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
   "refers": {
   }

@@ -1,5 +1,5 @@
 {
-  "id": "gmk_empfanpin",
+  "id": "fico_capitalpay",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -17,8 +17,8 @@
   "forms": [
     {
       "title": "基本信息",
-      "component": "panel",
       "pageid": "jbxx",
+      "component": "panel",
       "subComponents": [
         {
           "title": "申请单号",
@@ -102,80 +102,69 @@
     },
     {
       "title": "申请信息",
-      "component": "panel",
       "pageid": "sqxx",
+      "component": "panel",
       "subComponents": [
         {
-          "title": "拟返聘人员姓名",
+          "title": "所属公司",
+          "component": "label",
+          "label": [
+            "mainModel.m_comp",
+            "-",
+            "mainModel.m_compnm"
+          ]
+        },
+        {
+          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.rehiredstaffname"
+          "name": "mainModel.m_supid"
         },
         {
-          "title": "员工编码",
+          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.empcode"
+          "name": "mainModel.m_supnm"
         },
         {
-          "title": "联系方式",
+          "title": "供应商开户银行",
           "component": "text",
-          "name": "mainModel.contactinfor"
+          "name": "mainModel.m_bank"
         },
         {
-          "title": "出生日期",
-          "component": "date1",
-          "name": "mainModel.dateofbirth"
-        },
-        {
-          "title": "所在部门",
+          "title": "供应商银行账户",
           "component": "text",
-          "name": "mainModel.department"
+          "name": "mainModel.m_bankid"
         },
         {
-          "title": "所在公司",
+          "title": "币种",
           "component": "text",
-          "name": "mainModel.companytxt"
+          "name": "mainModel.m_bz"
         },
         {
-          "title": "返聘审批人",
-          "component": "radio",
-          "tasknode": "usertask4,usertask5",
-          "editablenode": "usertask4",
-          "name": "mainModel.fanpinapproval",
-          "options": [
-            {
-              "title": "请选择",
-              "value": ""
-            },
-            {
-              "title": "总裁",
-              "value": "GMK10000001"
-            },
-            {
-              "title": "董事长",
-              "value": "GMK10000000"
-            }
-          ],
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "返聘审批人必选"
-          }
-        },
-        {
-          "title": "拟返聘岗位",
+          "title": "注资款金额",
           "component": "text",
-          "name": "mainModel.fanpinpostxt"
+          "name": "mainModel.m_je"
         },
         {
-          "title": "拟返聘期限",
+          "title": "注资款金额大写",
           "component": "text",
-          "name": "mainModel.quasifanpindate"
+          "name": "mainModel.m_jedx"
         },
         {
-          "title": "返聘原因",
-          "component": "textarea",
-          "name": "mainModel.fanpinreason",
-          "rows": "3"
+          "title": "已付注资款金额",
+          "component": "text",
+          "name": "mainModel.m_haspay"
+        },
+        {
+          "title": "本次申请支付金额",
+          "component": "text",
+          "name": "mainModel.m_thispay"
+        },
+        {
+          "title": "注资款支付日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.m_paydate"
         }
       ]
     }

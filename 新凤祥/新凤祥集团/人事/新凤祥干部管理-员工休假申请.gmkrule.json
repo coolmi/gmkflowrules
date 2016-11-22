@@ -1,7 +1,9 @@
 {
   "id": "gmk_leave",
   "handleOnPC": {
-    "tasknode": ["usertask8"],
+    "tasknode": [
+      "usertask8"
+    ],
     "flag": [
       "resubmit"
     ]
@@ -156,6 +158,8 @@
         {
           "title": "入职日期",
           "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
           "name": "leave.entrydate"
         },
         {
@@ -189,6 +193,8 @@
         {
           "title": "休假结束日期",
           "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
           "name": "leave.edate"
         },
         {
@@ -200,7 +206,7 @@
           "title": "执行情况",
           "component": "checkbox",
           "name": "leave.notification",
-          "options":[
+          "options": [
             {
               "text": "完成员工通知",
               "value": "1"
@@ -224,7 +230,7 @@
           "title": "存档备案",
           "component": "checkbox",
           "name": "leave.record",
-          "options":[
+          "options": [
             {
               "text": "完成员工通知",
               "value": "1"

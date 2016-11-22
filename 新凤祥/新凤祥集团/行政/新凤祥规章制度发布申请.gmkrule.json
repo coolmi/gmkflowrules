@@ -2,7 +2,6 @@
   "id": "gmk_articlepush",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,109 +117,104 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "shenqingxinxi",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "制度类型",
-					"component": "text",
-					"id": "mainModel_m_instype",
-					"editablenode": "",
-					"name": "mainModel.m_instype"
-				},
-				{
-					"title": "制度分类",
-					"component": "text",
-					"id": "mainModel_m_insclass",
-					"editablenode": "",
-					"name": "mainModel.m_insclass"
-				},
-				{
-					"title": "制度管理内容",
-					"component": "text",
-					"id": "mainModel_m_insman",
-					"editablenode": "",
-					"name": "mainModel.m_insman"
-				},
-				{
-					"title": "发布公司",
-					"component": "text",
-					"id": "mainModel_m_comp",
-					"editablenode": "",
-					"name": "mainModel.m_comp"
-				},
-				{
-					"title": "发布范围",
-					"component": "textarea",
-					"id": "mainModel_m_range",
-					"editablenode": "",
-					"rows": "3",
-					"name": "mainModel.m_range"
-				}
-			]
-		},
-		{
-			"title": "新凤祥规章制度发布申请子表",
-			"pageid": "shenqingzibiao",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "",
-					"component": "table_form",
-					"titleIndex": 0,
-					"basePath": "articlepushsublist",
-					"id": "LA_shenqingzibiao",
-					"tableForms": [
-				{
-					"title": "制度名称",
-					"component": "text",
-					"id": "s_insid",
-					"editablenode": "",
-					"name": "s_insid"
-				},
-				{
-					"title": "制度编号",
-					"component": "text",
-					"id": "s_insname",
-					"editablenode": "",
-					"name": "s_insname"
-				},
-				{
-					"title": "起草人",
-					"component": "text",
-					"id": "s_draftsman",
-					"editablenode": "",
-					"name": "s_draftsman"
-				},
-				{
-					"title": "起草部门",
-					"component": "text",
-					"id": "s_draftdept",
-					"editablenode": "",
-					"name": "s_draftdept"
-				},
-				{
-					"title": "支持附件",
-					"component": "text",
-					"id": "s_file",
-					"editablenode": "",
-					"name": "s_file",
-					"events":{
-						"eventType":"openDocument",
-						"filename":"s_file",
-						"afrescoid":"s_fileid"
-					}
-				}
-					]
-				},
-			]
-		}
-
-
-  ],
-  "refers": {
-  }
+    {
+      "title": "申请信息",
+      "pageid": "shenqingxinxi",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "制度类型",
+          "component": "text",
+          "id": "mainModel_m_instype",
+          "editablenode": "",
+          "name": "mainModel.m_instype"
+        },
+        {
+          "title": "制度分类",
+          "component": "text",
+          "id": "mainModel_m_insclass",
+          "editablenode": "",
+          "name": "mainModel.m_insclass"
+        },
+        {
+          "title": "制度管理内容",
+          "component": "text",
+          "id": "mainModel_m_insman",
+          "editablenode": "",
+          "name": "mainModel.m_insman"
+        },
+        {
+          "title": "发布公司",
+          "component": "text",
+          "id": "mainModel_m_comp",
+          "editablenode": "",
+          "name": "mainModel.m_comp"
+        },
+        {
+          "title": "发布范围",
+          "component": "textarea",
+          "id": "mainModel_m_range",
+          "editablenode": "",
+          "rows": "3",
+          "name": "mainModel.m_range"
+        }
+      ]
+    },
+    {
+      "title": "申请子表",
+      "pageid": "shenqingzibiao",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "articlepushsublist",
+          "id": "LA_shenqingzibiao",
+          "tableForms": [
+            {
+              "title": "制度名称",
+              "component": "text",
+              "id": "s_insid",
+              "editablenode": "",
+              "name": "s_insid"
+            },
+            {
+              "title": "制度编号",
+              "component": "text",
+              "id": "s_insname",
+              "editablenode": "",
+              "name": "s_insname"
+            },
+            {
+              "title": "起草人",
+              "component": "text",
+              "id": "s_draftsman",
+              "editablenode": "",
+              "name": "s_draftsman"
+            },
+            {
+              "title": "起草部门",
+              "component": "text",
+              "id": "s_draftdept",
+              "editablenode": "",
+              "name": "s_draftdept"
+            },
+            {
+              "title": "支持附件",
+              "component": "text",
+              "id": "s_file",
+              "editablenode": "",
+              "name": "s_file",
+              "events": {
+                "eventType": "openDocument",
+                "filename": "s_file",
+                "afrescoid": "s_fileid"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
