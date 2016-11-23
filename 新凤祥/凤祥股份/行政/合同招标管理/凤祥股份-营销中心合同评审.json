@@ -2,7 +2,7 @@
   "id": "fxado_marketingcontract",
   "handleOnPC": {
     "tasknode": [
-      "createsapht"
+     "usertask8" ,"createsapht"
     ],
     "flag": [
       "resubmit"
@@ -137,6 +137,11 @@
           "title": "客户名称",
           "component": "text",
           "name": "mainModel.khmc"
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "name": "mainModel.zcs"
         }
       ]
     },
