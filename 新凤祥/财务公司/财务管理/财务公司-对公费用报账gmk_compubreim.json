@@ -2,6 +2,7 @@
   "id": "gmk_compubreim",
   "handleOnPC": {
     "tasknode": [
+      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -324,6 +325,102 @@
           "component": "text",
           "editablenode": "",
           "name": "mainModel.reamaks"
+        }
+      ]
+    },
+    {
+      "title": "账务审核",
+      "pageid": "cwshxx_page",
+      "component": "panel",
+      "tasknode": "usertask5,usertask7",
+      "subComponents": [
+        {
+          "title": "合计应付",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoeyapply_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_afterwriteamount"
+          }
+        },
+        {
+          "title": "合计扣款",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoneysub_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_aftercdmbtrf"
+          }
+        },
+        {
+          "title": "合计实付",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoneyreal_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_writeamount"
+          }
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 2,
+          "lTitleIndex": 2,
+          "rTitleIndex": 7,
+          "basePath": "versalepromoexpencaiwuinfolist",
+          "id": "versalepromoexpencaiwuinfolist_table",
+          "tableForms": [
+            {
+              "title": "项目号子号",
+              "component": "label",
+              "label": [
+                "info_colnr",
+                "-",
+                "info_childcolnr"
+              ]
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "info_cdkotxt"
+            },
+            {
+              "title": "科目编码",
+              "component": "label",
+              "label": [
+                "info_subjectcode",
+                "-",
+                "info_subjectcodedec"
+              ]
+            },
+            {
+              "title": "调后科目",
+              "component": "text",
+              "name": "info_aftersubjectcodedes"
+            },
+            {
+              "title": "调后子项目号",
+              "component": "text",
+              "name": "info_afterchildcolnr"
+            },
+            {
+              "title": "应付",
+              "component": "text",
+              "name": "info_afterwriteamount"
+            },
+            {
+              "title": "扣款",
+              "component": "text",
+              "name": "info_aftercdmbtrf"
+            },
+            {
+              "title": "实付",
+              "component": "text",
+              "name": "info_writeamount"
+            }
+          ]
         }
       ]
     }
