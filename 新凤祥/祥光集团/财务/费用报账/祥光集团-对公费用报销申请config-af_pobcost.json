@@ -194,7 +194,8 @@
         },
         {
           "title": "说明",
-          "component": "text",
+          "component": "textarea",
+          "rows": 5,
           "editablenode": "",
           "name": "pobcost.smemo"
         }
@@ -226,7 +227,8 @@
           "label": [
             "costctype_list.ms"
           ]
-        }, {
+        },
+        {
           "title": "业务类型",
           "component": "label",
           "middleName": [
@@ -301,7 +303,8 @@
           "component": "text",
           "editablenode": "",
           "name": "pobcost.bankn"
-        }, {
+        },
+        {
           "title": "合同号",
           "component": "text",
           "name": "pobcost.contract"

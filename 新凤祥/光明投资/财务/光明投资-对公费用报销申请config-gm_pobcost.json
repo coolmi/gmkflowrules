@@ -194,7 +194,8 @@
         },
         {
           "title": "说明",
-          "component": "text",
+          "component": "textarea",
+          "rows": 5,
           "editablenode": "",
           "name": "pobcost.smemo"
         }
