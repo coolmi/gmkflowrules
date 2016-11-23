@@ -1,0 +1,235 @@
+{
+  "id": "gmkzc-mobilepur",
+  "handleOnPC": {
+    "tasknode": [
+      "mbmanagerAudit"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "commentMustNode":["recAudit"],
+  "commentMustMsg":"结束流程时，意见不能为空",
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "apMobilePur.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "apMobilePur.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "apMobilePur.pernr",
+            "-",
+            "apMobilePur.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "apMobilePur.sysbusinessunitname",
+            "-",
+            "apMobilePur.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "apMobilePur.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算控制所在公司",
+          "component": "text",
+          "name": "apMobilePur.ysgs"
+        },
+        {
+          "title": "成本中心编码",
+          "component": "text",
+          "name": "apMobilePur.cbzxcode"
+        },
+        {
+          "title": "期望到位日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "apMobilePur.expectDate"
+        },
+        {
+          "title": "需求说明",
+          "component": "text",
+          "name": "apMobilePur.xqsm"
+        }
+      ]
+    },
+    {
+      "title": "申请列表",
+      "component": "panel",
+      "pageid": "sqlb_page",
+      "subComponents": [
+        {
+          "title": "合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "sum_money_cal",
+          "sumValue": {
+            "arrayPath": "subs",
+            "sumParam": "je"
+          }
+        },
+        {
+          "component": "table_form",
+          "basePath": "subs",
+          "id": "sub_table",
+          "titleIndex": 2,
+          "lTitleIndex": 2,
+          "rTitleIndex": 3,
+          "tableForms": [
+            {
+              "title": "使用人",
+              "component": "text",
+              "name": "name"
+            },
+            {
+              "title": "原手机号",
+              "component": "text",
+              "name": "phonenoold"
+            },
+            {
+              "title": "申请类型",
+              "component": "text",
+              "name": "sqlxms",
+              "id": "sqlxms_col"
+            },
+            {
+              "title": "手机型号",
+              "component": "text",
+              "name": "brandname"
+            },
+            {
+              "title": "套餐",
+              "component": "textarea",
+              "rows": 5,
+              "name": "pacname"
+            },
+            {
+              "title": "申请原因",
+              "component": "text",
+              "name": "reason"
+            },
+            {
+              "title": "新手机号",
+              "component": "text",
+              "name": "phoneno",
+              "editablenode": "mbmanagerAudit",
+              "tasknode": "mbmanagerAudit,recAudit",
+              "showLinkage": [
+                {
+                  "id": "sqlxms_col",
+                  "values": [
+                    "新增"
+                  ],
+                  "linkFlag": "table"
+                }
+              ],
+              "validation": {
+                "pageid": "sqlb_page",
+                "table_id": "sub_table",
+                "required": true,
+                "validateMsg": "申请类型新增时，新手机号必填"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "管理员",
+      "pageid": "sjgly_page",
+      "component": "panel",
+      "tasknode": "mbmanagerAudit,recAudit",
+      "subComponents": [
+        {
+          "title": "采购执行情况",
+          "component": "textarea",
+          "editablenode": "mbmanagerAudit",
+          "name": "apMobilePur.cgzxtxt",
+          "validation": {
+            "pageid": "sjgly_page",
+            "required": true,
+            "validateMsg": "请填写采购执行情况"
+          }
+        }
+      ]
+    }
+  ]
+}
