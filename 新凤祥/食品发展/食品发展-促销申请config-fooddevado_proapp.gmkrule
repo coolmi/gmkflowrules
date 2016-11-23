@@ -113,7 +113,29 @@
                 "title": "申请内容",
                 "component": "textarea",
                 "name": "mainModel.m_content"
-            }
+            },
+             {
+                        "title": "促销权限",
+                        "component": "select",
+                        "name": "mainModel.m_qx",
+                         "editablenode":"usertask9",
+                         "options":[
+                           {
+                             "text": "总监权限内",
+                             "value": "0"
+                           },
+                           {
+                             "text": "总监权限外",
+                             "value": "1"
+                           }
+                         ]
+                         ,
+                         "validation":{
+                         				"pageid":"sqxx",
+                         				"required":true,
+                         				"validateMsg":"请填写促销权限"
+                         		  }
+                      }
         ]
     }
 	
