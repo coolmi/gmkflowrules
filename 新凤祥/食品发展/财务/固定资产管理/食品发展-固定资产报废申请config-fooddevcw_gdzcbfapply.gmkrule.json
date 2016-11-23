@@ -169,14 +169,6 @@
           "name": "mainModel.cz"
         },
         {
-          "title": "预计出售价格",
-          "component": "text",
-
-          "name": "mainModel.yjcsjg"
-
-        },
-
-        {
           "title": "报废理由",
           "component": "text",
           "name": "mainModel.bfly"
