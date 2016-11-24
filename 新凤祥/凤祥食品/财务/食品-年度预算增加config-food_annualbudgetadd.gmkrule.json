@@ -136,7 +136,7 @@
 				"title1": "币种",
 				"component": "text",
 				"editablenode": "",
-				"solve": "money",
+				"datatype": "money",
 				"name": "bizhong"
 			},
 			{

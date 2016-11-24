@@ -160,7 +160,7 @@
             {
               "title": "调整金额",
               "component": "text",
-              "solve": "money",
+              "datatype": "money",
               "name": "addamt"
             },
             {
