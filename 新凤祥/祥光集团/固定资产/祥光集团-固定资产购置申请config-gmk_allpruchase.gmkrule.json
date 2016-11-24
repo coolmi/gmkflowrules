@@ -1,449 +1,602 @@
 {
-    "id": "gmk_allpruchase",
-    "handleOnPC": {
-        "tasknode": ["usertask3","usertask4",
-          "usertask13","usertask5","usertask9",
-          "usertask10","usertask11"],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "pruchase.appid"
+  "id": "gmk_allpruchase",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask4",
+      "usertask11"
+    ],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "pruchase.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "pruchase.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "pruchase.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["pruchase.pernr", "-", "pruchase.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "pruchase.pernr",
+            "-",
+            "pruchase.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["pruchase.sysbusinessunitname", "-", "pruchase.sysdeptname"]
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "pruchase.sysbusinessunitname",
+            "-",
+            "pruchase.sysdeptname"
+          ]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.username"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.postid"
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "pruchase.id"
-        }]
+          "title": "",
+          "component": "hidden",
+          "name": "pruchase.id"
+        }
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx_panel",
-        "component": "panel",
-        "subComponents": [{
-            "title": "员工编号",
-            "component": "text",
-            "name": "pruchase.pernrval"
+      "title": "申请信息",
+      "pageid": "sqxx_panel",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "pruchase.pernrval"
         },
         {
-            "title": "员工ITCODE",
-            "component": "text",
-            "name": "pruchase.useridval"
+          "title": "员工ITCODE",
+          "component": "text",
+          "name": "pruchase.useridval"
         },
         {
-            "title": "职能中心/事业部",
-            "component": "text",
-            "name": "pruchase.bunisval"
+          "title": "职能中心/事业部",
+          "component": "text",
+          "name": "pruchase.bunisval"
         },
         {
-            "title": "职能中心/事业部",
-            "component": "text",
-            "name": "pruchase.bunisval"
+          "title": "职能中心/事业部",
+          "component": "text",
+          "name": "pruchase.bunisval"
         },
         {
-            "title": "邮箱",
-            "component": "text",
-            "name": "pruchase.email"
+          "title": "邮箱",
+          "component": "text",
+          "name": "pruchase.email"
         },
         {
-            "title": "归属公司",
-            "component": "label",
-          "label":[
+          "title": "归属公司",
+          "component": "label",
+          "label": [
             "pruchase.cdbukrs",
             "pruchase.cdbukrsname"
           ]
         },
         {
-            "title": "归属成本中心",
-            "component": "label",
-            "label":[
-              "pruchase.cdkostls",
-              "pruchase.cdkostlsname"
-            ]
-
+          "title": "归属成本中心",
+          "component": "label",
+          "label": [
+            "pruchase.cdkostls",
+            "pruchase.cdkostlsname"
+          ]
         },
         {
-            "title": "",
-            "component": "formLabelLink",
-            "titleIndex": 1,
-            "id":"fxjj_pruappchilds",
-            "basePath": "pruappchilds",
-            "linkForms": [{
-                "title": "项目类型",
-                "component": "text",
-                "name": "itemtypename"
-            },
+          "title": "项目信息",
+          "component": "formLabelLink",
+          "titleIndex": 1,
+          "id": "fxjj_pruappchilds",
+          "basePath": "pruappchilds",
+          "linkForms": [
             {
-                "title": "预算项目",
-                "component": "text",
-                "name": "item"
-            },
-            {
-                "title": "资产描述",
-                "component": "text",
-                "name": "propertyname"
-            },
-              {
-                "title": "资产大类",
-                "component": "label",
-                "label":[
-                  "asset",
-                  "assetname"
-                ]
-
-              },
-              {
-                "title": "资产分类",
-                "component": "label",
-                "label":[
-                  "anlkl",
-                  "anlklname"
-                ]
-
-              },
-            {
-                "title": "数量",
-                "component": "text",
-                "name": "amount"
-            },
-            {
-                "title": "规格",
-                "component": "text",
-                "name": "specification"
-            },
-            {
-                "title": "",
-                "title1": "型号",
-                "component": "text",
-                "name": "model"
-            },
-            {
-                "title": "品牌",
-                "component": "text",
-                "name": "brand"
-            },
-            {
-                "title": "币种",
-                "component": "text",
-                "name": "waers"
-            },
-            {
-                "title": "总价",
-                "component": "text",
-                "datatype":"money",
-                "name": "totalpreinquiry"
-            },
-              {
-                "title": "资产责任部门",
-                "component": "label",
-                "label":[
-                  "departid",
-                  "departmentnm"
-                ]
-
-              }
-            ]
-        }]
-    },
-      {
-        "title": "分配确认",
-        "pageid": "sqxxx_pruexechilds",
-        "component": "panel",
-        "subComponents": [
-          {
-            "title": "",
-            "id":"sqxxx_v",
-            "component": "formLabelLink",
-            "titleIndex": 1,
-            "basePath": "pruexechilds",
-            "linkForms": [{
               "title": "项目类型",
               "component": "text",
               "name": "itemtypename"
             },
-              {
-                "title": "预算项目",
-                "component": "text",
-                "name": "item"
-              },
-              {
-                "title": "资产分类",
-                "component": "label",
-                "label":[
-                  "anlkl",
-                  "anlklname"
-                ]
-              },
-              {
-                "title": "资产描述",
-                "component": "text",
-                "name": "propertyname"
-              },
-              {
-                "title": "数量",
-                "component": "text",
-                "name": "amount"
-              },
-              {
-                "title": "规格",
-                "component": "text",
-                "name": "specification"
-              },
-              {
-                "title": "型号",
-                "component": "text",
-                "name": "model"
-              },
-              {
-                "title": "品牌",
-                "component": "text",
-                "name": "brand"
-              },
-              {
-                "title": "采购询价执行人员",
-                "component": "text",
-                "name": "exusername"
-              },
-              {
-                "title": "采购合同执行人员",
-                "component": "text",
-                "name": "exusername2"
-              }
-            ]
-          }]
-      },
-      {
-        "title": "技术标识号",
-        "pageid": "sqxxx_pruquirychilds",
-        "component": "panel",
-        "subComponents": [
-          {
-            "title": "",
-            "component": "formLabelLink",
-            "id":"jqxxx_w",
-            "titleIndex": 5,
-            "basePath": "pruquirychilds",
-            "linkForms": [{
-              "title": "资产编号",
+            {
+              "title": "预算项目",
               "component": "text",
+              "name": "item"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "资产大类",
+              "component": "label",
+              "label": [
+                "asset",
+                "assetname"
+              ]
+            },
+            {
+              "title": "资产分类",
+              "component": "label",
+              "label": [
+                "anlkl",
+                "anlklname"
+              ]
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "specification"
+            },
+            {
+              "title": "",
+              "title1": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "waers"
+            },
+            {
+              "title": "总价",
+              "component": "text",
+              "datatype": "money",
+              "name": "totalpreinquiry"
+            },
+            {
+              "title": "资产责任部门",
+              "component": "label",
+              "label": [
+                "departid",
+                "departmentnm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "采购主管分配",
+      "pageid": "sqxxx_pruexechilds",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "id": "sqxxx_v_table",
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "pruexechilds",
+          "tableForms": [
+            {
+              "title": "项目类型",
+              "component": "text",
+              "name": "itemtypename"
+            },
+            {
+              "title": "预算项目",
+              "component": "text",
+              "name": "item"
+            },
+            {
+              "title": "资产分类",
+              "component": "label",
+              "label": [
+                "anlkl",
+                "anlklname"
+              ]
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "specification"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "采购询价执行人员",
+              "component": "text",
+              "emptyHidden":true,
+              "name": "exusername"
+            },
+            {
+              "title": "采购询价执行人员",
+              "tasknode":"usertask3",
+              "editablenode":"usertask3",
+              "component": "text",
+              "name": "expostidexelistkk",
+              "validation":{
+                "pageid":"sqxxx_pruexechilds",
+                "table_id":"sqxxx_v_table",
+                "required":true ,
+                "validateMsg":"请选择执行人员"
+              },
+              "forSelectPerson":{
+                "onclick":"getuser",
+                "postshow":true,
+                "showformname":"exusernameexelistkk",
+                "valuetype":["objid"],
+                "showtype":["nachn","stext"]
+              }
+            },
+            {
+              "title": "采购合同执行人员",
+              "tasknode":"usertask10",
+              "editablenode":"usertask10",
+              "component": "text",
+              "name": "expostidexelistkk2",
+              "validation":{
+                "pageid":"sqxxx_pruexechilds",
+                "table_id":"sqxxx_v_table",
+                "required":true ,
+                "validateMsg":"请选择采购合同执行人员"
+              },
+              "forSelectPerson":{
+                "onclick":"getuser",
+                "postshow":true,
+                "showformname":"exusernameexelistkk2",
+                "valuetype":["objid"],
+                "showtype":["nachn","stext"]
+              }
+            },
+            {
+              "title": "ee",
+              "component": "hidden",
+              "editablenode":"usertask3,usertask10",
+              "name": "eid"
+            },
+            {
+              "title": "表格标识",
+              "component": "hidden",
+              "editablenode":"usertask3",
+              "name": "expostidexelistkk2",
+              "value":""
+
+            },
+            {
+              "title": "表格标识",
+              "component": "hidden",
+              "editablenode":"usertask3",
+              "name": "exusernameexelistkk2",
+              "value":""
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "title": "采购执行确认型号",
+      "pageid": "cgzxqrxh_pageid",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "id": "jqxxx_w",
+          "titleIndex": 1,
+          "basePath": "pruexechilds",
+          "linkForms": [
+            {
+              "title": "项目类型",
+              "component": "text",
+              "name": "itemtypename"
+            },
+            {
+              "title": "预算项目",
+              "component": "text",
+              "name": "item"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "prounit"
+            },
+            {
+              "title": "购买数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "specification"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "waers"
+            },
+            {
+              "title": "总价",
+              "component": "text",
+              "name": "totalpreinquiry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "分配标识号",
+      "pageid": "sqxxx_quiry_pruquirychilds",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "id": "jqxxx_quiry_table",
+          "titleIndex": 1,
+          "basePath": "pruquirychilds",
+          "linkForms": [
+            {
+              "title": "资产编号",
+              "component": "hidden",
               "name": "propertycode"
             },
-              {
-                "title": "资产描述",
-                "component": "text",
-                "name": "propertyname"
-              },
-              {
-                "title": "单位",
-                "component": "text",
-                "name": "prounit"
-              },
-              {
-                "title": "规格",
-                "component": "text",
-                "name": "specification"
-              },
-              {
-                "title": "型号",
-                "component": "text",
-                "name": "model"
-              },
-              {
-                "title": "技术标识号",
-                "component": "text",
-                "name": "technicalcode"
-              }
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
 
-            ]
-          }]
-      },
-      {
-        "title": "固定资产成本会计",
-        "pageid": "sqxxx_quiry_pruquirychilds",
-        "component": "panel",
-        "subComponents": [
-          {
-            "title": "",
-            "component": "formLabelLink",
-            "id":"jqxxx_quiry",
-            "titleIndex": 0,
-            "basePath": "pruquirychilds",
-            "linkForms": [
-              {
-                "title": "成本中心",
-                "component": "hidden",
-                "name":"kostltext"
-              },
-              {
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "prounit"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "specification"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "技术标识号",
+              "component": "text",
+              "emptyHidden":true,
+              "name": "technicalcode"
+            },
+            {
+              "title": "技术标识号",
+              "component": "text",
+              "tasknode":"usertask5",
+              "editablenode":"usertask5",
+              "name": "technicalcodequlist",
+              "validation":{
+                "pageid":"sqxxx_quiry_pruquirychilds",
+                "table_id":"jqxxx_quiry_table",
+                "required":true ,
+                "validateMsg":"请填写技术标识号"
+              }
+            },
+            {
+              "title": "qid",
+              "component": "hidden",
+              "editablenode":"usertask5",
+              "name": "qid"
+
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "固定资产成本会计",
+      "pageid": "sqxxx_qu_pruquirychilds",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "id": "jqxxx_quiry_chh",
+          "titleIndex": 1,
+          "basePath": "pruquirychilds",
+          "linkForms": [
+
+            {
               "title": "技术标识号",
               "component": "text",
               "name": "technicalcode"
             },
-              {
-                "title": "成本中心",
-                "component": "label",
-                "label":[
-                  "kostl",
-                  "kostltext"
-                ]
+            {
+              "title": "成本中心",
+              "component": "label",
+              "label": [
+                "kostl",
+                "kostltext"
+              ]
+            },
+            {
+              "title": "cc",
+              "component": "hidden",
+              "editablenode":"usertask9",
+              "name": "qid"
+            },
+            {
+              "title": "aa",
+              "component": "hidden",
+              "editablenode":"usertask9",
+              "name": "departid"
+            },
+            {
+              "title": "bb",
+              "component": "hidden",
+              "editablenode":"usertask9",
+              "name": "departmentnm"
+            },
+            {
+              "title": "SAP固定资产编号",
+              "component": "text",
+              "tasknode":"usertask9",
+              "editablenode":"usertask9",
+              "name": "anln1quklist"
+            },
+            {
+              "title": "子编号",
+              "component": "text",
+              "tasknode":"usertask9",
+              "editablenode":"usertask9",
+              "name": "anln2quklist"
+            },
+            {
+              "title": "资产大类",
+              "component": "select",
+              "editablenode":"usertask9",
+              "name": "asset",
+              "refersToArray":{
+                "basePath":"maxmenus",
+                "value":"MTKEY",
+                "text":["MTKEY","-","MTYPE"]
               },
-              {
-                "title": "SAP固定资产编号",
-                "component": "text",
-                "name": "anln1"
+              "selectForShow":{
+                "postshow":true,
+                "showFormName":"assetname"
               },
-              {
-                "title": "子编号",
-                "component": "text",
-                "name": "anln2"
-              },
-              {
-                "title": "资产大类",
-                "component": "label",
-                "label":[
-                  "asset",
-                  "assetname"
-                ]
-              },
-              {
-                "title": "所属法人公司",
-                "component": "text",
-                "name": "nbukrsname"
+              "validation":{
+                "pageid":"sqxxx_qu_pruquirychilds",
+                "table_id":"jqxxx_quiry_chh",
+                "required":true ,
+                "validateMsg":"请填写资产大类"
               }
 
-            ]
-          }]
-      },
-      {
-        "title": "合同执行人",
-        "pageid": "sqxxx_qu_pruquirychilds",
-        "component": "panel",
-        "subComponents": [
-          {
-            "title": "",
-            "component": "formLabelLink",
-            "id":"jqxxx_quiry_chh",
-            "titleIndex": 7,
-            "basePath": "pruquirychilds",
-            "linkForms": [
-              {
-                "title": "资产编号",
-                "component": "text",
-                "name": "propertycode"
+            },
+            {
+              "title": "所属法人公司",
+              "component": "text",
+              "name":"nbukrsname",
+              "emptyHidden":true
+            },
+            {
+              "title": "所属法人公司",
+              "component": "select",
+              "tasknode":"usertask9",
+              "editablenode":"usertask9",
+              "name": "nbukrsquklist",
+              "refersToArray":{
+                "basePath":"allToo1List",
+                "value":"bukrs",
+                "text":["bukrs","-","butxt"]
               },
-              {
-                "title": "资产描述",
-                "component": "text",
-                "name":"propertyname"
+              "selectForShow":{
+                "postshow":true,
+                "showFormName":"nbukrsnamequklist"
               },
-              {
-                "title": "技术标识号",
-                "component": "text",
-                "name": "technicalcode"
-              },
-              {
-                "title": "成本中心",
-                "component": "label",
-                "label":[
-                  "kostl",
-                  "kostltext"
-                ]
-              },
-              {
-                "title": "合同单价(含税)",
-                "component": "text",
-                "datatype":"money",
-                "name":"contractvalue"
-              },
-              {
-                "title": "币种",
-                "component": "text",
-                "name": "waers"
-              },
-              {
-                "title": "汇率",
-                "component": "text",
-                "datatype":"money",
-                "name": "exchangerate"
-              },
-              {
-                "title": "合同价值(元)",
-                "component": "text",
-                "datatype":"money",
-                "name": "r_contractvalue"
+              "validation":{
+                "pageid":"sqxxx_qu_pruquirychilds",
+                "table_id":"jqxxx_quiry_chh",
+                "required":true ,
+                "validateMsg":"请填写所属法人公司"
               }
-
-            ]
-          }]
-      },
-    ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

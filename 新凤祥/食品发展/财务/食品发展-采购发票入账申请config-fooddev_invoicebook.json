@@ -159,30 +159,8 @@
         },
         {
           "title": "付款方式",
-          "component": "select",
-          "name": "invoicebook.fkzl",
-          "options": [
-            {
-              "title": "电汇",
-              "value": "0"
-            },
-            {
-              "title": "汇票",
-              "value": "1"
-            },
-            {
-              "title": "支票",
-              "value": "2"
-            },
-            {
-              "title": "承兑",
-              "value": "3"
-            },
-            {
-              "title": "信用证",
-              "value": "4"
-            }
-          ]
+          "component": "text",
+          "name": "invoicebook.fkzl"
         },
         {
           "title": "汇入地点",

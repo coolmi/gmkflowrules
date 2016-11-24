@@ -1,7 +1,7 @@
 {
   "id": "fooddevcw_gdzcbfapply",
   "handleOnPC": {
-    "tasknode": ["usertask12"],
+    "tasknode": [""],
     "flag": ["resubmit"]
   },
   "selectPerson": {
@@ -168,6 +168,18 @@
           "component": "text",
           "name": "mainModel.cz"
         },
+        {
+          "title": "预计出售价格",
+          "component": "text",
+          "editablenode":"usertask12",
+          "name": "mainModel.yjcsjg",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"请填写预计出售价格"
+          }
+        },
+
         {
           "title": "报废理由",
           "component": "text",
