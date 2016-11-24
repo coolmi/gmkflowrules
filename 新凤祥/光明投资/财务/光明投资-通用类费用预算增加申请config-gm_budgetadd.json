@@ -109,8 +109,8 @@
           "title": "",
           "component": "formLabelLink",
           "titleIndex": 7,
-          "lTitleIndex": 5,
-          "rTitleIndex": 4,
+          "lTitleIndex": 4,
+          "rTitleIndex": 5,
           "basePath": "budgetaddappsub",
           "linkForms": [
             {
