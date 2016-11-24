@@ -208,14 +208,8 @@
       "subComponents": [
         {
           "title": "费用承担部门",
-          "component": "label",
-          "middleName": [
-            "pobcost.reimbursedept",
-            "ubukrs"
-          ],
-          "label": [
-            "bases.ubukrsm"
-          ]
+          "component": "text",
+          "text": "cninfo.reimbursedept"
         },
         {
           "title": "费用控制类型",
