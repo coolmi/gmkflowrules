@@ -109,8 +109,8 @@
           "title": "",
           "component": "formLabelLink",
           "titleIndex": 7,
-          "lTitleIndex":2,
-          "rTitleIndex":
+          "lTitleIndex": 2,
+          "rTitleIndex": 4,
           "basePath": "budgetaddappsub",
           "linkForms": [
             {
@@ -170,7 +170,8 @@
               "title": "年份",
               "component": "text",
               "name": "year"
-            },{
+            },
+            {
               "title": "合计",
               "component": "text",
               "name": "addamt"
