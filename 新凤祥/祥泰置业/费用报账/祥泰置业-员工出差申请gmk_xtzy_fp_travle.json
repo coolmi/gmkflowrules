@@ -1,5 +1,5 @@
 {
-  "id": "tz_fp_travle",
+  "id": "gmk_xtzy_fp_travle",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -112,8 +112,8 @@
         {
           "title": "是否提高标准",
           "component": "select",
-          "name": "travle.beup",
           "id": "beup_select",
+          "name": "travle.beup",
           "options": [
             {
               "text": "否",

@@ -109,6 +109,8 @@
           "title": "",
           "component": "formLabelLink",
           "titleIndex": 7,
+          "lTitleIndex": 4,
+          "rTitleIndex": 5,
           "basePath": "budgetaddappsub",
           "linkForms": [
             {
@@ -146,7 +148,7 @@
             {
               "title": "调整金额",
               "component": "text",
-              "solve": "money",
+              "datatype": "money",
               "name": "addamt"
             },
             {
@@ -168,7 +170,8 @@
               "title": "年份",
               "component": "text",
               "name": "year"
-            },{
+            },
+            {
               "title": "合计",
               "component": "text",
               "name": "addamt"

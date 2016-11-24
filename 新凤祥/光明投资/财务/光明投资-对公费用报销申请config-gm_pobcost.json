@@ -194,7 +194,8 @@
         },
         {
           "title": "说明",
-          "component": "text",
+          "component": "textarea",
+          "rows": 5,
           "editablenode": "",
           "name": "pobcost.smemo"
         }
@@ -207,14 +208,8 @@
       "subComponents": [
         {
           "title": "费用承担部门",
-          "component": "label",
-          "middleName": [
-            "pobcost.reimbursedept",
-            "ubukrs"
-          ],
-          "label": [
-            "bases.ubukrsm"
-          ]
+          "component": "text",
+          "name": "cninfo.reimbursedept"
         },
         {
           "title": "费用控制类型",

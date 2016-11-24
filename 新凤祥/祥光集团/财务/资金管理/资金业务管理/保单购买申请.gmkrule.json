@@ -2,7 +2,6 @@
   "id": "fi_policybuy",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,53 +117,60 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "合同号",
-					"component": "text",
-					"id": "policybuy_contract",
-					"editablenode": "",
-					"name": "policybuy.contract"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "policybuy_supplier",
-					"editablenode": "",
-					"name": "policybuy.supplier"
-				},
-				{
-					"title": "货量",
-					"component": "text",
-					"id": "policybuy_goodsa",
-					"editablenode": "",
-					"name": "policybuy.goodsa"
-				},
-				{
-					"title": "货值",
-					"component": "text",
-					"id": "policybuy_goodsv",
-					"editablenode": "",
-					"name": "policybuy.goodsv"
-				},
-				{
-					"title": "备注",
-					"component": "textarea",
-					"id": "policybuy_remark",
-					"editablenode": "",
-					"rows": "3",
-					"name": "policybuy.remark"
-				}
-			]
-		}
-
-
-  ],
-  "refers": {
-  }
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同号",
+          "component": "text",
+          "id": "policybuy_contract",
+          "editablenode": "",
+          "name": "policybuy.contract"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "id": "policybuy_supplier",
+          "editablenode": "",
+          "name": "policybuy.supplier"
+        },
+        {
+          "title": "货量",
+          "component": "text",
+          "id": "policybuy_goodsa",
+          "editablenode": "",
+          "name": "policybuy.goodsa"
+        },
+        {
+          "title": "货值",
+          "component": "text",
+          "id": "policybuy_goodsv",
+          "editablenode": "",
+          "name": "policybuy.goodsv"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "policybuy_remark",
+          "editablenode": "",
+          "rows": "3",
+          "name": "policybuy.remark"
+        },
+        {
+          "title": "保险公司名称",
+          "component": "text",
+          "name": "policybuy.company",
+          "tasknode": "usertask3",
+          "editablenode": "usertask3",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请填写保险公司名称"
+          }
+        }
+      ]
+    }
+  ]
 }

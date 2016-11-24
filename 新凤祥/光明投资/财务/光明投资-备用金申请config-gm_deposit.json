@@ -2,7 +2,7 @@
   "id": "gm_deposit",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "aft"
     ],
     "flag": [
       "resubmit"

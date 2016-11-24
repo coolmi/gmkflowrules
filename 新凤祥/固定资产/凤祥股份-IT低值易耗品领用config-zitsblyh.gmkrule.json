@@ -2,7 +2,8 @@
   "id": "zitsblyh",
   "handleOnPC": {
     "tasknode": [
-      "usertask3","usertask4"
+      "usertask3",
+      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -101,53 +102,25 @@
       ]
     },
     {
-      "title": "领用申请详细信息",
+      "title": "领用详细",
       "pageid": "lysqxxxx",
       "component": "panel",
       "subComponents": [
         {
-          "component": "table",
-          "titleIndex":1,
+          "component": "table_form",
+          "titleIndex": 1,
           "basePath": "childlist",
-          "cells": [
+          "id": "lysqxxxx_table",
+          "tableForms": [
             {
               "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
+              "component": "text",
+              "name": "ascatg"
             },
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
-
+              "component": "text",
+              "name": "propertyname"
             },
             {
               "title": "领用原因",
@@ -177,57 +150,30 @@
               "name": "zsbffrq"
             }
           ]
-        }]
+        }
+      ]
     },
     {
-      "title": "IT固定资产管理员发放信息",
+      "title": "发放信息",
       "pageid": "ITgdzcglyffxx",
-      "tasknode":"usertask3",
+      "tasknode": "usertask3",
       "component": "panel",
       "subComponents": [
         {
-          "component": "table",
+          "component": "table_form",
           "titleIndex": 1,
           "basePath": "childlist",
-          "cells": [
+          "id": "ITgdzcglyffxx_table",
+          "tableForms": [
             {
               "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
+              "component": "text",
+              "name": "ascatg"
             },
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
-
+              "component": "text",
+              "name": "propertyname"
             },
             {
               "title": "领用原因",
@@ -238,11 +184,13 @@
               "title": "单位",
               "component": "text",
               "name": "zmeins"
-            }, {
+            },
+            {
               "title": "库存数量",
               "component": "text",
               "name": "zkcsl"
-            }, {
+            },
+            {
               "title": "设备运行状态",
               "component": "select",
               "name": "zsbyxzt",
@@ -256,52 +204,41 @@
                   "value": "2"
                 }
               ]
-
-            }, {
+            },
+            {
               "title": "问题描述",
               "component": "text",
               "editablenode": "usertask3",
               "name": "zwttxt"
-            }, {
+            },
+            {
               "title": "实际发放数量",
               "component": "text",
               "editablenode": "usertask3",
               "name": "zsjffsl"
             }
           ]
-        }]
+        }
+      ]
     },
     {
-      "title": "接收人接收确认信息",
+      "title": "接收确认",
       "pageid": "jsrjsqrxx",
-      "tasknode":"usertask4",
+      "tasknode": "usertask4",
       "component": "panel",
       "subComponents": [
         {
-          "component": "table",
+          "component": "table_form",
           "titleIndex": 0,
+          "id": "jsrjsqrxx_table",
           "basePath": "childlist",
-          "cells": [
+          "tableForms": [
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
-
-            }, {
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
               "title": "是否正常使用",
               "component": "select",
               "editablenode": "usertask4",
@@ -316,14 +253,16 @@
                   "value": "2"
                 }
               ]
-
-            }, {
+            },
+            {
               "title": "问题描述",
               "component": "text",
               "editablenode": "usertask4",
               "name": "zyswt"
             }
           ]
-        }]
-    }]
+        }
+      ]
+    }
+  ]
 }
