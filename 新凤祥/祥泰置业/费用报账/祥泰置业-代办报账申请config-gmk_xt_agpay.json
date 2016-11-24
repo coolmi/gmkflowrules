@@ -669,7 +669,7 @@
       ]
     },
     {
-      "title": "财务审批信息",
+      "title": "财务审批",
       "component": "panel",
       "pageid": "cwspxx",
       "subComponents": [
@@ -719,13 +719,21 @@
           "title": "合计",
           "component": "text",
           "datatype": "money",
-          "name": "app.m_reqmoney"
+          "name": "m_reqmoney",
+          "sumValue": {
+            "arrayPath": "ficos",
+            "sumParam": "fico_bxfee"
+          }
         },
         {
           "title": "实报金额",
           "component": "text",
           "datatype": "money",
-          "name": "app.m_actmoney"
+          "name": "m_actmoney",
+          "sumValue": {
+            "arrayPath": "ficos",
+            "sumParam": "fico_actfee"
+          }
         }
       ]
     },
