@@ -2,7 +2,7 @@
   "id": "fi_fundacount",
   "handleOnPC": {
     "tasknode": [
-      			"usertask4"
+      			""
 
     ],
     "flag": [
@@ -129,21 +129,21 @@
 			"subComponents": [
 				{
 					"title": "帐号有效开始日期",
-					"component": "text",
+					"component": "date1",
 					"id": "fundacount_startda",
 					"editablenode": "",
 					"name": "fundacount.startda"
 				},
 				{
 					"title": "帐号有效截止日期",
-					"component": "text",
+					"component": "date1",
 					"id": "fundacount_endda",
 					"editablenode": "",
 					"name": "fundacount.endda"
 				},
 				{
 					"title": "使用人岗位",
-					"component": "text",
+					"component": "date1",
 					"id": "fundacount_uuser",
 					"editablenode": "",
 					"name": "uname"
@@ -204,8 +204,14 @@
 					"title": "处理结果",
 					"component": "text",
 					"id": "fundacount_doresult",
-					"editablenode": "",
-					"name": "fundacount.doresult"
+					"editablenode": "usertask4",
+					"name": "fundacount.doresult",
+                     "validation":{
+                    "pageid":"panel_sqxx",
+                    "required":true,
+                    "validateMsg":"请填写处理结果",
+                    "regexs":""
+                     }
 				}
 			]
 		}
