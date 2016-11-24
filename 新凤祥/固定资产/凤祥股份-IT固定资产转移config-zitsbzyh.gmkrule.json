@@ -145,7 +145,7 @@
         },
         {
           "title": "接收人成本中心",
-          "component":"label",
+          "component": "label",
           "label": [
             "transfer.jskostl",
             "-",
@@ -160,13 +160,14 @@
       ]
     },
     {
-      "title": "转移详细信息",
+      "title": "详细信息",
       "pageid": "zyxxxx",
       "component": "panel",
       "subComponents": [
         {
           "component": "table",
           "titleIndex": 3,
+          "id": "zyxxxx_table",
           "basePath": "childlist",
           "cells": [
             {
@@ -214,13 +215,14 @@
       ]
     },
     {
-      "title": "转移信息明细",
+      "title": "转移明细",
       "pageid": "zyxxmx",
       "component": "panel",
       "subComponents": [
         {
           "component": "table",
           "titleIndex": 1,
+          "id": "zyxxmx",
           "basePath": "childlist",
           "cells": [
             {

@@ -114,41 +114,13 @@
           "tableForms": [
             {
               "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
+              "component": "text",
+              "name": "ascatg"
             },
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
+              "component": "text",
+              "name": "propertyname"
             },
             {
               "title": "领用原因",
@@ -195,41 +167,13 @@
           "tableForms": [
             {
               "title": "资产类别",
-              "component": "select",
-              "name": "ascatg",
-              "options": [
-                {
-                  "title": "办公用品",
-                  "value": "办公用品"
-                },
-                {
-                  "title": "电脑外设",
-                  "value": "电脑外设"
-                },
-                {
-                  "title": "运维材料",
-                  "value": "运维材料"
-                }
-              ]
+              "component": "text",
+              "name": "ascatg"
             },
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
+              "component": "text",
+              "name": "propertyname"
             },
             {
               "title": "领用原因",
@@ -286,27 +230,13 @@
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id":"jsrjsqrxx_table",
+          "id": "jsrjsqrxx_table",
           "basePath": "childlist",
           "tableForms": [
             {
               "title": "资产描述",
-              "component": "select",
-              "name": "propertyname",
-              "options": [
-                {
-                  "title": "鼠标",
-                  "value": "鼠标"
-                },
-                {
-                  "title": "控制线缆",
-                  "value": "控制线缆"
-                },
-                {
-                  "title": "网线",
-                  "value": "网线"
-                }
-              ]
+              "component": "text",
+              "name": "propertyname"
             },
             {
               "title": "是否正常使用",
