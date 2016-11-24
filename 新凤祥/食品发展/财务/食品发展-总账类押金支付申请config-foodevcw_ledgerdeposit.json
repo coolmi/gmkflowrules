@@ -293,7 +293,7 @@
         },
         {
           "title": "申请金额小写",
-          "component": "money",
+          "component": "text",
           "editablenode": "",
           "name": "mainModel.sqjexx"
         },
