@@ -209,7 +209,7 @@
         {
           "title": "费用承担部门",
           "component": "text",
-          "text": "cninfo.reimbursedept"
+          "name": "cninfo.reimbursedept"
         },
         {
           "title": "费用控制类型",
