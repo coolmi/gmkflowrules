@@ -113,6 +113,7 @@
           "title": "是否提高标准",
           "component": "select",
           "name": "travle.beup",
+          "id": "beup_select",
           "options": [
             {
               "text": "否",
@@ -125,53 +126,67 @@
           ]
         },
         {
+          "title": "提高标准原因",
+          "component": "textarea",
+          "rows": 4,
+          "name": "travle.reason",
+          "showLinkage": [
+            {
+              "id": "beup_select",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "component": "table_ccmx",
           "titleIndex": 1,
           "basePath": "bases",
           "tableForms": [
             {
-              "title":"出发日期",
-              "component":"text",
+              "title": "出发日期",
+              "component": "text",
               "editablenode": "",
               "component": "date1",
-              "name":"startda"
+              "name": "startda"
             },
             {
-              "title":"到达日期",
-              "component":"text",
+              "title": "到达日期",
+              "component": "text",
               "editablenode": "",
               "component": "date1",
-              "name":"endda"
+              "name": "endda"
             },
             {
-              "title":"出发地点",
-              "component":"text",
+              "title": "出发地点",
+              "component": "text",
               "editablenode": "",
-              "name":"splace"
+              "name": "splace"
             },
             {
-              "title":"到达地点",
-              "component":"text",
+              "title": "到达地点",
+              "component": "text",
               "editablenode": "",
-              "name":"eplace"
+              "name": "eplace"
             },
             {
-              "title":"交通方式",
-              "component":"text",
+              "title": "交通方式",
+              "component": "text",
               "editablenode": "",
-              "name":"transmode"
+              "name": "transmode"
             },
             {
-              "title":"是否签约宾馆",
-              "component":"text",
+              "title": "是否签约宾馆",
+              "component": "text",
               "editablenode": "",
-              "name":"besign"
+              "name": "besign"
             },
             {
-              "title":"工作内容",
-              "component":"text",
+              "title": "工作内容",
+              "component": "text",
               "editablenode": "",
-              "name":"workc"
+              "name": "workc"
             }
           ]
         }
