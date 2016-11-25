@@ -2,7 +2,6 @@
   "id": "adm_purchasesalecontract",
   "handleOnPC": {
     "tasknode": [
-      "internalaudit",
       "usertask2"
     ],
     "flag": [
@@ -163,31 +162,6 @@
           "title": "合同号",
           "component": "text",
           "name": "mainModel.hth"
-        },
-        {
-          "title": "法务审核人员",
-          "component": "text",
-          "name": "mainModel.fwshry"
-        },
-        {
-          "title": "资金审核人员",
-          "component": "text",
-          "name": "mainModel.zjshry"
-        },
-        {
-          "title": "物流审核人员",
-          "component": "text",
-          "name": "mainModel.wlshry"
-        },
-        {
-          "title": "风控审核人员",
-          "component": "text",
-          "name": "mainModel.fkshry"
-        },
-        {
-          "title": "原料事业部审核人员",
-          "component": "text",
-          "name": "mainModel.ylshry"
         },
         {
           "title": "备注",
