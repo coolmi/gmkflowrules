@@ -202,15 +202,28 @@
             },
             {
               "title": "支持附件",
-              "component": "text",
-              "id": "s_file",
-              "editablenode": "",
-              "name": "s_file",
-              "events": {
-                "eventType": "openDocument",
-                "filename": "s_file",
-                "afrescoid": "s_fileid"
-              }
+              "component": "panel",
+              "panel_id": "file_set_panel",
+              "subComponents": [
+                {
+                  "component": "table_form",
+                  "basePath": "files",
+                  "titleIndex": 0,
+                  "id": "tmp_file_set_table",
+                  "tableForms": [
+                    {
+                      "title": "文件名称",
+                      "component": "text",
+                      "name": "f_filename",
+                      "events": {
+                        "eventType": "openDocument",
+                        "filename": "f_filename",
+                        "afrescoid": "f_fileid"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

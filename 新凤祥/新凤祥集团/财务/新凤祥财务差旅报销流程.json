@@ -952,80 +952,85 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "付款信息",
+      "component": "panel",
+      "tasknode": "usertask5",
+      "pageid": "fk_page",
+      "subComponents": [
+        {
+          "title": "汇率",
+          "component": "text",
+          "editablenode": "usertask5",
+          "name": "travelreim.exchrate"
         },
         {
-          "title": "付款信息",
-          "component": "panel",
-          "tasknode": "usertask5",
-          "panel_id": "fk",
-          "subComponents": [
+          "title": "结算方式",
+          "component": "select",
+          "editablenode": "usertask5",
+          "name": "travelreim.setmode",
+          "options": [
             {
-              "title": "汇率",
-              "component": "text",
-              "editablenode": "usertask5",
-              "name": "travelreim.exchrate"
+              "text": "汇款",
+              "value": "汇款"
             },
             {
-              "title": "结算方式",
-              "component": "select",
-              "editablenode": "usertask5",
-              "name": "travelreim.setmode",
-              "options": [
-                {
-                  "text": "汇款",
-                  "value": "汇款"
-                },
-                {
-                  "text": "现金",
-                  "value": "现金"
-                }
-              ],
-              "validation": {
-                "pageid": "fk",
-                "required": true,
-                "validateMsg": "结算方式必选"
-              }
-            },
-            {
-              "title": "银行账户",
-              "component": "text",
-              "editablenode": "usertask5",
-              "name": "travelreim.banknn",
-              "validation": {
-                "pageid": "fk",
-                "required": true,
-                "validateMsg": "银行账户填写必须"
-              }
-            },
-            {
-              "title": "开户行",
-              "component": "text",
-              "inputlimit": "digit",
-              "editablenode": "usertask5",
-              "name": "travelreim.bankll"
-            },
-            {
-              "title": "付款通知说明",
-              "component": "select",
-              "editablenode": "usertask5",
-              "name": "travelreim.payval",
-              "options": [
-                {
-                  "text": "已付款",
-                  "value": "1"
-                },
-                {
-                  "text": "未付款",
-                  "value": "0"
-                }
-              ],
-              "validation": {
-                "pageid": "fk",
-                "required": true,
-                "validateMsg": "付款通知说明必填"
-              }
+              "text": "现金",
+              "value": "现金"
             }
-          ]
+          ],
+          "validation": {
+            "pageid": "fk_page",
+            "required": true,
+            "validateMsg": "结算方式必选"
+          }
+        },
+        {
+          "title": "银行账户",
+          "component": "text",
+          "editablenode": "usertask5",
+          "name": "travelreim.banknn",
+          "validation": {
+            "pageid": "fk_page",
+            "required": true,
+            "validateMsg": "银行账户必填"
+          }
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "inputlimit": "digit",
+          "editablenode": "usertask5",
+          "name": "travelreim.bankll",
+          "validation": {
+            "pageid": "fk_page",
+            "required": true,
+            "validateMsg": "开户行必填"
+          }
+        },
+        {
+          "title": "付款通知说明",
+          "component": "select",
+          "editablenode": "usertask5",
+          "name": "travelreim.payval",
+          "options": [
+            {
+              "text": "已付款",
+              "value": "1"
+            },
+            {
+              "text": "未付款",
+              "value": "0"
+            }
+          ],
+          "validation": {
+            "pageid": "fk_page",
+            "required": true,
+            "validateMsg": "付款通知说明必填"
+          }
         }
       ]
     }
