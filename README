@@ -9,6 +9,19 @@
     "tasknode":[{环节key,多个则写多个字符串}],
     "flag",[{流程标志，如add,handle,view,resubmit}]//目前不支持resubmit处理，应添加些条
   },
+  "hiddenFiles":{
+    "flowFlag":{
+        "flag":[],
+        "tasknode":[]
+    }
+    "username":[],
+    "special_flag":[
+        {
+            "flagName":"path.to.flag.param",
+            "values":[]
+        }
+    ]
+  },
   "selectPerson":{
     "tasknode":[],//同上
     "beforPop":{true or false}//是不下一节点办理人提示前进行选人
