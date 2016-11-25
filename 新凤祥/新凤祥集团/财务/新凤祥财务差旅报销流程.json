@@ -302,6 +302,7 @@
           "component": "table_form",
           "titleIndex": 1,
           "basePath": "gmpubexlist",
+          "id": "ysxx_table_one",
           "tableForms": [
             {
               "title": "公司代码",
@@ -393,6 +394,159 @@
       ]
     },
     {
+      "title": "差旅汇总",
+      "component": "panel",
+      "panel_id": "total",
+      "subComponents": [
+        {
+          "title": "往返交通费合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "cal_roudtramon",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "roudtramon"
+          }
+        },
+        {
+          "title": "住宿金额合计",
+          "component": "text",
+          "name": "cal_holmou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "holmou"
+          }
+        },
+        {
+          "title": "餐饮金额合计",
+          "component": "text",
+          "name": "cal_cymou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "cymou"
+          }
+        },
+        {
+          "title": "交通金额合计",
+          "component": "text",
+          "name": "cal_tramou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "tramou"
+          }
+        },
+        {
+          "title": "招待金额合计",
+          "component": "text",
+          "name": "cal_zdmou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "zdmou"
+          }
+        },
+        {
+          "title": "其他金额",
+          "component": "text",
+          "name": "cal_othmou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "othmou"
+          }
+        },
+        {
+          "title": "总计",
+          "component": "text",
+          "name": "cal_totalmou",
+          "datatype": "money",
+          "sumValue": {
+            "arrayPath": "summs",
+            "sumParam": "totalmou"
+          }
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "summs",
+          "id": "summs_table_one",
+          "tableForms": [
+            {
+              "title": "日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "sdate"
+            },
+            {
+              "title": "出发地",
+              "editablenode": "",
+              "component": "text",
+              "name": "sdder"
+            },
+            {
+              "title": "到达地",
+              "editablenode": "",
+              "component": "text",
+              "name": "edder"
+            },
+            {
+              "title": "往返交通金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "roudtramon"
+            },
+            {
+              "title": "住宿金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "holmou"
+            },
+            {
+              "title": "餐饮金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "cymou"
+            },
+            {
+              "title": "交通金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "tramou"
+            },
+            {
+              "title": "招待金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "zdmou"
+            },
+            {
+              "title": "其他金额",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "othmou"
+            },
+            {
+              "title": "合计",
+              "editablenode": "",
+              "component": "text",
+              "datatype": "money",
+              "name": "totalmou"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "申请明细",
       "pageid": "sqxxmx",
       "component": "panel",
@@ -412,6 +566,7 @@
               "component": "table_form",
               "titleIndex": 4,
               "basePath": "ltrads",
+              "id": "ltrads_table_one",
               "tableForms": [
                 {
                   "title": "日期",
@@ -516,8 +671,9 @@
           "subComponents": [
             {
               "component": "table_form",
-              "titleIndex": 0,
+              "titleIndex": 3,
               "basePath": "citys",
+              "id": "citys_table_one",
               "tableForms": [
                 {
                   "title": "日期",
@@ -596,8 +752,9 @@
           "subComponents": [
             {
               "component": "table_form",
-              "titleIndex": 0,
+              "titleIndex": 3,
               "basePath": "business",
+              "id": "business_table_one",
               "tableForms": [
                 {
                   "title": "招待日期",
@@ -689,6 +846,7 @@
               "component": "table_form",
               "basePath": "others",
               "titleIndex": 2,
+              "id": "others_table_one",
               "tableForms": [
                 {
                   "title": "日期",
@@ -742,87 +900,6 @@
           ]
         },
         {
-          "title": "差旅费汇总",
-          "component": "panel",
-          "panel_id": "total",
-          "subComponents": [
-            {
-              "component": "table_form",
-              "titleIndex": 0,
-              "basePath": "summs",
-              "tableForms": [
-                {
-                  "title": "日期",
-                  "component": "date1",
-                  "editablenode": "",
-                  "name": "sdate"
-                },
-                {
-                  "title": "出发地",
-                  "editablenode": "",
-                  "component": "text",
-                  "name": "sdder"
-                },
-                {
-                  "title": "到达地",
-                  "editablenode": "",
-                  "component": "text",
-                  "name": "edder"
-                },
-                {
-                  "title": "往返交通金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "roudtramon"
-                },
-                {
-                  "title": "住宿金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "holmou"
-                },
-                {
-                  "title": "餐饮金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "cymou"
-                },
-                {
-                  "title": "交通金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "tramou"
-                },
-                {
-                  "title": "招待金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "zdmou"
-                },
-                {
-                  "title": "其他金额",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "othmou"
-                },
-                {
-                  "title": "合计",
-                  "editablenode": "",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "totalmou"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title": "财务审核",
           "component": "panel",
           "panel_id": "cw",
@@ -831,6 +908,7 @@
               "component": "table_form",
               "titleIndex": 0,
               "basePath": "fiviews",
+              "id": "fiviews_table_one",
               "tableForms": [
                 {
                   "title": "费用科目",

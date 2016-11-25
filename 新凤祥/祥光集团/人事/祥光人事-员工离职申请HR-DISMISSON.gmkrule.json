@@ -134,9 +134,17 @@
           "title": "离职原因",
           "component": "text",
           "name": "dimission.leavereason"
-        },
+        }
+      ]
+    },
+    {
+      "title": "离职访谈",
+      "pageid": "lzft_page_hr",
+      "component": "panel",
+      "tasknode": "hrdisinterview",
+      "subComponents": [
         {
-          "title": "离职访谈",
+          "title": "离职原因",
           "component": "checkbox",
           "name": "dimission.interviewleavereason",
           "id": "interviewleavereason_on_handle",
@@ -148,21 +156,37 @@
             "text": [
               "reason"
             ]
+          },
+          "validation": {
+            "pageid": "lzft_page_hr",
+            "required": true,
+            "validateMsg": "请选择离职原因"
           }
         },
         {
-          "title": "离职访谈",
+          "title": "离职原因",
           "component": "checkbox",
           "name": "dimission.interviewleavereason",
           "id": "interviewleavereason_on_view",
           "notShowOnHandle": true,
-          "editablenode": "hrdisinterview",
           "refersToArray": {
             "basePath": "dimission.interviewleavereason.reasons",
             "value": "id",
             "text": [
               "reason"
             ]
+          }
+        },
+        {
+          "title": "访谈记录",
+          "component": "textarea",
+          "rows": 5,
+          "name": "dimission.leavedescription",
+          "editablenode": "hrdisinterview",
+          "validation": {
+            "pageid": "lzft_page_hr",
+            "required": true,
+            "validateMsg": "请填写访谈记录"
           }
         }
       ]
