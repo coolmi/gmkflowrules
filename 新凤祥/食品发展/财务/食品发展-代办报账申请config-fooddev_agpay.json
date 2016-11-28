@@ -204,493 +204,523 @@
           "title": "备注",
           "component": "text",
           "name": "app.m_remark"
-        }
-      ]
-    },
-    {
-      "title": "通讯费",
-      "component": "panel",
-      "pageid": "txf",
-      "id": "txf1",
-      "subComponents": [
+        },
         {
-          "component": "formLabelLink",
-          "titleIndex": 1,
-          "id": "txfyf",
-          "basePath": "txfs",
-          "linkForms": [
+          "title": "通讯费",
+          "component": "panel",
+          "panel_id": "txf",
+          "id": "txf1",
+          "subComponents": [
             {
-              "title": "月份",
-              "component": "select",
-              "name": "txf_month",
-              "options": [
+              "component": "formLabelLink",
+              "titleIndex": 1,
+              "id": "txfyf",
+              "basePath": "txfs",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["1"]
+              }],
+              "linkForms": [
                 {
-                  "text": "一月",
-                  "value": "1"
+                  "title": "月份",
+                  "component": "select",
+                  "name": "txf_month",
+                  "options": [
+                    {
+                      "text": "一月",
+                      "value": "1"
+                    },
+                    {
+                      "text": "二月",
+                      "value": "2"
+                    },
+                    {
+                      "text": "三月",
+                      "value": "3"
+                    },
+                    {
+                      "text": "四月",
+                      "value": "4"
+                    },
+                    {
+                      "text": "五月",
+                      "value": "5"
+                    },
+                    {
+                      "text": "六月",
+                      "value": "6"
+                    },
+                    {
+                      "text": "七月",
+                      "value": "7"
+                    },
+                    {
+                      "text": "八月",
+                      "value": "8"
+                    },
+                    {
+                      "text": "九月",
+                      "value": "9"
+                    },
+                    {
+                      "text": "十月",
+                      "value": "10"
+                    },
+                    {
+                      "text": "十一月",
+                      "value": "11"
+                    },
+                    {
+                      "text": "十二月",
+                      "value": "12"
+                    }
+                  ]
                 },
                 {
-                  "text": "二月",
-                  "value": "2"
+                  "title": "通讯费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "txf_f"
                 },
                 {
-                  "text": "三月",
-                  "value": "3"
-                },
-                {
-                  "text": "四月",
-                  "value": "4"
-                },
-                {
-                  "text": "五月",
-                  "value": "5"
-                },
-                {
-                  "text": "六月",
-                  "value": "6"
-                },
-                {
-                  "text": "七月",
-                  "value": "7"
-                },
-                {
-                  "text": "八月",
-                  "value": "8"
-                },
-                {
-                  "text": "九月",
-                  "value": "9"
-                },
-                {
-                  "text": "十月",
-                  "value": "10"
-                },
-                {
-                  "text": "十一月",
-                  "value": "11"
-                },
-                {
-                  "text": "十二月",
-                  "value": "12"
+                  "title": "超标准费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "txf_cf"
                 }
               ]
             },
             {
-              "title": "通讯费用",
+              "title": "总计(小写)",
               "component": "text",
               "datatype": "money",
-              "name": "txf_f"
+              "name": "app.txf_fee"
             },
             {
-              "title": "超标准费用",
+              "title": "总计(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "app.txf_fee_dx",
+              "name": "app.txf_fee"
+            },
+            {
+              "title": "费用超标金额",
               "component": "text",
               "datatype": "money",
-              "name": "txf_cf"
+              "name": "app.txf_cfee"
+            },
+            {
+              "title": "个人超限说明",
+              "component": "textarea",
+              "rows": "3",
+              "name": "app.txf_cremark"
             }
           ]
         },
         {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.txf_fee"
-        },
-        {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.txf_fee_dx",
-          "name": "app.txf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.txf_cfee"
-        },
-        {
-          "title": "个人超限说明",
-          "component": "textarea",
-          "rows": "3",
-          "name": "app.txf_cremark"
-        }
-      ]
-    },
-    {
-      "title": "交通费",
-      "component": "panel",
-      "pageid": "jtf",
-      "subComponents": [
-        {
-          "component": "formLabelLink",
-          "titleIndex": 4,
-          "id": "jtfjtfs",
-          "basePath": "jtfs",
-          "linkForms": [
+          "title": "交通费",
+          "component": "panel",
+          "panel_id": "jtf",
+          "subComponents": [
             {
-              "title": "日期",
-              "component": "date1",
-              "name": "jtf_date"
-            },
-            {
-              "title": "出发地",
-              "component": "text",
-              "name": "jtf_splace"
-            },
-            {
-              "title": "到达地",
-              "component": "text",
-              "name": "jtf_eplace"
-            },
-            {
-              "title": "具体地点",
-              "component": "text",
-              "name": "jtf_dplace"
-            },
-            {
-              "title": "类别",
-              "component": "select",
-              "name": "jtf_dplace",
-              "options": [
+              "component": "formLabelLink",
+              "titleIndex": 4,
+              "id": "jtfjtfs",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["2"]
+              }],
+              "basePath": "jtfs",
+              "linkForms": [
                 {
-                  "text": "飞机",
-                  "value": "1"
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "jtf_date"
                 },
                 {
-                  "text": "动车",
-                  "value": "2"
+                  "title": "出发地",
+                  "component": "text",
+                  "name": "jtf_splace"
                 },
                 {
-                  "text": "其他火车(400公里内)",
-                  "value": "3"
+                  "title": "到达地",
+                  "component": "text",
+                  "name": "jtf_eplace"
                 },
                 {
-                  "text": "其他火车(超过400公里)",
-                  "value": "4"
+                  "title": "具体地点",
+                  "component": "text",
+                  "name": "jtf_dplace"
                 },
                 {
-                  "text": "汽车",
-                  "value": "5"
+                  "title": "类别",
+                  "component": "select",
+                  "name": "jtf_dplace",
+                  "options": [
+                    {
+                      "text": "飞机",
+                      "value": "1"
+                    },
+                    {
+                      "text": "动车",
+                      "value": "2"
+                    },
+                    {
+                      "text": "其他火车(400公里内)",
+                      "value": "3"
+                    },
+                    {
+                      "text": "其他火车(超过400公里)",
+                      "value": "4"
+                    },
+                    {
+                      "text": "汽车",
+                      "value": "5"
+                    },
+                    {
+                      "text": "轮船",
+                      "value": "6"
+                    }
+                  ]
                 },
                 {
-                  "text": "轮船",
-                  "value": "6"
+                  "title": "席别",
+                  "component": "text",
+                  "name": "jtf_xb"
+                },
+                {
+                  "title": "交通金额",
+                  "component": "text",
+                  "name": "jtf_f"
+                },
+                {
+                  "title": "事由",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "jtf_why"
+                },
+                {
+                  "title": "超标准费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "jtf_cf"
                 }
               ]
             },
             {
-              "title": "席别",
-              "component": "text",
-              "name": "jtf_xb"
-            },
-            {
-              "title": "交通金额",
-              "component": "text",
-              "name": "jtf_f"
-            },
-            {
-              "title": "事由",
-              "component": "textarea",
-              "rows": "3",
-              "name": "jtf_why"
-            },
-            {
-              "title": "超标准费用",
+              "title": "总计(小写)",
               "component": "text",
               "datatype": "money",
-              "name": "jtf_cf"
+              "name": "app.jtf_fee"
+            },
+            {
+              "title": "总计(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "app.jtf_fee_dx",
+              "name": "app.jtf_fee"
+            },
+            {
+              "title": "费用超标金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.jtf_cfee"
             }
           ]
         },
         {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.jtf_fee"
-        },
-        {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.jtf_fee_dx",
-          "name": "app.jtf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.jtf_cfee"
-        }
-      ]
-    },
-    {
-      "title": "业务招待费",
-      "component": "panel",
-      "pageid": "ywzdf",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 2,
-          "id": "ywzdtfs",
-          "basePath": "zdfs",
-          "tableForms": [
+          "title": "业务招待费",
+          "component": "panel",
+          "panel_id": "ywzdf",
+          "subComponents": [
             {
-              "title": "招待日期",
-              "component": "date1",
-              "name": "zdf_date"
-            },
-            {
-              "title": "出席员工姓名",
-              "component": "text",
-              "name": "zdf_nms"
-            },
-            {
-              "title": "客户",
-              "component": "text",
-              "name": "zdf_guests"
-            },
-            {
-              "title": "招待地点",
-              "component": "text",
-              "name": "zdf_place"
-            },
-            {
-              "title": "用餐人数",
-              "component": "text",
-              "name": "zdf_sums"
-            },
-            {
-              "title": "消费金额",
-              "component": "text",
-              "name": "zdf_f"
-            },
-            {
-              "title": "超标准金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "zdf_cf"
-            },
-            {
-              "title": "事由",
-              "component": "textarea",
-              "rows": "3",
-              "name": "zdf_why"
-            },
-            {
-              "title": "备注",
-              "component": "textarea",
-              "rows": "3",
-              "name": "zdf_rmk"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "餐饮费",
-      "component": "panel",
-      "pageid": "cyf",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 1,
-          "id": "cyfzzslx",
-          "basePath": "cyfs",
-          "tableForms": [
-            {
-              "title": "日期",
-              "component": "date1",
-              "name": "cyf_date"
-            },
-            {
-              "title": "发生地",
-              "component": "text",
-              "name": "cyf_place"
-            },
-            {
-              "title": "消费金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "cyf_f"
-            },
-            {
-              "title": "事由",
-              "component": "textarea",
-              "rows": "3",
-              "name": "cyf_why"
-            },
-            {
-              "title": "超标准费用",
-              "component": "text",
-              "datatype": "money",
-              "name": "cyf_cf"
+              "component": "table_form",
+              "titleIndex": 2,
+              "id": "ywzdtfs",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["3"]
+              }],
+              "basePath": "zdfs",
+              "tableForms": [
+                {
+                  "title": "招待日期",
+                  "component": "date1",
+                  "name": "zdf_date"
+                },
+                {
+                  "title": "出席员工姓名",
+                  "component": "text",
+                  "name": "zdf_nms"
+                },
+                {
+                  "title": "客户",
+                  "component": "text",
+                  "name": "zdf_guests"
+                },
+                {
+                  "title": "招待地点",
+                  "component": "text",
+                  "name": "zdf_place"
+                },
+                {
+                  "title": "用餐人数",
+                  "component": "text",
+                  "name": "zdf_sums"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "name": "zdf_f"
+                },
+                {
+                  "title": "超标准金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "zdf_cf"
+                },
+                {
+                  "title": "事由",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "zdf_why"
+                },
+                {
+                  "title": "备注",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "zdf_rmk"
+                }
+              ]
             }
           ]
         },
         {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.cyf_fee"
-        },
-        {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.cyf_fee_dx",
-          "name": "app.cyf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.cyf_cfee"
-        }
-      ]
-    },
-    {
-      "title": "公关费",
-      "component": "panel",
-      "pageid": "ggf",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 2,
-          "id": "zdfjtfs",
-          "basePath": "ggfs",
-          "tableForms": [
+          "title": "餐饮费",
+          "component": "panel",
+          "panel_id": "cyf",
+          "subComponents": [
             {
-              "title": "招待日期",
-              "component": "date1",
-              "name": "ggf_date"
-            },
-            {
-              "title": "出席员工姓名",
-              "component": "text",
-              "name": "ggf_nms"
-            },
-            {
-              "title": "客户",
-              "component": "text",
-              "name": "ggf_guests"
-            },
-            {
-              "title": "招待地点",
-              "component": "text",
-              "name": "ggf_place"
-            },
-            {
-              "title": "消费金额",
-              "component": "text",
-              "name": "ggf_f"
-            },
-            {
-              "title": "超标准金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "ggf_cf"
-            },
-            {
-              "title": "事由",
-              "component": "textarea",
-              "rows": "3",
-              "name": "ggf_why"
-            },
-            {
-              "title": "备注",
-              "component": "textarea",
-              "rows": "3",
-              "name": "ggf_rmk"
-            }
-          ]
-        },
-        {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.ggf_fee"
-        },
-        {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.ggf_fee_dx",
-          "name": "app.ggf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.ggf_cfee"
-        }
-      ]
-    },
-    {
-      "title": "其他费用",
-      "component": "panel",
-      "pageid": "snjt",
-      "subComponents": [
-        {
-          "component": "formLabelLink",
-          "titleIndex": 4,
-          "id": "snjtjtfs",
-          "basePath": "qtfs",
-          "linkForms": [
-            {
-              "title": "日期",
-              "component": "date1",
-              "name": "qtf_date"
-            },
-            {
-              "title": "消费金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "qtf_f"
-            },
-            {
-              "title": "公司代码",
-              "component": "labelLink",
-              "editablenode": "",
-              "name": "qtf_km",
-              "link_name": "KSTAR",
-              "label": [
-                "qtkms.SMEMO"
+              "component": "table_form",
+              "titleIndex": 1,
+              "id": "cyfzzslx",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["4"]
+              }],
+              "basePath": "cyfs",
+              "tableForms": [
+                {
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "cyf_date"
+                },
+                {
+                  "title": "发生地",
+                  "component": "text",
+                  "name": "cyf_place"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "cyf_f"
+                },
+                {
+                  "title": "事由",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "cyf_why"
+                },
+                {
+                  "title": "超标准费用",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "cyf_cf"
+                }
               ]
             },
             {
-              "title": "内容",
-              "component": "textarea",
-              "rows": "3",
-              "name": "qtf_content"
-            },
-            {
-              "title": "超标准金额",
+              "title": "总计(小写)",
               "component": "text",
               "datatype": "money",
-              "name": "qtf_cf"
+              "name": "app.cyf_fee"
+            },
+            {
+              "title": "总计(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "app.cyf_fee_dx",
+              "name": "app.cyf_fee"
+            },
+            {
+              "title": "费用超标金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.cyf_cfee"
             }
           ]
         },
+
         {
-          "title": "总计(小写)",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.qtf_fee"
+          "title": "公关费",
+          "component": "panel",
+          "panel_id": "ggf",
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 2,
+              "id": "zdfjtfs",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["5"]
+              }],
+              "basePath": "ggfs",
+              "tableForms": [
+                {
+                  "title": "招待日期",
+                  "component": "date1",
+                  "name": "ggf_date"
+                },
+                {
+                  "title": "出席员工姓名",
+                  "component": "text",
+                  "name": "ggf_nms"
+                },
+                {
+                  "title": "客户",
+                  "component": "text",
+                  "name": "ggf_guests"
+                },
+                {
+                  "title": "招待地点",
+                  "component": "text",
+                  "name": "ggf_place"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "name": "ggf_f"
+                },
+                {
+                  "title": "超标准金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "ggf_cf"
+                },
+                {
+                  "title": "事由",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "ggf_why"
+                },
+                {
+                  "title": "备注",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "ggf_rmk"
+                }
+              ]
+            },
+            {
+              "title": "总计(小写)",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.ggf_fee"
+            },
+            {
+              "title": "总计(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "app.ggf_fee_dx",
+              "name": "app.ggf_fee"
+            },
+            {
+              "title": "费用超标金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.ggf_cfee"
+            }
+          ]
         },
+
         {
-          "title": "总计(大写)",
-          "component": "text",
-          "datatype": "money2dx",
-          "dxname": "app.qtf_fee_dx",
-          "name": "app.qtf_fee"
-        },
-        {
-          "title": "费用超标金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "app.qtf_cfee"
+          "title": "其他费用",
+          "component": "panel",
+          "panel": "snjt",
+          "subComponents": [
+            {
+              "component": "formLabelLink",
+              "titleIndex": 4,
+              "id": "snjtjtfs",
+              "showLinkage": [{
+                "id": "m_retp_id",
+                "values": ["6"]
+              }],
+              "basePath": "qtfs",
+              "linkForms": [
+                {
+                  "title": "日期",
+                  "component": "date1",
+                  "name": "qtf_date"
+                },
+                {
+                  "title": "消费金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "qtf_f"
+                },
+                {
+                  "title": "公司代码",
+                  "component": "labelLink",
+                  "editablenode": "",
+                  "name": "qtf_km",
+                  "link_name": "KSTAR",
+                  "label": [
+                    "qtkms.SMEMO"
+                  ]
+                },
+                {
+                  "title": "内容",
+                  "component": "textarea",
+                  "rows": "3",
+                  "name": "qtf_content"
+                },
+                {
+                  "title": "超标准金额",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "qtf_cf"
+                }
+              ]
+            },
+            {
+              "title": "总计(小写)",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.qtf_fee"
+            },
+            {
+              "title": "总计(大写)",
+              "component": "text",
+              "datatype": "money2dx",
+              "dxname": "app.qtf_fee_dx",
+              "name": "app.qtf_fee"
+            },
+            {
+              "title": "费用超标金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "app.qtf_cfee"
+            }
+          ]
         }
       ]
     },
+
+
+
+
     {
       "title": "财务审批信息",
       "component": "panel",
