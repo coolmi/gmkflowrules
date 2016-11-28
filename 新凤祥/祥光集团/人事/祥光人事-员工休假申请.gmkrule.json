@@ -1,7 +1,9 @@
 {
   "id": "OA_LEAVE",
   "handleOnPC": {
-    "tasknode": ["ACTUAL"],
+    "tasknode": [
+      "ACTUAL"
+    ],
     "flag": [
       "resubmit"
     ]
@@ -190,7 +192,8 @@
             {
               "title": "否",
               "value": "1"
-            }],
+            }
+          ],
           "showLinkage": [
             {
               "id": "ltype",
@@ -199,8 +202,7 @@
               ]
             }
           ]
-        }
-      ,
+        },
         {
           "title": "休假时段",
           "component": "select",
@@ -239,8 +241,7 @@
               ]
             }
           ]
-        }
-      ,
+        },
         {
           "title": "是否头胎",
           "component": "radio",
@@ -349,7 +350,7 @@
         {
           "title": "胞胎数",
           "component": "radio",
-          "id":"births",
+          "id": "births",
           "name": "leave.births",
           "options": [
             {
@@ -380,7 +381,6 @@
                 "2"
               ]
             }
-
           ]
         },
         {
@@ -405,25 +405,49 @@
         {
           "title": "实际休假开始日期",
           "component": "date1",
-          "tasknode":"ACTUAL",
+          "tasknode": "ACTUAL,LEADER",
+          "editablenode": "ACTUAL,LEADER",
+          "validation": {
+            "pageid": "jbxx",
+            "required": true,
+            "validateMsg": "实际休假开始日期必填"
+          },
           "name": "leave.begdar"
         },
         {
           "title": "实际休假结束日期",
           "component": "date1",
-          "tasknode":"ACTUAL",
+          "tasknode": "ACTUAL,LEADER",
+          "editablenode": "ACTUAL,LEADER",
+          "validation": {
+            "pageid": "jbxx",
+            "required": true,
+            "validateMsg": "实际休假结束日期必填"
+          },
           "name": "leave.enddar"
         },
         {
           "title": "实际休假天数",
           "component": "text",
-          "tasknode":"ACTUAL",
+          "tasknode": "ACTUAL,LEADER",
+          "editablenode": "ACTUAL,LEADER",
+          "validation": {
+            "pageid": "jbxx",
+            "required": true,
+            "validateMsg": "实际休假天数必填"
+          },
           "name": "leave.lnumr"
         },
         {
           "title": "核销假说明",
           "component": "text",
-          "tasknode":"ACTUAL",
+          "tasknode": "ACTUAL,LEADER",
+          "editablenode": "ACTUAL,LEADER",
+          "validation": {
+            "pageid": "jbxx",
+            "required": true,
+            "validateMsg": "核销假说明必填"
+          },
           "name": "leave.tmldt"
         }
       ]
