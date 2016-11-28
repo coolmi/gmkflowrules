@@ -20,7 +20,10 @@
       {
         "selectIndex": 9,
         "tasknode": [
-          "inneraudit","financeApprove","expenseAccount","cashierpay"
+          "inneraudit",
+          "financeApprove",
+          "expenseAccount",
+          "cashierpay"
         ]
       }
     ]
@@ -368,7 +371,7 @@
         {
           "title": "备注",
           "component": "textarea",
-          "rows": "2",
+          "rows": 4,
           "name": "reimnottravel.telremarks"
         }
       ]
@@ -451,8 +454,87 @@
         {
           "title": "备注",
           "component": "textarea",
-          "rows": "2",
+          "rows": 4,
           "name": "reimnottravel.transremarks"
+        }
+      ]
+    },
+    {
+      "title": "限额交通费",
+      "component": "panel",
+      "pageid": "xejtf_page",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 3,
+          "basePath": "limtranslist",
+          "tableForms": [
+            {
+              "title": "日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "sdate"
+            },
+            {
+              "title": "出发地",
+              "component": "text",
+              "name": "saddr"
+            },
+            {
+              "title": "到达地",
+              "component": "text",
+              "name": "eaddr"
+            },
+            {
+              "title": "具体地点",
+              "component": "text",
+              "name": "detailaddress"
+            },
+            {
+              "title": "类别",
+              "component": "select",
+              "name": "stype",
+              "refer": "trstsyps"
+            },
+            {
+              "title": "席别",
+              "component": "select",
+              "name": "kuname",
+              "refer": "matlevels"
+            },
+            {
+              "title": "交通金额",
+              "component": "text",
+              "name": "citydmbtr",
+              "datatype": "money"
+            },
+            {
+              "title": "事由",
+              "component": "textarea",
+              "rows": 4,
+              "name": "reason"
+            }
+          ]
+        },
+        {
+          "title": "总计（小写）",
+          "component": "text",
+          "datatype": "money",
+          "name": "limtranssum"
+        },
+        {
+          "title": "总计（大写）",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "limtranssumu",
+          "name": "limtranssum"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "rows": 4,
+          "name": "reimnottravel.limtransremarks"
         }
       ]
     },
@@ -526,12 +608,13 @@
         {
           "title": "个人超限额说明",
           "component": "textarea",
-          "rows": "3",
+          "rows": 4,
           "name": "reimnottravel.businessoutsmemo"
-        },{
+        },
+        {
           "title": "备注",
           "component": "textarea",
-          "rows": "3",
+          "rows": 4,
           "name": "reimnottravel.businessremarks"
         }
       ]
@@ -592,7 +675,7 @@
         {
           "title": "备注",
           "component": "textarea",
-          "rows": "2",
+          "rows": 4,
           "name": "reimnottravel.cateremarks"
         }
       ]
@@ -640,19 +723,19 @@
           "title": "总计（小写）",
           "component": "text",
           "datatype": "money",
-          "name": "reimnottravel.othersum"
+          "name": "othersum"
         },
         {
           "title": "总计（大写）",
           "component": "text",
           "datatype": "money2dx",
           "dxname": "travelreimcap",
-          "name": "reimnottravel.othersum"
+          "name": "othersum"
         },
         {
           "title": "个人超限额说明",
           "component": "textarea",
-          "rows": "2",
+          "rows": 4,
           "name": "reimnottravel.otheroutsmemo"
         }
       ]
@@ -772,7 +855,7 @@
         {
           "title": "付款金额",
           "component": "text",
-          "datatype":"money",
+          "datatype": "money",
           "name": "reimnottravel.exchrate",
           "sumValue": {
             "arrayPath": "fiviews",
@@ -849,6 +932,10 @@
         {
           "value": "2",
           "text": "交通费"
+        },
+        {
+          "value": "6",
+          "text": "限额交通费"
         },
         {
           "value": "3",
