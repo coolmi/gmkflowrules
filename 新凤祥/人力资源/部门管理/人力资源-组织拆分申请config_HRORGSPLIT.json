@@ -94,7 +94,7 @@
           "component": "formLabelLink",
           "id": "fylbfylx",
           "basePath": "orgchilds",
-          "titleIndex": 2,
+          "titleIndex": 0,
           "linkForms": [
             {
               "title": "拆分后组织名称",
