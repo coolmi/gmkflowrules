@@ -101,7 +101,9 @@
           "title": "转正人",
           "component": "label",
           "editablenode": "",
-          "label":["nachn"]
+          "label": [
+            "nachn"
+          ]
         },
         {
           "title": "员工编号",
@@ -130,15 +132,14 @@
         },
         {
           "title": "转正类型",
-
           "component": "label",
-          "middleName":[
+          "middleName": [
             "pperiodcentral.apptype",
             "massg"
           ],
           "label": [
-            "czlx.mgtxt"]
-
+            "czlx.mgtxt"
+          ]
         },
         {
           "title": "入职日期",
@@ -156,37 +157,69 @@
           "title": "毕业院校",
           "component": "text",
           "name": "graduate"
-        },{
+        },
+        {
           "title": "学历",
           "component": "text",
           "name": "education"
-        },{
+        },
+        {
           "title": "专业",
           "component": "text",
           "name": "specialty"
-        },{
+        },
+        {
           "title": "毕业日期",
           "component": "text",
           "name": "graduated"
-        },{
+        },
+        {
+          "title": "直线领导审核意见结果",
+          "component": "select",
+          "name": "pperiodcentral.tempc",
+          "tasknode": "usertask2,usertask8,usertask3,usertask4,usertask5,usertask6",
+          "editablenode": "usertask2",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "提前一个月转正",
+              "value": "0"
+            },
+            {
+              "text": "提前二个月转正",
+              "value": "1"
+            },
+            {
+              "text": "同意正常转正",
+              "value": "2"
+            },
+            {
+              "text": "延长一个月转正",
+              "value": "3"
+            },
+            {
+              "text": "延长两个月转正",
+              "value": "4"
+            },
+            {
+              "text": "调离此岗",
+              "value": "5"
+            },
+            {
+              "text": "辞退",
+              "value": "6"
+            }
+          ]
+        },
+        {
           "title": "个人总结",
           "component": "textarea",
           "name": "pperiodcentral.sumwork"
         }
-
       ]
-    },
-    {
-      "title": "附件信息",
-      "pageid": "fjxx",
-      "component": "panel",
-      "subComponents": []
-    },
-    {
-      "title": "审批记录",
-      "pageid": "spjl",
-      "component": "panel",
-      "subComponents": []
     }
   ]
 }
