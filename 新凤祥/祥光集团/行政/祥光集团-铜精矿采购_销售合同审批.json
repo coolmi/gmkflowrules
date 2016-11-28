@@ -1,8 +1,13 @@
 {
   "id": "adm_purchasesalecontract",
+  "hiddenFiles":{
+    "flowFlag":{
+      "tasknode":["internalaudit"]
+    }
+  },
   "handleOnPC": {
     "tasknode": [
-      "usertask2"
+      "usertask2,usertask5"
     ],
     "flag": [
       "resubmit"

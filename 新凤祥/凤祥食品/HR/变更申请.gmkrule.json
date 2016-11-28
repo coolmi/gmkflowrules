@@ -135,11 +135,11 @@
 					"options": [
 						{
 							"text": "申请",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "变更",
-							"value": "1",
+							"value": "1"
 						}
 					]
 				},
@@ -194,11 +194,11 @@
 					"options": [
 						{
 							"text": "是",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "否",
-							"value": "1",
+							"value": "1"
 						}
 					]
 				},

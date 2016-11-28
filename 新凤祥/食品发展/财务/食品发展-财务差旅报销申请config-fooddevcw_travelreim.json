@@ -101,12 +101,14 @@
         {
           "title": "",
           "component": "hidden",
-          "name": "travelreim.ltradout"
+          "id":"ltradout_id",
+          "name": "ltradout"
         },
         {
           "title": "",
           "component": "hidden",
-          "name": "travelreim.cityout"
+          "id":"cityout_id",
+          "name": "cityout"
         }
       ]
     },
@@ -354,9 +356,9 @@
               ],
               "validation": {
                 "pageid": "sqxxmx",
+                "panel_id": "cl",
                 "required": true,
-                "validateMsg": "差旅往返交通、住宿、餐饮费是否超额必选",
-                "regexs": ""
+                "validateMsg": "差旅往返交通、住宿、餐饮费是否超额必选"
               },
               "showLinkage": [
                 {
@@ -365,7 +367,7 @@
                     "1"
                   ]
                 },{
-                  "id": "ltradout",
+                  "id": "ltradout_id",
                   "values": [
                     "true"
                   ]
@@ -456,7 +458,7 @@
                   ]
                 },
                 {
-                  "id": "cityout",
+                  "id": "cityout_id",
                   "values": [
                     "true"
                   ]
@@ -464,6 +466,7 @@
               ],
               "validation": {
                 "pageid": "sqxxmx",
+                "panel_id": "jt",
                 "required": true,
                 "validateMsg": "差旅交通费是否超额必选",
                 "regexs": ""
