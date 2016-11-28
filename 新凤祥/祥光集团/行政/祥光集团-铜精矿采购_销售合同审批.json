@@ -170,6 +170,254 @@
           "name": "mainModel.biz"
         }
       ]
+    },
+    {
+      "title": "合同审批",
+      "component": "panel",
+      "pageid": "htsp_page",
+      "tasknode": "internalaudit",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "hidden",
+          "id": "fwsh_hidden",
+          "name": "fwsh"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id": "wlsh_hidden",
+          "name": "wlsh"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id": "ylsh_hidden",
+          "name": "ylsh"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id": "zjsh_hidden",
+          "name": "zjsh"
+        },
+        {
+          "title": "原料事业部意见",
+          "component": "textarea",
+          "name": "mainModel.htspyj",
+          "id": "htspyj_ylsh",
+          "editablenode": "internalaudit",
+          "hiddenNotPost": true,
+          "validation": {
+            "pageid": "htsp_page",
+            "required": true,
+            "validateMsg": "原料事业部意见必填"
+          },
+          "showLinkage": [
+            {
+              "id": "ylsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同文本",
+          "component": "panel",
+          "panel_id": "yltk_panel",
+          "showLinkage": [
+            {
+              "id": "ylsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "allfiles",
+              "titleIndex": 0,
+              "id": "files_ylsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "法务意见",
+          "component": "textarea",
+          "name": "mainModel.htspyj",
+          "id": "htspyj_fwsh",
+          "editablenode": "internalaudit",
+          "hiddenNotPost": true,
+          "validation": {
+            "pageid": "htsp_page",
+            "required": true,
+            "validateMsg": "法务意见必填"
+          },
+          "showLinkage": [
+            {
+              "id": "fwsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "法务条款",
+          "component": "panel",
+          "panel_id": "fwtk_panel",
+          "showLinkage": [
+            {
+              "id": "fwsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "allfiles",
+              "titleIndex": 0,
+              "id": "files_fwsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "资金意见",
+          "component": "textarea",
+          "name": "mainModel.htspyj",
+          "id": "htspyj_zjsh",
+          "editablenode": "internalaudit",
+          "hiddenNotPost": true,
+          "validation": {
+            "pageid": "htsp_page",
+            "required": true,
+            "validateMsg": "资金意见必填"
+          },
+          "showLinkage": [
+            {
+              "id": "zjsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "资金条款",
+          "component": "panel",
+          "panel_id": "zjtk_panel",
+          "showLinkage": [
+            {
+              "id": "zjsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "allfiles",
+              "titleIndex": 0,
+              "id": "files_zjsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "物流意见",
+          "component": "textarea",
+          "name": "mainModel.htspyj",
+          "id": "htspyj_wlsh",
+          "hiddenNotPost": true,
+          "editablenode": "internalaudit",
+          "validation": {
+            "pageid": "htsp_page",
+            "required": true,
+            "validateMsg": "物流意见必填"
+          },
+          "showLinkage": [
+            {
+              "id": "wlsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "物流条款",
+          "component": "panel",
+          "panel_id": "wltk_panel",
+          "showLinkage": [
+            {
+              "id": "wlsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "allfiles",
+              "titleIndex": 0,
+              "id": "files_wlsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
