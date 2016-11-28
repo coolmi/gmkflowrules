@@ -106,7 +106,7 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "所属部门",
+          "title": "所属公司",
           "component": "label",
           "label": [
             "pubexpense.fkbukrs",
@@ -235,7 +235,12 @@
           "title": "核减金额",
           "component": "text",
           "editablenode":"usertask3",
-          "name": "pubexpense.hjjexx"
+          "name": "pubexpense.hjjexx",
+          "validation":{
+            "pageid":"sqxx",
+            "required":true,
+            "validateMsg":"请填写核减金额",
+          }
         },
         {
           "title": "核减金额(大写)",

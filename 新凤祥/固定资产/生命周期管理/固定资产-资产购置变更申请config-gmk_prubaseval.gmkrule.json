@@ -2,8 +2,6 @@
   "id": "gmk_prubaseval",
   "handleOnPC": {
     "tasknode": [
-      "usertask3",
-      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -303,7 +301,42 @@
                 {
                   "title": "采购执行人员",
                   "component": "text",
-                  "name": "exusername"
+                  "name": "exusername",
+                  "emptyHidden":true
+                },
+
+                {
+                  "title": "采购执行人员",
+                  "tasknode": "usertask3",
+                  "editablenode": "usertask3",
+                  "component": "text",
+                  "name": "expostidlist",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "values": [
+                        "1"
+                      ],
+                      "linkFlag": "normal"
+                    }
+                  ],
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "fxjj_pruappcval2_panel",
+                    "table_id": "fxjj_pruappcval2",
+                    "required": true,
+                    "validateMsg": "请选择执行人员"
+                  },
+                  "forSelectPerson": {
+                    "onclick": "getuser",
+                    "postshow": true,
+                    "showformname": "exusernamelist",
+                    "valuetype": ["objid"],
+                    "showtype": [
+                      "nachn",
+                      "stext"
+                    ]
+                  }
                 },
                 {
                   "title": "取消标识",
@@ -347,6 +380,7 @@
                 {
                   "title": "资产编号",
                   "component": "text",
+                  "editable":true,
                   "name": "propertycode"
                 },
                 {
@@ -362,28 +396,119 @@
                 {
                   "title": "采购执行人员",
                   "component": "text",
+                  "emptyHidden": true,
                   "name": "exusername"
+                },
+                {
+                  "title": "cc",
+                  "component": "hidden",
+                  "editablenode": "usertask3,usertask4",
+                  "name": "vid"
+                },
+                {
+                  "title": "采购执行人员",
+                  "tasknode": "usertask3",
+                  "editablenode": "usertask3",
+                  "component": "text",
+                  "name": "expostidexelist",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "values": [
+                        "2"
+                      ],
+                      "linkFlag": "normal"
+                    }
+                  ],
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "table_id": "sqxxx_v",
+                    "required": true,
+                    "validateMsg": "请选择执行人员"
+                  },
+                  "forSelectPerson": {
+                    "onclick": "getuser",
+                    "postshow": true,
+                    "showformname": "exusernameexelist",
+                    "valuetype": ["objid"],
+                    "showtype": [
+                      "nachn",
+                      "stext"
+                    ]
+                  }
                 },
                 {
                   "title": "合同单价",
                   "component": "text",
-                  "datatype": "money",
-                  "name": "contractvalue"
+                  "editablenode": "usertask4",
+                  "name": "contractvalue",
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "table_id": "sqxxx_v",
+                    "required": true,
+                    "validateMsg": "请选择合同单价"
+                  },
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "values": [
+                        "2"
+                      ],
+                      "linkFlag": "normal"
+                    }
+                  ]
                 },
                 {
                   "title": "币种",
                   "component": "text",
-                  "name": "waers"
+                  "editablenode": "usertask4",
+                  "name": "waers",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "values": [
+                        "2"
+                      ],
+                      "linkFlag": "normal"
+                    }
+                  ],
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "table_id": "sqxxx_v",
+                    "required": true,
+                    "validateMsg": "请选择币种"
+                  }
                 },
                 {
                   "title": "汇率",
                   "component": "text",
-                  "datatype": "money",
-                  "name": "exchangerate"
+                  "tasknode": "usertask4",
+                  "editablenode": "usertask4",
+                  "name": "exchangerate",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "values": [
+                        "2"
+                      ],
+                      "linkFlag": "normal"
+                    }
+                  ],
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "table_id": "sqxxx_v",
+                    "required": true,
+                    "validateMsg": "请选择合同单价"
+                  }
                 },
                 {
                   "title": "总价",
                   "component": "text",
+                  "tasknode": "usertask5,usertask7",
                   "datatype": "money",
                   "name": "r_contractvalue"
                 }
