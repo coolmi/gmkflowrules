@@ -2,7 +2,7 @@
   "id": "adm_internalcontract",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask1"
     ],
     "flag": [
       "resubmit"
