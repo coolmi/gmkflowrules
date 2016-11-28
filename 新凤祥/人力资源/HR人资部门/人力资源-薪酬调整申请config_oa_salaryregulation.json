@@ -99,13 +99,13 @@
       ]
     },
     {
-      "title": "薪酬调整明细",
+      "title": "调整明细",
       "component": "panel",
       "pageid": "xctzmx",
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 0,
           "id": "dqzybhxm",
           "basePath": "base",
           "tableForms": [
