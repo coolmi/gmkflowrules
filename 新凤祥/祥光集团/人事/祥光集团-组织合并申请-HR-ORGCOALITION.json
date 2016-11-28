@@ -41,16 +41,6 @@
           ]
         },
         {
-          "title": "所属部门",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "orgcoalition.sysbusinessunitname",
-            "-",
-            "orgcoalition.sysdeptname"
-          ]
-        },
-        {
           "title": "",
           "component": "hidden",
           "name": "orgcoalition.userid"
@@ -117,63 +107,76 @@
           "title": "上级组织",
           "component": "label",
           "editablenode": "",
-          "middleName":[
+          "middleName": [
             "orgcoalition.ptorgid",
             "objid"
           ],
           "label": [
-            "deptList.stext"]
+            "deptList.stext"
+          ]
         },
         {
-          "title":"组织层级",
-          "component":"label",
+          "title": "组织层级",
+          "component": "label",
           "editablenode": "",
-          "middleName":[
+          "middleName": [
             "orgcoalition.orglevel",
             "id"
           ],
           "label": [
-            "zbzzcjList.zzdzzcjms"]
-
+            "zbzzcjList.zzdzzcjms"
+          ]
         },
         {
-          "title":"组织总编",
+          "title": "组织总编",
           "component": "text",
           "editablenode": "",
           "name": "orgcoalition.orglgt"
         },
         {
+          "title": "事项原因",
+          "component": "textarea",
+          "rows": 4,
+          "name": "orgcoalition.reason"
+        },
+        {
+          "title": "生效日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "orgcoalition.begdate"
+        },
+        {
           "title": "组织信息",
-          "pageid": "ccmx",
+          "panel_id": "ccmx_panel",
           "component": "panel",
           "subComponents": [
-
             {
-              "component": "table_ccmx",
-              "titleIndex": 1,
+              "component": "table_form",
+              "titleIndex": 0,
               "basePath": "bases",
               "tableForms": [
                 {
-                  "title":"拟合并组织",
-                  "component":"text",
-                  "name":"cldorgname"
+                  "title": "拟合并组织",
+                  "component": "text",
+                  "name": "cldorgname"
                 },
                 {
-                  "title":"组织层级",
-                  "component":"text",
-                  "name":"orglevlname"
+                  "title": "组织层级",
+                  "component": "text",
+                  "name": "orglevlname"
                 },
                 {
-                  "title":"组织类型",
-                  "component":"text",
+                  "title": "组织类型",
+                  "component": "text",
                   "editablenode": "",
-                  "name":"orgstyname"
+                  "name": "orgstyname"
                 },
                 {
-                  "title":"所属公司",
-                  "component":"text",
+                  "title": "所属公司",
+                  "component": "text",
                   "editablenode": "",
-                  "name":"comname"
+                  "name": "comname"
                 }
               ]
             }
