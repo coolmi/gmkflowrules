@@ -147,12 +147,12 @@
                     },
                     {
                       "title": "所属事业部",
-                      "component": "text1",
+                      "component": "text",
                       "name": "jbxxszsyb"
                     },
                     {
                       "title": "预期效益",
-                      "component": "text1",
+                      "component": "text",
                       "name": "jbxxyqsy"
                     },
 
