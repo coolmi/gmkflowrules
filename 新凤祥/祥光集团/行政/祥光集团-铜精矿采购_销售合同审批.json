@@ -186,11 +186,11 @@
         {
           "title": "汇总意见",
           "component": "textarea",
-          "rows": 6,
+          "rows": 8,
           "name": "mainModel.hzyj"
         },
         {
-          "title": "资金条款",
+          "title": "条款明细",
           "component": "panel",
           "panel_id": "zjtk_panel",
           "subComponents": [
@@ -213,82 +213,9 @@
               ]
             }
           ]
-        },
-        {
-          "title": "物流条款",
-          "component": "panel",
-          "panel_id": "wltk_panel",
-          "subComponents": [
-            {
-              "component": "table_form",
-              "basePath": "allfiles",
-              "titleIndex": 0,
-              "id": "files_wlsh_table",
-              "tableForms": [
-                {
-                  "title": "文件名称",
-                  "component": "text",
-                  "name": "filename",
-                  "events": {
-                    "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "法务条款",
-          "component": "panel",
-          "panel_id": "fwtk_panel",
-          "subComponents": [
-            {
-              "component": "table_form",
-              "basePath": "allfiles",
-              "titleIndex": 0,
-              "id": "files_fwsh_table",
-              "tableForms": [
-                {
-                  "title": "文件名称",
-                  "component": "text",
-                  "name": "filename",
-                  "events": {
-                    "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "合同文本",
-          "component": "panel",
-          "panel_id": "yltk_panel",
-          "subComponents": [
-            {
-              "component": "table_form",
-              "basePath": "allfiles",
-              "titleIndex": 0,
-              "id": "files_ylsh_table",
-              "tableForms": [
-                {
-                  "title": "文件名称",
-                  "component": "text",
-                  "name": "filename",
-                  "events": {
-                    "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
-                }
-              ]
-            }
-          ]
         }
+
+
       ]
     },
     {
