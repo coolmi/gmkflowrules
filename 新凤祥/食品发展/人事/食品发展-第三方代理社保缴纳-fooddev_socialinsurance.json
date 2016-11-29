@@ -1,0 +1,224 @@
+{
+  "id": "fooddev_socialinsurance",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+
+    		{
+			"title": "申请信息",
+			"pageid": "panel_sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "社保类型",
+					"component": "select",
+					"id": "mainModel_m_instype",
+					"editablenode": "",
+					"name": "mainModel.m_instype",
+					"options": [
+						{
+							"text": "五险",
+							"value": "0"
+						},
+						{
+							"text": "五险一金",
+							"value": "1"
+						},
+						{
+							"text": "一金",
+							"value": "2"
+						}
+					]
+				},
+				{
+					"title": "参保人",
+					"component": "text",
+					"id": "mainModel_m_postid",
+					"editablenode": "",
+					"name": "mainModel.m_postid"
+				},
+				{
+					"title": "社保缴纳地",
+					"component": "text",
+					"id": "mainModel_m_place",
+					"editablenode": "",
+					"name": "mainModel.m_place"
+				},
+				{
+					"title": "社保申请人职务",
+					"component": "text",
+					"id": "mainModel_m_jobnm",
+					"editablenode": "",
+					"name": "mainModel.m_jobnm"
+				},
+				{
+					"title": "保险基数",
+					"component": "text",
+					"id": "mainModel_m_inslevle",
+					"editablenode": "",
+					"name": "mainModel.m_inslevle"
+				},
+				{
+					"title": "公积金基数",
+					"component": "text",
+					"id": "mainModel_m_inslevle2",
+					"editablenode": "",
+					"name": "mainModel.m_inslevle2"
+				},
+				{
+					"title": "入职时间",
+					"component": "text",
+					"id": "mainModel_m_indate",
+					"editablenode": "",
+					"name": "mainModel.m_indate",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "缴费开始时间",
+					"component": "text",
+					"id": "mainModel_m_update",
+					"editablenode": "",
+					"name": "mainModel.m_update",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},
+				{
+					"title": "联系电话",
+					"component": "text",
+					"id": "mainModel_m_tel",
+					"editablenode": "",
+					"name": "mainModel.m_tel"
+				},
+				{
+					"title": "身份证号",
+					"component": "text",
+					"id": "mainModel_m_code",
+					"editablenode": "",
+					"name": "mainModel.m_code"
+				}
+			]
+		}
+
+
+  ],
+  "refers": {
+  }
+}
