@@ -104,7 +104,7 @@
         {
           "title": "转移前上级组织",
           "component": "text",
-          "name": "orgtransfer.trforgname"
+          "name": "orgtransfer.bfptorgname"
         },
         {
           "title": "转移后组织名称",

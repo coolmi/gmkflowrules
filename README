@@ -32,6 +32,17 @@
   "refers"{}//列表项或者其他的关联备选内容
 }
 
+{
+    login_name: "yonghang.zhang",
+    nachn: "张永行",
+    objid: "GMK20037949",
+    otype: "S",
+    pernr: "GMK30017250",
+    stext: "软件开发岗",
+    zzddxlx: "S1",
+    zzdpx: 0
+}
+
 forms中一级内容(page)格式如下：
 {
   "title":"{页签显示内容}",
