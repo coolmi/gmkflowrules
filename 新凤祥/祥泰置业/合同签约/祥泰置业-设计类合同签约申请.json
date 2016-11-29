@@ -118,6 +118,7 @@
         {
           "title": "合同执行状态",
           "component": "select",
+          "id": "htzxzt_select",
           "name": "designcontract.htzxzt",
           "options": [
             {
@@ -127,6 +128,20 @@
             {
               "text": "后补",
               "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "后补原因",
+          "component": "textarea",
+          "rows": 4,
+          "name": "designcontract.hbyy",
+          "showLinkage": [
+            {
+              "id": "htzxzt_select",
+              "values": [
+                "1"
+              ]
             }
           ]
         },
@@ -181,6 +196,7 @@
         {
           "title": "需求类型",
           "component": "select",
+          "id": "xqlx_select",
           "name": "designcontract.xqlx",
           "options": [
             {
@@ -202,6 +218,19 @@
             {
               "text": "其他",
               "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "name": "designcontract.qtbz",
+          "showLinkage": [
+            {
+              "id": "xqlx_select",
+              "values": [
+                "4"
+              ]
             }
           ]
         },
@@ -384,7 +413,7 @@
         {
           "title": "印章管理员",
           "component": "text",
-          "name": "designcontract.yzgly"
+          "name": "sealnachn"
         },
         {
           "title": "印章使用",
