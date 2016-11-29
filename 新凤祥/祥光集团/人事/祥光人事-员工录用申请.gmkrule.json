@@ -1,7 +1,11 @@
 {
   "id": "HR-EMPLOYMENT",
   "handleOnPC": {
-    "tasknode": ["usertask8"],
+    "tasknode": [
+      "usertask8",
+      "hringaudit",
+      "offerconfirm"
+    ],
     "flag": [
       "resubmit"
     ]
@@ -123,7 +127,7 @@
         {
           "component": "formLabelLink",
           "titleIndex": 0,
-          "id":"zpxqxx_table",
+          "id": "zpxqxx_table",
           "basePath": "childrens",
           "linkForms": [
             {
@@ -143,13 +147,12 @@
                 "-",
                 "staffrectchildrens.stext"
               ]
-            } ,
+            },
             {
               "title": "岗位等级",
               "component": "text",
               "name": "cpostlevel"
             },
-
             {
               "title": "专业",
               "component": "text",
@@ -166,7 +169,7 @@
                 },
                 {
                   "text": "女",
-                  "value": ""
+                  "value": "1"
                 }
               ]
             },
@@ -185,7 +188,6 @@
               "component": "text",
               "name": "payment"
             }
-
           ]
         }
       ]
@@ -193,14 +195,13 @@
     {
       "title": "面试评价信息",
       "pageid": "mspjxx",
-
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 0,
           "basePath": "values",
-          "id":"mspjxx_table",
+          "id": "mspjxx_table",
           "tableForms": [
             {
               "title": "录用人姓名",
@@ -222,7 +223,6 @@
               "title": "面试官二",
               "component": "text",
               "name": "interviewb",
-
               "tmpValueName": "interviewnameb"
             },
             {
@@ -235,7 +235,6 @@
               "component": "text",
               "name": "interviewc",
               "tmpValueName": "interviewnamec"
-
             },
             {
               "title": "面试官三意见",
@@ -255,11 +254,13 @@
       "title": "offer确认",
       "pageid": "offerqr",
       "component": "panel",
+      "notShowOnHandle": true,
+      "tasknode": "offerconfirm",
       "subComponents": [
         {
-          "title": "offer回执",
+          "title": "类别",
           "component": "select",
-          "name": "offertypeid",
+          "name": "employment.offertypeid",
           "options": [
             {
               "text": "确认可入职",
@@ -274,6 +275,18 @@
               "value": "3"
             }
           ]
+        },
+        {
+          "tilte": "子类别",
+          "component": "checkbox",
+          "name": "offertypesubid",
+          "refersToArray": {
+            "basePath": "subOfferaffirms",
+            "value": "id",
+            "text": [
+              "affirmtypetxt"
+            ]
+          }
         },
         {
           "title": "备注",

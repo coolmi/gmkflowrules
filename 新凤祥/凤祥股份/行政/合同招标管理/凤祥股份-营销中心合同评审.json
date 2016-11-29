@@ -229,7 +229,7 @@
       "title": "合同抬头",
       "component": "panel",
       "pageid": "saphttt",
-      "notShowInHandle": true,
+      "notShowOnHandle": true,
       "subComponents": [
         {
           "title": "合同类型",
@@ -293,7 +293,7 @@
       "title": "合同行项目",
       "component": "panel",
       "pageid": "hthxm",
-      "notShowInHandle": true,
+      "notShowOnHandle": true,
       "subComponents": [
         {
           "component": "table_form",
@@ -354,7 +354,7 @@
       "title": "返回标识",
       "component": "panel",
       "pageid": "fhbssss",
-      "notShowInHandle": true,
+      "notShowOnHandle": true,
       "subComponents": [
         {
           "title": "合同号",

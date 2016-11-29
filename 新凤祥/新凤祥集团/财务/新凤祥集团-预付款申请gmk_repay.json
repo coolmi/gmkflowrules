@@ -1,0 +1,219 @@
+{
+  "id": "gmk_repay",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "app.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "app.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "app.pernr",
+            "-",
+            "nachn"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "app.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "app.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "付款公司",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.compnm"
+          ]
+        },
+        {
+          "title": "成本中心",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.costcenternm"
+          ]
+        },
+        {
+          "title": "供应商名称",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.suppliernm"
+          ]
+        },
+        {
+          "title": "供应商编号",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.supplierid"
+          ]
+        },
+        {
+          "title": "汇入行",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.inbanknm"
+          ]
+        },
+        {
+          "title": "汇入账号",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.inbankid"
+          ]
+        },
+        {
+          "title": "项目名称",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.projectnm"
+          ]
+        },
+        {
+          "title": "预算类型",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.budgettype"
+          ]
+        },
+        {
+          "title": "付款种类",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "app.paytype"
+          ]
+        },
+        {
+          "title": "到货日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "app.arrivaldt"
+        },
+        {
+          "title": "付款日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "app.paydt"
+        },
+        {
+          "title": "此笔付款是否用于在建工程",
+          "component": "text",
+          "name": "app.inconstruct"
+        },
+        {
+          "title": "申请金额小写",
+          "component": "text",
+          "datatype": "money",
+          "name": "app.reqmoney"
+        },
+        {
+          "title": "申请金额大写",
+          "component": "text",
+          "datatype": "money2dx",
+          "dxname": "reqmoneydx",
+          "name": "app.reqmoney"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "app.market"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 {
   "id": "HR_POSTBELONGCHANGEMAINAPP",
   "handleOnPC": {
-    "tasknode": [""],
+    "tasknode": [
+      ""
+    ],
     "flag": [
       "resubmit"
     ]
@@ -35,15 +37,6 @@
             "postbelongchange.pernr",
             "-",
             "postbelongchange.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "hidden",
-          "label": [
-            "postbelongchange.sysbusinessunitname",
-            "-",
-            "postbelongchange.sysdeptname"
           ]
         },
         {
@@ -122,19 +115,22 @@
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 1,
+          "titleIndex": 0,
           "basePath": "bases",
           "tableForms": [
-
             {
               "title": "异动前岗位",
               "component": "select",
               "name": "bcpostid",
               "editablenode": "",
-              "refersToArray":{
-                "basePath":"postList",
-                "value":"objid",
-                "text":["objid","-","stext"]
+              "refersToArray": {
+                "basePath": "postList",
+                "value": "objid",
+                "text": [
+                  "objid",
+                  "-",
+                  "stext"
+                ]
               }
             },
             {
@@ -152,31 +148,35 @@
               "component": "select",
               "name": "bfptorgid",
               "editablenode": "",
-              "refersToArray":{
-                "basePath":"deptList",
-                "value":"objid",
-                "text":["objid","-","stext"]
+              "refersToArray": {
+                "basePath": "deptList",
+                "value": "objid",
+                "text": [
+                  "objid",
+                  "-",
+                  "stext"
+                ]
               }
-
             },
-
             {
               "title": "异后所属组织",
               "component": "select",
               "name": "afptorgid",
               "editablenode": "",
-              "refersToArray":{
-                "basePath":"deptList",
-                "value":"objid",
-                "text":["objid","-","stext"]
+              "refersToArray": {
+                "basePath": "deptList",
+                "value": "objid",
+                "text": [
+                  "objid",
+                  "-",
+                  "stext"
+                ]
               }
             }
-
           ]
         }
       ]
     }
-
   ]
 }
 
