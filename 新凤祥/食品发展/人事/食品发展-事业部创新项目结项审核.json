@@ -154,7 +154,8 @@
             },
             {
                 "title": "预期效益",
-                "component": "text",
+                "component": "textarea",
+                "rows":4,
                 "id": "mainModel_jbxxyqsy",
                 "editablenode": "",
                 "name": "mainModel.jbxxyqsy"
@@ -169,6 +170,8 @@
             {
                 "title": "立项主要内容",
                 "component": "text",
+                "component": "textarea",
+                "rows":10,
                 "id": "mainModel_jbxxzynr",
                 "editablenode": "",
                 "name": "mainModel.jbxxzynr"
