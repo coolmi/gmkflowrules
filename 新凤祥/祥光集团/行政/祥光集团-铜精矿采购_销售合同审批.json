@@ -131,8 +131,9 @@
           "name": "mainModel.frbutxt"
         },
         {
-          "title": "供应商名称/采购商",
-          "component": "text",
+          "title": "供应商/采购商",
+          "component": "textarea",
+          "rows": "3",
           "name": "mainModel.gysmc"
         },
         {
@@ -177,7 +178,7 @@
       ]
     },
     {
-      "title": "合同审批",
+      "title": "合同文本",
       "component": "panel",
       "pageid": "htsp_page",
       "tasknode": "internalaudit",
