@@ -243,6 +243,8 @@
           "component": "formLabelLink",
           "titleIndex": 1,
           "id": "txfyf",
+          "lTitleIndex": 0,
+          "rTitleIndex": 1,
           "basePath": "txfs",
           "linkForms": [
             {
@@ -350,6 +352,8 @@
           "component": "formLabelLink",
           "titleIndex": 4,
           "id": "jtfjtfs",
+          "lTitleIndex": 3,
+          "rTitleIndex": 6,
           "basePath": "jtfs",
           "linkForms": [
             {
@@ -437,6 +441,8 @@
           "titleIndex": 2,
           "id": "ywzdtfs",
           "basePath": "zdfs",
+          "lTitleIndex": 3,
+          "rTitleIndex": 5,
           "tableForms": [
             {
               "title": "招待日期",
@@ -518,6 +524,8 @@
           "component": "table_form",
           "titleIndex": 1,
           "id": "cyfzzslx",
+          "lTitleIndex": 1,
+          "rTitleIndex": 2,
           "basePath": "cyfs",
           "tableForms": [
             {
@@ -578,7 +586,7 @@
       "subComponents": [
         {
           "component": "formLabelLink",
-          "titleIndex": 4,
+          "titleIndex": 1,
           "id": "snjtjtfs",
           "basePath": "qtfs",
           "linkForms": [
@@ -646,6 +654,8 @@
         {
           "component": "table_form",
           "titleIndex": 0,
+          "lTitleIndex": 2,
+          "rTitleIndex": 0,
           "id": "cwspxxrq",
           "basePath": "ficos",
           "tableForms": [
@@ -707,6 +717,8 @@
         {
           "component": "table_form",
           "titleIndex": 0,
+          "lTitleIndex": 8,
+          "rTitleIndex": 6,
           "basePath": "ysxxs",
           "tableForms": [
             {
