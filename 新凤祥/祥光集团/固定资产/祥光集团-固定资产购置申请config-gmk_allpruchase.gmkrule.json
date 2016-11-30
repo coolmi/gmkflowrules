@@ -3,7 +3,9 @@
   "handleOnPC": {
     "tasknode": [
       "usertask4",
-      "usertask11"
+      "usertask9",
+      "usertask11",
+      "usertask10"
     ],
     "flag": ["resubmit"]
   },
