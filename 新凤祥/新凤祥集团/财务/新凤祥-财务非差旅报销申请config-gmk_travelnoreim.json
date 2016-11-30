@@ -151,7 +151,7 @@
           "id": "butype",
           "title": "预算类型",
           "component": "radio",
-          "name": "travelreim.butype",
+          "name": "travelnoreim.butype",
           "options": [
             {
               "title": "通用",
@@ -207,9 +207,9 @@
             }
           ],
           "label": [
-            "travelreim.cdkostls",
+            "travelnoreim.cdkostls",
             "",
-            "travelreim.cdkostlsname"
+            "travelnoreim.cdkostlsname"
           ]
         },
         {
@@ -226,9 +226,9 @@
             }
           ],
           "label": [
-            "travelreim.ordernum",
+            "travelnoreim.ordernum",
             "",
-            "travelreim.orderval"
+            "travelnoreim.orderval"
           ]
         },
         {
@@ -264,6 +264,54 @@
           "component": "textarea",
           "rows": "3",
           "name": "travelnoreim.remarks"
+        }
+      ]
+    },
+    {
+      "title": "非差旅费汇总",
+      "component": "panel",
+      "pageid": "total_page",
+      "subComponents": [
+        {
+          "title": "合计",
+          "component": "text",
+          "datatype": "money",
+          "name": "travelnoreim.wdmbtr1",
+          "sumValue": {
+            "arrayPath": "nsums",
+            "sumParam": "summ"
+          }
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 3,
+          "rTitleIndex": 3,
+          "lTitleIndex": 0,
+          "basePath": "nsums",
+          "id": "sums_sdate",
+          "tableForms": [
+            {
+              "title": "类型",
+              "component": "text",
+              "name": "stype"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "sdate"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edate"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "summ"
+            }
+          ]
         }
       ]
     },
@@ -777,7 +825,7 @@
               "title": "总计（大写）",
               "component": "text",
               "datatype": "money2dx",
-              "dxname": "travelreimcap",
+              "dxname": "travelnoreimcap",
               "name": "travelnoreim.otherdmbtr"
             },
             {
@@ -785,52 +833,6 @@
               "component": "textarea",
               "rows": "2",
               "name": "travelnoreim.otherremark"
-            }
-          ]
-        },
-        {
-          "title": "非差旅费汇总",
-          "component": "panel",
-          "panel_id": "total",
-          "subComponents": [
-            {
-              "component": "table_form",
-              "titleIndex": 3,
-              "basePath": "nsums",
-              "id": "sums_sdate",
-              "tableForms": [
-                {
-                  "title": "类型",
-                  "component": "text",
-                  "name": "stype"
-                },
-                {
-                  "title": "开始日期",
-                  "component": "text",
-                  "name": "sdate"
-                },
-                {
-                  "title": "结束日期",
-                  "component": "text",
-                  "name": "edate"
-                },
-                {
-                  "title": "金额",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "summ"
-                }
-              ]
-            },
-            {
-              "title": "合计",
-              "component": "text",
-              "datatype": "money",
-              "name": "travelreim.wdmbtr1",
-              "sumValue": {
-                "arrayPath": "nsums",
-                "sumParam": "summ"
-              }
             }
           ]
         },
@@ -899,6 +901,8 @@
         {
           "component": "table_form",
           "titleIndex": 0,
+          "lTitleIndex": 8,
+          "rTitleIndex": 6,
           "basePath": "gmpubexlist",
           "tableForms": [
             {
