@@ -1,186 +1,227 @@
 {
-    "id": "fxit_sapneedchangeapp",
-    "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "fxSapNeedChange.appid"
+  "id": "fxit_sapneedchangeapp",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "fxSapNeedChange.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "fxSapNeedChange.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "fxSapNeedChange.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["fxSapNeedChange.pernr", "-", "fxSapNeedChange.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "fxSapNeedChange.pernr",
+            "-",
+            "fxSapNeedChange.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["fxSapNeedChange.sysbusinessunitname", "-", "fxSapNeedChange.sysdeptname"]
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "fxSapNeedChange.sysbusinessunitname",
+            "-",
+            "fxSapNeedChange.sysdeptname"
+          ]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.username"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.postid"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.id"
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.id"
         },
-		{
-            "title": "",
-            "component": "hidden",
-            "name": "fxSapNeedChange.proc_inst_id"
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "fxSapNeedChange.proc_inst_id"
         }
-		]
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "使用模块",
-            "component": "text",
-            "name": "fxSapNeedChange.module"
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "使用模块",
+          "component": "text",
+          "name": "fxSapNeedChange.module"
         },
         {
-            "title": "是否重要",
-            "component": "radio",
-            "name": "fxSapNeedChange.major",
-            "options": [{
-                "title": "重要",
-                "value": "1"
+          "title": "是否重要",
+          "component": "radio",
+          "name": "fxSapNeedChange.major",
+          "options": [
+            {
+              "title": "重要",
+              "value": "1"
             },
             {
-                "title": "不重要",
-                "value": "0"
-            }]
+              "title": "不重要",
+              "value": "0"
+            }
+          ],
+          "editablenode": "erpnbgwtxjjfa",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "是否重要必选"
+          }
         },
         {
-            "title": "是否开发",
-            "component": "radio",
-            "name": "fxSapNeedChange.isdev",
-            "options": [{
-                "title": "是",
-                "value": "1"
+          "title": "是否开发",
+          "component": "radio",
+          "name": "fxSapNeedChange.isdev",
+          "options": [
+            {
+              "title": "是",
+              "value": "1"
             },
             {
-                "title": "否",
-                "value": "0"
-            }]
-        },
-        {
-            "title": "手机号码",
-            "component": "text",
-            "name": "fxSapNeedChange.mobile"
-        },
-		{
-            "title": "ERP内部顾问",
-            "component": "text",
-			"editablenode":"xxglbpd",
-			"notShowOnView":true,
-			"forSelectPerson":{
-				"onclick":"getuser",
-				"postshow":true,
-				"showformname":"nbgwtext",
-				"valuetype":["objid"],
-				"showtype":["objid","nachn","stext"],
-			},
-            "name": "fxSapNeedChange.nbgw",
-			"validation": {
-                "pageid": "sqxx",
-                "required": true,
-                "validationMsg": "请选择内部顾问"
+              "title": "否",
+              "value": "0"
             }
+          ],
+          "editablenode": "erpnbgwtxjjfa",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "是否开发必选"
+          }
         },
         {
-            "title": "业务现状描述",
-            "component": "textarea",
-            "name": "fxSapNeedChange.syscurrentms"
+          "title": "手机号码",
+          "component": "text",
+          "name": "fxSapNeedChange.mobile"
         },
         {
-            "title": "未来系统业务描述",
-            "component": "textarea",
-            "name": "fxSapNeedChange.sysfuturems"
+          "title": "ERP内部顾问",
+          "component": "text",
+          "editablenode": "xxglbpd",
+          "notShowOnView": true,
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "nbgwtext",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "objid",
+              "nachn",
+              "stext"
+            ],
+          },
+          "name": "fxSapNeedChange.nbgw",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "请选择内部顾问"
+          }
         },
         {
-            "title": "内部顾问给出建议",
-            "tasknode":"erpnbgwtxjjfa,ywfxkjlsh,zxrycl",
-            "editablenode":"erpnbgwtxjjfa",
-            "component": "textarea",
-            "name": "fxSapNeedChange.nbgwjy",
-            "validation": {
-                "pageid": "sqxx",
-                "required": true,
-                "validationMsg": "内部顾问给出建议填写必须"
-            }
-        }]
+          "title": "业务现状描述",
+          "component": "textarea",
+          "name": "fxSapNeedChange.syscurrentms"
+        },
+        {
+          "title": "未来系统业务描述",
+          "component": "textarea",
+          "name": "fxSapNeedChange.sysfuturems"
+        },
+        {
+          "title": "内部顾问给出建议",
+          "tasknode": "erpnbgwtxjjfa,ywfxkjlsh,zxrycl",
+          "editablenode": "erpnbgwtxjjfa",
+          "component": "textarea",
+          "name": "fxSapNeedChange.nbgwjy",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "内部顾问给出建议填写必须"
+          }
+        }
+      ]
     },
     {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
     },
     {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
-    }]
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
 }
