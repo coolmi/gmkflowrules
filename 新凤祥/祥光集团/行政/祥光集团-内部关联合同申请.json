@@ -116,24 +116,24 @@
           "name": "mainModel.frbutxt"
         },
         {
+          "title": "业务类型",
+          "component": "select",
+          "name": "mainModel.ywlx",
+          "options": [
+            {
+              "text": "长单",
+              "value": "0"
+            },
+            {
+              "text": "现货",
+              "value": "1"
+            }
+          ]
+        },
+        {
           "title": "合同号",
           "component": "text",
           "name": "mainModel.htbh"
-        },
-        {
-          "title": "贸易服务部审核人",
-          "component": "text",
-          "name": "mainModel.myfwbshr"
-        },
-        {
-          "title": "国际运输部审核人",
-          "component": "text",
-          "name": "mainModel.gjysbshr"
-        },
-        {
-          "title": "财务部审核人",
-          "component": "text",
-          "name": "mainModel.cwbshr"
         },
         {
           "title": "备注",
