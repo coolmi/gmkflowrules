@@ -2,7 +2,7 @@
   "id": "xfxds_checksheet",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "xfxcwdzbzsh"
     ],
     "flag": [
       "resubmit"
@@ -169,13 +169,25 @@
           "title": "核减金额",
           "component": "text",
           "datatype": "money",
-          "name": "dschecksheet.hjje"
+          "name": "dschecksheet.hjje",
+          "editablenode": "xfxcwdzbzsh",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "核减金额必填"
+          }
         },
         {
           "title": "实付金额",
           "component": "text",
           "datatype": "money",
-          "name": "dschecksheet.sfje"
+          "name": "dschecksheet.sfje",
+          "editablenode": "xfxcwdzbzsh",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "实付金额必填"
+          }
         },
         {
           "title": "涉及业务部门",

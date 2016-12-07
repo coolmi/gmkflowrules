@@ -249,7 +249,12 @@
           "title": "核减金额",
           "component": "text",
           "editablenode": "cwkjaudit",
-          "name": "xfxpubexpense.hjjexx"
+          "name": "xfxpubexpense.hjjexx",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "核减金额必填"
+          }
         },
         {
           "title": "核减金额(大写)",
@@ -344,7 +349,7 @@
         {
           "title": "备注",
           "component": "textarea",
-          "rows":"3",
+          "rows": "3",
           "name": "xfxpubexpense.bz"
         }
       ]
