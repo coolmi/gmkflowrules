@@ -166,6 +166,7 @@
           "title": "ERP内部顾问",
           "component": "text",
           "editablenode": "xxglbpd",
+          "tasknode":"xxglbpd",
           "notShowOnView": true,
           "forSelectPerson": {
             "onclick": "getuser",
@@ -178,7 +179,7 @@
               "objid",
               "nachn",
               "stext"
-            ],
+            ]
           },
           "name": "fxSapNeedChange.nbgw",
           "validation": {
