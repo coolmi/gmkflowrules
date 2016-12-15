@@ -1,5 +1,5 @@
 {
-  "id": "fooddevado_ripetenderapply",
+  "id": "fooddevado_ripetenderresult",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -106,42 +106,49 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标的物名称",
+          "title": "项目名称",
           "component": "text",
-          "name": "mainModel.bdwmc"
+          "name": "mainModel.xmmc"
         },
         {
-          "title": "标的金额",
-          "component": "text",
-          "name": "mainModel.bdjexx"
-        },
-        {
-          "title": "标的金额大写",
-          "component": "text",
-          "name": "mainModel.bdjedx"
-        },
-        {
-          "title": "招标类型",
-          "component": "radio",
-          "id": "id_zblx",
-          "name": "mainModel.zblx",
+          "title": "项目名称类型",
+          "component": "select",
+          "name": "mainModel.xmmclx",
           "options": [
             {
-              "text": "采购",
+              "title": "采购",
               "value": "0"
             },
             {
-              "text": "销售",
+              "title": "销售",
               "value": "1"
             }
           ]
         },
         {
-          "title":"招标时间",
-          "component":"text",
-          "datatype":"date",
-          "dateFormat":"yyyy-MM-dd",
-          "name":"mainModel.zbsj"
+          "title": "项目编号",
+          "component": "text",
+          "name": "mainModel.xmbh"
+        },
+        {
+          "title": "招标类型",
+          "component": "text",
+          "name": "mainModel.zblx"
+        },
+        {
+          "title": "招标方式",
+          "component": "text",
+          "name": "mainModel.zbfs"
+        },
+        {
+          "title": "标的名称",
+          "component": "text",
+          "name": "mainModel.bdmc"
+        },
+        {
+          "title": "标的金额",
+          "component": "text",
+          "name": "mainModel.bdje"
         },
         {
           "title": "生产类固定资产采购",
@@ -149,11 +156,11 @@
           "name": "mainModel.sclgdzccg",
           "options": [
             {
-              "text": "是",
+              "title": "是",
               "value": "0"
             },
             {
-              "text": "否",
+              "title": "否",
               "value": "1"
             }
           ]
@@ -164,140 +171,66 @@
           "name": "mainModel.zbxmlb",
           "options": [
             {
-              "text": "工艺设备类",
+              "title": "工艺设备类",
               "value": "0"
             },
             {
-              "text": "工艺安装类",
+              "title": "工艺安装类",
               "value": "1"
             }
           ]
         },
         {
-          "title": "招标形式",
+          "title": "推荐中标价格",
+          "component": "text",
+          "name": "mainModel.tjzbjg"
+        },
+        {
+          "title": "是否最低价",
           "component": "radio",
-          "name": "mainModel.zbxs",
+          "name": "mainModel.zdj",
           "options": [
             {
-              "text": "招标",
+              "title": "是",
               "value": "0"
             },
             {
-              "text": "议标",
+              "title": "否",
               "value": "1"
             }
           ]
         },
         {
-          "title": "标的物用途",
+          "title": "推荐中标企业",
           "component": "text",
-          "name": "mainModel.bdwyt"
+          "name": "mainModel.tjzbqy"
         },
         {
-          "title": "标书编制",
+          "title": "评委意见是否一致",
           "component": "radio",
-          "name": "mainModel.bsbz",
+          "name": "mainModel.pwyjsfyz",
           "options": [
             {
-              "text": "编制标书",
+              "title": "是",
               "value": "0"
             },
             {
-              "text": "不编制标书,招标要求已在本表描述",
+              "title": "否",
               "value": "1"
             }
           ]
         },
         {
-          "title": "招标地点",
-          "component": "text",
-          "name": "mainModel.zbdd"
-        },
-        {
-          "title": "参加部门负责人",
-          "component": "text",
-          "name": "mainModel.cjbmfzr"
-        },
-        {
-          "title": "主抄送",
-          "component": "text",
-          "name": "mainModel.zcs"
-        },
-        {
-          "title": "招标人资质要求",
+          "title": "招标过程",
           "component": "textarea",
           "rows": "3",
-          "name": "mainModel.zbrzzyq"
+          "name": "mainModel.zbgc"
         },
         {
-          "title": "技术要求",
+          "title": "评委意见",
           "component": "textarea",
           "rows": "3",
-          "name": "mainModel.jsyq"
-        },
-        {
-          "title": "报价方式",
-          "component": "textarea",
-          "rows": "3",
-          "name": "mainModel.bjfs"
-        },
-        {
-          "title": "评标方式方法",
-          "component": "textarea",
-          "rows": "3",
-          "name": "mainModel.pbfsff"
-        },
-        {
-          "title": "投标保证金要求",
-          "component": "textarea",
-          "rows": "3",
-          "name": "mainModel.tbbzjyq"
-        },
-        {
-          "title": "其他",
-          "component": "textarea",
-          "rows": "3",
-          "name": "mainModel.qt"
-        }
-
-      ]
-    },
-    {
-      "title": "投标者信息",
-      "pageid": "tbzxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "basePath": "tenderlists",
-          "tableForms": [
-            {
-              "title": "姓名",
-              "component": "text",
-              "name": "tender_name"
-            },
-            {
-              "title": "传真",
-              "component": "text",
-              "name": "tender_fax"
-            },
-            {
-              "title": "电话",
-              "component": "text",
-              "name": "tender_phone"
-            },
-            {
-              "title": "邮箱",
-              "component": "text",
-              "name": "tender_email"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "tender_company"
-            }
-          ]
+          "name": "mainModel.pwyj"
         }
       ]
     },
@@ -311,8 +244,8 @@
           "title": "提交至",
           "component": "select",
           "id": "sjbmfpnexttaskkey_id",
-          "name": "sjbmfpnexttaskkey",
           "editablenode": "sjbmfp",
+          "name": "sjbmfpnexttaskkey",
           "islinkage": true,
           "handleLinkage": [
             {
@@ -332,8 +265,8 @@
               "value": "sjbmfs"
             },
             {
-              "text": "法务部门审核",
-              "value": "usertask7"
+              "text": "招标负责人审核/审批",
+              "value": "zbfzrsh"
             }
           ]
         },
@@ -372,5 +305,6 @@
         }
       ]
     }
+
   ]
 }
