@@ -206,6 +206,17 @@
             "required": true,
             "validateMsg": "内部顾问必填"
           }
+        },
+        {
+          "title": "内部顾问建议",
+          "editablenode": "nbgw",
+          "component": "textarea",
+          "name": "sappermissionapplyapp.qxjy",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请填写建议"
+          }
         }
       ]
     }
