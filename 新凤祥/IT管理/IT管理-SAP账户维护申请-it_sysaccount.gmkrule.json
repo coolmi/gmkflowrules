@@ -1,0 +1,294 @@
+{
+  "id": "it_sysaccount",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "sysaccount.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "sysaccount.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "sysaccount.pernr",
+            "-",
+            "sysaccount.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "sysaccount.sysbusinessunitname",
+            "-",
+            "sysaccount.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sysaccount.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "使用人姓名",
+          "component": "label",
+          "label": [
+            "sysaccount.itcode",
+            "-",
+            "sysaccount.ownername",
+            "-",
+            "sysaccount.syspostname"
+          ]
+        },
+        {
+          "title": "使用人ITCODE",
+          "component": "text",
+          "name": "sysaccount.itcode"
+        },
+        {
+          "title": "联系方式",
+          "component": "text",
+          "name": "sysaccount.ownermobile"
+        },
+        {
+          "title": "使用人公司",
+          "component": "text",
+          "name": "sysaccount.company"
+        },
+        {
+          "title": "使用人部门",
+          "component": "text",
+          "name": "sysaccount.dept"
+        },
+        {
+          "title": "账号有效开始日期",
+          "component": "date1",
+          "name": "sysaccount.begdate"
+        },
+        {
+          "title": "账号有效结束日期",
+          "component": "date1",
+          "name": "sysaccount.enddate"
+        },
+        {
+          "title": "申请类型",
+          "component": "select",
+          "name": "sysaccount.applytype",
+          "options": [
+            {
+              "text": "新建用户",
+              "value": "0"
+            },
+            {
+              "text": "锁定用户",
+              "value": "1"
+            },
+            {
+              "text": "解锁用户",
+              "value": "2"
+            },
+            {
+              "text": "初始密码",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "使用系统",
+          "component": "select",
+          "name": "sysaccount.usesystem",
+          "options": [
+            {
+              "text": "生产系统",
+              "value": "0"
+            },
+            {
+              "text": "测试系统",
+              "value": "1"
+            },
+            {
+              "text": "开发系统",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "使用模块",
+          "component": "checkbox",
+          "name": "sysaccount.usemodel",
+          "options": [
+            {
+              "text": "FICO",
+              "value": "FICO"
+            },
+            {
+              "text": "MM",
+              "value": "MM"
+            },
+            {
+              "text": "SD",
+              "value": "SD"
+            },
+            {
+              "text": "WM",
+              "value": "WM"
+            },
+            {
+              "text": "PP",
+              "value": "PP"
+            },
+            {
+              "text": "QM",
+              "value": "QM"
+            },
+            {
+              "text": "PM",
+              "value": "PM"
+            },
+            {
+              "text": "HR",
+              "value": "HR"
+            }
+          ]
+        },
+        {
+          "title": "用户类型",
+          "component": "checkbox",
+          "name": "sysaccount.usertype",
+          "options": [
+            {
+              "text": "系统用户",
+              "value": "0"
+            },
+            {
+              "text": "通讯用户",
+              "value": "1"
+            },
+            {
+              "text": "终端用户  ",
+              "value": "2"
+            },
+            {
+              "text": "公共用户",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "申请原因",
+          "component": "textarea",
+          "name": "sysaccount.reason"
+        },
+        {
+          "title": "内部顾问",
+          "component": "text",
+          "editablenode":"ordermanger",
+          "tasknode":"ordermanger",
+          "notShowOnView":true,
+          "forSelectPerson":{
+            "onclick":"getuser",
+            "postshow":true,
+            "showformname":"nbgwtext",
+            "valuetype":["objid"],
+            "showtype":["objid","nachn","stext"]
+          },
+          "name": "sysaccount.nbgw",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "请选择内部顾问"
+          }
+        },
+        {
+          "title": "内部顾问建议",
+          "editablenode": "erpadviser",
+          "component": "textarea",
+          "tasknode": "erpadviser,analysisaudit,basisaudit",
+          "name": "sysaccount.advice",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请填写建议",
+            "regexs": ""
+          }
+        }
+      ]
+    }
+  ]
+}
