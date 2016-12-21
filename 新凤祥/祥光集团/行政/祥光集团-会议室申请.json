@@ -1,0 +1,263 @@
+{
+  "id": "ap_meetmng",
+  "handleOnPC": {
+    "tasknode": [
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 1,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "meetmng.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "meetmng.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "meetmng.pernr",
+            "-",
+            "meetmng.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "meetmng.sysbusinessunitname",
+            "-",
+            "meetmng.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "meetmng.id"
+        }
+      ]
+    },
+
+    {
+      "title": "会议室申请信息",
+      "pageid": "hysssqx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "bases",
+          "id": "hyssqxx_table",
+          "tableForms": [
+            {
+              "title": "会议室名称",
+              "component": "text",
+              "name": "roomname"
+            },
+            {
+              "title": "发送会议邀请",
+              "component": "text",
+              "name": "sendapp"
+            },
+            {
+              "title": "参会人数",
+              "component": "text",
+              "name": "psum"
+            },
+            {
+              "title": "发送视频会议",
+              "component": "text",
+              "id":"sendvideo",
+              "name": "sendvideo"
+            },
+            {
+              "title": "电话接入",
+              "component": "text",
+              "name": "telin",
+              "showLinkage":[
+                {
+                  "id":"sendvideo",
+                  "values":["是"]
+                }
+              ]
+            },
+
+            {
+              "title": "IT人员支持",
+              "component": "text",
+              "name": "needhelp"
+            },
+            {
+              "title": "参会人员",
+              "component": "textarea",
+              "name": "inpsns"
+            },
+            {
+              "title": "系统外参会人员",
+              "component": "textarea",
+              "name": "outpsns"
+            },
+            {
+              "title": "会议主题",
+              "component": "text",
+              "name": "title"
+            },
+            {
+              "title": "会议内容",
+              "component": "textarea",
+              "name": "content"
+            },
+
+            {
+              "title": "连续多天预定",
+              "component": "text",
+              "id":"multi",
+              "name": "multi"
+            },
+            {
+              "title": "开始日期",
+              "component": "date1",
+              "name": "useda"
+            },
+            {
+              "title": "结束日期",
+              "component": "date1",
+              "name": "useendda",
+              "showLinkage":[
+                {
+                  "id":"multi",
+                  "values":["是"]
+                }
+              ]
+            },
+            {
+              "title": "开始使用时间",
+              "component": "text",
+              "name": "starttm"
+            },
+            {
+              "title": "结束使用时间",
+              "component": "text",
+              "name": "endtm"
+            },
+            {
+              "title": "所需资源",
+              "component": "comma_concat",
+              "name": "ress",
+              "refer" : "module"
+            },
+            {
+              "title": "备注",
+              "component": "textarea",
+              "name": "remarks"
+            }
+          ]
+        }
+      ]
+    }
+
+
+  ],
+  "refers": {
+    "module": {
+      "dataType": "array",
+      "data": [{
+        "value": "1",
+        "text": "投影仪"
+      },
+        {
+          "value": "2",
+          "text": "纸杯"
+        },
+        {
+          "value": "3",
+          "text": "条幅"
+        }
+      ]
+    }
+  }
+}
