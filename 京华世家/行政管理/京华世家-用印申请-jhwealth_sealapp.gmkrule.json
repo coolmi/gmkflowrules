@@ -1,0 +1,338 @@
+{
+    "id": "jhwealth_sealapp",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "sealapp.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "sealapp.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["sealapp.pernr", "-", "sealapp.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["sealapp.sysbusinessunitname", "-", "sealapp.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "sealapp.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+			{
+                "title": "用印类型",
+                "component": "select",
+				"id":"unittype",
+                "name": "sealapp.sealusetype",
+				"options": [
+					{
+						"title": "普通用印",
+						"value": "0"
+					},
+                    {
+                        "title": "携章外出",
+                        "value": "1"
+                    }]
+				
+
+            },
+            {
+                "title": "印章使用日期",
+                "component": "date1",
+                "name": "sealapp.datebegin"
+            },
+			{
+                "title": "印章归还日期",
+                "component": "date1",
+                "name": "sealapp.dateend",
+				"showLinkage":[
+					{
+						"id":"unittype",
+						"values":["1"]
+					}
+				]
+            },
+			{
+                "title": "同行人",
+                "component": "label",
+                "name": "sealapp.anameen",
+				"label": ["sealapp.peerid", "-", "sealapp.peername"],
+				"showLinkage":[
+					{
+						"id":"unittype",
+						"values":["1"]
+					}
+				]
+            },
+            {
+                "title": "联系方式",
+                "component": "text",
+                "name": "sealapp.phone",
+				"showLinkage":[
+					{
+						"id":"unittype",
+						"values":["1"]
+					}
+				]
+            },
+			{
+                "title": "用印文件类型",
+                "component": "text",
+                "name": "sealapp.filetypename"
+            },
+			{
+                "title": "文件小类",
+                "component": "text",
+                "name": "sealapp.filetypechaldname"
+            },
+			{
+                "title": "添加附件",
+                "component": "select",
+				"id": "addfiles",
+                "name": "sealapp.addfiles",
+				"options": [
+					{
+						"title": "是",
+						"value": "是"
+					},
+                    {
+                        "title": "否",
+                        "value": "否"
+                    }]
+				
+
+            },
+			{
+				"title": "无附件原由",
+				"component": "textarea",
+				"rows": "3",
+				"name": "sealapp.wureason",
+				"showLinkage":[
+					{
+						"id":"addfiles",
+						"values":["否"]
+					}
+				]
+			
+			},
+
+			{
+				"title": "使用理由",
+				"component": "textarea",
+				"rows": "3",
+				"name": "sealapp.reason"
+			
+			},
+			{
+				"title": "备注",
+				"component": "textarea",
+				"rows": "3",
+				"name": "sealapp.texta"
+			}
+        ]
+    },
+	{
+        "title": "印章需求印章明细",
+        "pageid": "yzxqmx",
+        "component": "panel",
+        "subComponents": [
+			{
+              "title": "",
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "tabletype": "looppanel",
+              "basePath": "sealdetails",
+			  "id": "sealdetails",
+              "linkForms": [
+                {
+                  "title": "",
+                  "title1": "印章名称",
+                  "component": "text",
+                  "name": "sealname"
+                  
+                },
+                {
+                  "title": "",
+                  "title1": "印章类型",
+                  "component": "text",
+                  "name": "sealtypename"
+                },
+				{
+				  "title": "",
+				  "title1": "印章管理员",
+				  "component": "text",
+				  "name": "cname"
+				}
+ 
+              ]
+            }
+			
+			
+        ]
+    },
+	{
+        "title": "印章需求文件明细",
+        "pageid": "yzxqwjmx",
+        "component": "panel",
+        "subComponents": [
+            {
+              "title": "",
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "tabletype": "looppanel",
+              "basePath": "sealfiledatails",
+			  "id": "sealfiledatails",
+              "linkForms": [
+                {
+                  "title": "",
+                  "title1": "文件名称",
+                  "component": "text",
+                  "name": "filenames"
+                  
+                },
+                {
+                  "title": "",
+                  "title1": "页数",
+                  "component": "text",
+                  "name": "pagenum"
+                },
+				{
+				  "title": "",
+				  "title1": "份数",
+				  "component": "text",
+				  "name": "copy"
+				}
+ 
+              ]
+            }
+        ]
+     }
+    ],
+	"refers": {
+		"filetypemain": {
+			"dataType": "array",
+			"data": [{
+				"value": "01",
+				"text": "安全环保节能文件"
+			},
+			{
+				"value": "02",
+				"text": "财务文件"
+			},
+			{
+				"value": "03",
+				"text": "法务文件"
+			},
+			{
+				"value": "04",
+				"text": "进口出口贸易文件"
+			},
+			{
+				"value": "05",
+				"text": "车辆手续"
+			},
+			{
+				"value": "06",
+				"text": "人力资源文件"
+			},
+			{
+				"value": "07",
+				"text": "项目申报文件"
+			},
+			{
+				"value": "08",
+				"text": "工程文件"
+			},
+			{
+				"value": "09",
+				"text": "证件办理、年检文件"
+			},
+			{
+				"value": "10",
+				"text": "与第三方签订的协议文件"
+			},
+			{
+				"value": "11",
+				"text": "期货交易文件"
+			},
+			{
+				"value": "12",
+				"text": "其他外报文件"
+			},
+			{
+				"value": "13",
+				"text": "提交第三方相关证明性材料"
+			}
+			]
+		}
+	}
+}
