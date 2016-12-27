@@ -1,0 +1,173 @@
+{
+  "id": "jhhr_needmoney",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "请款类型",
+          "component": "text",
+          "name": "mainModel.m_typenm"
+        }
+      ]
+    },
+    {
+      "title": "请款子表",
+      "pageid": "sbqkzb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "titleIndex": 1,
+          "title": "",
+          "component": "table_form",
+          "id": "self_sbqkzb_tmp",
+          "basePath": "needmoney_sublist",
+          "tableForms": [
+            {
+              "title": "所属公司",
+              "name": "s_compnm",
+              "component": "text"
+            },
+            {
+              "title": "请款用途",
+              "name": "s_uses",
+              "component": "text"
+            },
+            {
+              "title": "请款金额",
+              "name": "s_je",
+              "component": "text",
+              "datatype": "money"
+            },
+
+            {
+              "title": "金额大写",
+              "name": "s_jedx",
+              "component": "text"
+            },
+            {
+
+           "title": "结算类别",
+              "name": "s_jslb",
+              "component": "text"
+            },
+            {
+              "title": "供应商",
+              "name": "s_gys",
+              "component": "text"
+            },
+            {
+              "title": "银行账号",
+              "name": "s_zh",
+              "component": "text"
+            }
+          ]
+        }
+      ]
+
+    }
+
+  ]
+}
