@@ -1,0 +1,268 @@
+{
+  "id": "jhado_zitsblyh",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask3",
+      "usertask4"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "budgetadd.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "budgetadd.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "budgetadd.pernr",
+            "-",
+            "budgetadd.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "budgetadd.sysbusinessunitname",
+            "-",
+            "budgetadd.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetadd.id"
+        }
+      ]
+    },
+    {
+      "title": "领用详细",
+      "pageid": "lysqxxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "childlist",
+          "id": "lysqxxxx_table",
+          "tableForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatg"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "领用原因",
+              "component": "text",
+              "name": "zlyyy"
+            },
+            {
+              "title": "使用人ITOCDE",
+              "component": "text",
+              "name": "zsyitcode"
+            },
+            {
+              "title": "申请数量",
+              "component": "text",
+              "name": "zsqsl"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            },
+            {
+              "title": "申请日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "zsbffrq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "发放信息",
+      "pageid": "ITgdzcglyffxx",
+      "tasknode": "usertask3",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "basePath": "childlist",
+          "id": "ITgdzcglyffxx_table",
+          "tableForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "ascatg"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "领用原因",
+              "component": "text",
+              "name": "zlyyy"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            },
+            {
+              "title": "库存数量",
+              "component": "text",
+              "name": "zkcsl"
+            },
+            {
+              "title": "设备运行状态",
+              "component": "select",
+              "name": "zsbyxzt",
+              "options": [
+                {
+                  "title": "设备正常",
+                  "value": "1"
+                },
+                {
+                  "title": "存在问题",
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "title": "问题描述",
+              "component": "text",
+              "editablenode": "usertask3",
+              "name": "zwttxt"
+            },
+            {
+              "title": "实际发放数量",
+              "component": "text",
+              "editablenode": "usertask3",
+              "name": "zsjffsl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "接收确认",
+      "pageid": "jsrjsqrxx",
+      "tasknode": "usertask4",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "jsrjsqrxx_table",
+          "basePath": "childlist",
+          "tableForms": [
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "是否正常使用",
+              "component": "select",
+              "editablenode": "usertask4",
+              "name": "zyszt",
+              "options": [
+                {
+                  "title": "设备正常",
+                  "value": "1"
+                },
+                {
+                  "title": "存在问题",
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "title": "问题描述",
+              "component": "text",
+              "editablenode": "usertask4",
+              "name": "zyswt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
