@@ -1,0 +1,252 @@
+{
+  "id": "jhhr-worktransfer",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "worktransfer.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "worktransfer.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "worktransfer.pernr",
+            "-",
+            "worktransfer.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "worktransfer.sysbusinessunitname",
+            "-",
+            "worktransfer.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "worktransfer.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "离岗人员",
+          "component": "text",
+          "name": "worktransfer.dnachn"
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "worktransfer.dpernr"
+        },
+        {
+          "title": "联系方式",
+          "component": "text",
+          "name": "worktransfer.dtelephone"
+        },
+        {
+          "title": "职位",
+          "component": "text",
+          "name": "worktransfer.djobname"
+        },
+        {
+          "title": "所属部门",
+          "component": "text",
+          "name": "worktransfer.dorgname"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "worktransfer.dcompany"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "worktransfer.entrydate"
+        },
+        {
+          "title": "确认离岗日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "worktransfer.dqrlgrq"
+        },
+        {
+          "title": "变动类型",
+          "component": "select",
+          "name": "worktransfer.bdlx",
+          "options": [
+            {
+              "text": "调岗",
+              "value": "0"
+            },
+            {
+              "text": "借调",
+              "value": "1"
+            },
+            {
+              "text": "辞职",
+              "value": "2"
+            },
+            {
+              "text": "自动离职",
+              "value": "3"
+            },
+            {
+              "text": "辞退",
+              "value": "4"
+            },
+            {
+              "text": "退休",
+              "value": "5"
+            },
+            {
+              "text": "其他",
+              "value": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "交接结果",
+      "pageid": "jjjgyjck",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "worktransfersituations",
+          "tableForms": [
+            {
+              "title": "任务名称",
+              "component": "text",
+              "name": "taskdefinitionname"
+            },
+            {
+              "title": "办理人",
+              "component": "text",
+              "name": "username"
+            },
+            {
+              "title": "交接结果",
+              "component": "select",
+              "name": "situation",
+              "options": [
+                {
+                  "text": "已完成本环节得工作交接",
+                  "value": "0"
+                },
+                {
+                  "text": "未完成本环节工作交接",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请选择交接情况",
+          "component": "radio",
+          "notShowOnView": true,
+          "tasknode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "editablenode": "disinternalverify,gzjjsign,bmhsgzhsqk,bmzxcdba",
+          "name": "worktransfer.jjqk",
+          "validation": {
+            "pageid": "jjjgyjck",
+            "required": true,
+            "validateMsg": "请选择交接情况"
+          },
+          "options": [
+            {
+              "title": "已完成本环节得工作交接",
+              "value": "0"
+            },
+            {
+              "title": "未完成本环节工作交接",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

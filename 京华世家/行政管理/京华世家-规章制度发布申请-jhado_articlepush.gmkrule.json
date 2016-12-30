@@ -1,0 +1,233 @@
+{
+  "id": "jhado_articlepush",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 1,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "shenqingxinxi",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "制度类型",
+          "component": "text",
+          "id": "mainModel_m_instype",
+          "editablenode": "",
+          "name": "mainModel.m_instype"
+        },
+        {
+          "title": "制度分类",
+          "component": "text",
+          "id": "mainModel_m_insclass",
+          "editablenode": "",
+          "name": "mainModel.m_insclass"
+        },
+        {
+          "title": "制度管理内容",
+          "component": "text",
+          "id": "mainModel_m_insman",
+          "editablenode": "",
+          "name": "mainModel.m_insman"
+        },
+        {
+          "title": "发布公司",
+          "component": "text",
+          "id": "mainModel_m_comp",
+          "editablenode": "",
+          "name": "mainModel.m_comp"
+        },
+        {
+          "title": "发布范围",
+          "component": "textarea",
+          "id": "mainModel_m_range",
+          "editablenode": "",
+          "rows": "3",
+          "name": "mainModel.m_range"
+        }
+      ]
+    },
+    {
+      "title": "申请子表",
+      "pageid": "shenqingzibiao",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "articlepushsublist",
+          "id": "LA_shenqingzibiao",
+          "tableForms": [
+            {
+              "title": "制度名称",
+              "component": "text",
+              "id": "s_insid",
+              "editablenode": "",
+              "name": "s_insid"
+            },
+            {
+              "title": "制度编号",
+              "component": "text",
+              "id": "s_insname",
+              "editablenode": "",
+              "name": "s_insname"
+            },
+            {
+              "title": "起草人",
+              "component": "text",
+              "id": "s_draftsman",
+              "editablenode": "",
+              "name": "s_draftsman"
+            },
+            {
+              "title": "起草部门",
+              "component": "text",
+              "id": "s_draftdept",
+              "editablenode": "",
+              "name": "s_draftdept"
+            },
+            {
+              "title": "支持附件",
+              "component": "panel",
+              "panel_id": "file_set_panel",
+              "subComponents": [
+                {
+                  "component": "table_form",
+                  "basePath": "files",
+                  "titleIndex": 0,
+                  "id": "tmp_file_set_table",
+                  "tableForms": [
+                    {
+                      "title": "文件名称",
+                      "component": "text",
+                      "name": "f_filename",
+                      "events": {
+                        "eventType": "openDocument",
+                        "filename": "f_filename",
+                        "afrescoid": "f_fileid"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

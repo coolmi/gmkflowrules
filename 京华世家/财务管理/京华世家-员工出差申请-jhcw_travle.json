@@ -1,0 +1,195 @@
+{
+  "id": "jhcw_travle",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "travle.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "travle.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "travle.pernr",
+            "-",
+            "travle.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "travle.sysbusinessunitname",
+            "-",
+            "travle.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "travle.id"
+        }
+      ]
+    },
+    {
+      "title": "出差明细",
+      "pageid": "ccmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "是否提高标准",
+          "component": "select",
+          "name": "travle.beup",
+          "options": [
+            {
+              "text": "否",
+              "value": "0"
+            },
+            {
+              "text": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "提高标准原因",
+          "component": "textarea",
+          "rows": 5,
+          "name": "travle.reason",
+          "showLinkage": [
+            {
+              "id": "beup",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "component": "table_ccmx",
+          "titleIndex": 1,
+          "basePath": "bases",
+          "tableForms": [
+            {
+              "title": "出发日期",
+              "component": "text",
+              "editablenode": "",
+              "component": "date1",
+              "name": "startda"
+            },
+            {
+              "title": "到达日期",
+              "component": "text",
+              "editablenode": "",
+              "component": "date1",
+              "name": "endda"
+            },
+            {
+              "title": "出发地点",
+              "component": "text",
+              "editablenode": "",
+              "name": "splace"
+            },
+            {
+              "title": "到达地点",
+              "component": "text",
+              "editablenode": "",
+              "name": "eplace"
+            },
+            {
+              "title": "交通方式",
+              "component": "text",
+              "editablenode": "",
+              "name": "transmode"
+            },
+            {
+              "title": "是否签约宾馆",
+              "component": "text",
+              "editablenode": "",
+              "name": "besign"
+            },
+            {
+              "title": "工作内容",
+              "component": "text",
+              "editablenode": "",
+              "name": "workc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

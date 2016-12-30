@@ -1,5 +1,5 @@
 {
-  "id": "af_feeapp",
+  "id": "jhwealth_feetapp",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -137,7 +137,7 @@
         {
           "title": "员工编号",
           "component": "text",
-          "name": "reimburse.pernr"
+          "name": "afuser.pernr"
         },
         {
           "title": "员工所在部门",
@@ -252,6 +252,7 @@
           "title": "报销类型",
           "component": "select",
           "editablenode": "",
+          "id": "notravle",
           "name": "reimburse.notravle",
           "options": [
             {
@@ -272,10 +273,6 @@
             {
               "text": "通用",
               "value": "0"
-            },
-            {
-              "text": "专项项目",
-              "value": "1"
             }
           ]
         },
@@ -289,7 +286,16 @@
             "reimburse.cdbukrsname"
           ]
         },
-
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "reimburse.cdkostls",
+            "",
+            "reimburse.cdkostlsname"
+          ]
+        },
         {
           "title": "附件数",
           "component": "text",
@@ -297,17 +303,30 @@
           "name": "reimburse.numpg"
         },
         {
+          "title": "出差申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "reimburse.atrlnr",
+          "showLinkage": [
+            {
+              "id": "notravle",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
           "title": "说明",
           "component": "textarea",
           "rows": "3",
           "editablenode": "",
           "name": "reimburse.smemo"
-        }
-      ,
+        },
         {
           "title": "长途交通",
           "component": "panel",
-          "panel_id": "ctjt",
+          "pageid": "ctjt",
           "id": "ctjt1",
           "subComponents": [
             {
@@ -368,12 +387,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnr"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnr"
                 }
               ]
             }
@@ -382,7 +395,7 @@
         {
           "title": "市内交通",
           "component": "panel",
-          "panel_id": "snjt",
+          "pageid": "snjt",
           "id": "snjt1",
           "subComponents": [
             {
@@ -423,7 +436,7 @@
                   "name": "jtflx",
                   "linkToMap": {
                     "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
+                    "mapBasePath": "citySubMenu",
                     "linkMiddle": "mtypec",
                     "linkType": "string"
                   }
@@ -448,12 +461,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrc"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrc"
                 }
               ]
             }
@@ -462,7 +469,7 @@
         {
           "title": "办公费用",
           "component": "panel",
-          "panel_id": "bgfy",
+          "pageid": "bgfy",
           "id": "bgfy1",
           "subComponents": [
             {
@@ -499,29 +506,18 @@
                   "name": "enameo"
                 },
                 {
-                  "title": "客户名称",
-                  "component": "text",
-                  "name": "kunameo"
-                },
-                {
                   "title": "项目号",
                   "component": "text",
                   "name": "colnro"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnro"
                 }
               ]
             }
           ]
         },
         {
-          "title": "餐费",
+          "title": "招待费",
           "component": "panel",
-          "panel_id": "zdf",
+          "pageid": "zdf",
           "id": "zdf1",
           "subComponents": [
             {
@@ -566,21 +562,15 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrm"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrm"
                 }
               ]
             }
           ]
         },
         {
-          "title": "住宿费",
+          "title": "住宿及餐补汇总",
           "component": "panel",
-          "panel_id": "zsjcbhz",
+          "pageid": "zsjcbhz",
           "id": "zsjcbhz1",
           "subComponents": [
             {
@@ -648,12 +638,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrh"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrh"
                 }
               ]
             }
@@ -662,7 +646,7 @@
         {
           "title": "培训费",
           "component": "panel",
-          "panel_id": "pxf",
+          "pageid": "pxf",
           "id": "pxf1",
           "subComponents": [
             {
@@ -712,12 +696,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrt"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrt"
                 }
               ]
             }
@@ -726,7 +704,7 @@
         {
           "title": "通讯费",
           "component": "panel",
-          "panel_id": "txf",
+          "pageid": "txf",
           "id": "txf1",
           "subComponents": [
             {
@@ -769,7 +747,7 @@
         {
           "title": "礼品费",
           "component": "panel",
-          "panel_id": "lpf",
+          "pageid": "lpf",
           "id": "lpflpflx",
           "subComponents": [
             {
@@ -813,12 +791,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrg"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrg"
                 }
               ]
             }
@@ -826,6 +798,7 @@
         }
       ]
     },
+
     {
       "title": "财务审核",
       "component": "panel",
@@ -836,29 +809,19 @@
       "subComponents": [
         {
           "component": "formLabelLink",
-          "titleIndex": 4,
+          "titleIndex": 2,
           "id": "cwssxxkmms",
           "basePath": "seach",
           "linkForms": [
             {
-              "title": "项目号",
-              "component": "text",
-              "name": "colnrf"
-            },
-            {
-              "title": "项目号描述",
-              "component": "labelLink",
-              "editablenode": "",
-              "name": "colnrf",
-              "link_name": "colnrg",
+              "title": "项目号-子号",
+              "component": "label",
+              "name": "xmhzh",
               "label": [
-                "giftfees.conamg"
+                "colnrf",
+                "-",
+                "childcolnrf"
               ]
-            },
-            {
-              "title": "子号",
-              "component": "text",
-              "name": "childcolnrf"
             },
             {
               "title": "科目编号",
@@ -877,6 +840,11 @@
               }
             },
             {
+              "title": "产品",
+              "component": "text",
+              "name": "reimtypefval"
+            },
+            {
               "title": "调整科目",
               "component": "linkToMap",
               "name": "tzkm",
@@ -886,6 +854,11 @@
                 "linkMiddle": "saknrf",
                 "linkType": "string"
               }
+            },
+            {
+              "title": "调后子项目",
+              "component": "text",
+              "name": "childcolnrfafter"
             },
             {
               "title": "应付",
@@ -911,6 +884,16 @@
               "name": "smemof"
             }
           ]
+        },
+        {
+          "title": "冲备用金",
+          "component": "text",
+          "name": "reimburse.reserve"
+        },
+        {
+          "title": "冲备用金说明",
+          "component": "text",
+          "name": "reimburse.reservconent"
         }
       ]
     },
@@ -945,34 +928,39 @@
           "name": "lifnrview"
         },
         {
-          "title": "员工银行账号",
-          "component": "text",
-          "tmpValueName": "bankn",
-          "name": "fipay.banknp"
-        },
-        {
-          "title": "开户行",
-          "component": "text",
-          "tmpValueName": "banka",
-          "name": "fipay.banklp"
-        },
-        {
           "title": "应付金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrp"
+          "tmpValueName": "sumfwbasfval",
+          "name": "cdmbtrp"
         },
         {
           "title": "冲备用金",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.dmbtrp"
+          "tmpValueName": "reimburse.reserve",
+          "name": "dmbtrp"
         },
         {
           "title": "付款金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrpf"
+          "name": "cdmbtrpf",
+          "calculateSum": {
+            "baseValue": "sumfwbasfval",
+            "calArray": [
+              {
+                "valuePath": "reimburse.reserve",
+                "type": "sub"
+              }
+            ]
+          }
+        },
+        {
+          "title": "冲备用金说明",
+          "component": "text",
+          "tmpValueName": "reimburse.reservconent",
+          "name": "rstgrp"
         }
       ]
     }
