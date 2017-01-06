@@ -295,7 +295,24 @@
             }
           ]
         },
-
+        {
+          "title": "贸易方式",
+          "component": "select",
+          "name": "mainModel.myfs",
+          "options":[{
+            "title": "一般贸易",
+            "value": "一般贸易"
+          },
+            {
+              "title": "加工贸易",
+              "value": "加工贸易"
+            }]
+        },
+        {
+          "title": "贸易方式",
+          "component": "textarea",
+          "name": "mainModel.remark"
+        },
         {
           "title": "财务会计审核人",
           "component": "text",
