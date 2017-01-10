@@ -1,0 +1,506 @@
+{
+  "id": "jhit_sendsingle",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "sendsingle.pernr",
+            "-",
+            "sendsingle.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "sendsingle.sysbusinessunitname",
+            "-",
+            "sendsingle.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.id"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.proc_inst_id"
+        }
+      ]
+    },
+    {
+      "title": "申请人信息",
+      "pageid": "sqrxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "提报人姓名",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.submissioname"
+        },
+        {
+          "title": "提报人itcode",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.itcode"
+        },
+        {
+          "title": "电话",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.tel"
+        },
+        {
+          "title": "手机",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.phone"
+        },
+        {
+          "title": "部门",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.itcodedeptname"
+        },
+        {
+          "title": "公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.bukrsname"
+        },
+        {
+          "title": "紧急程度",
+          "component": "select",
+          "name": "sendsingle.emerg",
+          "options": [
+            {
+              "text": "高",
+              "value": "高"
+            },
+            {
+              "text": "中",
+              "value": "中"
+            },
+            {
+              "text": "低",
+              "value": "低"
+            }
+          ]
+        },
+        {
+          "title": "问题来源类别",
+          "component": "select",
+          "name": "sendsingle.problemsource",
+          "options": [
+            {
+              "text": "生产应用系统",
+              "value": "生产应用系统"
+            },
+            {
+              "text": "基础设施",
+              "value": "基础设施"
+            },
+            {
+              "text": "桌面软/硬件",
+              "value": "桌面软/硬件"
+            },
+            {
+              "text": "其他",
+              "value": "其他"
+            }
+          ]
+        },
+        {
+          "title": "设备类别",
+          "component": "select",
+          "name": "sendsingle.category",
+          "options": [
+            {
+              "text": "电脑",
+              "value": "电脑"
+            },
+            {
+              "text": "打印机",
+              "value": "打印机"
+            },
+            {
+              "text": "手机终端",
+              "value": "手机终端"
+            },
+            {
+              "text": "固定电话",
+              "value": "固定电话"
+            },
+            {
+              "text": "问题咨询",
+              "value": "问题咨询"
+            }
+          ]
+        },
+        {
+          "title": "问题描述",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
+          "name": "sendsingle.semo"
+        }
+      ]
+    },
+    {
+      "title": "分配运维信息",
+      "pageid": "fpywxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "hidden",
+          "editablenode": "",
+          "name": "sendsingle.operengneer"
+        },
+        {
+          "title": "运维工程师",
+          "component": "select",
+          "editablenode": "",
+          "name": "sendsingle.operengneer",
+          "options": [
+            {
+              "text": "于洪臣-运维管理员",
+              "value": "20000143"
+            },
+            {
+              "text": "张传申-运维管理员",
+              "value": "20000147"
+            },
+            {
+              "text": "穆景伟-运维管理员",
+              "value": "20000152"
+            },
+            {
+              "text": "樊明汉-运维管理员",
+              "value": "20000153"
+            },
+            {
+              "text": "杜百虎-运维管理员",
+              "value": "20000154"
+            },
+            {
+              "text": "王洪祥-运维管理员",
+              "value": "20000155"
+            }
+          ]
+        },
+        {
+          "title": "联系电话",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.operetel"
+        },
+        {
+          "title": "分配日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.allocdate"
+        },
+        {
+          "title": "期望解决日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.expectdate"
+        }
+      ]
+    },
+    {
+      "title": "运维记录信息",
+      "pageid": "ywjlxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "计划开始日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.sdate"
+        },
+        {
+          "title": "计划结束日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.edate"
+        },
+        {
+          "title": "实际开始日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.actualsdate"
+        },
+        {
+          "title": "实际结束日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "sendsingle.actualedate"
+        },
+        {
+          "title": "故障类型",
+          "component": "select",
+          "editablenode": "",
+          "name": "sendsingle.faultypes",
+          "options": [
+            {
+              "text": "硬件",
+              "value": "hardware"
+            },
+            {
+              "text": "软件",
+              "value": "software"
+            }
+          ]
+        },
+        {
+          "title": "问题当前状态",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.currentstate"
+        },
+        {
+          "title": "故障描述",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.spetypedesval"
+        },
+        {
+          "title": "是否外协",
+          "component": "select",
+          "id": "outsource",
+          "editablenode": "",
+          "name": "sendsingle.outsourc",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "质保内外",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.warranty"
+        },
+        {
+          "title": "解决方案",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.solution"
+        },
+        {
+          "title": "外协费用",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.outsourcost",
+          "showLinkage": [
+            {
+              "id": "outsource",
+              "values": [
+                "是"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "换件描述",
+          "component": "text",
+          "editablenode": "",
+          "name": "sendsingle.inades",
+          "showLinkage": [
+            {
+              "id": "outsource",
+              "values": [
+                "是"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "用户反馈",
+      "pageid": "yhfk",
+      "component": "panel",
+      "tasknode": "usertask3,usertask5",
+      "subComponents": [
+        {
+          "title": "是否满意",
+          "component": "select",
+          "id": "satisfied",
+          "editablenode": "usertask3",
+          "name": "sendsingle.satisfied",
+          "islinkage": true,
+          "handleLinkage": [
+            {
+              "id": "satisfiedisplay",
+              "values": [
+                "不满意"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "满意",
+              "value": "满意"
+            },
+            {
+              "text": "不满意",
+              "value": "不满意"
+            }
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择是否满意"
+          }
+        },
+        {
+          "title": "反馈意见",
+          "component": "text",
+          "editablenode": "usertask3",
+          "name": "sendsingle.feedback",
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择反馈意见"
+          }
+        },
+        {
+          "title": "不满意项",
+          "component": "select",
+          "id": "satisfiedisplay",
+          "editablenode": "usertask3",
+          "name": "sendsingle.satisfiedisplay",
+          "showLinkage": [
+            {
+              "id": "satisfied",
+              "values": [
+                "不满意"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "服务态度",
+              "value": "NO1"
+            },
+            {
+              "text": "服务质量",
+              "value": "NO2"
+            },
+            {
+              "text": "响应时间",
+              "value": "NO3"
+            }
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择不满意项"
+          }
+        },
+        {
+          "title": "选择环节",
+          "component": "select",
+          "editablenode": "usertask5",
+          "name": "sendsingle.link",
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择环节"
+          },
+          "options": [
+            {
+              "text": "客户信息反馈环节",
+              "value": "是"
+            },
+            {
+              "text": "结束环节",
+              "value": "否"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
