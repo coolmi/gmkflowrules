@@ -2,8 +2,7 @@
   "id": "fi_creditopen",
   "handleOnPC": {
     "tasknode": [
-      			"usertask1",
-				"usertask4"
+      "usertask1"
     ],
     "flag": [
       "resubmit"
@@ -11,7 +10,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -21,7 +19,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,1376 +117,1395 @@
           "name": "creditopen.id"
         },
         {
-          "id":"credittype",
+          "id": "credittype",
           "title": "信用证类型",
           "component": "select",
-          "options":[{"text":"背对背","value":"背对背"},{"text":"进口信用证","value":"进口信用证"}],
-          "name":"creditopen.credittype"
+          "options": [
+            {
+              "text": "背对背",
+              "value": "背对背"
+            },
+            {
+              "text": "进口信用证",
+              "value": "进口信用证"
+            }
+          ],
+          "name": "creditopen.credittype"
         }
       ]
     },
-
-    		{
-			"title": "开立内容",
-			"pageid": "panel_klnr",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "申请公司名称",
-					"component": "text",
-					"id": "b2b_b2bchildappcompany",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildappcompany"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "b2b_b2bchildsupplier",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildsupplier"
-				},
-				{
-					"title": "采购合同号",
-					"component": "text",
-					"id": "b2b_b2bchildcontractno",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcontractno"
-				},
-				{
-					"title": "币种",
-					"component": "text",
-					"id": "b2b_b2bchildcurrencytype",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcurrencytype"
-				},
-				{
-					"title": "开证金额",
-					"component": "text",
-					"id": "b2b_b2bchildcreatamount",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcreatamount"
-				},
-				{
-					"title": "tolerance（金额）",
-					"component": "text",
-					"id": "b2b_b2bchildcreattolerance",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcreattolerance"
-				},
-				{
-					"title": "子证通知行",
-					"component": "text",
-					"id": "b2b_b2bchildinform",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildinform"
-				},
-				{
-					"title": "子证开证行",
-					"component": "text",
-					"id": "b2b_b2bchildcreate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcreate"
-				},
-				{
-					"title": "开证数量",
-					"component": "text",
-					"id": "b2b_b2bchildcreatenum",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcreatenum"
-				},
-				{
-					"title": "tolerance（数量）",
-					"component": "text",
-					"id": "b2b_b2bchildcreatenumrate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildcreatenumrate"
-				},
-				{
-					"title": "货物描述",
-					"component": "text",
-					"id": "b2b_b2bchildrtfgoods",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildrtfgoods"
-				},
-				{
-					"title": "到期日",
-					"component": "text",
-					"id": "b2b_b2bchildexpiredate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildexpiredate"
-				},
-				{
-					"title": "到期地",
-					"component": "text",
-					"id": "b2b_b2bchildexpireposition",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildexpireposition"
-				},
-				{
-					"title": "装运港",
-					"component": "text",
-					"id": "b2b_b2bchildshipmentport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildshipmentport"
-				},
-				{
-					"title": "目的港",
-					"component": "text",
-					"id": "b2b_b2bchilddestinationport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchilddestinationport"
-				},
-				{
-					"title": "是否转运",
-					"component": "text",
-					"id": "b2b_b2bchildistransport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildistransport"
-				},
-				{
-					"title": "是否批装",
-					"component": "text",
-					"id": "b2b_b2bchildispartial",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildispartial"
-				},
-				{
-					"title": "最晚装船时间",
-					"component": "text",
-					"id": "b2b_b2bchildlastestshipmentdate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildlastestshipmentdate",
-					"datatype": "date",
-					"dateFormat": "yyyy-MM-dd hh:mm:ss"
-				},
-				{
-					"title": "最晚开出信用证日期",
-					"component": "text",
-					"id": "b2b_b2bchildlastestcreatedate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildlastestcreatedate"
-				},
-				{
-					"title": "交单期",
-					"component": "text",
-					"id": "b2b_b2bchildsurrenderdate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildsurrenderdate"
-				},
-				{
-					"title": "利率",
-					"component": "text",
-					"id": "b2b_b2blv",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2blv"
-				},
-				{
-					"title": "临时交单次数",
-					"component": "text",
-					"id": "b2b_b2bjdcs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bjdcs"
-				},
-				{
-					"title": "发货月",
-					"component": "text",
-					"id": "b2b_b2bfhy",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bfhy"
-				},
-				{
-					"title": "装卸条款",
-					"component": "text",
-					"id": "b2b_b2bzxtk",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bzxtk"
-				},
-				{
-					"title": "矿山",
-					"component": "text",
-					"id": "b2b_b2bks",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bks"
-				},
-				{
-					"title": "运输方式",
-					"component": "text",
-					"id": "b2b_b2bysfs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bysfs"
-				},
-				{
-					"title": "远期天数",
-					"component": "text",
-					"id": "b2b_b2byqts",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2byqts"
-				},
-				{
-					"title": "临时付款比例",
-					"component": "text",
-					"id": "b2b_b2blsfkbl",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2blsfkbl"
-				},
-				{
-					"title": "船期",
-					"component": "text",
-					"id": "b2b_b2bcq",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bcq"
-				},
-				{
-					"title": "备注",
-					"component": "textarea",
-					"id": "b2b_b2bchildrtfnotes",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bchildrtfnotes"
-				},
-				{
-					"title": "申请公司名称",
-					"component": "text",
-					"id": "b2b_b2bmainappcompany",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainappcompany"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "b2b_b2bmainsupplier",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainsupplier"
-				},
-				{
-					"title": "采购合同号",
-					"component": "text",
-					"id": "b2b_b2bmaincontractno",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincontractno"
-				},
-				{
-					"title": "币种",
-					"component": "text",
-					"id": "b2b_b2bmaincurrencytype",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincurrencytype"
-				},
-				{
-					"title": "开证金额",
-					"component": "text",
-					"id": "b2b_b2bmaincreatamount",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincreatamount"
-				},
-				{
-					"title": "tolerance（金额）",
-					"component": "text",
-					"id": "b2b_b2bmaincreattolerance",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincreattolerance"
-				},
-				{
-					"title": "主证通知行",
-					"component": "text",
-					"id": "b2b_b2bmaininform",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaininform"
-				},
-				{
-					"title": "主证开证行",
-					"component": "text",
-					"id": "b2b_b2bmaincreate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincreate"
-				},
-				{
-					"title": "开证数量",
-					"component": "text",
-					"id": "b2b_b2bmaincreatenum",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincreatenum"
-				},
-				{
-					"title": "tolerance（数量）",
-					"component": "text",
-					"id": "b2b_b2bmaincreatenumrate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaincreatenumrate"
-				},
-				{
-					"title": "货物描述",
-					"component": "text",
-					"id": "b2b_b2bmainrtfgoods",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainrtfgoods"
-				},
-				{
-					"title": "到期日",
-					"component": "text",
-					"id": "b2b_b2bmainexpiredate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainexpiredate"
-				},
-				{
-					"title": "到期地",
-					"component": "text",
-					"id": "b2b_b2bmainexpireposition",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainexpireposition"
-				},
-				{
-					"title": "装运港",
-					"component": "text",
-					"id": "b2b_b2bmainshipmentport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainshipmentport"
-				},
-				{
-					"title": "目的港",
-					"component": "text",
-					"id": "b2b_b2bmaindestinationport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmaindestinationport"
-				},
-				{
-					"title": "是否转运",
-					"component": "text",
-					"id": "b2b_b2bmainistransport",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainistransport"
-				},
-				{
-					"title": "是否分批装",
-					"component": "text",
-					"id": "b2b_b2bmainispartial",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainispartial"
-				},
-				{
-					"title": "最晚装船日期",
-					"component": "text",
-					"id": "b2b_b2bmainlastestshipmentdate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainlastestshipmentdate"
-				},
-				{
-					"title": "最晚开出信用证日期",
-					"component": "text",
-					"id": "b2b_b2bmainlastestcreatedate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainlastestcreatedate"
-				},
-				{
-					"title": "交单期",
-					"component": "text",
-					"id": "b2b_b2bmainsurrenderdate",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainsurrenderdate"
-				},
-				{
-					"title": "临时交单次数",
-					"component": "text",
-					"id": "b2b_mjdcs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mjdcs"
-				},
-				{
-					"title": "利率",
-					"component": "text",
-					"id": "b2b_mlv",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mlv"
-				},
-				{
-					"title": "装卸条款",
-					"component": "text",
-					"id": "b2b_mzxtk",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mzxtk"
-				},
-				{
-					"title": "发货月",
-					"component": "text",
-					"id": "b2b_mfhy",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mfhy"
-				},
-				{
-					"title": "矿山",
-					"component": "text",
-					"id": "b2b_mks",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mks"
-				},
-				{
-					"title": "临时付款比例",
-					"component": "text",
-					"id": "b2b_mlsfkbl",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mlsfkbl"
-				},
-				{
-					"title": "运输方式",
-					"component": "text",
-					"id": "b2b_mysfs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mysfs"
-				},
-				{
-					"title": "船期",
-					"component": "text",
-					"id": "b2b_mcq",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.mcq"
-				},
-				{
-					"title": "远期天数",
-					"component": "text",
-					"id": "b2b_myqts",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.myqts"
-				},
-				{
-					"title": "备注",
-					"component": "textarea",
-					"id": "b2b_b2bmainrtfnotes",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"背对背"
-							]
-						}
-					],
-					"name": "b2b.b2bmainrtfnotes"
-				},
-				{
-					"title": "申请公司名称",
-					"component": "text",
-					"id": "inter_corp_name",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.corp_name"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "inter_provider_name",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.provider_name"
-				},
-				{
-					"title": "采购合同号",
-					"component": "text",
-					"id": "inter_purchase_no",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.purchase_no"
-				},
-				{
-					"title": "币种",
-					"component": "text",
-					"id": "inter_currency",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.currency"
-				},
-				{
-					"title": "开证金额",
-					"component": "text",
-					"id": "inter_credit_money",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.credit_money"
-				},
-				{
-					"title": "LC通知行",
-					"component": "text",
-					"id": "inter_notice_banklc",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.notice_banklc"
-				},
-				{
-					"title": "开证行",
-					"component": "text",
-					"id": "inter_issuing_bank",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.issuing_bank"
-				},
-				{
-					"title": "开证数量",
-					"component": "text",
-					"id": "inter_credit_amount",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.credit_amount"
-				},
-				{
-					"title": "到期日",
-					"component": "text",
-					"id": "inter_end_date",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.end_date"
-				},
-				{
-					"title": "到期地",
-					"component": "text",
-					"id": "inter_due_addr",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.due_addr"
-				},
-				{
-					"title": "装运港",
-					"component": "text",
-					"id": "inter_ship_port",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.ship_port"
-				},
-				{
-					"title": "目的港",
-					"component": "text",
-					"id": "inter_release_port",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.release_port"
-				},
-				{
-					"title": "tolerance（数量）",
-					"component": "text",
-					"id": "inter_tolerance_amount",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.tolerance_amount"
-				},
-				{
-					"title": "tolerance（金额）",
-					"component": "text",
-					"id": "inter_tolerance_money",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.tolerance_money"
-				},
-				{
-					"title": "是否转运",
-					"component": "text",
-					"id": "inter_transport_no",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.transport_no"
-				},
-				{
-					"title": "是否分批装运",
-					"component": "text",
-					"id": "inter_partial_shipment_no",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.partial_shipment_no"
-				},
-				{
-					"title": "最晚装船日期",
-					"component": "text",
-					"id": "inter_ship_date",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.ship_date"
-				},
-				{
-					"title": "最晚开出信用证日期",
-					"component": "text",
-					"id": "inter_later_date",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.later_date"
-				},
-				{
-					"title": "货物描述",
-					"component": "text",
-					"id": "inter_rtfgoods",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.rtfgoods"
-				},
-				{
-					"title": "交单期",
-					"component": "text",
-					"id": "inter_presentation_period",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.presentation_period"
-				},
-				{
-					"title": "天数",
-					"component": "text",
-					"id": "inter_days",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.days"
-				},
-				{
-					"title": "利率",
-					"component": "text",
-					"id": "inter_lv",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.lv"
-				},
-				{
-					"title": "临时交单次数",
-					"component": "text",
-					"id": "inter_jdcs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.jdcs"
-				},
-				{
-					"title": "装卸条款",
-					"component": "text",
-					"id": "inter_zxtk",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.zxtk"
-				},
-				{
-					"title": "发货月",
-					"component": "text",
-					"id": "inter_fhy",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.fhy"
-				},
-				{
-					"title": "矿山",
-					"component": "text",
-					"id": "inter_ks",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.ks"
-				},
-				{
-					"title": "运输方式",
-					"component": "text",
-					"id": "inter_ysfs",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.ysfs"
-				},
-				{
-					"title": "临时付款比例",
-					"component": "text",
-					"id": "inter_lsfkbl",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.lsfkbl"
-				},
-				{
-					"title": "船期",
-					"component": "text",
-					"id": "inter_cq",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.cq"
-				},
-				{
-					"title": "备注",
-					"component": "textarea",
-					"id": "inter_rmk",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "credittype",
-							"values": [
-								"进口信用证"
-							]
-						}
-					],
-					"name": "inter.rmk"
-				}
-			]
-		}
-
-
+    {
+      "title": "开立内容",
+      "pageid": "panel_klnr",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请公司名称",
+          "component": "text",
+          "id": "b2b_b2bchildappcompany",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildappcompany"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "id": "b2b_b2bchildsupplier",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildsupplier"
+        },
+        {
+          "title": "采购合同号",
+          "component": "text",
+          "id": "b2b_b2bchildcontractno",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcontractno"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "id": "b2b_b2bchildcurrencytype",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcurrencytype"
+        },
+        {
+          "title": "开证金额",
+          "component": "text",
+          "id": "b2b_b2bchildcreatamount",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcreatamount"
+        },
+        {
+          "title": "tolerance（金额）",
+          "component": "text",
+          "id": "b2b_b2bchildcreattolerance",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcreattolerance"
+        },
+        {
+          "title": "子证通知行",
+          "component": "text",
+          "id": "b2b_b2bchildinform",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildinform"
+        },
+        {
+          "title": "子证开证行",
+          "component": "text",
+          "id": "b2b_b2bchildcreate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcreate"
+        },
+        {
+          "title": "开证数量",
+          "component": "text",
+          "id": "b2b_b2bchildcreatenum",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcreatenum"
+        },
+        {
+          "title": "tolerance（数量）",
+          "component": "text",
+          "id": "b2b_b2bchildcreatenumrate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildcreatenumrate"
+        },
+        {
+          "title": "货物描述",
+          "component": "text",
+          "id": "b2b_b2bchildrtfgoods",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildrtfgoods"
+        },
+        {
+          "title": "到期日",
+          "component": "text",
+          "id": "b2b_b2bchildexpiredate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildexpiredate"
+        },
+        {
+          "title": "到期地",
+          "component": "text",
+          "id": "b2b_b2bchildexpireposition",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildexpireposition"
+        },
+        {
+          "title": "装运港",
+          "component": "text",
+          "id": "b2b_b2bchildshipmentport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildshipmentport"
+        },
+        {
+          "title": "目的港",
+          "component": "text",
+          "id": "b2b_b2bchilddestinationport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchilddestinationport"
+        },
+        {
+          "title": "是否转运",
+          "component": "text",
+          "id": "b2b_b2bchildistransport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildistransport"
+        },
+        {
+          "title": "是否批装",
+          "component": "text",
+          "id": "b2b_b2bchildispartial",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildispartial"
+        },
+        {
+          "title": "最晚装船时间",
+          "component": "text",
+          "id": "b2b_b2bchildlastestshipmentdate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildlastestshipmentdate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd hh:mm:ss"
+        },
+        {
+          "title": "最晚开出信用证日期",
+          "component": "text",
+          "id": "b2b_b2bchildlastestcreatedate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildlastestcreatedate"
+        },
+        {
+          "title": "交单期",
+          "component": "text",
+          "id": "b2b_b2bchildsurrenderdate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildsurrenderdate"
+        },
+        {
+          "title": "利率",
+          "component": "text",
+          "id": "b2b_b2blv",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2blv"
+        },
+        {
+          "title": "临时交单次数",
+          "component": "text",
+          "id": "b2b_b2bjdcs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bjdcs"
+        },
+        {
+          "title": "发货月",
+          "component": "text",
+          "id": "b2b_b2bfhy",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bfhy"
+        },
+        {
+          "title": "装卸条款",
+          "component": "text",
+          "id": "b2b_b2bzxtk",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bzxtk"
+        },
+        {
+          "title": "矿山",
+          "component": "text",
+          "id": "b2b_b2bks",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bks"
+        },
+        {
+          "title": "运输方式",
+          "component": "text",
+          "id": "b2b_b2bysfs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bysfs"
+        },
+        {
+          "title": "远期天数",
+          "component": "text",
+          "id": "b2b_b2byqts",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2byqts"
+        },
+        {
+          "title": "临时付款比例",
+          "component": "text",
+          "id": "b2b_b2blsfkbl",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2blsfkbl"
+        },
+        {
+          "title": "船期",
+          "component": "text",
+          "id": "b2b_b2bcq",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bcq"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "b2b_b2bchildrtfnotes",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bchildrtfnotes"
+        },
+        {
+          "title": "申请公司名称",
+          "component": "text",
+          "id": "b2b_b2bmainappcompany",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainappcompany"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "id": "b2b_b2bmainsupplier",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainsupplier"
+        },
+        {
+          "title": "采购合同号",
+          "component": "text",
+          "id": "b2b_b2bmaincontractno",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincontractno"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "id": "b2b_b2bmaincurrencytype",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincurrencytype"
+        },
+        {
+          "title": "开证金额",
+          "component": "text",
+          "id": "b2b_b2bmaincreatamount",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincreatamount"
+        },
+        {
+          "title": "tolerance（金额）",
+          "component": "text",
+          "id": "b2b_b2bmaincreattolerance",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincreattolerance"
+        },
+        {
+          "title": "主证通知行",
+          "component": "text",
+          "id": "b2b_b2bmaininform",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaininform"
+        },
+        {
+          "title": "主证开证行",
+          "component": "text",
+          "id": "b2b_b2bmaincreate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincreate"
+        },
+        {
+          "title": "开证数量",
+          "component": "text",
+          "id": "b2b_b2bmaincreatenum",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincreatenum"
+        },
+        {
+          "title": "tolerance（数量）",
+          "component": "text",
+          "id": "b2b_b2bmaincreatenumrate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaincreatenumrate"
+        },
+        {
+          "title": "货物描述",
+          "component": "text",
+          "id": "b2b_b2bmainrtfgoods",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainrtfgoods"
+        },
+        {
+          "title": "到期日",
+          "component": "text",
+          "id": "b2b_b2bmainexpiredate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainexpiredate"
+        },
+        {
+          "title": "到期地",
+          "component": "text",
+          "id": "b2b_b2bmainexpireposition",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainexpireposition"
+        },
+        {
+          "title": "装运港",
+          "component": "text",
+          "id": "b2b_b2bmainshipmentport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainshipmentport"
+        },
+        {
+          "title": "目的港",
+          "component": "text",
+          "id": "b2b_b2bmaindestinationport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmaindestinationport"
+        },
+        {
+          "title": "是否转运",
+          "component": "text",
+          "id": "b2b_b2bmainistransport",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainistransport"
+        },
+        {
+          "title": "是否分批装",
+          "component": "text",
+          "id": "b2b_b2bmainispartial",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainispartial"
+        },
+        {
+          "title": "最晚装船日期",
+          "component": "text",
+          "id": "b2b_b2bmainlastestshipmentdate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainlastestshipmentdate"
+        },
+        {
+          "title": "最晚开出信用证日期",
+          "component": "text",
+          "id": "b2b_b2bmainlastestcreatedate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainlastestcreatedate"
+        },
+        {
+          "title": "交单期",
+          "component": "text",
+          "id": "b2b_b2bmainsurrenderdate",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainsurrenderdate"
+        },
+        {
+          "title": "临时交单次数",
+          "component": "text",
+          "id": "b2b_mjdcs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mjdcs"
+        },
+        {
+          "title": "利率",
+          "component": "text",
+          "id": "b2b_mlv",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mlv"
+        },
+        {
+          "title": "装卸条款",
+          "component": "text",
+          "id": "b2b_mzxtk",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mzxtk"
+        },
+        {
+          "title": "发货月",
+          "component": "text",
+          "id": "b2b_mfhy",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mfhy"
+        },
+        {
+          "title": "矿山",
+          "component": "text",
+          "id": "b2b_mks",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mks"
+        },
+        {
+          "title": "临时付款比例",
+          "component": "text",
+          "id": "b2b_mlsfkbl",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mlsfkbl"
+        },
+        {
+          "title": "运输方式",
+          "component": "text",
+          "id": "b2b_mysfs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mysfs"
+        },
+        {
+          "title": "船期",
+          "component": "text",
+          "id": "b2b_mcq",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.mcq"
+        },
+        {
+          "title": "远期天数",
+          "component": "text",
+          "id": "b2b_myqts",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.myqts"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "b2b_b2bmainrtfnotes",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "背对背"
+              ]
+            }
+          ],
+          "name": "b2b.b2bmainrtfnotes"
+        },
+        {
+          "title": "申请公司名称",
+          "component": "text",
+          "id": "inter_corp_name",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.corp_name"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "id": "inter_provider_name",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.provider_name"
+        },
+        {
+          "title": "采购合同号",
+          "component": "text",
+          "id": "inter_purchase_no",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.purchase_no"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "id": "inter_currency",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.currency"
+        },
+        {
+          "title": "开证金额",
+          "component": "text",
+          "id": "inter_credit_money",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.credit_money"
+        },
+        {
+          "title": "LC通知行",
+          "component": "text",
+          "id": "inter_notice_banklc",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.notice_banklc"
+        },
+        {
+          "title": "开证行",
+          "component": "text",
+          "id": "inter_issuing_bank",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.issuing_bank"
+        },
+        {
+          "title": "开证数量",
+          "component": "text",
+          "id": "inter_credit_amount",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.credit_amount"
+        },
+        {
+          "title": "到期日",
+          "component": "text",
+          "id": "inter_end_date",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.end_date"
+        },
+        {
+          "title": "到期地",
+          "component": "text",
+          "id": "inter_due_addr",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.due_addr"
+        },
+        {
+          "title": "装运港",
+          "component": "text",
+          "id": "inter_ship_port",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.ship_port"
+        },
+        {
+          "title": "目的港",
+          "component": "text",
+          "id": "inter_release_port",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.release_port"
+        },
+        {
+          "title": "tolerance（数量）",
+          "component": "text",
+          "id": "inter_tolerance_amount",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.tolerance_amount"
+        },
+        {
+          "title": "tolerance（金额）",
+          "component": "text",
+          "id": "inter_tolerance_money",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.tolerance_money"
+        },
+        {
+          "title": "是否转运",
+          "component": "text",
+          "id": "inter_transport_no",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.transport_no"
+        },
+        {
+          "title": "是否分批装运",
+          "component": "text",
+          "id": "inter_partial_shipment_no",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.partial_shipment_no"
+        },
+        {
+          "title": "最晚装船日期",
+          "component": "text",
+          "id": "inter_ship_date",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.ship_date"
+        },
+        {
+          "title": "最晚开出信用证日期",
+          "component": "text",
+          "id": "inter_later_date",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.later_date"
+        },
+        {
+          "title": "货物描述",
+          "component": "text",
+          "id": "inter_rtfgoods",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.rtfgoods"
+        },
+        {
+          "title": "交单期",
+          "component": "text",
+          "id": "inter_presentation_period",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.presentation_period"
+        },
+        {
+          "title": "天数",
+          "component": "text",
+          "id": "inter_days",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.days"
+        },
+        {
+          "title": "利率",
+          "component": "text",
+          "id": "inter_lv",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.lv"
+        },
+        {
+          "title": "临时交单次数",
+          "component": "text",
+          "id": "inter_jdcs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.jdcs"
+        },
+        {
+          "title": "装卸条款",
+          "component": "text",
+          "id": "inter_zxtk",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.zxtk"
+        },
+        {
+          "title": "发货月",
+          "component": "text",
+          "id": "inter_fhy",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.fhy"
+        },
+        {
+          "title": "矿山",
+          "component": "text",
+          "id": "inter_ks",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.ks"
+        },
+        {
+          "title": "运输方式",
+          "component": "text",
+          "id": "inter_ysfs",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.ysfs"
+        },
+        {
+          "title": "临时付款比例",
+          "component": "text",
+          "id": "inter_lsfkbl",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.lsfkbl"
+        },
+        {
+          "title": "船期",
+          "component": "text",
+          "id": "inter_cq",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.cq"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "inter_rmk",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "credittype",
+              "values": [
+                "进口信用证"
+              ]
+            }
+          ],
+          "name": "inter.rmk"
+        },
+        {
+          "title": "执行情况汇报",
+          "component": "text",
+          "id": "creditopen_rtfsituation",
+          "editablenode": "usertask4",
+          "tasknode": "usertask4",
+          "name": "creditopen.rtfsituation",
+          "validation": {
+            "pageid": "panel_klnr",
+            "required": true,
+            "validateMsg": "执行情况汇报必须"
+          }
+        }
+      ]
+    }
   ],
   "refers": {
   }

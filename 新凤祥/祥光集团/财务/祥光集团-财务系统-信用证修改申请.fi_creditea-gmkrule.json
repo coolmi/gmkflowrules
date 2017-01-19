@@ -2,8 +2,7 @@
   "id": "fi_creditea",
   "handleOnPC": {
     "tasknode": [
-      "usertask1",
-      "usertask4"
+      "usertask1"
     ],
     "flag": [
       "resubmit"
@@ -233,8 +232,14 @@
           "title": "执行情况汇报",
           "component": "text",
           "id": "creditaddedit_rtfsituation",
-          "editablenode": "",
-          "name": "creditaddedit.rtfsituation"
+          "editablenode": "usertask4",
+          "tasknode": "usertask4",
+          "name": "creditaddedit.rtfsituation",
+          "validation": {
+            "pageid": "panel_sqxx",
+            "required": true,
+            "validateMsg": "执行情况汇报必须"
+          }
         }
       ]
     },
