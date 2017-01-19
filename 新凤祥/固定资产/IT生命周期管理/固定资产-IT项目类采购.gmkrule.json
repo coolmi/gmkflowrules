@@ -2,7 +2,7 @@
   "id": "gdzcit_itempurch",
   "handleOnPC": {
     "tasknode": [
-      "usertask1,usertask2"
+      "usertask1","usertask2","usertask6"
     ],
     "flag": [
       "resubmit"
@@ -311,62 +311,6 @@
       ]
     },
     {
-      "title": "公司财务",
-      "pageid": "gscw",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "资产类别",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.propertypename"
-        },
-        {
-          "title": "资产描述",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.propertynumname"
-        },
-        {
-          "title": "项目类型",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.itemtypename"
-        },
-        {
-          "title": "预算项目",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.item"
-        },
-        {
-          "title": "项目名称",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.projectname"
-        },
-        {
-          "title": "参考价格",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "name": "mainModel.totalprice"
-        },
-        {
-          "title": "项目资产编号",
-          "component": "text",
-          "tasknode": "usertask6,usertask7",
-          "editablenode": "usertask6",
-          "name": "mainModel.itempropertycode",
-          "validation": {
-            "pageid": "gscw",
-            "required": true,
-            "validateMsg": "请填写项目资产编号",
-            "regexs": ""
-          }
-        }
-      ]
-    },
-    {
       "title": "采购执行确认",
       "pageid": "cgzxqr",
       "component": "panel",
@@ -417,6 +361,88 @@
             "pageid": "cgzxqr",
             "required": true,
             "validateMsg": "请填写价格",
+            "regexs": ""
+          }
+        },
+        {
+          "title": "质保",
+          "component": "text",
+          "tasknode": "usertask7",
+          "editablenode": "usertask7",
+          "name": "mainModel.warranty",
+          "validation": {
+            "pageid": "cgzxqr",
+            "required": true,
+            "validateMsg": "请填写质保",
+            "regexs": ""
+          }
+        },
+        {
+          "title": "供应商",
+          "component": "text",
+          "tasknode": "usertask7",
+          "editablenode": "usertask7",
+          "name": "mainModel.supplier",
+          "validation": {
+            "pageid": "cgzxqr",
+            "required": true,
+            "validateMsg": "请填写供应商",
+            "regexs": ""
+          }
+        }
+      ]
+    },
+    {
+      "title": "固定资产编号",
+      "pageid": "gdzcbh",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "资产类别",
+          "component": "text",
+          "tasknode": "usertask9",
+          "name": "mainModel.propertypename"
+        },
+        {
+          "title": "资产描述",
+          "component": "text",
+          "tasknode": "usertask9",
+          "name": "mainModel.propertynumname"
+        },
+        {
+          "title": "项目类型",
+          "component": "text",
+          "tasknode": "usertask9",
+          "name": "mainModel.itemtypename"
+        },
+        {
+          "title": "预算项目",
+          "component": "text",
+          "tasknode": "usertask9",
+          "name": "mainModel.item"
+        },
+        {
+          "title": "项目名称",
+          "component": "text",
+          "tasknode": "usertask6,usertask7",
+          "name": "mainModel.projectname"
+        },
+        {
+          "title": "参考价格",
+          "component": "text",
+          "tasknode": "usertask9",
+          "name": "mainModel.totalprice"
+        },
+        {
+          "title": "项目资产编号",
+          "component": "text",
+          "tasknode": "usertask9",
+          "editablenode": "usertask9",
+          "name": "mainModel.itempropertycode",
+          "validation": {
+            "pageid": "gdzcbh",
+            "required": true,
+            "validateMsg": "请填写项目资产编号",
             "regexs": ""
           }
         }
