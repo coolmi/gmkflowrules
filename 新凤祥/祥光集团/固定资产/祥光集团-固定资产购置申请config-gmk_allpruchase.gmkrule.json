@@ -285,71 +285,75 @@
             {
               "title": "采购询价执行人员",
               "component": "text",
-              "emptyHidden":true,
+              "emptyHidden": true,
               "name": "exusername"
             },
             {
               "title": "采购询价执行人员",
-              "tasknode":"usertask3",
-              "editablenode":"usertask3",
+              "tasknode": "usertask3",
+              "editablenode": "usertask3",
               "component": "text",
               "name": "expostidexelistkk",
-              "validation":{
-                "pageid":"sqxxx_pruexechilds",
-                "table_id":"sqxxx_v_table",
-                "required":true ,
-                "validateMsg":"请选择执行人员"
+              "validation": {
+                "pageid": "sqxxx_pruexechilds",
+                "table_id": "sqxxx_v_table",
+                "required": true,
+                "validateMsg": "请选择执行人员"
               },
-              "forSelectPerson":{
-                "onclick":"getuser",
-                "postshow":true,
-                "showformname":"exusernameexelistkk",
-                "valuetype":["objid"],
-                "showtype":["nachn","stext"]
+              "forSelectPerson": {
+                "onclick": "getuser",
+                "postshow": true,
+                "showformname": "exusernameexelistkk",
+                "valuetype": ["objid"],
+                "showtype": [
+                  "nachn",
+                  "stext"
+                ]
               }
             },
             {
               "title": "采购合同执行人员",
-              "tasknode":"usertask10",
-              "editablenode":"usertask10",
+              "tasknode": "usertask10",
+              "editablenode": "usertask10",
               "component": "text",
               "name": "expostidexelistkk2",
-              "validation":{
-                "pageid":"sqxxx_pruexechilds",
-                "table_id":"sqxxx_v_table",
-                "required":true ,
-                "validateMsg":"请选择采购合同执行人员"
+              "validation": {
+                "pageid": "sqxxx_pruexechilds",
+                "table_id": "sqxxx_v_table",
+                "required": true,
+                "validateMsg": "请选择采购合同执行人员"
               },
-              "forSelectPerson":{
-                "onclick":"getuser",
-                "postshow":true,
-                "showformname":"exusernameexelistkk2",
-                "valuetype":["objid"],
-                "showtype":["nachn","stext"]
+              "forSelectPerson": {
+                "onclick": "getuser",
+                "postshow": true,
+                "showformname": "exusernameexelistkk2",
+                "valuetype": ["objid"],
+                "showtype": [
+                  "nachn",
+                  "stext"
+                ]
               }
             },
             {
               "title": "ee",
               "component": "hidden",
-              "editablenode":"usertask3,usertask10",
+              "editablenode": "usertask3,usertask10",
               "name": "eid"
             },
             {
               "title": "表格标识",
               "component": "hidden",
-              "editablenode":"usertask3",
+              "editablenode": "usertask3",
               "name": "expostidexelistkk2",
-              "value":""
-
+              "value": ""
             },
             {
               "title": "表格标识",
               "component": "hidden",
-              "editablenode":"usertask3",
+              "editablenode": "usertask3",
               "name": "exusernameexelistkk2",
-              "value":""
+              "value": ""
             }
-
           ]
         }
       ]
@@ -442,7 +446,6 @@
               "component": "text",
               "name": "propertyname"
             },
-
             {
               "title": "单位",
               "component": "text",
@@ -461,28 +464,72 @@
             {
               "title": "技术标识号",
               "component": "text",
-              "emptyHidden":true,
+              "emptyHidden": true,
               "name": "technicalcode"
             },
             {
               "title": "技术标识号",
               "component": "text",
-              "tasknode":"usertask5",
-              "editablenode":"usertask5",
+              "id": "jsbsh",
+              "tasknode": "usertask5",
+              "editablenode": "usertask5",
               "name": "technicalcodequlist",
-              "validation":{
-                "pageid":"sqxxx_quiry_pruquirychilds",
-                "table_id":"jqxxx_quiry_table",
-                "required":true ,
-                "validateMsg":"请填写技术标识号"
+              "showLinkage": [
+                {
+                  "id": "sfgdzc",
+                  "values": ["是"],
+                  "linkFlag": "table"
+                }
+              ],
+              "validation": {
+                "pageid": "sqxxx_quiry_pruquirychilds",
+                "table_id": "jqxxx_quiry_table",
+                "required": true,
+                "validateMsg": "请填写技术标识号"
               }
             },
             {
               "title": "qid",
               "component": "hidden",
-              "editablenode":"usertask5",
+              "editablenode": "usertask5",
               "name": "qid"
-
+            },
+            {
+              "title": "是否固定资产",
+              "component": "select",
+              "id": "sfgdzc",
+              "islinkage": true,
+              "editablenode": "usertask5",
+              "name":"vqulist",
+              "handleLinkage": [
+                {
+                  "id": "jsbsh",
+                  "values": ["是"],
+                  "linkFlag": "table"
+                }
+              ],
+              "options": [
+                {
+                  "title": "请选择",
+                  "value": ""
+                },
+                {
+                  "title": "是",
+                  "value": "是"
+                },
+                {
+                  "title": "否",
+                  "value": "否"
+                }
+              ],
+              "validation": {
+                "pageid": "sqxxx_quiry_pruquirychilds",
+                "table_id": "jqxxx_quiry_table",
+                "required": true,
+                "validateMsg": "请填写是否固定资产"
+              }
+            },
+            {
             }
           ]
         }
@@ -500,7 +547,6 @@
           "titleIndex": 1,
           "basePath": "pruquirychilds",
           "linkForms": [
-
             {
               "title": "技术标识号",
               "component": "text",
@@ -517,83 +563,90 @@
             {
               "title": "cc",
               "component": "hidden",
-              "editablenode":"usertask9",
+              "editablenode": "usertask9",
               "name": "qid"
             },
             {
               "title": "aa",
               "component": "hidden",
-              "editablenode":"usertask9",
+              "editablenode": "usertask9",
               "name": "departid"
             },
             {
               "title": "bb",
               "component": "hidden",
-              "editablenode":"usertask9",
+              "editablenode": "usertask9",
               "name": "departmentnm"
             },
             {
               "title": "SAP固定资产编号",
               "component": "text",
-              "tasknode":"usertask9",
-              "editablenode":"usertask9",
+              "tasknode": "usertask9",
+              "editablenode": "usertask9",
               "name": "anln1quklist"
             },
             {
               "title": "子编号",
               "component": "text",
-              "tasknode":"usertask9",
-              "editablenode":"usertask9",
+              "tasknode": "usertask9",
+              "editablenode": "usertask9",
               "name": "anln2quklist"
             },
             {
               "title": "资产大类",
               "component": "select",
-              "editablenode":"usertask9",
+              "editablenode": "usertask9",
               "name": "asset",
-              "refersToArray":{
-                "basePath":"maxmenus",
-                "value":"MTKEY",
-                "text":["MTKEY","-","MTYPE"]
+              "refersToArray": {
+                "basePath": "maxmenus",
+                "value": "MTKEY",
+                "text": [
+                  "MTKEY",
+                  "-",
+                  "MTYPE"
+                ]
               },
-              "selectForShow":{
-                "postshow":true,
-                "showFormName":"assetname"
+              "selectForShow": {
+                "postshow": true,
+                "showFormName": "assetname"
               },
-              "validation":{
-                "pageid":"sqxxx_qu_pruquirychilds",
-                "table_id":"jqxxx_quiry_chh",
-                "required":true ,
-                "validateMsg":"请填写资产大类"
+              "validation": {
+                "pageid": "sqxxx_qu_pruquirychilds",
+                "table_id": "jqxxx_quiry_chh",
+                "required": true,
+                "validateMsg": "请填写资产大类"
               }
-
             },
             {
               "title": "所属法人公司",
               "component": "text",
-              "name":"nbukrsname",
-              "emptyHidden":true
+              "name": "nbukrsname",
+              "emptyHidden": true
             },
             {
               "title": "所属法人公司",
               "component": "select",
-              "tasknode":"usertask9",
-              "editablenode":"usertask9",
+              "tasknode": "usertask9",
+              "editablenode": "usertask9",
               "name": "nbukrsquklist",
-              "refersToArray":{
-                "basePath":"allToo1List",
-                "value":"bukrs",
-                "text":["bukrs","-","butxt"]
+              "refersToArray": {
+                "basePath": "allToo1List",
+                "value": "bukrs",
+                "text": [
+                  "bukrs",
+                  "-",
+                  "butxt"
+                ]
               },
-              "selectForShow":{
-                "postshow":true,
-                "showFormName":"nbukrsnamequklist"
+              "selectForShow": {
+                "postshow": true,
+                "showFormName": "nbukrsnamequklist"
               },
-              "validation":{
-                "pageid":"sqxxx_qu_pruquirychilds",
-                "table_id":"jqxxx_quiry_chh",
-                "required":true ,
-                "validateMsg":"请填写所属法人公司"
+              "validation": {
+                "pageid": "sqxxx_qu_pruquirychilds",
+                "table_id": "jqxxx_quiry_chh",
+                "required": true,
+                "validateMsg": "请填写所属法人公司"
               }
             }
           ]
