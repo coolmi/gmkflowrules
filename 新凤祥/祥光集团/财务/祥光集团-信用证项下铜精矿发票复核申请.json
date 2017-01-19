@@ -309,7 +309,7 @@
             }]
         },
         {
-          "title": "贸易方式",
+          "title": "备注",
           "component": "textarea",
           "name": "mainModel.remark"
         },
