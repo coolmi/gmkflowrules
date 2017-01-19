@@ -4,7 +4,10 @@
     "tasknode": [
       "usertaskn",
       "usertask17",
-      "usertask9"
+      "usertask9",
+      "usertask7",
+      "usertask19",
+      "usertask18"
     ],
     "flag": [
       "resubmit"
@@ -245,7 +248,7 @@
               "title": "需求说明",
               "component": "textarea",
               "rows": 3,
-              "name": "meins"
+              "name": "sgtxt"
             }
           ]
         }
