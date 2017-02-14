@@ -155,6 +155,12 @@
               "name": "s_why"
             },
             {
+              "title": "申请原因",
+              "component": "hidden",
+              "editable": true,
+              "name": "id"
+            },
+            {
               "title": "IP电话号码",
               "component": "text",
               "editablenode": "usertask6",
