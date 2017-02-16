@@ -1,5 +1,5 @@
 {
-  "id": "fxhr_workhandover",
+  "id": "gdzc_ipphonerequest",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -106,67 +106,71 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "异动人姓名",
+          "title": "所属公司",
           "component": "text",
-          "name": "mainModel.ydrname"
+          "name": "mainModel.m_compnm"
         },
         {
-          "title": "异动人岗位名称",
+          "title": "归属部门",
           "component": "text",
-          "name": "mainModel.ydrpostname"
-        },
+          "name": "mainModel.m_deptnm"
+        }
+      ]
+    },
+    {
+      "title": "申请列表",
+      "component": "panel",
+      "pageid": "sqlb_page",
+      "subComponents": [
         {
-          "title": "异动人所属部门",
-          "component": "text",
-          "name": "mainModel.ydrdeptname"
-        },
-        {
-          "title": "异动人职务",
-          "component": "text",
-          "name": "mainModel.ydrjobname"
-        },
-        {
-          "title": "IT资源清单自查",
-          "component": "text",
-          "name": "mainModel.itzyqdzc"
-        },
-        {
-          "title": "宿舍号码",
-          "component": "text",
-          "name": "mainModel.sshm"
-        },
-        {
-          "title": "备用金额",
-          "component": "text",
-          "name": "mainModel.byje"
-        },
-        {
-          "title": "员工固定资产使用",
-          "component": "text",
-          "name": "mainModel.yggdzcsy"
-        },
-        {
-          "title": "公司档案借用",
-          "component": "text",
-          "name": "mainModel.gsdajy"
-        },
-        {
-          "title": "培训协议",
-          "component": "text",
-          "name": "mainModel.pxxy"
-        },
-        {
-          "title": "异动类型",
-          "component": "select",
-          "name": "mainModel.ydlx",
-          "options": [
+          "component": "table_form",
+          "basePath": "ipphonerequestsublist",
+          "id": "sub_table",
+          "titleIndex": 0,
+          "tableForms": [
             {
-              "text": "员工离职",
-              "value": "1"
+              "title": "使用人",
+              "component": "text",
+              "name": "s_postname"
             },
             {
-              "text": "员工调动",
-              "value": "2"
+              "title": "申请类型",
+              "component": "text",
+              "name": "s_typename"
+            },
+            {
+              "title": "电话类型",
+              "component": "text",
+              "name": "s_class"
+            },
+            {
+              "title": "拨打权限",
+              "component": "text",
+              "name": "s_authority"
+            },
+            {
+              "title": "申请原因",
+              "component": "textarea",
+              "rows": 5,
+              "name": "s_why"
+            },
+            {
+              "title": "申请原因",
+              "component": "hidden",
+              "editable": true,
+              "name": "id"
+            },
+            {
+              "title": "IP电话号码",
+              "component": "text",
+              "editablenode": "usertask6",
+              "name": "s_number",
+              "validation": {
+                "pageid": "sqlb_page",
+                "table_id": "sub_table",
+                "required": true,
+                "validateMsg": "请填写IP电话号码"
+              }
             }
           ]
         }

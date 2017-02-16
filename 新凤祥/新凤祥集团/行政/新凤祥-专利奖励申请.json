@@ -1,17 +1,11 @@
 {
-  "id": "fxhr_workhandover",
+  "id": "ado_patentapp",
   "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
+    "tasknode": [""],
+    "flag": ["resubmit"]
   },
   "selectPerson": {
-    "tasknode": [
-      ""
-    ],
+    "tasknode": [""],
     "beforPop": false
   },
   "forms": [
@@ -106,69 +100,14 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "异动人姓名",
+          "title": "所属公司",
           "component": "text",
-          "name": "mainModel.ydrname"
+          "name": "mainModel.m_compnm"
         },
         {
-          "title": "异动人岗位名称",
+          "title": "申请说明",
           "component": "text",
-          "name": "mainModel.ydrpostname"
-        },
-        {
-          "title": "异动人所属部门",
-          "component": "text",
-          "name": "mainModel.ydrdeptname"
-        },
-        {
-          "title": "异动人职务",
-          "component": "text",
-          "name": "mainModel.ydrjobname"
-        },
-        {
-          "title": "IT资源清单自查",
-          "component": "text",
-          "name": "mainModel.itzyqdzc"
-        },
-        {
-          "title": "宿舍号码",
-          "component": "text",
-          "name": "mainModel.sshm"
-        },
-        {
-          "title": "备用金额",
-          "component": "text",
-          "name": "mainModel.byje"
-        },
-        {
-          "title": "员工固定资产使用",
-          "component": "text",
-          "name": "mainModel.yggdzcsy"
-        },
-        {
-          "title": "公司档案借用",
-          "component": "text",
-          "name": "mainModel.gsdajy"
-        },
-        {
-          "title": "培训协议",
-          "component": "text",
-          "name": "mainModel.pxxy"
-        },
-        {
-          "title": "异动类型",
-          "component": "select",
-          "name": "mainModel.ydlx",
-          "options": [
-            {
-              "text": "员工离职",
-              "value": "1"
-            },
-            {
-              "text": "员工调动",
-              "value": "2"
-            }
-          ]
+          "name": "mainModel.m_remark"
         }
       ]
     }
