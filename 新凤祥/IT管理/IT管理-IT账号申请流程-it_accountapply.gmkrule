@@ -105,6 +105,22 @@
       "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
+      {
+                "title": "类型",
+                "component": "select",
+                "name": "accountapply.atype",
+                "id":"atype",
+                "options": [
+                  {
+                    "text": "公司内成员使用",
+                    "value": "1"
+                  },
+      			 {
+                    "text": "外来人员使用",
+                    "value": "2"
+                  }
+                ]
+       },
         {
           "title": "使用人姓名",
           "component": "text",
@@ -133,13 +149,26 @@
           "title": "使用人公司",
           "component": "text",
           "editablenode": "",
-          "name": "accountapply.accsyrbutxt"
+          "name": "accountapply.accsyrbutxt",
+          "showLinkage":[
+                  {
+                      "id":"atype",
+                      "values":["1"]
+                  }
+              ]
+
         },
 		{
           "title": "使用人部门",
           "component": "text",
           "editablenode": "",
-          "name": "accountapply.accsyrdepname"
+          "name": "accountapply.accsyrdepname",
+            "showLinkage":[
+                            {
+                                "id":"atype",
+                                "values":["1"]
+                            }
+                        ]
         },
 		{
           "title": "账号有效开始日期",
