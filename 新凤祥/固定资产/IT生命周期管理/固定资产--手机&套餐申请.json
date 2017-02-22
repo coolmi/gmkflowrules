@@ -14,8 +14,10 @@
     ],
     "beforPop": false
   },
-  "commentMustNode":["recAudit"],
-  "commentMustMsg":"结束流程时，意见不能为空",
+  "commentMustNode": [
+    "recAudit"
+  ],
+  "commentMustMsg": "结束流程时，意见不能为空",
   "forms": [
     {
       "title": "基本信息",
@@ -183,7 +185,8 @@
             },
             {
               "title": "申请原因",
-              "component": "text",
+              "component": "textarea",
+              "rows": 4,
               "name": "reason"
             },
             {
