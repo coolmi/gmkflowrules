@@ -1,0 +1,221 @@
+{
+  "id": "xt_zjplantb",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "年度-月度",
+          "component": "date1",
+          "name": "mainModel.m_date"
+        },
+        {
+          "title": "提报部门",
+          "component": "text",
+          "name": "mainModel.m_deptnm"
+        },
+        {
+          "title": "项目资料员",
+          "component": "text",
+          "name": "mainModel.m_xmzlynm"
+        },
+        {
+          "title": "部门最高负责人",
+          "component": "text",
+          "name": "mainModel.m_fzrnm"
+        },
+        {
+          "title": "成本费用财务专员",
+          "component": "text",
+          "name": "mainModel.m_cwzynm"
+        },
+        {
+          "title": "分管副总/总助",
+          "component": "text",
+          "name": "mainModel.m_fgfznm"
+        },
+        {
+          "title": "资金计划专员",
+          "component": "text",
+          "name": "mainModel.m_zjzynm"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        }
+      ]
+    },
+    {
+      "title": "提报明细",
+      "pageid": "tbmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "id": "zjplantbsublist_id",
+          "titleIndex": 2,
+          "basePath": "zjplantbsublist",
+          "tableForms": [
+            {
+              "title": "月度",
+              "component": "text",
+              "name": "s_date"
+            },
+            {
+              "title": "公司",
+              "component": "text",
+              "name": "s_bukrstxt"
+            },
+            {
+              "title": "项目描述",
+              "component": "text",
+              "name": "s_objttxt"
+            },
+            {
+              "title": "资金用途",
+              "component": "text",
+              "name": "s_usetxt"
+            },
+            {
+              "title": "资金用途明细",
+              "component": "text",
+              "name": "s_usecltxt"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "s_supler"
+            },
+
+            {
+              "title": "预算金额(万)",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_plan"
+            },
+            {
+              "title": "预算内资金计划(万)",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_inplan"
+            },
+            {
+              "title": "预算外金额(万)",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_outplan"
+            },
+
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "s_remark"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
