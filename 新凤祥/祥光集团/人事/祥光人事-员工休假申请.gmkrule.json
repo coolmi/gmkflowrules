@@ -137,7 +137,7 @@
         },
         {
           "title": "休假原因",
-          "component": "text",
+          "component": "textarea",
           "name": "leave.lreas",
           "showLinkage": [
             {
@@ -440,7 +440,7 @@
         },
         {
           "title": "核销假说明",
-          "component": "text",
+          "component": "textarea",
           "tasknode": "ACTUAL,LEADER",
           "editablenode": "ACTUAL,LEADER",
           "validation": {
