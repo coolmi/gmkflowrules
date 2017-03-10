@@ -219,13 +219,15 @@
 			},
 			{
 				"title": "购置理由",
-				"component": "text",
+				"component": "textarea",
+				"rows":4,
 				"editablenode": "",
 				"name": "mainModel.gzly"
 			},
 			{
 				"title": "主要技术要求",
-				"component": "text",
+				"component": "textarea",
+				"rows":4,
 				"editablenode": "",
 				"name": "mainModel.zyjsyq"
 			},

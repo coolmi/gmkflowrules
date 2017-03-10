@@ -234,7 +234,6 @@
           "component": "text",
           "editablenode": "",
           "name": "mainModel.jygdzclb"
-
         },
         {
           "title": "是否效益类",
@@ -250,15 +249,18 @@
               "value": "1"
             }
           ]
-        }, {
+        },
+        {
           "title": "购置理由",
-          "component": "text",
+          "component": "textarea",
+          "rows": 4,
           "editablenode": "",
           "name": "mainModel.gzly"
         },
         {
           "title": "主要技术要求",
-          "component": "text",
+          "component": "textarea",
+          "rows": 4,
           "editablenode": "",
           "name": "mainModel.zyjsyq"
         },

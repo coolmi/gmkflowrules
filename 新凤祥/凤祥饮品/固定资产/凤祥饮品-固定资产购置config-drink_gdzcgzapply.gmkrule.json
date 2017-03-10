@@ -1,248 +1,269 @@
 {
-	"id": "drink_gdzcgzapply",
-	"handleOnPC":{
-		"tasknode":[
-		],
-		"flag":[
-			"resubmit"
-		]
-	},
-	"selectPerson":{
-		"tasknode":[
-			""
-		],
-		"beforPop":false
-	},
-	"forms": [{
-		"title": "基本信息",
-		"pageid": "jbxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "申请单号",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.appid"
-		},
-		{
-			"title": "申请日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.appda"
-		},
-		{
-			"title": "申请人姓名",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.pernr","-","mainModel.username"]
-		},
-		{
-			"title": "所属部门",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.sysbusinessunitname","-","mainModel.sysdeptname"]
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.userid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.username"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.pernr"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.syspostname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.postid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.id"
-		}]
-	},
-	{
-		"title": "申请信息",
-		"pageid": "sqxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "预算控制所属公司",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.yskzbutxt"
-		},
-		{
-			"title": "预算申请部门",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.yskzbm"
-		},
-		{
-			"title": "安装地点",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.azdd"
-		},
-		{
-			"title": "资产所属成本中心编码",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.zcsscbzxms"
-		},
-		{
-			"title": "资产所属成本中心描述",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.zcsscbzxms"
-		},
-		{
-			"title": "要求进货日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.yqjhrq"
-		},
-		{
-			"title": "年度购置预算",
-			"component": "radio",
-			"name": "mainModel.ndgzys",
-			"options": [{
-				"title": "预算内",
-				"value": "0"
-			},
-			{
-				"title": "预算外",
-				"value": "1"
-			}]
-		}]
-		},
-		{
-			"title": "资产购置信息",
-			"pageid": "zcgzxx",
-			"component": "panel",
-			"subComponents": [{
-				"title": "固定资产名称",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.gdzcmc"
-			},
-			{
-				"title": "规格型号",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.ggxh"
-			},
-			{
-				"title": "数量",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.slnum"
-			},
-			{
-				"title": "资产类型",
-				"component": "radio",
-				"name": "mainModel.zclx",
-				"options": [{
-					"title": "设备类",
-					"value": "0"
-				},
-				{
-					"title": "基建水电",
-					"value": "1"
-				}]
-			},
-			{
-				"title": "预计单价金(元)",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.yydj"
-			},
-			{
-				"title": "大写单价(元)",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.dxdj"
-			},
-			{
-				"title": "预计总金额(元)",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.yjzje"
-			},
-			{
-				"title": "大写总金额(元)",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.dxzje"
-			},
-			{
-				"title": "设计使用年限",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.sjsynx"
-			},
-			{
-				"title": "建议固定资产类别",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.jygdzclb"
-			},
-			{
-				"title": "购置理由",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.gzly"
-			},
-			{
-				"title": "主要技术要求",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.zyjsyq"
-			},
-			{
-				"title": "备注",
-				"component": "text",
-				"editablenode": "",
-				"name": "mainModel.bz"
-			},
-			{
-				"title": "主抄送",
-				"component": "textarea",
-				"editablenode": "",
-				"name": "mainModel.zcs"
-			}]
-		}],
-	"refers": {
-
-	}
+  "id": "drink_gdzcgzapply",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算控制所属公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.yskzbutxt"
+        },
+        {
+          "title": "预算申请部门",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.yskzbm"
+        },
+        {
+          "title": "安装地点",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.azdd"
+        },
+        {
+          "title": "资产所属成本中心编码",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zcsscbzxms"
+        },
+        {
+          "title": "资产所属成本中心描述",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zcsscbzxms"
+        },
+        {
+          "title": "要求进货日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.yqjhrq"
+        },
+        {
+          "title": "年度购置预算",
+          "component": "radio",
+          "name": "mainModel.ndgzys",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "0"
+            },
+            {
+              "title": "预算外",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "资产购置信息",
+      "pageid": "zcgzxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "固定资产名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.gdzcmc"
+        },
+        {
+          "title": "规格型号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.ggxh"
+        },
+        {
+          "title": "数量",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.slnum"
+        },
+        {
+          "title": "资产类型",
+          "component": "radio",
+          "name": "mainModel.zclx",
+          "options": [
+            {
+              "title": "设备类",
+              "value": "0"
+            },
+            {
+              "title": "基建水电",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "预计单价金(元)",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.yydj"
+        },
+        {
+          "title": "大写单价(元)",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.dxdj"
+        },
+        {
+          "title": "预计总金额(元)",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.yjzje"
+        },
+        {
+          "title": "大写总金额(元)",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.dxzje"
+        },
+        {
+          "title": "设计使用年限",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sjsynx"
+        },
+        {
+          "title": "建议固定资产类别",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.jygdzclb"
+        },
+        {
+          "title": "购置理由",
+          "component": "textarea",
+          "rows": 4,
+          "editablenode": "",
+          "name": "mainModel.gzly"
+        },
+        {
+          "title": "主要技术要求",
+          "component": "textarea",
+          "rows": 4,
+          "editablenode": "",
+          "name": "mainModel.zyjsyq"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.bz"
+        },
+        {
+          "title": "主抄送",
+          "component": "textarea",
+          "editablenode": "",
+          "name": "mainModel.zcs"
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
 }
