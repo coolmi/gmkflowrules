@@ -128,14 +128,14 @@
 			"subComponents": [
 				{
 					"title": "主抄送",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_mainss_nm",
 					"editablenode": "",
 					"name": "mainModel.m_mainss_nm"
 				},
 				{
 					"title": "晋升人员",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_postnm",
 					"editablenode": "",
 					"name": "mainModel.m_postnm"
