@@ -310,7 +310,8 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
+          "rows":"3",
           "editablenode": "",
           "name": "pobcost.sused"
         },
@@ -347,7 +348,8 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
+          "rows":"3",
           "editablenode": "",
           "name": "pobcost.ulrea"
         }

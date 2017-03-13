@@ -175,7 +175,8 @@
             },
             {
               "title": "申请事由",
-              "component": "text",
+              "component": "textarea",
+              "rows":"3",
               "name": "smemo"
             },
             {
