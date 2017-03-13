@@ -110,6 +110,8 @@
                 "title": "是否上报董事长",
                 "component": "select",
                 "name": "documentissue.reportboss",
+                "tasknode":"usertask1",
+                "editablenode":"usertask1",
                 "options": [{
                     "title": "无需上报",
                     "value": "0"
@@ -117,27 +119,20 @@
                     {
                         "title": "上报",
                         "value": "1"
-                    }]
+                    }],
+                "validation": {
+                    "pageid": "sqxx",
+                    "required": true,
+                    "validateMsg": "请选择是否上报董事长"
+                }
             },
             {
                 "title": "发文字号类型",
                 "component": "select",
                 "name": "documentissue.msgnumtype",
                 "options": [{
-                                "text": "祥光字",
-                                "value": "1"
-                            },
-                            {
-                                "text": "祥铜字",
-                                "value": "3"
-                            },
-                            {
-                                "text": "祥瑞字",
-                                "value": "5"
-                            },
-                            {
-                                "text": "新凤祥字",
-                                "value": "7"
+                                "text": "京华字",
+                                "value": "20"
                             }]
             },
             {
