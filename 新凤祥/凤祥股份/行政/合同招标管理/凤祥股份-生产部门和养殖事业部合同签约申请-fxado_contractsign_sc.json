@@ -142,7 +142,7 @@
         },
         {
           "title": "合同名称",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_htmc"
         },
         {
@@ -162,7 +162,7 @@
         },
         {
           "title": "定价依据",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_djyj"
         },
         {
@@ -200,7 +200,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.mijiname",
           "showLinkage": [
             {
@@ -384,7 +384,7 @@
         },
         {
           "title": "其他标的类型",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_qtbd",
           "showLinkage": [
             {
@@ -403,7 +403,7 @@
         },
         {
           "title": "供应商名称(全称)",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_supnm",
           "showLinkage": [
             {
@@ -447,7 +447,7 @@
         },
         {
           "title": "客户名称(全称)",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_guestnm",
           "showLinkage": [
             {
