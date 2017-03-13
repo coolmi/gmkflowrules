@@ -142,7 +142,7 @@
         },
         {
           "title": "合同名称",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.htmc"
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtbz",
           "showLinkage": [
             {
@@ -203,7 +203,7 @@
         },
         {
           "title": "客户名称(全称)",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.khmc",
           "showLinkage": [
             {
@@ -301,7 +301,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtyy",
           "showLinkage": [
             {
@@ -353,7 +353,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtjgqdfs",
           "showLinkage": [
             {
@@ -366,7 +366,7 @@
         },
         {
           "title": "供应商名称(全称)",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.gysmc"
         },
         {
@@ -395,7 +395,7 @@
         },
         {
           "title": "战略合作伙伴",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.zlhzhb",
           "showLinkage": [
             {
@@ -631,7 +631,7 @@
         },
         {
           "title": "印章名称",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.yzmcname"
         },
         {
