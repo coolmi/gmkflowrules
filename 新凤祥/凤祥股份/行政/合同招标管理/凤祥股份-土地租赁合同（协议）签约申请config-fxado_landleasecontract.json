@@ -148,7 +148,7 @@
       ]
     },
     {
-      "title": "合同协议情况",
+      "title": "合同协议",
       "pageid": "htxyqk",
       "component": "panel",
       "subComponents": [
@@ -243,7 +243,7 @@
           "tableForms": [
             {
               "title": "土地用途",
-              "component": "text",
+              "component": "textarea",
               "name": "tdyt"
             },
             {
@@ -312,7 +312,7 @@
         },
         {
           "title": "印章名称",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.yzmcname"
         },
         {
@@ -344,7 +344,7 @@
       ]
     },
     {
-      "title": "审批人信息",
+      "title": "审批人",
       "pageid": "sprxx",
       "component": "panel",
       "subComponents": [

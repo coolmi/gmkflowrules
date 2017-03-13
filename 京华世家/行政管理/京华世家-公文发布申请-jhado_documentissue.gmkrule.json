@@ -208,9 +208,13 @@
           "title": "是否游客显示",
           "component": "select",
           "name": "documentissue.touristexamination",
-          "editablenode": "docmgrrelease",
-          "tasknode": "docmgrrelease",
+          "editablenode": "damgrzx",
+          "tasknode": "damgrzx",
           "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
             {
               "text": "不可以",
               "value": "0"
