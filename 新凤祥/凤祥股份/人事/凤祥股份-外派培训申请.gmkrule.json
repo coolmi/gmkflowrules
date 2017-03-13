@@ -136,7 +136,7 @@
 				},
 				{
 					"title": "培训课题",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_trainproject",
 					"editablenode": "",
 					"name": "mainModel.trainproject"
@@ -193,7 +193,7 @@
 				},
 				{
 					"title": "学习/参观地点",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_studyvisit",
 					"editablenode": "",
 					"name": "mainModel.studyvisit"
