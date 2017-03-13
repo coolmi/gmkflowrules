@@ -159,7 +159,8 @@
 				},
 				{
 					"title": "调动原因",
-					"component": "text",
+					"component": "textarea",
+					"rows":"5",
 					"id": "mainModel_m_reason",
 					"editablenode": "",
 					"name": "mainModel.m_reason"
@@ -238,11 +239,11 @@
 					"options": [
 						{
 							"text": "否",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "是",
-							"value": "1",
+							"value": "1"
 						}
 					]
 				}
