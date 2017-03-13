@@ -144,7 +144,7 @@
         },
         {
           "title": "事项原因",
-          "component": "text",
+          "component": "textarea",
           "name": "orgtransfer.reason"
         },
         {

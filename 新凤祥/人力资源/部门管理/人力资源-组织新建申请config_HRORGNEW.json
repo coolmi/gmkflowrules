@@ -106,7 +106,7 @@
         },
         {
           "title": "操作原因",
-          "component": "text",
+          "component": "textarea",
           "name": "orgnew.massgtext"
         },
         {
