@@ -166,7 +166,7 @@
       ]
     },
     {
-      "title": "合同协议情况",
+      "title": "合同协议",
       "pageid": "htxyqk",
       "component": "panel",
       "subComponents": [
@@ -186,7 +186,7 @@
         },
         {
           "title": "公司信息",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.gsxxname"
         },
         {
@@ -317,7 +317,7 @@
       ]
     },
     {
-      "title": "审批人信息",
+      "title": "审批人",
       "pageid": "sprxx",
       "component": "panel",
       "subComponents": [
