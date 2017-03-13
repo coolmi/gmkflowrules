@@ -154,21 +154,21 @@
             },
             {
                 "title": "预期效益",
-                "component": "text",
+                "component": "textarea",
                 "id": "mainModel_jbxxyqsy",
                 "editablenode": "",
                 "name": "mainModel.jbxxyqsy"
             },
             {
                 "title": "风险评估",
-                "component": "text",
+                "component": "textarea",
                 "id": "mainModel_jbxxfxpg",
                 "editablenode": "",
                 "name": "mainModel.jbxxfxpg"
             },
             {
                 "title": "立项主要内容",
-                "component": "text",
+                "component": "textarea",
                 "id": "mainModel_jbxxzynr",
                 "editablenode": "",
                 "name": "mainModel.jbxxzynr"
@@ -189,14 +189,14 @@
             },
             {
                 "title": "事业部执行情况",
-                "component": "text",
+                "component": "textarea",
                 "id": "mainModel_sybzxlxqkname",
                 "editablenode": "",
                 "name": "mainModel.sybzxlxqkname"
             },
             {
                 "title": "公司执行情况",
-                "component": "text",
+                "component": "textarea",
                 "id": "mainModel_gszxlxqkname",
                 "editablenode": "",
                 "name": "mainModel.gszxlxqkname"
