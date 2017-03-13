@@ -90,12 +90,12 @@
         "subComponents": [{
             "title": "SAP用户名",
             "component": "text",
-            "name": "mainModel.sapusername",
+            "name": "mainModel.sapusername"
         },
         {
             "title": "使用人",
             "component": "textarea",
-            "name": "mainModel.syrname",
+            "name": "mainModel.syrname"
         },
         {
             "id": "symk",
@@ -120,17 +120,17 @@
         {
             "title": "使用部门",
             "component": "text",
-            "name": "mainModel.sybm",
+            "name": "mainModel.sybm"
         },
         {
             "title": "现有权限描述",
             "component": "textarea",
-            "name": "mainModel.xyqxms",
+            "name": "mainModel.xyqxms"
         },
         {
             "title": "权限处理意见",
             "component": "textarea",
-            "name": "mainModel.qxclyj",
+            "name": "mainModel.qxclyj"
         }]
     },
     {
@@ -188,6 +188,6 @@
                 "value": "j",
                 "text": "YZ"
             }]
-        },
+        }
     }
 }

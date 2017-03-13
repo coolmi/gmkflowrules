@@ -270,7 +270,7 @@
 		]
     },
 	{
-        "title": "采购执行确认",
+        "title": "采购确认",
         "pageid": "cgzxqr",
         "component": "panel",
 		"tasknode": "usertask7",

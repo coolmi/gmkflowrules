@@ -99,7 +99,7 @@
       ]
     },
     {
-      "title": "调入人信息",
+      "title": "调入人",
       "pageid": "dyrxx",
       "component": "panel",
       "subComponents": [
@@ -143,7 +143,7 @@
       ]
     },
 	{
-      "title": "IT综合管理员处理",
+      "title": "管理员处理",
       "pageid": "itzhglycl",
       "component": "panel",
       "subComponents": [
@@ -228,7 +228,7 @@
       ]
     },
 	{
-      "title": "申请人接收确认",
+      "title": "接收确认",
       "pageid": "sqrjsqr",
 	  "tasknode":"usertask5",
       "component": "panel",

@@ -219,7 +219,7 @@
       ]
     },
     {
-      "title": "分配运维信息",
+      "title": "分配运维",
       "pageid": "fpywxx",
       "component": "panel",
       "subComponents": [
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "title": "运维记录信息",
+      "title": "运维记录",
       "pageid": "ywjlxx",
       "component": "panel",
       "subComponents": [
@@ -302,13 +302,13 @@
         },
         {
           "title": "问题当前状态",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.currentstate"
         },
         {
           "title": "故障描述",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.spetypedesval"
         },
@@ -337,7 +337,7 @@
         },
         {
           "title": "解决方案",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.solution"
         },
@@ -357,7 +357,7 @@
         },
         {
           "title": "换件描述",
-          "component": "text",
+          "component": "",
           "editablenode": "",
           "name": "sendsingle.inades",
           "showLinkage": [
@@ -410,7 +410,8 @@
         },
         {
           "title": "反馈意见",
-          "component": "text",
+          "component": "",
+          "rows": "3",
           "editablenode": "usertask3",
           "name": "sendsingle.feedback",
           "validation": {

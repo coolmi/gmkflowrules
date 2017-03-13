@@ -162,7 +162,7 @@
         },
 		{
           "title": "IT设备名称",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "receiveborrow.itbodenameowner",
 		  "showLinkage":[
@@ -188,14 +188,15 @@
       ]
     },
 	{
-      "title": "IT综合管理",
+      "title": "IT管理",
       "pageid": "itzhgl",
 	  "tasknode":"usertask4,usertask5",
       "component": "panel",
       "subComponents": [
         {
           "title": "IT设备名称",
-          "component": "text",
+          "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask4",
           "name": "receiveborrow.itbodename",
 		  "validation":{
@@ -261,7 +262,8 @@
         },
 		{
           "title": "规格型号",
-          "component": "text",
+          "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask4",
           "name": "receiveborrow.specation",
 		  "validation":{
@@ -279,7 +281,8 @@
         },
 		{
           "title": "设备状态",
-          "component": "text",
+          "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask4",
           "name": "receiveborrow.eqstate",
 		  "validation":{
@@ -315,7 +318,8 @@
         },
 		{
           "title": "软件确认",
-          "component": "text",
+          "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask4",
           "name": "receiveborrow.softval",
 		  "validation":{
@@ -333,7 +337,8 @@
         },
 		{
           "title": "硬件确认",
-          "component": "text",
+          "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask4",
           "name": "receiveborrow.hardval",
 		  "validation":{
@@ -354,7 +359,7 @@
       ]
     },
 	{
-      "title": "申请人接收确认",
+      "title": "接收确认",
       "pageid": "sqrjsqr",
 	  "tasknode":"usertask5",
       "component": "panel",
@@ -362,6 +367,7 @@
         {
           "title": "IT设备名称",
           "component": "textarea",
+          "rows": "3",
           "editablenode": "usertask5",
           "name": "receiveborrow.confirmapp"
         }
