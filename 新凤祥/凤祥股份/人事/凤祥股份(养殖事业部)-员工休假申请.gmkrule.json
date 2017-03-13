@@ -148,7 +148,8 @@
             },
             {
               "title": "备注",
-              "component": "text",
+              "component": "textarea",
+              "rows":"3",
               "name": "mainModel.readks"
             },
             {
@@ -442,7 +443,8 @@
                 },
                 {
                   "title": "备注",
-                  "component": "text",
+                  "component": "textarea",
+                  "rows":"3",
                   "name": "fxbz"
                 },
                 {
