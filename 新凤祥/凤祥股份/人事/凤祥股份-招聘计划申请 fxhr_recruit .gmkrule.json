@@ -128,7 +128,7 @@
 			"subComponents": [
 				{
 					"title": "主抄送姓名",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_mainss_nm",
 					"editablenode": "",
 					"name": "mainModel.m_mainss_nm"
@@ -272,7 +272,7 @@
 				},
 				{
 					"title": "工作经验",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_experience",
 					"editablenode": "",
 					"name": "mainModel.m_experience"
@@ -312,14 +312,14 @@
 				},
 				{
 					"title": "岗位说明",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_postsm",
 					"editablenode": "",
 					"name": "mainModel.m_postsm"
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_remark",
 					"editablenode": "",
 					"name": "mainModel.m_remark"
