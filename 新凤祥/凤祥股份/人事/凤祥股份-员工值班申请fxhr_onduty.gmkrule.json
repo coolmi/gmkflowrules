@@ -124,7 +124,7 @@
         },
         {
           "title": "值班理由",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.ondutyreason"
         }
       ]
