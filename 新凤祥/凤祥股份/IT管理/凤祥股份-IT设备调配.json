@@ -132,6 +132,7 @@
                 {
                     "title": "调配原因",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipblend.result"
                 }
             ]
@@ -158,7 +159,9 @@
                 },
                 {
                     "title": "规格型号",
-                    "component": "text",
+
+                    "component": "textarea",
+                    "rows":"2",
                     "name": "fxitequipblend.itequipversion"
                 },
                 {
@@ -241,6 +244,7 @@
                 {
                     "title": "检查结果及系统确认",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipblend.itconfirm",
                     "tasknode": "usertask5,usertask6,usertask7,usertask8,usertask9",
                     "editablenode": "usertask5",
@@ -284,6 +288,7 @@
                 {
                     "title": "设备问题反馈",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipblend.feedback",
                     "tasknode": "usertask6,usertask7,usertask8,usertask9",
                     "editablenode": "usertask6",
