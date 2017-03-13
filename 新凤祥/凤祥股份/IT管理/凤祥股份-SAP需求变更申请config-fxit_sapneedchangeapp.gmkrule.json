@@ -191,11 +191,13 @@
         {
           "title": "业务现状描述",
           "component": "textarea",
+          "rows":"5",
           "name": "fxSapNeedChange.syscurrentms"
         },
         {
           "title": "未来系统业务描述",
           "component": "textarea",
+          "rows":"5",
           "name": "fxSapNeedChange.sysfuturems"
         },
         {
@@ -203,6 +205,7 @@
           "tasknode": "erpnbgwtxjjfa,ywfxkjlsh,zxrycl",
           "editablenode": "erpnbgwtxjjfa",
           "component": "textarea",
+          "rows":"5",
           "name": "fxSapNeedChange.nbgwjy",
           "validation": {
             "pageid": "sqxx",
