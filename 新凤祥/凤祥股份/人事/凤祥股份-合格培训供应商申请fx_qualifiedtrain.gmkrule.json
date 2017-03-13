@@ -160,7 +160,7 @@
 				},
 				{
 					"title": "参训对象",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_participat",
 					"editablenode": "",
 					"name": "mainModel.participat"
