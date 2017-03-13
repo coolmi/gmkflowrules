@@ -219,7 +219,7 @@
         },
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.zcs"
         },
         {
@@ -331,7 +331,7 @@
       ]
     },
     {
-      "title": "审计部分配信息",
+      "title": "审计部分配",
       "pageid": "sjbfpxx",
       "component": "panel",
       "tasknode": "sjbmfp",
