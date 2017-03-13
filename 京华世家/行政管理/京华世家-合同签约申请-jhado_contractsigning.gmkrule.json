@@ -607,23 +607,23 @@
               "value": ""
             },
             {
-              "text": "A-技术设计合同（A）",
+              "text": "A-基金合同（A）",
               "value": "A"
             },
             {
-              "text": "B-设备买卖安装合同（B）",
+              "text": "B-客户合同（B）",
               "value": "B"
             },
             {
-              "text": "C-建筑工程合同（C）",
+              "text": "C-投资合同（C）",
               "value": "C"
             },
             {
-              "text": "D-买卖合同（D）",
+              "text": "D-采购合同（D）",
               "value": "D"
             },
             {
-              "text": "E-其他合同（E）",
+              "text": "E-其他业务合同（E）",
               "value": "E"
             }
           ]

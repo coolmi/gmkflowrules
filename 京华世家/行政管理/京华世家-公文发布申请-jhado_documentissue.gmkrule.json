@@ -1,206 +1,232 @@
 {
-    "id": "jhado_documentissue",
-    "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "documentissue.appid"
+  "id": "jhado_documentissue",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "documentissue.appid"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "documentissue.appda"
+          "title": "申请日期",
+          "component": "date1",
+          "name": "documentissue.appda"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["documentissue.pernr", "-", "documentissue.username"]
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "documentissue.pernr",
+            "-",
+            "documentissue.username"
+          ]
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["documentissue.sysbusinessunitname", "-", "documentissue.sysdeptname"]
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "documentissue.sysbusinessunitname",
+            "-",
+            "documentissue.sysdeptname"
+          ]
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.userid"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.userid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.username"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.username"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.pernr"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.pernr"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.syspostname"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.syspostname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.sysdeptid"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.sysdeptid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.sysdeptname"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.sysdeptname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.sysbusinessunitid"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.sysbusinessunitid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.sysbusinessunitname"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.sysbusinessunitname"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.postid"
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.postid"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "documentissue.id"
-        }]
+          "title": "",
+          "component": "hidden",
+          "name": "documentissue.id"
+        }
+      ]
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-                "title": "标题",
-                "component": "text",
-                "name": "documentissue.title"
-
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "name": "documentissue.title"
+        },
+        {
+          "title": "重要程度",
+          "component": "select",
+          "name": "documentissue.degree",
+          "options": [
+            {
+              "title": "普通",
+              "value": "0"
             },
             {
-                "title": "重要程度",
-                "component": "select",
-                "name": "documentissue.degree",
-                "options": [{
-                    "title": "普通",
-                    "value": "0"
-                },
-                    {
-                        "title": "重要",
-                        "value": "1"
-                    }]
-            },
-            {
-                "title": "是否上报董事长",
-                "component": "select",
-                "name": "documentissue.reportboss",
-                "tasknode":"usertask1",
-                "editablenode":"usertask1",
-                "options": [{
-                    "title": "无需上报",
-                    "value": "0"
-                },
-                    {
-                        "title": "上报",
-                        "value": "1"
-                    }],
-                "validation": {
-                    "pageid": "sqxx",
-                    "required": true,
-                    "validateMsg": "请选择是否上报董事长"
-                }
-            },
-            {
-                "title": "发文字号类型",
-                "component": "select",
-                "name": "documentissue.msgnumtype",
-                "options": [{
-                                "text": "京华字",
-                                "value": "20"
-                            }]
-            },
-            {
-                "title": "发文字号",
-                "component": "text",
-                "name": "documentissue.msgnum"
-            },
-            {
-                "title": "签发日期",
-                "component": "text",
-                "datatype": "date",
-                "dateFormat": "yyyy-MM-dd",
-                "name": "documentissue.suedate"
-            },
-            {
-                "title": "发布单位",
-                "component": "text",
-                "name": "documentissue.butxt"
-            },
-            {
-                "title": "主送",
-                "component": "text",
-                "name": "documentissue.mainsend"
-            },
-			{
-				"title": "抄送",
-				"component": "text",
-				"name": "documentissue.copysend"
-			},
-			{
-				"title": "发布范围",
-				"component": "textarea",
-				"name": "documentissue.selscope"
-			},
-			{
-				"title": "公文附件",
-				"component": "text",
-				"name": "documentissue.docmentafresconame",
-				"events":{
-					"eventType":"openDocument",	
-					"filename":"documentissue.docmentafresconame",
-					"afrescoid":"documentissue.docmentafrescoid"
-					
-				}
-			
-			},
-            {
-                "title": "是否游客显示",
-                "component": "select",
-                "name": "documentissue.touristexamination",
-                "editablenode":"docmgrrelease",
-                "tasknode":"docmgrrelease",
-                "options": [{
-                                "text": "不可以",
-                                "value": "0"
-                            },
-                            {
-                                "text": "可以",
-                                "value": "1"
-                            }
-                           ],
-                "validation":{
-                    "pageid":"sqxx",
-                    "required":true,
-                    "validateMsg":"请选择游客身份是否可以查看"
-                }
+              "title": "重要",
+              "value": "1"
             }
-        ]
+          ]
+        },
+        {
+          "title": "是否上报董事长",
+          "component": "select",
+          "name": "documentissue.reportboss",
+          "tasknode": "usertask1",
+          "editablenode": "usertask1",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "无需上报",
+              "value": "0"
+            },
+            {
+              "title": "上报",
+              "value": "1"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择是否上报董事长"
+          }
+        },
+        {
+          "title": "发文字号类型",
+          "component": "select",
+          "name": "documentissue.msgnumtype",
+          "options": [
+            {
+              "text": "京华字",
+              "value": "20"
+            }
+          ]
+        },
+        {
+          "title": "发文字号",
+          "component": "text",
+          "name": "documentissue.msgnum"
+        },
+        {
+          "title": "签发日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "documentissue.suedate"
+        },
+        {
+          "title": "发布单位",
+          "component": "text",
+          "name": "documentissue.butxt"
+        },
+        {
+          "title": "主送",
+          "component": "text",
+          "name": "documentissue.mainsend"
+        },
+        {
+          "title": "抄送",
+          "component": "text",
+          "name": "documentissue.copysend"
+        },
+        {
+          "title": "发布范围",
+          "component": "textarea",
+          "name": "documentissue.selscope"
+        },
+        {
+          "title": "公文附件",
+          "component": "text",
+          "name": "documentissue.docmentafresconame",
+          "events": {
+            "eventType": "openDocument",
+            "filename": "documentissue.docmentafresconame",
+            "afrescoid": "documentissue.docmentafrescoid"
+          }
+        },
+        {
+          "title": "是否游客显示",
+          "component": "select",
+          "name": "documentissue.touristexamination",
+          "editablenode": "docmgrrelease",
+          "tasknode": "docmgrrelease",
+          "options": [
+            {
+              "text": "不可以",
+              "value": "0"
+            },
+            {
+              "text": "可以",
+              "value": "1"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择游客身份是否可以查看"
+          }
+        }
+      ]
     }
-    ]
+  ]
 }
