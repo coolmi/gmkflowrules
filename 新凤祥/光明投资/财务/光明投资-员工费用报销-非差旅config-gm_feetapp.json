@@ -797,7 +797,8 @@
             {
               "title": "",
               "title1": "事由",
-              "component": "text",
+              "component": "textarea",
+              "rows":"3",
               "name": "smemg"
             },
             {
@@ -905,7 +906,8 @@
             },
             {
               "title": "扣款说明",
-              "component": "text",
+              "component": "textarea",
+              "rows":"3",
               "name": "smemof"
             }
           ]
@@ -917,7 +919,8 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
+          "rows":"3",
           "name": "reimburse.reservconent"
         }
       ]
@@ -983,7 +986,8 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
+          "rows":"3",
           "tmpValueName": "reimburse.reservconent",
           "name": "rstgrp"
         }
