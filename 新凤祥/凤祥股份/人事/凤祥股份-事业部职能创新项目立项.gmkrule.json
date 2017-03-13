@@ -174,7 +174,7 @@
                     },
                     {
                       "title": "立项情况",
-                      "component": "text",
+                      "component": "textarea",
                       "emptyHidden":true,
                       "name": "sybzxlxqkname"
                     },
@@ -192,7 +192,7 @@
                     },
                     {
                       "title": "备注",
-                      "component": "text",
+                      "component": "textarea",
                       "emptyHidden":true,
                       "name": "sybzxbz"
                     }
