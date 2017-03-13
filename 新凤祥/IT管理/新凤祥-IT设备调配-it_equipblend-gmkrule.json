@@ -10,7 +10,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +19,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,212 +118,211 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "panel_sqxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "调入人姓名",
-					"component": "text",
-					"id": "itequipblend_inpostusernm",
-					"editablenode": "",
-					"name": "itequipblend.inpostusernm"
-				},
-				{
-					"title": "调入人部门名称",
-					"component": "text",
-					"id": "itequipblend_indeptnm",
-					"editablenode": "",
-					"name": "itequipblend.indeptnm"
-				},
-				{
-					"title": "调入人归属法人单位名称",
-					"component": "text",
-					"id": "itequipblend_inpostjurnm",
-					"editablenode": "",
-					"name": "itequipblend.inpostjurnm"
-				},
-				{
-					"title": "调入人所在事业部/中心　名称",
-					"component": "text",
-					"id": "itequipblend_inpostbusideptnm",
-					"editablenode": "",
-					"name": "itequipblend.inpostbusideptnm"
-				},
-				{
-					"title": "调配原因",
-					"component": "textarea",
-					"id": "itequipblend_result",
-					"editablenode": "",
-					"rows": "3",
-					"name": "itequipblend.result"
-				},
-				{
-					"title": "IT设备编号",
-					"component": "text",
-					"id": "itequipblend_itequipid",
-					"editablenode": "",
-					"name": "itequipblend.itequipid"
-				},
-				{
-					"title": "IT设备名称",
-					"component": "text",
-					"id": "itequipblend_itequipnm",
-					"editablenode": "",
-					"name": "itequipblend.itequipnm"
-				},
-				{
-					"title": "IT设备类别",
-					"component": "text",
-					"id": "itequipblend_itequiptp",
-					"editablenode": "",
-					"name": "itequipblend.itequiptp"
-				},
-				{
-					"title": "IT设备规格型号",
-					"component": "text",
-					"id": "itequipblend_itequipversion",
-					"editablenode": "",
-					"name": "itequipblend.itequipversion"
-				},
-				{
-					"title": "IT设备状态",
-					"component": "text",
-					"id": "itequipblend_itequipstate",
-					"editablenode": "",
-					"name": "itequipblend.itequipstate"
-				},
-				{
-					"title": "IT设备出厂编号",
-					"component": "text",
-					"id": "itequipblend_itequipoutcode",
-					"editablenode": "",
-					"name": "itequipblend.itequipoutcode"
-				},
-				{
-					"title": "IT设备原持有人code",
-					"component": "text",
-					"id": "itequipblend_itequipolditcode",
-					"editablenode": "",
-					"name": "itequipblend.itequipolditcode"
-				},
-				{
-					"title": "IT设备原持有人姓名",
-					"component": "text",
-					"id": "itequipblend_itequipoldnm",
-					"editablenode": "",
-					"name": "itequipblend.itequipoldnm"
-				},
-				{
-					"title": "IT设备原持有人所在部门",
-					"component": "text",
-					"id": "itequipblend_itequipolddeptnm",
-					"editablenode": "",
-					"name": "itequipblend.itequipolddeptnm"
-				},
-				{
-					"title": "IT设备原持有人所在事业部/中心",
-					"component": "text",
-					"id": "itequipblend_itequipoldbusinm",
-					"editablenode": "",
-					"name": "itequipblend.itequipoldbusinm"
-				},
-				{
-					"title": "IT设备原持有人所在公司",
-					"component": "text",
-					"id": "itequipblend_itequipoldcomp",
-					"editablenode": "",
-					"name": "itequipblend.itequipoldcomp"
-				},
-				{
-					"title": "IT设备原持有人所属法人单位",
-					"component": "text",
-					"id": "itequipblend_itequipoldjurnm",
-					"editablenode": "",
-					"name": "itequipblend.itequipoldjurnm"
-				},
-				{
-					"title": "备份情况",
-					"component": "select",
-					"id": "itequipblend_itequipbkstate",
-					"tasknode": "usertask4,usertask5,usertask6,usertask7",
-					"editablenode": "usertask4",
-					"validation":{
-						"pageid":"panel_sqxx",
-						"required":true,
-						"validateMsg":"请填写备份情况",
-						"regexs":""
-					},
-					"name": "itequipblend.itequipbkstate",
-					"options": [
-						{
-							"text": "否",
-							"value": "0",
-						},
-						{
-							"text": "是",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "运维支持人员系统确认",
-					"component": "text",
-					"id": "itequipblend_itconfirm",
-					"tasknode": "usertask5,usertask6,usertask7",
-					"editablenode": "usertask5",
-					"validation":{
-						"pageid":"panel_sqxx",
-						"required":true,
-						"validateMsg":"请填写运维支持人员系统确认",
-						"regexs":""
-					},
-					"name": "itequipblend.itconfirm"
-				},
-				{
-					"title": "设备接收结果",
-					"component": "select",
-					"id": "itequipblend_receive",
-					"tasknode": "usertask6,usertask7",
-					"editablenode": "usertask6",
-					"validation":{
-						"pageid":"panel_sqxx",
-						"required":true,
-						"validateMsg":"请填写设备接收结果",
-						"regexs":""
-					},
-					"name": "itequipblend.receive",
-					"options": [
-						{
-							"text": "存在问题",
-							"value": "0",
-						},
-						{
-							"text": "设备正常",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "设备问题反馈",
-					"component": "text",
-					"id": "itequipblend_feedback",
-					"tasknode": "usertask6,usertask7",
-					"editablenode": "usertask6",
-					"validation":{
-						"pageid":"panel_sqxx",
-						"required":false,
-						"validateMsg":"请填写设备问题反馈",
-						"regexs":""
-					},
-					"name": "itequipblend.feedback"
-				}
-			]
-		}
-
-
+    {
+      "title": "申请信息",
+      "pageid": "panel_sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "调入人姓名",
+          "component": "text",
+          "id": "itequipblend_inpostusernm",
+          "editablenode": "",
+          "name": "itequipblend.inpostusernm"
+        },
+        {
+          "title": "调入人部门名称",
+          "component": "text",
+          "id": "itequipblend_indeptnm",
+          "editablenode": "",
+          "name": "itequipblend.indeptnm"
+        },
+        {
+          "title": "调入人归属法人单位名称",
+          "component": "text",
+          "id": "itequipblend_inpostjurnm",
+          "editablenode": "",
+          "name": "itequipblend.inpostjurnm"
+        },
+        {
+          "title": "调入人所在事业部/中心　名称",
+          "component": "text",
+          "id": "itequipblend_inpostbusideptnm",
+          "editablenode": "",
+          "name": "itequipblend.inpostbusideptnm"
+        },
+        {
+          "title": "调配原因",
+          "component": "textarea",
+          "id": "itequipblend_result",
+          "editablenode": "",
+          "rows": "3",
+          "name": "itequipblend.result"
+        },
+        {
+          "title": "IT设备编号",
+          "component": "text",
+          "id": "itequipblend_itequipid",
+          "editablenode": "",
+          "name": "itequipblend.itequipid"
+        },
+        {
+          "title": "IT设备名称",
+          "component": "text",
+          "id": "itequipblend_itequipnm",
+          "editablenode": "",
+          "name": "itequipblend.itequipnm"
+        },
+        {
+          "title": "IT设备类别",
+          "component": "text",
+          "id": "itequipblend_itequiptp",
+          "editablenode": "",
+          "name": "itequipblend.itequiptp"
+        },
+        {
+          "title": "IT设备规格型号",
+          "component": "text",
+          "id": "itequipblend_itequipversion",
+          "editablenode": "",
+          "name": "itequipblend.itequipversion"
+        },
+        {
+          "title": "IT设备状态",
+          "component": "text",
+          "id": "itequipblend_itequipstate",
+          "editablenode": "",
+          "name": "itequipblend.itequipstate"
+        },
+        {
+          "title": "IT设备出厂编号",
+          "component": "text",
+          "id": "itequipblend_itequipoutcode",
+          "editablenode": "",
+          "name": "itequipblend.itequipoutcode"
+        },
+        {
+          "title": "IT设备原持有人code",
+          "component": "text",
+          "id": "itequipblend_itequipolditcode",
+          "editablenode": "",
+          "name": "itequipblend.itequipolditcode"
+        },
+        {
+          "title": "IT设备原持有人姓名",
+          "component": "text",
+          "id": "itequipblend_itequipoldnm",
+          "editablenode": "",
+          "name": "itequipblend.itequipoldnm"
+        },
+        {
+          "title": "IT设备原持有人所在部门",
+          "component": "text",
+          "id": "itequipblend_itequipolddeptnm",
+          "editablenode": "",
+          "name": "itequipblend.itequipolddeptnm"
+        },
+        {
+          "title": "IT设备原持有人所在事业部/中心",
+          "component": "text",
+          "id": "itequipblend_itequipoldbusinm",
+          "editablenode": "",
+          "name": "itequipblend.itequipoldbusinm"
+        },
+        {
+          "title": "IT设备原持有人所在公司",
+          "component": "text",
+          "id": "itequipblend_itequipoldcomp",
+          "editablenode": "",
+          "name": "itequipblend.itequipoldcomp"
+        },
+        {
+          "title": "IT设备原持有人所属法人单位",
+          "component": "text",
+          "id": "itequipblend_itequipoldjurnm",
+          "editablenode": "",
+          "name": "itequipblend.itequipoldjurnm"
+        },
+        {
+          "title": "备份情况",
+          "component": "select",
+          "id": "itequipblend_itequipbkstate",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7",
+          "editablenode": "usertask4",
+          "validation": {
+            "pageid": "panel_sqxx",
+            "required": true,
+            "validateMsg": "请填写备份情况",
+            "regexs": ""
+          },
+          "name": "itequipblend.itequipbkstate",
+          "options": [
+            {
+              "text": "否",
+              "value": "0"
+            },
+            {
+              "text": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "运维支持人员系统确认",
+          "component": "textarea",
+          "rows": "3",
+          "id": "itequipblend_itconfirm",
+          "tasknode": "usertask5,usertask6,usertask7",
+          "editablenode": "usertask5",
+          "validation": {
+            "pageid": "panel_sqxx",
+            "required": true,
+            "validateMsg": "请填写运维支持人员系统确认",
+            "regexs": ""
+          },
+          "name": "itequipblend.itconfirm"
+        },
+        {
+          "title": "设备接收结果",
+          "component": "select",
+          "id": "itequipblend_receive",
+          "tasknode": "usertask6,usertask7",
+          "editablenode": "usertask6",
+          "validation": {
+            "pageid": "panel_sqxx",
+            "required": true,
+            "validateMsg": "请填写设备接收结果",
+            "regexs": ""
+          },
+          "name": "itequipblend.receive",
+          "options": [
+            {
+              "text": "存在问题",
+              "value": "0"
+            },
+            {
+              "text": "设备正常",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "设备问题反馈",
+          "component": "textarea",
+          "rows": "3",
+          "id": "itequipblend_feedback",
+          "tasknode": "usertask6,usertask7",
+          "editablenode": "usertask6",
+          "validation": {
+            "pageid": "panel_sqxx",
+            "required": false,
+            "validateMsg": "请填写设备问题反馈",
+            "regexs": ""
+          },
+          "name": "itequipblend.feedback"
+        }
+      ]
+    }
   ],
   "refers": {
   }
