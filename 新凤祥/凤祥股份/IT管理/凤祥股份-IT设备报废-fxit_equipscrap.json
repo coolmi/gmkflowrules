@@ -163,12 +163,14 @@
                 },
                 {
                     "title": "设备状态",
-                    "component": "text",
+                    "component": "textarea",
+                    "rows":"2",
                     "name": "fxitequipscrap.itequipstate"
-                }
+                },
                 {
                     "title": "报废原因",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipscrap.scrapreason"
                 },
                  {
@@ -188,6 +190,7 @@
                 {
                     "title": "评估意见",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipscrap.assessment",
                     "editablenode": "usertask2",
                     "tasknode":"usertask2,usertask3,usertask4,usertask5,usertask6,usertask7,usertask10",
@@ -201,6 +204,7 @@
                 {
                     "title": "报废处理意见",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipscrap.doment",
                     "editablenode": "usertask2",
                     "tasknode":"usertask2,usertask3,usertask4,usertask5,usertask6,usertask7,usertask10",
@@ -222,6 +226,7 @@
                 {
                     "title": "处理结果汇报",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipscrap.doresultb",
                     "editablenode": "usertask6",
                     "tasknode":"usertask6,usertask7,usertask10",
@@ -243,6 +248,7 @@
                 {
                     "title": "处理结果",
                     "component": "textarea",
+                    "rows":"3",
                     "name": "fxitequipscrap.doresulta",
                     "editablenode": "usertask10",
                     "tasknode":"usertask10",
