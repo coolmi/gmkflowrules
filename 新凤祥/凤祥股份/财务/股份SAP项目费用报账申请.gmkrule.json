@@ -152,7 +152,7 @@
 				},
 				{
 					"title": "费用用途",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_useexpense",
 					"editablenode": "",
 					"name": "mainModel.useexpense"
