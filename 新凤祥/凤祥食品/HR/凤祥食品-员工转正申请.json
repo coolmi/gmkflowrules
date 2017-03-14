@@ -205,7 +205,7 @@
             },
             {
               "title": "综合评价",
-              "component": "text",
+              "component": "textarea",
               "name": "remark"
             }
           ]
