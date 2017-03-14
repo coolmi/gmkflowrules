@@ -863,7 +863,7 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
           "tmpValueName": "app.reservconent",
           "name": "rstgrp"
         }
