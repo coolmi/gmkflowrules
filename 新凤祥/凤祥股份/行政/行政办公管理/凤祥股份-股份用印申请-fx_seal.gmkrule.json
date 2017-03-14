@@ -205,7 +205,7 @@
         ]
     },
 	{
-        "title": "印章需求印章明细",
+        "title": "需求明细",
         "pageid": "yzxqmx",
         "component": "panel",
         "subComponents": [
