@@ -126,7 +126,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "rows": "5",
           "name": "mainModel.remarks"
         }
@@ -196,7 +196,7 @@
             {
               "title": "",
               "title1": "用途",
-              "component": "text",
+              "component": "textarea",
               "name": "info_purpose"
             }
           ]
