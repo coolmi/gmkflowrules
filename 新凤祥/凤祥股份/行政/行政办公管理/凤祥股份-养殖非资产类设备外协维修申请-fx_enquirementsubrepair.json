@@ -90,12 +90,12 @@
         "subComponents": [
 			{
                 "title": "维修项目名称",
-                "component": "text",
+                "component": "textarea",
                 "name": "mainModel.repairprojectname"
             },
 			{
                 "title": "维修区域",
-                "component": "text",
+                "component": "textarea",
                 "name": "mainModel.repairarea"
             },
             {
