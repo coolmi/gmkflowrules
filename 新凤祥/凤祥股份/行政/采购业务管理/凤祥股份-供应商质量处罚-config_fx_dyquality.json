@@ -107,7 +107,7 @@
       "subComponents": [
         {
           "title": "主抄送人员",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.zopostname"
         },
         {
@@ -117,7 +117,7 @@
         },
         {
           "title": "请示内容",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.dailyname"
         }
       ]
