@@ -219,7 +219,7 @@
         },
         {
           "title": "说明",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "pobcost.smemo"
         }
@@ -289,7 +289,7 @@
             {
               "title": "",
               "title1": "会计科目描述",
-              "component": "text",
+              "component": "textarea",
               "editablenode": "",
               "name": "kstarnm"
             },
