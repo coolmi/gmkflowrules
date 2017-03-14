@@ -1,0 +1,459 @@
+{
+  "id": "gmk_fxnewcompubreim",
+  "handleOnPC": {
+    "tasknode": [
+      "fxcompubnewreim7"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "报销人信息",
+      "pageid": "bxrxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "员工ITCODE",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.userid"
+          ]
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "员工所在部门",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "职能中心/事业部",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "手机号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.telpr"
+        },
+        {
+          "title": "财务编码",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.lifnr"
+        }
+
+
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "公司",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "是否跨成本中心",
+          "component": "radio",
+          "name": "mainModel.titlename",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "项目类型",
+          "component": "select",
+          "name": "mainModel.protype",
+          "options": [
+            {
+              "title": "通用",
+              "value": "0"
+            },
+            {
+              "title": "专项",
+              "value": "1"
+            }
+          ]
+        },
+
+
+        {
+          "title": "附件数",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.enclosure"
+        },
+        {
+          "title": "说明",
+          "component": "textarea",
+          "rows": 5,
+          "editablenode": "",
+          "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "费用细项",
+      "pageid": "fylb",
+      "component": "panel",
+      "id": "fylb1",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "formLabelLink",
+          "tabletype": "looppanel",
+          "id": "fylbfylx",
+          "basePath": "versalepromoexpeninfolist",
+          "titleIndex": 2,
+          "linkForms": [
+            {
+              "title": "境内/外",
+              "component": "text",
+              "name": "info_budgetitemdes"
+            },
+            {
+              "title": "年月",
+              "component": "text",
+              "name": "info_writedate"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "info_cdkotxt"
+            },
+            {
+              "title": "费用类型",
+              "component": "text",
+              "name": "info_writetypedes"
+            },
+            {
+              "title": "费用大项",
+              "component": "text",
+              "name": "info_itemsdec"
+            },
+            {
+              "title": "费用细项",
+              "component": "text",
+              "name": "info_writecostypedes"
+            },
+            {
+              "title": "费用科目",
+              "component": "text",
+              "name": "info_subjectcodedec"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "info_writeamount"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "费用信息",
+      "pageid": "fyxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.lifnrp"
+        },
+        {
+          "title": "供应商描述",
+          "component": "text",
+          "name": "mainModel.lifnrtext"
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.bankl"
+        },
+        {
+          "title": "汇入账户",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.bankn"
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.bldat"
+        },
+        {
+          "title": "付款种类",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.paytype"
+        },
+        {
+          "title": "汇款用途",
+          "component": "textarea",
+          "editablenode": "",
+          "name": "mainModel.sused"
+        },
+        {
+          "title": "预付款金额",
+          "component": "text",
+          "datatype": "money",
+          "editablenode": "",
+          "name": "mainModel.deposit"
+        },
+        {
+          "title": "预付款金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.kuname"
+        },
+        {
+          "title": "补（退）金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pswbt"
+        },
+        {
+          "title": "补（退）金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pwsbtd"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.budat"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "editablenode": "",
+          "name": "mainModel.reamaks"
+        }
+      ]
+    },
+    {
+      "title": "账务审核",
+      "pageid": "cwshxx_page",
+      "component": "panel",
+      "tasknode": "fxcompubnewreim7",
+      "subComponents": [
+        {
+          "title": "合计应付",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoeyapply_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_afterwriteamount"
+          }
+        },
+        {
+          "title": "合计扣款",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoneysub_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_aftercdmbtrf"
+          }
+        },
+        {
+          "title": "合计实付",
+          "component": "text",
+          "datatype": "money",
+          "name": "calmoneyreal_self",
+          "sumValue": {
+            "arrayPath": "versalepromoexpencaiwuinfolist",
+            "sumParam": "info_writeamount"
+          }
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 2,
+          "lTitleIndex": 2,
+          "rTitleIndex": 7,
+          "basePath": "versalepromoexpencaiwuinfolist",
+          "id": "versalepromoexpencaiwuinfolist_table",
+          "tableForms": [
+            {
+              "title": "项目号子号",
+              "component": "label",
+              "label": [
+                "info_colnr",
+                "-",
+                "info_childcolnr"
+              ]
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "info_cdkotxt"
+            },
+            {
+              "title": "科目编码",
+              "component": "label",
+              "label": [
+                "info_subjectcode",
+                "-",
+                "info_subjectcodedec"
+              ]
+            },
+            {
+              "title": "调后科目",
+              "component": "text",
+              "name": "info_aftersubjectcodedes"
+            },
+            {
+              "title": "调后子项目号",
+              "component": "text",
+              "name": "info_afterchildcolnr"
+            },
+            {
+              "title": "应付",
+              "component": "text",
+              "name": "info_afterwriteamount"
+            },
+            {
+              "title": "扣款",
+              "component": "text",
+              "name": "info_aftercdmbtrf"
+            },
+            {
+              "title": "实付",
+              "component": "text",
+              "name": "info_writeamount"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
