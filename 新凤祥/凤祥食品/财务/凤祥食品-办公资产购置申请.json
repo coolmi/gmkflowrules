@@ -240,19 +240,19 @@
 		},
 		{
 			"title": "购置理由",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.m_why"
 		},
 		{
 			"title": "技术要求",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.m_jsyq"
 		},
 		{
 			"title": "备注",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.m_bz"
 		}]
