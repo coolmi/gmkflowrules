@@ -148,7 +148,7 @@
                 {
                   "title": "",
                   "title1": "供应商名称",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "htcbf"
                 },
 				{
@@ -166,7 +166,7 @@
 				{
 				  "title": "",
 				  "title1": "采购执行说明",
-				  "component": "text",
+				  "component": "textarea",
 				  "name": "dfdlr"
 				},
 				{
@@ -196,7 +196,7 @@
 				{
 				  "title": "",
 				  "title1": "备注",
-				  "component": "text",
+				  "component": "textarea",
 				  "name": "fjys"
 				}
  
