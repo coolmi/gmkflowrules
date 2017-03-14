@@ -320,7 +320,7 @@
 				},
 				{
 					"title": "档案室签字备案",
-					"component": "text",
+					"component": "textarea",
 					"id": "app_dasqzba",
 					"editablenode": "",
 					"name": "app.dasqzba"
@@ -334,7 +334,7 @@
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "app_market",
 					"editablenode": "",
 					"name": "app.market"
