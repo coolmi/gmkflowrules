@@ -111,13 +111,13 @@
       "subComponents": [
         {
           "title": "申请事由",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.sqsy"
         },
         {
           "title": "印章用途",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.yzyt"
         },
