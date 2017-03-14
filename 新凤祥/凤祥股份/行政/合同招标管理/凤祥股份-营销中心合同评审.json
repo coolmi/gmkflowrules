@@ -140,7 +140,7 @@
         },
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.zcs"
         }
       ]
@@ -218,7 +218,7 @@
             },
             {
               "title": "产品工艺描述",
-              "component": "text",
+              "component": "textarea",
               "name": "cpgyms"
             }
           ]
@@ -238,7 +238,7 @@
         },
         {
           "title": "售达方",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.sapsdf"
         },
         {
