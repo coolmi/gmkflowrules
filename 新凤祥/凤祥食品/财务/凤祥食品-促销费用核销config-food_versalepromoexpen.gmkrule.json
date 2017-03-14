@@ -151,7 +151,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.remarks"
         }
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "title": "财务审核信息",
+      "title": "财务审核",
       "pageid": "cwshxx",
       "component": "panel",
       "tasknode": "usertask5,usertask6,usertask7",
