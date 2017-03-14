@@ -194,13 +194,13 @@
 		},
 		{
 			"title": "报废理由",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.bfly"
 		},
 		{
 			"title": "备注",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.bz"
 		}]
