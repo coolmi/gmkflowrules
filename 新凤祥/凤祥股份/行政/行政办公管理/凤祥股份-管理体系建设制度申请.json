@@ -118,12 +118,12 @@
             },
             {
               "title": "目的",
-              "component": "text",
+              "component": "textarea",
               "name": "info_md"
             },
             {
               "title": "隶属管理要素",
-              "component": "text",
+              "component": "textarea",
               "name": "info_lsglys"
             },
             {
