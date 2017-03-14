@@ -316,7 +316,7 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.sused"
         },
@@ -353,7 +353,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.reamaks"
         }
