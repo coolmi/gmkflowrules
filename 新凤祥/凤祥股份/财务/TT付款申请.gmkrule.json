@@ -319,7 +319,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "id": "ttpayment_note",
           "editablenode": "",
           "name": "ttpayment.note"
