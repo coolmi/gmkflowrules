@@ -108,7 +108,7 @@
       "subComponents": [
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.maincc"
         },
         {
@@ -198,12 +198,12 @@
         },
         {
           "title": "报废理由",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.bfly"
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.bz"
         }
       ]

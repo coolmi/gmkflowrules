@@ -162,7 +162,7 @@
       ]
     },
     {
-      "title": "资产购置信息",
+      "title": "资产信息",
       "pageid": "zcgzxx",
       "component": "panel",
       "subComponents": [
@@ -266,13 +266,15 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
+          "rows": 4,
           "editablenode": "",
           "name": "mainModel.bz"
         },
         {
           "title": "主抄送",
           "component": "textarea",
+          "rows": 4,
           "editablenode": "",
           "name": "mainModel.zcs"
         }
