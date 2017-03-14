@@ -122,7 +122,7 @@
         ]
     },
 	{
-        "title": "本周工作计划",
+        "title": "本周计划",
         "pageid": "bzgzjh",
         "component": "panel",
         "subComponents": [
@@ -159,7 +159,7 @@
         ]
     },
 	{
-        "title": "本周工作总结",
+        "title": "本周总结",
         "pageid": "bzgzzj",
         "component": "panel",
         "subComponents": [
