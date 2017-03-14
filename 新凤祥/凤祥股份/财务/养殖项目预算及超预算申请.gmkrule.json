@@ -135,7 +135,7 @@
 				},
 				{
 					"title": "主抄送",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_send",
 					"editablenode": "",
 					"name": "mainModel.send"
