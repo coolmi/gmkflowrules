@@ -151,17 +151,17 @@
             },
             {
                 "title": "主送",
-                "component": "text",
+                "component": "textarea",
                 "name": "documentissue.mainsend"
             },
 			{
 				"title": "抄送",
-				"component": "text",
+				"component": "textarea",
 				"name": "documentissue.copysend"
 			},
 			{
 				"title": "主题词",
-				"component": "text",
+				"component": "textarea",
 				"name": "documentissue.subword"
 			},
 			{
@@ -181,7 +181,7 @@
 				"events":{
 					"eventType":"openDocument",	
 					"filename":"documentissue.docmentafresconame",
-					"afrescoid":"documentissue.docmentafrescoid",
+					"afrescoid":"documentissue.docmentafrescoid"
 					
 				}
 			
