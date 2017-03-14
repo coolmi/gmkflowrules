@@ -178,13 +178,13 @@
 		},
 		{
 			"title": "现状及维修原因",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.maintenancereason"
 		},
 		{
 			"title": "维修方案、费用预算组成",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.maintenanceprogram"
 		}]
