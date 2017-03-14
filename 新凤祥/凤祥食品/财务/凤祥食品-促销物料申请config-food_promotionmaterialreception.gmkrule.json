@@ -1,223 +1,242 @@
 {
-	"id": "food_promotionmaterialreception",
-	"handleOnPC":{
-		"tasknode":[
-			""
-		],
-		"flag":[
-			"resubmit"
-		]
-	},
-	"selectPerson":{
-		"tasknode":[
-			""
-		],
-		"beforPop":false
-	},
-
-	"forms": [{
-		"title": "基本信息",
-		"pageid": "jbxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "申请单号",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.appid"
-		},
-		{
-			"title": "申请日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.appda"
-		},
-		{
-			"title": "申请人姓名",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.pernr",
-			"-",
-			"mainModel.username"]
-		},
-		{
-			"title": "所属部门",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.sysbusinessunitname",
-			"-",
-			"mainModel.sysdeptname"]
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.userid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.username"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.pernr"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.syspostname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.postid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.id"
-		}]
-	},
-	{
-		"title": "申请信息",
-		"pageid": "sqxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "标题名称",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.btmc"
-			},
-			{
-			"title": "主抄送",
-			"component": "textarea",
-			"editablenode": "",
-			"name": "mainModel.zcs"
-		},
-		{
-			"title": "开始日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.startdate"
-		},
-		{
-			"title": "结束日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.enddate"
-		},
-		{
-			"title": "年/月度",
-			"component": "date4",
-			"editablenode": "",
-			"name": "mainModel.nyd"
-		},
-		{
-				"id":"sfbcbzx",
-				"title" : "是否本成本中心",
-				"component" : "radio",
-				"name" : "mainModel.sfbcbzx",
-				"options": [{
-				"title": "否",
-				"value": "1"
-			},
-			{
-				"title": "是",
-				"value": "0"
-			}]
-		},
-		{
-		"title" : "费用所属部门",
-		"component" : "text",
-		"name" : "mainModel.fyssbm",
-				"showLinkage":[
-						{
-								"id":"sfbcbzx",
-								"values":["1"]
-						}
-				]
-},
-{
-"title" : "部门负责人",
-"component" : "text",
-"name" : "mainModel.bmfzr",
-		"showLinkage":[
-				{
-						"id":"sfbcbzx",
-						"values":["1"]
-				}
-		]
-},
-{
-	"title": "费用归属成本中心",
-	"component": "label",
-	"editablenode": "",
-	"label": ["mainModel.fygscbzx",
-	"-",
-	"mainModel.fyssbmid"]
-},
-	{
-	"title": "业务类型",
-	"component": "text",
-	"editablenode": "",
-	"name": "mainModel.ywlx"
-	},
-	{
-	"title": "物料金额",
-	"component": "text",
-	"editablenode": "",
-	"name": "mainModel.wlje"
-	},
-	{
-			"title": "月度预算",
-			"component": "radio",
-			"name": "mainModel.ydys",
-			"options": [{
-				"title": "预算内",
-				"value": "0"
-			},
-			{
-				"title": "预算外",
-				"value": "1"
-			}]
-		},
-	{
-	"title": "申请内容",
-	"component": "textarea",
-	"editablenode": "",
-	"name": "mainModel.sqnr"
-	}]
-		},
-	{
-		"title": "附件信息",
-		"pageid": "fjxx",
-		"component": "panel",
-		"subComponents": []
-	},
-	{
-		"title": "审批记录",
-		"pageid": "spjl",
-		"component": "panel",
-		"subComponents": []
-	}]
+  "id": "food_promotionmaterialreception",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.btmc"
+        },
+        {
+          "title": "主抄送",
+          "component": "textarea",
+          "editablenode": "",
+          "name": "mainModel.zcs"
+        },
+        {
+          "title": "开始日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.startdate"
+        },
+        {
+          "title": "结束日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.enddate"
+        },
+        {
+          "title": "年/月度",
+          "component": "date4",
+          "editablenode": "",
+          "name": "mainModel.nyd"
+        },
+        {
+          "id": "sfbcbzx",
+          "title": "是否本成本中心",
+          "component": "radio",
+          "name": "mainModel.sfbcbzx",
+          "options": [
+            {
+              "title": "否",
+              "value": "1"
+            },
+            {
+              "title": "是",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "费用所属部门",
+          "component": "text",
+          "name": "mainModel.fyssbm",
+          "showLinkage": [
+            {
+              "id": "sfbcbzx",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "部门负责人",
+          "component": "text",
+          "name": "mainModel.bmfzr",
+          "showLinkage": [
+            {
+              "id": "sfbcbzx",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "费用归属成本中心",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.fygscbzx",
+            "-",
+            "mainModel.fyssbmid"
+          ]
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.ywlx"
+        },
+        {
+          "title": "物料金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.wlje"
+        },
+        {
+          "title": "月度预算",
+          "component": "radio",
+          "name": "mainModel.ydys",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "0"
+            },
+            {
+              "title": "预算外",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "申请内容",
+          "component": "textarea",
+          "editablenode": "",
+          "name": "mainModel.sqnr"
+        }
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ]
 }
