@@ -114,7 +114,7 @@
         },
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.sendtxt"
         },
         {
@@ -142,7 +142,7 @@
             },
             {
               "title": "物料描述",
-              "component": "text",
+              "component": "textarea",
               "name": "info_materialname"
             },
             {
