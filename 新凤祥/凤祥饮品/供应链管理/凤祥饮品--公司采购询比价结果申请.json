@@ -107,7 +107,7 @@
       "subComponents": [
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.mainsendtxt"
         },
         {
@@ -137,12 +137,12 @@
         },
         {
           "title": "推荐中标企业",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.tjzbenterprise"
         },
         {
           "title": "企业全称",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.qyallname"
         },
         {
