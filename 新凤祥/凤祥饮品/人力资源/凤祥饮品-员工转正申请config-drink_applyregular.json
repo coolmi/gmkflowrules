@@ -178,7 +178,7 @@
       ]
     },
     {
-      "title": "部门内部审核意见",
+      "title": "部门内审核",
       "pageid": "bmnbshyj",
       "component": "panel",
       "tasknode": "usertask2,usertask7,usertask4,usertask5",
