@@ -244,7 +244,7 @@
             ]
         },
         {
-            "title": "领用样品明细表",
+            "title": "样品明细",
             "pageid": "lyypmxb",
             "component": "panel",
             "subComponents": [
@@ -261,7 +261,7 @@
 							},
 							{
 							"title": "活动描述",
-							"component": "text",
+							"component": "textarea",
 							"editablenode": "",
 							"name": "info_hdms"
 							},
@@ -282,7 +282,7 @@
 							"component": "text",
 							"editablenode": "",
 							"name": "info_dxje"
-							},
+							}
                     ]
             	},
             	{
@@ -290,7 +290,7 @@
 							"component": "text",
 							"editablenode": "",
 							"name": "mainModel.hsum"
-							},
+							}
             ]
         },
         {
