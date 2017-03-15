@@ -121,12 +121,12 @@
         },
         {
           "title": "报废原因说明",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_why"
         },
         {
           "title": "直接领导意见",
-          "component": "text",
+          "component": "textarea",
           "tasknode":"usertask4,usertask16,usertask14,usertask11,usertask18,usertask17",
           "editablenode": "usertask4",
           "name": "mainModel.m_first",
@@ -138,7 +138,7 @@
         },
         {
           "title":"质量管理部意见",
-          "component":"text",
+          "component":"textarea",
           "editablenode":"usertask16",
           "tasknode":"usertask16,usertask14,usertask11,usertask18,usertask17",
           "name":"mainModel.m_material",
@@ -197,7 +197,7 @@
             },
             {
               "title":"备注",
-              "component":"text",
+              "component":"textarea",
               "name":"s_bz"
             }
           ]
