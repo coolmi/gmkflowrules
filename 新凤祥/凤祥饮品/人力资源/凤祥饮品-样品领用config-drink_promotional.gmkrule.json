@@ -135,14 +135,14 @@
         },
         {
           "title": "申请内容",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.sqnr"
         }
       ]
     },
     {
-      "title": "领用样品明细表",
+      "title": "领用样品",
       "pageid": "lyypmxb",
       "component": "panel",
       "subComponents": [
