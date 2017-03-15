@@ -176,7 +176,7 @@
         },
         {
           "title": "议标理由",
-          "component": "text",
+          "component": "textarea",
           "name": "tenderbid.ybly",
           "showLinkage": [
             {
@@ -194,7 +194,7 @@
         },
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "tenderbid.mainsendtxt"
         },
         {
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "title": "招标审核信息",
+      "title": "招标审核",
       "pageid": "zbshxxd",
       "component": "panel",
       "subComponents": [
