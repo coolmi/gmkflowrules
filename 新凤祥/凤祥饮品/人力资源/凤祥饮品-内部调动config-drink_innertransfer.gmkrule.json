@@ -244,7 +244,7 @@
       ]
     },
     {
-      "title": "人力资源部填写",
+      "title": "人力资源部",
       "pageid": "rlzybtx",
       "component": "panel",
       "subComponents": [
@@ -399,14 +399,14 @@
         },
         {
           "title": "工资范围",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "usertask8",
           "tasknode": "usertask8",
           "name": "app.sap_gz"
         },
         {
           "title": "工作合同",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "usertask8",
           "tasknode": "usertask8",
           "name": "app.sap_ht"
