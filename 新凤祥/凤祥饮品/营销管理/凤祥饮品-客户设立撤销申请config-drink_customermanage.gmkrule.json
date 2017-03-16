@@ -117,7 +117,7 @@
         },
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.sendtxt"
         },{
@@ -183,7 +183,7 @@
         },
         {
           "title": "申请内容",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.remarks"
         }]
