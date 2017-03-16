@@ -240,7 +240,7 @@
             },
             {
               "title": "采购原因",
-              "component": "text",
+              "component": "textarea",
               "name": "proson"
             },
             {

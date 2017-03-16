@@ -124,12 +124,12 @@
           ]
         },
         {
-          "component": "text",
+          "component": "textarea",
           "title": "采购原因",
           "name": "mainModel.proson"
         },
         {
-          "component": "text",
+          "component": "textarea",
           "title": "需求说明",
           "name": "mainModel.sgtxt"
         },

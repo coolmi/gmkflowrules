@@ -111,7 +111,7 @@
         },
         {
           "title": "归还原因",
-          "component": "text",
+          "component": "textarea",
           "name": "zitsbgh.zghyy"
         }
       ]
@@ -143,7 +143,7 @@
             },
             {
               "title": "借用原因",
-              "component": "text",
+              "component": "textarea",
               "name": "zjyyy"
             },
             {
@@ -203,7 +203,7 @@
             },
             {
               "title": "借用原因",
-              "component": "text",
+              "component": "textarea",
               "name": "zjyyy"
             },
             {

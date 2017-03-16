@@ -128,7 +128,7 @@
         },
         {
           "title": "需求说明",
-          "component": "text",
+          "component": "textarea",
           "name": "apMobilePur.xqsm"
         }
       ]
