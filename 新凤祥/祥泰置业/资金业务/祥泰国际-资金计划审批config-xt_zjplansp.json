@@ -131,7 +131,11 @@
               "component": "text",
               "name": "s_objttxt"
             },
-
+            {
+              "title": "子项目描述",
+              "component": "text",
+              "name": "s_objttxt_sub"
+            },
             {
               "title": "资金用途",
               "component": "text",
