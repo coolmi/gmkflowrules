@@ -178,7 +178,7 @@
             },
             {
               "title": "调拨事由",
-              "component": "text",
+              "component": "textarea",
               "name": "transferreason"
             },
             {

@@ -277,7 +277,7 @@
               "name": "c_country"
             },
             {
-              "component": "text",
+              "component": "textarea",
               "title": "验收结果意见",
               "name": "c_remark"
             }
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "title": "固定资产验收",
+      "title": "资产验收",
       "component": "panel",
       "pageid": "gdzcysddd_page",
       "notShowOnHandle": true,

@@ -358,7 +358,7 @@
           ]
         },
         {
-          "title": "分配执行人员",
+          "title": "分配执行人",
           "panel_id": "sqxxx_pruexechilds",
           "component": "panel",
           "showLinkage": [
