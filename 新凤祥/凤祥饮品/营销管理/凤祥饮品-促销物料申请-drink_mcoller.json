@@ -107,7 +107,7 @@
       "subComponents": [
         {
           "title": "主抄送人员",
-          "component": "text",
+          "component": "textarea",
           "rows": "5",
           "name": "mainModel.m_zcsnm"
         },
@@ -123,18 +123,18 @@
         },
         {
           "title": "领用区域",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_lyqy"
         },
         {
           "title": "领用用途",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_lyyt"
         }
       ]
     },
     {
-      "title": "促销物料领用子表",
+      "title": "促销物料",
       "pageid": "cxwllyzb",
       "component": "panel",
       "subComponents": [
@@ -164,7 +164,7 @@
         },
         {
           "title": "申请内容",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.m_remark"
         }
       ]
