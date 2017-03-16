@@ -136,9 +136,9 @@
 				{
 					"title": "承兑银行",
 					"component": "text",
-					"id": "discountbill_honourbank",
+					"id": "discountbill_banknm",
 					"editablenode": "",
-					"name": "discountbill.honourbank"
+					"name": "discountbill.banknm"
 				},
 				{
 					"title": "收款单位",
