@@ -180,7 +180,7 @@
 		},
 		{
 			"title": "汇款用途",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "app.hkyt"
 		},
@@ -259,7 +259,7 @@
 		},
 		{
 			"title": "档案室签字备案",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "app.dasqzba"
 		},
@@ -271,7 +271,7 @@
 		},
 		{
 			"title": "备注",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "app.market"
 		}]

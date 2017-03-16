@@ -293,7 +293,7 @@
 			{
 				"title": "",
 				"title1": "调整说明",
-				"component": "text",
+				"component": "textarea",
 				"editablenode": "",
 				"name": "explainv"
 			}]

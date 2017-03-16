@@ -567,7 +567,7 @@
       ]
     },
     {
-      "title": "住宿及餐补汇总",
+      "title": "住宿及餐补",
       "component": "panel",
       "pageid": "zsjcbhz",
       "id": "zsjcbhz1",
@@ -793,7 +793,7 @@
             {
               "title": "",
               "title1": "事由",
-              "component": "text",
+              "component": "textarea",
               "name": "smemg"
             },
             {
@@ -901,7 +901,7 @@
             },
             {
               "title": "扣款说明",
-              "component": "text",
+              "component": "textarea",
               "name": "smemof"
             }
           ]
@@ -913,7 +913,7 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
           "name": "reimburse.reservconent"
         }
       ]
@@ -979,7 +979,7 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
           "tmpValueName": "reimburse.reservconent",
           "name": "rstgrp"
         }
