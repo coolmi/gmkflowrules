@@ -128,6 +128,11 @@
 			"component": "panel",
 			"subComponents": [
 				{
+					"title": "银行",
+					"component": "text",
+					"name": "goldlease.banknm"
+				},
+				{
 					"title": "公司名称",
 					"component": "text",
 					"id": "goldlease_companyname",
@@ -283,7 +288,7 @@
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "goldlease_tsemo",
 					"editablenode": "",
 					"name": "goldlease.tsemo"
@@ -291,13 +296,13 @@
 			]
 		},
 		{
-			"title": "财务核算人员填写",
+			"title": "财务核算",
 			"pageid": "cwhsrytx",
 			"component": "panel",
 			"subComponents": [
 				{
 					"title": "核算人员处理汇报",
-					"component": "text",
+					"component": "textarea",
 					"id": "goldlease_report",
 					"tasknode": "account,report",
 					"editablenode": "account",
@@ -407,7 +412,7 @@
 				},
 				{
 					"title": "保值情况",
-					"component": "text",
+					"component": "textarea",
 					"id": "goldlease_hedgstion",
 					"tasknode": "report",
 					"editablenode": "report",
@@ -421,7 +426,7 @@
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "goldlease_note",
 					"tasknode": "report",
 					"editablenode": "report",
