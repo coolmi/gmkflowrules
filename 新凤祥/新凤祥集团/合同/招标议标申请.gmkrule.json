@@ -224,7 +224,7 @@
         },
         {
           "title": "后补原因",
-          "component": "text",
+          "component": "textarea",
           "id": "tenderbid_hbyy",
           "editablenode": "",
           "showLinkage": [
@@ -321,7 +321,7 @@
         },
         {
           "title": "采购物资简述",
-          "component": "text",
+          "component": "textarea",
           "id": "tenderbid_cgwzjs",
           "editablenode": "",
           "name": "tenderbid.cgwzjs"
@@ -345,7 +345,7 @@
         },
         {
           "title": "议标理由",
-          "component": "text",
+          "component": "textarea",
           "id": "tenderbid_ybly",
           "editablenode": "",
           "showLinkage": [
@@ -430,7 +430,7 @@
         },
         {
           "title": "变更原因",
-          "component": "text",
+          "component": "textarea",
           "id": "tenderbid_bgyy",
           "tasknode": "zbfzrsh",
           "name": "tenderbid.bgyy",
@@ -447,7 +447,7 @@
       ]
     },
     {
-      "title": "投标企业信息",
+      "title": "投标企业",
       "pageid": "tbqyxx",
       "component": "panel",
       "subComponents": [

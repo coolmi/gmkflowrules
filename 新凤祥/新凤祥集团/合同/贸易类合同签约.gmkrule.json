@@ -2,7 +2,8 @@
   "id": "ap_tradecontractsigning",
   "handleOnPC": {
     "tasknode": [
-      "reviewbussman","nextreviewbussman"
+      "reviewbussman",
+      "nextreviewbussman"
     ],
     "flag": [
       "resubmit"
@@ -10,7 +11,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +20,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,220 +119,218 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "合同标的",
-					"component": "text",
-					"id": "tradecontractsigning_htbd",
-					"editablenode": "",
-					"name": "tradecontractsigning.htbd"
-				},
-				{
-					"title": "合同类型",
-					"component": "text",
-					"id": "tradecontractsigning_htlx",
-					"editablenode": "",
-					"name": "tradecontractsigning.htlx"
-				},
-				{
-					"title": "合同描述",
-					"component": "text",
-					"id": "tradecontractsigning_htms",
-					"editablenode": "",
-					"name": "tradecontractsigning.htms"
-				}
-			]
-		},
-		{
-			"title": "合同审批人信息",
-			"pageid": "htsprxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "法务部分派人员",
-					"component": "text",
-					"id": "tradecontractsigning_lawpieassignee",
-					"editablenode": "",
-					"name": "tradecontractsigning.lawpieassignee"
-				},
-				{
-					"title": "业务授权审批人",
-					"component": "text",
-					"id": "tradecontractsigning_xqbmfzr",
-					"editablenode": "",
-					"name": "tradecontractsigning.xqbmfzr"
-				}
-			]
-		},
-		{
-			"title": "合同号信息",
-			"pageid": "hthxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "是否为补充类合同  ",
-					"component": "select",
-					"id": "tradecontractsigning_sfwbclht",
-					"editablenode": "",
-					"name": "tradecontractsigning.sfwbclht",
-					"options": [
-						{
-							"text": "是",
-							"value": "0",
-						},
-						{
-							"text": "否",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "合同编号类别",
-					"component": "select",
-					"id": "tradecontractsigning_htbhlb",
-					"editablenode": "",
-					"name": "tradecontractsigning.htbhlb",
-					"options": [
-						{
-							"text": "A-技术设计合同（A）",
-							"value": "A",
-						},
-						{
-							"text": "B-设备买卖安装合同（B）",
-							"value": "B",
-						},
-						{
-							"text": "C-建筑工程合同（C）",
-							"value": "C",
-						},
-						{
-							"text": "D-买卖合同（D）",
-							"value": "D",
-						},
-						{
-							"text": "E-其他合同（E）",
-							"value": "E",
-						}
-					]
-				},
-				{
-					"title": "公司信息",
-					"component": "text",
-					"id": "tradecontractsigning_gsxx",
-					"editablenode": "",
-					"name": "tradecontractsigning.gsxx"
-				},
-				{
-					"title": "补充合同编号",
-					"component": "text",
-					"id": "tradecontractsigning_bcthbh",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tradecontractsigning_sfwbclht",
-							"values": [
-								"0"
-							]
-						}
-					],
-					"name": "tradecontractsigning.bcthbh"
-				},
-				{
-					"title": "合同编号",
-					"component": "text",
-					"id": "tradecontractsigning_htbh",
-					"editablenode": "",
-					"showLinkage": [
-						{
-							"id": "tradecontractsigning_sfwbclht",
-							"values": [
-								"1"
-							]
-						}
-					],
-					"name": "tradecontractsigning.htbh"
-				}
-			]
-		},
-		{
-			"title": "印章信息",
-			"pageid": "yzxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "用印类型",
-					"component": "select",
-					"id": "tradecontractsigning_yylx",
-					"editablenode": "",
-					"name": "tradecontractsigning.yylx",
-					"options": [
-						{
-							"text": "普通用印",
-							"value": "0",
-						},
-						{
-							"text": "携章外出",
-							"value": "1",
-						}
-					]
-				},
-				{
-					"title": "印章名称",
-					"component": "text",
-					"id": "tradecontractsigning_yzmc",
-					"editablenode": "",
-					"name": "tradecontractsigning.yzmc"
-				},
-				{
-					"title": "印章类型",
-					"component": "text",
-					"id": "tradecontractsigning_yzlx",
-					"editablenode": "",
-					"name": "tradecontractsigning.yzlx"
-				},
-				{
-					"title": "用章管理员",
-					"component": "text",
-					"id": "yzgly",
-					"editablenode": "",
-					"name": "yzgly"
-				},
-				{
-					"title": "一式几份",
-					"component": "text",
-					"id": "tradecontractsigning_yzsyfs",
-					"editablenode": "",
-					"name": "tradecontractsigning.yzsyfs"
-				},
-				{
-					"title": "印章使用枚数",
-					"component": "text",
-					"id": "tradecontractsigning_yzsyms",
-					"editablenode": "",
-					"name": "tradecontractsigning.yzsyms"
-				},
-				{
-					"title": "使用日期",
-					"component": "date1",
-					"id": "tradecontractsigning_yzsyrq",
-					"editablenode": "",
-					"name": "tradecontractsigning.yzsyrq"
-				},
-				{
-					"title": "计划归还日期",
-					"component": "date1",
-					"id": "tradecontractsigning_jhghrq",
-					"editablenode": "",
-					"name": "tradecontractsigning.jhghrq"
-				}
-			]
-		}
-
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同标的",
+          "component": "text",
+          "id": "tradecontractsigning_htbd",
+          "editablenode": "",
+          "name": "tradecontractsigning.htbd"
+        },
+        {
+          "title": "合同类型",
+          "component": "text",
+          "id": "tradecontractsigning_htlx",
+          "editablenode": "",
+          "name": "tradecontractsigning.htlx"
+        },
+        {
+          "title": "合同描述",
+          "component": "text",
+          "id": "tradecontractsigning_htms",
+          "editablenode": "",
+          "name": "tradecontractsigning.htms"
+        }
+      ]
+    },
+    {
+      "title": "合同审批人",
+      "pageid": "htsprxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "法务部分派人员",
+          "component": "text",
+          "id": "tradecontractsigning_lawpieassignee",
+          "editablenode": "",
+          "name": "tradecontractsigning.lawpieassignee"
+        },
+        {
+          "title": "业务授权审批人",
+          "component": "text",
+          "id": "tradecontractsigning_xqbmfzr",
+          "editablenode": "",
+          "name": "tradecontractsigning.xqbmfzr"
+        }
+      ]
+    },
+    {
+      "title": "合同号",
+      "pageid": "hthxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "是否为补充类合同  ",
+          "component": "select",
+          "id": "tradecontractsigning_sfwbclht",
+          "editablenode": "",
+          "name": "tradecontractsigning.sfwbclht",
+          "options": [
+            {
+              "text": "是",
+              "value": "0",
+            },
+            {
+              "text": "否",
+              "value": "1",
+            }
+          ]
+        },
+        {
+          "title": "合同编号类别",
+          "component": "select",
+          "id": "tradecontractsigning_htbhlb",
+          "editablenode": "",
+          "name": "tradecontractsigning.htbhlb",
+          "options": [
+            {
+              "text": "A-技术设计合同（A）",
+              "value": "A"
+            },
+            {
+              "text": "B-设备买卖安装合同（B）",
+              "value": "B"
+            },
+            {
+              "text": "C-建筑工程合同（C）",
+              "value": "C"
+            },
+            {
+              "text": "D-买卖合同（D）",
+              "value": "D"
+            },
+            {
+              "text": "E-其他合同（E）",
+              "value": "E"
+            }
+          ]
+        },
+        {
+          "title": "公司信息",
+          "component": "text",
+          "id": "tradecontractsigning_gsxx",
+          "editablenode": "",
+          "name": "tradecontractsigning.gsxx"
+        },
+        {
+          "title": "补充合同编号",
+          "component": "text",
+          "id": "tradecontractsigning_bcthbh",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tradecontractsigning_sfwbclht",
+              "values": [
+                "0"
+              ]
+            }
+          ],
+          "name": "tradecontractsigning.bcthbh"
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "id": "tradecontractsigning_htbh",
+          "editablenode": "",
+          "showLinkage": [
+            {
+              "id": "tradecontractsigning_sfwbclht",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "name": "tradecontractsigning.htbh"
+        }
+      ]
+    },
+    {
+      "title": "印章信息",
+      "pageid": "yzxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "用印类型",
+          "component": "select",
+          "id": "tradecontractsigning_yylx",
+          "editablenode": "",
+          "name": "tradecontractsigning.yylx",
+          "options": [
+            {
+              "text": "普通用印",
+              "value": "0"
+            },
+            {
+              "text": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "text",
+          "id": "tradecontractsigning_yzmc",
+          "editablenode": "",
+          "name": "tradecontractsigning.yzmc"
+        },
+        {
+          "title": "印章类型",
+          "component": "text",
+          "id": "tradecontractsigning_yzlx",
+          "editablenode": "",
+          "name": "tradecontractsigning.yzlx"
+        },
+        {
+          "title": "用章管理员",
+          "component": "text",
+          "id": "yzgly",
+          "editablenode": "",
+          "name": "yzgly"
+        },
+        {
+          "title": "一式几份",
+          "component": "text",
+          "id": "tradecontractsigning_yzsyfs",
+          "editablenode": "",
+          "name": "tradecontractsigning.yzsyfs"
+        },
+        {
+          "title": "印章使用枚数",
+          "component": "text",
+          "id": "tradecontractsigning_yzsyms",
+          "editablenode": "",
+          "name": "tradecontractsigning.yzsyms"
+        },
+        {
+          "title": "使用日期",
+          "component": "date1",
+          "id": "tradecontractsigning_yzsyrq",
+          "editablenode": "",
+          "name": "tradecontractsigning.yzsyrq"
+        },
+        {
+          "title": "计划归还日期",
+          "component": "date1",
+          "id": "tradecontractsigning_jhghrq",
+          "editablenode": "",
+          "name": "tradecontractsigning.jhghrq"
+        }
+      ]
+    }
   ],
   "refers": {
   }

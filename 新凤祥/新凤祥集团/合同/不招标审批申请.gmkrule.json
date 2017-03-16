@@ -131,15 +131,15 @@
           "options": [
             {
               "text": "一级",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "二级",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "三级",
-              "value": "2",
+              "value": "2"
             }
           ]
         },
@@ -242,31 +242,31 @@
           "options": [
             {
               "text": "设备",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "土建",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "安装",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "材料",
-              "value": "3",
+              "value": "3"
             },
             {
               "text": "服务",
-              "value": "4",
+              "value": "4"
             },
             {
               "text": "安环",
-              "value": "5",
+              "value": "5"
             },
             {
               "text": "其他",
-              "value": "6",
+              "value": "6"
             }
           ]
         },
@@ -300,29 +300,29 @@
           "options": [
             {
               "text": "唯一采购渠道",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "品牌指定",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "投标企业不足三家",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "紧急采购",
-              "value": "3",
+              "value": "3"
             },
             {
               "text": "其他",
-              "value": "4",
+              "value": "4"
             }
           ]
         },
         {
           "title": "理由描述",
-          "component": "text",
+          "component": "textarea",
           "id": "notenderbid_remarks",
           "editablenode": "",
           "name": "notenderbid.remarks"
@@ -336,25 +336,25 @@
           "options": [
             {
               "text": "议标",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "比价",
-              "value": "1",
+              "value": "1"
             },
             {
               "text": "单一方向采购",
-              "value": "2",
+              "value": "2"
             },
             {
               "text": "其他",
-              "value": "3",
+              "value": "3"
             }
           ]
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "id": "notenderbid_cgwzjs",
           "editablenode": "",
           "name": "notenderbid.cgwzjs"

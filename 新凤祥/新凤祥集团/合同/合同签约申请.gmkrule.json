@@ -184,7 +184,7 @@
         },
         {
           "title": "后补原因",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_hbyy",
           "editablenode": "",
           "showLinkage": [
@@ -268,7 +268,7 @@
           "name": "contractsigning.htjedx"
         },
         {
-          "title": "需求类型   ",
+          "title": "需求类型",
           "component": "select",
           "id": "contractsigning_xqlx",
           "editablenode": "",
@@ -298,7 +298,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_qtbz",
           "editablenode": "",
           "showLinkage": [
@@ -326,7 +326,7 @@
           "name": "contractsigning.gysmc"
         },
         {
-          "title": "供应商类型  ",
+          "title": "供应商类型",
           "component": "select",
           "id": "contractsigning_gyslx",
           "editablenode": "",
@@ -367,7 +367,7 @@
         },
         {
           "title": "黑名单解冻原因",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_hmdjdyy",
           "editablenode": "",
           "showLinkage": [
@@ -414,7 +414,7 @@
           ]
         },
         {
-          "title": "报价家数 ",
+          "title": "报价家数",
           "component": "select",
           "id": "contractsigning_bjjs",
           "editablenode": "",
@@ -519,7 +519,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_qtjgqdfs",
           "editablenode": "",
           "showLinkage": [
@@ -730,7 +730,7 @@
       ]
     },
     {
-      "title": "合同审批人信息",
+      "title": "合同审批人",
       "pageid": "htsprxx",
       "component": "panel",
       "subComponents": [
