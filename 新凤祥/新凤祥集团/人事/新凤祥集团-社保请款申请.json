@@ -133,7 +133,7 @@
             {
               "title": "请款用途",
               "name": "s_uses",
-              "component": "text"
+              "component": "textarea"
             },
             {
               "title": "请款金额",

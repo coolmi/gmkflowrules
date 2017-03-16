@@ -87,7 +87,7 @@
             ]
         },
         {
-            "title": "表单基本信息",
+            "title": "基本信息",
             "pageid": "bdjbxx",
             "component": "panel",
             "subComponents": [

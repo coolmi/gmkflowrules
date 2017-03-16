@@ -126,7 +126,7 @@
       ]
     },
     {
-      "title": "主要变化说明",
+      "title": "主要变化",
       "pageid": "zybhsm",
       "component": "panel",
       "subComponents": [
@@ -145,18 +145,18 @@
             {
               "title": "变化内容",
               "name": "contentchange",
-              "component": "text"
+              "component": "textarea"
             },
             {
               "title": "薪酬应用",
               "name": "compensationapplication",
-              "component": "text"
+              "component": "textarea"
             },
 
             {
               "title": "信息来源",
               "name": "informationsources",
-              "component": "text"
+              "component": "textarea"
             },
             {
 
@@ -167,7 +167,7 @@
             {
               "title": "其它情况说明",
               "name": "descriptioncase",
-              "component": "text"
+              "component": "textarea"
             }
           ]
         }
@@ -175,7 +175,7 @@
 
     },
     {
-      "title": "薪酬发放明细",
+      "title": "薪酬发放",
       "pageid": "xcffmx",
       "component": "panel",
       "subComponents": [
@@ -212,12 +212,12 @@
 
               "title": "主要变化原因",
               "name": "reasonschange",
-              "component": "text"
+              "component": "textarea"
             },
             {
               "title": "发放金额及银行明细",
               "name": "ssuingbank",
-              "component": "text"
+              "component": "textarea"
             }
           ]
         }

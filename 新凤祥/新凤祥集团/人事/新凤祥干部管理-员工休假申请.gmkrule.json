@@ -182,7 +182,7 @@
         },
         {
           "title": "休假原因",
-          "component": "text",
+          "component": "textarea",
           "name": "leave.reasions"
         },
         {
@@ -223,7 +223,7 @@
         },
         {
           "title": "执行其它情况",
-          "component": "text",
+          "component": "textarea",
           "name": "leave.smatters"
         },
         {
@@ -247,12 +247,12 @@
         },
         {
           "title": "备案其它情况",
-          "component": "text",
+          "component": "textarea",
           "name": "leave.ematters"
         },
         {
           "title": "发送",
-          "component": "text",
+          "component": "textarea",
           "name": "leave.sendtxt"
         }
       ]

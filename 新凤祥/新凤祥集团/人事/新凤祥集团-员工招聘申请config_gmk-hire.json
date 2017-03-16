@@ -101,7 +101,7 @@
       ]
     },
     {
-      "title": "应聘者信息",
+      "title": "应聘者",
       "pageid": "ypzxx",
       "component": "panel",
       "subComponents": [
@@ -237,7 +237,7 @@
         },
         {
           "title": "简历来源",
-          "component": "text",
+          "component": "textarea",
           "name": "hire.r_resumesource"
         },
         {

@@ -84,7 +84,7 @@
         }]
     },
     {
-        "title": "表单基本信息",
+        "title": "基本信息",
         "pageid": "bdjbxx",
         "component": "panel",
         "subComponents": [{
@@ -100,61 +100,62 @@
         {
             "title": "期望到岗日期",
             "component": "date1",
-            "name": "app.r_indate",
+            "name": "app.r_indate"
         },
         {
             "title": "工作地点",
             "component": "text",
-            "name": "app.r_place",
+            "name": "app.r_place"
         },
         {
             "title": "岗位职责描述",
             "component": "textarea",
-            "name": "app.r_task",
+            "name": "app.r_task"
         },
         {
             "title": "学历",
             "component": "text",
-            "name": "app.r_xl",
+            "name": "app.r_xl"
         },
         {
             "title": "专业",
             "component": "text",
-            "name": "app.r_zy",
+            "name": "app.r_zy"
         },
         {
             "title": "年龄范围",
             "component": "label",
-            "label": ["app.r_old1", "至", "app.r_old2"],
+            "label": ["app.r_old1", "至", "app.r_old2"]
         },
         {
             "title": "性别",
             "component": "text",
-            "name": "app.r_sex",
+            "name": "app.r_sex"
         },
         {
             "title": "工作经验",
             "component": "label",
-            "label": ["app.r_doyear", "年以上", ""],
+            "label": ["app.r_doyear", "年以上", ""]
         },
         {
             "title": "是否招聘应届生",
             "component": "text",
-            "name": "app.r_postnm",
-        } {
+            "name": "app.r_postnm"
+        },
+            {
             "title": "其他",
             "component": "textarea",
-            "name": "app.r_other",
+            "name": "app.r_other"
         },
         {
             "title": "专业素质要求",
             "component": "textarea",
-            "name": "app.r_mrequest",
+            "name": "app.r_mrequest"
         },
         {
             "title": "是否有目标人员",
             "component": "text",
-            "name": "app.r_has",
+            "name": "app.r_has"
         },
         {
             "title": "是否需要猎头",

@@ -129,7 +129,7 @@
       ]
     },
     {
-      "title": "变更部门组织架构",
+      "title": "变更信息",
       "pageid": "bgbmzzjg",
       "component": "panel",
       "subComponents": [
@@ -256,7 +256,7 @@
       ]
     },
     {
-      "title": "部门职位编制调整",
+      "title": "编制调整",
       "pageid": "bmzwbztz",
       "component": "panel",
       "subComponents": [
@@ -356,7 +356,7 @@
       ]
     },
     {
-      "title": "人力资源部填写",
+      "title": "人力资源部",
       "pageid": "rlzybtx",
       "tasknode": "usertask3,usertask4,usertask5",
       "component": "panel",
