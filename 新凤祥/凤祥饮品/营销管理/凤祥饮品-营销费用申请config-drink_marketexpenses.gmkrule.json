@@ -111,7 +111,7 @@
 		  },
 		  {
 			"title": "主抄送",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.zcs"
 		  },
@@ -211,7 +211,7 @@
 		  },
 		  {
 			"title": "申请详细内容",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.sqnr"
 		  }
