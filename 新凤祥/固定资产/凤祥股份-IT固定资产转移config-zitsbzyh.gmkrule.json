@@ -100,7 +100,7 @@
       ]
     },
     {
-      "title": "接收人基本信息",
+      "title": "接收人信息",
       "pageid": "jsrjbxx",
       "component": "panel",
       "subComponents": [
@@ -154,7 +154,7 @@
         },
         {
           "title": "转移原因",
-          "component": "text",
+          "component": "textarea",
           "name": "transfer.zbztxt"
         }
       ]

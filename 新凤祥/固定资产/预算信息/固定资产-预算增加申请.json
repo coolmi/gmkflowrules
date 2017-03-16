@@ -249,7 +249,7 @@
             },
             {
               "title": "预算说明",
-              "component": "text",
+              "component": "textarea",
               "name": "smemo"
             }
           ]
@@ -257,7 +257,7 @@
       ]
     },
     {
-      "title": "审批人信息",
+      "title": "审批人",
       "pageid": "spryxx",
       "component": "panel",
       "subComponents": [
