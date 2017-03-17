@@ -151,7 +151,7 @@
         },
         {
           "title": "业务内容",
-          "component": "text",
+          "component": "textarea",
           "name": "dschecksheet.ywnr"
         },
         {
@@ -263,7 +263,7 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
           "name": "dschecksheet.hkyt"
         },
         {

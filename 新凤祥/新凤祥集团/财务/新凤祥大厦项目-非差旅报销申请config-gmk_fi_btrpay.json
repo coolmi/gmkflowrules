@@ -195,7 +195,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "app.m_remark"
         }
       ]
@@ -606,7 +606,7 @@
       ]
     },
     {
-      "title": "财务审批信息",
+      "title": "财务审批",
       "component": "panel",
       "pageid": "cwspxx",
       "subComponents": [
@@ -737,7 +737,7 @@
           "name": "app.m_acbank"
         },{
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "usertask7",
           "name": "app.m_remark1"
         },

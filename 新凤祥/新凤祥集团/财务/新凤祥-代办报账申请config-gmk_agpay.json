@@ -228,7 +228,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "app.m_remark"
         }
       ]
@@ -647,7 +647,7 @@
       ]
     },
     {
-      "title": "财务审批信息",
+      "title": "财务审批",
       "component": "panel",
       "pageid": "cwspxx",
       "subComponents": [
@@ -867,7 +867,7 @@
         },
         {
           "title": "冲备用金说明",
-          "component": "text",
+          "component": "textarea",
           "tmpValueName": "app.reservconent",
           "name": "rstgrp"
         }

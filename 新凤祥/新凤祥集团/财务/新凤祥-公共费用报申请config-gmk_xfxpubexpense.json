@@ -232,7 +232,7 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
           "name": "xfxpubexpense.hkyt"
         },
         {
@@ -338,7 +338,7 @@
         },
         {
           "title": "档案室签字备案",
-          "component": "text",
+          "component": "textarea",
           "name": "xfxpubexpense.dasqzba"
         },
         {
@@ -473,7 +473,7 @@
             },
             {
               "title": "备注",
-              "component": "text",
+              "component": "textarea",
               "name": "fkxx_bz"
             },
             {

@@ -230,7 +230,7 @@
             },
             {
               "title": "申请事由",
-              "component": "text",
+              "component": "textarea",
               "name": "smemo"
             }
           ]

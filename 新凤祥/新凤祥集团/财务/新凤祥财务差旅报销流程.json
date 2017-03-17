@@ -703,7 +703,7 @@
                 {
                   "title": "事由",
                   "editablenode": "",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "reason"
                 },
                 {
@@ -796,13 +796,13 @@
                 {
                   "title": "事由说明",
                   "editablenode": "",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "breason"
                 },
                 {
                   "title": "备注",
                   "editablenode": "",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "bremarks"
                 }
               ]
@@ -870,7 +870,7 @@
                 {
                   "title": "内容",
                   "editablenode": "",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "ocontent"
                 }
               ]
@@ -946,7 +946,7 @@
                 {
                   "title": "扣款说明",
                   "editablenode": "",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "fromrem"
                 }
               ]

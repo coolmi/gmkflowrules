@@ -101,7 +101,7 @@
       ]
     },
     {
-      "title": "申请人信息",
+      "title": "申请人",
       "pageid": "sqrxx",
       "component": "panel",
       "subComponents": [
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "title": "非差旅费汇总",
+      "title": "费用汇总",
       "component": "panel",
       "pageid": "total_page",
       "subComponents": [
@@ -531,7 +531,7 @@
                 },
                 {
                   "title": "事由",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "traffreason"
                 },
                 {
@@ -637,12 +637,12 @@
                 },
                 {
                   "title": "事由说明",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "breason"
                 },
                 {
                   "title": "备注",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "bremarks"
                 }
               ]
@@ -705,7 +705,7 @@
                 },
                 {
                   "title": "事由说明",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "reason"
                 },
                 {
@@ -810,7 +810,7 @@
                 },
                 {
                   "title": "内容",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "ocontent"
                 }
               ]
@@ -884,7 +884,7 @@
                 },
                 {
                   "title": "扣款说明",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "fromrem"
                 }
               ]
