@@ -120,7 +120,7 @@
       ]
     },
     {
-      "title": "招聘需求信息",
+      "title": "招聘需求",
       "pageid": "zpxqxx",
       "component": "panel",
       "subComponents": [
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "title": "面试评价信息",
+      "title": "面试评价",
       "pageid": "mspjxx",
       "component": "panel",
       "subComponents": [
@@ -216,7 +216,7 @@
             },
             {
               "title": "面试官一意见",
-              "component": "text",
+              "component": "textarea",
               "name": "evalueopiniona"
             },
             {
@@ -227,7 +227,7 @@
             },
             {
               "title": "面试官二意见",
-              "component": "text",
+              "component": "textarea",
               "name": "evalueopinionb"
             },
             {
@@ -238,7 +238,7 @@
             },
             {
               "title": "面试官三意见",
-              "component": "text",
+              "component": "textarea",
               "name": "evalueopinionc"
             },
             {
@@ -290,7 +290,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "employment.offerbz"
         }
       ]

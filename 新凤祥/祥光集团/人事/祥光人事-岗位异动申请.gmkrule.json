@@ -98,7 +98,7 @@
       "subComponents": [
         {
           "title": "事项原因",
-          "component": "text",
+          "component": "textarea",
           "name": "postbelongchange.reason"
         },
         {
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "title": "岗位异动信息",
+      "title": "岗位异动",
       "pageid": "zpxqxx",
       "component": "panel",
       "subComponents": [

@@ -2,7 +2,6 @@
   "id": "ABILITYLEVELCHANGE",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -116,79 +113,80 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "fjxx_abc",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "能力变更人编号",
-					"component": "label",
-					"editablenode": "",
-                    "middleName":[
-                    "ability.chgepernr",
-                    "pernr"
-                    ],
-                    "label":["ability.chgepernr","-","personlist.nachn"]
-                },
-				{
-					"title": "生效时间",
-					"component": "date1",
-					"id": "ability_begdate",
-					"editablenode": "",
-					"name": "ability.begdate"
-				},
-				{
-					"title": "所在岗位、岗级",
-					"component": "label",
-					"id": "89655c7f07af471ca118c17a4d2d99e7",
-					"editablenode": "",
-					"label": [
-						"dpostname","-",
-						"dpostlevelname"
-					]
-				},
-				{
-					"title": "所属组织",
-					"component": "text",
-					"id": "objidbefchan",
-					"editablenode": "",
-					"name": "objidbefchan"
-				},
-				{
-					"title": "变更前等级名称",
-					"component": "text",
-					"id": "ability_levelbeftext",
-					"editablenode": "",
-					"name": "ability.levelbeftext"
-				},
-				{
-					"title": "变更后等级",
-					"component": "label",
-					"id": "ability_levelaft",
-					"editablenode": "",
-                    "middleName":[
-                      "ability.levelaft",
-                      "zzdgwpgdj"
-                    ],
-					"label": [
-						"levellist.zzdpgdjms"
-					]
-
-				},
-				{
-					"title": "变更原因",
-					"component": "textarea",
-					"id": "ability_chgereason",
-                    "rows":3,
-					"editablenode": "",
-					"name": "ability.chgereason"
-				}
-			]
-		}
-
-
+    {
+      "title": "申请信息",
+      "pageid": "fjxx_abc",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "能力变更人编号",
+          "component": "label",
+          "editablenode": "",
+          "middleName": [
+            "ability.chgepernr",
+            "pernr"
+          ],
+          "label": [
+            "ability.chgepernr",
+            "-",
+            "personlist.nachn"
+          ]
+        },
+        {
+          "title": "生效时间",
+          "component": "date1",
+          "id": "ability_begdate",
+          "editablenode": "",
+          "name": "ability.begdate"
+        },
+        {
+          "title": "所在岗位、岗级",
+          "component": "label",
+          "id": "89655c7f07af471ca118c17a4d2d99e7",
+          "editablenode": "",
+          "label": [
+            "dpostname",
+            "-",
+            "dpostlevelname"
+          ]
+        },
+        {
+          "title": "所属组织",
+          "component": "text",
+          "id": "objidbefchan",
+          "editablenode": "",
+          "name": "objidbefchan"
+        },
+        {
+          "title": "变更前等级名称",
+          "component": "text",
+          "id": "ability_levelbeftext",
+          "editablenode": "",
+          "name": "ability.levelbeftext"
+        },
+        {
+          "title": "变更后等级",
+          "component": "label",
+          "id": "ability_levelaft",
+          "editablenode": "",
+          "middleName": [
+            "ability.levelaft",
+            "zzdgwpgdj"
+          ],
+          "label": [
+            "levellist.zzdpgdjms"
+          ]
+        },
+        {
+          "title": "变更原因",
+          "component": "textarea",
+          "id": "ability_chgereason",
+          "rows": 3,
+          "editablenode": "",
+          "name": "ability.chgereason"
+        }
+      ]
+    }
   ],
   "refers": {
   }

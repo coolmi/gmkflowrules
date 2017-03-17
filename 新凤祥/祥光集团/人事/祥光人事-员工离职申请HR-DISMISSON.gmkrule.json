@@ -132,7 +132,7 @@
         },
         {
           "title": "离职原因",
-          "component": "text",
+          "component": "textarea",
           "name": "dimission.leavereason"
         }
       ]
