@@ -906,7 +906,7 @@
             },
             {
               "title": "扣款说明",
-              "component": "text",
+              "component": "textarea",
               "name": "smemof"
             }
           ]
