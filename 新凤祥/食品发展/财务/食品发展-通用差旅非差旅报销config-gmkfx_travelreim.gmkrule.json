@@ -568,7 +568,7 @@
           ]
         },
         {
-          "title": "住宿及餐补汇总",
+          "title": "住宿及餐补",
           "component": "panel",
           "panel_id": "zsjcbhz",
           "id": "zsjcbhz1",
