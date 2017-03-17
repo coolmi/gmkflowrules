@@ -187,7 +187,7 @@
         },
         {
           "title": "车辆用途",
-          "component": "text",
+          "component": "textarea",
           "name": "app.c_use"
         },
         {

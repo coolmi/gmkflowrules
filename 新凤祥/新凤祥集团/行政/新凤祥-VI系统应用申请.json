@@ -121,7 +121,7 @@
         },
         {
           "title": "文字内容",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.litcontxt"
         },
         {
@@ -136,12 +136,12 @@
         },
         {
           "title": "用途描述",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.mainusage"
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.remark"
         }
       ]

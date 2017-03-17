@@ -187,7 +187,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "id": "carrepair_remarks",
           "editablenode": "",
           "name": "carrepair.remarks"
@@ -268,7 +268,7 @@
             },
             {
               "title": "维修内容",
-              "component": "text",
+              "component": "textarea",
               "id": "repaircontent",
               "editablenode": "",
               "name": "repaircontent"

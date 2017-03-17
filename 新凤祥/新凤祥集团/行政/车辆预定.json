@@ -113,7 +113,7 @@
                 },
                 {
                     "title": "车辆用途",
-                    "component": "text",
+                    "component": "textarea",
                     "name": "app.c_use"
                 },
                 {
@@ -128,7 +128,7 @@
                 },
                 {
                     "title": "用车理由",
-                    "component": "text",
+                    "component": "textarea",
                     "name": "app.c_reason"
                 },
                 {

@@ -316,7 +316,7 @@
         },
         {
           "title": "发布范围",
-          "component": "text",
+          "component": "textarea",
           "name": "bean.selscope"
         }
       ]

@@ -235,7 +235,7 @@
       ]
     },
     {
-      "title": "评审人员确认报告结果",
+      "title": "评审结果",
       "pageid": "sqxx_psqr",
       "tasknode": "zcrgcscbg,jswygzzcyqrbgaudit,zleaderaudit,zrgcszx",
       "component": "panel",
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "title": "技术委员会成员确认报告结果",
+      "title": "技术委员会",
       "pageid": "jswyhqr",
       "tasknode": "zleaderaudit,zrgcszx",
       "component": "panel",

@@ -260,7 +260,7 @@
             },
             {
               "title": "维修内容",
-              "component": "text",
+              "component": "textarea",
               "id": "repaircontent",
               "editablenode": "",
               "name": "repaircontent"

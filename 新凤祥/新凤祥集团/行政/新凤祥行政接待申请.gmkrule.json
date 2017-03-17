@@ -149,14 +149,14 @@
 				},
 				{
 					"title": "来访主要领导",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_mainleaders",
 					"editablenode": "",
 					"name": "mainModel.m_mainleaders"
 				},
 				{
 					"title": "来访目的",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_forwhat",
 					"editablenode": "",
 					"name": "mainModel.m_forwhat"
@@ -177,23 +177,23 @@
 					"options": [
 						{
 							"text": "自驾车",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "汽车",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "火车",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "飞机",
-							"value": "3",
+							"value": "3"
 						},
 						{
 							"text": "其他",
-							"value": "4",
+							"value": "4"
 						}
 					]
 				},
@@ -206,11 +206,11 @@
 					"options": [
 						{
 							"text": "是",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "否",
-							"value": "1",
+							"value": "1"
 						}
 					]
 				},
@@ -251,15 +251,15 @@
 					"options": [
 						{
 							"text": "一级",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "二级",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "三级",
-							"value": "3",
+							"value": "3"
 						}
 					]
 				},
@@ -304,31 +304,31 @@
 					"options": [
 						{
 							"text": "迎宾方案",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "住宿方案",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "就餐方案",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "参观方案",
-							"value": "3",
+							"value": "3"
 						},
 						{
 							"text": "会见交流方案",
-							"value": "4",
+							"value": "4"
 						},
 						{
 							"text": "游览方案",
-							"value": "5",
+							"value": "5"
 						},
 						{
 							"text": "送宾方案",
-							"value": "6",
+							"value": "6"
 						}
 					]
 				},
@@ -408,7 +408,7 @@
 				},
 				{
 					"title": "备注",
-					"component": "text",
+					"component": "textarea",
 					"id": "s_jb_bz",
 					"editablenode": "",
 					"name": "s_jb_bz"
@@ -433,7 +433,7 @@
 				},
 				{
 					"title": "来访目的",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_forwhat_s",
 					"editablenode": "",
 					"name": "mainModel.m_forwhat_s"
@@ -492,31 +492,31 @@
 					"options": [
 						{
 							"text": "接待活动指南",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "在迎接地点举欢迎牌",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "LED屏幕",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "鲜花",
-							"value": "3",
+							"value": "3"
 						},
 						{
 							"text": "地毯",
-							"value": "4",
+							"value": "4"
 						},
 						{
 							"text": "喷泉",
-							"value": "5",
+							"value": "5"
 						},
 						{
 							"text": "摄像",
-							"value": "6",
+							"value": "6"
 						}
 					]
 				},
@@ -569,27 +569,27 @@
 					"options": [
 						{
 							"text": "提前入住手续",
-							"value": "0",
+							"value": "0"
 						},
 						{
 							"text": "含早餐",
-							"value": "1",
+							"value": "1"
 						},
 						{
 							"text": "国内长途",
-							"value": "2",
+							"value": "2"
 						},
 						{
 							"text": "鲜花",
-							"value": "3",
+							"value": "3"
 						},
 						{
 							"text": "水果",
-							"value": "4",
+							"value": "4"
 						},
 						{
 							"text": "公司宣传资料",
-							"value": "5",
+							"value": "5"
 						}
 					]
 				},
@@ -687,7 +687,7 @@
 			]
 		},
 		{
-			"title": "会见交流明细",
+			"title": "会见交流",
 			"pageid": "hjjlmx_reception",
 			"component": "panel",
 			"subComponents": [
@@ -723,7 +723,7 @@
 				},
 				{
 					"title": "方案",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_hjfa",
 					"editablenode": "",
 					"name": "mainModel.m_hjfa"

@@ -142,7 +142,7 @@
 				},
 				{
 					"title": "制度管理内容",
-					"component": "text",
+					"component": "textarea",
 					"id": "mainModel_m_insman",
 					"editablenode": "",
 					"name": "mainModel.m_insman"
@@ -165,7 +165,7 @@
 			]
 		},
 		{
-			"title": "新凤祥规章制度发布申请子表",
+			"title": "详细信息",
 			"pageid": "shenqingzibiao",
 			"component": "panel",
 			"subComponents": [
