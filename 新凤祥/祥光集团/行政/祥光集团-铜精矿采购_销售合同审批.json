@@ -2,7 +2,9 @@
   "id": "adm_purchasesalecontract",
   "hiddenFiles": {
     "flowFlag": {
-      "tasknode": ["internalaudit"]
+      "tasknode": [
+        "internalaudit"
+      ]
     }
   },
   "handleOnPC": {
@@ -178,11 +180,11 @@
       ]
     },
     {
-      "title":"合同审批",
-      "pageid":"htsp_page2",
-      "component":"panel",
-      "tasknode":"usertask2,usertask5",
-      "subComponents":[
+      "title": "合同审批",
+      "pageid": "htsp_page2",
+      "component": "panel",
+      "tasknode": "usertask2,usertask5",
+      "subComponents": [
         {
           "title": "汇总意见",
           "component": "textarea",
@@ -214,8 +216,6 @@
             }
           ]
         }
-
-
       ]
     },
     {

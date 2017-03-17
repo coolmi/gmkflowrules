@@ -122,7 +122,7 @@
     },
 
     {
-      "title": "会议室申请信息",
+      "title": "申请信息",
       "pageid": "hysssqx",
       "component": "panel",
       "subComponents": [
@@ -183,7 +183,7 @@
             },
             {
               "title": "会议主题",
-              "component": "text",
+              "component": "textarea",
               "name": "title"
             },
             {
