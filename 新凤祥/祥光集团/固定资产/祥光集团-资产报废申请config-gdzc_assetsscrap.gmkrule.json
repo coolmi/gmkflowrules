@@ -186,7 +186,7 @@
             {
                 "title": "",
                 "title1": "报废事由",
-                "component": "text",
+                "component": "textarea",
                 "name": "scrap_bfsy"
             },
             {
@@ -205,7 +205,7 @@
         }]
     },
     {
-        "title": "报废处理方式",
+        "title": "报废处理",
         "pageid": "bfclfs",
         "component": "panel",
         "tasknode":"wlzxcczcclaudit,ysmywmclaudit,cljgfkaudit",

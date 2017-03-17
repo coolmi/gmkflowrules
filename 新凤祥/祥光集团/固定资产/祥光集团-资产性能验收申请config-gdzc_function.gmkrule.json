@@ -200,7 +200,7 @@
             },
             {
               "title": "审批意见",
-              "component": "text",
+              "component": "textarea",
               "name": "b_remark"
             }
           ]

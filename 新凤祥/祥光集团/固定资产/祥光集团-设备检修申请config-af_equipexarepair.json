@@ -107,7 +107,7 @@
       "subComponents": [
         {
           "title": "主抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "equipexarepair.zcsrmc"
         },
         {

@@ -228,7 +228,7 @@
       ]
     },
     {
-      "title": "采购主管分配",
+      "title": "采购分配",
       "pageid": "sqxxx_pruexechilds",
       "component": "panel",
       "subComponents": [
@@ -359,7 +359,7 @@
       ]
     },
     {
-      "title": "采购执行确认型号",
+      "title": "采购确认",
       "pageid": "cgzxqrxh_pageid",
       "component": "panel",
       "subComponents": [
@@ -536,7 +536,7 @@
       ]
     },
     {
-      "title": "固定资产成本会计",
+      "title": "成本会计",
       "pageid": "sqxxx_qu_pruquirychilds",
       "component": "panel",
       "subComponents": [
