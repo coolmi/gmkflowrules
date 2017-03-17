@@ -251,7 +251,7 @@
                   "name": "totalblce"
                 },
                 {
-                  "component": "text",
+                  "component": "textarea",
                   "title": "备注",
                   "name": "rmk"
                 }
@@ -403,7 +403,7 @@
             },
             {
               "title": "档案室签字备案",
-              "component": "text",
+              "component": "textarea",
               "name": "payadv.archives"
             },
             {
@@ -462,7 +462,7 @@
             },
             {
               "title": "备注",
-              "component": "text",
+              "component": "textarea",
               "editablenode": "apply",
               "showLinkage": [
                 {
@@ -527,7 +527,7 @@
                   "name": "money"
                 },
                 {
-                  "component": "text",
+                  "component": "textarea",
                   "title": "摘要",
                   "name": "abstra"
                 },
@@ -547,7 +547,7 @@
                   "name": "receivcomacct"
                 },
                 {
-                  "component": "text",
+                  "component": "textarea",
                   "title": "备注",
                   "name": "rmk"
                 }

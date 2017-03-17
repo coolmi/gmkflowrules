@@ -158,12 +158,12 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "otherbank.other"
         },
         {
           "title": "申请业务说明",
-          "component": "text",
+          "component": "textarea",
           "name": "otherbank.remark"
         }
       ]

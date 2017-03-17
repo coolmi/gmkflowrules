@@ -105,7 +105,7 @@
       ]
     },
     {
-      "title": "报销人信息",
+      "title": "报销人",
       "pageid": "bxrxx",
       "component": "panel",
       "subComponents": [
@@ -323,7 +323,7 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "pobcost.sused"
         },
@@ -360,7 +360,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "pobcost.ulrea"
         }

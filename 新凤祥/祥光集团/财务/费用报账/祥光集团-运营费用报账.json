@@ -307,7 +307,7 @@
         },
         {
           "title": "汇款用途",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.hkyt"
         },
         {

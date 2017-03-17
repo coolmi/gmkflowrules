@@ -291,7 +291,7 @@
         },
         {
           "title": "货物描述",
-          "component": "text",
+          "component": "textarea",
           "id": "b2b_b2bchildrtfgoods",
           "editablenode": "",
           "showLinkage": [
@@ -743,7 +743,7 @@
         },
         {
           "title": "货物描述",
-          "component": "text",
+          "component": "textarea",
           "id": "b2b_b2bmainrtfgoods",
           "editablenode": "",
           "showLinkage": [
@@ -1313,7 +1313,7 @@
         },
         {
           "title": "货物描述",
-          "component": "text",
+          "component": "textarea",
           "id": "inter_rtfgoods",
           "editablenode": "",
           "showLinkage": [
@@ -1493,7 +1493,7 @@
         },
         {
           "title": "执行情况汇报",
-          "component": "text",
+          "component": "textarea",
           "id": "creditopen_rtfsituation",
           "editablenode": "usertask4",
           "tasknode": "usertask4",

@@ -216,7 +216,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "id": "creditaddedit_rtfnotes",
           "editablenode": "",
           "name": "creditaddedit.rtfnotes"
@@ -230,7 +230,7 @@
         },
         {
           "title": "执行情况汇报",
-          "component": "text",
+          "component": "textarea",
           "id": "creditaddedit_rtfsituation",
           "editablenode": "usertask4",
           "tasknode": "usertask4",
@@ -291,14 +291,14 @@
             },
             {
               "title": "修改原因",
-              "component": "text",
+              "component": "textarea",
               "id": "modifyreason",
               "editablenode": "",
               "name": "modifyreason"
             },
             {
               "title": "修改方案",
-              "component": "text",
+              "component": "textarea",
               "id": "modifyscheme",
               "editablenode": "",
               "name": "modifyscheme"

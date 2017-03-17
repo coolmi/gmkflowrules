@@ -125,7 +125,7 @@
       ]
     },
     {
-      "title": "报销人信息",
+      "title": "报销人",
       "pageid": "bxrxx",
       "component": "panel",
       "subComponents": [
@@ -810,7 +810,7 @@
             },
             {
               "title": "事由",
-              "component": "text",
+              "component": "textarea",
               "name": "smemg"
             },
             {
@@ -914,7 +914,7 @@
             },
             {
               "title": "扣款说明",
-              "component": "text",
+              "component": "textarea",
               "name": "smemof"
             }
           ]
