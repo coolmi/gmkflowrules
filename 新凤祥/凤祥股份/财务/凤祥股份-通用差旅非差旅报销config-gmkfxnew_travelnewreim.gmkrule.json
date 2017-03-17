@@ -778,7 +778,7 @@
                 },
                 {
                   "title": "事由",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "smemg"
                 },
                 {
