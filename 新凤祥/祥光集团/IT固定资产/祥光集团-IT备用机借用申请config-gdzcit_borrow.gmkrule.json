@@ -118,7 +118,7 @@
             },
             {
                 "title": "借用原因",
-                "component": "text",
+                "component": "textarea",
                 "name": "zjyyy"
             },
             {

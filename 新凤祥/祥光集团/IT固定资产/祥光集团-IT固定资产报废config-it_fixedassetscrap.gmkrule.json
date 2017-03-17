@@ -133,7 +133,7 @@
             },
             {
                 "title": "报废原因",
-                "component": "text",
+                "component": "textarea",
                 "name": "bfyy"
             }]
         }]
