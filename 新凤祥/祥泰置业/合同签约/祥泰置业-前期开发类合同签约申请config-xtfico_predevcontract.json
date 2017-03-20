@@ -223,7 +223,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "predevcontract.qtbz",
           "showLinkage": [
             {
@@ -297,7 +297,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "predevcontract.qtjgqdfs",
           "showLinkage": [
             {

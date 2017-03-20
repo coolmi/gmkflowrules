@@ -396,7 +396,7 @@
                 },
                 {
                   "title": "事由",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "reason"
                 },
                 {
@@ -480,12 +480,12 @@
                 },
                 {
                   "title": "事由说明",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "breason"
                 },
                 {
                   "title": "备注",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "bremarks"
                 }
               ]
@@ -770,7 +770,7 @@
                 },
                 {
                   "title": "扣款说明",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "fromrem"
                 }
               ]

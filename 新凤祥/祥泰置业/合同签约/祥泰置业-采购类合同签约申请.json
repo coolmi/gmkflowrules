@@ -268,7 +268,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "purchasecontract.qtjgqdfs",
           "showLinkage": [
             {

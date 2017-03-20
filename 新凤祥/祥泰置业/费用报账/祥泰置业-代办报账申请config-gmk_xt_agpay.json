@@ -222,7 +222,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "app.m_remark"
         }
       ]
@@ -811,7 +811,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "payment",
           "name": "app.m_remark1"
         },

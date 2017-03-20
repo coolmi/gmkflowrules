@@ -138,12 +138,12 @@
             },
             {
               "title": "资金用途",
-              "component": "text",
+              "component": "textarea",
               "name": "s_uses"
             },
             {
               "title": "资金用途明细",
-              "component": "text",
+              "component": "textarea",
               "name": "s_usedetail"
             },
             {
