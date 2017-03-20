@@ -106,11 +106,6 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "银行",
-          "component": "text",
-          "name": "documentsign.banknm"
-        },
-        {
           "title": "文件签署人",
           "component": "textarea",
           "rows": "3",
