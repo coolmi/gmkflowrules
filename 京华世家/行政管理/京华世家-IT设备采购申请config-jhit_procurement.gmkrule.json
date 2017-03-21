@@ -291,7 +291,7 @@
         },
         {
           "title": "IT综合管理员采购执行情况",
-          "component": "text",
+          "component": "textarea",
           "tasknode": "usertask7,usertask8,usertask9,usertaskz,usertask11,usertask12",
           "editablenode": "usertask7",
           "name": "procurement.proimplement",
@@ -303,7 +303,7 @@
         },
         {
           "title": "更改资产主数据",
-          "component": "text",
+          "component": "textarea",
           "tasknode": "usertaskz,usertask11,usertask12",
           "editablenode": "usertaskz",
           "name": "procurement.erpinsimplement",
@@ -315,7 +315,7 @@
         },
         {
           "title": "申请人接受确认",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "usertask11",
           "tasknode": "usertask11,usertask12",
           "name": "procurement.confirmapp",
@@ -327,7 +327,7 @@
         },
         {
           "title": "IT综合管理员回收设备情况",
-          "component": "text",
+          "component": "textarea",
           "tasknode": "usertask12",
           "editablenode": "usertask12",
           "name": "procurement.recycling",
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "title": "IT运维工程师安装/验货/维护资料卡片",
+      "title": "安装验货维护",
       "pageid": "ITywgcsazyhwhzlkp",
       "tasknode": "usertaskz,usertask11,usertask12",
       "component": "panel",
@@ -404,7 +404,7 @@
             },
             {
               "title": "详细信息",
-              "component": "text",
+              "component": "textarea",
               "name": "yadetailed"
             },
             {

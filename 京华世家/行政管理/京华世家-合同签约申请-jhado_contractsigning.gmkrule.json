@@ -184,7 +184,7 @@
         },
         {
           "title": "后补原因",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_hbyy",
           "editablenode": "",
           "showLinkage": [
@@ -298,7 +298,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_qtbz",
           "editablenode": "",
           "showLinkage": [
@@ -367,7 +367,7 @@
         },
         {
           "title": "黑名单解冻原因",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_hmdjdyy",
           "editablenode": "",
           "showLinkage": [
@@ -519,7 +519,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "id": "contractsigning_qtjgqdfs",
           "editablenode": "",
           "showLinkage": [

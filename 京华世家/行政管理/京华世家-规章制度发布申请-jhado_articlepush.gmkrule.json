@@ -138,7 +138,7 @@
         },
         {
           "title": "制度管理内容",
-          "component": "text",
+          "component": "textarea",
           "id": "mainModel_m_insman",
           "editablenode": "",
           "name": "mainModel.m_insman"

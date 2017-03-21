@@ -108,7 +108,7 @@
       ]
     },
     {
-      "title": "报销人信息",
+      "title": "报销人",
       "pageid": "bxrxx",
       "component": "panel",
       "subComponents": [
@@ -344,7 +344,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.reamaks"
         }

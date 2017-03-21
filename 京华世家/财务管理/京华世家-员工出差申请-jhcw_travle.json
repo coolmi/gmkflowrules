@@ -183,7 +183,7 @@
             },
             {
               "title": "工作内容",
-              "component": "text",
+              "component": "textarea",
               "editablenode": "",
               "name": "workc"
             }

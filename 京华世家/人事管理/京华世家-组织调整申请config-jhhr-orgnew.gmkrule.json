@@ -284,7 +284,7 @@
             },
             {
               "title": "调整性质描述",
-              "component": "text",
+              "component": "textarea",
               "name": "info_materialdescription",
               "showLinkage": [
                 {
@@ -359,7 +359,7 @@
       ]
     },
     {
-      "title": "人力资源部填写",
+      "title": "人力资源部",
       "pageid": "rlzybtx",
       "tasknode": "usertask3,usertask4,usertask5",
       "component": "panel",

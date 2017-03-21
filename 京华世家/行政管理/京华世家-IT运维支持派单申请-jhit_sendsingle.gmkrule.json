@@ -100,7 +100,7 @@
       ]
     },
     {
-      "title": "申请人信息",
+      "title": "申请人",
       "pageid": "sqrxx",
       "component": "panel",
       "subComponents": [
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "title": "分配运维信息",
+      "title": "分配运维",
       "pageid": "fpywxx",
       "component": "panel",
       "subComponents": [
@@ -231,35 +231,9 @@
         },
         {
           "title": "运维工程师",
-          "component": "select",
+          "component": "text",
           "editablenode": "",
-          "name": "sendsingle.operengneer",
-          "options": [
-            {
-              "text": "于洪臣-运维管理员",
-              "value": "20000143"
-            },
-            {
-              "text": "张传申-运维管理员",
-              "value": "20000147"
-            },
-            {
-              "text": "穆景伟-运维管理员",
-              "value": "20000152"
-            },
-            {
-              "text": "樊明汉-运维管理员",
-              "value": "20000153"
-            },
-            {
-              "text": "杜百虎-运维管理员",
-              "value": "20000154"
-            },
-            {
-              "text": "王洪祥-运维管理员",
-              "value": "20000155"
-            }
-          ]
+          "name": "sendsingle.operengneertxt"
         },
         {
           "title": "联系电话",
@@ -282,7 +256,7 @@
       ]
     },
     {
-      "title": "运维记录信息",
+      "title": "运维记录",
       "pageid": "ywjlxx",
       "component": "panel",
       "subComponents": [
@@ -328,13 +302,13 @@
         },
         {
           "title": "问题当前状态",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.currentstate"
         },
         {
           "title": "故障描述",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.spetypedesval"
         },
@@ -363,7 +337,7 @@
         },
         {
           "title": "解决方案",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.solution"
         },
@@ -436,13 +410,13 @@
         },
         {
           "title": "反馈意见",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "usertask3",
           "name": "sendsingle.feedback",
           "validation": {
             "pageid": "yhfk",
             "required": true,
-            "validateMsg": "请选择反馈意见"
+            "validateMsg": "请填写反馈意见"
           }
         },
         {

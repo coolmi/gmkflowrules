@@ -181,12 +181,12 @@
         },
         {
           "title": "主送",
-          "component": "text",
+          "component": "textarea",
           "name": "documentissue.mainsend"
         },
         {
           "title": "抄送",
-          "component": "text",
+          "component": "textarea",
           "name": "documentissue.copysend"
         },
         {

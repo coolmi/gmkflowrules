@@ -102,7 +102,7 @@
       ]
     },
     {
-      "title": "领用详细",
+      "title": "领用明细",
       "pageid": "lysqxxxx",
       "component": "panel",
       "subComponents": [
@@ -124,7 +124,7 @@
             },
             {
               "title": "领用原因",
-              "component": "text",
+              "component": "textarea",
               "name": "zlyyy"
             },
             {
@@ -177,7 +177,7 @@
             },
             {
               "title": "领用原因",
-              "component": "text",
+              "component": "textarea",
               "name": "zlyyy"
             },
             {
@@ -207,7 +207,7 @@
             },
             {
               "title": "问题描述",
-              "component": "text",
+              "component": "textarea",
               "editablenode": "usertask3",
               "name": "zwttxt"
             },
@@ -256,7 +256,7 @@
             },
             {
               "title": "问题描述",
-              "component": "text",
+              "component": "textarea",
               "editablenode": "usertask4",
               "name": "zyswt"
             }

@@ -195,7 +195,7 @@
       ]
     },
     {
-      "title": "当前主要变化说明",
+      "title": "变化说明",
       "component": "panel",
       "pageid": "dqzybhsm",
       "subComponents": [
@@ -212,17 +212,17 @@
             },
             {
               "title": "变化内容",
-              "component": "text",
+              "component": "textarea",
               "name": "contentchange"
             },
             {
               "title": "薪酬应用",
-              "component": "text",
+              "component": "textarea",
               "name": "compensationapplication"
             },
             {
               "title": "信息来源",
-              "component": "text",
+              "component": "textarea",
               "name": "informationsources"
             },
             {
@@ -232,7 +232,7 @@
             },
             {
               "title": "其他情况说明",
-              "component": "text",
+              "component": "textarea",
               "name": "descriptioncase"
             }
           ]
@@ -240,7 +240,7 @@
       ]
     },
     {
-      "title": "薪酬发放明细",
+      "title": "发放明细",
       "component": "panel",
       "pageid": "xcffmx",
       "subComponents": [
@@ -267,17 +267,17 @@
             },
             {
               "title": "较上月变化情况",
-              "component": "text",
+              "component": "textarea",
               "name": "changelastmonth"
             },
             {
               "title": "变化原因",
-              "component": "text",
+              "component": "textarea",
               "name": "reasonschange"
             },
             {
               "title": "发放金额及明细",
-              "component": "text",
+              "component": "textarea",
               "name": "ssuingbank"
             }
           ]

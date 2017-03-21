@@ -104,13 +104,13 @@
 		"component": "panel",
 		"subComponents": [{
 			"title": "申请事由",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.sqsy"
 			},
 			{
 			"title": "印章用途",
-			"component": "text",
+			"component": "textarea",
 			"editablenode": "",
 			"name": "mainModel.yzyt"
 		},
@@ -122,7 +122,7 @@
 		}]
 		},
 	{
-		"title": "印章刻制明细",
+		"title": "刻制明细",
 		"pageid": "yzkzmx",
 		"component": "panel",
 		"subComponents": [
