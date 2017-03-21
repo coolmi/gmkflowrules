@@ -191,11 +191,11 @@
                       "name": "lxdjname"
                     },{
                       "title": "事业部执行情况",
-                      "component": "text",
+                      "component": "textarea",
                       "name": "sybzxlxqkname"
                     },{
                       "title": "公司执行情况",
-                      "component": "text",
+                      "component": "textarea",
                       "name": "gszxlxqkname"
                     },
                     {

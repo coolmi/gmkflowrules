@@ -2,7 +2,6 @@
   "id": "fooddev_recruit",
   "handleOnPC": {
     "tasknode": [
-      
     ],
     "flag": [
       "resubmit"
@@ -10,7 +9,6 @@
   },
   "selectPerson": {
     "tasknode": [
-      
     ],
     "beforPop": false
   },
@@ -20,7 +18,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -120,254 +117,251 @@
         }
       ]
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "panel_sqxx",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "主抄送姓名",
-					"component": "text",
-					"id": "mainModel_m_mainss_nm",
-					"editablenode": "",
-					"name": "mainModel.m_mainss_nm"
-				},
-				{
-					"title": "申请岗位名称",
-					"component": "text",
-					"id": "mainModel_m_postnm",
-					"editablenode": "",
-					"name": "mainModel.m_postnm"
-				},
-				{
-					"title": "生产辅助及以上岗位",
-					"component": "select",
-					"id": "mainModel_m_beassist",
-					"editablenode": "",
-					"name": "mainModel.m_beassist",
-					"options": [
-						{
-							"text": "否",
-							"value": "0"
-						},
-						{
-							"text": "是",
-							"value": "1"
-						}
-					]
-				},
-				{
-					"title": "编制人数",
-					"component": "text",
-					"id": "mainModel_m_suitsum",
-					"editablenode": "",
-					"name": "mainModel.m_suitsum"
-				},
-				{
-					"title": "现有人数",
-					"component": "text",
-					"id": "mainModel_m_cursum",
-					"editablenode": "",
-					"name": "mainModel.m_cursum"
-				},
-				{
-					"title": "需招聘人数",
-					"component": "text",
-					"id": "mainModel_m_needsum",
-					"editablenode": "",
-					"name": "mainModel.m_needsum"
-				},
-				{
-					"title": "岗位层级",
-					"component": "select",
-					"id": "mainModel_m_postlevel",
-					"editablenode": "",
-					"name": "mainModel.m_postlevel",
-					"options": [
-						{
-							"text": "基础岗位",
-							"value": "0"
-						},
-						{
-							"text": "基层管理",
-							"value": "1"
-						},
-						{
-							"text": "中层管理",
-							"value": "2"
-						},
-						{
-							"text": "高层管理",
-							"value": "3"
-						}
-					]
-				},
-				{
-					"title": "招聘周期",
-					"component": "select",
-					"id": "mainModel_m_cycle",
-					"editablenode": "",
-					"name": "mainModel.m_cycle",
-					"options": [
-						{
-							"text": "基础岗位30天",
-							"value": "0"
-						},
-						{
-							"text": "基层管理者60天",
-							"value": "1"
-						},
-						{
-							"text": "中层管理者90天",
-							"value": "2"
-						},
-						{
-							"text": "高层管理者120天",
-							"value": "3"
-						}
-					]
-				},
-				{
-					"title": "学历",
-					"component": "text",
-					"id": "mainModel_m_education",
-					"editablenode": "",
-					"name": "mainModel.m_education"
-				},
-				{
-					"title": "专业",
-					"component": "text",
-					"id": "mainModel_m_profession",
-					"editablenode": "",
-					"name": "mainModel.m_profession"
-				},
-				{
-					"title": "性别",
-					"component": "select",
-					"id": "mainModel_m_sex",
-					"editablenode": "",
-					"name": "mainModel.m_sex",
-					"options": [
-						{
-							"text": "男",
-							"value": "0"
-						},
-						{
-							"text": "女",
-							"value": "1"
-						},
-						{
-							"text": "不限",
-							"value": "2"
-						}
-					]
-				},
-				{
-					"title": "年龄",
-					"component": "text",
-					"id": "mainModel_m_old",
-					"editablenode": "",
-					"name": "mainModel.m_old"
-				},
-				{
-					"title": "工作经验",
-					"component": "text",
-					"id": "mainModel_m_experience",
-					"editablenode": "",
-					"name": "mainModel.m_experience"
-				},
-				{
-					"title": "岗位工作时间",
-					"component": "text",
-					"id": "mainModel_m_worktime",
-					"editablenode": "",
-					"name": "mainModel.m_worktime"
-				},
-				{
-					"title": "到位时间",
-					"component": "text",
-					"id": "mainModel_m_indate",
-					"editablenode": "",
-					"name": "mainModel.m_indate",
-					"datatype": "date",
-					"dateFormat": "yyyy-MM-dd"
-				},
-				{
-					"title": "编制类型",
-					"component": "select",
-					"id": "mainModel_m_suitype",
-					"editablenode": "",
-					"name": "mainModel.m_suitype",
-					"options": [
-						{
-							"text": "编内招聘",
-							"value": "0"
-						},
-						{
-							"text": "编外招聘",
-							"value": "1"
-						}
-					]
-				},
-              {
-                "title": "岗位层级",
-                "component": "select",
-                "editablenode": "",
-                "name": "mainModel.m_beyx",
-                "options": [
-                  {
-                    "text": "总经理",
-                    "value": "M07"
-                  },
-                  {
-                    "text": "副总经理",
-                    "value": "M08"
-                  },
-                  {
-                    "text": "总监级",
-                    "value": "M10"
-                  },
-                  {
-                    "text": "部长级",
-                    "value": "M14"
-                  },
-                  {
-                    "text": "经理级",
-                    "value": "M17"
-                  },
-                  {
-                    "text": "主管或科长",
-                    "value": "M23"
-                  },
-                  {
-                    "text": "科员",
-                    "value": "M30"
-                  },
-                  {
-                    "text": "一线工人及生产辅助",
-                    "value": "M31"
-                  }
-                ]
-              },
-				{
-					"title": "岗位说明",
-					"component": "text",
-					"id": "mainModel_m_postsm",
-					"editablenode": "",
-					"name": "mainModel.m_postsm"
-				},
-				{
-					"title": "备注",
-					"component": "text",
-					"id": "mainModel_m_remark",
-					"editablenode": "",
-					"name": "mainModel.m_remark"
-				}
-			]
-		}
-
-
+    {
+      "title": "申请信息",
+      "pageid": "panel_sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "主抄送",
+          "component": "textarea",
+          "id": "mainModel_m_mainss_nm",
+          "editablenode": "",
+          "name": "mainModel.m_mainss_nm"
+        },
+        {
+          "title": "申请岗位名称",
+          "component": "text",
+          "id": "mainModel_m_postnm",
+          "editablenode": "",
+          "name": "mainModel.m_postnm"
+        },
+        {
+          "title": "生产辅助及以上岗位",
+          "component": "select",
+          "id": "mainModel_m_beassist",
+          "editablenode": "",
+          "name": "mainModel.m_beassist",
+          "options": [
+            {
+              "text": "否",
+              "value": "0"
+            },
+            {
+              "text": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "编制人数",
+          "component": "text",
+          "id": "mainModel_m_suitsum",
+          "editablenode": "",
+          "name": "mainModel.m_suitsum"
+        },
+        {
+          "title": "现有人数",
+          "component": "text",
+          "id": "mainModel_m_cursum",
+          "editablenode": "",
+          "name": "mainModel.m_cursum"
+        },
+        {
+          "title": "需招聘人数",
+          "component": "text",
+          "id": "mainModel_m_needsum",
+          "editablenode": "",
+          "name": "mainModel.m_needsum"
+        },
+        {
+          "title": "岗位层级",
+          "component": "select",
+          "id": "mainModel_m_postlevel",
+          "editablenode": "",
+          "name": "mainModel.m_postlevel",
+          "options": [
+            {
+              "text": "基础岗位",
+              "value": "0"
+            },
+            {
+              "text": "基层管理",
+              "value": "1"
+            },
+            {
+              "text": "中层管理",
+              "value": "2"
+            },
+            {
+              "text": "高层管理",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "招聘周期",
+          "component": "select",
+          "id": "mainModel_m_cycle",
+          "editablenode": "",
+          "name": "mainModel.m_cycle",
+          "options": [
+            {
+              "text": "基础岗位30天",
+              "value": "0"
+            },
+            {
+              "text": "基层管理者60天",
+              "value": "1"
+            },
+            {
+              "text": "中层管理者90天",
+              "value": "2"
+            },
+            {
+              "text": "高层管理者120天",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "id": "mainModel_m_education",
+          "editablenode": "",
+          "name": "mainModel.m_education"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "id": "mainModel_m_profession",
+          "editablenode": "",
+          "name": "mainModel.m_profession"
+        },
+        {
+          "title": "性别",
+          "component": "select",
+          "id": "mainModel_m_sex",
+          "editablenode": "",
+          "name": "mainModel.m_sex",
+          "options": [
+            {
+              "text": "男",
+              "value": "0"
+            },
+            {
+              "text": "女",
+              "value": "1"
+            },
+            {
+              "text": "不限",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "年龄",
+          "component": "text",
+          "id": "mainModel_m_old",
+          "editablenode": "",
+          "name": "mainModel.m_old"
+        },
+        {
+          "title": "工作经验",
+          "component": "textarea",
+          "id": "mainModel_m_experience",
+          "editablenode": "",
+          "name": "mainModel.m_experience"
+        },
+        {
+          "title": "岗位工作时间",
+          "component": "text",
+          "id": "mainModel_m_worktime",
+          "editablenode": "",
+          "name": "mainModel.m_worktime"
+        },
+        {
+          "title": "到位时间",
+          "component": "text",
+          "id": "mainModel_m_indate",
+          "editablenode": "",
+          "name": "mainModel.m_indate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        },
+        {
+          "title": "编制类型",
+          "component": "select",
+          "id": "mainModel_m_suitype",
+          "editablenode": "",
+          "name": "mainModel.m_suitype",
+          "options": [
+            {
+              "text": "编内招聘",
+              "value": "0"
+            },
+            {
+              "text": "编外招聘",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "岗位层级",
+          "component": "select",
+          "editablenode": "",
+          "name": "mainModel.m_beyx",
+          "options": [
+            {
+              "text": "总经理",
+              "value": "M07"
+            },
+            {
+              "text": "副总经理",
+              "value": "M08"
+            },
+            {
+              "text": "总监级",
+              "value": "M10"
+            },
+            {
+              "text": "部长级",
+              "value": "M14"
+            },
+            {
+              "text": "经理级",
+              "value": "M17"
+            },
+            {
+              "text": "主管或科长",
+              "value": "M23"
+            },
+            {
+              "text": "科员",
+              "value": "M30"
+            },
+            {
+              "text": "一线工人及生产辅助",
+              "value": "M31"
+            }
+          ]
+        },
+        {
+          "title": "岗位说明",
+          "component": "textarea",
+          "id": "mainModel_m_postsm",
+          "editablenode": "",
+          "name": "mainModel.m_postsm"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "id": "mainModel_m_remark",
+          "editablenode": "",
+          "name": "mainModel.m_remark"
+        }
+      ]
+    }
   ],
   "refers": {
   }

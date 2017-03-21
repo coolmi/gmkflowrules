@@ -124,13 +124,13 @@
         },
         {
           "title": "值班理由",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.ondutyreason"
         }
       ]
     },
     {
-      "title": "值班详细信息",
+      "title": "值班信息",
       "pageid": "zbxxxx",
       "component": "panel",
       "subComponents": [

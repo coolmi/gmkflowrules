@@ -190,7 +190,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtbz",
           "showLinkage": [
             {
@@ -307,7 +307,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtyy",
           "showLinkage": [
             {
@@ -359,7 +359,7 @@
         },
         {
           "title": "其他",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.qtjgqdfs",
           "showLinkage": [
             {
@@ -414,7 +414,7 @@
         },
         {
           "title": "黑名单解冻原因",
-          "component": "text",
+          "component": "textarea",
           "name": "fxcontractsigning.hmdjdyy",
           "showLinkage": [
             {

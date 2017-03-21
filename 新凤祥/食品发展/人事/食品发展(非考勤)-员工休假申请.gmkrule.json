@@ -1,7 +1,9 @@
 {
   "id": "fooddev_leave",
   "handleOnPC": {
-    "tasknode": [""],
+    "tasknode": [
+      ""
+    ],
     "flag": [
       "resubmit"
     ]
@@ -116,7 +118,9 @@
           "showLinkage": [
             {
               "id": "ltype",
-              "values": ["0"]
+              "values": [
+                "0"
+              ]
             }
           ],
           "subComponents": [
@@ -148,89 +152,90 @@
             },
             {
               "title": "备注",
-              "component": "text",
+              "component": "textarea",
               "name": "mainModel.readks"
             }
-
-
-            ]
+          ]
         },
+        {
+          "title": "审核部门",
+          "component": "label",
+          "showLinkage": [
             {
-              "title": "审核部门",
-              "component": "label",
-              "showLinkage": [
-                {
-                  "id": "ltype",
-                  "values": ["1"]
-                }
-              ],
-              "label": ["mainModel.deptkeyname"]
-            },
+              "id": "ltype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "label": [
+            "mainModel.deptkeyname"
+          ]
+        },
+        {
+          "title": "请假明细",
+          "component": "panel",
+          "panel_id": "qjmx",
+          "showLinkage": [
             {
-              "title": "请假明细",
-              "component": "panel",
-              "panel_id": "qjmx",
-              "showLinkage": [
+              "id": "ltype",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 1,
+              "id": "qjmx_id",
+              "basePath": "infors",
+              "tableForms": [
                 {
-                  "id": "ltype",
-                  "values": ["1"]
-                }
-              ],
-              "subComponents": [
+                  "title": "员工编号",
+                  "component": "text",
+                  "name": "fxpernr"
+                },
                 {
-                  "component": "table_form",
-                  "titleIndex": 1,
-                  "id": "qjmx_id",
-                  "basePath": "infors",
-                  "tableForms": [
-                    {
-                      "title": "员工编号",
-                      "component": "text",
-                      "name": "fxpernr"
-                    },
-                    {
-                      "title": "姓名",
-                      "component": "text",
-                      "name": "fxname"
-                    },
-                    {
-                      "title": "员工假期类型",
-                      "component": "hidden",
-                      "id": "fxstype",
-                      "name": "fxstype"
-                    },
-                    {
-                      "title": "休假天数",
-                      "component": "text",
-                      "name": "fxnum"
-                    },
-                    {
-                      "title": "员工假期类型",
-                      "component": "text",
-                      "name": "fxstypename"
-                    },
-                    {
-                      "title": "请假开始日期",
-                      "component": "date1",
-                      "name": "fxsdate"
-                    },
-                    {
-                      "title": "请假结束日期",
-                      "component": "date1",
-                      "name": "fxedate"
-                    },
-
-                    {
-                      "title": "备注",
-                      "component": "text",
-                      "name": "fxbz"
-                    }
-
-                  ]
+                  "title": "姓名",
+                  "component": "text",
+                  "name": "fxname"
+                },
+                {
+                  "title": "员工假期类型",
+                  "component": "hidden",
+                  "id": "fxstype",
+                  "name": "fxstype"
+                },
+                {
+                  "title": "休假天数",
+                  "component": "text",
+                  "name": "fxnum"
+                },
+                {
+                  "title": "员工假期类型",
+                  "component": "text",
+                  "name": "fxstypename"
+                },
+                {
+                  "title": "请假开始日期",
+                  "component": "date1",
+                  "name": "fxsdate"
+                },
+                {
+                  "title": "请假结束日期",
+                  "component": "date1",
+                  "name": "fxedate"
+                },
+                {
+                  "title": "备注",
+                  "component": "textarea",
+                  "name": "fxbz"
                 }
               ]
             }
-
+          ]
+        }
       ]
     }
   ]

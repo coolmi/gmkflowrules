@@ -254,7 +254,7 @@
         },
         {
           "title": "调动原因",
-          "component": "text",
+          "component": "textarea",
           "id": "mainModel_m_reason",
           "editablenode": "",
           "name": "mainModel.m_reason"
