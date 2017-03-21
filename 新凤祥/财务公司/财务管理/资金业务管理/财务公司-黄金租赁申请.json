@@ -231,12 +231,12 @@
         },
         {
           "title": "担保情况",
-          "component": "text",
+          "component": "textarea",
           "name": "goldlease.guarantee"
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "goldlease.tsemo"
         }
       ]
@@ -337,7 +337,7 @@
         },
         {
           "title": "保值情况",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "report",
           "validation": {
             "pageid": "ywryhjjgqkhb",
@@ -348,7 +348,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "report",
           "validation": {
             "pageid": "ywryhjjgqkhb",
