@@ -166,7 +166,7 @@
 				{
 				  "title": "",
 				  "title1": "采购执行说明",
-				  "component": "text",
+				  "component": "textarea",
 				  "name": "dfdlr"
 				},
 				{
@@ -190,13 +190,13 @@
 				{
 				  "title": "",
 				  "title1": "物料执行标准",
-				  "component": "text",
+				  "component": "textarea",
 				  "name": "fjfs"
 				},
 				{
 				  "title": "",
 				  "title1": "备注",
-				  "component": "text",
+				  "component": "textarea",
 				  "name": "fjys"
 				}
  

@@ -214,7 +214,7 @@
         },
         {
           "title": "工伤认定结论",
-          "component": "text",
+          "component": "textarea",
           "editablenode": "",
           "name": "mainModel.gsrdjl",
           "showLinkage": [

@@ -253,7 +253,7 @@
         },
         {
           "title": "备注",
-          "component": "text",
+          "component": "textarea",
           "name": "mainModel.bz"
         }
       ]

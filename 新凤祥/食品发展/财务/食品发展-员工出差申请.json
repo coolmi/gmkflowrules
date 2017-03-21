@@ -105,7 +105,7 @@
       ]
     },
     {
-      "title": "出差申请明细",
+      "title": "出差明细",
       "pageid": "ccmx",
       "component": "panel",
       "subComponents": [
@@ -184,7 +184,7 @@
             },
             {
               "title":"工作内容",
-              "component":"text",
+              "component":"textarea",
               "editablenode": "",
               "name":"workc"
             }
