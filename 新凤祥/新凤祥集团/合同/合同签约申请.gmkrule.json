@@ -2,7 +2,7 @@
   "id": "ap_contractsigning",
   "handleOnPC": {
     "tasknode": [
-      "lawpie"
+
     ],
     "flag": [
       "resubmit"
@@ -768,6 +768,82 @@
           "id": "contractsigning_xqbmfzr",
           "editablenode": "",
           "name": "contractsigning.xqbmfzr"
+        }
+      ]
+    },
+    {
+      "title": "法务部审核",
+      "pageid": "fwbsh",
+      "component": "panel",
+      "tasknode": "lawpie",
+      "notShowOnView":true,
+      "subComponents": [
+        {
+          "title": "提交至",
+          "component": "select",
+          "id": "lawsubmittask_id",
+          "editablenode": "lawpie",
+          "name": "lawsubmittask",
+          "islinkage": true,
+          "handleLinkage": [
+            {
+              "id": "fwbshry_id",
+              "values": [
+                "lawaudit"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "法务部审核",
+              "value": "lawaudit"
+            },
+            {
+              "text": "需求部门负责人审核",
+              "value": "demandleaderaudit"
+            }
+          ],
+          "validation": {
+            "pageid": "fwbsh",
+            "required": true,
+            "validateMsg": "请选择下一环节"
+          }
+        },
+        {
+          "title": "法务部审核人员",
+          "component": "text",
+          "id": "fwbshry_id",
+          "editablenode": "lawpie",
+          "forSelectPerson": {
+            "onclick": "getuser",
+            "postshow": true,
+            "showformname": "lawauditassignee",
+            "valuetype": [
+              "objid"
+            ],
+            "showtype": [
+              "nachn",
+              "stext"
+            ]
+          },
+          "name": "contractsigning.lawauditassigneeid",
+          "showLinkage": [
+            {
+              "id": "lawsubmittask_id",
+              "values": [
+                "lawaudit"
+              ]
+            }
+          ],
+          "validation": {
+            "pageid": "fwbsh",
+            "required": true,
+            "validateMsg": "请选择法务部审核人员"
+          }
         }
       ]
     }
