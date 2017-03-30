@@ -10,9 +10,9 @@
   },
   "selectPerson": {
     "tasknode": [
-      ""
+      "businesspersonaudit"
     ],
-    "beforPop": false
+    "beforPop": true
   },
   "forms": [
     {
