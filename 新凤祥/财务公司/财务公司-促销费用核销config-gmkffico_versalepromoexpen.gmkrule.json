@@ -150,6 +150,13 @@
           "name": "mainModel.cdkotxt"
         },
         {
+          "title": "合计金额",
+          "component": "text",
+          "datatype": "money",
+          "editablenode": "",
+          "name": "mainModel.caltotal"
+        },
+        {
           "title": "备注",
           "component": "textarea",
           "editablenode": "",
@@ -173,7 +180,18 @@
               "editablenode": "",
               "name": "info_writedate"
             },
-
+            {
+              "title": "入账公司",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_rzgsnm"
+            },
+            {
+              "title": "入账成本中心",
+              "component": "text",
+              "editablenode": "",
+              "name": "info_cbzxnm"
+            },
             {
               "title": "核销费用类型",
               "component": "text",
@@ -193,12 +211,6 @@
               "name": "info_subjectcodedec"
             },
             {
-              "title": "品项",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_itemsdec"
-            },
-            {
               "title": "客户/项目编码",
               "component": "text",
               "editablenode": "",
@@ -211,116 +223,16 @@
               "name": "info_customertxt"
             },
             {
-              "title": "渠道类型",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_channeltypename"
-            },
-            {
-              "title": "系统名称",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_sysname"
-            },
-            {
-              "title": "售点省份",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_provinces"
-            },
-            {
-              "title": "售点城市",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_pointcity"
-            },
-            {
-              "title": "售点县区",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_countydistrict"
-            },
-            {
-              "title": "售点数量",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_saleaddress"
-            },
-            {
-              "title": "产品名称",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_productname"
-            },
-            {
-              "title": "产品编码",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_productcode"
-            },
-            {
-              "title": "单位",
-              "component": "select",
-              "editablenode": "",
-              "name": "info_company",
-              "options": [
-                {
-                  "text": "个",
-                  "value": "0"
-                },
-                {
-                  "text": "次",
-                  "value": "1"
-                },
-                {
-                  "text": "年",
-                  "value": "2"
-                },
-                {
-                  "text": "月",
-                  "value": "3"
-                },
-                {
-                  "text": "人次",
-                  "value": "4"
-                }
-              ]
-            },
-            {
-              "title": "数量",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_num"
-            },
-            {
-              "title": "去税单价",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_unitprice"
-            },
-            {
-              "title": "去税金额",
+              "title": "金额",
               "component": "text",
               "editablenode": "",
               "name": "info_writeamount"
             },
             {
-              "title": "计提余额",
+              "title": "备注",
               "component": "text",
               "editablenode": "",
-              "name": "info_accruedbalance"
-            },
-            {
-              "title": "冲销计提金额",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_writeoffaccrued"
-            },
-            {
-              "title": "报当前月金额",
-              "component": "text",
-              "editablenode": "",
-              "name": "info_writeoffmonth"
+              "name": "info_remarks"
             }
           ]
         }
@@ -415,7 +327,6 @@
               "editablenode": "",
               "name": "info_saleaddress"
             },
-
             {
               "title": "产品名称",
               "component": "text",
@@ -499,31 +410,6 @@
               "name": "info_writeamount"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "价税信息",
-      "pageid": "jsxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "发票税金",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.tax"
-        },
-        {
-          "title": "进项税转出",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.valorem"
-        },
-        {
-          "title": "价税合计",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.transfer"
         }
       ]
     }
