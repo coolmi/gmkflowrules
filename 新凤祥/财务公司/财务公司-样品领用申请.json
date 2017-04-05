@@ -190,7 +190,7 @@
           "component": "label",
           "editablenode": "",
           "name": "fkbukrs",
-          "labels": [
+          "label": [
             "mainModel.fkbukrs",
             "-",
             "mainModel.fkbutxt"
@@ -200,6 +200,13 @@
           "title": "预算所属成本中心",
           "component": "text",
           "name": "mainModel.fygscbzx"
+        },
+        {
+          "title": "申请总金额",
+          "component": "text",
+          "datatype": "money",
+          "editablenode": "",
+          "name": "mainModel.hsum"
         },
         {
           "title": "申请内容",
