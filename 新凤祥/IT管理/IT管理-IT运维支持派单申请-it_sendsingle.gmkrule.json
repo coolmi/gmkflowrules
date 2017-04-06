@@ -378,7 +378,7 @@
       "tasknode": "usertask3,usertask5",
       "subComponents": [
         {
-          "title": "是否满意",
+          "title": "评分",
           "component": "select",
           "id": "satisfied",
           "editablenode": "usertask3",
@@ -388,36 +388,49 @@
             {
               "id": "satisfiedisplay",
               "values": [
-                "不满意"
+                "1",
+                "2"
               ]
             }
           ],
           "options": [
             {
-              "text": "满意",
-              "value": "满意"
+              "text": "5",
+              "value": "5"
             },
             {
-              "text": "不满意",
-              "value": "不满意"
+              "text": "4",
+              "value": "4"
+            },
+            {
+              "text": "3",
+              "value": "3"
+            },
+            {
+              "text": "2",
+              "value": "2"
+            },
+            {
+              "text": "1",
+              "value": "1"
             }
           ],
           "validation": {
             "pageid": "yhfk",
             "required": true,
-            "validateMsg": "请选择是否满意"
+            "validateMsg": "请选择评分"
           }
         },
         {
           "title": "反馈意见",
-          "component": "",
+          "component": "textarea",
           "rows": "3",
           "editablenode": "usertask3",
           "name": "sendsingle.feedback",
           "validation": {
             "pageid": "yhfk",
             "required": true,
-            "validateMsg": "请选择反馈意见"
+            "validateMsg": "请填写反馈意见"
           }
         },
         {
@@ -430,21 +443,22 @@
             {
               "id": "satisfied",
               "values": [
-                "不满意"
+                "1",
+                "2"
               ]
             }
           ],
           "options": [
             {
-              "text": "服务态度",
+              "text": "响应不及时",
               "value": "NO1"
             },
             {
-              "text": "服务质量",
+              "text": "个人技能一般",
               "value": "NO2"
             },
             {
-              "text": "响应时间",
+              "text": "服务态度恶劣",
               "value": "NO3"
             }
           ],
@@ -453,27 +467,6 @@
             "required": true,
             "validateMsg": "请选择不满意项"
           }
-        },
-        {
-          "title": "选择环节",
-          "component": "select",
-          "editablenode": "usertask5",
-          "name": "sendsingle.link",
-          "validation": {
-            "pageid": "yhfk",
-            "required": true,
-            "validateMsg": "请选择环节"
-          },
-          "options": [
-            {
-              "text": "客户信息反馈环节",
-              "value": "是"
-            },
-            {
-              "text": "结束环节",
-              "value": "否"
-            }
-          ]
         }
       ]
     }
