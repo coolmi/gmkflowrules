@@ -222,7 +222,7 @@
           "options": [
             {
               "text": "日元",
-              "value": "JPY",
+              "value": "JPY"
             },
             {
               "text": "人民币",
@@ -258,7 +258,6 @@
           "title": "付款金额大写",
           "component": "text",
           "datatype": "money2dx",
-          "editablenode": "",
           "id": "ttpayment_fkjeup",
           "editablenode": "",
           "name": "ttpayment.fkje",
@@ -316,6 +315,13 @@
               "value": "4"
             }
           ]
+        },
+        {
+          "title": "财务审批状态",
+          "component": "text",
+          "id": "ttpayment_spzt",
+          "editablenode": "",
+          "name": "ttpayment.spzt"
         },
         {
           "title": "备注",
