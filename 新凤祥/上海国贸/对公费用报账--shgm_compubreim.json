@@ -176,21 +176,6 @@
           "name": "mainModel.cdbutxt"
         },
         {
-          "title": "是否跨成本中心",
-          "component": "radio",
-          "name": "mainModel.titlename",
-          "options": [
-            {
-              "title": "否",
-              "value": "0"
-            },
-            {
-              "title": "是",
-              "value": "1"
-            }
-          ]
-        },
-        {
           "title": "项目类型",
           "component": "select",
           "editablenode": "",
