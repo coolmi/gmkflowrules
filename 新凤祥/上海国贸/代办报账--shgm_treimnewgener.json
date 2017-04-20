@@ -2,8 +2,8 @@
   "id": "shgm_treimnewgener",
   "handleOnPC": {
     "tasknode": [
-      "accout",
-      "payment"
+      "getreimnewgener3",
+      "getreimnewgener6"
     ],
     "flag": [
       "resubmit"

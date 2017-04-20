@@ -2,8 +2,8 @@
   "id": "shgm_specialnewreim",
   "handleOnPC": {
     "tasknode": [
-      "accout",
-      "payment"
+      "fxztravelnewreim3",
+      "fxztravelnewreim9"
     ],
     "flag": [
       "resubmit"

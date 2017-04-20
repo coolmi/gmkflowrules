@@ -2,7 +2,8 @@
   "id": "shgm_compubreim",
   "handleOnPC": {
     "tasknode": [
-      "usertask4"
+      "compubshgmreim3",
+      "compubshgmreim7"
     ],
     "flag": [
       "resubmit"
