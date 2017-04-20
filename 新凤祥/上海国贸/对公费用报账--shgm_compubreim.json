@@ -139,7 +139,27 @@
           "title": "所在公司",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.ubukrss"
+          "name": "mainModel.buktxt"
+        },
+        {
+          "title":"邮箱",
+          "component":"text",
+          "name":"mainModel.pfach"
+        },
+        {
+          "title":"办公电话",
+          "component":"text",
+          "name":"mainModel.telnr"
+        },
+        {
+          "title":"手机号",
+          "component":"text",
+          "name":"mainModel.telpr"
+        },
+        {
+          "title":"员工财务编码",
+          "component":"text",
+          "name":"mainModel.lifnr"
         }
       ]
     },
