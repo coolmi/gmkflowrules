@@ -198,7 +198,7 @@
           "title": "业务执行人员",
           "component": "text",
           "name": "openaccount.businessexecutives",
-          "editablenode": "internalaudit,dbddaudit,cwgsrzglbmgraudit,cwgsjcbaudit",
+          "editablenode": "usertask1,internalaudit,dbddaudit,cwgsrzglbmgraudit,cwgsjcbaudit",
           "validation": {
             "pageid": "sqxx",
             "required": true,
