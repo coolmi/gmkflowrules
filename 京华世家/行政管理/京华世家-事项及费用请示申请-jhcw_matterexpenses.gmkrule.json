@@ -120,14 +120,6 @@
       "title": "请示内容",
       "component": "panel",
       "panel_id": "wltk_panel",
-      "showLinkage": [
-        {
-          "id": "wlsh_hidden",
-          "values": [
-            "true"
-          ]
-        }
-      ],
       "subComponents": [
         {
           "component": "table_form",
