@@ -1,5 +1,5 @@
 {
-  "id": "jhcw_matterexpenses",
+  "id": "jhcw_matterrequest",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -130,7 +130,7 @@
         },
         {
           "title": "是否上报董事长",
-          "tasknode":"usertask4",
+          "tasknode":"usertask4,usertask7,usertask8",
           "editablenode":"usertask4",
           "component": "select",
           "name": "mainModel.m_reportboss",
@@ -154,30 +154,6 @@
           }
 
 
-        },{
-          "title": "请示摘要",
-          "component": "textarea",
-          "name": "mainModel.m_summary"
-        },
-        {
-          "title": "费用总额",
-          "component": "text",
-          "name": "mainModel.m_sum"
-        },
-        {
-          "title": "费用总额大写",
-          "component": "text",
-          "name": "mainModel.m_sumdx"
-        },
-        {
-          "title": "成本中心",
-          "component": "text",
-          "name":"mainModel.m_cbzxnm"
-        },
-        {
-          "title": "成本中心名称",
-          "component": "text",
-          "name": "mainModel.m_cbzxnm"
         },
         {
           "title": "主送",
@@ -188,69 +164,6 @@
           "title": "抄送",
           "component": "textarea",
           "name": "mainModel.m_copysendnm"
-        },
-        {
-          "title" : "成本中心",
-          "component": "text",
-          "tasknode":"usertask3,usertask4,usertask7,usertask8",
-          "editablenode":"usertask3",
-          "name" : "mainModel.m_cbzxcw",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请填写成本中心"
-          }
-        },
-        {
-          "title" : "列支科目",
-          "component": "text",
-          "tasknode":"usertask3,usertask4,usertask7,usertask8",
-          "editablenode":"usertask3",
-          "name" : "mainModel.m_lzkm",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请填写列支科目"
-          }
-
-        },
-        {
-          "title" : "获批预算总额",
-          "component": "text",
-          "tasknode":"usertask3,usertask4,usertask7,usertask8",
-          "datatype": "money",
-          "editablenode":"usertask3",
-          "name" : "mainModel.m_hpyssum",
-          "UZH":
-            {
-              "remoteId": "m_hpyssumdx"}
-          ,
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请填写获批预算总额"
-          }
-
-
-        },{
-          "title" : "获批预算总额大写",
-          "component": "text",
-          "tasknode":"usertask3,usertask4,usertask7,usertask8",
-          "editablenode":"usertask3",
-          "name" : "mainModel.m_hpyssumdx"
-        },
-        {
-          "title" : "是否可分拆",
-          "component": "text",
-          "tasknode":"usertask3,usertask4,usertask7,usertask8",
-          "editablenode":"usertask3",
-          "name" : "mainModel.m_befch",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请填写是否可分拆"
-          }
-
         }
       ]
     },
@@ -279,6 +192,5 @@
         }
       ]
     }
-
   ]
 }
