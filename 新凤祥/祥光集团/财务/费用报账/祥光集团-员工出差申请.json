@@ -110,6 +110,18 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "费用成本公司",
+          "component": "text",
+          "editablenode": "",
+          "name":"travle.m_compnm"
+        },
+        {
+          "title": "费用成本中心",
+          "component": "text",
+          "editablenode": "",
+          "name": "travle.m_cbzxnm"
+        },
+        {
           "title": "是否提高标准",
           "component": "select",
           "id": "beup_select",
@@ -175,6 +187,12 @@
               "component": "text",
               "editablenode": "",
               "name": "transmode"
+            },
+            {
+              "title": "类型",
+              "component": "text",
+              "editablenode": "",
+              "name": "tp"
             },
             {
               "title": "是否签约宾馆",
