@@ -1,0 +1,537 @@
+{
+  "id": "ado_tenderapply",
+  "handleOnPC": {
+    "tasknode": [
+      "usertask3","usertask4","usertask7"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "法人单位",
+          "component": "text",
+          "name": "mainModel.m_compnm"
+        },
+        {
+          "title": "采购方式",
+          "component": "select",
+          "name": "mainModel.m_cgtype",
+          "options": [
+            {
+              "text": "招标",
+              "value": "招标"
+            },
+            {
+              "text": "议标",
+              "value": "议标"
+            },
+            {
+              "text": "不招议标",
+              "value": "不招议标"
+            }
+          ]
+        },
+        {
+          "title": "执行状态",
+          "component": "select",
+          "name": "mainModel.m_exestate",
+          "options": [
+            {
+              "text": "正常",
+              "value": "正常"
+            },
+            {
+              "text": "后补",
+              "value": "后补"
+            }
+          ]
+        },
+        {
+          "title": "议标原因",
+          "component": "text",
+          "id": "m_why",
+          "name": "mainModel.m_why",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "不招议标原因",
+          "component": "text",
+          "id": "m_why_no",
+          "name": "mainModel.m_why",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "不招议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "招标/议标地点",
+          "component": "text",
+          "id": "m_place",
+          "name": "mainModel.m_place",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "招标/议标时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "id": "m_date",
+          "name": "mainModel.m_date",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "固定资产采购",
+          "component": "select",
+          "name": "mainModel.m_gdzccg",
+          "options": [
+            {
+              "text": "否",
+              "value": "否"
+            },
+            {
+              "text": "是",
+              "value": "是"
+            }
+          ]
+        },
+        {
+          "title": "需求项目类别",
+          "component": "text",
+          "id": "m_needtypenm",
+          "name": "mainModel.m_needtypenm"
+        },
+        {
+          "title": "标的物名称",
+          "component": "text",
+          "id": "m_bdwnm",
+          "name": "mainModel.m_bdwnm"
+        },
+        {
+          "title": "标的物用途",
+          "component": "text",
+          "id": "m_bdwuse",
+          "name": "mainModel.m_bdwuse"
+        },
+        {
+          "title": "预估金额",
+          "component": "text",
+          "id": "m_estimate",
+          "name": "mainModel.m_estimate"
+        },
+        {
+          "title": "预估金额(大写)",
+          "component": "text",
+          "id": "m_estimatedx",
+          "name": "mainModel.m_estimatedx"
+        },
+        {
+          "title": "标的确定金额",
+          "component": "text",
+          "id": "m_confirmmoney",
+          "name": "mainModel.m_confirmmoney",
+          "tasknode": "usertask7"
+        },
+        {
+          "title": "标书编制",
+          "component": "select",
+          "name": "mainModel.m_bidingdoc",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "不编制标书",
+              "value": "不编制标书"
+            },
+            {
+              "text": "编制标书",
+              "value": "编制标书"
+            }
+          ]
+        },
+        {
+          "title": "参加部门负责人",
+          "component": "text",
+          "id": "m_participatenm",
+          "name": "mainModel.m_participatenm",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "主抄送",
+          "component": "text",
+          "id": "m_mainsendnm",
+          "name": "mainModel.m_mainsendnm",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "投标人资质要求",
+          "component": "text",
+          "id": "m_zzrequirements",
+          "name": "mainModel.m_zzrequirements",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "技术要求",
+          "component": "text",
+          "id": "m_jsrequirements",
+          "name": "mainModel.m_jsrequirements",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "报价方式",
+          "component": "text",
+          "id": "m_bjtype",
+          "name": "mainModel.m_bjtype",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "评价方式方法",
+          "component": "text",
+          "id": "m_pjtype",
+          "name": "mainModel.m_pjtype",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "投标保证金要求",
+          "component": "text",
+          "id": "m_tbbzjrequeire",
+          "name": "mainModel.m_tbbzjrequeire",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "其他",
+          "component": "text",
+          "id": "m_other",
+          "name": "mainModel.m_other",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            },
+            {
+              "id": "m_bidingdoc",
+              "values": [
+                "不编制标书"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "部门负责人",
+      "pageid": "require",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "adotenderapplysublist",
+          "id": "xqbm",
+          "tableForms": [
+            {
+              "title": "需求部门负责人",
+              "component": "text",
+              "name": "s_needfzr"
+            },
+            {
+              "title": "参标人",
+              "component": "text",
+              "name": "s_cbr"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "s_remark"
+            }
+          ]
+        },
+        {
+          "title": "技术部门负责人",
+          "component": "text",
+          "name": "mainModel.m_sjbfzrnm"
+        },
+        {
+          "title": "招标负责人",
+          "component": "text",
+          "name": "mainModel.m_zbfzr",
+          "showLinkage": [
+            {
+              "id": "m_cgtype",
+              "values": [
+                "招标","议标"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "事业部总经理/中心总监",
+          "component": "text",
+          "name": "mainModel.m_zjl"
+        }
+      ]
+    },
+    {
+      "title": "投标企业",
+      "pageid": "table_adotenderapplycomp",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "adotenderapplycomplist",
+          "id": "LA_tbqyxx",
+          "tableForms": [
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "c_nm"
+            },
+            {
+              "title": "联系人",
+              "component": "text",
+              "name": "c_cz"
+            },
+            {
+              "title": "电话",
+              "component": "text",
+              "name": "c_tel"
+            },
+            {
+              "title": "地址",
+              "component": "text",
+              "name": "c_email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
