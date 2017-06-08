@@ -181,6 +181,33 @@
           "name": "mainModel.ysynx"
         },
         {
+          "title": "达到预计使用年限",
+          "component": "select",
+          "name": "mainModel.beend",
+          "tasknode": "usertask6,usertask7,usertask8,usertask9,usertask10",
+          "editablenode": "usertask6",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ],
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择是否达到预计使用年限",
+            "regexs": ""
+          }
+        },
+        {
           "title": "残值",
           "component": "text",
           "name": "mainModel.cz"
