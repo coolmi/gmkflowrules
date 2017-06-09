@@ -184,8 +184,8 @@
           "title": "达到预计使用年限",
           "component": "select",
           "name": "mainModel.beend",
-          "tasknode": "usertask6,usertask7,usertask8,usertask9,usertask10",
-          "editablenode": "usertask6",
+          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8,usertask9,usertask10",
+          "editablenode": "usertask3",
           "options": [
             {
               "text": "请选择",
