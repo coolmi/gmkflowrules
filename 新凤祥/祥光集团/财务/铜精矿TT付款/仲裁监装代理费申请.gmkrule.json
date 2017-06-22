@@ -225,6 +225,11 @@
           "editablenode": "",
           "rows": "3",
           "name": "arbitration.bz"
+        },
+        {
+          "title": "已申请次数",
+          "component": "text",
+          "name": "arbitration.historynum"
         }
       ]
     }
