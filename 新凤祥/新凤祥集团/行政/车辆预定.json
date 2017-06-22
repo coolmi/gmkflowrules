@@ -201,8 +201,7 @@
                 {
                     "title": "计划启程时间",
                      "component": "text",
-                    "datatype": "date",
-                    "dateFormat": "hh:mm:ss",
+                    "datatype": "date2",
                     "name": "app.c_sttime"
                 },
                 {
@@ -215,8 +214,7 @@
                 {
                     "title": "计划返程时间",
                      "component": "text",
-                    "datatype": "date",
-                    "dateFormat": "hh:mm:ss",
+                    "datatype": "date2",
                     "name": "app.c_bktime"
                 }
             ]
