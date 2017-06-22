@@ -124,46 +124,9 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "授权类型 ",
-          "component": "select",
-          "id": "contractsigning_sqlx",
-          "editablenode": "",
-          "name": "contractsigning.sqlx",
-          "options": [
-            {
-              "text": "一级授权",
-              "value": "0"
-            },
-            {
-              "text": "二级授权",
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "title": "一级授权审批人",
-          "component": "select",
-          "id": "contractsigning_yjsqspr",
-          "editablenode": "",
-          "showLinkage": [
-            {
-              "id": "contractsigning_sqlx",
-              "values": [
-                "0"
-              ]
-            }
-          ],
-          "name": "contractsigning.yjsqspr",
-          "options": [
-            {
-              "text": "总裁岗位",
-              "value": "20003286"
-            },
-            {
-              "text": "董事长岗位",
-              "value": "20004971"
-            }
-          ]
+          "title": "合同主体法人公司",
+          "component": "text",
+          "name": "contractsigning.m_compnm"
         },
         {
           "title": "合同执行状态   ",
@@ -210,6 +173,43 @@
           "id": "contractsigning_xqbm",
           "editablenode": "",
           "name": "contractsigning.xqbm"
+        },
+        {
+          "title": "需求类型",
+          "component": "select",
+          "id": "contractsigning_xqlx",
+          "editablenode": "",
+          "name": "contractsigning.xqlx",
+          "options": [
+            {
+              "text": "工程",
+              "value": "GC"
+            },
+            {
+              "text": "外协",
+              "value": "WX"
+            },
+            {
+              "text": "经营",
+              "value": "JY"
+            },
+            {
+              "text": "人力资源",
+              "value": "HR"
+            },
+            {
+              "text": "知识产权",
+              "value": "ZS"
+            },
+            {
+              "text": "IT",
+              "value": "IT"
+            },
+            {
+              "text": "其他( 不必选择资产服务需求部门 )",
+              "value": "QT"
+            }
+          ]
         },
         {
           "title": "预算类别",
@@ -268,31 +268,42 @@
           "name": "contractsigning.htjedx"
         },
         {
-          "title": "需求类型",
+          "title": "合同形成方式",
           "component": "select",
-          "id": "contractsigning_xqlx",
-          "editablenode": "",
-          "name": "contractsigning.xqlx",
+          "name": "contractsigning.m_xctype",
           "options": [
             {
-              "text": "工程",
-              "value": "0"
+              "text": "招标",
+              "value": "招标"
             },
             {
-              "text": "常规",
-              "value": "1"
+              "text": "议标",
+              "value": "议标"
             },
             {
-              "text": "外协",
-              "value": "2"
+              "text": "不招议标",
+              "value": "不招议标"
+            }
+          ]
+        },
+        {
+          "title": "招标、议标、不招议标申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "contractsigning.m_zybappid"
+        },
+        {
+          "title": "是否年度框架合同",
+          "component": "select",
+          "name": "contractsigning.m_beyearht",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
             },
             {
-              "text": "IT",
-              "value": "3"
-            },
-            {
-              "text": "其他",
-              "value": "4"
+              "text": "否",
+              "value": "否"
             }
           ]
         },
@@ -386,6 +397,14 @@
           "id": "contractsigning_jgqdfs",
           "editablenode": "",
           "name": "contractsigning.jgqdfs",
+          "showLinkage": [
+            {
+              "id": "m_xctype",
+              "values": [
+                "不招议标"
+              ]
+            }
+          ],
           "options": [
             {
               "text": "请选择",
@@ -768,82 +787,6 @@
           "id": "contractsigning_xqbmfzr",
           "editablenode": "",
           "name": "contractsigning.xqbmfzr"
-        }
-      ]
-    },
-    {
-      "title": "法务部审核",
-      "pageid": "fwbsh",
-      "component": "panel",
-      "tasknode": "lawpie",
-      "notShowOnView":true,
-      "subComponents": [
-        {
-          "title": "提交至",
-          "component": "select",
-          "id": "lawsubmittask_id",
-          "editablenode": "lawpie",
-          "name": "lawsubmittask",
-          "islinkage": true,
-          "handleLinkage": [
-            {
-              "id": "fwbshry_id",
-              "values": [
-                "lawaudit"
-              ]
-            }
-          ],
-          "options": [
-            {
-              "text": "请选择",
-              "value": ""
-            },
-            {
-              "text": "法务部审核",
-              "value": "lawaudit"
-            },
-            {
-              "text": "需求部门负责人审核",
-              "value": "demandleaderaudit"
-            }
-          ],
-          "validation": {
-            "pageid": "fwbsh",
-            "required": true,
-            "validateMsg": "请选择下一环节"
-          }
-        },
-        {
-          "title": "法务部审核人员",
-          "component": "text",
-          "id": "fwbshry_id",
-          "editablenode": "lawpie",
-          "forSelectPerson": {
-            "onclick": "getuser",
-            "postshow": true,
-            "showformname": "lawauditassignee",
-            "valuetype": [
-              "objid"
-            ],
-            "showtype": [
-              "nachn",
-              "stext"
-            ]
-          },
-          "name": "contractsigning.lawauditassigneeid",
-          "showLinkage": [
-            {
-              "id": "lawsubmittask_id",
-              "values": [
-                "lawaudit"
-              ]
-            }
-          ],
-          "validation": {
-            "pageid": "fwbsh",
-            "required": true,
-            "validateMsg": "请选择法务部审核人员"
-          }
         }
       ]
     }
