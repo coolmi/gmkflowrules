@@ -129,6 +129,19 @@
           "name": "contractsigning.m_compnm"
         },
         {
+          "title": "是否销售类合同",
+          "component": "select",
+          "name": "mainModel.becaigou",
+          "options": [{
+            "title": "否",
+            "value": "否"
+          },
+            {
+              "title": "是",
+              "value": "是"
+            }]
+        },
+        {
           "title": "合同执行状态   ",
           "component": "select",
           "id": "contractsigning_htzxzt",
