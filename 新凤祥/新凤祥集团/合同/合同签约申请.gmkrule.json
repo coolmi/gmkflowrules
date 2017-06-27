@@ -125,8 +125,16 @@
       "subComponents": [
         {
           "title": "合同主体法人公司",
-          "component": "text",
-          "name": "contractsigning.m_compnm"
+          "component": "label",
+          "id": "contractsigning_gsxx",
+          "editablenode": "",
+          "middleName": [
+            "contractsigning.gsxx",
+            "bukrs"
+          ],
+          "label": [
+            "t001list.butxt"
+          ]
         },
         {
           "title": "是否销售类合同",
@@ -658,19 +666,6 @@
               "text": "E-其他合同（E）",
               "value": "E"
             }
-          ]
-        },
-        {
-          "title": "公司信息",
-          "component": "label",
-          "id": "contractsigning_gsxx",
-          "editablenode": "",
-          "middleName": [
-            "contractsigning.gsxx",
-            "bukrs"
-          ],
-          "label": [
-            "t001list.butxt"
           ]
         },
         {
