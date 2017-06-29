@@ -471,6 +471,11 @@
           ]
         },
         {
+          "title": "业务承办部门部长/经理",
+          "component": "text",
+          "name": "mainModel.m_leadersnm"
+        },
+        {
           "title": "技术部门负责人",
           "component": "text",
           "name": "mainModel.m_sjbfzrnm"
