@@ -152,8 +152,8 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "",
           "component": "table_form",
+          "id":"fylbtb",
           "basePath": "innermessfeeappsub1list",
           "titleIndex": 2,
           "tableForms": [
