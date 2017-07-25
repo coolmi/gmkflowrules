@@ -9,7 +9,7 @@
   },
   "handleOnPC": {
     "tasknode": [
-      "usertask2,usertask5"
+      "usertask2","usertask5"
     ],
     "flag": [
       "resubmit"
@@ -270,7 +270,7 @@
           ]
         },
         {
-          "title": "合同文本",
+          "title": "最初合同草本",
           "component": "panel",
           "panel_id": "yltk_panel",
           "showLinkage": [
@@ -341,6 +341,39 @@
               "basePath": "allfiles",
               "titleIndex": 0,
               "id": "files_fwsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "最初合同草本",
+          "component": "panel",
+          "panel_id": "zchtcb_panel",
+          "showLinkage": [
+            {
+              "id": "fwsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "fwotherfiles",
+              "titleIndex": 0,
+              "id": "files_zchtcb_table",
               "tableForms": [
                 {
                   "title": "文件名称",
@@ -461,6 +494,32 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "最终确认合同",
+      "component": "panel",
+      "panel_id": "zzht_panel",
+      "tasknode": "usertask3,usertask4,usertask5",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "task345files",
+          "titleIndex": 0,
+          "id": "files_zzht_table",
+          "tableForms": [
+            {
+              "title": "文件名称",
+              "component": "text",
+              "name": "filename",
+              "events": {
+                "eventType": "openDocument",
+                "filename": "filename",
+                "afrescoid": "afrescoid"
+              }
             }
           ]
         }
