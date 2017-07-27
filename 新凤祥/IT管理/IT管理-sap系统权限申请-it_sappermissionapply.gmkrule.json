@@ -166,6 +166,7 @@
         {
           "title": "是否跨事业部",
           "component": "radio",
+          "id":"ksyb",
           "name": "sappermissionapplyapp.sfksyb",
           "options": [
             {
@@ -182,7 +183,15 @@
           "title": "需求涉及事业部/职能中心",
           "component": "textarea",
           "rows": "3",
-          "name": "sappermissionapplyapp.orgnms"
+          "name": "sappermissionapplyapp.orgnms",
+          "showLinkage": [
+            {
+              "id": "ksyb",
+              "values": [
+                "1"
+              ]
+            }
+          ]
         },
         {
           "title": "使用模块",
