@@ -173,7 +173,7 @@
             {
               "title": "流程名称",
               "component": "text",
-              "name": "seal.processname",
+              "name": "sealapp.processname",
               "showLinkage":[
                 {
                   "id":"authorizationprocess",
