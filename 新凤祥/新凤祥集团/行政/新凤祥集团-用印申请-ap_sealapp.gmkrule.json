@@ -154,6 +154,34 @@
                 "component": "text",
                 "name": "sealapp.filetypechaldname"
             },
+            {
+              "title": "是否有业务审批授权流程",
+              "component": "select",
+              "name": "sealapp.authorizationprocess",
+              "id": "authorizationprocess",
+              "options": [
+                {
+                  "text": "否",
+                  "value": "否"
+                },
+                {
+                  "text": "是",
+                  "value": "是"
+                }
+              ]
+            },
+            {
+              "title": "流程名称",
+              "component": "text",
+              "name": "seal.processname",
+              "showLinkage":[
+                {
+                  "id":"authorizationprocess",
+                  "values":["是"]
+                }
+              ]
+
+            },
 			{
                 "title": "添加附件",
                 "component": "select",
@@ -279,7 +307,37 @@
               ]
             }
         ]
-     }
+     },
+    {
+      "title": "业务审批授权附件",
+      "component": "panel",
+      "panel_id": "ywspsqfj_panel",
+      "showLinkage":[
+        {
+          "id":"authorizationprocess",
+          "values":["是"]
+        }
+      ],
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "allfiles",
+          "id":"ywspsqfj_table",
+          "tableForms": [
+            {
+              "title": "文件名称",
+              "component": "text",
+              "name": "filename",
+              "events": {
+                "eventType": "openDocument",
+                "filename": "filename",
+                "afrescoid": "afrescoid"
+              }
+            }
+          ]
+        }
+      ]
+    }
     ],
 	"refers": {
 		"filetypemain": {
