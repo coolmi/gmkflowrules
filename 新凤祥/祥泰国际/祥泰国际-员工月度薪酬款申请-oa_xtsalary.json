@@ -1,0 +1,181 @@
+{
+	"id": "oa_xtsalary",
+	"handleOnPC":{
+		"tasknode":[
+			""
+		],
+		"flag":[
+			"resubmit"
+		]
+	},
+	"selectPerson":{
+		"tasknode":[
+			""
+		],
+		"beforPop":false
+	},
+
+	"forms": [{
+		"title": "基本信息",
+		"pageid": "jbxx",
+		"component": "panel",
+		"subComponents": [{
+			"title": "申请单号",
+			"component": "text",
+			"editablenode": "",
+			"name": "mainModel.appid"
+		},
+		{
+			"title": "申请日期",
+			"component": "date1",
+			"editablenode": "",
+			"name": "mainModel.appda"
+		},
+		{
+			"title": "申请人姓名",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.pernr",
+			"-",
+			"mainModel.username"]
+		},
+		{
+			"title": "所属部门",
+			"component": "label",
+			"editablenode": "",
+			"label": ["mainModel.sysbusinessunitname",
+			"-",
+			"mainModel.sysdeptname"]
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.userid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.username"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.pernr"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.syspostname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysdeptname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.sysbusinessunitname"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.postid"
+		},
+		{
+			"title": "",
+			"component": "hidden",
+			"name": "mainModel.id"
+		}]
+	},
+	{
+		"title": "申请信息",
+		"pageid": "sqxx",
+		"component": "panel",
+		"subComponents": [
+			{
+				"title": "类别",
+				"component": "text",
+				"name": "mainModel.m_type"
+			},
+			{
+				"title": "年份",
+				"component": "text",
+				"name": "mainModel.m_year"
+			},
+			{
+				"title": "月份",
+				"component": "text",
+				"name": "mainModel.m_month"
+			}
+		]
+	},
+	{
+		"title": "信息列表",
+		"pageid": "xckxxlb",
+		"component": "panel",
+		"subComponents": [
+			{
+              "title": "",
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "tabletype": "looppanel",
+              "basePath": "gzxx",
+			  "id": "gzxx",
+              "linkForms": [
+                	{
+						"title": "工资发放主体",
+						"component": "text",
+						"name": "deptnm"
+					},
+					{
+						"title": "人数",
+						"component": "text",
+						"name": "psns"
+					},
+					{
+						"title": "应发金额",
+						"component": "text",
+						"name": "yje"
+					},
+					{
+						"title": "实发金额",
+						"component": "text",
+						"name": "je"
+					},
+				  	{
+					  "title": "特殊说明",
+					  "component": "text",
+					  "name": "remark"
+				  	}
+              ]
+            },
+			{
+				"title": "人数总计",
+				"component": "text",
+				"name": "mainModel.m_psns"
+			},
+			{
+				"title": "应发金额总计",
+				"component": "text",
+				"name": "mainModel.m_yje"
+			},
+			{
+				"title": "实发金额总计",
+				"component": "text",
+				"name": "mainModel.m_je"
+			}
+
+		]
+	}]
+}
