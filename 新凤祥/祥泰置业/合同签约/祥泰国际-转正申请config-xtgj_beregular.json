@@ -1,0 +1,225 @@
+{
+  "id": "xtgj_beregular",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "转正人姓名",
+          "component": "text",
+          "name": "mainModel.m_username"
+        },
+        {
+          "title": "岗位名称",
+          "component": "text",
+          "name": "mainModel.m_postnm"
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "mainModel.m_pernr"
+        },
+        {
+          "title": "岗位等级",
+          "component": "text",
+          "name": "mainModel.m_postlevel"
+        },
+        {
+          "title": "所在部门",
+          "component": "text",
+          "name": "mainModel.m_deptnm"
+        },
+        {
+          "title": "试用期",
+          "component": "text",
+          "name": "mainModel.m_syq"
+        },
+        {
+          "title": "转正类型",
+          "component": "text",
+          "name": "mainModel.m_typenm"
+        },
+        {
+          "title": "入职日期",
+          "component": "date1",
+          "name": "mainModel.m_indate"
+        },
+        {
+          "title": "拟转正日期",
+          "component": "date1",
+          "name": "mainModel.m_zzdate"
+        },
+        {
+          "title": "毕业院校",
+          "component": "text",
+          "name": "mainModel.m_schoole"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "mainModel.m_xl"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "mainModel.m_zy"
+        },
+        {
+          "title": "毕业日期",
+          "component": "date1",
+          "name": "mainModel.m_bydate"
+        },
+        {
+          "title": "个人工作总结",
+          "component": "text",
+          "name": "mainModel.m_note"
+        },
+        {
+          "title": "直线领导审核意见",
+          "component": "select",
+          "id": "lederOption",
+          "name": "mainModel.m_yjid",
+          "editablenode": "usertask2",
+          "tasknode": "usertask2,usertask3,usertask4,usertask5,usertask6,usertask7",
+          "options": [
+            {
+              "title": "",
+              "value": ""
+            },
+            {
+              "title": "提前一个月转正",
+              "value": "0"
+            },
+            {
+              "title": "提前二个月转正",
+              "value": "1"
+            },
+            {
+              "title": "同意正常转正",
+              "value": "2"
+            },
+            {
+              "title": "延长一个月转正",
+              "value": "3"
+            },
+            {
+              "title": "调离此岗",
+              "value": "4"
+            },
+            {
+              "title": "辞退",
+              "value": "5"
+            }
+          ],
+          "validation": {
+            "pageid": "applyInfo",
+            "required": true,
+            "validateMsg": "请填写审核意见",
+            "regexs": ""
+          }
+        }
+      ]
+    }
+  ]
+}
