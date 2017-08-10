@@ -121,11 +121,6 @@
           "name": "mainModel.m_pernr"
         },
         {
-          "title": "岗位等级",
-          "component": "text",
-          "name": "mainModel.m_postlevel"
-        },
-        {
           "title": "所在部门",
           "component": "text",
           "name": "mainModel.m_deptnm"
@@ -134,11 +129,6 @@
           "title": "试用期",
           "component": "text",
           "name": "mainModel.m_syq"
-        },
-        {
-          "title": "转正类型",
-          "component": "text",
-          "name": "mainModel.m_typenm"
         },
         {
           "title": "入职日期",
@@ -169,11 +159,6 @@
           "title": "毕业日期",
           "component": "date1",
           "name": "mainModel.m_bydate"
-        },
-        {
-          "title": "个人工作总结",
-          "component": "text",
-          "name": "mainModel.m_note"
         },
         {
           "title": "直线领导审核意见",
