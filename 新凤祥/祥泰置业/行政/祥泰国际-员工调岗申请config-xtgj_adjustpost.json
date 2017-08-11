@@ -121,7 +121,7 @@
           "name": "mainModel.m_loginname"
         },
         {
-          "title": "员工ITCODE",
+          "title": "手机号",
           "component": "text",
           "name": "mainModel.m_tel"
         }
@@ -149,7 +149,7 @@
         },
         {
           "title": "本岗位履职日期",
-          "component": "date",
+          "component": "date1",
           "name": "mainModel.m_outdate"
         },
         {
@@ -181,7 +181,7 @@
         },
         {
           "title": "计划到岗时间",
-          "component": "date",
+          "component": "date1",
           "name": "mainModel.m_indate"
         }
       ]
