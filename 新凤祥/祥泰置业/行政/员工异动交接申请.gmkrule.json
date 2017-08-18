@@ -246,12 +246,12 @@
       "title": "员工关系管理",
       "pageid": "yggxgl",
       "component": "panel",
+      "tasknode": "usertask6",
       "subComponents": [
         {
           "title": "合同签约",
           "component": "text",
           "name": "mainModel.m_contract",
-          "tasknode": "usertask6",
           "editablenode": "usertask6",
           "validation": {
             "pageid": "yggxgl",
@@ -264,7 +264,6 @@
           "title": "社保关系",
           "component": "text",
           "name": "mainModel.m_security",
-          "tasknode": "usertask6",
           "editablenode": "usertask6",
           "validation": {
             "pageid": "yggxgl",
@@ -277,7 +276,6 @@
           "title": "薪资结算",
           "component": "text",
           "name": "mainModel.m_salary",
-          "tasknode": "usertask6",
           "editablenode": "usertask6",
           "validation": {
             "pageid": "yggxgl",
