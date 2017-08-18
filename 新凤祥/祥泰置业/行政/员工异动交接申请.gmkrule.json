@@ -2,7 +2,7 @@
   "id": "xt_worktransfer",
   "handleOnPC": {
     "tasknode": [
-      
+      "usertask3"
     ],
     "flag": [
       "resubmit"
@@ -10,7 +10,6 @@
   },
   "selectPerson": {
     "tasknode": [
-
     ],
     "beforPop": false
   },
@@ -20,7 +19,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -123,10 +121,8 @@
           "component": "hidden",
           "name": "mainModel.id"
         }
-
       ]
-    }
-  ,
+    },
     {
       "title": "申请信息",
       "pageid": "xtrecruit",
@@ -151,42 +147,146 @@
           "title": "所属部门",
           "component": "text",
           "name": "mainModel.m_deptnm"
-        },{
+        },
+        {
           "title": "一级部门",
           "component": "text",
           "name": "mainModel.m_businename"
-        },{
+        },
+        {
           "title": "所在公司",
           "component": "text",
           "name": "mainModel.m_compnm"
-        },{
+        },
+        {
           "title": "联系电话",
           "component": "text",
           "name": "mainModel.m_tel"
-        },{
+        },
+        {
           "title": "离岗日期",
           "component": "text",
           "name": "mainModel.m_leavetm",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd"
-        },{
+        },
+        {
           "title": "异动类型",
           "component": "select",
           "name": "mainModel.m_jjtp",
-          "options": [{
-            "text": "员工调动",
-            "value": "0"
-          },
+          "options": [
+            {
+              "text": "员工调动",
+              "value": "0"
+            },
             {
               "text": "员工离职",
               "value": "1"
-            }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "公司资产交接",
+      "pageid": "gszcjj",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "财务管理",
+          "component": "text",
+          "name": "mainModel.m_sshm",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接(邮箱/W3/VPN账号)",
+          "component": "text",
+          "name": "mainModel.m_emvpn",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接手机",
+          "component": "text",
+          "name": "mainModel.m_gdzc",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接设备(除手机外)",
+          "component": "text",
+          "name": "mainModel.m_byje",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接(SAP账号)",
+          "component": "text",
+          "name": "mainModel.m_sap",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接-IP电话",
+          "component": "text",
+          "name": "mainModel.m_pxxy",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "IT交接(资金账号/金蝶/用友权限)",
+          "component": "text",
+          "name": "mainModel.m_dajy",
+          "tasknode": "usertask3,usertask6"
+        },
+        {
+          "title": "行政管理",
+          "component": "text",
+          "name": "mainModel.m_itzy",
+          "tasknode": "usertask3,usertask6"
+        }
+      ]
+    },
+    {
+      "title": "员工关系管理",
+      "pageid": "yggxgl",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合同签约",
+          "component": "text",
+          "name": "mainModel.m_contract",
+          "tasknode": "usertask6",
+          "editablenode": "usertask6",
+          "validation": {
+            "pageid": "yggxgl",
+            "required": true,
+            "validateMsg": "请填写合同签约",
+            "regexs": ""
+          }
+        },
+        {
+          "title": "社保关系",
+          "component": "text",
+          "name": "mainModel.m_security",
+          "tasknode": "usertask6",
+          "editablenode": "usertask6",
+          "validation": {
+            "pageid": "yggxgl",
+            "required": true,
+            "validateMsg": "请填写社保关系",
+            "regexs": ""
+          }
+        },
+        {
+          "title": "薪资结算",
+          "component": "text",
+          "name": "mainModel.m_salary",
+          "tasknode": "usertask6",
+          "editablenode": "usertask6",
+          "validation": {
+            "pageid": "yggxgl",
+            "required": true,
+            "validateMsg": "请填写薪资结算",
+            "regexs": ""
+          }
         }
       ]
     }
-    
-
-  ],
-  "refers": {
-  }
+  ]
 }
