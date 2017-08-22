@@ -1,0 +1,219 @@
+{
+  "id": "xtgj_recruitapp",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+			"title": "申请信息",
+			"pageid": "sqxx",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "text",
+					"id": "mainModel_m_reuire",
+					"editablenode": "",
+					"name": "mainModel.m_reuire"
+				}
+			]
+		},
+    {
+			"title": "招聘需求信息",
+			"pageid": "xtrecruit",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "table_form",
+					"titleIndex": 0,
+					"basePath": "xtrecruitsublist",
+					"id": "LA_xtrecruit",
+					"tableForms": [
+				{
+					"title": "岗位名称",
+					"component": "text",
+					"id": "s_postnm",
+					"editablenode": "",
+					"name": "s_postnm"
+				},
+				{
+					"title": "岗位等级",
+					"component": "text",
+					"id": "s_postlevel",
+					"editablenode": "",
+					"name": "s_postlevel"
+				},
+				{
+					"title": "所属部门",
+					"component": "text",
+					"id": "s_deptname",
+					"editablenode": "",
+					"name": "s_deptname"
+				},
+				{
+					"title": "所属公司",
+					"component": "text",
+					"id": "s_bukrsnm",
+					"editablenode": "",
+					"name": "s_bukrsnm"
+				},
+				{
+					"title": "直接上级",
+					"component": "text",
+					"id": "s_directleader",
+					"editablenode": "",
+					"name": "s_directleader"
+				},
+				{
+					"title": "到岗日期",
+					"component": "text",
+					"id": "s_expecteddate",
+					"editablenode": "",
+					"name": "s_expecteddate",
+					"datatype": "date",
+					"dateFormat": "yyyy-MM-dd"
+				},{
+                        "title": "编制人数",
+                        "component": "text",
+                        "id": "s_sum",
+                        "editablenode": "",
+                        "name": "s_sum"
+                      },{
+                        "title": "现有人数",
+                        "component": "text",
+                        "id": "s_curnum",
+                        "editablenode": "",
+                        "name": "s_curnum"
+                      },{
+                        "title": "需求人数",
+                        "component": "text",
+                        "id": "s_neednum",
+                        "editablenode": "",
+                        "name": "s_neednum"
+                      }
+
+					]
+				}
+			]
+		}
+  ],
+  "refers": {
+  }
+}
