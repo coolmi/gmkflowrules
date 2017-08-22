@@ -1,0 +1,199 @@
+{
+  "id": "fico_warranty",
+  "handleOnPC": {
+    "tasknode": [
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+			"title": "质保金子表",
+			"pageid": "xtrecruit",
+			"component": "panel",
+			"subComponents": [
+				{
+					"title": "",
+					"component": "table_form",
+					"titleIndex": 0,
+					"basePath": "warrantysublist",
+					"id": "LA_xtrecruit",
+					"tableForms": [
+				{
+					"title": "供应商编号",
+					"component": "text",
+					"id": "s_supid",
+					"editablenode": "",
+					"name": "s_supid"
+				},
+				{
+					"title": "供应商名称",
+					"component": "text",
+					"id": "s_supnm",
+					"editablenode": "",
+					"name": "s_supnm"
+				},
+				{
+					"title": "合同编号",
+					"component": "text",
+					"id": "s_htbh",
+					"editablenode": "",
+					"name": "s_htbh"
+				},
+				{
+					"title": "预制凭证",
+					"component": "text",
+					"id": "s_pingzheng",
+					"editablenode": "",
+					"name": "s_pingzheng"
+				},
+				{
+					"title": "合同保质期",
+					"component": "text",
+					"id": "s_zbq",
+					"editablenode": "",
+					"name": "s_zbq"
+				},
+
+				{
+					"title": "报帐金额",
+					"component": "text",
+					"id": "s_bzje",
+					"editablenode": "",
+					"name": "s_bzje"
+				},
+				{
+					"title": "已付金额",
+					"component": "text",
+					"id": "s_yfje",
+					"editablenode": "",
+					"name": "s_yfje"
+				},
+				{
+					"title": "质保金金额",
+					"component": "text",
+					"id": "s_zbjje",
+					"editablenode": "",
+					"name": "s_zbjje"
+				}
+					]
+				}
+			]
+		}
+  ],
+  "refers": {
+  }
+}
