@@ -135,6 +135,68 @@
           "name": "mainModel.materialName"
         },
         {
+          "title": "物料类别",
+          "component": "select",
+          "id": "material_type",
+          "name": "mainModel.materialType",
+          "options": [
+            {
+              "text": "辅料",
+              "value": "0001"
+            },
+            {
+              "text": "原料",
+              "value": "0002"
+            },
+            {
+              "text": "包材",
+              "value": "0003"
+            },
+            {
+              "text": "化学药品",
+              "value": "0004"
+            },
+            {
+              "text": "一次性物品",
+              "value": "0005"
+            }
+          ]
+        },
+        {
+          "title": "是否客户指定",
+          "component": "select",
+          "editablenode": "usertask2",
+          "showLinkage": [
+            {
+              "id": "material_type",
+              "values": [
+                "0001"
+              ]
+            }
+          ],
+          "name": "mainModel.isNomination",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请选择是否客户指定",
+            "regexs": ""
+          },
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "是",
+              "value": "是"
+            },
+            {
+              "title": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
           "title": "所属研发组",
           "component": "text",
           "name": "mainModel.groupName"
@@ -142,8 +204,8 @@
         {
           "title": "审核是否考评",
           "component": "select",
-          "tasknode": "usertask4",
-          "editablenode": "usertask4",
+          "tasknode": "usertask5",
+          "editablenode": "usertask5,usertask6,usertask7,usertask8",
           "name": "mainModel.isEvaluation",
           "validation": {
             "pageid": "sqxx",
