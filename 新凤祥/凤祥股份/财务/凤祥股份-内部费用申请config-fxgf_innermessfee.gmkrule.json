@@ -171,6 +171,7 @@
             {
               "title": "费用类型",
               "component": "text",
+              "id":"feetype",
               "name": "f_feetpnm"
             },
             {
@@ -197,6 +198,93 @@
               "title": "费用发生人",
               "component": "textarea",
               "name": "f_fsrnm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "供应商列表",
+      "pageid": "gyslb",
+      "id":"gyslbtb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "id":"gyslbtb",
+          "basePath": "innermessfeeappsub3list",
+          "titleIndex": 0,
+          "tableForms": [
+            {
+              "title": "供应商编号",
+              "component": "text",
+              "name": "sup_supply"
+            },
+            {
+              "title": "供应商描述",
+              "component": "text",
+              "name": "sup_supplyDes"
+            },
+            {
+              "title": "汇入行",
+              "component": "text",
+              "name": "sup_bank"
+            },
+            {
+              "title": "汇入行账号",
+              "component": "text",
+              "name": "sup_bankid"
+            },
+            {
+              "title": "合同号",
+              "component": "text",
+              "name": "sup_hth"
+            },
+            {
+              "title": "到货日期",
+              "component": "text",
+              "name": "sup_comedt"
+            },
+            {
+              "title": "付款种类",
+              "component": "text",
+              "name": "sup_paytp"
+            },
+            {
+              "title": "汇款用途",
+              "component": "text",
+              "name": "sup_payuses"
+            },
+            {
+              "title": "预付款金额",
+              "component": "text",
+              "name": "sup_repay"
+            },
+            {
+              "title": "预付款金额大写",
+              "component": "text",
+              "name": "sup_repaydx"
+            },
+            {
+              "title": "补退金额",
+              "component": "text",
+              "name": "sup_back"
+            },
+            {
+              "title": "补退金额大写",
+              "component": "text",
+              "name": "sup_backdx"
+            },
+            {
+              "title": "付款日期",
+              "component": "text",
+              "name": "sup_paytime"
+            },
+            {
+              "title": "备注",
+              "component": "textarea",
+              "rows": 4,
+              "name": "sup_beizhu"
             }
           ]
         }
