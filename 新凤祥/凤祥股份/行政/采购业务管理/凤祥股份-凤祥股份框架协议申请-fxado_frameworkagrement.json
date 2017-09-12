@@ -89,16 +89,6 @@
         "component": "panel",
         "subComponents": [
 			{
-                "title": "授权类型",
-                "component": "text",
-                "name": "mainModel.authtypename"
-            },
-            {
-                "title": "是否框架协议",
-                "component": "text",
-                "name": "mainModel.agreementname"
-            },
-			{
                 "title": "标的类型",
                 "component": "text",
                 "name": "mainModel.standardtypename"
@@ -205,6 +195,63 @@
 			
 			
         ]
-    }
+    },
+    {
+        "title": "印章信息",
+        "pageid": "yzxx",
+        "component": "panel",
+        "subComponents": [
+              {
+                "title": "用印类型",
+                "component": "select",
+                "name": "mainModel.yylx",
+                "options": [
+                  {
+                    "title": "普通用印",
+                    "value": "0"
+                  },
+                  {
+                    "title": "携章外出",
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "title": "印章名称",
+                "component": "text",
+                "name": "mainModel.yzmcname"
+              },
+              {
+                "title": "印章类型",
+                "component": "text",
+                "name": "mainModel.yzlx"
+              },
+              {
+                "title": "印章使用",
+                "component": "label",
+                "label": [
+                  "一式",
+                  "mainModel.yzsyfs",
+                  "份,共",
+                  "mainModel.yzsyms",
+                  "枚"
+                ]
+              },
+              {
+                "title": "印章使用日期",
+                "component": "text",
+                "datatype": "date",
+                "dateFormat": "yyyy-MM-dd",
+                "name": "mainModel.yzsyrq"
+              },
+              {
+                "title": "计划归还日期",
+                "component": "text",
+                "datatype": "date",
+                "dateFormat": "yyyy-MM-dd",
+                "name": "mainModel.jhghrq"
+              }
+        ]
+      }
     ]
 }
