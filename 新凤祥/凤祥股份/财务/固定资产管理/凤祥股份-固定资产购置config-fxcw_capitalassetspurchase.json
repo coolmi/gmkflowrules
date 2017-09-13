@@ -224,6 +224,30 @@
           "name": "mainModel.dxzje"
         },
         {
+          "title": "采购金额",
+          "component": "text",
+          "editablenode": "usertask2,usertask3",
+          "name": "mainModel.cgje",
+          "validation": {
+            "pageid": "zcgzxx",
+            "required": true,
+            "validateMsg": "请填写采购金额",
+            "regexs": ""
+          }
+        },
+        {
+          "title": "预算金额",
+          "component": "text",
+          "editablenode": "gdzckjaudit",
+          "name": "mainModel.ysje",
+          "validation": {
+            "pageid": "zcgzxx",
+            "required": true,
+            "validateMsg": "请填写预算金额",
+            "regexs": ""
+          }
+        },
+        {
           "title": "设计使用年限",
           "component": "text",
           "editablenode": "",
@@ -232,8 +256,14 @@
         {
           "title": "固定资产预计使用年限",
           "component": "text",
-          "editablenode": "",
-          "name": "mainModel.jygdzclb"
+          "editablenode": "internalaudit",
+          "name": "mainModel.jygdzclb",
+          "validation": {
+            "pageid": "zcgzxx",
+            "required": true,
+            "validateMsg": "请填写预计使用年限",
+            "regexs": ""
+          }
         },
         {
           "title": "是否效益类",
