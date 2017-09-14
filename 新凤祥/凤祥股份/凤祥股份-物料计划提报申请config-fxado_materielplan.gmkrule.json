@@ -1,0 +1,256 @@
+{
+  "id": "fxado_materielplan",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqinfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "公司编号",
+          "component": "text",
+          "name": "mainModel.m_bukrstxt"
+        },
+        {
+          "title": "工厂号",
+          "component": "label",
+          "label": [
+            "mainModel.m_factoryid",
+            "-",
+            "mainModel.m_factorytxt"
+          ]
+        },
+        {
+          "title": "工厂描述",
+          "component": "text",
+          "name": "mainModel.m_factorytxt"
+        },
+        {
+          "title": "成本中心编号",
+          "component": "text",
+          "name": "mainModel.m_cbzxtxt"
+        },
+        {
+          "title": "成本中心描述",
+          "component": "text",
+          "name": "mainModel.m_cbzxtxt"
+        },
+        {
+          "title": "加急采购",
+          "component": "select",
+          "name": "mainModel.m_bejj",
+          "options": [
+            {
+              "title": "是",
+              "value": "是"
+            },
+            {
+              "title": "否",
+              "value": "否"
+            }]
+        }
+      ]
+    },
+    {
+      "title": "物料计划提报子表",
+      "component": "panel",
+      "id": "wljhtbzb",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 1,
+          "id": "materielplansubapplist",
+          "basePath": "materielplansubapplist",
+          "linkForms": [
+            {
+              "title": "物料类别",
+              "component": "text",
+              "name": "s_mtypetxt"
+            },
+            {
+              "title": "物料号",
+              "component": "text",
+              "name": "s_mcode"
+            },
+            {
+              "title": "物料描述",
+              "component": "text",
+              "name": "s_mscripe"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "s_munit"
+            },
+            {
+              "title": "需求量",
+              "component": "text",
+              "name": "s_mcount"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "s_remark"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_price"
+            },
+            {
+              "title": "金额总计",
+              "component": "text",
+              "datatype": "money",
+              "name": "s_total"
+            },
+            {
+              "title": "采购状态",
+              "component": "select",
+              "name": "s_buystate",
+              "options": [
+                {
+                  "title": "未采购",
+                  "value": "wc"
+                },
+                {
+                  "title": "无需采购",
+                  "value": "nc"
+                },
+                {
+                  "title": "已收货",
+                  "value": "sh"
+                },
+                {
+                  "title": "作废",
+                  "value": "zf"
+                },
+                {
+                  "title": "采购中",
+                  "value": "iwc"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
