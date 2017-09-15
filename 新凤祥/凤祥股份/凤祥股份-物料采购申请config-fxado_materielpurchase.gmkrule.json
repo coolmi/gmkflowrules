@@ -1,0 +1,206 @@
+{
+  "id": "fxado_materielpurchase",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "物料采购子表",
+      "component": "panel",
+      "id": "wlcgzb",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "id": "xtrecruitsublist",
+          "basePath": "xtrecruitsublist",
+          "linkForms": [
+            {
+              "title": "公司",
+              "component": "text",
+              "name": "b_bukrstxt"
+            },
+            {
+              "title": "工厂描述",
+              "component": "text",
+              "name": "b_factorytxt"
+            },
+            {
+              "title": "物料类别",
+              "component": "text",
+              "name": "b_mtypetxt"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "b_cbzxtxt"
+            },
+            {
+              "title": "物料号",
+              "component": "text",
+              "name": "b_mcode"
+            },
+            {
+              "title": "物料描述",
+              "component": "text",
+              "name": "b_mscripe"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "b_munit"
+            },
+            {
+              "title": "需求量",
+              "component": "text",
+              "name": "b_mcount"
+            },
+            {
+              "title": "SAP库存量",
+              "component": "text",
+              "name": "b_sapstock"
+            },
+            {
+              "title": "sap安全库存量",
+              "component": "text",
+              "name": "b_ssapstock"
+            },
+            {
+              "title": "SAP采购在途量",
+              "component": "text",
+              "name": "b_saponway"
+            },
+            {
+              "title": "SAP领用占用量",
+              "component": "text",
+              "name": "b_sapused"
+            },
+            {
+              "title": "采购量",
+              "component": "text",
+              "name": "b_tobuy"
+            },
+            {
+              "title": "交货日期",
+              "component": "text",
+              "name": "b_deliverydate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
