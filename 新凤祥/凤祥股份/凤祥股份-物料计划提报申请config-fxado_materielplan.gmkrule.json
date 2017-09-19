@@ -210,13 +210,11 @@
             {
               "title": "单价",
               "component": "text",
-              "datatype": "money",
               "name": "s_price"
             },
             {
               "title": "金额总计",
               "component": "text",
-              "datatype": "money",
               "name": "s_total"
             },
             {
