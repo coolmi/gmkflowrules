@@ -2,7 +2,7 @@
   "id": "gmk_monthplanrecruit",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask2"
     ],
     "flag": [
       "resubmit"
@@ -106,17 +106,52 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "职位名称",
+          "component": "text",
+          "name": "monthplanrecruit.r_postnm"
+        },
+        {
+          "title": "用人部门",
+          "component": "text",
+          "name": "monthplanrecruit.r_usedeptnm"
+        },
+        {
+          "title": "直线经理",
+          "component": "text",
+          "name": "monthplanrecruit.r_leadernm"
+        },
+        {
+          "title": "经理邮箱",
+          "component": "text",
+          "name": "monthplanrecruit.r_email"
+        },
+        {
+          "title": "学历要求",
+          "component": "text",
+          "name": "monthplanrecruit.r_edunm"
+        },
+        {
+          "title": "岗位职责描述",
+          "component": "text",
+          "name": "monthplanrecruit.r_duty"
+        },
+        {
+          "title": "专业素质要求",
+          "component": "text",
+          "name": "monthplanrecruit.r_profe"
+        },
+        {
+          "title": "其他素质要求",
+          "component": "text",
+          "name": "monthplanrecruit.r_request"
+        },
+        {
           "title": "计划月份",
           "component": "text",
           "name": "monthplanrecruit.r_month"
         },
         {
-          "title": "需求岗位",
-          "component": "text",
-          "name": "monthplanrecruit.r_postnm"
-        },
-        {
-          "title": "需求人数",
+          "title": "招聘数量",
           "component": "text",
           "name": "monthplanrecruit.r_num"
         },
@@ -154,12 +189,86 @@
               "value": "否"
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "招聘信息",
+      "pageid": "recruitInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "职位ID",
+          "component": "text",
+          "name": "monthplanrecruit.r_zwid",
+          "tasknode": "usertask10,usertask4,usertask8"
         },
         {
-          "title": "其他素质要求",
-          "component": "textarea",
-          "name": "monthplanrecruit.r_request",
-          "rows": "3"
+          "title": "负责人",
+          "component": "text",
+          "name": "monthplanrecruit.r_fzrnm",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "其他招聘角色",
+          "component": "text",
+          "name": "monthplanrecruit.r_otherjs",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "职能类别",
+          "component": "text",
+          "name": "monthplanrecruit.r_znlbnm",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "工作地点",
+          "component": "label",
+          "tasknode": "usertask10,usertask4,usertask8",
+          "label": [
+            "monthplanrecruit.r_province",
+            "monthplanrecruit.r_city"
+          ]
+        },
+        {
+          "title": "薪资范围",
+          "component": "text",
+          "name": "monthplanrecruit.r_rangenm",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "开始时间",
+          "component": "date1",
+          "name": "monthplanrecruit.r_sdate",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "工作年限",
+          "component": "text",
+          "name": "monthplanrecruit.r_years",
+          "tasknode": "usertask10,usertask4,usertask8"
+        },
+        {
+          "title": "保密职位",
+          "component": "select",
+          "name": "monthplanrecruit.r_secret",
+          "tasknode": "usertask10,usertask4,usertask8",
+          "options": [
+            {
+              "text": "是",
+              "value": "是"
+            },
+            {
+              "text": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "职位类型",
+          "component": "text",
+          "name": "monthplanrecruit.r_zntypenm",
+          "tasknode": "usertask10,usertask4,usertask8"
         }
       ]
     }
