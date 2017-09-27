@@ -157,7 +157,6 @@
             {
               "title": "申请原因",
               "component": "hidden",
-              "editable": true,
               "name": "id"
             },
             {
