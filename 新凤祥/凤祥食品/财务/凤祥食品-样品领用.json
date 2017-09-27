@@ -210,7 +210,7 @@
                     "title": "费用归属成本中心",
                     "component": "text",
                     "editablenode": "",
-                    "label":["mainModel.fygscbzx"],
+                    "label":["mainModel.fygscbzx"]
                     
                 },
                 {
@@ -218,7 +218,7 @@
                     "title": "项目预算",
                     "component": "radio",
                     "editablenode":"usertask5",
-                    "name": "mainModel.s",
+                    "name": "mainModel.xmysnw",
                     "validation":{
 						"pageid":"sqxx",
 						"required":"true",

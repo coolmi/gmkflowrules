@@ -1,5 +1,5 @@
 {
-  "id": "fxado_materielplan",
+  "id": "fxado_materielpurchase",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -20,7 +20,6 @@
       {
         "selectIndex": 0,
         "tasknode": [
-
         ]
       }
     ]
@@ -117,132 +116,85 @@
       ]
     },
     {
-      "title": "申请信息",
-      "pageid": "sqinfo",
+      "title": "物料采购子表",
       "component": "panel",
-      "subComponents": [
-        {
-          "title": "公司编号",
-          "component": "text",
-          "name": "mainModel.m_bukrstxt"
-        },
-        {
-          "title": "工厂号",
-          "component": "label",
-          "label": [
-            "mainModel.m_factoryid",
-            "-",
-            "mainModel.m_factorytxt"
-          ]
-        },
-        {
-          "title": "工厂描述",
-          "component": "text",
-          "name": "mainModel.m_factorytxt"
-        },
-        {
-          "title": "成本中心编号",
-          "component": "text",
-          "name": "mainModel.m_cbzxtxt"
-        },
-        {
-          "title": "成本中心描述",
-          "component": "text",
-          "name": "mainModel.m_cbzxtxt"
-        },
-        {
-          "title": "加急采购",
-          "component": "select",
-          "name": "mainModel.m_bejj",
-          "options": [
-            {
-              "title": "是",
-              "value": "是"
-            },
-            {
-              "title": "否",
-              "value": "否"
-            }]
-        }
-      ]
-    },
-    {
-      "title": "物料计划提报子表",
-      "component": "panel",
-      "id": "wljhtbzb",
+      "id": "wlcgzb",
       "subComponents": [
         {
           "component": "formLabelLink",
-          "titleIndex": 1,
-          "id": "materielplansubapplist",
-          "basePath": "materielplansubapplist",
+          "titleIndex": 0,
+          "id": "xtrecruitsublist",
+          "basePath": "xtrecruitsublist",
           "linkForms": [
+            {
+              "title": "公司",
+              "component": "text",
+              "name": "b_bukrstxt"
+            },
+            {
+              "title": "工厂描述",
+              "component": "text",
+              "name": "b_factorytxt"
+            },
             {
               "title": "物料类别",
               "component": "text",
-              "name": "s_mtypetxt"
+              "name": "b_mtypetxt"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "b_cbzxtxt"
             },
             {
               "title": "物料号",
               "component": "text",
-              "name": "s_mcode"
+              "name": "b_mcode"
             },
             {
               "title": "物料描述",
               "component": "text",
-              "name": "s_mscripe"
+              "name": "b_mscripe"
             },
             {
               "title": "单位",
               "component": "text",
-              "name": "s_munit"
+              "name": "b_munit"
             },
             {
               "title": "需求量",
               "component": "text",
-              "name": "s_mcount"
+              "name": "b_mcount"
             },
             {
-              "title": "备注",
+              "title": "SAP库存量",
               "component": "text",
-              "name": "s_remark"
+              "name": "b_sapstock"
             },
             {
-              "title": "单价",
+              "title": "sap安全库存量",
               "component": "text",
-              "name": "s_price"
+              "name": "b_ssapstock"
             },
             {
-              "title": "金额总计",
+              "title": "SAP采购在途量",
               "component": "text",
-              "name": "s_total"
+              "name": "b_saponway"
             },
             {
-              "title": "采购状态",
-              "component": "select",
-              "name": "s_buystate",
-              "options": [
-                {
-                  "title": "未采购",
-                  "value": "wc"
-                },
-                {
-                  "title": "无需采购",
-                  "value": "nc"
-                },
-                {
-                  "title": "已收货",
-                  "value": "sh"
-                },
-                {
-                  "title": "作废",
-                  "value": "zf"
-                },
-                {
-                  "title": "采购中",
-                  "value": "iwc"
-                }
-              ]
+              "title": "SAP领用占用量",
+              "component": "text",
+              "name": "b_sapused"
+            },
+            {
+              "title": "采购量",
+              "component": "text",
+              "name": "b_tobuy"
+            },
+            {
+              "title": "交货日期",
+              "component": "text",
+              "name": "b_deliverydate"
             }
           ]
         }
