@@ -120,6 +120,11 @@
           ]
         },
         {
+          "title": "固定资产增加申请单号",
+          "component": "text",
+          "name": "mainModel.m_zjappid"
+        },
+        {
           "title": "合同类型",
           "component": "select",
           "id": "m_http",
@@ -285,6 +290,11 @@
               "value": "7"
             }
           ]
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.m_ywlxnm"
         },
         {
           "title": "预算",
@@ -604,21 +614,6 @@
           "title": "资产服务需求部门审批人员",
           "component": "textarea",
           "name": "mainModel.m_neednm"
-        },
-        {
-          "title": "财务部门(初、复审)审批人员",
-          "component": "textarea",
-          "name": "mainModel.m_cwnm"
-        },
-        {
-          "title": "法务部门审批人员",
-          "component": "textarea",
-          "name": "mainModel.m_fwnm"
-        },
-        {
-          "title": "股份分管副总审批人员",
-          "component": "textarea",
-          "name": "mainModel.m_fgfznm"
         },
         {
           "title": "合同编号类别",

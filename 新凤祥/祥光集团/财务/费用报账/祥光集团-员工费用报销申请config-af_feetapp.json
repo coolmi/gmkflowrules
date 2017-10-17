@@ -150,9 +150,19 @@
           "name": "reimburse.sysbusinessunitname"
         },
         {
+          "title": "所在公司",
+          "component": "text",
+          "name": "afuser.bukrs"
+        },
+        {
           "title": "邮箱",
           "component": "text",
           "name": "afuser.pfach"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "name": "afuser.telnr"
         },
         {
           "title": "手机号",
@@ -773,6 +783,7 @@
             {
               "component": "formLabelLink",
               "titleIndex": 4,
+              "id":"lpflpflpf",
               "basePath": "giftfees",
               "linkForms": [
                 {
@@ -817,6 +828,32 @@
                   "component": "text",
                   "editablenode": "",
                   "name": "trlnrg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "电子发票",
+          "component": "panel",
+          "panel_id": "dzfp",
+          "id": "xgoadzfp",
+          "subComponents": [
+            {
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "id":"dzfpdafp",
+              "basePath": "electronics",
+              "linkForms": [
+                {
+                  "title": "电子发票号",
+                  "component": "text",
+                  "name": "electronicnum"
+                },
+                {
+                  "title": "链接",
+                  "component": "text",
+                  "name": "linkv"
                 }
               ]
             }
@@ -908,6 +945,132 @@
               "title": "扣款说明",
               "component": "textarea",
               "name": "smemof"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "凭证信息",
+      "pageid": "pzxx",
+      "tasknode": "accoutmanger,payment",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "凭证日期",
+          "component": "date1",
+          "name": "reimburse.documentdate"
+        },
+        {
+          "title": "过账日期",
+          "component": "date1",
+          "name": "reimburse.postingdate"
+        },
+        {
+          "title": "凭证抬头文本",
+          "component": "text",
+          "name": "reimburse.pztxt"
+        },
+        {
+          "title": "是否自动过账",
+          "component": "text",
+          "name": "reimburse.zdgz"
+        },
+        {
+          "title": "公司代码",
+          "component": "text",
+          "name": "reimburse.cdbukrs"
+        },
+        {
+          "title": "公司描述",
+          "component": "text",
+          "name": "reimburse.cdbukrsname"
+        },
+        {
+          "title": "借方合计",
+          "component": "text",
+          "name": "reimburse.debittotals"
+        },
+        {
+          "title": "贷方合计",
+          "component": "text",
+          "name": "reimburse.credittotals"
+        },
+        {
+          "title": "凭证编号",
+          "component": "text",
+          "name": "reimburse.null"
+        },{
+          "title": "凭证列表",
+          "component": "panel",
+          "panel_id": "pzlb",
+          "id": "xgoapzlb",
+          "subComponents": [
+            {
+              "component": "formLabelLink",
+              "titleIndex": 0,
+              "id": "pzlbpzlb",
+              "basePath": "prulist",
+              "linkForms": [
+                {
+                  "title": "科目",
+                  "component": "label",
+                  "editablenode": "",
+                  "label": [
+                    "asubjectcode",
+                    "-",
+                    "asubjectxt"
+                  ]
+                },
+                {
+                  "title": "科目描述",
+                  "component": "text",
+                  "name": "asubjectxt"
+                },
+                {
+                  "title": "D/C",
+                  "component": "text",
+                  "name": "dc"
+                },
+                {
+                  "title": "货币",
+                  "component": "text",
+                  "name": "currency"
+                },
+                {
+                  "title": "金额",
+                  "component": "text",
+                  "name": "ammoney"
+                },
+                {
+                  "title": "汇率",
+                  "component": "text",
+                  "name": "exchangerate"
+                },
+                {
+                  "title": "本位币金额",
+                  "component": "text",
+                  "name": "anmoney"
+                },
+                {
+                  "title": "文本",
+                  "component": "text",
+                  "name": "textv"
+                },
+                {
+                  "title": "成本中心",
+                  "component": "text",
+                  "name": "costcentertxt"
+                }, {
+                  "title": "内部订单号",
+                  "component": "text",
+                  "name": "null"
+                }, {
+                  "title": "分配号",
+                  "component": "text",
+                  "name": "info_mentnum-1"
+                }
+              ]
             }
           ]
         }
