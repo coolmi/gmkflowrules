@@ -1,11 +1,17 @@
 {
-  "id": "fxado_blacklist",
+  "id": "fx_dysupplierstand",
   "handleOnPC": {
-    "tasknode": [""],
-    "flag": ["resubmit"]
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
   },
   "selectPerson": {
-    "tasknode": [""],
+    "tasknode": [
+      ""
+    ],
     "beforPop": false
   },
   "forms": [
@@ -100,88 +106,24 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "主抄送人员",
           "component": "textarea",
-          "title": "主抄送",
-          "name": "mainModel.m_copyusername"
+          "name": "mainModel.zopostname"
         },
         {
-          "component": "textarea",
-          "title": "业务类型",
-          "name": "mainModel.ywlx"
+          "title": "标题",
+          "component": "text",
+          "name": "mainModel.dailytitle"
         },
         {
+          "title": "请示内容",
           "component": "textarea",
-          "title": "黑名单供应商名称",
-          "name": "mainModel.m_blackbusiname"
+          "name": "mainModel.dailyname"
         },
         {
+          "title": "备注",
           "component": "textarea",
-          "title": "法人名称",
-          "name": "mainModel.m_legalname"
-        },
-        {
-          "component": "textarea",
-          "title": "统一社会信用代码/营业执照号",
-          "name": "mainModel.m_businesscode"
-        },
-        {
-          "component": "textarea",
-          "title": "SAP系统中编号",
-          "name": "mainModel.m_sapcode"
-        },
-        {
-          "component": "textarea",
-          "title": "和我司合作的公司名称",
-          "name": "mainModel.m_businessnametome"
-        },
-        {
-          "component": "textarea",
-          "title": "列入黑名单的理由",
-          "name": "mainModel.m_reason"
-        },
-        {
-          "component": "textarea",
-          "title": "剩余未支付货款金额（元）",
-          "name": "mainModel.m_unmoney"
-        },
-        {
-          "component": "select",
-          "id":"m_ispay",
-          "title": "是否需扣罚",
-          "name": "mainModel.m_ispay",
-          "options": [
-            {
-              "title": "是",
-              "value": "0"
-            },
-            {
-              "title": "否",
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "component": "textarea",
-          "title": "扣罚金额（元）",
-          "showLinkage": [
-            {
-              "id":"m_ispay",
-              "values": [
-                "0"
-              ]
-            }
-          ],
-          "name": "mainModel.m_paymoney"
-        },
-        {
-          "component": "textarea",
-          "title": "资产管理部门审核",
-          "name": "mainModel.m_assetmanagementname"
-        },
-        {
-          "component": "textarea",
-          "title": "资产需求部门审核",
-          "name": "mainModel.m_assetdemandname"
+          "name": "mainModel.m_note"
         }
       ]
     }

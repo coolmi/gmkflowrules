@@ -1,0 +1,254 @@
+{
+  "id": "fx_machmatprocessapp",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "machmatmateriallist"
+        },
+
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.cdkotxt"
+        },
+        {
+          "title": "预算科目",
+          "component": "text",
+          "name": "mainModel.cdkstxt"
+        },
+        {
+          "title": "固定资产项目",
+          "component": "select",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "是",
+              "value": "1"
+            },
+            {
+              "title": "否",
+              "value": "0"
+            }
+          ],
+          "name": "mainModel.asset"
+        },
+        {
+          "title": "预算内外",
+          "component": "select",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "预算外",
+              "value": "0"
+            },
+            {
+              "title": "预算内",
+              "value": "1"
+            }
+          ],
+          "name": "mainModel.asset"
+        },
+        {
+          "title": "技术要求",
+          "component": "text",
+          "name": "mainModel.technical"
+        },
+        {
+          "title": "规划方案预算",
+          "component": "text",
+          "editablenode":"usertask2",
+          "name": "mainModel.scheme"
+        },
+        {
+          "title": "部门科长",
+          "component": "text",
+          "name": "mainModel.buschieftxt"
+        },
+        {
+          "title": "部门经理/厂长",
+          "component": "text",
+          "name": "mainModel.busmanagertxt"
+        }
+      ]
+    },
+    {
+      "title": "加工物料信息",
+      "component": "panel",
+      "id": "jgwlxxx",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "id": "machmatmateriallist",
+          "basePath": "machmatmateriallist",
+          "linkForms": [
+            {
+              "title": "加工物流名称",
+              "component": "text",
+              "name": "info_material"
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "info_specifications"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "info_company"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "info_num"
+            },
+            {
+              "title": "预计费用(机械厂填写)",
+              "component": "text",
+              "editablenode":"usertask2",
+              "name": "info_cost"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "info_remark"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}

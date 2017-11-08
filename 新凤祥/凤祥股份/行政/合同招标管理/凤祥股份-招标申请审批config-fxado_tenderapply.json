@@ -120,6 +120,45 @@
           "name": "mainModel.bdjedx"
         },
         {
+          "title": "",
+          "id":"m_ywlxid",
+          "component": "hidden",
+          "name": "mainModel.m_ywlxid",
+          "options": [
+            {
+              "text": "01",
+              "value": "01"
+            },
+            {
+              "text": "04",
+              "value": "04"
+            },
+            {
+              "text": "21",
+              "value": "21"
+            },
+            {
+              "text": "41",
+              "value": "41"
+            },
+            {
+              "text": "43",
+              "value": "43"
+            }
+          ]
+        },
+        {
+          "title": "科长",
+          "component": "text",
+          "name": "mainModel.m_deptnm",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["04"]
+            }
+          ]
+        },
+        {
           "title": "招标类型",
           "component": "radio",
           "id": "id_zblx",
@@ -259,35 +298,33 @@
           "name": "mainModel.qt"
         },
         {
-          "title": "需求部门负责人审核",
+          "title": "资产需求部门负责人",
           "component": "text",
           "name": "mainModel.xqbmfzr",
-          "showLinkage": [
+          "showLinkage":[
             {
-              "id": "id_zblx",
-              "values": [
-                "0"
+              "id":"m_ywlxid",
+              "values":[
+                "21",
+                "41",
+                "43"
               ]
             }
           ]
         },
         {
-          "title": "技术部门审核",
+          "title": "资产管理部门负责人",
           "component": "text",
           "name": "mainModel.jsbmr",
-          "showLinkage": [
+          "showLinkage":[
             {
-              "id": "id_zblx",
-              "values": [
-                "0"
+              "id":"m_ywlxid",
+              "values":[
+                "21",
+                "41"
               ]
             }
           ]
-        },
-        {
-          "title": "招标负责人审核",
-          "component": "text",
-          "name": "mainModel.zbfzr"
         }
       ]
     },

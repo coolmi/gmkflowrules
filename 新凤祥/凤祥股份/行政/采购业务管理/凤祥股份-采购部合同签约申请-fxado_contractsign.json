@@ -2,7 +2,7 @@
   "id": "fxado_contractsign",
   "handleOnPC": {
     "tasknode": [
-      "usertask5"
+      "usertask27"
     ],
     "flag": [
       "resubmit"
@@ -109,7 +109,7 @@
           "title": "固定资产增加申请单号",
           "component": "text",
           "name": "mainModel.m_zjappid",
-          "tasknode": "usertask6,usertask7,usertask8,usertask9,usertask11",
+          "tasknode": "usertask28,usertask29,usertask30,usertask31,usertask32",
           "showLinkage": [
             {
               "id": "m_begd",
@@ -118,11 +118,6 @@
               ]
             }
           ]
-        },
-        {
-          "title": "固定资产增加申请单号",
-          "component": "text",
-          "name": "mainModel.m_zjappid"
         },
         {
           "title": "合同类型",
@@ -137,25 +132,6 @@
             {
               "title": "销售",
               "value": "销售"
-            }
-          ]
-        },
-        {
-          "title": "合同终签类型",
-          "component": "select",
-          "name": "mainModel.m_zqlx",
-          "options": [
-            {
-              "title": "一类合同",
-              "value": "一类合同"
-            },
-            {
-              "title": "二类合同",
-              "value": "二类合同"
-            },
-            {
-              "title": "三类合同",
-              "value": "三类合同"
             }
           ]
         },
@@ -185,6 +161,12 @@
           "name": "mainModel.m_djyj"
         },
         {
+          "title": "",
+          "id":"becg",
+          "component": "hidden",
+          "name": "becg"
+        },
+        {
           "title": "是否固定资产类合同",
           "component": "radio",
           "id": "m_begd",
@@ -197,6 +179,12 @@
             {
               "title": "是",
               "value": "是"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "becg",
+              "values": ["true"]
             }
           ]
         },
@@ -247,54 +235,15 @@
           ]
         },
         {
-          "title": "需求部门",
-          "component": "textarea",
-          "name": "mainModel.m_xqbm"
-        },
-        {
-          "title": "采购业务类型",
-          "component": "select",
-          "id": "m_cgywlx",
-          "name": "mainModel.m_cgywlx",
-          "options": [
-            {
-              "title": "食品辅料采购签订",
-              "value": "0"
-            },
-            {
-              "title": "包材类采购签订",
-              "value": "1"
-            },
-            {
-              "title": "兽药类采购签订",
-              "value": "2"
-            },
-            {
-              "title": "办公和劳保用品采购签订",
-              "value": "3"
-            },
-            {
-              "title": "固定资产采购签订",
-              "value": "4"
-            },
-            {
-              "title": "煤采购签订",
-              "value": "5"
-            },
-            {
-              "title": "稻壳采购签订",
-              "value": "6"
-            },
-            {
-              "title": "其他业务采购签订",
-              "value": "7"
-            }
-          ]
-        },
-        {
           "title": "业务类型",
           "component": "text",
           "name": "mainModel.m_ywlxnm"
+        },
+        {
+          "title": "",
+          "id":"showfzr_kz",
+          "component": "hidden",
+          "name": "showfzr_kz"
         },
         {
           "title": "预算",
@@ -604,16 +553,6 @@
           "title": "合同页数",
           "component": "text",
           "name": "mainModel.m_htys"
-        },
-        {
-          "title": "资产服务管理部门审批人员",
-          "component": "textarea",
-          "name": "mainModel.m_mngnm"
-        },
-        {
-          "title": "资产服务需求部门审批人员",
-          "component": "textarea",
-          "name": "mainModel.m_neednm"
         },
         {
           "title": "合同编号类别",

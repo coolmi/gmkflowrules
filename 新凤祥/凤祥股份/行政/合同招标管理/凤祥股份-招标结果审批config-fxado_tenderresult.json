@@ -106,6 +106,34 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "",
+          "id":"m_ywlxid",
+          "component": "hidden",
+          "name": "mainModel.m_ywlxid",
+          "options": [
+            {
+              "text": "08",
+              "value": "08"
+            },
+            {
+              "text": "11",
+              "value": "11"
+            },
+            {
+              "text": "12",
+              "value": "12"
+            },
+            {
+              "text": "10",
+              "value": "10"
+            },
+            {
+              "text": "43",
+              "value": "43"
+            }
+          ]
+        },
+        {
           "title": "项目名称",
           "component": "text",
           "name": "mainModel.xmmc"
@@ -148,7 +176,23 @@
         {
           "title": "标的金额",
           "component": "text",
-          "name": "mainModel.bdje",
+          "name": "mainModel.bdje"
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.m_ywlxnm"
+        },
+        {
+          "title": "科长",
+          "component": "text",
+          "name": "mainModel.m_deptnm",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["08"]
+            }
+          ]
         },
         {
           "title": "生产类固定资产采购",
@@ -233,14 +277,25 @@
           "name": "mainModel.pwyj"
         },
         {
-          "title": "招标负责人审核",
+          "title": "资产管理负责人审核",
+          "component": "text",
+          "name": "mainModel.jsbmr",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["10","11"]
+            }
+          ]
+        },
+        {
+          "title": "资产需求负责人审核",
           "component": "label",
-          "middleName": [
-            "mainModel.zbfzrpostid",
-            "zbfzrpostid"
-          ],
-          "label": [
-            "zbfzrList.zbfzrname"
+          "name":"mainModel.xqbmfzr",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["10","11","12"]
+            }
           ]
         }
       ]

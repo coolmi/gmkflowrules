@@ -122,12 +122,7 @@
           "component": "textarea",
           "title": "备注",
           "name": "fundplan.bzs",
-          "editable": true,
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validationMsg": "备注不能为空"
-          }
+          "editable": true
         },
         {
           "title": "详细信息",

@@ -1,0 +1,335 @@
+{
+  "id": "fxcw_yjfrepay",
+  "handleOnPC": {
+    "tasknode": [
+      
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+			"title": "申请信息",
+			"pageid": "sqxx",
+			"component": "panel",
+			"subComponents": [
+              {
+                "title": "付款所属公司",
+                "component": "text",
+                "id": "m_bukrs",
+                "editablenode": "",
+                "name": "mainModel.m_bukrstxt"
+              },
+              {
+                "title": "项目名",
+                "component": "select",
+                "id": "m_procnm",
+                "editablenode": "",
+                "name": "mainModel.m_procnm",
+                "options": [
+                  {
+                    "title": "P01-祥雨有机肥二期项目",
+                    "value": "P01"
+                  }]
+              },
+              {
+                "title": "项目名称",
+                "component": "select",
+                "id": "m_procnms",
+                "editablenode": "",
+                "name": "mainModel.m_procnms",
+                "options": [
+                  {
+                    "title": "工程类",
+                    "value": "P0101"
+                  },
+                  {
+                    "title": "工艺设备类",
+                    "value": "P0102"
+                  },
+                  {
+                    "title": "工艺安装类",
+                    "value": "P0103"
+                  }]
+              },
+              {
+                "title": "供应商名称",
+                "component": "text",
+                "id": "m_suptxt",
+                "editablenode": "",
+                "name": "mainModel.m_suptxt"
+              },
+              {
+                "title": "供应商编号",
+                "component": "text",
+                "id": "m_supcode",
+                "editablenode": "",
+                "name": "mainModel.m_supcode"
+              },
+              {
+                "title": "汇入行",
+                "component": "text",
+                "id": "m_bank",
+                "editablenode": "",
+                "name": "mainModel.m_bank"
+              },
+              {
+                "title": "汇入账号",
+                "component": "text",
+                "id": "m_account",
+                "editablenode": "",
+                "name": "mainModel.m_account"
+              },
+              {
+                "title": "预算",
+                "component": "text",
+                "id": "m_ys",
+                "editablenode": "",
+                "name": "mainModel.m_ys"
+              },
+              {
+                "title": "汇入地点",
+                "component": "text",
+                "id": "m_place",
+                "editablenode": "",
+                "name": "mainModel.m_place"
+              },
+              {
+                "title": "申请金额小写",
+                "component": "text",
+                "id": "m_reqje",
+                "editablenode": "",
+                "name": "mainModel.m_reqje"
+              },
+              {
+                "title": "申请金额大写",
+                "component": "text",
+                "id": "m_reqjedx",
+                "editablenode": "",
+                "name": "mainModel.m_reqjedx"
+              },{
+                "title": "币种",
+                "component": "text",
+                "id": "m_bz",
+                "editablenode": "",
+                "name": "mainModel.m_bz"
+              },{
+                "title": "汇款用途",
+                "component": "text",
+                "id": "m_hkuse",
+                "editablenode": "",
+                "name": "mainModel.m_hkuse"
+              },{
+                "title": "汇款种类",
+                "component": "text",
+                "id": "m_hktp",
+                "editablenode": "",
+                "name": "mainModel.m_hktp"
+              },{
+                "title": "合同约定到货日期",
+                "component": "text",
+                "id": "m_dhdate",
+                "editablenode": "",
+                "name": "mainModel.m_dhdate",
+                "datatype": "date",
+                "dateFormat": "yyyy-MM-dd"
+              },
+              {
+                "title": "付款日期",
+                "component": "text",
+                "id": "m_paydate",
+                "editablenode": "",
+                "name": "mainModel.m_paydate",
+                "datatype": "date",
+                "dateFormat": "yyyy-MM-dd"
+              },
+              {
+                "title": "合同总金额",
+                "component": "text",
+                "id": "m_jeall",
+                "editablenode": "",
+                "name": "mainModel.m_jeall"
+              },
+              {
+                "title": "累计预付款总额",
+                "component": "text",
+                "id": "m_repayje",
+                "editablenode": "",
+                "name": "mainModel.m_repayje"
+              },
+              {
+                "title": "用于在建工程",
+                "component": "text",
+                "id": "m_zjgc",
+                "editablenode": "",
+                "name": "mainModel.m_zjgc"
+              },
+              {
+                "title": "是否招标",
+                "component": "text",
+                "id": "m_sfzb",
+                "editablenode": "",
+                "name": "mainModel.m_sfzb"
+              },
+              {
+                "title": "合同编号",
+                "component": "text",
+                "id": "m_htbh",
+                "editablenode": "",
+                "name": "mainModel.m_htbh"
+              },
+              {
+                "title": "在建工程/资产编号",
+                "component": "text",
+                "id": "m_zcbh",
+                "editablenode": "",
+                "name": "mainModel.m_zcbh"
+              },
+              {
+                "title": "档案室签字备案",
+                "component": "text",
+                "id": "m_qzba",
+                "editablenode": "",
+                "name": "mainModel.m_qzba"
+              },
+              {
+                "title": "附件个数",
+                "component": "text",
+                "id": "m_num",
+                "editablenode": "",
+                "name": "mainModel.m_num"
+              },
+              {
+                "title": "采购订单号",
+                "component": "text",
+                "id": "m_ddcode",
+                "editablenode": "",
+                "name": "mainModel.m_ddcode"
+              },
+              {
+                "title": "合同付款条款",
+                "component": "text",
+                "id": "m_fktk",
+                "editablenode": "",
+                "name": "mainModel.m_fktk"
+              }
+
+            ]
+		}
+
+  ],
+  "refers": {
+  }
+}
