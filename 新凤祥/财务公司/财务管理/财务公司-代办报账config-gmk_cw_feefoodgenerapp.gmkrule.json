@@ -138,11 +138,6 @@
           "name": "afuser.orgeh"
         },
         {
-          "title": "职能中心/事业部",
-          "component": "text",
-          "name": "afuser.businessunitname"
-        },
-        {
           "title": "邮箱",
           "component": "text",
           "name": "afuser.pfach"
