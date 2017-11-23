@@ -289,7 +289,7 @@
         },
         {
           "title": "资产需求负责人审核",
-          "component": "label",
+          "component": "text",
           "name":"mainModel.xqbmfzr",
           "showLinkage":[
             {

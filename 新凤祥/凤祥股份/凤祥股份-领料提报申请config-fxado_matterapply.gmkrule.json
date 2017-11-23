@@ -1,8 +1,8 @@
 {
-  "id": "fxado_materielpurchase",
+  "id": "fxado_matterapply",
   "handleOnPC": {
     "tasknode": [
-      "usertask2,usertask3,usertask5"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -116,85 +116,86 @@
       ]
     },
     {
-      "title": "物料采购子表",
+      "title": "申请信息（固定表)",
       "component": "panel",
-      "id": "wlcgzb",
+      "id": "sqxxgdb",
       "subComponents": [
         {
           "component": "formLabelLink",
           "titleIndex": 0,
           "id": "xtrecruitsublist",
-          "basePath": "xtrecruitsublist",
+          "basePath": "infomatterapplylist",
           "linkForms": [
             {
-              "title": "公司",
+              "title": "申请编号",
               "component": "text",
-              "name": "b_bukrstxt"
-            },
-            {
-              "title": "工厂描述",
-              "component": "text",
-              "name": "b_factorytxt"
-            },
-            {
-              "title": "物料类别",
-              "component": "text",
-              "name": "b_mtypetxt"
-            },
-            {
-              "title": "成本中心",
-              "component": "text",
-              "name": "b_cbzxtxt"
+              "name": "info_applycode"
             },
             {
               "title": "物料号",
               "component": "text",
-              "name": "b_mcode"
+              "name": "info_wlcode"
             },
             {
               "title": "物料描述",
               "component": "text",
-              "name": "b_mscripe"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "b_munit"
+              "name": "info_wldescribe"
             },
             {
               "title": "需求量",
               "component": "text",
-              "name": "b_mcount"
+              "name": "info_demand"
             },
             {
-              "title": "SAP库存量",
+              "title": "单位",
               "component": "text",
-              "name": "b_sapstock"
+              "name": "info_unit"
             },
             {
-              "title": "sap安全库存量",
+              "title": "备注",
+              "editablenode": "",
               "component": "text",
-              "name": "b_ssapstock"
+              "name": "info_remark"
             },
             {
-              "title": "SAP采购在途量",
+              "title": "需求日期",
               "component": "text",
-              "name": "b_saponway"
+              "name": "info_needdate"
             },
             {
-              "title": "SAP领用占用量",
+              "title": "批次",
               "component": "text",
-              "name": "b_sapused"
+              "name": "info_batch"
             },
             {
-              "title": "采购量",
+              "title": "发货工厂",
               "component": "text",
-              "name": "b_tobuy"
+              "name": "info_factory"
             },
             {
-              "title": "交货日期",
+              "title": "发货库存地",
               "component": "text",
-              "name": "b_deliverydate"
+              "name": "info_address"
+            },
+            {
+              "title": "是否通过",
+              "component": "select",
+              "editablenode": "",
+              "name": "info_ispass",
+              "options": [
+                {
+                  "text": "请选择...",
+                  "value": ""
+                },
+                {
+                  "text": "是",
+                  "value": "0"
+                },
+                {
+                  "text": "否",
+                  "value": "2"
+                }
+              ]
             }
           ]
         }
