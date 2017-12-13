@@ -1,0 +1,510 @@
+{
+  "id": "fxado_portcontractsign",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "固定资产增加申请单号",
+          "component": "text",
+          "name": "mainModel.m_zjappid",
+          "tasknode": "usertask28,usertask29,usertask30,usertask31,usertask32",
+          "showLinkage": [
+            {
+              "id": "m_begd",
+              "values": [
+                "是"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同终签类型",
+          "component": "select",
+          "id": "m_http",
+          "name": "mainModel.m_zqlx",
+          "options": [
+            {
+              "title": "进口肉源",
+              "value": "进口肉源"
+            },
+            {
+              "title": "国内肉源",
+              "value": "国内肉源"
+            }
+          ]
+        },
+        {
+          "title": "合同名称",
+          "component": "text",
+          "name": "mainModel.m_htmc"
+        },
+        {
+          "title": "是否战略框架协议",
+          "component": "radio",
+          "name": "mainModel.m_sfkj",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "",
+          "id":"becg",
+          "component": "hidden",
+          "name": "becg"
+        },
+        {
+          "title": "是否固定资产类合同",
+          "component": "radio",
+          "id": "m_begd",
+          "name": "mainModel.m_begd",
+          "options": [
+            {
+              "title": "否",
+              "value": "否"
+            },
+            {
+              "title": "是",
+              "value": "是"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "becg",
+              "values": ["true"]
+            }
+          ]
+        },
+        {
+          "title": "合同标的",
+          "component": "text",
+          "name": "mainModel.m_htbd"
+        },
+        {
+          "title": "其他",
+          "component": "textarea",
+          "name": "mainModel.mijiname",
+          "showLinkage": [
+            {
+              "id": "m_xqlx",
+              "values": [
+                "其他"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "",
+          "id":"showfzr_kz",
+          "component": "hidden",
+          "name": "showfzr_kz"
+        },
+        {
+          "title": "预算",
+          "component": "select",
+          "name": "mainModel.m_ys",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "0"
+            },
+            {
+              "title": "预算外",
+              "value": "1"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "m_http",
+              "values": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            }
+          ]
+        },
+
+        {
+          "title": "其他内容说明",
+          "component": "textarea",
+          "name": "mainModel.m_qtnrsm",
+          "showLinkage": [
+            {
+              "id": "m_http",
+              "values": [
+                "采购"
+              ]
+            },
+            {
+              "id": "m_cgfs",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "其他标的类型",
+          "component": "text",
+          "name": "mainModel.m_qtbd",
+          "showLinkage": [
+            {
+              "id": "m_http",
+              "values": [
+                "采购"
+              ]
+            },
+            {
+              "id": "m_bdlx",
+              "values": [
+                "4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "供应商名称(全称)",
+          "component": "text",
+          "name": "mainModel.m_supnm"
+        },
+        {
+          "title": "供应商类型",
+          "component": "select",
+          "name": "mainModel.m_suptp",
+          "options": [
+            {
+              "title": "合格供应商",
+              "value": "0"
+            },
+            {
+              "title": "一次性供应商",
+              "value": "1"
+            },
+            {
+              "title": "战略合作伙伴",
+              "value": "2"
+            },
+            {
+              "title": "黑名单解冻",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "客户名称(全称)",
+          "component": "textarea",
+          "name": "mainModel.m_guestnm",
+          "showLinkage": [
+            {
+              "id": "m_http",
+              "values": [
+                "销售"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "合同金额",
+          "component": "text",
+          "name": "mainModel.m_money"
+        },
+        {
+          "title": "合同金额大写",
+          "component": "text",
+          "name": "mainModel.m_money_dx"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "mainModel.m_bz",
+          "options": [
+            {
+              "title": "人民币",
+              "value": "0"
+            },
+            {
+              "title": "美元",
+              "value": "1"
+            },
+            {
+              "title": "欧元",
+              "value": "2"
+            },
+            {
+              "title": "其他",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "付款方式",
+          "component": "select",
+          "name": "mainModel.m_fkfs",
+          "options": [
+            {
+              "title": "一卡通",
+              "value": "0"
+            },
+            {
+              "title": "现金",
+              "value": "1"
+            },
+            {
+              "title": "支票",
+              "value": "2"
+            },
+            {
+              "title": "汇款",
+              "value": "3"
+            },
+            {
+              "title": "汇票",
+              "value": "4"
+            },
+            {
+              "title": "信用证",
+              "value": "5"
+            },
+            {
+              "title": "清帐",
+              "value": "6"
+            },
+            {
+              "title": "银行托收",
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "title": "密级",
+          "component": "select",
+          "name": "mainModel.m_mj",
+          "options": [
+            {
+              "title": "公开",
+              "value": "0"
+            },
+            {
+              "title": "保密",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同页数",
+          "component": "text",
+          "name": "mainModel.m_htys"
+        },
+        {
+          "title": "是否为补充合同",
+          "component": "radio",
+          "id": "m_bebc",
+          "name": "mainModel.m_bebc",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同编号类别",
+          "component": "select",
+          "name": "mainModel.m_htbhlb",
+          "options": [
+            {
+              "title": "技术设计合同(A)",
+              "value": "A"
+            },
+            {
+              "title": "设备买卖安装合同(B)",
+              "value": "B"
+            },
+            {
+              "title": "建筑工程合同(C)",
+              "value": "C"
+            },
+            {
+              "title": "买卖合同(D)",
+              "value": "D"
+            },
+            {
+              "title": "其他合同(E)",
+              "value": "E"
+            }
+          ]
+        },
+        {
+          "title": "公司信息",
+          "component": "label",
+          "label": [
+            "mainModel.m_compid",
+            "-",
+            "mainModel.m_compnm"
+          ]
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "mainModel.m_htbh"
+        },
+        {
+          "title": "补充合同编号",
+          "component": "text",
+          "name": "mainModel.m_htbh_old",
+          "showLinkage": [
+            {
+              "id": "m_bebc",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "印章类型",
+          "component": "select",
+          "name": "mainModel.m_yzlxid",
+          "options": [
+            {
+              "title": "普通用印",
+              "value": "0"
+            },
+            {
+              "title": "携章外出",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "印章名称",
+          "component": "text",
+          "name": "mainModel.m_yznm"
+        },
+        {
+          "title": "印章使用日期",
+          "component": "date1",
+          "name": "mainModel.m_yzdate"
+        },
+        {
+          "title": "印章归还日期",
+          "component": "date1",
+          "name": "mainModel.m_yzbkdate"
+        }
+      ]
+    }
+  ]
+}
