@@ -134,7 +134,7 @@
 			  }
 			],
 			"showLinkage": [{
-							  "id": "holidaytype",
+							  "id": "mainModel.holidaytype",
 							  "values": ["B01"]
 							}]
 		},
@@ -158,7 +158,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A11"]
             }]
 		},
@@ -168,7 +168,7 @@
 			"component": "text",
 			"name": "mainModel.ctxxss",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -178,7 +178,7 @@
 			"component": "text",
 			"name": "mainModel.ctxts",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01"]
             }]
 		},
@@ -188,7 +188,7 @@
 			"component": "text",
 			"name": "mainModel.ctxnjts",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01"]
             }]
 		},
@@ -198,7 +198,7 @@
 			"component": "text",
 			"name": "mainModel.ljsjtsm",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01"]
             }]
 		},
@@ -208,7 +208,7 @@
 			"component": "text",
 			"name": "mainModel.ljsjtsy",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01"]
             }]
 		},
@@ -230,7 +230,7 @@
 			"editablenode": "",
 			"name": "mainModel.timea",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -242,7 +242,7 @@
 			"editablenode": "",
 			"name": "mainModel.timeb",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -262,7 +262,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -282,7 +282,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -293,7 +293,7 @@
 			"editablenode": "",
 			"name": "mainModel.thisdays",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -304,7 +304,7 @@
 			"editablenode": "",
 			"name": "mainModel.comdays",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -315,7 +315,7 @@
 			"editablenode": "",
 			"name": "mainModel.thishours",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -326,7 +326,7 @@
 			"editablenode": "",
 			"name": "mainModel.enjoy",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -337,7 +337,7 @@
 			"editablenode": "",
 			"name": "mainModel.hasuse",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -348,7 +348,7 @@
 			"editablenode": "",
 			"name": "mainModel.surplus",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -359,7 +359,7 @@
 			"editablenode": "usertask9",
 			"name": "mainModel.effecta",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A11"]
             }]
 		},
@@ -370,7 +370,7 @@
 			"editablenode": "usertask9",
 			"name": "mainModel.effectb",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A11"]
             }]
 		},
@@ -396,7 +396,7 @@
 			"component": "date1",
 			"name": "mainModel.acsdate",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07","A11"]
             },
 			{
@@ -412,7 +412,7 @@
 			"editablenode": "",
 			"name": "mainModel.acedate",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07","A11"]
             },
 			{
@@ -428,7 +428,7 @@
 			"editablenode": "",
 			"name": "mainModel.actimea",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             },
 			{
@@ -445,7 +445,7 @@
 			"editablenode": "",
 			"name": "mainModel.actimeb",
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["A02","A11"]
             },
 			{
@@ -470,7 +470,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             },
 			{
@@ -495,7 +495,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "holidaytype",
+                "id": "mainModel.holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             },
 			{
