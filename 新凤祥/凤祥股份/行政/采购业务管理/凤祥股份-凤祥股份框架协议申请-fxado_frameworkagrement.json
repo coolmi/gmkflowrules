@@ -88,10 +88,15 @@
         "pageid": "sqxx",
         "component": "panel",
         "subComponents": [
+          {
+            "title": "是否框架协议",
+            "component": "text",
+            "name": "mainModel.agreementname"
+          },
 			{
                 "title": "标的类型",
                 "component": "text",
-                "name": "mainModel.standardtypename"
+                "name": "mainModel.standardtypename1"
             },
 			{
                 "title": "合同编号类别",
@@ -112,7 +117,12 @@
                 "title": "密级",
                 "component": "text",
                 "name": "mainModel.mijiname"
-            }
+            },
+          {
+            "title": "合同信息",
+            "component": "text",
+            "name": "mainModel.m_contractinfo"
+          }
         ]
     },
 	{
@@ -228,14 +238,8 @@
               },
               {
                 "title": "印章使用",
-                "component": "label",
-                "label": [
-                  "一式",
-                  "mainModel.yzsyfs",
-                  "份,共",
-                  "mainModel.yzsyms",
-                  "枚"
-                ]
+                "component": "text",
+                "name": "mainModel.m_sealuse"
               },
               {
                 "title": "印章使用日期",

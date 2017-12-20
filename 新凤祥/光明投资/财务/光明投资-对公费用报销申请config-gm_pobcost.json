@@ -208,8 +208,15 @@
       "subComponents": [
         {
           "title": "费用承担部门",
-          "component": "text",
-          "name": "cninfo.reimbursedept"
+          "component": "label",
+          "editablenode": "",
+          "middleName": [
+            "pobcost.reimbursedept",
+            "objid"
+          ],
+          "label": [
+            "orgs.stext"
+          ]
         },
         {
           "title": "费用控制类型",

@@ -1,8 +1,8 @@
 {
-  "id": "fxado_materielpurchase",
+  "id": "ycfm_accountspayable",
   "handleOnPC": {
     "tasknode": [
-      "usertask2","usertask3","usertask5"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -13,16 +13,6 @@
       ""
     ],
     "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
   },
   "forms": [
     {
@@ -57,11 +47,6 @@
             "-",
             "mainModel.sysdeptname"
           ]
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.bukrs"
         },
         {
           "title": "",
@@ -116,91 +101,174 @@
       ]
     },
     {
-      "title": "物料采购子表",
+      "title": "申请信息",
+      "pageid": "sqxx",
       "component": "panel",
-      "id": "wlcgzb",
       "subComponents": [
         {
+          "title": "付款所属公司",
+          "component": "label",
+          "label": [
+            "mainModel.fkbutxt"
+          ]
+        },
+        {
+          "title": "项目名",
+          "component": "text",
+          "name": "mainModel.xmmone"
+        },
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.xmmc"
+        },
+        {
+          "title": "公司代码",
+          "component": "text",
+          "name": "mainModel.gsdm"
+        },
+        {
+          "title": "运行日期",
+          "component": "date1",
+          "name": "mainModel.yxdate"
+        },
+        {
+          "title": "标识",
+          "component": "text",
+          "name": "mainModel.bs"
+        },
+        {
+          "title": "SAP用户名",
+          "component": "text",
+          "name": "mainModel.sapusername"
+        },
+        {
+          "title": "分配",
+          "component": "text",
+          "name": "mainModel.fp"
+        }
+      ]
+    },
+    {
+      "title": "付款信息",
+      "pageid": "fkxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
           "component": "formLabelLink",
+          "tabletype": "looppanel",
+          "basePath": "apinfos",
           "titleIndex": 0,
-          "id": "xtrecruitsublist",
-          "basePath": "xtrecruitsublist",
           "linkForms": [
             {
-              "title": "公司",
+              "title": "供应商编号",
+              "title1": "供应商编号",
               "component": "text",
-              "name": "b_bukrstxt"
+              "name": "gysbh"
             },
             {
-              "title": "工厂描述",
+              "title": "供应商名称",
               "component": "text",
-              "name": "b_factorytxt"
+              "name": "gysmc"
             },
             {
-              "title": "物料类别",
+              "title": "行文本",
               "component": "text",
-              "name": "b_mtypetxt"
+              "name": "hwb"
             },
             {
-              "title": "成本中心",
+              "title": "采购组",
               "component": "text",
-              "name": "b_cbzxtxt"
+              "name": "cgz"
             },
             {
-              "title": "物料号",
+              "title": "拖延天数",
               "component": "text",
-              "name": "b_mcode"
+              "name": "tyts"
             },
             {
-              "title": "物料描述",
+              "title": "货币",
               "component": "text",
-              "name": "b_mscripe"
+              "name": "hb"
             },
             {
-              "title": "单位",
+              "title": "总金额",
               "component": "text",
-              "name": "b_munit"
+              "name": "zje"
             },
             {
-              "title": "需求量",
+              "title": "付款金额",
               "component": "text",
-              "name": "b_mcount"
+              "name": "fkje"
             },
             {
-              "title": "SAP库存量",
+              "title": "付款方式",
               "component": "text",
-              "name": "b_sapstock"
+              "name": "fkfs"
             },
             {
-              "title": "sap安全库存量",
+              "title": "是否质保金",
               "component": "text",
-              "name": "b_ssapstock"
+              "name": "isdel"
             },
             {
-              "title": "SAP采购在途量",
+              "title": "供应商开户行",
               "component": "text",
-              "name": "b_saponway"
+              "name": "gyskhh"
             },
             {
-              "title": "SAP领用占用量",
+              "title": "供应商账号",
               "component": "text",
-              "name": "b_sapused"
+              "name": "gyszh"
             },
             {
-              "title": "采购量",
+              "title": "采购组织",
               "component": "text",
-              "name": "b_tobuy"
+              "name": "cgzz"
             },
             {
-              "title": "交货日期",
-              "component": "date1",
-              "name": "b_deliverydate"
+              "title": "凭证编号",
+              "component": "text",
+              "name": "pzbh"
             }
           ]
         }
       ]
+    },
+    {
+      "title": "金额统计",
+      "pageid": "jetj",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "总金额",
+          "component": "text",
+          "name": "mainModel.zje"
+        },
+        {
+          "title": "付款金额",
+          "component": "text",
+          "name": "mainModel.fkje"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.bz"
+        }
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
     }
-  ],
-  "refers": {
-  }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "id": "gdzc_ipphonerequest",
+  "id": "fxado_matterapply",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -13,6 +13,16 @@
       ""
     ],
     "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
   },
   "forms": [
     {
@@ -47,6 +57,11 @@
             "-",
             "mainModel.sysdeptname"
           ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
         },
         {
           "title": "",
@@ -101,79 +116,92 @@
       ]
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
+      "title": "申请信息（固定表)",
       "component": "panel",
+      "id": "sqxxgdb",
       "subComponents": [
         {
-          "title": "所属公司",
-          "component": "text",
-          "name": "mainModel.m_compnm"
-        },
-        {
-          "title": "归属部门",
-          "component": "text",
-          "name": "mainModel.m_deptnm"
-        }
-      ]
-    },
-    {
-      "title": "申请列表",
-      "component": "panel",
-      "pageid": "sqlb_page",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "basePath": "ipphonerequestsublist",
-          "id": "sub_table",
+          "component": "formLabelLink",
           "titleIndex": 0,
-          "tableForms": [
+          "id": "xtrecruitsublist",
+          "basePath": "infomatterapplylist",
+          "linkForms": [
             {
-              "title": "使用人",
+              "title": "申请编号",
               "component": "text",
-              "name": "s_postname"
+              "name": "info_applycode"
             },
             {
-              "title": "申请类型",
+              "title": "物料号",
               "component": "text",
-              "name": "s_typename"
+              "name": "info_wlcode"
             },
             {
-              "title": "电话类型",
+              "title": "物料描述",
               "component": "text",
-              "name": "s_class"
+              "name": "info_wldescribe"
             },
             {
-              "title": "拨打权限",
+              "title": "需求量",
               "component": "text",
-              "name": "s_authority"
+              "name": "info_demand"
             },
             {
-              "title": "申请原因",
-              "component": "textarea",
-              "rows": 5,
-              "name": "s_why"
-            },
-            {
-              "title": "申请原因",
-              "component": "hidden",
-              "name": "id"
-            },
-            {
-              "title": "IP电话号码",
+              "title": "单位",
               "component": "text",
-              "editablenode": "usertask6",
-              "name": "s_number",
-              "validation": {
-                "pageid": "sqlb_page",
-                "table_id": "sub_table",
-                "required": true,
-                "validateMsg": "请填写IP电话号码"
-              }
+              "name": "info_unit"
+            },
+            {
+              "title": "备注",
+              "editablenode": "",
+              "component": "text",
+              "name": "info_remark"
+            },
+            {
+              "title": "需求日期",
+              "component": "text",
+              "name": "info_needdate"
+            },
+            {
+              "title": "批次",
+              "component": "text",
+              "name": "info_batch"
+            },
+            {
+              "title": "发货工厂",
+              "component": "text",
+              "name": "info_factory"
+            },
+            {
+              "title": "发货库存地",
+              "component": "text",
+              "name": "info_address"
+            },
+            {
+              "title": "是否通过",
+              "component": "select",
+              "editablenode": "",
+              "name": "info_ispass",
+              "options": [
+                {
+                  "text": "请选择...",
+                  "value": ""
+                },
+                {
+                  "text": "是",
+                  "value": "0"
+                },
+                {
+                  "text": "否",
+                  "value": "2"
+                }
+              ]
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "refers": {
+  }
 }

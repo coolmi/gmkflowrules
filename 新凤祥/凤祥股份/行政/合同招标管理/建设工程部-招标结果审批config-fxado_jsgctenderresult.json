@@ -1,5 +1,5 @@
 {
-  "id": "fx_equipmentmaintenapply",
+  "id": "fxado_jsgctenderresult",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -23,19 +23,16 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
-          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
-          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -45,7 +42,6 @@
         {
           "title": "所属部门",
           "component": "label",
-          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
@@ -110,146 +106,166 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "主抄送",
-          "component": "textarea",
-          "editablenode": "",
-          "name": "mainModel.maincc"
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.xmmc"
         },
         {
-          "title": "是否维修车辆",
+          "title": "项目名称类型",
           "component": "select",
-          "editablenode": "",
-          "name": "mainModel.m_iscar",
-          "options":[
-            {
-              "text":"是",
-              "value":"0"
-            },
-            {
-              "text":"否",
-              "value":"1"
-            }
-          ]
-        },
-        {
-          "title": "设备编号",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentno"
-        },
-        {
-          "title": "设备名称",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentname"
-        },
-        {
-          "title": "规格型号",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentgjxh"
-        },
-        {
-          "title": "设备具体位置",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentszjtwz"
-        },
-        {
-          "title": "预计维修费用",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.yjwxfy"
-        },
-        {
-          "title": "维修费用大写",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.wxfydx"
-        },
-        {
-          "title": "要求维修时间",
-          "component": "date1",
-          "editablenode": "",
-          "name": "mainModel.yqwxsj"
-        },
-        {
-          "title": "预算费用年度信息",
-          "component": "select",
-          "editablenode": "",
-          "name": "mainModel.ysfyndxx",
+          "name": "mainModel.xmmclx",
           "options": [
             {
-              "text": "请选择",
-              "value": ""
-            },
-            {
-              "text": "预算内",
+              "title": "采购",
               "value": "0"
             },
             {
-              "text": "预算外",
+              "title": "销售",
               "value": "1"
             }
           ]
         },
         {
-          "title": "预算金额",
+          "title": "项目编号",
           "component": "text",
-          "editablenode": "",
-          "name": "mainModel.ysje"
+          "name": "mainModel.xmbh"
         },
         {
-          "title": "预算金额大写",
+          "title": "招标类型",
           "component": "text",
-          "editablenode": "",
-          "name": "mainModel.ysjedx"
+          "name": "mainModel.zblx"
         },
         {
-          "title": "费用所属公司",
-          "component": "label",
-          "editablenode": "",
-          "middleName": [
-            "mainModel.fyssgs",
-            "bukrs"
-          ],
-          "label": [
-            "mainModel.fyssgs",
-            "-",
-            "allT001List.butxt"
+          "title": "招标方式",
+          "component": "text",
+          "name": "mainModel.zbfs"
+        },
+        {
+          "title": "招的部门",
+          "component": "text",
+          "name": "mainModel.m_deptnm"
+        },
+        {
+          "title": "标的名称",
+          "component": "text",
+          "name": "mainModel.bdmc"
+        },
+        {
+          "title": "标的金额",
+          "component": "text",
+          "name": "mainModel.bdje"
+        },
+        {
+          "title": "科长",
+          "component": "text",
+          "name": "mainModel.m_deptnm",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["08"]
+            }
           ]
         },
         {
-          "title": "费用所属部门",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.fyssbm"
+          "title": "生产类固定资产采购",
+          "component": "radio",
+          "name": "mainModel.sclgdzccg",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
         },
         {
-          "title": "费用所属成本中心",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.fysscbzx"
+          "title": "招标项目类别",
+          "component": "select",
+          "name": "mainModel.zbxmlb",
+          "options": [
+            {
+              "title": "经营类",
+              "value": "0"
+            },
+            {
+              "title": "工程类",
+              "value": "1"
+            }
+          ]
         },
         {
-          "title": "费用所属成本中心描述",
+          "title": "推荐中标价格",
           "component": "text",
-          "editablenode": "",
-          "name": "mainModel.fysscbzxms"
+          "name": "mainModel.tjzbjg"
         },
         {
-          "title": "现状及维修原因",
+          "title": "是否最低价",
+          "component": "radio",
+          "name": "mainModel.zdj",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "推荐中标企业",
+          "component": "text",
+          "name": "mainModel.tjzbqy"
+        },
+        {
+          "title": "评委意见是否一致",
+          "component": "radio",
+          "name": "mainModel.pwyjsfyz",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标过程",
           "component": "textarea",
           "rows": "3",
-          "name": "mainModel.xzjwxyy"
+          "name": "mainModel.zbgc"
         },
         {
-          "title": "维修方案、费用预算组成",
+          "title": "评委意见",
           "component": "textarea",
           "rows": "3",
-          "name": "mainModel.wxfayszc"
+          "name": "mainModel.pwyj"
+        },
+        {
+          "title": "基建/水电安装部审核",
+          "component": "text",
+          "name": "mainModel.jsbmr"
+        },
+        {
+          "title": "资产需求负责人审核",
+          "component": "text",
+          "name":"mainModel.xqbmfzr",
+          "showLinkage":[
+            {
+              "id":"m_ywlxid",
+              "values":["10","11","12"]
+            }
+          ]
         }
       ]
     }
+
   ]
 }

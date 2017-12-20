@@ -100,81 +100,88 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "",
+          "component": "textarea",
+          "title": "主抄送",
+          "name": "mainModel.m_copyusername"
+        },
+        {
+          "component": "textarea",
+          "title": "业务类型",
+          "name": "mainModel.ywlx"
+        },
+        {
+          "component": "textarea",
+          "title": "黑名单供应商名称",
+          "name": "mainModel.m_blackbusiname"
+        },
+        {
+          "component": "textarea",
+          "title": "法人名称",
+          "name": "mainModel.m_legalname"
+        },
+        {
+          "component": "textarea",
+          "title": "统一社会信用代码/营业执照号",
+          "name": "mainModel.m_businesscode"
+        },
+        {
+          "component": "textarea",
+          "title": "SAP系统中编号",
+          "name": "mainModel.m_sapcode"
+        },
+        {
+          "component": "textarea",
+          "title": "和我司合作的公司名称",
+          "name": "mainModel.m_businessnametome"
+        },
+        {
+          "component": "textarea",
+          "title": "列入黑名单的理由",
+          "name": "mainModel.m_reason"
+        },
+        {
+          "component": "textarea",
+          "title": "剩余未支付货款金额（元）",
+          "name": "mainModel.m_unmoney"
+        },
+        {
           "component": "select",
-          "name": "mainModel.ywlx",
+          "id":"m_ispay",
+          "title": "是否需扣罚",
+          "name": "mainModel.m_ispay",
           "options": [
             {
-              "text": "战略性物资采购",
+              "title": "是",
               "value": "0"
             },
             {
-              "text": "销售",
+              "title": "否",
               "value": "1"
-            },
-            {
-              "text": "其他",
-              "value": "2"
             }
           ]
         },
         {
-          "id": "sqxx_sub_table",
-          "component": "table_form",
-          "basePath": "blacklistinfos",
-          "titleIndex": 1,
-          "tableForms": [
+          "component": "textarea",
+          "title": "扣罚金额（元）",
+          "showLinkage": [
             {
-              "title": "供应商类型",
-              "component": "select",
-              "name": "gyslx",
-              "options": [
-                {
-                  "text": "供应商",
-                  "value": "0"
-                },
-                {
-                  "text": "客户",
-                  "value": "1"
-                }
+              "id":"m_ispay",
+              "values": [
+                "0"
               ]
-            },
-            {
-              "title": "公司名称",
-              "component": "text",
-              "name": "gsmc"
-            },
-            {
-              "title": "法人名称",
-              "component": "text",
-              "name": "frmc"
-            },
-            {
-              "title": "sap系统中编号",
-              "component": "text",
-              "name": "sapbh"
-            },
-            {
-              "title": "营业执照号",
-              "component": "text",
-              "name": "yyzzh"
-            },
-            {
-              "title": "组织机构代码",
-              "component": "text",
-              "name": "zzjgdm"
-            },
-            {
-              "title": "纳税人编号",
-              "component": "text",
-              "name": "nsrbh"
-            },
-            {
-              "title": "列入黑名单理由",
-              "component": "textarea",
-              "name": "reason"
             }
-          ]
+          ],
+          "name": "mainModel.m_paymoney"
+        },
+        {
+          "component": "textarea",
+          "title": "资产管理部门审核",
+          "name": "mainModel.m_assetmanagementname"
+        },
+        {
+          "component": "textarea",
+          "title": "资产需求部门审核",
+          "name": "mainModel.m_assetdemandname"
         }
       ]
     }

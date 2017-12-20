@@ -1,5 +1,5 @@
 {
-  "id": "fx_equipmentmaintenapply",
+  "id": "fx_jgzxequipmentmaintenapply",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -248,7 +248,19 @@
           "component": "textarea",
           "rows": "3",
           "name": "mainModel.wxfayszc"
+        },
+        {
+          "title": "相关部门审批人",
+          "component": "text",
+          "name": "mainModel.m_xgbwnm"
+        },
+        {
+          "title": "经理/厂长审批人",
+          "component": "text",
+          "name": "mainModel.m_jlcznm"
         }
+
+
       ]
     }
   ]

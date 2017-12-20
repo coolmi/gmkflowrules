@@ -1,0 +1,292 @@
+{
+  "id": "fx_phoenixmingpurchaseinvoice",
+  "handleOnPC": {
+    "tasknode": [
+
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "报账类型",
+          "component": "select",
+          "name": "mainModel.ltype",
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "工程类报销",
+              "value": "A"
+            },
+            {
+              "text": "工艺设备报销",
+              "value": "B"
+            },
+            {
+              "text": "工艺安装类报销",
+              "value": "C"
+            }
+          ]
+        },
+        {
+          "title": "费用承担公司",
+          "component": "text",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "付款方式",
+          "component": "text",
+          "name": "mainModel.paymentxt"
+        },
+        {
+          "title": "费用发起部门",
+          "component": "text",
+          "name": "mainModel.deptname"
+        },
+        {
+          "title": "费用承担人",
+          "component": "text",
+          "name": "mainModel.undertxtname"
+        },
+        {
+          "title": "供应商编码",
+          "component": "text",
+          "name": "mainModel.suppliercode"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.suppliername"
+        },
+        {
+          "title": "汇入地点",
+          "component": "text",
+          "name": "mainModel.impadress"
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "mainModel.mergebankname"
+        },
+
+
+        {
+          "title": "汇入账号",
+          "component": "text",
+          "name": "mainModel.mergebank"
+        },
+        {
+          "title": "汇款用途",
+          "component": "text",
+          "name": "mainModel.mergeremark"
+        },
+        {
+          "title": "发票金额",
+          "component": "text",
+          "datatype":"money",
+          "name": "mainModel.innvoiceval"
+        },
+        {
+          "title": "金额大写",
+          "component": "text",
+          "name": "mainModel.innvoicevalup"
+        },
+        {
+          "title": "币种",
+          "component": "select",
+          "name": "mainModel.currency",
+          "options": [
+            {
+              "title": "请选择...",
+              "value": ""
+            },
+            {
+              "title": "人民币",
+              "value": "CNY"
+            },
+            {
+              "title": "美元",
+              "value": "USD"
+            },
+            {
+              "title": "欧元",
+              "value": "EUR"
+            },
+            {
+              "title": "日元",
+              "value": "JPY"
+            },
+            {
+              "title": "澳大利亚元",
+              "value": "AUD"
+            },
+            {
+              "title": "加拿大元",
+              "value": "CAD"
+            }
+          ]
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "name": "mainModel.contractdate"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "name": "mainModel.paymentdate"
+        },
+        {
+          "title": "档案室签字备案",
+          "component": "text",
+          "name": "mainModel.record"
+        },
+        {
+          "title": "是否用于在建工程",
+          "component": "text",
+          "name": "mainModel.construction"
+        },
+        {
+          "title": "是否招标",
+          "component": "text",
+          "name": "mainModel.whetherbid"
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "mainModel.contractnum"
+        },
+        {
+          "title": "在建工程/资产编号",
+          "component": "text",
+          "name": "mainModel.constructionnumber"
+        },
+        {
+          "title": "已申请预付款金额",
+          "component": "text",
+          "datatype":"money",
+          "name": "mainModel.advanceamount"
+        },
+        {
+          "title": "已申请预付款金额",
+          "component": "text",
+          "name": "mainModel.advanceamountup"
+        },
+        {
+          "title": "补(退)金额(小写)",
+          "component": "text",
+          "datatype":"money",
+          "name": "mainModel.amount"
+        },
+        {
+          "title": "补(退)金额(大写)",
+          "component": "text",
+          "name": "mainModel.amountup"
+        }
+
+      ]
+    }
+  ]
+}
+
+

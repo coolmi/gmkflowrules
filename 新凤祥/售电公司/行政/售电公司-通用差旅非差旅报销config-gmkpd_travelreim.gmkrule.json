@@ -1,9 +1,8 @@
 {
-  "id": "af_feeapp",
+  "id": "gmkpd_travelreim",
   "handleOnPC": {
     "tasknode": [
-      "accout",
-      "payment"
+      "fxtravelreim9"
     ],
     "flag": [
       "resubmit"
@@ -137,7 +136,7 @@
         {
           "title": "员工编号",
           "component": "text",
-          "name": "reimburse.pernr"
+          "name": "afuser.pernr"
         },
         {
           "title": "员工所在部门",
@@ -252,6 +251,7 @@
           "title": "报销类型",
           "component": "select",
           "editablenode": "",
+          "id": "notravle",
           "name": "reimburse.notravle",
           "options": [
             {
@@ -272,10 +272,6 @@
             {
               "text": "通用",
               "value": "0"
-            },
-            {
-              "text": "专项项目",
-              "value": "1"
             }
           ]
         },
@@ -289,7 +285,16 @@
             "reimburse.cdbukrsname"
           ]
         },
-
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "reimburse.cdkostls",
+            "",
+            "reimburse.cdkostlsname"
+          ]
+        },
         {
           "title": "附件数",
           "component": "text",
@@ -297,18 +302,32 @@
           "name": "reimburse.numpg"
         },
         {
+          "title": "出差申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "reimburse.atrlnr",
+          "showLinkage": [
+            {
+              "id": "notravle",
+              "values": [
+                "0"
+              ]
+            }
+          ]
+        },
+        {
           "title": "说明",
           "component": "textarea",
           "rows": "3",
           "editablenode": "",
           "name": "reimburse.smemo"
-        }
-      ,
+        },
         {
           "title": "长途交通",
           "component": "panel",
           "panel_id": "ctjt",
           "id": "ctjt1",
+
           "subComponents": [
             {
               "component": "formLabelLink",
@@ -368,12 +387,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnr"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnr"
                 }
               ]
             }
@@ -423,7 +436,7 @@
                   "name": "jtflx",
                   "linkToMap": {
                     "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
+                    "mapBasePath": "citySubMenu",
                     "linkMiddle": "mtypec",
                     "linkType": "string"
                   }
@@ -448,12 +461,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrc"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrc"
                 }
               ]
             }
@@ -499,27 +506,16 @@
                   "name": "enameo"
                 },
                 {
-                  "title": "客户名称",
-                  "component": "text",
-                  "name": "kunameo"
-                },
-                {
                   "title": "项目号",
                   "component": "text",
                   "name": "colnro"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnro"
                 }
               ]
             }
           ]
         },
         {
-          "title": "餐费",
+          "title": "招待费",
           "component": "panel",
           "panel_id": "zdf",
           "id": "zdf1",
@@ -566,22 +562,17 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrm"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrm"
                 }
               ]
             }
           ]
         },
         {
-          "title": "住宿费",
+          "title": "住宿及餐补",
           "component": "panel",
           "panel_id": "zsjcbhz",
           "id": "zsjcbhz1",
+
           "subComponents": [
             {
               "component": "formLabelLink",
@@ -648,17 +639,12 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrh"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrh"
                 }
               ]
             }
           ]
         },
+
         {
           "title": "培训费",
           "component": "panel",
@@ -712,12 +698,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrt"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrt"
                 }
               ]
             }
@@ -801,7 +781,7 @@
                 },
                 {
                   "title": "事由",
-                  "component": "text",
+                  "component": "textarea",
                   "name": "smemg"
                 },
                 {
@@ -813,38 +793,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrg"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "电子发票",
-          "component": "panel",
-          "panel_id": "dzfp",
-          "id": "xgoadzfp",
-          "subComponents": [
-            {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id":"dzfpdafp",
-              "basePath": "electronics",
-              "linkForms": [
-                {
-                  "title": "电子发票号",
-                  "component": "text",
-                  "name": "electronicnum"
-                },
-                {
-                  "title": "链接",
-                  "component": "text",
-                  "name": "linkv"
                 }
               ]
             }
@@ -852,39 +800,29 @@
         }
       ]
     },
+
     {
       "title": "财务审核",
       "component": "panel",
       "panel_id": "cwshxx",
-      "tasknode": "account,accoutmanger,payment",
-      "editablenode": "account",
+      "tasknode": "fxtravelreim3,fxtravelreim4,fxtravelreim9",
       "id": "cwshxx1",
       "subComponents": [
         {
           "component": "formLabelLink",
-          "titleIndex": 4,
+          "titleIndex": 2,
           "id": "cwssxxkmms",
           "basePath": "seach",
           "linkForms": [
             {
-              "title": "项目号",
-              "component": "text",
-              "name": "colnrf"
-            },
-            {
-              "title": "项目号描述",
-              "component": "labelLink",
-              "editablenode": "",
-              "name": "colnrf",
-              "link_name": "colnrg",
+              "title": "项目号-子号",
+              "component": "label",
+              "name": "xmhzh",
               "label": [
-                "giftfees.conamg"
+                "colnrf",
+                "-",
+                "childcolnrf"
               ]
-            },
-            {
-              "title": "子号",
-              "component": "text",
-              "name": "childcolnrf"
             },
             {
               "title": "科目编号",
@@ -903,6 +841,11 @@
               }
             },
             {
+              "title": "产品",
+              "component": "text",
+              "name": "reimtypefval"
+            },
+            {
               "title": "调整科目",
               "component": "linkToMap",
               "name": "tzkm",
@@ -912,6 +855,11 @@
                 "linkMiddle": "saknrf",
                 "linkType": "string"
               }
+            },
+            {
+              "title": "调后子项目",
+              "component": "text",
+              "name": "childcolnrfafter"
             },
             {
               "title": "应付",
@@ -933,136 +881,20 @@
             },
             {
               "title": "扣款说明",
-              "component": "text",
+              "component": "textarea",
               "name": "smemof"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "凭证信息",
-      "pageid": "pzxx",
-      "tasknode": "accoutmanger,payment",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "凭证日期",
-          "component": "date1",
-          "name": "reimburse.documentdate"
         },
         {
-          "title": "过账日期",
-          "component": "date1",
-          "name": "reimburse.postingdate"
-        },
-        {
-          "title": "凭证抬头文本",
+          "title": "冲备用金",
           "component": "text",
-          "name": "reimburse.pztxt"
+          "name": "reimburse.reserve"
         },
         {
-          "title": "是否自动过账",
-          "component": "text",
-          "name": "reimburse.zdgz"
-        },
-        {
-          "title": "公司代码",
-          "component": "text",
-          "name": "reimburse.cdbukrs"
-        },
-        {
-          "title": "公司描述",
-          "component": "text",
-          "name": "reimburse.cdbukrsname"
-        },
-        {
-          "title": "借方合计",
-          "component": "text",
-          "name": "reimburse.debittotals"
-        },
-        {
-          "title": "贷方合计",
-          "component": "text",
-          "name": "reimburse.credittotals"
-        },
-        {
-          "title": "凭证编号",
-          "component": "text",
-          "name": "reimburse.null"
-        },{
-          "title": "凭证列表",
-          "component": "panel",
-          "panel_id": "pzlb",
-          "id": "xgoapzlb",
-          "subComponents": [
-            {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id": "pzlbpzlb",
-              "basePath": "prulist",
-              "linkForms": [
-                {
-                  "title": "科目",
-                  "component": "label",
-                  "editablenode": "",
-                  "label": [
-                    "asubjectcode",
-                    "-",
-                    "asubjectxt"
-                  ]
-                },
-                {
-                  "title": "科目描述",
-                  "component": "text",
-                  "name": "asubjectxt"
-                },
-                {
-                  "title": "D/C",
-                  "component": "text",
-                  "name": "dc"
-                },
-                {
-                  "title": "货币",
-                  "component": "text",
-                  "name": "currency"
-                },
-                {
-                  "title": "金额",
-                  "component": "text",
-                  "name": "ammoney"
-                },
-                {
-                  "title": "汇率",
-                  "component": "text",
-                  "name": "exchangerate"
-                },
-                {
-                  "title": "本位币金额",
-                  "component": "text",
-                  "name": "anmoney"
-                },
-                {
-                  "title": "文本",
-                  "component": "text",
-                  "name": "textv"
-                },
-                {
-                  "title": "成本中心",
-                  "component": "text",
-                  "name": "costcentertxt"
-                }, {
-                  "title": "内部订单号",
-                  "component": "text",
-                  "name": "null"
-                }, {
-                  "title": "分配号",
-                  "component": "text",
-                  "name": "info_mentnum-1"
-                }
-              ]
-            }
-          ]
+          "title": "冲备用金说明",
+          "component": "textarea",
+          "name": "reimburse.reservconent"
         }
       ]
     },
@@ -1097,34 +929,39 @@
           "name": "lifnrview"
         },
         {
-          "title": "员工银行账号",
-          "component": "text",
-          "tmpValueName": "bankn",
-          "name": "fipay.banknp"
-        },
-        {
-          "title": "开户行",
-          "component": "text",
-          "tmpValueName": "banka",
-          "name": "fipay.banklp"
-        },
-        {
           "title": "应付金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrp"
+          "tmpValueName": "sumfwbasfval",
+          "name": "cdmbtrp"
         },
         {
           "title": "冲备用金",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.dmbtrp"
+          "tmpValueName": "reimburse.reserve",
+          "name": "dmbtrp"
         },
         {
           "title": "付款金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrpf"
+          "name": "cdmbtrpf",
+          "calculateSum": {
+            "baseValue": "sumfwbasfval",
+            "calArray": [
+              {
+                "valuePath": "reimburse.reserve",
+                "type": "sub"
+              }
+            ]
+          }
+        },
+        {
+          "title": "冲备用金说明",
+          "component": "textarea",
+          "tmpValueName": "reimburse.reservconent",
+          "name": "rstgrp"
         }
       ]
     }

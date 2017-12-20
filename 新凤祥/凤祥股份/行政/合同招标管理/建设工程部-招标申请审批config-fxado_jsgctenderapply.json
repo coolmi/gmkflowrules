@@ -1,5 +1,5 @@
 {
-  "id": "fxado_tenderapply",
+  "id": "fxado_jsgctenderapply",
   "handleOnPC": {
     "tasknode": [
     ],
@@ -120,34 +120,6 @@
           "name": "mainModel.bdjedx"
         },
         {
-          "title": "",
-          "id":"m_ywlxid",
-          "component": "hidden",
-          "name": "mainModel.m_ywlxid",
-          "options": [
-            {
-              "text": "01",
-              "value": "01"
-            },
-            {
-              "text": "04",
-              "value": "04"
-            },
-            {
-              "text": "21",
-              "value": "21"
-            },
-            {
-              "text": "41",
-              "value": "41"
-            },
-            {
-              "text": "43",
-              "value": "43"
-            }
-          ]
-        },
-        {
           "title": "科长",
           "component": "text",
           "name": "mainModel.m_deptnm",
@@ -192,21 +164,6 @@
             },
             {
               "text": "否",
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "title": "招标项目类别",
-          "component": "select",
-          "name": "mainModel.zbxmlb",
-          "options": [
-            {
-              "text": "经营类",
-              "value": "0"
-            },
-            {
-              "text": "工程类",
               "value": "1"
             }
           ]
@@ -298,33 +255,14 @@
           "name": "mainModel.qt"
         },
         {
-          "title": "资产需求部门负责人",
+          "title": "基建/水电安装部",
           "component": "text",
-          "name": "mainModel.xqbmfzr",
-          "showLinkage":[
-            {
-              "id":"m_ywlxid",
-              "values":[
-                "21",
-                "41",
-                "43"
-              ]
-            }
-          ]
+          "name": "mainModel.xqbmfzr"
         },
         {
-          "title": "资产管理部门负责人",
+          "title": "法务部门审核人",
           "component": "text",
-          "name": "mainModel.jsbmr",
-          "showLinkage":[
-            {
-              "id":"m_ywlxid",
-              "values":[
-                "21",
-                "41"
-              ]
-            }
-          ]
+          "name": "mainModel.jsbmr"
         }
       ]
     },
@@ -364,76 +302,6 @@
               "name": "tender_company"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "审计部分配",
-      "pageid": "sjbfpxx",
-      "component": "panel",
-      "tasknode": "sjbmfp",
-      "subComponents": [
-        {
-          "title": "提交至",
-          "component": "select",
-          "id": "sjbmfpnexttaskkey_id",
-          "editablenode": "sjbmfp",
-          "name": "sjbmfpnexttaskkey",
-          "islinkage": true,
-          "handleLinkage": [
-            {
-              "id": "sjbmcspostid_id",
-              "values": [
-                "sjbmcs"
-              ]
-            }
-          ],
-          "options": [
-            {
-              "text": "审计部初审",
-              "value": "sjbmcs"
-            },
-            {
-              "text": "审计部复审",
-              "value": "sjbmfs"
-            },
-            {
-              "text": "法务部门审核",
-              "value": "usertask7"
-            }
-          ]
-        },
-        {
-          "title": "审计部初审人员",
-          "component": "text",
-          "id": "sjbmcspostid_id",
-          "editablenode": "sjbmfp",
-          "forSelectPerson": {
-            "onclick": "getuser",
-            "postshow": true,
-            "showformname": "sjbmcspost",
-            "valuetype": [
-              "objid"
-            ],
-            "showtype": [
-              "nachn",
-              "stext"
-            ]
-          },
-          "name": "mainModel.sjbmcspostid",
-          "showLinkage": [
-            {
-              "id": "sjbmfpnexttaskkey_id",
-              "values": [
-                "sjbmcs"
-              ]
-            }
-          ],
-          "validation": {
-            "pageid": "sjbfpxx",
-            "required": true,
-            "validateMsg": "请选择审计部初审人"
-          }
         }
       ]
     }

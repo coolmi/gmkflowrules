@@ -39,6 +39,7 @@
             "mainModel.pernr",
             "-",
             "mainModel.username"
+
           ]
         },
         {
@@ -156,6 +157,10 @@
             {
               "title": "预算外",
               "value": "1"
+            },
+            {
+              "title": "超预算",
+              "value": "2"
             }
           ]
         }

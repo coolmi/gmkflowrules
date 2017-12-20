@@ -1,8 +1,8 @@
 {
-  "id": "fxado_materielpurchase",
+  "id": "fx_machmatprocessapp",
   "handleOnPC": {
     "tasknode": [
-      "usertask2","usertask3","usertask5"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -116,85 +116,133 @@
       ]
     },
     {
-      "title": "物料采购子表",
+      "title": "申请信息",
+      "pageid": "sqxx",
       "component": "panel",
-      "id": "wlcgzb",
+      "subComponents": [
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "machmatmateriallist"
+        },
+
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "mainModel.cdbutxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.cdkotxt"
+        },
+        {
+          "title": "预算科目",
+          "component": "text",
+          "name": "mainModel.cdkstxt"
+        },
+        {
+          "title": "固定资产项目",
+          "component": "select",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "是",
+              "value": "1"
+            },
+            {
+              "title": "否",
+              "value": "0"
+            }
+          ],
+          "name": "mainModel.asset"
+        },
+        {
+          "title": "预算内外",
+          "component": "select",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "预算外",
+              "value": "0"
+            },
+            {
+              "title": "预算内",
+              "value": "1"
+            }
+          ],
+          "name": "mainModel.asset"
+        },
+        {
+          "title": "技术要求",
+          "component": "text",
+          "name": "mainModel.technical"
+        },
+        {
+          "title": "规划方案预算",
+          "component": "text",
+          "editablenode":"usertask2",
+          "name": "mainModel.scheme"
+        },
+        {
+          "title": "部门科长",
+          "component": "text",
+          "name": "mainModel.buschieftxt"
+        },
+        {
+          "title": "部门经理/厂长",
+          "component": "text",
+          "name": "mainModel.busmanagertxt"
+        }
+      ]
+    },
+    {
+      "title": "加工物料信息",
+      "component": "panel",
+      "id": "jgwlxxx",
       "subComponents": [
         {
           "component": "formLabelLink",
           "titleIndex": 0,
-          "id": "xtrecruitsublist",
-          "basePath": "xtrecruitsublist",
+          "id": "machmatmateriallist",
+          "basePath": "machmatmateriallist",
           "linkForms": [
             {
-              "title": "公司",
+              "title": "加工物流名称",
               "component": "text",
-              "name": "b_bukrstxt"
+              "name": "info_material"
             },
             {
-              "title": "工厂描述",
+              "title": "规格",
               "component": "text",
-              "name": "b_factorytxt"
-            },
-            {
-              "title": "物料类别",
-              "component": "text",
-              "name": "b_mtypetxt"
-            },
-            {
-              "title": "成本中心",
-              "component": "text",
-              "name": "b_cbzxtxt"
-            },
-            {
-              "title": "物料号",
-              "component": "text",
-              "name": "b_mcode"
-            },
-            {
-              "title": "物料描述",
-              "component": "text",
-              "name": "b_mscripe"
+              "name": "info_specifications"
             },
             {
               "title": "单位",
               "component": "text",
-              "name": "b_munit"
+              "name": "info_company"
             },
             {
-              "title": "需求量",
+              "title": "数量",
               "component": "text",
-              "name": "b_mcount"
+              "name": "info_num"
             },
             {
-              "title": "SAP库存量",
+              "title": "预计费用(机械厂填写)",
               "component": "text",
-              "name": "b_sapstock"
+              "editablenode":"usertask2",
+              "name": "info_cost"
             },
             {
-              "title": "sap安全库存量",
+              "title": "备注",
               "component": "text",
-              "name": "b_ssapstock"
-            },
-            {
-              "title": "SAP采购在途量",
-              "component": "text",
-              "name": "b_saponway"
-            },
-            {
-              "title": "SAP领用占用量",
-              "component": "text",
-              "name": "b_sapused"
-            },
-            {
-              "title": "采购量",
-              "component": "text",
-              "name": "b_tobuy"
-            },
-            {
-              "title": "交货日期",
-              "component": "date1",
-              "name": "b_deliverydate"
+              "name": "info_remark"
             }
           ]
         }

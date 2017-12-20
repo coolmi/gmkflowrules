@@ -1,5 +1,5 @@
 {
-  "id": "fx_equipmentmaintenapply",
+  "id": "fxcw_jgzxlhjjwxapply",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -116,44 +116,36 @@
           "name": "mainModel.maincc"
         },
         {
-          "title": "是否维修车辆",
+          "title": "维修项目名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.wxxmmc"
+        },
+        {
+          "title": "维修类别",
           "component": "select",
           "editablenode": "",
-          "name": "mainModel.m_iscar",
-          "options":[
+          "name": "mainModel.wxlb",
+          "options": [
             {
-              "text":"是",
-              "value":"0"
+              "title": "零活",
+              "value": "1"
             },
             {
-              "text":"否",
-              "value":"1"
+              "title": "基建",
+              "value": "2"
+            },
+            {
+              "title": "水电",
+              "value": "3"
             }
           ]
         },
         {
-          "title": "设备编号",
+          "title": "维修具体位置",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.equipmentno"
-        },
-        {
-          "title": "设备名称",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentname"
-        },
-        {
-          "title": "规格型号",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentgjxh"
-        },
-        {
-          "title": "设备具体位置",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.equipmentszjtwz"
+          "name": "mainModel.wxjtwz"
         },
         {
           "title": "预计维修费用",
@@ -206,17 +198,19 @@
           "name": "mainModel.ysjedx"
         },
         {
+          "title": "现状及维修原因",
+          "component": "textarea",
+          "rows": "3",
+          "name": "mainModel.xzjwxyy"
+        },
+        {
           "title": "费用所属公司",
           "component": "label",
           "editablenode": "",
-          "middleName": [
-            "mainModel.fyssgs",
-            "bukrs"
-          ],
           "label": [
             "mainModel.fyssgs",
             "-",
-            "allT001List.butxt"
+            "mainModel.fyssgsmc"
           ]
         },
         {
@@ -238,16 +232,10 @@
           "name": "mainModel.fysscbzxms"
         },
         {
-          "title": "现状及维修原因",
-          "component": "textarea",
-          "rows": "3",
-          "name": "mainModel.xzjwxyy"
-        },
-        {
           "title": "维修方案、费用预算组成",
           "component": "textarea",
           "rows": "3",
-          "name": "mainModel.wxfayszc"
+          "name": "mainModel.wxfafyyszc"
         }
       ]
     }

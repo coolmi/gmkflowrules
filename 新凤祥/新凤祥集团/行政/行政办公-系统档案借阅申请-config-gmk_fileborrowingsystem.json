@@ -1,5 +1,5 @@
 {
-  "id": "gdzc_ipphonerequest",
+  "id": "gmk_fileborrowingsystem",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -12,7 +12,17 @@
     "tasknode": [
       ""
     ],
-    "beforPop": false
+    "beforPop": true
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+        ]
+      }
+    ]
   },
   "forms": [
     {
@@ -23,16 +33,19 @@
         {
           "title": "申请单号",
           "component": "text",
+          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
+          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -42,11 +55,17 @@
         {
           "title": "所属部门",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
           ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
         },
         {
           "title": "",
@@ -101,79 +120,93 @@
       ]
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
+      "title": "申请信息明细",
+      "pageid": "sqxxmx",
       "component": "panel",
-      "subComponents": [
-        {
-          "title": "所属公司",
-          "component": "text",
-          "name": "mainModel.m_compnm"
-        },
-        {
-          "title": "归属部门",
-          "component": "text",
-          "name": "mainModel.m_deptnm"
-        }
-      ]
-    },
-    {
-      "title": "申请列表",
-      "component": "panel",
-      "pageid": "sqlb_page",
       "subComponents": [
         {
           "component": "table_form",
-          "basePath": "ipphonerequestsublist",
-          "id": "sub_table",
-          "titleIndex": 0,
+          "id": "sqxxmx_table",
+          "basePath": "fileborrowingsysdetaillist",
           "tableForms": [
             {
-              "title": "使用人",
+              "title": "档号",
               "component": "text",
-              "name": "s_postname"
+              "name": "keyword"
             },
             {
-              "title": "申请类型",
+              "title": "密级",
               "component": "text",
-              "name": "s_typename"
+              "name": "mj"
             },
             {
-              "title": "电话类型",
+              "title": "题名",
               "component": "text",
-              "name": "s_class"
+              "name": "title"
             },
             {
-              "title": "拨打权限",
+              "title": "所属公司",
               "component": "text",
-              "name": "s_authority"
+              "name": "buktxt"
             },
             {
-              "title": "申请原因",
+              "title": "责任部门",
+              "component": "text",
+              "name": "ictxt"
+            },
+            {
+              "title": "申请操作",
+              "component": "select",
+              "name": "sqcz",
+              "options": [
+                {
+                  "text": "电子文件浏览",
+                  "value": "1"
+                },
+                {
+                  "text": "借阅",
+                  "value": "2"
+                },
+                {
+                  "text": "打印",
+                  "value": "3"
+                },
+                {
+                  "text": "下载",
+                  "value": "4"
+                },
+                {
+                  "text": "拷贝",
+                  "value": "5"
+                }
+              ]
+
+            },
+            {
+              "title": "起始日期",
+              "component": "date1",
+              "name": "qsrq"
+            },
+            {
+              "title": "终止日期",
+              "component": "date1",
+              "name": "zrrq"
+            },
+            {
+              "title": "保管地点",
+              "component": "text",
+              "name": "bcdd"
+            },
+            {
+              "title": "申请事由",
               "component": "textarea",
-              "rows": 5,
-              "name": "s_why"
-            },
-            {
-              "title": "申请原因",
-              "component": "hidden",
-              "name": "id"
-            },
-            {
-              "title": "IP电话号码",
-              "component": "text",
-              "editablenode": "usertask6",
-              "name": "s_number",
-              "validation": {
-                "pageid": "sqlb_page",
-                "table_id": "sub_table",
-                "required": true,
-                "validateMsg": "请填写IP电话号码"
-              }
+              "name": "sqyy"
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "refers": {
+  }
 }

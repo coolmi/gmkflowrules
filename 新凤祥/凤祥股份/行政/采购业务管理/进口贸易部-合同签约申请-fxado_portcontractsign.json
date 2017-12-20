@@ -1,8 +1,7 @@
 {
-  "id": "fxado_contractsign",
+  "id": "fxado_portcontractsign",
   "handleOnPC": {
     "tasknode": [
-      "usertask27"
     ],
     "flag": [
       "resubmit"
@@ -120,18 +119,18 @@
           ]
         },
         {
-          "title": "合同类型",
+          "title": "合同终签类型",
           "component": "select",
           "id": "m_http",
-          "name": "mainModel.m_http",
+          "name": "mainModel.m_zqlx",
           "options": [
             {
-              "title": "采购",
-              "value": "采购"
+              "title": "进口肉源",
+              "value": "进口肉源"
             },
             {
-              "title": "销售",
-              "value": "销售"
+              "title": "国内肉源",
+              "value": "国内肉源"
             }
           ]
         },
@@ -154,11 +153,6 @@
               "value": "1"
             }
           ]
-        },
-        {
-          "title": "定价依据",
-          "component": "textarea",
-          "name": "mainModel.m_djyj"
         },
         {
           "title": "",
@@ -194,34 +188,6 @@
           "name": "mainModel.m_htbd"
         },
         {
-          "title": "需求类型",
-          "component": "select",
-          "id": "m_xqlx",
-          "name": "mainModel.m_xqlx",
-          "options": [
-            {
-              "title": "工程",
-              "value": "工程"
-            },
-            {
-              "title": "常规",
-              "value": "常规"
-            },
-            {
-              "title": "外协",
-              "value": "外协"
-            },
-            {
-              "title": "IT",
-              "value": "IT"
-            },
-            {
-              "title": "其他",
-              "value": "其他"
-            }
-          ]
-        },
-        {
           "title": "其他",
           "component": "textarea",
           "name": "mainModel.mijiname",
@@ -233,11 +199,6 @@
               ]
             }
           ]
-        },
-        {
-          "title": "业务类型",
-          "component": "text",
-          "name": "mainModel.m_ywlxnm"
         },
         {
           "title": "",
@@ -271,66 +232,7 @@
             }
           ]
         },
-        {
-          "title": "采购方式",
-          "component": "select",
-          "name": "mainModel.m_cgfs",
-          "options": [
-            {
-              "title": "比价",
-              "value": "0"
-            },
-            {
-              "title": "招标",
-              "value": "1"
-            },
-            {
-              "title": "议标",
-              "value": "2"
-            },
-            {
-              "title": "其他",
-              "value": "3"
-            }
-          ],
-          "showLinkage": [
-            {
-              "id": "m_http",
-              "values": [
-                "采购"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "报价家数",
-          "component": "select",
-          "name": "mainModel.m_bjjs",
-          "options": [
-            {
-              "title": "小于3家",
-              "value": "0"
-            },
-            {
-              "title": "不小于3家",
-              "value": "1"
-            }
-          ],
-          "showLinkage": [
-            {
-              "id": "m_http",
-              "values": [
-                "采购"
-              ]
-            },
-            {
-              "id": "m_cgfs",
-              "values": [
-                "0"
-              ]
-            }
-          ]
-        },
+
         {
           "title": "其他内容说明",
           "component": "textarea",
@@ -346,42 +248,6 @@
               "id": "m_cgfs",
               "values": [
                 "3"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "标的类型",
-          "component": "select",
-          "id": "m_bdlx",
-          "name": "mainModel.m_bdlx",
-          "options": [
-            {
-              "title": "技术设计",
-              "value": "0"
-            },
-            {
-              "title": "设备买卖安装",
-              "value": "1"
-            },
-            {
-              "title": "建筑工程",
-              "value": "2"
-            },
-            {
-              "title": "买卖",
-              "value": "3"
-            },
-            {
-              "title": "其他",
-              "value": "4"
-            }
-          ],
-          "showLinkage": [
-            {
-              "id": "m_http",
-              "values": [
-                "采购"
               ]
             }
           ]
@@ -408,15 +274,7 @@
         {
           "title": "供应商名称(全称)",
           "component": "text",
-          "name": "mainModel.m_supnm",
-          "showLinkage": [
-            {
-              "id": "m_http",
-              "values": [
-                "采购"
-              ]
-            }
-          ]
+          "name": "mainModel.m_supnm"
         },
         {
           "title": "供应商类型",
@@ -438,14 +296,6 @@
             {
               "title": "黑名单解冻",
               "value": "3"
-            }
-          ],
-          "showLinkage": [
-            {
-              "id": "m_http",
-              "values": [
-                "采购"
-              ]
             }
           ]
         },
@@ -555,6 +405,22 @@
           "name": "mainModel.m_htys"
         },
         {
+          "title": "是否为补充合同",
+          "component": "radio",
+          "id": "m_bebc",
+          "name": "mainModel.m_bebc",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
           "title": "合同编号类别",
           "component": "select",
           "name": "mainModel.m_htbhlb",
@@ -594,22 +460,6 @@
           "title": "合同编号",
           "component": "text",
           "name": "mainModel.m_htbh"
-        },
-        {
-          "title": "是否为补充合同",
-          "component": "radio",
-          "id": "m_bebc",
-          "name": "mainModel.m_bebc",
-          "options": [
-            {
-              "title": "否",
-              "value": "0"
-            },
-            {
-              "title": "是",
-              "value": "1"
-            }
-          ]
         },
         {
           "title": "补充合同编号",

@@ -1,0 +1,807 @@
+{
+  "id": "it_sendsingle",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "sendsingle.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "sendsingle.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "sendsingle.pernr",
+            "-",
+            "sendsingle.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "sendsingle.sysbusinessunitname",
+            "-",
+            "sendsingle.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "sendsingle.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "textarea",
+          "title": "提报人姓名",
+          "name": "sendsingle.submissioname"
+        },
+        {
+          "component": "textarea",
+          "title": "提报人itcode",
+          "name": "sendsingle.itcode"
+        },
+        {
+          "component": "textarea",
+          "title": "电话",
+          "name": "sendsingle.tel"
+        },
+        {
+          "component": "textarea",
+          "title": "手机",
+          "name": "sendsingle.phone"
+        },
+        {
+          "component": "textarea",
+          "title": "部门",
+          "name": "sendsingle.itcodedeptname"
+        },
+        {
+          "component": "textarea",
+          "title": "公司",
+          "name": "sendsingle.bukrsname"
+        },
+        {
+          "component": "textarea",
+          "title": "紧急程度",
+          "name": "sendsingle.emerg"
+        },
+        {
+          "component": "select",
+          "title": "服务方式",
+          "name": "sendsingle.servicemode",
+          "options": [
+            {
+              "text": "远程指导",
+              "value": "A"
+            },
+            {
+              "text": "送修服务",
+              "value": "B"
+            },
+            {
+              "text": "上门服务",
+              "value": "C"
+            }
+            ]
+        },
+        {
+          "component": "select",
+          "title": "问题来源类别",
+          "id":"problemsource",
+          "name": "sendsingle.problemsource",
+          "options": [
+            {
+              "text": "安防监控(视频监控/门禁、一卡通/多媒体显示等)",
+              "value": "M02"
+            },
+            {
+              "text": "终端管理(电脑/手机/打印机等)",
+              "value": "M01"
+            },
+            {
+              "text": "数据中心(数据中心/系统应用等)",
+              "value": "root"
+            },
+            {
+              "text": "协同办公(IP电话/视频/电话会议/邮箱/Connections等)",
+              "value": "M03"
+            },
+            {
+              "text": "MES系统运维(生产实时/数模在线/能源/资金系统等等)",
+              "value": "M04"
+            },
+            {
+              "text": "网络(网络接入问题//等)",
+              "value": "M05"
+            }
+          ]
+        },{
+          "component": "textarea",
+          "title": "资产类别名称",
+          "showLinkage": [
+            {
+              "id":"problemsource",
+              "values": [
+                "M01"
+              ]
+            }
+          ],
+          "name": "sendsingle.assetname"
+        },{
+          "component": "textarea",
+          "title": "品牌型号",
+          "showLinkage": [
+            {
+              "id": "problemsource",
+              "values": [
+                "M01"
+              ]
+            }
+          ],
+          "name": "sendsingle.brandmodel"
+        },{
+          "component": "textarea",
+          "title": "技术标识号",
+          "showLinkage": [
+            {
+              "id": "problemsource",
+              "values": [
+                "M01"
+              ]
+            }
+          ],
+          "name": "sendsingle.technicalnum"
+        },{
+          "component": "textarea",
+          "title": "问题描述",
+          "name": "sendsingle.semo"
+        }
+
+      ]
+    }
+    ,
+    {
+      "title": "分配运维信息",
+      "pageid": "fpywxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "textarea",
+          "title": "运维工程师",
+          "name": "sendsingle.operengneertxt"
+        },
+        {
+          "component": "textarea",
+          "title": "联系电话",
+          "name": "sendsingle.operetel"
+        },
+        {
+          "component": "textarea",
+          "title": "分配日期",
+          "name": "sendsingle.allocdate"
+        },
+        {
+          "component": "textarea",
+          "title": "期望解决日期",
+          "name": "sendsingle.expectdate"
+        }
+      ]
+    }
+    ,
+    {
+      "title": "运维记录信息",
+      "pageid": "ywjlxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "date1",
+          "title": "计划开始时间",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.sdate",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择计划开始时间"
+          }
+        },
+        {
+          "component": "date1",
+          "title": "计划结束时间",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.edate",
+          "value":"",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择计划结束时间"
+          }
+        },
+        {
+          "component": "date1",
+          "title": "实际开始时间",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.actualsdate",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择实际开始时间"
+          }
+        },
+        {
+          "component": "date1",
+          "title": "实际结束时间",
+          "name": "sendsingle.actualedate"
+        },
+        {
+          "id":"faultypes",
+          "component": "select",
+          "title": "故障类型",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.faultypes",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择故障类型"
+          },
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "硬件",
+              "value": "hardware"
+            },
+            {
+              "text": "软件",
+              "value": "software"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "title": "问题当前状态",
+          "editablenode": "usertask2,usertask7",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择问题当前状态"
+          },
+          "name": "sendsingle.currentstate",
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "待处理",
+              "value": "待处理"
+            },
+            {
+              "text": "解决中",
+              "value": "解决中"
+            },
+            {
+              "text": "已完结",
+              "value": "已完结"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "title": "故障描述",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.spetypedesval",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择故障描述"
+          },
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "HO00001-屏幕",
+              "value": "HO00001-屏幕"
+            },
+            {
+              "text": "HO000010-打印针",
+              "value": "HO000010-打印针"
+            },
+            {
+              "text": "HO000011-灯泡",
+              "value": "HO000011-灯泡"
+            },
+            {
+              "text": "HO000012-电源线",
+              "value": "HO000012-电源线"
+            },
+            {
+              "text": "HO000013-数据线",
+              "value": "HO000013-数据线"
+            },
+            {
+              "text": "HO000014-保内设备（打印机）",
+              "value": "HO000014-保内设备（打印机）"
+            },
+            {
+              "text": "HO000015-保内设备（dell电脑）",
+              "value": "HO000015-保内设备（dell电脑）"
+            },
+            {
+              "text": "HO00002-硬盘",
+              "value": "HO00002-硬盘"
+            },
+            {
+              "text": "HO000020-手机卡补办",
+              "value": "HO000020-手机卡补办"
+            },
+            {
+              "text": "HO000021-手机邮箱安装",
+              "value": "HO000021-手机邮箱安装"
+            },
+            {
+              "text": "HO00003-主板",
+              "value": "HO00003-主板"
+            },
+            {
+              "text": "HO00004-内存",
+              "value": "HO00004-内存"
+            },
+            {
+              "text": "HO00005-电源",
+              "value": "HO00005-电源"
+            },
+            {
+              "text": "HO00006-笔记本键盘",
+              "value": "HO00006-笔记本键盘"
+            },
+            {
+              "text": "HO00007-定影膜",
+              "value": "HO00007-定影膜"
+            },
+            {
+              "text": "HO00008-进纸器",
+              "value": "HO00008-进纸器"
+            },
+            {
+              "text": "HO00009-打印头",
+              "value": "HO00009-打印头"
+            },
+            {
+              "text": "HO200001-硬盘录像机故障",
+              "value": "HO200001-硬盘录像机故障"
+            },
+            {
+              "text": "HO200002-摄像机故障",
+              "value": "HO200002-摄像机故障"
+            },
+            {
+              "text": "HO200003-交换机故障",
+              "value": "HO200003-交换机故障"
+            },
+            {
+              "text": "HO200004-光纤收发器故障",
+              "value": "HO200004-光纤收发器故障"
+            },
+            {
+              "text": "HO200005-切换器故障",
+              "value": "HO200005-切换器故障"
+            },
+            {
+              "text": "HO200006-显示器故障",
+              "value": "HO200006-显示器故障"
+            },
+            {
+              "text": "HO200007-监控电源故障",
+              "value": "HO200007-监控电源故障"
+            },
+            {
+              "text": "HO200008-线路故障",
+              "value": "HO200008-线路故障"
+            },
+            {
+              "text": "HO300001-IP电话",
+              "value": "HO300001-IP电话"
+            },{
+              "text": "SO00001-PDF阅读器",
+              "value": "SO00001-PDF阅读器"
+            },
+            {
+              "text": "SO000010-AC2000",
+              "value": "SO000010-AC2000"
+            },
+            {
+              "text": "SO000011-VPN",
+              "value": "SO000011-VPN"
+            },
+            {
+              "text": "SO000012-LIMS系统",
+              "value": "SO000012-LIMS系统"
+            },
+            {
+              "text": "SO000013-资金系统",
+              "value": "SO000013-资金系统"
+            },
+            {
+              "text": "SO000015-操作系统",
+              "value": "SO000015-操作系统"
+            },
+            {
+              "text": "SO000016-PDF阅读器",
+              "value": "SO000016-PDF阅读器"
+            },
+            {
+              "text": "SO00002-Office",
+              "value": "SO00002-Office"
+            },
+            {
+              "text": "SO000022-手机办公平台安装",
+              "value": "SO000022-手机办公平台安装"
+            },
+            {
+              "text": "SO000023-手机业务办理",
+              "value": "SO000023-手机业务办理"
+            },
+            {
+              "text": "SO000025-手机数据维护",
+              "value": "SO000025-手机数据维护"
+            },
+            {
+              "text": "SO000026-会议支持",
+              "value": "SO000026-会议支持"
+            },
+            {
+              "text": "SO00003-IBM SameTime",
+              "value": "SO00003-IBM SameTime"
+            },
+            {
+              "text": "SO00004-IBM Notes",
+              "value": "SO00004-IBM Notes"
+            },
+            {
+              "text": "SO00005-Symantec",
+              "value": "SO00005-Symantec"
+            },
+            {
+              "text": "SO00006-AnyOffice",
+              "value": "SO00006-AnyOffice"
+            },
+            {
+              "text": "SO00007-SAP",
+              "value": "SO00007-SAP"
+            },
+            {
+              "text": "SO00008-W3/OA",
+              "value": "SO00008-W3/OA"
+            },
+            {
+              "text": "SO00009-浏览器",
+              "value": "SO00009-浏览器"
+            },
+            {
+              "text": "SO100001-闪速炉在线数模计算系统",
+              "value": "SO100001-闪速炉在线数模计算系统"
+            },
+            {
+              "text": "SO100002-祥光生产实时系统",
+              "value": "SO100002-祥光生产实时系统"
+            },
+            {
+              "text": "SO100003-金蝶系统",
+              "value": "SO100003-金蝶系统"
+            },
+            {
+              "text": "SO100004-用友系统",
+              "value": "SO100004-用友系统"
+            },
+            {
+              "text": "SO100005-浪潮系统",
+              "value": "SO100005-浪潮系统"
+            },
+            {
+              "text": "SO100006-能源系统",
+              "value": "SO100006-能源系统"
+            },
+            {
+              "text": "SO100007-生产实时系统",
+              "value": "SO100007-生产实时系统"
+            },
+            {
+              "text": "SO200001-监控软件故障",
+              "value": "SO200001-监控软件故障"
+            },
+            {
+              "text": "SO300001-协同办公",
+              "value": "SO300001-协同办公"
+            },
+            {
+              "text": "SO300002-IP电话",
+              "value": "SO300002-IP电话"
+            },
+            {
+              "text": "SO300003-电话/视频会议",
+              "value": "SO300003-电话/视频会议"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "title": "是否外协",
+          "id":"outsource",
+          "editablenode": "usertask2,usertask7",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择是否外协"
+          },
+          "name": "sendsingle.outsourc",
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "否",
+              "value": "否"
+            },
+            {
+              "text": "是",
+              "value": "是"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "title": "质保内外",
+          "editablenode": "usertask2,usertask7",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请选择质保内外"
+          },
+          "name": "sendsingle.warranty",
+          "options": [
+            {
+              "text": "请选择...",
+              "value": ""
+            },
+            {
+              "text": "内",
+              "value": "0"
+            },
+            {
+              "text": "外",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "component": "textarea",
+          "title": "解决方案",
+          "editablenode": "usertask2,usertask7",
+          "name": "sendsingle.solution",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请填写解决方案"
+          }
+        },
+        {
+          "title": "外协费用",
+          "component": "text",
+          "editablenode": "usertask6",
+          "name": "sendsingle.outsourcost",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请填写外协费用"
+          },
+          "showLinkage": [
+            {
+              "id": "outsource",
+              "values": [
+                "是"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "换件描述",
+          "component": "text",
+          "editablenode": "usertask6",
+          "name": "sendsingle.inades",
+          "validation": {
+            "pageid": "ywjlxx",
+            "required": true,
+            "validateMsg": "请填写换件描述"
+          },
+          "showLinkage": [
+            {
+              "id": "outsource",
+              "values": [
+                "是"
+              ]
+            }
+          ]
+        }
+
+      ]
+    }
+    ,
+    {
+      "title": "用户反馈",
+      "pageid": "yhfk",
+      "component": "panel",
+      "tasknode": "usertask3,usertask5",
+      "subComponents": [
+        {
+          "title": "评分",
+          "component": "select",
+          "id": "satisfied",
+          "editablenode": "usertask3",
+          "name": "sendsingle.satisfied",
+          "islinkage": true,
+          "handleLinkage": [
+            {
+              "id": "satisfiedisplay",
+              "values": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "5",
+              "value": "5"
+            },
+            {
+              "text": "4",
+              "value": "4"
+            },
+            {
+              "text": "3",
+              "value": "3"
+            },
+            {
+              "text": "2",
+              "value": "2"
+            },
+            {
+              "text": "1",
+              "value": "1"
+            }
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择评分"
+          }
+        },
+        {
+          "title": "反馈意见",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "usertask3",
+          "name": "sendsingle.feedback",
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请填写反馈意见"
+          }
+        },
+        {
+          "title": "不满意项",
+          "component": "select",
+          "id": "satisfiedisplay",
+          "editablenode": "usertask3",
+          "name": "sendsingle.satisfiedisplay",
+          "showLinkage": [
+            {
+              "id": "satisfied",
+              "values": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "options": [
+            {
+              "text": "响应不及时",
+              "value": "NO1"
+            },
+            {
+              "text": "个人技能一般",
+              "value": "NO2"
+            },
+            {
+              "text": "服务态度恶劣",
+              "value": "NO3"
+            }
+          ],
+          "validation": {
+            "pageid": "yhfk",
+            "required": true,
+            "validateMsg": "请选择不满意项"
+          }
+        }
+      ]
+    }
+  ]
+}

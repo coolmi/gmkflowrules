@@ -322,7 +322,7 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "立项、经办单位审批人",
+          "title": "综合管理办公室经理",
           "component": "text",
           "name": "mainModel.zhglbspr"
         },
@@ -332,7 +332,12 @@
           "name": "mainModel.ysbspr"
         },
         {
-          "title": "法律办审批人",
+          "title": "基建/水电安装部",
+          "component": "text",
+          "name": "mainModel.yzjsxmbspr"
+        },
+        {
+          "title": "法务部审批人",
           "component": "text",
           "name": "mainModel.flbspr"
         },
@@ -342,14 +347,9 @@
           "name": "mainModel.cwbspr"
         },
         {
-          "title": "总经理/总指挥长",
+          "title": "安全环保部总经理",
           "component": "text",
           "name": "mainModel.fgfzzhz"
-        },
-        {
-          "title": "档案室存档操作人",
-          "component": "text",
-          "name": "mainModel.dascdczr"
         }
       ]
     }

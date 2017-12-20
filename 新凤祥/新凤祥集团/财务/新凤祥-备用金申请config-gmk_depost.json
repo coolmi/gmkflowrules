@@ -277,20 +277,7 @@
           "component": "select",
           "name": "deposit.setmode",
           "tasknode": "usertask5",
-          "options": [
-            {
-              "title": "请选择",
-              "value": ""
-            },
-            {
-              "title": "汇款",
-              "value": "汇款"
-            },
-            {
-              "title": "现金",
-              "value": "现金"
-            }
-          ],
+          `
           "editablenode": "usertask5",
           "validation": {
             "validateMsg": "付款方式必选",

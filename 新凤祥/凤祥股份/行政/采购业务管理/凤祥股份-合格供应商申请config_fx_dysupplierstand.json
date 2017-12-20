@@ -1,5 +1,5 @@
 {
-  "id": "gdzc_ipphonerequest",
+  "id": "fx_dysupplierstand",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -106,72 +106,24 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "所属公司",
-          "component": "text",
-          "name": "mainModel.m_compnm"
+          "title": "主抄送人员",
+          "component": "textarea",
+          "name": "mainModel.zopostname"
         },
         {
-          "title": "归属部门",
+          "title": "标题",
           "component": "text",
-          "name": "mainModel.m_deptnm"
-        }
-      ]
-    },
-    {
-      "title": "申请列表",
-      "component": "panel",
-      "pageid": "sqlb_page",
-      "subComponents": [
+          "name": "mainModel.dailytitle"
+        },
         {
-          "component": "table_form",
-          "basePath": "ipphonerequestsublist",
-          "id": "sub_table",
-          "titleIndex": 0,
-          "tableForms": [
-            {
-              "title": "使用人",
-              "component": "text",
-              "name": "s_postname"
-            },
-            {
-              "title": "申请类型",
-              "component": "text",
-              "name": "s_typename"
-            },
-            {
-              "title": "电话类型",
-              "component": "text",
-              "name": "s_class"
-            },
-            {
-              "title": "拨打权限",
-              "component": "text",
-              "name": "s_authority"
-            },
-            {
-              "title": "申请原因",
-              "component": "textarea",
-              "rows": 5,
-              "name": "s_why"
-            },
-            {
-              "title": "申请原因",
-              "component": "hidden",
-              "name": "id"
-            },
-            {
-              "title": "IP电话号码",
-              "component": "text",
-              "editablenode": "usertask6",
-              "name": "s_number",
-              "validation": {
-                "pageid": "sqlb_page",
-                "table_id": "sub_table",
-                "required": true,
-                "validateMsg": "请填写IP电话号码"
-              }
-            }
-          ]
+          "title": "请示内容",
+          "component": "textarea",
+          "name": "mainModel.dailyname"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.m_note"
         }
       ]
     }
