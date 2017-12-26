@@ -16,10 +16,10 @@
     "beforPop": false
   },
   "pageSelectIndex": {
-    "defaultIndex": 2,
+    "defaultIndex": 0,
     "selectIndexArray": [
       {
-        "selectIndex": 2,
+        "selectIndex": 0,
         "tasknode": [
           "entrusted",
           "accout",
@@ -132,37 +132,58 @@
         {
           "title": "报销类型",
           "component": "select",
-          "name": "mainModel.biz",
+          "name": "reimburse.notravle",
           "options": [
             {
-              "text": "差旅",
+              "text": "差旅报销",
               "value": "0"
             },
             {
-              "text": "非差旅",
+              "text": "非差旅报销",
               "value": "1"
             }
           ]
         },
         {
           "title": "项目类型",
-          "component": "text",
-          "name": "afuser.orgeh"
+          "component": "select",
+          "name": "reimburse.protype",
+          "options": [
+            {
+              "text": "通用项目",
+              "value": "0"
+            },
+            {
+              "text": "专项项目",
+              "value": "1"
+            }
+          ]
         },
         {
           "title": "费用承担公司",
-          "component": "text",
-          "name": "reimburse.sysbusinessunitname"
+          "component": "label",
+          "label": [
+            "reimburse.cdbukrs",
+            "reimburse.cdbukrsname"
+          ]
         },
         {
           "title": "费用归集成本中心",
+          "component": "label",
+          "label": [
+            "reimburse.cdkostls",
+            "reimburse.cdkostlsname"
+          ]
+        },
+        {
+          "title": "出差申请单号",
           "component": "text",
-          "name": "afuser.pfach"
+          "name": "reimburse.atrlnr"
         },
         {
           "title": "说明",
-          "component": "text",
-          "name": "afuser.telpr"
+          "component": "textarea",
+          "name": "reimburse.smemo"
         }
       ]
     },
@@ -270,7 +291,7 @@
           "name": "reimburse.protype",
           "options": [
             {
-              "text": "通用",
+              "text": "通用项目",
               "value": "0"
             },
             {
