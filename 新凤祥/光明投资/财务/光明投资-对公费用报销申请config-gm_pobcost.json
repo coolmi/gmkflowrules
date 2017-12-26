@@ -202,21 +202,51 @@
       ]
     },
     {
+      "title": "汇总信息",
+      "pageid": "totalInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用承担部门",
+          "component": "text",
+          "name": "pobcost.reimbursedept"
+        },
+        {
+          "title": "供应商描述",
+          "component": "text",
+          "name": "pobcost.lifnrtext"
+        },
+        {
+          "title": "汇款用途",
+          "component": "textarea",
+          "rows":"3",
+          "editablenode": "",
+          "name": "pobcost.sused"
+        },
+        {
+          "title": "预付款金额",
+          "component": "text",
+          "datatype": "money",
+          "editablenode": "",
+          "name": "pobcost.deposit"
+        },
+        {
+          "title": "预付款金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.kuname"
+        }
+      ]
+    },
+    {
       "title": "费用列表",
       "pageid": "fylb",
       "component": "panel",
       "subComponents": [
         {
           "title": "费用承担部门",
-          "component": "label",
-          "editablenode": "",
-          "middleName": [
-            "pobcost.reimbursedept",
-            "objid"
-          ],
-          "label": [
-            "orgs.stext"
-          ]
+          "component": "text",
+          "name": "pobcost.reimbursedept"
         },
         {
           "title": "费用控制类型",

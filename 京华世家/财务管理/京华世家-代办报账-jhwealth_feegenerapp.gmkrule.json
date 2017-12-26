@@ -160,6 +160,59 @@
       ]
     },
     {
+      "title": "汇总信息",
+      "pageid": "totalInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "hzfylx",
+          "basePath": "rulist",
+          "tableForms": [
+            {
+              "title": "费用类型",
+              "component": "text",
+              "name": "stypes"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "sdates"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edates"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "dmbtrs"
+            },
+            {
+              "title": "补助",
+              "component": "text",
+              "datatype": "money",
+              "name": "subsidys"
+            },
+            {
+              "title": "超限金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "ulfees"
+            },
+            {
+              "title": "出差申请号",
+              "component": "text",
+              "name": "trlnrs"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "汇总",
       "pageid": "hz",
       "component": "panel",
