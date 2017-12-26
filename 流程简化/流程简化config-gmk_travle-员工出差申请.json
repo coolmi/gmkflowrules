@@ -105,8 +105,8 @@
       ]
     },
     {
-      "title": "出差明细",
-      "pageid": "ccmx",
+      "title": "申请信息",
+      "pageid": "applyInfo",
       "component": "panel",
       "subComponents": [
         {
@@ -116,13 +116,8 @@
         },
         {
           "title": "费用归集成本中心",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "travle.m_cbzx",
-            "",
-            "travle.m_cbzxnm"
-          ]
+          "component": "text",
+          "name": "travle.m_cbzxnm"
         },
         {
           "title": "是否提高标准",
@@ -152,7 +147,14 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "出差申请明细",
+      "pageid": "ccmx",
+      "component": "panel",
+      "subComponents": [
         {
           "component": "table_ccmx",
           "titleIndex": 1,
@@ -184,14 +186,14 @@
               "name": "transmode"
             },
             {
-              "title": "是否签约宾馆",
-              "component": "text",
-              "name": "besign"
-            },
-            {
               "title": "工作内容",
               "component": "textarea",
               "name": "workc"
+            },
+            {
+              "title": "类型",
+              "component": "text",
+              "name": "tp"
             }
           ]
         }
