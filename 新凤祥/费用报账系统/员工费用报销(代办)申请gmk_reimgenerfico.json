@@ -1,5 +1,5 @@
 {
-  "id": "gmk_reimfico",
+  "id": "gmk_reimgenerfico",
   "handleOnPC": {
     "tasknode": [
       "accout",
@@ -129,83 +129,39 @@
       "pageid": "bxrxx",
       "component": "panel",
       "subComponents": [
-
-      ]
-    },
-    {
-      "title": "汇总",
-      "pageid": "hz",
-      "component": "panel",
-      "subComponents": [
         {
-          "title": "合计金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_dmbtr"
-        },
-        {
-          "title": "合计补助",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_subsidy"
-        },
-        {
-          "title": "合计超限金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_ulfee"
-        },
-        {
-          "title": "总计",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_all"
-        },
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "hzfylx",
-          "basePath": "rulist",
-          "tableForms": [
-            {
-              "title": "费用类型",
-              "component": "text",
-              "name": "stypes"
-            },
-            {
-              "title": "开始日期",
-              "component": "text",
-              "name": "sdates"
-            },
-            {
-              "title": "结束日期",
-              "component": "text",
-              "name": "edates"
-            },
-            {
-              "title": "金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "dmbtrs"
-            },
-            {
-              "title": "补助",
-              "component": "text",
-              "datatype": "money",
-              "name": "subsidys"
-            },
-            {
-              "title": "超限金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "ulfees"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrs"
-            }
+          "title": "员工ITCODE",
+          "component": "label",
+          "label": [
+            "afuser.userid",
+            "",
+            "afuser.ename"
           ]
+        },
+        {
+          "title": "员工编号",
+          "component": "text",
+          "name": "afuser.pernr"
+        },
+        {
+          "title": "员工所在部门",
+          "component": "text",
+          "name": "afuser.orgeh"
+        },
+        {
+          "title": "所在公司",
+          "component": "text",
+          "name": "afuser.compayname"
+        },
+        {
+          "title": "员工财务编码",
+          "component": "text",
+          "name": "afuser.lifnr"
+        },
+        {
+          "title": "代办手机号",
+          "component": "text",
+          "name": "afuser.gtelpr"
         }
       ]
     },
@@ -217,6 +173,7 @@
         {
           "title": "报销类型",
           "component": "select",
+          "editablenode": "",
           "name": "reimburse.notravle",
           "options": [
             {
@@ -247,29 +204,28 @@
         {
           "title": "费用承担公司",
           "component": "label",
+          "editablenode": "",
           "label": [
             "reimburse.cdbukrs",
+            "",
             "reimburse.cdbukrsname"
           ]
         },
+
         {
-          "title": "费用归集成本中心",
-          "component": "label",
-          "label": [
-            "reimburse.cdkostls",
-            "reimburse.cdkostlsname"
-          ]
-        },
-        {
-          "title": "出差申请单号",
+          "title": "附件数",
           "component": "text",
-          "name": "reimburse.atrlnr"
+          "editablenode": "",
+          "name": "reimburse.numpg"
         },
         {
           "title": "说明",
           "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
           "name": "reimburse.smemo"
-        },
+        }
+      ,
         {
           "title": "长途交通",
           "component": "panel",
@@ -787,6 +743,83 @@
                   "name": "trlnrg"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "汇总",
+      "pageid": "hz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "合计金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_dmbtr"
+        },
+        {
+          "title": "合计补助",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_subsidy"
+        },
+        {
+          "title": "合计超限金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_ulfee"
+        },
+        {
+          "title": "总计",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_all"
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "hzfylx",
+          "basePath": "rulist",
+          "tableForms": [
+            {
+              "title": "费用类型",
+              "component": "text",
+              "name": "stypes"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "sdates"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edates"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "dmbtrs"
+            },
+            {
+              "title": "补助",
+              "component": "text",
+              "datatype": "money",
+              "name": "subsidys"
+            },
+            {
+              "title": "超限金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "ulfees"
+            },
+            {
+              "title": "出差申请号",
+              "component": "text",
+              "name": "trlnrs"
             }
           ]
         }

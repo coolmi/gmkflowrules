@@ -105,22 +105,6 @@
 				
 
             },
-            {
-                "title": "印章使用日期",
-                "component": "date1",
-                "name": "sealapp.sealsdate"
-            },
-			{
-                "title": "印章归还日期",
-                "component": "date1",
-                "name": "sealapp.sealedate",
-				"showLinkage":[
-					{
-						"id":"unittype",
-						"values":["1"]
-					}
-				]
-            },
 			{
                 "title": "同行人",
                 "component": "label",
