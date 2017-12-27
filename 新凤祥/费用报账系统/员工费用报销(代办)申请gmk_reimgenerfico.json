@@ -211,12 +211,15 @@
             "reimburse.cdbukrsname"
           ]
         },
-
         {
-          "title": "附件数",
-          "component": "text",
+          "title": "费用归集成本中心",
+          "component": "label",
           "editablenode": "",
-          "name": "reimburse.numpg"
+          "label": [
+            "reimburse.cdkostls",
+            "",
+            "reimburse.cdkostlsname"
+          ]
         },
         {
           "title": "说明",
@@ -224,8 +227,7 @@
           "rows": "3",
           "editablenode": "",
           "name": "reimburse.smemo"
-        }
-      ,
+        },
         {
           "title": "长途交通",
           "component": "panel",
@@ -290,12 +292,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnr"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnr"
                 }
               ]
             }
@@ -351,16 +347,6 @@
                   }
                 },
                 {
-                  "title": "乘车人",
-                  "component": "text",
-                  "name": "enamec"
-                },
-                {
-                  "title": "客户名称",
-                  "component": "text",
-                  "name": "kunamec"
-                },
-                {
                   "title": "金额",
                   "component": "text",
                   "datatype": "money",
@@ -370,12 +356,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrc"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrc"
                 }
               ]
             }
@@ -416,25 +396,9 @@
                   "name": "dmbtro"
                 },
                 {
-                  "title": "使用人",
-                  "component": "text",
-                  "name": "enameo"
-                },
-                {
-                  "title": "客户名称",
-                  "component": "text",
-                  "name": "kunameo"
-                },
-                {
                   "title": "项目号",
                   "component": "text",
                   "name": "colnro"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnro"
                 }
               ]
             }
@@ -469,16 +433,6 @@
                   "name": "sdatem"
                 },
                 {
-                  "title": "地点",
-                  "component": "text",
-                  "name": "saddrm"
-                },
-                {
-                  "title": "餐馆",
-                  "component": "text",
-                  "name": "eaterym"
-                },
-                {
                   "title": "金额",
                   "component": "text",
                   "datatype": "money",
@@ -488,19 +442,13 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrm"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrm"
                 }
               ]
             }
           ]
         },
         {
-          "title": "住宿费",
+          "title": "住宿及餐补",
           "component": "panel",
           "panel_id": "zsjcbhz",
           "id": "zsjcbhz1",
@@ -538,11 +486,6 @@
                   "name": "hotelh"
                 },
                 {
-                  "title": "酒店地点",
-                  "component": "text",
-                  "name": "saddrh"
-                },
-                {
                   "title": "金额",
                   "component": "text",
                   "datatype": "money",
@@ -555,12 +498,6 @@
                   "name": "mealsuph"
                 },
                 {
-                  "title": "住宿补扣",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "mulfeeh"
-                },
-                {
                   "title": "扣除餐补",
                   "component": "text",
                   "datatype": "money",
@@ -570,12 +507,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrh"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrh"
                 }
               ]
             }
@@ -605,16 +536,6 @@
                   }
                 },
                 {
-                  "title": "开始日期",
-                  "component": "date1",
-                  "name": "sdatet"
-                },
-                {
-                  "title": "结束日期",
-                  "component": "date1",
-                  "name": "edatet"
-                },
-                {
                   "title": "书籍课程名称",
                   "component": "text",
                   "name": "traint"
@@ -634,12 +555,6 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrt"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrt"
                 }
               ]
             }
@@ -727,20 +642,9 @@
                   "name": "smemg"
                 },
                 {
-                  "title": "慰问人",
-                  "component": "text",
-                  "name": "enameg"
-                },
-                {
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrg"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrg"
                 }
               ]
             }
