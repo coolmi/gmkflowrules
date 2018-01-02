@@ -131,7 +131,7 @@
         },
         {
           "title": "区域负责人",
-          "component": "date1",
+          "component": "text",
           "name": "mainModel.ownertxt"
         },
 
