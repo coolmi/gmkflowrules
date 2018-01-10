@@ -90,7 +90,7 @@
         "subComponents": [{
             "title": "二级部门",
             "component": "text",
-            "name": "mainModel.m_deptnms",
+            "name": "mainModel.m_deptnms"
         },
         {
             "component": "table",

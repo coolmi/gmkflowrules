@@ -105,6 +105,7 @@
 		"subComponents": [
 		{
 			"title": "",
+			"id": "holidaytype",
 			"component": "hidden",
 			"name": "mainModel.holidaytype"
 		},
@@ -134,9 +135,19 @@
 			  }
 			],
 			"showLinkage": [{
-							  "id": "mainModel.holidaytype",
+							  "id": "holidaytype",
 							  "values": ["B01"]
 							}]
+		},
+		{
+		  "title": "直系亲属",
+		  "component": "text",
+		  "name": "mainModel.zxqs",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": ["A05"]
+						  }]
+
 		},
 		{
 			"title": "哺乳假休假方式",
@@ -158,58 +169,8 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A11"]
-            }]
-		},
-		{
-			"title": "存调休小时数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ctxxss",
-			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["A02","A11"]
-            }]
-		},
-		{
-			"title": "可休调休天数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ctxts",
-			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["C01"]
-            }]
-		},
-		{
-			"title": "可休调休年假天数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ctxnjts",
-			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["C01"]
-            }]
-		},
-		{
-			"title": "当月已休事假天数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ljsjtsm",
-			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["C01"]
-            }]
-		},
-		{
-			"title": "当年已休事假天数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ljsjtsy",
-			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["C01"]
             }]
 		},
 		{
@@ -230,7 +191,7 @@
 			"editablenode": "",
 			"name": "mainModel.timea",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -242,7 +203,7 @@
 			"editablenode": "",
 			"name": "mainModel.timeb",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -262,7 +223,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -282,7 +243,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -293,7 +254,7 @@
 			"editablenode": "",
 			"name": "mainModel.thisdays",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
@@ -304,8 +265,8 @@
 			"editablenode": "",
 			"name": "mainModel.comdays",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
-                "values": ["B01","A03","A04","A08","A05","A07"]
+                "id": "holidaytype",
+                "values": []
             }]
 		},
 		{
@@ -315,7 +276,7 @@
 			"editablenode": "",
 			"name": "mainModel.thishours",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","A11"]
             }]
 		},
@@ -326,7 +287,7 @@
 			"editablenode": "",
 			"name": "mainModel.enjoy",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -337,7 +298,7 @@
 			"editablenode": "",
 			"name": "mainModel.hasuse",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -348,7 +309,7 @@
 			"editablenode": "",
 			"name": "mainModel.surplus",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["J01"]
             }]
 		},
@@ -359,7 +320,7 @@
 			"editablenode": "usertask9",
 			"name": "mainModel.effecta",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A11"]
             }]
 		},
@@ -370,7 +331,7 @@
 			"editablenode": "usertask9",
 			"name": "mainModel.effectb",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A11"]
             }]
 		},
@@ -396,7 +357,7 @@
 			"component": "date1",
 			"name": "mainModel.acsdate",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07","A11"]
             },
 			{
@@ -412,7 +373,7 @@
 			"editablenode": "",
 			"name": "mainModel.acedate",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07","A11"]
             },
 			{
@@ -428,7 +389,7 @@
 			"editablenode": "",
 			"name": "mainModel.actimea",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","A11"]
             },
 			{
@@ -445,7 +406,7 @@
 			"editablenode": "",
 			"name": "mainModel.actimeb",
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["A02","A11"]
             },
 			{
@@ -470,7 +431,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             },
 			{
@@ -495,7 +456,7 @@
 				}
 			],
 			"showLinkage": [{
-                "id": "mainModel.holidaytype",
+                "id": "holidaytype",
                 "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
             },
 			{
@@ -518,6 +479,56 @@
 			"rows" : "3",
 			"editablenode": "",
 			"name": "mainModel.readks"
+		},
+		{
+		  "title": "存调休小时数",
+		  "display": "none",
+		  "component": "text",
+		  "name": "mainModel.ctxxss",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": ["A02","A11"]
+						  }]
+		},
+		{
+		  "title": "可休调休天数",
+		  "display": "none",
+		  "component": "text",
+		  "name": "mainModel.ctxts",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": []
+						  }]
+		},
+		{
+		  "title": "可休调休年假天数",
+		  "display": "none",
+		  "component": "text",
+		  "name": "mainModel.ctxnjts",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": []
+						  }]
+		},
+		{
+		  "title": "当月已休事假天数",
+		  "display": "none",
+		  "component": "text",
+		  "name": "mainModel.ljsjtsm",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": ["C01"]
+						  }]
+		},
+		{
+		  "title": "当年已休事假天数",
+		  "display": "none",
+		  "component": "text",
+		  "name": "mainModel.ljsjtsy",
+		  "showLinkage": [{
+							"id": "holidaytype",
+							"values": ["C01"]
+						  }]
 		}]
 	},
 	{
