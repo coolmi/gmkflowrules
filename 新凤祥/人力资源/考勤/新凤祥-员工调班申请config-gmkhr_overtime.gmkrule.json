@@ -97,19 +97,21 @@
             "titleIndex": 0,
             "basePath": "overtimesublist",
             "cells": [{
-                "title": "加班日期",
-                "component": "date1",
+                "title": "值班日期",
+                "component": "text",
+                "datatype":"date",
+                "dateFormat":"yyyy-MM-dd",
                 "name": "s_date"
             },
             {
-                "title": "加班开始时间",
+                "title": "值班开始时间",
                 "component": "text",
                 "datatype":"date",
                 "dateFormat":"HH:mm",
                 "name": "s_starttime"
             },
             {
-                "title": "加班结束时间",
+                "title": "值班结束时间",
                 "component": "text",
                 "datatype":"date",
                 "dateFormat":"HH:mm",
@@ -135,12 +137,12 @@
                 "name": "s_relex_hours"
             },
             {
-                "title": "加班时长(小时)",
+                "title": "值班时长(小时)",
                 "component": "text",
                 "name": "s_work_hours"
             },
             {
-                "title": "加班原因",
+                "title": "值班原因",
                 "component": "textarea",
                 "name": "s_why"
             }]
