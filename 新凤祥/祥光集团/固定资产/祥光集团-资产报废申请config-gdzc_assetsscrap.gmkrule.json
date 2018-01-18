@@ -100,9 +100,19 @@
         },
            {
                "title": "是否达到预计使用年限",
-               "component": "textarea",
+               "component": "select",
                "rows": "3",
-               "name": "mainModel.isdue"
+               "name": "mainModel.isdue",
+               "options": [
+                   {
+                       "text": "否",
+                       "value": "0"
+                   },
+                   {
+                       "text": "是",
+                       "value": "1"
+                   }
+               ]
            },
         {
             "title": "",
