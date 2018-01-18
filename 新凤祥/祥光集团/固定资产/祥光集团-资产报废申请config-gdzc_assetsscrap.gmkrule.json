@@ -98,6 +98,12 @@
             "rows": "3",
             "name": "mainModel.ktext"
         },
+           {
+               "title": "是否达到预计使用年限",
+               "component": "textarea",
+               "rows": "3",
+               "name": "mainModel.isdue"
+           },
         {
             "title": "",
             "component": "formLabelLink",
