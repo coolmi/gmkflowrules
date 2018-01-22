@@ -1,0 +1,280 @@
+{
+  "id": "gmk_lcchangeinfotwo",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "信用证改证明细表",
+      "pageid": "xyzmxtable",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "xyzmx_table",
+          "basePath": "lcchangeinfotwosubapplist",
+          "tableForms": [
+            {
+              "title": "改证登记号",
+              "component": "text",
+              "name": "zGZDJH"
+            },
+            {
+              "title": "业务类型",
+              "component": "text",
+              "name": "bUKRS"
+            },
+            {
+              "title": "公司名称",
+              "component": "text",
+              "name": "bUKRSNAME"
+            },
+            {
+              "title": "开证计划号",
+              "component": "text",
+              "name": "zKZJH"
+            },
+            {
+              "title": "开证登记号",
+              "component": "text",
+              "name": "zKZDJH"
+            },
+            {
+              "title": "信用证号",
+              "component": "text",
+              "name": "zXYZH"
+            },
+            {
+              "title": "合同号",
+              "component": "text",
+              "name": "zDDHTH"
+            },
+            {
+              "title": "修改种类",
+              "component": "text",
+              "name": "zXGZL"
+            },
+            {
+              "title": "修改原因",
+              "component": "text",
+              "name": "zXGYY"
+            },
+            {
+              "title": "开证币种",
+              "component": "text",
+              "name": "zKZBZ"
+            },
+            {
+              "title": "开证金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "zKZJE"
+            },
+            {
+              "title": "增额手续费",
+              "component": "text",
+              "datatype": "money",
+              "name": "zZYSXEDJE"
+            },
+            {
+              "title": "收付款种类",
+              "component": "text",
+              "name": "sXBZ"
+            },
+            {
+              "title": "开证数量",
+              "component": "text",
+              "name": "zKZSL"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "zKZDW"
+            },
+            {
+              "title": "到期日期",
+              "component": "date1",
+              "name": "zDQRQ"
+            },
+            {
+              "title": "装运日期",
+              "component": "date1",
+              "name": "zZYRQ"
+            },
+            {
+              "title": "手续费币种",
+              "component": "text",
+              "name": "zSXFBZ"
+            },
+            {
+              "title": "手续费种类",
+              "component": "text",
+              "name": "sXHZL"
+            },
+            {
+              "title": "改证手续费",
+              "component": "text",
+              "name": "zGZSXF"
+            },
+            {
+              "title": "增额金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "zZEJE"
+            },
+            {
+              "title": "保证金币种",
+              "component": "text",
+              "name": "bZJBZ"
+            },
+            {
+              "title": "增额保证金",
+              "component": "text",
+              "datatype": "money",
+              "name": "zZEBZJ"
+            },
+            {
+              "title": "卖方",
+              "component": "text",
+              "name": "zSELL"
+            },
+            {
+              "title": "其他",
+              "component": "text",
+              "name": "zQT"
+            },
+            {
+              "title": "修改方案",
+              "component": "text",
+              "name": "zXGFA"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "zREMARK"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
