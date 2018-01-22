@@ -1,0 +1,278 @@
+{
+  "id": "gmk_yearfundplan",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "业务所属公司编码",
+          "component": "text",
+          "name": "mainModel.bUKRS"
+        },
+        {
+          "title": "业务所属公司",
+          "component": "text",
+          "name": "mainModel.bUTXT"
+        },
+        {
+          "title": "项目编码",
+          "component": "text",
+          "name": "mainModel.zACCID"
+        },
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.zACCTXT"
+        }
+      ]
+    },
+    {
+      "title": "年度资金明细表",
+      "pageid": "zjmxtable",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "zjmx_table",
+          "basePath": "yearchildfundplanlist",
+          "tableForms": [
+            {
+              "title": "行项目识别号",
+              "component": "text",
+              "name": "iNFO_INGUID"
+            },
+            {
+              "title": "单位名称",
+              "component": "text",
+              "name": "iNFO_BUTXT"
+            },
+            {
+              "title": "项目名称",
+              "component": "text",
+              "name": "iNFO_ZACCTXT"
+            },
+            {
+              "title": "项目内容",
+              "component": "text",
+              "name": "iNFO_ZTMMARK"
+            },
+            {
+              "title": "收支类别",
+              "component": "text",
+              "name": "iNFO_ZSZ_TYP"
+            },
+            {
+              "title": "融资类型",
+              "component": "text",
+              "name": "iNFO_ZRZ_TYP"
+            },
+            {
+              "title": "计划日期",
+              "component": "date1",
+              "name": "iNFO_ZJH_DATE"
+            },
+            {
+              "title": "业务单据号",
+              "component": "text",
+              "name": "iNFO_ZJH_DOC"
+            },
+            {
+              "title": "数量",
+              "component": "text",
+              "name": "iNFO_ZJH_QTY"
+            },
+            {
+              "title": "单价描述",
+              "component": "text",
+              "name": "iNFO_ZJH_DJMS"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "iNFO_ZJH_PRICE"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "iNFO_RTCUR"
+            },
+            {
+              "title": "凭证币金额",
+              "component": "text",
+              "name": "iNFO_WRBTR"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "iNFO_UKURS"
+            },
+            {
+              "title": "人民币金额",
+              "component": "text",
+              "name": "iNFO_DMBTR"
+            },
+            {
+              "title": "业务伙伴编码",
+              "component": "text",
+              "name": "iNFO_PARTNER"
+            },
+            {
+              "title": "业务伙伴名称",
+              "component": "text",
+              "name": "iNFO_NAME_ORG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "汇总",
+      "pageid": "total",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "total_table",
+          "basePath": "yearmonthsums",
+          "tableForms": [
+            {
+              "title": "日期（年月）",
+              "component": "date1",
+              "name": "datetxt"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "name": "sumoney"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
