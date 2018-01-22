@@ -1,0 +1,264 @@
+{
+  "id": "gmk_financeapply",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "融资申请及合同台账维护明细表",
+      "pageid": "rzsqmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "rzsqmx_table",
+          "basePath": "financeapplysublist",
+          "tableForms": [
+            {
+              "title": "融资申请单号",
+              "component": "text",
+              "name": "rZSZD"
+            },
+            {
+              "title": "申请单位",
+              "component": "text",
+              "name": "bUKRS"
+            },
+            {
+              "title": "单位名称",
+              "component": "text",
+              "name": "bUTXT"
+            },
+            {
+              "title": "银行名称编码",
+              "component": "text",
+              "name": "pARTNER"
+            },
+            {
+              "title": "银行名称描述",
+              "component": "text",
+              "name": "nAME_ORG1"
+            },
+            {
+              "title": "计划项目",
+              "component": "text",
+              "name": "zACCID"
+            },
+            {
+              "title": "计划项目名称",
+              "component": "text",
+              "name": "zACCTXT"
+            },
+            {
+              "title": "计划融资品种",
+              "component": "text",
+              "name": "zRZ_TYP"
+            },
+            {
+              "title": "资金计划币种",
+              "component": "text",
+              "name": "rTCUR"
+            },
+            {
+              "title": "资金计划金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "wRBTR"
+            },
+            {
+              "title": "申请融资品种",
+              "component": "text",
+              "name": "sQRZPZ"
+            },
+            {
+              "title": "申请融资品种描述",
+              "component": "text",
+              "name": "xKBEZ"
+            },
+            {
+              "title": "借款开始日",
+              "component": "date1",
+              "name": "jKKSR"
+            },
+            {
+              "title": "借款到期日",
+              "component": "date1",
+              "name": "jKDQR"
+            },
+            {
+              "title": "融资申请币种",
+              "component": "text",
+              "name": "zRZBZ"
+            },
+            {
+              "title": "借款金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "zJKJE"
+            },
+            {
+              "title": "借款利率（%）",
+              "component": "text",
+              "name": "zJKLL"
+            },
+            {
+              "title": "保证金币种",
+              "component": "text",
+              "name": "bZJBZ"
+            },
+            {
+              "title": "保证金金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "bZJJE"
+            },
+            {
+              "title": "保证金存款利率",
+              "component": "text",
+              "name": "bZJLL"
+            },
+            {
+              "title": "保证金存入日期",
+              "component": "date1",
+              "name": "bZJCRRQ"
+            },
+            {
+              "title": "保证金结束日期",
+              "component": "date1",
+              "name": "bZJSFRQ"
+            },
+            {
+              "title": "担保情况",
+              "component": "text",
+              "name": "zDBQK"
+            },
+            {
+              "title": "备注说明",
+              "component": "text",
+              "name": "zTMMARK"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
