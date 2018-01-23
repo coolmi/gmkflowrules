@@ -1,0 +1,164 @@
+{
+    "id": "gmk_equiprocut",
+    "handleOnPC": {
+        "tasknode": [
+            "usertask2"
+        ],
+        "flag": [
+            "resubmit"
+        ]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [
+        {
+            "title": "基本信息",
+            "pageid": "jbxx",
+            "component": "panel",
+            "subComponents": [
+                {
+                    "title": "申请单号",
+                    "component": "text",
+                    "name": "mainModel.appid"
+                },
+                {
+                    "title": "申请日期",
+                    "component": "date1",
+                    "name": "mainModel.appda"
+                },
+                {
+                    "title": "申请人姓名",
+                    "component": "label",
+                    "label": [
+                        "mainModel.pernr",
+                        "-",
+                        "mainModel.username"
+                    ]
+                },
+                {
+                    "title": "所属部门",
+                    "component": "label",
+                    "label": [
+                        "mainModel.sysbusinessunitname",
+                        "-",
+                        "mainModel.sysdeptname"
+                    ]
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.bukrs"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.userid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.username"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.pernr"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.syspostname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitname"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.postid"
+                },
+                {
+                    "title": "",
+                    "component": "hidden",
+                    "name": "mainModel.id"
+                }
+            ]
+        },
+        {
+            "title": "申请信息",
+            "component": "panel",
+            "pageid": "fjxx_huizong",
+            "panel_id": "panuapply",
+            "id": "uapply",
+            "subComponents": [
+                {
+                    "component": "table_form",
+                    "titleIndex": 0,
+                    "id": "equiprocutchildlist",
+                    "basePath": "equiprocutchildlist",
+                    "tableForms": [
+                        {"title": "资产类型", "component": "text", "name": "assetstypetxt"},
+                        {"title": "预算年", "component": "text", "name": "gjahr"},
+                        {"title": "使用人", "component": "text", "name": "upostxt"},
+                        {"title": "所属公司", "component": "text", "name": "cdbukrs"},
+                        {"title": "所属成本中心", "component": "text", "name": "cdkostl"},
+                        {"title": "预算项目", "component": "text", "name": "itemv"},
+                        {"title": "资产描述", "component": "text", "name": "itemassetdes"},
+                        {"title": "需求说明", "component": "text", "name": "requiredes"},
+                        {"title": "报废申请单号", "component": "text", "name": "bfappid"},
+                        {"title": "采购原因", "component": "text", "name": "purchasereason"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "设备主数据信息",
+            "component": "panel",
+            "pageid": "fjxx_hg",
+            "panel_id": "pasbzsjly",
+            "id": "sbzsj",
+            "subComponents": [
+                {
+                    "component": "table_form",
+                    "titleIndex": 1,
+                    "id": "equiprocutmdatachildlist",
+                    "basePath": "equiprocutmdatachildlist",
+                    "tableForms": [
+                        {"title": "资产类别", "component": "text", "name": "acetatext"},
+                        {"title": "资产描述", "component": "text", "name": "assesdestxt"},
+                        {"title": "品牌", "component": "text", "name": "brands"},
+                        {"title": "型号", "component": "text", "name": "modeld"},
+                        {"title": "参数", "component": "text", "name": "parameter"},
+                        {"title": "数量", "component": "text", "name": "num"},
+                        {"title": "单位", "component": "text", "name": "company"},
+                        {"title": "单价", "component": "text", "name": "unitprice"},
+                        {"title": "总价", "component": "text", "name": "totalproce"},
+                        {"title": "需求类型", "component": "text", "name": "info_demandtxt"}
+
+                    ]
+                }
+            ]
+        }
+    ],
+    "refers": {
+    }
+}
