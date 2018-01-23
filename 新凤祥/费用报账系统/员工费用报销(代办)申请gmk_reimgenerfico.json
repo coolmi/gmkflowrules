@@ -130,11 +130,10 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "员工ITCODE",
+          "flowshow": true,
+          "title": "被报销人",
           "component": "label",
           "label": [
-            "afuser.userid",
-            "",
             "afuser.ename"
           ]
         },
@@ -658,24 +657,28 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "合计金额",
           "component": "text",
           "datatype": "money",
           "name": "combined_dmbtr"
         },
         {
+          "flowshow": true,
           "title": "合计补助",
           "component": "text",
           "datatype": "money",
           "name": "combined_subsidy"
         },
         {
+          "flowshow": true,
           "title": "合计超限金额",
           "component": "text",
           "datatype": "money",
           "name": "combined_ulfee"
         },
         {
+          "flowshow": true,
           "title": "总计",
           "component": "text",
           "datatype": "money",

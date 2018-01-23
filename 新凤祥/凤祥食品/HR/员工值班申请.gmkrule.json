@@ -127,6 +127,7 @@
 			"component": "panel",
 			"subComponents": [
 				{
+                    "flowshow": true,
 					"title": "值班类型",
 					"component": "select",
 					"id": "mainModel_ondutytype",
@@ -148,6 +149,7 @@
 					]
 				},
 				{
+                    "flowshow": true,
 					"title": "值班理由",
 					"component": "textarea",
 					"id": "mainModel_ondutyreason",

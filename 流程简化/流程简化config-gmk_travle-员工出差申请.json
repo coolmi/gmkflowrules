@@ -135,6 +135,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "提高标准原因",
           "component": "textarea",
           "rows": 5,
@@ -161,6 +162,7 @@
           "basePath": "bases",
           "tableForms": [
             {
+              "flowshow": true,
               "title": "出发日期",
               "component": "date1",
               "name": "startda"
@@ -176,16 +178,19 @@
               "name": "splace"
             },
             {
+              "flowshow": true,
               "title": "到达地点",
               "component": "text",
               "name": "eplace"
             },
             {
+              "flowshow": true,
               "title": "交通方式",
               "component": "text",
               "name": "transmode"
             },
             {
+              "flowshow": true,
               "title": "工作内容",
               "component": "textarea",
               "name": "workc"

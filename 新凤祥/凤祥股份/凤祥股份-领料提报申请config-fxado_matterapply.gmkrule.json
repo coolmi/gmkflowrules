@@ -137,11 +137,13 @@
               "name": "info_wlcode"
             },
             {
+              "flowshow": true,
               "title": "物料描述",
               "component": "text",
               "name": "info_wldescribe"
             },
             {
+              "flowshow": true,
               "title": "需求量",
               "component": "text",
               "name": "info_demand"
@@ -152,12 +154,14 @@
               "name": "info_unit"
             },
             {
+              "flowshow": true,
               "title": "备注",
               "editablenode": "",
               "component": "text",
               "name": "info_remark"
             },
             {
+              "flowshow": true,
               "title": "需求日期",
               "component": "text",
               "name": "info_needdate"

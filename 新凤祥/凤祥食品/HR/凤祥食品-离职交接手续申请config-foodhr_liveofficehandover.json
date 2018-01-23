@@ -106,6 +106,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "离职人",
           "component": "text",
           "name": "mainModel.zlzrxm"
@@ -146,6 +147,7 @@
           "name": "mainModel.zlzrpostname"
         },
         {
+          "flowshow": true,
           "title": "离职类型",
           "component": "radio",
           "name": "mainModel.lzlx",
@@ -169,6 +171,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "计划离职日期",
           "component": "date1",
           "name": "mainModel.jhlzrq"
@@ -189,6 +192,7 @@
           "name": "mainModel.ssshm"
         },
         {
+          "flowshow": true,
           "title": "是否需要离职审计",
           "component": "select",
           "name": "mainModel.sflzsj",

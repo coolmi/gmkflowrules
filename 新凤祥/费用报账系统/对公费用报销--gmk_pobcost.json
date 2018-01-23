@@ -111,12 +111,14 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "费用承担公司",
           "component": "text",
           "name": "mainModel.m_bukrsnm"
         },
         {
-          "title": "说明",
+          "flowshow": true,
+          "title": "报销说明",
           "component": "textarea",
           "rows": 5,
           "editablenode": "",
@@ -139,6 +141,7 @@
           "titleIndex": 2,
           "linkForms": [
             {
+              "flowshow": true,
               "title": "承担部门",
               "component": "text",
               "name": "s_deptnm"
@@ -215,6 +218,7 @@
           "name": "mainModel.m_supplierid"
         },
         {
+          "flowshow": true,
           "title": "供应商描述",
           "component": "text",
           "name": "mainModel.m_suppliernm"
@@ -256,12 +260,14 @@
           "name": "mainModel.m_paycls"
         },
         {
+          "flowshow": true,
           "title": "汇款用途",
           "component": "textarea",
           "editablenode": "",
           "name": "mainModel.m_payuses"
         },
         {
+          "flowshow": true,
           "title": "预付款金额",
           "component": "text",
           "datatype": "money",

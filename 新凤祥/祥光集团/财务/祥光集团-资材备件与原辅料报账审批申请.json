@@ -106,11 +106,13 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "费用公司",
           "component": "text",
           "name": "mainModel.cdbutxt"
         },
         {
+          "flowshow": true,
           "title": "供应商名称",
           "component": "text",
           "name": "mainModel.suppliername"
@@ -136,6 +138,7 @@
           "name": "mainModel.contractnum"
         },
         {
+          "flowshow": true,
           "title": "已支付金额小写",
           "component": "text",
           "name": "mainModel.amount"
@@ -146,6 +149,7 @@
           "name": "mainModel.currencytxt"
         },
         {
+          "flowshow": true,
           "title": "报账金额小写",
           "component": "text",
           "name": "mainModel.invoiceamount"
@@ -156,12 +160,14 @@
           "name": "mainModel.amountup"
         },
         {
+          "flowshow": true,
           "title": "报账事由",
           "component": "textarea",
           "rows": 4,
           "name": "mainModel.reasons"
         },
         {
+          "flowshow": true,
           "title": "备注",
           "component": "textarea",
           "rows": 4,

@@ -106,16 +106,19 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "异动人姓名",
           "component": "text",
           "name": "mainModel.ydrname"
         },
         {
+          "flowshow": true,
           "title": "异动人岗位名称",
           "component": "text",
           "name": "mainModel.ydrpostname"
         },
         {
+          "flowshow": true,
           "title": "异动人所属部门",
           "component": "text",
           "name": "mainModel.ydrdeptname"
@@ -156,6 +159,7 @@
           "name": "mainModel.pxxy"
         },
         {
+          "flowshow": true,
           "title": "异动类型",
           "component": "select",
           "name": "mainModel.ydlx",

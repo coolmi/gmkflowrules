@@ -127,6 +127,7 @@
                 "name": "scrap_zcbh"
             },
             {
+                "flowshow": true,
                 "title": "资产描述",
                 "title1": "资产描述",
                 "component": "text",
@@ -200,12 +201,14 @@
                 "name": "scrap_ktext"
             },
             {
+                "flowshow": true,
                 "title": "",
                 "title1": "报废事由",
                 "component": "textarea",
                 "name": "scrap_bfsy"
             },
             {
+                "flowshow": true,
                 "title": "",
                 "title1": "资产净值",
                 "component": "text",

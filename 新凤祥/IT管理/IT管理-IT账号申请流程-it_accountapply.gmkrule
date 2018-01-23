@@ -106,6 +106,7 @@
       "component": "panel",
       "subComponents": [
       {
+      "flowshow": true,
                 "title": "类型",
                 "component": "select",
                 "name": "accountapply.atype",
@@ -122,19 +123,22 @@
                 ]
        },
         {
+            "flowshow": true,
           "title": "使用人姓名",
           "component": "text",
           "editablenode": "",
           "name": "accountapply.accsyrname"
         },
 		{
-          "title": "使用人ITCODE",
+		"flowshow": true,
+          "title": "ITCODE",
           "component": "text",
           "editablenode": "",
           "name": "accountapply.accsyritcode"
         },
 		{
-          "title": "使用人电话",
+		    "flowshow": true,
+          "title": "电话",
           "component": "text",
           "editablenode": "",
           "name": "accountapply.accsyrmobile"
@@ -177,6 +181,7 @@
           "name": "accountapply.accstartperiod"
         },
         {
+            "flowshow": true,
           "title": "申请账号类型",
           "component": "checkbox",
           "name": "accountapply.acctype",
@@ -215,6 +220,7 @@
           ]
         },
 		{
+		    "flowshow": true,
           "title": "申请原因",
           "component": "textarea",
           "rows": "3",

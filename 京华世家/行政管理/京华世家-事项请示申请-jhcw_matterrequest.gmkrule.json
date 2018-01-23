@@ -56,11 +56,13 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "标题",
           "component": "text",
           "name": "mainModel.m_title"
         },
         {
+          "flowshow": true,
           "title": "重要程度",
           "component": "select",
           "name": "mainModel.m_important",

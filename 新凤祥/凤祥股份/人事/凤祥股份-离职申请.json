@@ -124,11 +124,13 @@
           "tableForms": [
 
             {
+              "flowshow": true,
               "title": "离职人员",
               "component": "text",
               "name": "lzrname"
             },
             {
+              "flowshow": true,
               "title": "离职人员岗位",
               "component": "text",
               "name": "lzrpostname"
@@ -139,6 +141,7 @@
               "name": "lzrjobname"
             },
             {
+              "flowshow": true,
               "title": "离职人员部门",
               "component": "text",
               "name": "lzrdeptname"
@@ -154,6 +157,7 @@
               "name": "lzhcontact"
             },
             {
+              "flowshow": true,
               "title": "离职原因",
               "component": "textarea",
               "name": "lzyyms"

@@ -106,11 +106,13 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "费用公司",
           "component": "text",
           "name": "mainModel.cdbutxt"
         },
         {
+          "flowshow": true,
           "title": "供应商名称",
           "component": "text",
           "name": "mainModel.suppliername"
@@ -136,6 +138,7 @@
           "name": "mainModel.alpaypersent"
         },
         {
+          "flowshow": true,
           "title": "已支付金额小写",
           "component": "text",
           "name": "mainModel.alpayamount"
@@ -151,6 +154,7 @@
           "name": "mainModel.currencytxt"
         },
         {
+          "flowshow": true,
           "title": "报账金额小写",
           "component": "text",
           "name": "mainModel.invoiceamount"
@@ -161,6 +165,7 @@
           "name": "mainModel.invoiceamountup"
         },
         {
+          "flowshow": true,
           "title": "报账事由",
           "component": "textarea",
           "rows": 2,

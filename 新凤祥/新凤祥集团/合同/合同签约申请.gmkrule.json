@@ -124,6 +124,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "合同主体法人公司",
           "component": "label",
           "id": "contractsigning_gsxx",
@@ -150,6 +151,7 @@
             }]
         },
         {
+          "flowshow": true,
           "title": "合同执行状态   ",
           "component": "select",
           "id": "contractsigning_htzxzt",
@@ -189,6 +191,7 @@
           "name": "contractsigning.htbdw"
         },
         {
+          "flowshow": true,
           "title": "需求部门",
           "component": "text",
           "id": "contractsigning_xqbm",
@@ -275,6 +278,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "合同金额（小写）",
           "component": "text",
           "id": "contractsigning_htjexx",
@@ -351,6 +355,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "供应商名称",
           "component": "text",
           "id": "contractsigning_gysmc",
@@ -700,6 +705,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "印章名称",
           "component": "label",
           "id": "contractsigning_yzmc",

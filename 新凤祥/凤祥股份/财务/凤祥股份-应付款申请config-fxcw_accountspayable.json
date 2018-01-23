@@ -106,6 +106,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "付款所属公司",
           "component": "label",
           "label": [
@@ -118,6 +119,7 @@
           "name": "mainModel.xmmone"
         },
         {
+          "flowshow": true,
           "title": "项目名称",
           "component": "text",
           "name": "mainModel.xmmc"
@@ -168,6 +170,7 @@
               "name": "gysbh"
             },
             {
+              "flowshow": true,
               "title": "供应商名称",
               "component": "text",
               "name": "gysmc"
@@ -193,6 +196,7 @@
               "name": "hb"
             },
             {
+              "flowshow": true,
               "title": "总金额",
               "component": "text",
               "name": "zje"

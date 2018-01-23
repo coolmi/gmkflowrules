@@ -127,6 +127,7 @@
               "name": "mainModel.holidaytype"
             },
             {
+              "flowshow": true,
               "title": "休假类型",
               "component": "text",
               "name": "mainModel.holidaytypename"
@@ -142,6 +143,7 @@
               "name": "mainModel.edate"
             },
             {
+              "flowshow": true,
               "title": "计划休假天数",
               "component": "text",
               "name": "mainModel.thisdays"
@@ -195,6 +197,7 @@
               ]
             },
             {
+              "flowshow": true,
               "title": "开始时间",
               "component": "text",
               "name": "mainModel.timeaval",
@@ -208,6 +211,7 @@
               ]
             },
             {
+              "flowshow": true,
               "title": "结束时间",
               "component": "text",
               "name": "mainModel.timebval",
@@ -409,16 +413,19 @@
                       "name": "fxstypename"
                     },
                     {
+                      "flowshow": true,
                       "title": "请假开始日期",
                       "component": "date1",
                       "name": "fxsdate"
                     },
                     {
+                      "flowshow": true,
                       "title": "请假结束日期",
                       "component": "date1",
                       "name": "fxedate"
                     },
                     {
+                      "flowshow": true,
                       "title": "本次请假天数",
                       "component": "text",
                       "name": "fxnum"

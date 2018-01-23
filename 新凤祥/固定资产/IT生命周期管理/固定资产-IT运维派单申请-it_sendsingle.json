@@ -104,6 +104,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "component": "textarea",
           "title": "提报人姓名",
           "name": "sendsingle.submissioname"
@@ -158,6 +159,7 @@
             ]
         },
         {
+          "flowshow": true,
           "component": "select",
           "title": "问题来源类别",
           "id":"problemsource",
@@ -225,6 +227,7 @@
           ],
           "name": "sendsingle.technicalnum"
         },{
+          "flowshow": true,
           "component": "textarea",
           "title": "问题描述",
           "name": "sendsingle.semo"
@@ -239,6 +242,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "component": "textarea",
           "title": "运维工程师",
           "name": "sendsingle.operengneertxt"
@@ -254,6 +258,7 @@
           "name": "sendsingle.allocdate"
         },
         {
+          "flowshow": true,
           "component": "textarea",
           "title": "期望解决日期",
           "name": "sendsingle.expectdate"
@@ -332,6 +337,7 @@
           ]
         },
         {
+          "flowshow": true,
           "component": "select",
           "title": "问题当前状态",
           "editablenode": "usertask2,usertask7",
@@ -361,6 +367,7 @@
           ]
         },
         {
+          "flowshow": true,
           "component": "select",
           "title": "故障描述",
           "editablenode": "usertask2,usertask7",
@@ -652,6 +659,7 @@
           ]
         },
         {
+          "flowshow": true,
           "component": "textarea",
           "title": "解决方案",
           "editablenode": "usertask2,usertask7",
@@ -663,6 +671,7 @@
           }
         },
         {
+          "flowshow": true,
           "title": "外协费用",
           "component": "text",
           "editablenode": "usertask6",
@@ -711,6 +720,7 @@
       "tasknode": "usertask3,usertask5",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "评分",
           "component": "select",
           "id": "satisfied",
@@ -755,6 +765,7 @@
           }
         },
         {
+          "flowshow": true,
           "title": "反馈意见",
           "component": "textarea",
           "rows": "3",

@@ -89,6 +89,7 @@
         "component": "panel",
         "subComponents": [
 			{
+                "flowshow": true,
                 "title": "用印类型",
                 "component": "select",
 				"id":"unittype",
@@ -145,6 +146,7 @@
 				]
             },
 			{
+                "flowshow": true,
                 "title": "用印文件类型",
                 "component": "text",
                 "name": "seal.filetypename"
@@ -200,6 +202,7 @@
 
             },
 			{
+                "flowshow": true,
 				"title": "无附件原由",
 				"component": "textarea",
 				"rows": "3",
@@ -218,6 +221,7 @@
                 "name": "seal.legalauditname"
             },
 			{
+                "flowshow": true,
 				"title": "使用理由",
 				"component": "textarea",
 				"rows": "3",
@@ -246,6 +250,7 @@
 			  "id": "sealdetails",
               "linkForms": [
                 {
+                  "flowshow": true,
                   "title": "",
                   "title1": "印章名称",
                   "component": "text",

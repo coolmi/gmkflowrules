@@ -100,11 +100,13 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "所属公司",
           "component": "text",
           "name": "mainModel.m_compnm"
         },
         {
+          "flowshow": true,
           "title": "申请说明",
           "component": "textarea",
           "name": "mainModel.m_remark"

@@ -105,6 +105,7 @@
       "component": "panel",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "提报人姓名",
           "component": "text",
           "editablenode": "",
@@ -160,6 +161,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "问题来源类别",
           "component": "select",
           "name": "sendsingle.problemsource",
@@ -210,6 +212,7 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "问题描述",
           "component": "textarea",
           "rows": "3",
@@ -230,6 +233,7 @@
           "name": "sendsingle.operengneer"
         },
         {
+          "flowshow": true,
           "title": "运维工程师",
           "component": "text",
           "editablenode": "",
@@ -248,6 +252,7 @@
           "name": "sendsingle.allocdate"
         },
         {
+          "flowshow": true,
           "title": "期望解决日期",
           "component": "date1",
           "editablenode": "",
@@ -301,12 +306,14 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "问题当前状态",
           "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.currentstate"
         },
         {
+          "flowshow": true,
           "title": "故障描述",
           "component": "textarea",
           "editablenode": "",
@@ -336,12 +343,14 @@
           "name": "sendsingle.warranty"
         },
         {
+          "flowshow": true,
           "title": "解决方案",
           "component": "textarea",
           "editablenode": "",
           "name": "sendsingle.solution"
         },
         {
+          "flowshow": true,
           "title": "外协费用",
           "component": "text",
           "editablenode": "",
@@ -378,6 +387,7 @@
       "tasknode": "usertask3,usertask5",
       "subComponents": [
         {
+          "flowshow": true,
           "title": "评分",
           "component": "select",
           "id": "satisfied",
@@ -422,6 +432,7 @@
           }
         },
         {
+          "flowshow": true,
           "title": "反馈意见",
           "component": "textarea",
           "rows": "3",

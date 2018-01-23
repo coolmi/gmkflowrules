@@ -106,6 +106,7 @@
       "component": "panel",
       "subComponents": [
         {
+
           "title": "用印类型",
           "component": "select",
           "id": "unittype",
@@ -158,26 +159,31 @@
           ]
         },
         {
+          "flowshow": true,
           "title": "用印文件类型",
           "component": "text",
           "name": "sealapp.filetypename"
         },
         {
+          "flowshow": true,
           "title": "业务类型",
           "component": "text",
           "name": "sealapp.filetypechaldname"
         },
         {
+          "flowshow": true,
           "title": "法务审核环节人员",
           "component": "text",
           "name": "sealapp.legalauditname"
         },
         {
+          "flowshow": true,
           "title": "授权人",
           "component": "text",
           "name": "sealapp.ownertxt"
         },
         {
+          "flowshow": true,
           "title": "用印事由",
           "component": "textarea",
           "rows": "3",

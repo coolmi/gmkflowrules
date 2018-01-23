@@ -5,8 +5,8 @@
     "flag": ["resubmit"]
   },
   "selectPerson": {
-    "tasknode": [""],
-    "beforPop": false
+    "tasknode": ["xxglbnbsh"],
+    "beforPop": true
   },
   "forms": [
     {
