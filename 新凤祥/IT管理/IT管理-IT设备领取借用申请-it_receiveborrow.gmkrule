@@ -107,7 +107,7 @@
       "subComponents": [
         {
           "title": "申请动作",
-          "component": "select",
+          "component": "radio",
 		  "id": "appaction",
           "editablenode": "",
           "name": "receiveborrow.appaction",
