@@ -333,7 +333,7 @@
           "showLinkage":[
             {
               "id":"appaction",
-              "values":["4"]
+              "values":["0","1","2","3"]
             }
           ]
         },
@@ -344,7 +344,7 @@
           "showLinkage":[
             {
               "id":"appaction",
-              "values":["4"]
+              "values":["0","1","2","3"]
             }
           ]
         },
@@ -355,7 +355,7 @@
           "showLinkage":[
             {
               "id":"appaction",
-              "values":["4"]
+              "values":["0","1","2","3"]
             }
           ]
         },
@@ -366,7 +366,7 @@
           "showLinkage":[
             {
               "id":"appaction",
-              "values":["4"]
+              "values":["0","1","2","3"]
             }
           ]
         },
@@ -377,7 +377,7 @@
           "showLinkage":[
             {
               "id":"appaction",
-              "values":["4"]
+              "values":["0","1","2","3"]
             }
           ]
         },
