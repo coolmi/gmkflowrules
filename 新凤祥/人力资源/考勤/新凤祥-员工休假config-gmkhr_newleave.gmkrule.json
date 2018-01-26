@@ -226,7 +226,7 @@
 			"name": "mainModel.timea",
 			"showLinkage": [{
                 "id": "holidaytype",
-                "values": ["A02","A11"]
+                "values": ["A11"]
             }]
 		},
 		
@@ -238,7 +238,7 @@
 			"name": "mainModel.timeb",
 			"showLinkage": [{
                 "id": "holidaytype",
-                "values": ["A02","A11"]
+                "values": ["A11"]
             }]
 		},
 		{
@@ -258,7 +258,7 @@
 			],
 			"showLinkage": [{
                 "id": "holidaytype",
-                "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
+                "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
 		{
@@ -278,7 +278,7 @@
 			],
 			"showLinkage": [{
                 "id": "holidaytype",
-                "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
+                "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07"]
             }]
 		},
 		{
