@@ -142,6 +142,7 @@
         },
         {
           "title": "合同性质及状况",
+          "id":"appaction",
           "component": "radio",
           "name": "mainModel.htxzjzk",
           "options": [
@@ -160,6 +161,10 @@
             {
               "title": "更改",
               "value": "3"
+            },
+            {
+              "title": "公共施工",
+              "value": "4"
             }
           ]
         }
@@ -324,27 +329,57 @@
         {
           "title": "综合管理办公室经理",
           "component": "text",
-          "name": "mainModel.zhglbspr"
+          "name": "mainModel.zhglbspr",
+          "showLinkage":[
+            {
+              "id":"appaction",
+              "values":["0","1","2","3"]
+            }
+          ]
         },
         {
           "title": "预算部审批人",
           "component": "text",
-          "name": "mainModel.ysbspr"
+          "name": "mainModel.ysbspr",
+          "showLinkage":[
+            {
+              "id":"appaction",
+              "values":["0","1","2","3"]
+            }
+          ]
         },
         {
           "title": "基建/水电安装部",
           "component": "text",
-          "name": "mainModel.yzjsxmbspr"
+          "name": "mainModel.yzjsxmbspr",
+          "showLinkage":[
+            {
+              "id":"appaction",
+              "values":["0","1","2","3"]
+            }
+          ]
         },
         {
           "title": "法务部审批人",
           "component": "text",
-          "name": "mainModel.flbspr"
+          "name": "mainModel.flbspr",
+          "showLinkage":[
+            {
+              "id":"appaction",
+              "values":["0","1","2","3"]
+            }
+          ]
         },
         {
           "title": "财务部审批人",
           "component": "text",
-          "name": "mainModel.cwbspr"
+          "name": "mainModel.cwbspr",
+          "showLinkage":[
+            {
+              "id":"appaction",
+              "values":["0","1","2","3"]
+            }
+          ]
         },
         {
           "title": "安全环保部总经理",
