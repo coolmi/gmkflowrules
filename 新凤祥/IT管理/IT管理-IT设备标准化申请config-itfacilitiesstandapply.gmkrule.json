@@ -1,0 +1,168 @@
+{
+  "id": "itfacilitiesstandapply",
+  "forms": [
+    {
+      "component": "panel",
+      "pageid": "jbxx",
+      "subComponents": [
+        {
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid",
+          "title": "申请单号"
+        },
+        {
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda",
+          "title": "申请日期"
+        },
+        {
+          "component": "label",
+          "editablenode": "",
+          "flowshow": true,
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ],
+          "title": "申请人姓名"
+        },
+        {
+          "component": "label",
+          "editablenode": "",
+          "flowshow": true,
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ],
+          "title": "所属部门"
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.bukrs",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.userid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.username",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.pernr",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.syspostname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysdeptid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysdeptname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.postid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.id",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.pernr",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.userid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysdeptname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
+        }
+      ],
+      "title": "基本信息"
+    },
+    {
+      "component": "panel",
+      "pageid": "itfacisqxx",
+      "subComponents": [
+        {"component": "text", "id": "pernr", "name": "mainModel.pernr", "title": "员工编号"},
+        {"component": "text", "id": "userid", "name": "mainModel.userid", "title": "ITCODE"},
+        {"component": "text", "id": "sysbusinessunitname", "name": "mainModel.sysbusinessunitname", "title": "事业部/职能中心"},
+        {"component": "text", "id": "bukrsname", "name": "mainModel.bukrsname", "title": "所属公司"},
+        {"component": "text", "id": "email", "name": "mainModel.email", "title": "邮箱"},
+        {"component": "text", "id": "tel", "name": "mainModel.tel", "title": "电话"},
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "hzfylx",
+          "basePath": "ITfacilitiesstandapplySubslist",
+          "tableForms": [
+            {"title": "资产类别", "component": "text", "name": "assetTypeName"},
+            {"title": "品牌", "component": "text", "name":  "brand"},
+            {"title": "型号", "component": "text", "name":  "modelname"},
+            {"title": "资产描述", "component": "text", "name": "description"}
+          ]
+        }
+  ],
+      "title": "申请信息"
+    }
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "aft"
+    ]
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
+}
