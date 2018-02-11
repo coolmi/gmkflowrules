@@ -1,0 +1,198 @@
+{
+  "id": "develop_purchaseapp",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      ""
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "课题名称",
+          "component": "text",
+          "name": "mainModel.m_pname"
+        },
+        {
+          "title": "项目费用号",
+          "component": "text",
+          "name": "mainModel.m_pcode"
+        },
+        {
+          "title": "项目负责人",
+          "component": "text",
+          "name": "mainModel.m_pcode"
+        }
+      ]
+    },
+    {
+      "title": "研发项目采购明细",
+      "pageid": "yfxmcgmx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "subComponents": [
+            {
+              "component": "table_form",
+              "titleIndex": 0,
+              "basePath": "developpurchasesublist",
+              "id": "cgmx",
+              "tableForms": [
+                {
+                  "title": "物品名称",
+                  "component": "text",
+                  "name": "info_goodsname"
+                },
+                {
+                  "title": "型号规格",
+                  "component": "text",
+                  "name": "info_specifications"
+                },
+                {
+                  "title": "技术要求",
+                  "component": "text",
+                  "name": "info_tec_req"
+                },
+                {
+                  "title": "用途",
+                  "component": "text",
+                  "name": "info_use"
+                },
+                {
+                  "title": "单位",
+                  "component": "text",
+                  "name": "info_unit"
+                },
+                {
+                  "title": "用途",
+                  "component": "text",
+                  "name": "info_use"
+                },
+                {
+                  "title": "数量",
+                  "component": "text",
+                  "name": "info_quantity"
+                },
+                {
+                  "title": "估价",
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "info_valuation"
+                },
+                {
+                  "title": "需求日期",
+                  "component": "date1",
+                  "name": "info_req_date"
+                },
+                {
+                  "title": "备注",
+                  "component": "textarea",
+                  "name": "info_note"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
