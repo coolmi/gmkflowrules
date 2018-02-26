@@ -143,6 +143,23 @@
               "name": "zmeins"
             },
             {
+              "title": "单位",
+              "component": "text",
+              "name": "zmeins"
+            },
+            {
+              "component": "text",
+              "title": "参考单价",
+              "datatype": "money",
+              "name": "unitprice"
+            },
+            {
+              "component": "text",
+              "title": "参考总价",
+              "datatype": "money",
+              "name": "totalprice"
+            },
+            {
               "title": "申请日期",
               "component": "text",
               "datatype": "date",
