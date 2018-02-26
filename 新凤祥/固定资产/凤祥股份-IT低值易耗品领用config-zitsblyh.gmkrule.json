@@ -122,6 +122,19 @@
               "title": "资产描述",
               "component": "text",
               "name": "propertyname"
+            },{
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },{
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "参数",
+              "component": "text",
+              "name": "specification"
             },
             {
               "title": "领用原因",
@@ -137,11 +150,6 @@
               "title": "申请数量",
               "component": "text",
               "name": "zsqsl"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "zmeins"
             },
             {
               "title": "单位",
