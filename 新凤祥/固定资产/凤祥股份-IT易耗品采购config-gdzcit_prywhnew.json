@@ -1,0 +1,213 @@
+{
+  "id": "gdzcit_prywhnew",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算年",
+          "component": "text",
+          "name": "mainModel.m_year"
+        },{
+          "title": "归属公司",
+          "component": "text",
+          "name": "mainModel.fkbutxt"
+        },{
+          "title": "归属成本中心",
+          "component": "text",
+          "name": "mainModel.fkkotxt"
+        },{
+          "title": "预算项目",
+          "component": "text",
+          "name": "mainModel.m_projectnm"
+        },
+        {
+          "title": "资产描述",
+          "component": "text",
+          "name": "mainModel.m_zchantxt"
+        },{
+          "title": "采购原因",
+          "component": "text",
+          "name": "mainModel.proson"
+        },
+        {
+          "title": "需求说明",
+          "component": "text",
+          "name": "mainModel.sgtxt"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "zitsbjyiList",
+          "id": "ITgdzcglyffxx_table",
+          "tableForms": [
+            {
+              "title": "资产类别",
+              "component": "text",
+              "name": "propertype"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "propertyname"
+            },
+            {
+              "title": "管理人",
+              "component": "text",
+              "name": "useritcode"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "品牌",
+              "component": "text",
+              "name": "brand"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "zsbmodel"
+            },
+            {
+              "title": "参数",
+              "component": "text",
+              "name": "property"
+            },
+            {
+              "title": "申请数量",
+              "component": "text",
+              "name": "menge"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "meins"
+            },
+            {
+              "title": "参考单价",
+              "component": "text",
+              "datatype": "money",
+              "name": "price"
+            },
+            {
+              "title": "参考总价",
+              "component": "text",
+              "datatype": "money",
+              "name": "totalprice"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
