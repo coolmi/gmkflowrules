@@ -151,22 +151,17 @@
             {
               "title": "资产类别",
               "component": "text",
-              "name": "propertype"
+              "name": "propertypename"
             },
             {
               "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
+              "name": "propertynumname"
             },
             {
               "title": "管理人",
               "component": "text",
               "name": "useritcode"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "brand"
             },
             {
               "title": "品牌",
@@ -184,7 +179,7 @@
               "name": "property"
             },
             {
-              "title": "申请数量",
+              "title": "数量",
               "component": "text",
               "name": "menge"
             },
