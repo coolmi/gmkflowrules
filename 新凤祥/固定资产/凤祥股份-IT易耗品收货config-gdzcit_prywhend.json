@@ -2,6 +2,7 @@
   "id": "gdzcit_prywhend",
   "handleOnPC": {
     "tasknode": [
+      "usertask5"
     ],
     "flag": [
       "resubmit"
@@ -295,7 +296,9 @@
             },
             {
               "title": "验收日期",
-              "component": "date",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
               "name": "arrival"
             }
           ]
