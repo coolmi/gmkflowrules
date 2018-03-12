@@ -118,7 +118,7 @@
         {
           "title": "项目负责人",
           "component": "text",
-          "name": "mainModel.m_pcode"
+          "name": "mainModel.m_pleader"
         }
       ]
     },
@@ -127,8 +127,6 @@
       "pageid": "yfxmcgmx",
       "component": "panel",
       "subComponents": [
-        {
-          "subComponents": [
             {
               "component": "table_form",
               "titleIndex": 0,
@@ -161,11 +159,6 @@
                   "name": "info_unit"
                 },
                 {
-                  "title": "用途",
-                  "component": "text",
-                  "name": "info_use"
-                },
-                {
                   "title": "数量",
                   "component": "text",
                   "name": "info_quantity"
@@ -178,7 +171,7 @@
                 },
                 {
                   "title": "需求日期",
-                  "component": "date1",
+                  "component": "text",
                   "name": "info_req_date"
                 },
                 {
@@ -189,8 +182,6 @@
               ]
             }
           ]
-        }
-      ]
     }
   ]
 }
