@@ -195,6 +195,7 @@
           "title": "条款明细",
           "component": "panel",
           "panel_id": "zjtk_panel",
+          "pageid": "ywfj",
           "subComponents": [
             {
               "component": "table_form",
@@ -273,6 +274,7 @@
           "title": "最初合同草本",
           "component": "panel",
           "panel_id": "yltk_panel",
+          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "ylsh_hidden",
@@ -327,6 +329,7 @@
           "title": "法务条款",
           "component": "panel",
           "panel_id": "fwtk_panel",
+          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "fwsh_hidden",
@@ -360,6 +363,7 @@
           "title": "最初合同草本",
           "component": "panel",
           "panel_id": "zchtcb_panel",
+          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "fwsh_hidden",
@@ -414,6 +418,7 @@
           "title": "资金条款",
           "component": "panel",
           "panel_id": "zjtk_panel",
+          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "zjsh_hidden",
@@ -468,6 +473,7 @@
           "title": "物流条款",
           "component": "panel",
           "panel_id": "wltk_panel",
+          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "wlsh_hidden",
@@ -503,6 +509,7 @@
       "title": "最终确认合同",
       "component": "panel",
       "panel_id": "zzht_panel",
+      "pageid": "ywfj",
       "tasknode": "usertask3,usertask4,usertask5",
       "subComponents": [
         {

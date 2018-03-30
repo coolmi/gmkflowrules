@@ -171,6 +171,7 @@
       "title": "请示内容",
       "component": "panel",
       "panel_id": "wltk_panel",
+      "pageid": "ywfj",
       "subComponents": [
         {
           "component": "table_form",

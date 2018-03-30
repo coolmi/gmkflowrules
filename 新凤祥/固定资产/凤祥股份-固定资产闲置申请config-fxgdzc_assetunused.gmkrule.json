@@ -1,0 +1,193 @@
+{
+  "id": "fxgdzc_assetunused",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "闲置行项目信息",
+      "pageid": "xzhxmxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "basePath": "infos",
+          "id": "xzhxmxx",
+          "linkForms": [
+            {
+              "title": "法人公司编号",
+              "component": "text",
+              "name": "bukrs"
+            },
+            {
+              "title": "法人公司",
+              "component": "text",
+              "name": "butxt"
+            },
+            {
+              "title": "成本中心编号",
+              "component": "text",
+              "name": "kostl"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "kotxt"
+            },
+            {
+              "title": "主资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "资产次级编号",
+              "component": "text",
+              "name": "anln2"
+            },
+            {
+              "title": "资产分类编号",
+              "component": "text",
+              "name": "anlkl"
+            },
+            {
+              "title": "资产分类",
+              "component": "text",
+              "name": "txk50"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "anltx"
+            },
+            {
+              "title": "规格型号",
+              "component": "text",
+              "name": "ggxx"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "原数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "盘点数量",
+              "component": "text",
+              "name": "pamount"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "biz"
+            },
+            {
+              "title": "资产状态",
+              "component": "text",
+              "name": "zczt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "id": "fxgdzc_budgetadd",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算标识",
+          "component": "radio",
+          "name": "mainModel.ysbs",
+          "options": [
+            {
+              "title": "预算内追加",
+              "value": "N"
+            },
+            {
+              "title": "预算外增加",
+              "value": "W"
+            }
+          ]
+        },
+        {
+          "title": "预算年度",
+          "component": "text",
+          "name": "mainModel.ysnian"
+        },
+        {
+          "title": "预算所属公司",
+          "component": "text",
+          "name": "mainModel.ysbutxt"
+        },
+        {
+          "title": "预算成本中心",
+          "component": "text",
+          "name": "mainModel.yscostname"
+        },
+        {
+          "title": "预算项目名称",
+          "component": "text",
+          "name": "mainModel.ysbgname"
+        },
+        {
+          "title": "预算性质",
+          "component": "select",
+          "name": "mainModel.ysnature",
+          "options": [
+            {
+              "text": "新增",
+              "value": "0"
+            },
+            {
+              "text": "汰换",
+              "value": "1"
+            },
+            {
+              "text": "改造",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "预算分类",
+          "component": "select",
+          "name": "mainModel.ysclsfic",
+          "options": [
+            {
+              "text": "安全",
+              "value": "0"
+            },
+            {
+              "text": "环保",
+              "value": "1"
+            },
+            {
+              "text": "生产",
+              "value": "2"
+            },
+            {
+              "text": "效益",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "科目分配",
+          "component": "select",
+          "name": "mainModel.ysknttp",
+          "options": [
+            {
+              "text": "资产",
+              "value": "A"
+            },
+            {
+              "text": "订单",
+              "value": "F"
+            }
+          ]
+        },
+        {
+          "title": "项目号",
+          "component": "text",
+          "name": "mainModel.ysxmh"
+        },
+        {
+          "title": "预算责任人",
+          "component": "text",
+          "name": "mainModel.yszrrname"
+        },
+        {
+          "title": "投资理由和效益分析说明",
+          "component": "textarea",
+          "name": "mainModel.yssm"
+        },
+        {
+          "title": "预算追补理由",
+          "component": "textarea",
+          "name": "mainModel.yszbly"
+        }
+      ]
+    },
+    {
+      "title": "预算行项目信息",
+      "pageid": "yshxmxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "items",
+          "id": "",
+          "tableForms": [
+            {
+              "title": "资产分类",
+              "component": "text",
+              "name": "anlkl"
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "anltx"
+            },
+            {
+              "title": "预计可使用年限",
+              "component": "text",
+              "name": "ndjar"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "总数量",
+              "component": "text",
+              "name": "sumant"
+            },
+            {
+              "title": "已占用数量",
+              "component": "text",
+              "name": "occupyamount"
+            },
+            {
+              "title": "已使用数量",
+              "component": "text",
+              "name": "usedamount"
+            },
+            {
+              "title": "剩余数量",
+              "component": "text",
+              "name": "surplusamount"
+            },
+            {
+              "title": "总金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "sumney"
+            },
+            {
+              "title": "已占用金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "occupy"
+            },
+            {
+              "title": "已使用金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "alreadyused"
+            },
+            {
+              "title": "剩余金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "surplus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "追补信息",
+      "pageid": "zbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "basePath": "infos",
+          "id": "gdzc_zbxx",
+          "linkForms": [
+            {
+              "title": "资产分类",
+              "component": "linkToMap",
+              "name": "zcfl",
+              "linkToMap": {
+                "linkToLable": "true",
+                "mapBasePath": "assettypeMaps",
+                "linkMiddle": "anlkl",
+                "linkType": "string"
+              }
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "anltx"
+            },
+            {
+              "title": "预计可使用年限",
+              "component": "text",
+              "name": "ndjar"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "追补数量",
+              "component": "text",
+              "name": "zbamount"
+            },
+            {
+              "title": "追补金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "zbmoney"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

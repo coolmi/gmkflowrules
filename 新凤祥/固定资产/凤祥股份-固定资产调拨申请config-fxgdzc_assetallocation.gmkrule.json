@@ -1,7 +1,8 @@
 {
-  "id": "gmk_articlepush",
+  "id": "fxgdzc_assetallocation",
   "handleOnPC": {
     "tasknode": [
+      "usertask7"
     ],
     "flag": [
       "resubmit"
@@ -9,18 +10,9 @@
   },
   "selectPerson": {
     "tasknode": [
+      ""
     ],
     "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
   },
   "forms": [
     {
@@ -31,19 +23,16 @@
         {
           "title": "申请单号",
           "component": "text",
-          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
-          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
-          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -53,17 +42,11 @@
         {
           "title": "所属部门",
           "component": "label",
-          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
           ]
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.bukrs"
         },
         {
           "title": "",
@@ -119,112 +102,137 @@
     },
     {
       "title": "申请信息",
-      "pageid": "shenqingxinxi",
+      "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
         {
-          "title": "制度类型",
-          "component": "text",
-          "id": "mainModel_m_instype",
-          "editablenode": "",
-          "name": "mainModel.m_instype"
+          "title": "是否跨公司",
+          "component": "radio",
+          "name": "mainModel.crosscompany",
+          "options": [
+            {
+              "title": "不跨公司",
+              "value": "N"
+            },
+            {
+              "title": "跨公司",
+              "value": "Y"
+            }
+          ]
         },
         {
-          "title": "制度分类",
+          "title": "调出公司",
           "component": "text",
-          "id": "mainModel_m_insclass",
-          "editablenode": "",
-          "name": "mainModel.m_insclass"
+          "name": "mainModel.frombutxt"
         },
         {
-          "title": "制度管理内容",
+          "title": "调入公司",
+          "component": "text",
+          "name": "mainModel.tobutxt"
+        },
+        {
+          "title": "调出部门",
+          "component": "text",
+          "name": "mainModel.fromdeptname"
+        },
+        {
+          "title": "调入部门",
+          "component": "text",
+          "name": "mainModel.todeptname"
+        },
+        {
+          "title": "调拨理由",
           "component": "textarea",
-          "id": "mainModel_m_insman",
-          "editablenode": "",
-          "name": "mainModel.m_insman"
-        },
-        {
-          "title": "发布公司",
-          "component": "text",
-          "id": "mainModel_m_comp",
-          "editablenode": "",
-          "name": "mainModel.m_comp"
-        },
-        {
-          "title": "发布范围",
-          "component": "textarea",
-          "id": "mainModel_m_range",
-          "editablenode": "",
-          "rows": "3",
-          "name": "mainModel.m_range"
+          "name": "mainModel.tbly"
         }
       ]
     },
     {
-      "title": "申请子表",
-      "pageid": "shenqingzibiao",
+      "title": "调拨行项目信息",
+      "pageid": "dbhxmxx",
       "component": "panel",
       "subComponents": [
         {
-          "title": "",
-          "component": "table_form",
+          "component": "formLabelLink",
           "titleIndex": 0,
-          "basePath": "articlepushsublist",
-          "id": "LA_shenqingzibiao",
-          "tableForms": [
+          "basePath": "infos",
+          "id": "gdzc_zbxx",
+          "linkForms": [
             {
-              "title": "制度名称",
-              "component": "text",
-              "id": "s_insid",
-              "editablenode": "",
-              "name": "s_insid"
+              "title": "资产分类",
+              "component": "linkToMap",
+              "name": "zcfl",
+              "linkToMap": {
+                "linkToLable": "true",
+                "mapBasePath": "assettypeMaps",
+                "linkMiddle": "anlkl",
+                "linkType": "string"
+              }
             },
             {
-              "title": "制度编号",
+              "title": "资产描述",
               "component": "text",
-              "id": "s_insname",
-              "editablenode": "",
-              "name": "s_insname"
+              "name": "anltx"
             },
             {
-              "title": "起草人",
+              "title": "调出成本中心",
               "component": "text",
-              "id": "s_draftsman",
-              "editablenode": "",
-              "name": "s_draftsman"
+              "name": "fromkotxt"
             },
             {
-              "title": "起草部门",
+              "title": "调入成本中心",
               "component": "text",
-              "id": "s_draftdept",
-              "editablenode": "",
-              "name": "s_draftdept"
+              "name": "tokotxt"
             },
             {
-              "title": "支持附件",
-              "component": "panel",
-              "panel_id": "file_set_panel",
-              "pageid": "ywfj",
-              "subComponents": [
-                {
-                  "component": "table_form",
-                  "basePath": "files",
-                  "titleIndex": 0,
-                  "id": "tmp_file_set_table",
-                  "tableForms": [
-                    {
-                      "title": "文件名称",
-                      "component": "text",
-                      "name": "f_filename",
-                      "events": {
-                        "eventType": "openDocument",
-                        "filename": "f_filename",
-                        "afrescoid": "f_fileid"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "title": "规格型号",
+              "component": "text",
+              "name": "ggxx"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "原有数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "合同号",
+              "component": "text",
+              "name": "contract"
+            },
+            {
+              "title": "订单",
+              "component": "text",
+              "name": "aufnr"
+            },
+            {
+              "title": "主资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "资产次级编号",
+              "component": "text",
+              "name": "anln2"
+            },
+            {
+              "title": "供应商编号",
+              "component": "text",
+              "name": "lifnr"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "lifnrname"
+            },
+            {
+              "title": "调拨数量",
+              "component": "text",
+              "name": "dbamount"
             }
           ]
         }
