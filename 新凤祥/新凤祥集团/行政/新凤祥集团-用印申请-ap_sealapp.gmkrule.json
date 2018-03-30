@@ -110,7 +110,7 @@
           "title": "用印类型",
           "component": "select",
           "id": "unittype",
-          "name": "sealusetype.unittype",
+          "name": "sealapp.unittype",
           "options": [
             {
               "title": "普通用印",
