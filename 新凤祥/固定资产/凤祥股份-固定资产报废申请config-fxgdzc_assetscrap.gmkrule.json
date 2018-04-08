@@ -1,0 +1,235 @@
+{
+  "id": "fxgdzc_assetscrap",
+  "handleOnPC": {
+    "tasknode": [
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "预算所属公司",
+          "component": "text",
+          "name": "mainModel.butxt"
+        }
+      ]
+    },
+    {
+      "title": "报废行项目信息",
+      "pageid": "bfhxmxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "formLabelLink",
+          "titleIndex": 0,
+          "basePath": "infos",
+          "id": "bfh_xmxx",
+          "linkForms": [
+            {
+              "title": "资产分类",
+              "component": "linkToMap",
+              "name": "zcfl",
+              "linkToMap": {
+                "linkToLable": "true",
+                "mapBasePath": "assettypeMaps",
+                "linkMiddle": "anlkl",
+                "linkType": "string"
+              }
+            },
+            {
+              "title": "资产描述",
+              "component": "text",
+              "name": "anltx"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "kotxt"
+            },
+            {
+              "title": "规格型号",
+              "component": "text",
+              "name": "ggxx"
+            },
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "原有数量",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "合同号",
+              "component": "text",
+              "name": "contract"
+            },
+            {
+              "title": "订单",
+              "component": "text",
+              "name": "aufnr"
+            },
+            {
+              "title": "主资产编号",
+              "component": "text",
+              "name": "anln1"
+            },
+            {
+              "title": "资产次级编号",
+              "component": "text",
+              "name": "anln2"
+            },
+            {
+              "title": "供应商编号",
+              "component": "text",
+              "name": "lifnr"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "lifnrname"
+            },
+            {
+              "title": "报废数量",
+              "component": "text",
+              "name": "bfamount"
+            },
+            {
+              "title": "处置方式",
+              "component": "select",
+              "editablenode": "usertask6",
+              "validation": {
+                "pageid": "bfhxmxx",
+                "required": true,
+                "validationMsg": "固定资产报废处置方式必填"
+              },
+              "tasknode": "usertask6,usertask7,usertask8",
+              "name": "cztype",
+              "options": [
+                {
+                  "text": "循环利用",
+                  "value": "02"
+                },
+                {
+                  "text": "变卖",
+                  "value": "03"
+                }
+              ]
+            },
+            {
+              "title": "变卖金额",
+              "component": "text",
+              "editablenode": "usertask8",
+              "tasknode": "usertask8",
+              "name": "bmmoney",
+              "validation": {
+                "pageid": "bfhxmxx",
+                "required": true,
+                "validationMsg": "固定资产报废变卖金额必填"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
