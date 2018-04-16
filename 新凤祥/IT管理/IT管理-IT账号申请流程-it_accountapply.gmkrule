@@ -231,9 +231,32 @@
           "title": "申请原因",
           "component": "textarea",
           "rows": "3",
-          "editablenode": "",
           "name": "accountapply.accapplyreason"
-        }
+        },
+                {
+                  "title": "内部顾问",
+                  "component": "text",
+                  "editablenode": "usertask2",
+                  "tasknode": "usertask2",
+                  "notShowOnView": true,
+                  "forSelectPerson": {
+                    "onclick": "getuser",
+                    "postshow": true,
+                    "showformname": "nbgwtext",
+                    "valuetype": ["objid"],
+                    "showtype": [
+                      "objid",
+                      "nachn",
+                      "stext"
+                    ]
+                  },
+                  "name": "accountapply.nbgw",
+                  "validation": {
+                    "pageid": "sqxx",
+                    "required": true,
+                    "validationMsg": "请选择内部顾问"
+                  }
+                }
       ]
     }
   ]
