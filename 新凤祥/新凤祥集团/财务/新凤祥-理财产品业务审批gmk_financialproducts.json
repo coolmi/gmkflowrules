@@ -1,0 +1,603 @@
+{
+  "id": "gmk_financialproducts",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "ITCODE",
+          "component": "text",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.bukrsnamea"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "name": "mainModel.pHONE"
+        },
+        {
+          "title": "电子邮件",
+          "component": "text",
+          "name": "mainModel.eMAIL"
+        }
+      ]
+    },
+    {
+      "title": "理财产品业务审批流程子表",
+      "pageid": "lccpywsplczb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "lccpywsplczb_table",
+          "basePath": "subfinancialproductsapplist",
+          "tableForms": [
+            {
+              "title": "申请单号",
+              "component": "text",
+              "name": "wo"
+            },
+            {
+              "title": "投资组合",
+              "component": "text",
+              "name": "investPortfolio"
+            },
+            {
+              "title": "公司代码",
+              "component": "text",
+              "name": "bukrs"
+            },
+            {
+              "title": "公司名称",
+              "component": "text",
+              "name": "bukrsname"
+            },
+            {
+              "title": "事务代码",
+              "component": "text",
+              "name": "affairsCode"
+            },
+            {
+              "title": "事务代码描述",
+              "component": "text",
+              "name": "affairsCodeName"
+            },
+            {
+              "title": "产品类型",
+              "component": "text",
+              "name": "productType"
+            },
+            {
+              "title": "产品类型描述",
+              "component": "text",
+              "name": "productTypeName"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "coinType"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "name": "demtr"
+            },
+            {
+              "title": "合作伙伴描述",
+              "component": "text",
+              "name": "corpartnerName"
+            },
+            {
+              "title": "产品名称",
+              "component": "text",
+              "name": "productName"
+            },
+            {
+              "title": "开始期限",
+              "component": "text",
+              "name": "startTerm"
+            },
+            {
+              "title": "结束期限",
+              "component": "text",
+              "name": "endTerm"
+            },
+            {
+              "title": "利率",
+              "component": "text",
+              "name": "rate"
+            },
+            {
+              "title": "利率计算方法",
+              "component": "text",
+              "name": "rateCalcMethod"
+            },
+            {
+              "title": "期限天数",
+              "component": "text",
+              "name": "termdays"
+            },
+            {
+              "title": "预计投资收益",
+              "component": "text",
+              "name": "expectedReturn"
+            },
+            {
+              "title": "通知期",
+              "component": "text",
+              "name": "noticeDay"
+            },
+            {
+              "title": "通知期单位",
+              "component": "text",
+              "name": "noticeDayUnit"
+            },
+            {
+              "title": "频率",
+              "component": "text",
+              "name": "frequency"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "remark"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+    "reimtype": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "1",
+          "text": "通讯费"
+        },
+        {
+          "value": "2",
+          "text": "交通费"
+        },
+        {
+          "value": "3",
+          "text": "业务招待费"
+        },
+        {
+          "value": "4",
+          "text": "餐饮费"
+        },
+        {
+          "value": "5",
+          "text": "员工其他费用"
+        }
+      ]
+    },
+    "trstsyps": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "01",
+          "text": "飞机"
+        },
+        {
+          "value": "02",
+          "text": "高铁"
+        },
+        {
+          "value": "03",
+          "text": "动车"
+        },
+        {
+          "value": "04",
+          "text": "火车400km以上"
+        },
+        {
+          "value": "05",
+          "text": "火车400km以下"
+        },
+        {
+          "value": "06",
+          "text": "轮船"
+        },
+        {
+          "value": "07",
+          "text": "汽车"
+        }
+      ]
+    },
+    "matlevels": {
+      "dataType": "array",
+      "data": [
+        {
+          "value": "0101",
+          "text": "飞机"
+        },
+        {
+          "value": "0201",
+          "text": "二等座"
+        },
+        {
+          "value": "0202",
+          "text": "无限制"
+        },
+        {
+          "value": "0301",
+          "text": "无限制"
+        },
+        {
+          "value": "0302",
+          "text": "二等座"
+        },
+        {
+          "value": "0401",
+          "text": "软卧"
+        },
+        {
+          "value": "0402",
+          "text": "硬卧"
+        },
+        {
+          "value": "0501",
+          "text": "软卧"
+        },
+        {
+          "value": "0502",
+          "text": "硬卧"
+        },
+        {
+          "value": "0503",
+          "text": "硬席"
+        },
+        {
+          "value": "0601",
+          "text": "一等舱"
+        },
+        {
+          "value": "0602",
+          "text": "二等舱"
+        },
+        {
+          "value": "0701",
+          "text": "无限制"
+        }
+      ]
+    },
+    "citys": {
+      "dataType": "array",
+      "data": [
+        {
+          "text": "请选择",
+          "value": ""
+        },
+        {
+          "text": "北京",
+          "value": "北京"
+        },
+        {
+          "text": "上海",
+          "value": "上海"
+        },
+        {
+          "text": "广州",
+          "value": "广州"
+        },
+        {
+          "text": "深圳",
+          "value": "深圳"
+        },
+        {
+          "text": "青岛",
+          "value": "青岛"
+        },
+        {
+          "text": "苏州",
+          "value": "苏州"
+        },
+        {
+          "text": "南京",
+          "value": "南京"
+        },
+        {
+          "text": "无锡",
+          "value": "无锡"
+        },
+        {
+          "text": "宁波",
+          "value": "宁波"
+        },
+        {
+          "text": "温州",
+          "value": "温州"
+        },
+        {
+          "text": "杭州",
+          "value": "杭州"
+        },
+        {
+          "text": "济南",
+          "value": "济南"
+        },
+        {
+          "text": "厦门",
+          "value": "厦门"
+        },
+        {
+          "text": "福州",
+          "value": "福州"
+        },
+        {
+          "text": "南宁",
+          "value": "南宁"
+        },
+        {
+          "text": "海口",
+          "value": "海口"
+        },
+        {
+          "text": "三亚",
+          "value": "三亚"
+        },
+        {
+          "text": "重庆",
+          "value": "重庆"
+        },
+        {
+          "text": "成都",
+          "value": "成都"
+        },
+        {
+          "text": "兰州",
+          "value": "兰州"
+        },
+        {
+          "text": "银川",
+          "value": "银川"
+        },
+        {
+          "text": "西宁",
+          "value": "西宁"
+        },
+        {
+          "text": "拉萨",
+          "value": "拉萨"
+        },
+        {
+          "text": "乌鲁木齐",
+          "value": "乌鲁木齐"
+        },
+        {
+          "text": "昆明",
+          "value": "昆明"
+        },
+        {
+          "text": "贵阳",
+          "value": "贵阳"
+        },
+        {
+          "text": "天津",
+          "value": "天津"
+        },
+        {
+          "text": "石家庄",
+          "value": "石家庄"
+        },
+        {
+          "text": "沈阳",
+          "value": "沈阳"
+        },
+        {
+          "text": "大连",
+          "value": "大连"
+        },
+        {
+          "text": "长春",
+          "value": "长春"
+        },
+        {
+          "text": "哈尔滨",
+          "value": "哈尔滨"
+        },
+        {
+          "text": "呼和浩特",
+          "value": "呼和浩特"
+        },
+        {
+          "text": "太原",
+          "value": "太原"
+        },
+        {
+          "text": "合肥",
+          "value": "合肥"
+        },
+        {
+          "text": "南昌",
+          "value": "南昌"
+        },
+        {
+          "text": "武汉",
+          "value": "武汉"
+        },
+        {
+          "text": "长沙",
+          "value": "长沙"
+        },
+        {
+          "text": "郑州",
+          "value": "郑州"
+        },
+        {
+          "text": "其他广东城市",
+          "value": "其他广东城市"
+        },
+        {
+          "text": "聊城",
+          "value": "聊城"
+        },
+        {
+          "text": "除聊城外其他城市",
+          "value": "除聊城外其他城市"
+        }
+      ]
+    },
+    "month": {
+      "dataType": "array",
+      "data": [
+        {
+          "text": "一月",
+          "value": "1"
+        },
+        {
+          "text": "二月",
+          "value": "2"
+        },
+        {
+          "text": "三月",
+          "value": "3"
+        },
+        {
+          "text": "四月",
+          "value": "4"
+        },
+        {
+          "text": "五月",
+          "value": "5"
+        },
+        {
+          "text": "六月",
+          "value": "6"
+        },
+        {
+          "text": "七月",
+          "value": "7"
+        },
+        {
+          "text": "八月",
+          "value": "8"
+        },
+        {
+          "text": "九月",
+          "value": "9"
+        },
+        {
+          "text": "十月",
+          "value": "10"
+        },
+        {
+          "text": "十一月",
+          "value": "11"
+        },
+        {
+          "text": "十二月",
+          "value": "12"
+        }
+      ]
+    }
+  }
+}
