@@ -1,0 +1,163 @@
+{
+  "id": "gmk_fundallocate",
+  "handleOnPC": {
+    "tasknode": [
+      "apply"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "资金调拨子表",
+      "component": "panel",
+      "pageid": "zjdbzb",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "fundallocatesublist",
+          "id": "zjdbzb_table",
+          "tableForms": [
+            {
+              "title": "调拨单号",
+              "component": "text",
+              "name": "dBDH"
+            },
+            {
+              "title": "申请付款日期",
+              "component": "text",
+              "name": "sQFKRQ"
+            },
+            {
+              "title": "付款单位",
+              "component": "text",
+              "name": "fKDW"
+            },
+            {
+              "title": "收款单位",
+              "component": "text",
+              "name": "sKDW"
+            },
+            {
+              "title": "付款账户",
+              "component": "text",
+              "name": "fKZH"
+            },
+            {
+              "title": "收款账户",
+              "component": "text",
+              "name": "sKZH"
+            },
+            {
+              "title": "银行(付)",
+              "component": "text",
+              "name": "fKZHYH"
+            },
+            {
+              "title": "银行(收)",
+              "component": "text",
+              "name": "sKZHYH"
+            },
+            {
+              "title": "调拨金额",
+              "component": "text",
+              "name": "dBJE"
+            },
+            {
+              "title": "货币码",
+              "component": "text",
+              "name": "wAERS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

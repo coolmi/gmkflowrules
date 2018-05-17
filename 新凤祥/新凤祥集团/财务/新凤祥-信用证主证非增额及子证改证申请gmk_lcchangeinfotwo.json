@@ -2,7 +2,9 @@
   "id": "gmk_lcchangeinfotwo",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "apply",
+      "usertask3",
+      "usertask4"
     ],
     "flag": [
       "resubmit"
@@ -121,6 +123,18 @@
       ]
     },
     {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "资金人员",
+          "component": "text",
+          "name": "mainModel.zZJZY"
+        }
+      ]
+    },
+    {
       "title": "信用证改证明细表",
       "pageid": "xyzmxtable",
       "component": "panel",
@@ -210,12 +224,12 @@
             },
             {
               "title": "到期日期",
-              "component": "date1",
+              "component": "text",
               "name": "zDQRQ"
             },
             {
               "title": "装运日期",
-              "component": "date1",
+              "component": "text",
               "name": "zZYRQ"
             },
             {
@@ -240,11 +254,6 @@
               "name": "zZEJE"
             },
             {
-              "title": "保证金币种",
-              "component": "text",
-              "name": "bZJBZ"
-            },
-            {
               "title": "增额保证金",
               "component": "text",
               "datatype": "money",
@@ -252,7 +261,8 @@
             },
             {
               "title": "卖方",
-              "component": "text",
+              "component": "textarea",
+              "rows" : "3",
               "name": "zSELL"
             },
             {
@@ -269,6 +279,37 @@
               "title": "备注",
               "component": "text",
               "name": "zREMARK"
+            },
+
+            {
+              "title": "审批状态",
+              "component": "text",
+              "name": "zSPZT"
+            },
+            {
+              "title": "业务合作伙伴",
+              "component": "text",
+              "name": "pARTNER"
+            },
+            {
+              "title": "保证金金额",
+              "component": "text",
+              "name": "zYHLX"
+            },
+            {
+              "title": "保证金币种",
+              "component": "text",
+              "name": "bZJBZ"
+            },
+            {
+              "title": "保证金存入日期",
+              "component": "text",
+              "name": "zZEJEZSXYED"
+            },
+            {
+              "title": "保证金到期日期",
+              "component": "text",
+              "name": "dETZH"
             }
           ]
         }

@@ -1,0 +1,229 @@
+{
+  "id": "gmk_account",
+  "handleOnPC": {
+    "tasknode": [
+      "apply"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx_page",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "text",
+          "title": "ITCODE",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "component": "text",
+          "title": "所属公司",
+          "name": "mainModel.bUKTXT"
+        },
+        {
+          "component": "text",
+          "title": "手机",
+          "name": "mainModel.pHONE"
+        },
+        {
+          "component": "text",
+          "title": "邮箱",
+          "name": "mainModel.eMAIL"
+        },
+        {
+          "component": "select",
+          "title": "业务类型",
+          "name": "mainModel.kHLB",
+          "id":"kHLB",
+          "options":[
+            {
+              "text": "开户",
+              "value": "01"
+            },
+            {
+              "text": "销户",
+              "value": "02"
+            },
+            {
+              "text": "变更",
+              "value": "03"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "title": "业务公司名称",
+          "name": "mainModel.bUTXT"
+        },
+        {
+          "component": "text",
+          "title": "开户行名称",
+          "name": "mainModel.bANKA"
+        },
+        {
+          "component": "text",
+          "title": "银行账号",
+          "name": "mainModel.bANKN"
+        },
+        {
+          "component": "text",
+          "title": "账号性质",
+          "name": "mainModel.zHXZ"
+        },
+        {
+          "component": "text",
+          "title": "账户币种",
+          "name": "mainModel.wAERS"
+        },
+        {
+          "component": "text",
+          "title": "账户用途",
+          "name": "mainModel.zHYT",
+          "showLinkage": [
+            {
+              "id": "kHLB",
+              "values": ["01","03"]
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "title": "账户原用途",
+          "name": "mainModel.zHYYT",
+          "showLinkage": [
+            {
+              "id": "kHLB",
+              "values": ["02"]
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "title": "是否开通网银",
+          "name": "mainModel.kTWY",
+          "showLinkage": [{
+            "id": "kHLB",
+            "values": ["01","03"]
+          }]
+        },
+        {
+          "component": "textarea",
+          "title": "开户原因",
+          "name": "mainModel.kHYY",
+          "showLinkage": [{
+            "id": "kHLB",
+            "values": ["01","03"]
+          }]
+        },
+        {
+          "component": "textarea",
+          "title": "销户原因",
+          "name": "mainModel.xHYY",
+          "showLinkage": [{
+            "id": "kHLB",
+            "values": ["02"]
+          }]
+        },
+        {
+          "component": "textarea",
+          "title": "备注",
+          "name": "mainModel.bZ"
+        },
+        {
+          "component": "text",
+          "title": "业务执行人员",
+          "name": "mainModel.yWZXR"
+        }
+      ]
+    }
+  ]
+}

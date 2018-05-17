@@ -2,7 +2,7 @@
   "id": "gmk_loanextension",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "apply"
     ],
     "flag": [
       "resubmit"
@@ -121,6 +121,35 @@
       ]
     },
     {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "ITCODE",
+          "component": "text",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.bUKTXT"
+        }
+      ,
+        {
+          "title": "手机",
+          "component": "text",
+          "name": "mainModel.pHONE"
+        }
+      ,
+        {
+          "title": "邮箱",
+          "component": "text",
+          "name": "mainModel.eMAIL"
+        }
+      ]
+    },
+    {
       "title": "贷款展期申请明细表",
       "pageid": "dkzqmx",
       "component": "panel",
@@ -188,23 +217,13 @@
               "name": "zJKLL"
             },
             {
-              "title": "借款利率(%)",
-              "component": "text",
-              "name": "zJKLL"
-            },
-            {
-              "title": "借款利率(%)",
-              "component": "text",
-              "name": "zJKLL"
-            },
-            {
               "title": "借款开始日",
-              "component": "date1",
+              "component": "text",
               "name": "jKKSR"
             },
             {
               "title": "借款到期日",
-              "component": "date1",
+              "component": "text",
               "name": "jKDQR"
             },
             {
@@ -225,12 +244,12 @@
             },
             {
               "title": "展期开始日",
-              "component": "date1",
+              "component": "text",
               "name": "zQKSR"
             },
             {
               "title": "展期到期日",
-              "component": "date1",
+              "component": "text",
               "name": "zQDQR"
             },
             {

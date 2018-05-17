@@ -2,7 +2,7 @@
   "id": "gmk_yearfundplan",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "apply"
     ],
     "flag": [
       "resubmit"
@@ -126,6 +126,26 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "ITCODE",
+          "component": "text",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.bUKTXT"
+        },
+        {
+          "title": "手机",
+          "component": "text",
+          "name": "mainModel.pHONE"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "name": "mainModel.eMAIL"
+        },
+        {
           "title": "业务所属公司编码",
           "component": "text",
           "name": "mainModel.bUKRS"
@@ -134,16 +154,6 @@
           "title": "业务所属公司",
           "component": "text",
           "name": "mainModel.bUTXT"
-        },
-        {
-          "title": "项目编码",
-          "component": "text",
-          "name": "mainModel.zACCID"
-        },
-        {
-          "title": "项目名称",
-          "component": "text",
-          "name": "mainModel.zACCTXT"
         }
       ]
     },
@@ -159,24 +169,24 @@
           "basePath": "yearchildfundplanlist",
           "tableForms": [
             {
-              "title": "行项目识别号",
-              "component": "text",
-              "name": "iNFO_INGUID"
-            },
-            {
-              "title": "单位名称",
-              "component": "text",
-              "name": "iNFO_BUTXT"
-            },
-            {
-              "title": "项目名称",
+              "title": "资金计划项目名称",
               "component": "text",
               "name": "iNFO_ZACCTXT"
             },
             {
-              "title": "项目内容",
+              "title": "行项目识别号",
+              "component": "textarea",
+              "name": "iNFO_INGUID"
+            },
+            {
+              "title": "计划类型",
               "component": "text",
-              "name": "iNFO_ZTMMARK"
+              "name": "iNFO_ZJHTYP_TXT"
+            },
+            {
+              "title": "资金计划项目编号",
+              "component": "text",
+              "name": "iNFO_ZACCID"
             },
             {
               "title": "收支类别",
@@ -190,7 +200,7 @@
             },
             {
               "title": "计划日期",
-              "component": "date1",
+              "component": "text",
               "name": "iNFO_ZJH_DATE"
             },
             {
@@ -229,44 +239,24 @@
               "name": "iNFO_UKURS"
             },
             {
+              "title": "银行编号",
+              "component": "text",
+              "name": "iNFO_PARTNER"
+            },
+            {
+              "title": "银行名称",
+              "component": "text",
+              "name": "iNFO_NAME_ORG"
+            },
+            {
               "title": "人民币金额",
               "component": "text",
               "name": "iNFO_DMBTR"
             },
             {
-              "title": "业务伙伴编码",
+              "title": "备注",
               "component": "text",
-              "name": "iNFO_PARTNER"
-            },
-            {
-              "title": "业务伙伴名称",
-              "component": "text",
-              "name": "iNFO_NAME_ORG"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "汇总",
-      "pageid": "total",
-      "component": "panel",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "total_table",
-          "basePath": "yearmonthsums",
-          "tableForms": [
-            {
-              "title": "日期（年月）",
-              "component": "date1",
-              "name": "datetxt"
-            },
-            {
-              "title": "金额",
-              "component": "text",
-              "name": "sumoney"
+              "name": "iNFO_ZTMMARK"
             }
           ]
         }

@@ -1,9 +1,8 @@
 {
-  "id": "gmk_financialproducts",
+  "id": "gmk_termsavingsapp",
   "handleOnPC": {
     "tasknode": [
-      "apply",
-      "usertask3"
+      "apply"
     ],
     "flag": [
       "resubmit"
@@ -125,23 +124,18 @@
           "title": "电子邮件",
           "component": "text",
           "name": "mainModel.email"
-        },
-        {
-          "title": "授信委员",
-          "component": "text",
-          "name": "mainModel.creditcommittee"
         }
       ]
     },
     {
-      "title": "理财产品业务审批流程子表",
-      "pageid": "lccpywsplczb",
+      "title": "定期存款业务审批流程子表",
+      "pageid": "tzckywsplczb",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "lccpywsplczb_table",
+          "id": "tzckywsplczb_table",
           "basePath": "subfinancialproductsapplist",
           "tableForms": [
             {

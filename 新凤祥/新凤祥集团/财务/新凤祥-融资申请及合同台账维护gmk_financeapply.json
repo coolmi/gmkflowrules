@@ -2,7 +2,7 @@
   "id": "gmk_financeapply",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "apply"
     ],
     "flag": [
       "resubmit"
@@ -121,14 +121,41 @@
       ]
     },
     {
-      "title": "融资申请及合同台账维护明细表",
-      "pageid": "rzsqmx",
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "ITCODE",
+          "component": "text",
+          "name": "mainModel.iTCODE"
+        },
+        {
+          "title": "所属公司",
+          "component": "text",
+          "name": "mainModel.bUKTXT"
+        },
+        {
+          "title": "手机",
+          "component": "text",
+          "name": "mainModel.pHONE"
+        },
+        {
+          "title": "邮箱",
+          "component": "text",
+          "name": "mainModel.eMAIL"
+        }
+      ]
+    },
+    {
+      "title": "融资申请及合同台账维护明细",
+      "pageid": "rzsqjhttzwhmx",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "rzsqmx_table",
+          "id": "rzsqjhttzwhmx_table",
           "basePath": "financeapplysublist",
           "tableForms": [
             {
@@ -138,7 +165,7 @@
             },
             {
               "title": "申请单位",
-              "component": "text",
+              "component": "textarea",
               "name": "bUKRS"
             },
             {
@@ -179,7 +206,6 @@
             {
               "title": "资金计划金额",
               "component": "text",
-              "datatype": "money",
               "name": "wRBTR"
             },
             {
@@ -194,12 +220,12 @@
             },
             {
               "title": "借款开始日",
-              "component": "date1",
+              "component": "text",
               "name": "jKKSR"
             },
             {
               "title": "借款到期日",
-              "component": "date1",
+              "component": "text",
               "name": "jKDQR"
             },
             {
@@ -210,7 +236,6 @@
             {
               "title": "借款金额",
               "component": "text",
-              "datatype": "money",
               "name": "zJKJE"
             },
             {
@@ -226,7 +251,6 @@
             {
               "title": "保证金金额",
               "component": "text",
-              "datatype": "money",
               "name": "bZJJE"
             },
             {
@@ -236,12 +260,12 @@
             },
             {
               "title": "保证金存入日期",
-              "component": "date1",
+              "component": "text",
               "name": "bZJCRRQ"
             },
             {
               "title": "保证金结束日期",
-              "component": "date1",
+              "component": "text",
               "name": "bZJSFRQ"
             },
             {

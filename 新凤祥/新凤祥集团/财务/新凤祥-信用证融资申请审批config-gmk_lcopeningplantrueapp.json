@@ -1,0 +1,518 @@
+{
+  "id": "gmk_lcopeningplantrueapp",
+  "handleOnPC": {
+    "tasknode": [
+      "apply"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "信用证融资子表",
+      "pageid": "xyzrzzb",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "xyzrzzb_table",
+          "basePath": "lcopeningplantruesubapplist",
+          "tableForms": [
+            {
+              "title": "融资银行",
+              "component": "text",
+              "name": "zKZJHRQ"
+            },
+            {
+              "title": "融资类型",
+              "component": "select",
+              "name": "zKZLX",
+              "id":"rzlxsdxfgg",
+              "options":[
+                {
+                  "text": "押汇登记",
+                  "value": "押汇登记"
+                },
+                {
+                  "text": "贴现登记",
+                  "value": "贴现登记"
+                }
+              ]
+            },
+            {
+              "title": "押汇登记号",
+              "component": "text",
+              "name": "bUKRSNAME",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "利率",
+              "component": "text",
+              "name": "zBZJCRRQ"
+            },
+            {
+              "title": "融资天数",
+              "component": "text",
+              "name": "zYHLX"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "zBZJJE"
+            },
+            {
+              "title": "到单金额",
+              "component": "text",
+              "name": "remark2",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "需付汇金额",
+              "component": "text",
+              "name": "remark3",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "已付汇金额",
+              "component": "text",
+              "name": "remark4",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "押汇金额",
+              "component": "text",
+              "name": "remark5",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "押汇币种",
+              "component": "text",
+              "name": "remark6",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "利息",
+              "component": "text",
+              "datatype": "money",
+              "name": "remark7",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "计息方式",
+              "component": "text",
+              "name": "remark8",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "保证金金额",
+              "component": "text",
+              "name": "remark9",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "保证金币种",
+              "component": "text",
+              "name": "remark10",
+              "showLinkage": [{
+              "id": "rzlxsdxfgg",
+              "values": ["押汇登记"]
+            }]
+            },
+            {
+              "title": "保证金释放日期",
+              "component": "text",
+              "name": "remark11",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "中间费",
+              "component": "text",
+              "name": "remark12",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "综合成本",
+              "component": "text",
+              "name": "remark13",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "remark14"
+            },
+            {
+              "title": "审批状态",
+              "component": "text",
+              "name": "remark15"
+            },
+            {
+              "title": "期限（日）",
+              "component": "text",
+              "name": "remark16",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "付款金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "remark17"
+            },
+            {
+              "title": "押汇开始日期",
+              "component": "text",
+              "name": "remark20",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "押汇到期日期",
+              "component": "text",
+              "name": "remark21",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["押汇登记"]
+              }]
+            },
+            {
+              "title": "贴现登记号",
+              "component": "text",
+              "name": "bUKRS",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "发票号码",
+              "component": "text",
+              "name": "zHWPZ",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "发票日期",
+              "component": "text",
+              "name": "zKZBZ",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "发票单价",
+              "component": "text",
+              "name": "zJHKZJE",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "发票金额",
+              "component": "text",
+              "name": "zKS",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "发票币种",
+              "component": "text",
+              "name": "zDDHTH",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR贴现金额",
+              "component": "text",
+              "name": "zLIFNR",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR贴现币种",
+              "component": "text",
+              "name": "zSL",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR利率",
+              "component": "text",
+              "name": "zTMDW",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR贴现起始日",
+              "component": "text",
+              "name": "zKTHRQ",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR贴现到期日",
+              "component": "text",
+              "name": "zFZR",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "贴现金额",
+              "component": "text",
+              "name": "zSJZCY",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "贴现币种",
+              "component": "text",
+              "name": "zBZJBL",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "融资起始日",
+              "component": "text",
+              "name": "zSPZT",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "融资到期日",
+              "component": "text",
+              "name": "pARTNER",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "贴现比例",
+              "component": "text",
+              "name": "zBZJBZ",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "是否锁汇",
+              "component": "text",
+              "name": "remark0",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "锁汇成本",
+              "component": "text",
+              "name": "remark1",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "贴现差额",
+              "component": "text",
+              "name": "remark18",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            },
+            {
+              "title": "TR贴现差额",
+              "component": "text",
+              "name": "remark19",
+              "showLinkage": [{
+                "id": "rzlxsdxfgg",
+                "values": ["贴现登记"]
+              }]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
