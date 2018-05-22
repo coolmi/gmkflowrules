@@ -256,16 +256,6 @@
               "name": "sup_payuses"
             },
             {
-              "title": "预付款金额",
-              "component": "text",
-              "name": "sup_repay"
-            },
-            {
-              "title": "预付款金额大写",
-              "component": "text",
-              "name": "sup_repaydx"
-            },
-            {
               "title": "补退金额",
               "component": "text",
               "name": "sup_back"
@@ -274,6 +264,16 @@
               "title": "补退金额大写",
               "component": "text",
               "name": "sup_backdx"
+            },
+            {
+              "title": "预付款金额",
+              "component": "text",
+              "name": "sup_repay"
+            },
+            {
+              "title": "预付款金额大写",
+              "component": "text",
+              "name": "sup_repaydx"
             },
             {
               "title": "付款日期",

@@ -315,16 +315,6 @@
           ]
         },
         {
-          "title": "已申请预付款金额(小写)",
-          "component": "text",
-          "name": "expensereimburse.ysqyfkjexx"
-        },
-        {
-          "title": "已申请预付款金额(大写)",
-          "component": "text",
-          "name": "expensereimburse.ysqyfkjedx"
-        },
-        {
           "title": "补(退)金额(小写)",
           "component": "text",
           "name": "expensereimburse.btjexx"
@@ -333,6 +323,16 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "expensereimburse.btjedx"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "expensereimburse.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "expensereimburse.ysqyfkjedx"
         }
       ]
     }

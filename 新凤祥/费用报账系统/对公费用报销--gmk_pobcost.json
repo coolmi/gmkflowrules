@@ -267,6 +267,18 @@
           "name": "mainModel.m_payuses"
         },
         {
+          "title": "补(退)金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.m_backmoney"
+        },
+        {
+          "title": "补(退)金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.m_backmoneydx"
+        },
+        {
           "flowshow": true,
           "title": "预付款金额",
           "component": "text",
@@ -279,18 +291,6 @@
           "component": "text",
           "editablenode": "",
           "name": "mainModel.m_repaydx"
-        },
-        {
-          "title": "补(退)金额",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.m_backmoney"
-        },
-        {
-          "title": "补(退)金额大写",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.m_backmoneydx"
         },
         {
           "title": "付款日期",

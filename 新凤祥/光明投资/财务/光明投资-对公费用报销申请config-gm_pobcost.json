@@ -353,6 +353,18 @@
           "name": "pobcost.sused"
         },
         {
+          "title": "补（退）金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.pswbt"
+        },
+        {
+          "title": "补（退）金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "pobcost.pwsbtd"
+        },
+        {
           "title": "预付款金额",
           "component": "text",
           "datatype": "money",
@@ -364,18 +376,6 @@
           "component": "text",
           "editablenode": "",
           "name": "pobcost.kuname"
-        },
-        {
-          "title": "补（退）金额",
-          "component": "text",
-          "editablenode": "",
-          "name": "pobcost.pswbt"
-        },
-        {
-          "title": "补（退）金额大写",
-          "component": "text",
-          "editablenode": "",
-          "name": "pobcost.pwsbtd"
         },
         {
           "title": "付款日期",

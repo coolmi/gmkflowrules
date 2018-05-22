@@ -262,17 +262,6 @@
           "name": "mainModel.constructionnumber"
         },
         {
-          "title": "已申请预付款金额",
-          "component": "text",
-          "datatype":"money",
-          "name": "mainModel.advanceamount"
-        },
-        {
-          "title": "已申请预付款金额",
-          "component": "text",
-          "name": "mainModel.advanceamountup"
-        },
-        {
           "title": "补(退)金额(小写)",
           "component": "text",
           "datatype":"money",
@@ -282,6 +271,17 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "mainModel.amountup"
+        },
+        {
+          "title": "已申请预付款金额",
+          "component": "text",
+          "datatype":"money",
+          "name": "mainModel.advanceamount"
+        },
+        {
+          "title": "已申请预付款金额",
+          "component": "text",
+          "name": "mainModel.advanceamountup"
         }
 
       ]

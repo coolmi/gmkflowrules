@@ -311,17 +311,6 @@
           "name": "mainModel.hkyt"
         },
         {
-          "title": "预付款金额(小写)",
-          "component": "text",
-          "name": "mainModel.yfkjexx",
-          "datatype": "money"
-        },
-        {
-          "title": "预付款金额(大写)",
-          "component": "text",
-          "name": "mainModel.yfkjedx"
-        },
-        {
           "title": "补(退)金额",
           "component": "text",
           "name": "mainModel.btjexx",
@@ -331,6 +320,17 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "mainModel.btjedx"
+        },
+        {
+          "title": "预付款金额(小写)",
+          "component": "text",
+          "name": "mainModel.yfkjexx",
+          "datatype": "money"
+        },
+        {
+          "title": "预付款金额(大写)",
+          "component": "text",
+          "name": "mainModel.yfkjedx"
         }
       ]
     }

@@ -2,7 +2,7 @@
   "id": "fx_reimpurchaseinvoice",
   "handleOnPC": {
     "tasknode": [
-      
+
     ],
     "flag": [
       "resubmit"
@@ -10,7 +10,7 @@
   },
   "selectPerson": {
     "tasknode": [
-      
+
     ],
     "beforPop": false
   },
@@ -304,6 +304,20 @@
                 "editablenode": "",
                 "name": "mainModel.constructionnumber"
               },
+        {
+          "title": "补(退)金额(小写)",
+          "component": "text",
+          "id": "amount",
+          "editablenode": "",
+          "name": "mainModel.amount"
+        },
+        {
+          "title": "补(退)金额(大写)",
+          "component": "text",
+          "id": "amountup",
+          "editablenode": "",
+          "name": "mainModel.amountup"
+        },
               {
                 "title": "已申请预付款金额",
                 "component": "text",
@@ -317,20 +331,6 @@
                 "id": "advanceamountup",
                 "editablenode": "",
                 "name": "mainModel.advanceamountup"
-              },
-              {
-                "title": "补(退)金额(小写)",
-                "component": "text",
-                "id": "amount",
-                "editablenode": "",
-                "name": "mainModel.amount"
-              },
-              {
-                "title": "补(退)金额(大写)",
-                "component": "text",
-                "id": "amountup",
-                "editablenode": "",
-                "name": "mainModel.amountup"
               }
 
             ]

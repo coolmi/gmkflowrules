@@ -316,16 +316,6 @@
           ]
         },
         {
-          "title": "已申请预付款金额(小写)",
-          "component": "text",
-          "name": "invoicebook.ysqyfkjexx"
-        },
-        {
-          "title": "已申请预付款金额(大写)",
-          "component": "text",
-          "name": "invoicebook.ysqyfkjedx"
-        },
-        {
           "title": "补(退)金额(小写)",
           "component": "text",
           "name": "invoicebook.btjexx"
@@ -334,6 +324,16 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "invoicebook.btjedx"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "invoicebook.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "invoicebook.ysqyfkjedx"
         }
       ]
     }

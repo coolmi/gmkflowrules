@@ -258,16 +258,6 @@
           "name": "pubexpense.xfjedx"
         },
         {
-          "title": "已申请预付款金额(小写)",
-          "component": "text",
-          "name": "pubexpense.ysqyfkjexx"
-        },
-        {
-          "title": "已申请预付款金额(大写)",
-          "component": "text",
-          "name": "pubexpense.ysqyfkjedx"
-        },
-        {
           "title": "补(退)金额(小写)",
           "component": "text",
           "name": "pubexpense.btjexx"
@@ -276,6 +266,16 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "pubexpense.btjedx"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "pubexpense.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "pubexpense.ysqyfkjedx"
         },
         {
           "title": "付款日期",

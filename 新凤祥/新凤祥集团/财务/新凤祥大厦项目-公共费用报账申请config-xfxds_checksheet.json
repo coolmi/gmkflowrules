@@ -267,16 +267,6 @@
           "name": "dschecksheet.hkyt"
         },
         {
-          "title": "已申请预付款金额(小写)",
-          "component": "text",
-          "name": "dschecksheet.ysqyfkjexx"
-        },
-        {
-          "title": "已申请预付款金额(大写)",
-          "component": "text",
-          "name": "dschecksheet.ysqyfkjedx"
-        },
-        {
           "title": "补(退)金额(小写)",
           "component": "text",
           "name": "dschecksheet.btjexx"
@@ -285,6 +275,16 @@
           "title": "补(退)金额(大写)",
           "component": "text",
           "name": "dschecksheet.btjedx"
+        },
+        {
+          "title": "已申请预付款金额(小写)",
+          "component": "text",
+          "name": "dschecksheet.ysqyfkjexx"
+        },
+        {
+          "title": "已申请预付款金额(大写)",
+          "component": "text",
+          "name": "dschecksheet.ysqyfkjedx"
         },
         {
           "title": "付款日期",
