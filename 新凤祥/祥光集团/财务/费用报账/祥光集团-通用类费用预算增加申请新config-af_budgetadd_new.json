@@ -1,0 +1,280 @@
+{
+  "id": "af_budgetadd_new",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "budgetaddapp.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "budgetaddapp.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "budgetaddapp.pernr",
+            "-",
+            "budgetaddapp.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "label": [
+            "budgetaddapp.sysbusinessunitname",
+            "-",
+            "budgetaddapp.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "budgetaddapp.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "费用承担公司",
+          "component": "text",
+          "name": "budgetaddapp.cdbukrsname"
+        },
+        {
+          "title": "所属事业部",
+          "component": "select",
+          "name": "budgetaddapp.businessunitid",
+          "options":[
+            {
+              "text": "养殖事业部",
+              "value": "13110000"
+            },
+            {
+              "text": "财务部",
+              "value": "68000342"
+            },
+            {
+              "text": "汪之现汇报组",
+              "value": "68000435"
+            },
+            {
+              "text": "肖东生汇报组",
+              "value": "68000437"
+            },
+            {
+              "text": "孟涛汇报组",
+              "value": "68000627"
+            }
+          ]
+        },
+        {
+          "title": "项目负责人",
+          "component": "text",
+          "name": "budgetaddapp.m_zxfzrnm"
+        }
+      ]
+    },
+    {
+      "title": "费用增加录入",
+      "pageid": "fyzjlr",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "basePath": "budgetaddappsub",
+          "id": "fyzjlr_table",
+          "tableForms": [
+            {
+              "title": "项目号",
+              "component": "label",
+              "label": ["colnr",
+                "-",
+                "conam"]
+            },
+            {
+              "title": "调整日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "sdate"
+            },
+            {
+              "title": "年份",
+              "component": "text",
+              "name": "year"
+            },
+            {
+              "title": "公司",
+              "component": "label",
+              "label": ["m_corporation",
+                "-",
+                "m_corporationnm"]
+            },
+            {
+              "title": "项目子号",
+              "component": "label",
+              "label": ["childcolnr",
+                "-",
+                "childconam"]
+            },
+            {
+              "title": "科目",
+              "component": "label",
+              "label": ["kstar",
+                "-",
+                "kstarv"]
+            },
+            {
+              "title": "成本中心",
+              "component": "label",
+              "label": ["kostl",
+                "-",
+                "ktext"]
+            },
+            {
+              "title": "调增金额",
+              "component": "text",
+              "name": "addamt"
+            },
+            {
+              "title": "调整说明",
+              "component": "textarea",
+              "name": "smemo"
+            },
+            {
+              "title": "一月",
+              "component": "text",
+              "name": "hsl01"
+            },
+            {
+              "title": "二月",
+              "component": "text",
+              "name": "hsl02"
+            },
+            {
+              "title": "三月",
+              "component": "text",
+              "name": "hsl03"
+            },
+            {
+              "title": "四月",
+              "component": "text",
+              "name": "hsl04"
+            },
+            {
+              "title": "五月",
+              "component": "text",
+              "name": "hsl05"
+            },
+            {
+              "title": "六月",
+              "component": "text",
+              "name": "hsl06"
+            },
+            {
+              "title": "七月",
+              "component": "text",
+              "name": "hsl07"
+            },
+            {
+              "title": "八月",
+              "component": "text",
+              "name": "hsl08"
+            },
+            {
+              "title": "九月",
+              "component": "text",
+              "name": "hsl09"
+            },
+            {
+              "title": "十月",
+              "component": "text",
+              "name": "hsl10"
+            },
+            {
+              "title": "十一月",
+              "component": "text",
+              "name": "hsl11"
+            },
+            {
+              "title": "十二月",
+              "component": "text",
+              "name": "hsl12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
