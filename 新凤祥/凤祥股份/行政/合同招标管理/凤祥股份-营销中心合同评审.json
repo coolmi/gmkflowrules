@@ -33,6 +33,7 @@
         {
           "title": "申请人姓名",
           "component": "label",
+          "flowshow": true,
           "label": [
             "mainModel.pernr",
             "-",
@@ -41,6 +42,7 @@
         },
         {
           "title": "所属部门",
+          "flowshow": true,
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
