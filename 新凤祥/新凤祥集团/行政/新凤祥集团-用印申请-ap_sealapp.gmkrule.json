@@ -110,7 +110,7 @@
           "title": "用印类型",
           "component": "select",
           "id": "unittype",
-          "name": "sealapp.unittype",
+          "name": "sealapp.sealusetype",
           "options": [
             {
               "title": "普通用印",
@@ -125,7 +125,7 @@
         {
           "title": "是否已审批用印",
           "component": "text",
-          "name": "sealapp.authorizationprocess",
+          "name": "sealapp.authorizationprocess"
         },
         {
           "title": "同行人",
@@ -221,12 +221,6 @@
               "title1": "印章类型",
               "component": "text",
               "name": "sealtypename"
-            },
-            {
-              "title": "",
-              "title1": "印章管理员",
-              "component": "text",
-              "name": "cname"
             },
             {
               "title": "",
