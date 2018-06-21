@@ -1,0 +1,395 @@
+{
+  "id": "gmk_lcopeningplan",
+  "handleOnPC": {
+    "tasknode": [
+      "apply",
+      "usertask3",
+      "usertask4"
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "资金专员",
+          "component": "text",
+          "name": "mainModel.zZJZY"
+        }
+      ]
+    },
+    {
+      "title": "信用证开证明细表",
+      "pageid": "xyzkzmxtable",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "xyzmx_table",
+          "basePath": "lcopeningplansubapplist",
+          "tableForms": [
+            {
+              "title": "开证登记号",
+              "component": "text",
+              "name": "zLSJDCS"
+            },
+            {
+              "title": "收付款种类",
+              "component": "text",
+              "name": "zLSFKBL"
+            },
+            {
+              "title": "审批状态",
+              "component": "text",
+              "name": "zMYSY"
+            },
+            {
+              "title": "申请公司名称",
+              "component": "text",
+              "name": "zKZDJH"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "bUKRS"
+            },
+            {
+              "title": "采购合同号",
+              "component": "text",
+              "name": "bUKRSNAME"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "zKZJH"
+            },
+            {
+              "title": "开证金额（大写）",
+              "component": "text",
+              "name": "zGLDJH"
+            },
+            {
+              "title": "开证金额（小写）",
+              "component": "text",
+              "name": "zSFKZL"
+            },
+            {
+              "title": "申请金额（小写）",
+              "component": "text",
+              "name": "zZXTK"
+            },
+            {
+              "title": "Tolerance(金额)",
+              "component": "text",
+              "name": "zLIFNR"
+            },
+            {
+              "title": "通知行",
+              "component": "text",
+              "name": "zDDHTH"
+            },
+            {
+              "title": "开证计划号",
+              "component": "text",
+              "name": "zDDHTH"
+            },
+            {
+              "title": "子证通支行",
+              "component": "text",
+              "name": "zFKYH"
+            },
+            {
+              "title": "开证数量",
+              "component": "text",
+              "name": "zHWPZ"
+            },
+            {
+              "title": "开证数量单位",
+              "component": "text",
+              "name": "zCQ"
+            },
+            {
+              "title": "Tolerance(数量)",
+              "component": "text",
+              "name": "zKZBZ"
+            },
+            {
+              "title": "货物描述",
+              "component": "text",
+              "name": "zKZJE"
+            },
+            {
+              "title": "到期日",
+              "component": "text",
+              "name": "zKZSL"
+            },
+            {
+              "title": "到期地",
+              "component": "text",
+              "name": "zKZDW"
+            },
+            {
+              "title": "装运港",
+              "component": "text",
+              "name": "zTLSJE"
+            },
+            {
+              "title": "目的港",
+              "component": "text",
+              "name": "zTLSSL"
+            },
+            {
+              "title": "是否转运",
+              "component": "text",
+              "name": "zTZH"
+            },
+            {
+              "title": "是否分批装运",
+              "component": "text",
+              "name": "zSWIFTDM"
+            },
+            {
+              "title": "最晚装船日期",
+              "component": "text",
+              "name": "zKZRQ"
+            },
+            {
+              "title": "最晚开出信用证日期",
+              "component": "text",
+              "name": "zYXRQKZH"
+            },
+            {
+              "title": "交单期",
+              "component": "text",
+              "name": "lV"
+            },
+            {
+              "title": "利率",
+              "component": "text",
+              "name": "zDQRQ"
+            },
+            {
+              "title": "临时交单次数",
+              "component": "text",
+              "name": "zDQD"
+            },
+            {
+              "title": "装卸条款",
+              "component": "text",
+              "name": "zJDQ"
+            },
+            {
+              "title": "发货月",
+              "component": "text",
+              "name": "zYQTS"
+            },
+            {
+              "title": "矿山",
+              "component": "text",
+              "name": "zZYRQ"
+            },
+            {
+              "title": "运输方式",
+              "component": "text",
+              "name": "zPORTL"
+            },
+            {
+              "title": "远期天数",
+              "component": "text",
+              "name": "zMDG"
+            },
+            {
+              "title": "临时付款比例",
+              "component": "text",
+              "name": "zFPZYF"
+            },
+            {
+              "title": "船期",
+              "component": "text",
+              "name": "zZWKZRQ"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "zSHIPD"
+            },
+            {
+              "title": "开证行",
+              "component": "text",
+              "name": "zHTRQ"
+            },
+            {
+              "title": "业务合作伙伴",
+              "component": "text",
+              "name": "zSHIPM"
+            },
+            {
+              "title": "保证金金额",
+              "component": "text",
+              "name": "zYSFS"
+            },
+            {
+              "title": "保证金币种",
+              "component": "text",
+              "name": "zMINE"
+            },
+            {
+              "title": "保证金存入日期",
+              "component": "text",
+              "name": "zWSTXLV"
+            },
+            {
+              "title": "保证金到期日期",
+              "component": "text",
+              "name": "zYJTZ"
+            },
+            {
+              "title": "SWIFT代码",
+              "component": "text",
+              "name": "zSFXXXKZ"
+            },
+            {
+              "title": "银行地址",
+              "component": "text",
+              "name": "zFKDD"
+            },
+            {
+              "title": "联系人信息",
+              "component": "text",
+              "name": "zFKYT"
+            },
+            {
+              "title": "付款日期",
+              "component": "text",
+              "name": "zFKRI"
+            },
+            {
+              "title": "经办人",
+              "component": "text",
+              "name": "zJBR"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refers": {
+  }
+}
