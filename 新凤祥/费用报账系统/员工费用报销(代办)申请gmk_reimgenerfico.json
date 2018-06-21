@@ -3,7 +3,8 @@
   "handleOnPC": {
     "tasknode": [
       "accout",
-      "payment"
+      "payment",
+      "gmkreimpament"
     ],
     "flag": [
       "resubmit"
