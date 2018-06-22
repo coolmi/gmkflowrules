@@ -8,6 +8,23 @@
       "resubmit"
     ]
   },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          ""
+        ]
+      }
+    ]
+  },
   "forms": [
     {
       "title": "基本信息",
@@ -17,16 +34,19 @@
         {
           "title": "申请单号",
           "component": "text",
+          "editablenode": "",
           "name": "mainModel.appid"
         },
         {
           "title": "申请日期",
           "component": "date1",
+          "editablenode": "",
           "name": "mainModel.appda"
         },
         {
           "title": "申请人姓名",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
@@ -36,11 +56,17 @@
         {
           "title": "所属部门",
           "component": "label",
+          "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
           ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
         },
         {
           "title": "",
@@ -96,161 +122,156 @@
     },
     {
       "title": "申请信息",
-      "pageid": "sqxx_page",
+      "pageid": "applyInfo",
       "component": "panel",
       "subComponents": [
         {
+          "title": "所属业务公司",
           "component": "text",
-          "title": "公司代码",
-          "name": "mainModel.bUKRS"
-        },
-        {
-          "component": "text",
-          "title": "公司",
           "name": "mainModel.bUKRSTXT"
         },
         {
-          "component": "text",
-          "title": "申请单号",
-          "name": "mainModel.fKSQBH"
-        },
-        {
-          "component": "text",
-          "title": "付款申请日期",
-          "name": "mainModel.fKSQRQ"
-        },
-        {
-          "component": "text",
-          "title": "项目编号",
-          "name": "mainModel.zACCID"
-        },
-        {
-          "component": "text",
           "title": "项目名称",
+          "component": "text",
           "name": "mainModel.zACCIDT"
         },
         {
-          "component": "text",
+          "title": "申请单号",
+          "component": "date1",
+          "name": "mainModel.fKSQRQ"
+        },
+        {
           "title": "审批类别",
+          "component": "date1",
           "name": "mainModel.xMM"
         },
         {
-          "component": "text",
-          "title": "申请金额小写",
-          "name": "mainModel.bCFKJE"
-        },
-        {
-          "component": "text",
-          "title": "申请金额大写",
-          "name": "mainModel.bCFKJEDX"
-        },
-        {
-          "component": "text",
-          "title": "申请金额大写",
-          "name": "mainModel.bCFKJEDX"
-        },
-        {
-          "component": "text",
-          "title": "申请金额大写",
-          "name": "mainModel.bCFKJEDX"
-        },
-        {
-          "component": "text",
-          "title": "币种",
-          "name": "mainModel.wAERS"
-        },
-        {
-          "component": "text",
-          "title": "付款种类",
-          "name": "mainModel.fKLX_A"
-        },
-        {
-          "component": "text",
-          "title": "交易类型",
-          "name": "mainModel.fKLX"
-        },
-        {
-          "component": "text",
           "title": "业务类型",
+          "component": "text",
           "name": "mainModel.yWLX"
         },
         {
-          "component": "text",
-          "title": "合同约定到货日期",
-          "name": "mainModel.hTYDDHRQ"
-        },
-        {
-          "component": "text",
-          "title": "申请日期",
-          "name": "mainModel.sQRQ"
-        },
-        {
-          "component": "text",
-          "title": "采购订单号",
-          "name": "mainModel.eBELN"
-        },
-        {
-          "component": "text",
-          "title": "订单单位",
-          "name": "mainModel.mEINS"
-        },
-        {
-          "component": "text",
-          "title": "重量",
-          "name": "mainModel.mENGE"
-        },
-        {
-          "component": "text",
           "title": "年度计划可用金额",
+          "component": "text",
           "name": "mainModel.zJHKY_Y"
         },
         {
+          "title": "采购订单号",
           "component": "text",
-          "title": "月度计划金额",
-          "name": "mainModel.zJHJE_M"
+          "name": "mainModel.eBELN"
         },
         {
+          "title": "结算类别",
           "component": "text",
+          "name": "mainModel.fKLX"
+        },
+        {
+          "title": "付款种类",
+          "component": "text",
+          "name": "mainModel.fKLX_A"
+        },
+        {
+          "title": "汇款用途",
+          "component": "text",
+          "name": "mainModel.FKLY"
+        },
+        {
+          "title": "合同约定到货日期",
+          "component": "date1",
+          "name": "mainModel.hTYDDHRQ"
+        },
+        {
+          "title": "付款日期",
+          "component": "date1",
+          "name": "mainModel.fKSQRQ"
+        },
+        {
+          "title": "申请金额",
+          "component": "text",
+          "name": "mainModel.bCFKJE"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.wAERS"
+        },
+        {
+          "title": "申请金额大写",
+          "component": "text",
+          "name": "mainModel.bCFKJEDX"
+        },
+        {
           "title": "合同号",
+          "component": "text",
           "name": "mainModel.zDDHTH"
         },
         {
+          "title": "重量",
           "component": "text",
+          "name": "mainModel.mENGE"
+        },
+        {
+          "title": "订单单位",
+          "component": "text",
+          "name": "mainModel.MEINS"
+        },
+        {
+          "title": "订单总额",
+          "component": "text",
+          "name": "mainModel.BRTWR_M"
+        },
+        {
+          "title": "累计预付之和(含本次)",
+          "component": "text",
+          "name": "mainModel.ZYFJE"
+        },
+        {
+          "title": "未付金额",
+          "component": "text",
+          "name": "mainModel.SYJE"
+        },
+        {
           "title": "付款说明",
+          "component": "text",
           "name": "mainModel.fKSM"
         },
         {
-          "component": "text",
           "title": "付款留言",
-          "name": "mainModel.fKLY"
+          "component": "text",
+          "name": "mainModel.fKJE"
         },
         {
-          "component": "text",
           "title": "需要出纳付款",
-          "name": "mainModel.xYCNFK"
+          "component": "text",
+          "name": "mainModel.XYCNFK"
         }
       ]
     },
     {
-      "title": "付款行项目",
+      "title": "付款详细",
+      "pageid": "pay_hxm",
       "component": "panel",
-      "pageid": "fkxxm",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
+          "id": "pay_hxmtable",
           "basePath": "paymentsublist",
-          "id": "txf_sdate",
           "tableForms": [
             {
-              "title": "交易方性质",
+              "title": "项目编号",
+              "component": "text",
+              "name": "sKRDM"
+            },
+            {
+              "title": "交易性质",
               "component": "text",
               "name": "jYFXZ"
             },
             {
               "title": "交易方代码",
               "component": "text",
-              "name": "sKRDM"
+              "name": "zACCID_D"
             },
             {
               "title": "交易方名称",
@@ -258,12 +279,22 @@
               "name": "jYFMC"
             },
             {
-              "title": "银行名称（收）",
+              "title": "年度计划可用金额",
+              "component": "text",
+              "name": "zJHKY_YD"
+            },
+            {
+              "title": "月度计划金额",
+              "component": "text",
+              "name": "zJHJE_MD"
+            },
+            {
+              "title": "汇入行",
               "component": "text",
               "name": "bANKA"
             },
             {
-              "title": "收款账户",
+              "title": "汇入账号",
               "component": "text",
               "name": "sKZH"
             },
@@ -278,42 +309,15 @@
               "name": "fKZH"
             },
             {
-              "title": "银行名称（付）",
+              "title": "汇出行",
               "component": "text",
               "name": "bANKA_F"
-            },
-            {
-              "title": "交易类型",
-              "component": "text",
-              "name": "fKLX_B"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "业务附件",
-      "component": "panel",
-      "panel_id": "ywfj_payment_panel",
-      "pageid": "ywfj",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "basePath": "fls",
-          "id":"ywfj_payment_table",
-          "tableForms": [
-            {
-              "title": "文件名称",
-              "component": "text",
-              "name": "filename",
-              "events": {
-                "eventType": "openUrl",
-                "openUrl": "filepath"
-              }
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "refers": {
+  }
 }
