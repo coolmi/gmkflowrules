@@ -1,0 +1,196 @@
+{
+  "id": "gmk_documenttransfer",
+  "handleOnPC": {
+    "tasknode": ["daadminaudit"],
+    "flag": ["resubmit"]
+  },
+  "selectPerson": {
+    "tasknode": [""],
+    "beforPop": false
+  },
+  "forms": [{
+    "title": "基本信息",
+    "pageid": "jbxx",
+    "component": "panel",
+    "subComponents": [{
+      "title": "申请单号",
+      "component": "text",
+      "name": "documenttransferapp.appid"
+    },
+      {
+        "title": "申请日期",
+        "component": "date1",
+        "name": "documenttransferapp.appda"
+      },
+      {
+        "title": "申请人姓名",
+        "component": "label",
+        "label": ["documenttransferapp.pernr", "-", "documenttransferapp.username"]
+      },
+      {
+        "title": "所属部门",
+        "component": "label",
+        "label": ["documenttransferapp.sysbusinessunitname", "-", "documenttransferapp.sysdeptname"]
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.userid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.username"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.pernr"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.syspostname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.sysdeptid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.sysdeptname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.sysbusinessunitid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.sysbusinessunitname"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.postid"
+      },
+      {
+        "title": "",
+        "component": "hidden",
+        "name": "documenttransferapp.id"
+      }]
+  },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "归档部门",
+          "component": "text",
+          "rows":"2",
+          "name": "documenttransferapp.m_gddetpname"
+        },
+        {
+          "title": "所属法人公司",
+          "component": "radio",
+          "name": "documenttransferapp.m_frname"
+        },
+        {
+          "title": "档案保存地点",
+          "component": "radio",
+          "name": "documenttransferapp.m_addrname"
+        },
+        {
+          "title": "资料明细",
+          "component": "panel",
+          "panel_id": "sqmx_panel",
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "infolist",
+              "id": "zlmx_table",
+              "tableForms": [
+                {
+                  "title": "文件编号",
+                  "component": "text",
+                  "name": "docid"
+                },
+                {
+                  "title": "文件题名",
+                  "component": "text",
+                  "name": "docname"
+                },
+                {
+                  "title": "文件类型",
+                  "component": "select",
+                  "name": "doctype",
+                  "options":[
+                    {
+                      "text": "原件",
+                      "value": "原件"
+                    },
+                    {
+                      "text": "复印件",
+                      "value": "复印件"
+                    },
+                    {
+                      "text": "电子版",
+                      "value": "电子版"
+                    }
+                  ]
+                },
+                {
+                  "title": "份数",
+                  "component": "text",
+                  "name": "docnum"
+                },
+                {
+                  "title": "页数",
+                  "component": "text",
+                  "name": "docpage"
+                },
+                {
+                  "title": "成文日期",
+                  "component": "text",
+                  "datatype": "date",
+                  "dateFormat": "yyyy-MM-dd",
+                  "name": "docdate"
+                },
+                {
+                  "title": "备注产生责任人",
+                  "component": "text",
+                  "name": "docuser"
+                },
+                {
+                  "title": "备注",
+                  "component": "text",
+                  "name": "note"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "归档人",
+          "component": "text",
+          "name": "documenttransferapp.m_gdrname"
+        },
+        {
+          "title": "验收人",
+          "component": "text",
+          "name": "documenttransferapp.m_ysrname"
+        },
+        {
+          "title": "归档日期",
+          "component": "text",
+          "name": "documenttransferapp.m_gddate",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd"
+        }
+      ]
+    }]
+}
