@@ -266,6 +266,11 @@
               "title": "汇入账号",
               "component": "text",
               "name": "sKZH"
+            },
+            {
+              "title": "账户持有人",
+              "component": "text",
+              "name": "zHCYR"
             }
           ]
         }
