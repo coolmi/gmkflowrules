@@ -3,7 +3,9 @@
   "handleOnPC": {
     "tasknode": [
       "compubshgmreim3",
-      "compubshgmreim7"
+      "compubshgmreim7",
+      "usertask4",
+      "usertask6"
     ],
     "flag": [
       "resubmit"
