@@ -2,7 +2,7 @@
   "id": "fxado_marketingcontract",
   "handleOnPC": {
     "tasknode": [
-     "usertask8" ,"createsapht"
+     "usertask8" ,"createsapht", "usertask2_1"
     ],
     "flag": [
       "resubmit"
@@ -186,7 +186,10 @@
             {
               "title": "合同毛利率(%)",
               "component": "text",
-              "name": "htmlv"
+              "name": "htmlv",
+              "editablenode": "usertask2_1",
+              "required": true,
+              "validationMsg": "合同毛利率不能为空!"
             },
             {
               "title": "合同金额(元)",
@@ -217,6 +220,14 @@
               "name": "edate",
               "datatype": "date",
               "dateFormat": "yyyy-MM-dd"
+            },
+            {
+              "title": "人均贡献",
+              "component": "text",
+              "name": "rjgx",
+              "editablenode": "usertask2_1",
+              "required": true,
+              "validationMsg": "人均贡献不能为空!"
             },
             {
               "title": "产品工艺描述",

@@ -106,6 +106,21 @@
       "component": "panel",
       "subComponents": [
         {
+          "title": "预算标识",
+          "component": "radio",
+          "name": "mainModel.ysbs",
+          "options": [
+            {
+              "title": "预算内",
+              "value": "N"
+            },
+            {
+              "title": "预算外",
+              "value": "W"
+            }
+          ]
+        },
+        {
           "title": "预算年度",
           "component": "text",
           "name": "mainModel.ysnian"
@@ -198,6 +213,22 @@
           ]
         },
         {
+          "title": "投资复盘责任人",
+          "component": "text",
+          "name": "mainModel.yszrrname"
+        },
+        {
+          "title": "建议使用年限",
+          "component": "text",
+          "name": "mainModel.proposalyears",
+          "editablenode": "internalaudit",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validationMsg": "建议使用年限必填"
+          }
+        },
+        {
           "title": "要求进货日期",
           "component": "text",
           "datatype": "date",
@@ -208,6 +239,18 @@
           "title": "安装地点",
           "component": "text",
           "name": "mainModel.azdd"
+        },
+        {
+          "title": "投资理由和效益分析说明",
+          "component": "textarea",
+          "name": "mainModel.yssm",
+          "rows": "5"
+        },
+        {
+          "title": "预算追补理由",
+          "component": "textarea",
+          "name": "mainModel.yszbly",
+          "rows": "5"
         }
       ]
     },
@@ -362,61 +405,6 @@
               "title": "备注",
               "component": "text",
               "name": "biz"
-            },
-            {
-              "title": "供应商编号",
-              "component": "text",
-              "name": "lifnr",
-              "editablenode": "usertask5,usertask8",
-              "validation": {
-                "pageid": "zbxx",
-                "required": true,
-                "validationMsg": "固定资产购置申请供应商编号必填"
-              }
-            },
-            {
-              "title": "供应商",
-              "component": "text",
-              "name": "lifnrname",
-              "editablenode": "usertask5,usertask8",
-              "validation": {
-                "pageid": "zbxx",
-                "required": true,
-                "validationMsg": "固定资产购置申请供应商必填"
-              }
-            },
-            {
-              "title": "实际金额",
-              "component": "text",
-              "name": "zmoney",
-              "editablenode": "usertask5,usertask8",
-              "validation": {
-                "pageid": "zbxx",
-                "required": true,
-                "validationMsg": "固定资产购置申请实际金额必填"
-              }
-            },
-            {
-              "title": "合同",
-              "component": "text",
-              "name": "contract",
-              "editablenode": "usertask5,usertask8",
-              "validation": {
-                "pageid": "zbxx",
-                "required": true,
-                "validationMsg": "固定资产购置申请合同必填"
-              }
-            },
-            {
-              "title": "设计使用年限",
-              "component": "text",
-              "name": "sdjar",
-              "editablenode": "usertask5,usertask8",
-              "validation": {
-                "pageid": "zbxx",
-                "required": true,
-                "validationMsg": "固定资产购置申请设计使用年限必填"
-              }
             }
           ]
         }

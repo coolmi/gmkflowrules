@@ -2,7 +2,7 @@
   "id": "it_sendsingle",
   "handleOnPC": {
     "tasknode": [
-      "usertask2"
+      "usertask3"
     ],
     "flag": [
       "resubmit"

@@ -230,26 +230,33 @@
           "name": "contractsigning.bz",
           "options": [
             {
-              "text": "人民币",
+              "text": "人民币CNY",
               "value": "0"
             },
             {
-              "text": "美元",
+              "text": "美元USD",
               "value": "1"
             },
             {
-              "text": "欧元",
+              "text": "欧元EUR",
               "value": "2"
             },
             {
-              "text": "英镑",
+              "text": "英镑GBP",
               "value": "3"
             }
           ]
         },
         {
+          "title": "汇率",
+          "component": "text",
+          "id": "contractsigning_m_hl",
+          "editablenode": "",
+          "name": "contractsigning.m_hl"
+        },
+        {
           "flowshow": true,
-          "title": "合同金额（小写）",
+          "title": "合同金额（人民币小写）",
           "component": "text",
           "id": "contractsigning_htjexx",
           "editablenode": "",
