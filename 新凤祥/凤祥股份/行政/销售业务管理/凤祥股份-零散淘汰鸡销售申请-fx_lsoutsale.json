@@ -1,0 +1,186 @@
+{
+    "id": "fx_lsoutsale",
+    "handleOnPC": {
+        "tasknode": [""],
+        "flag": ["resubmit"]
+    },
+    "selectPerson": {
+        "tasknode": [""],
+        "beforPop": false
+    },
+    "forms": [{
+        "title": "基本信息",
+        "pageid": "jbxx",
+        "component": "panel",
+        "subComponents": [{
+            "title": "申请单号",
+            "component": "text",
+            "name": "mainModel.appid"
+        },
+        {
+            "title": "申请日期",
+            "component": "date1",
+            "name": "mainModel.appda"
+        },
+        {
+            "title": "申请人姓名",
+            "component": "label",
+            "label": ["mainModel.pernr", "-", "mainModel.username"]
+        },
+        {
+            "title": "所属部门",
+            "component": "label",
+            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.userid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.username"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.pernr"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.syspostname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysdeptname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.sysbusinessunitname"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.postid"
+        },
+        {
+            "title": "",
+            "component": "hidden",
+            "name": "mainModel.id"
+        }]
+    },
+    {
+        "title": "申请信息",
+        "pageid": "sqxx",
+        "component": "panel",
+        "subComponents": [
+          {
+            "title": "抄送",
+            "component": "textarea",
+            "rows":"2",
+            "name": "mainModel.sendname"
+          },
+          {
+            "title": "单价",
+            "component": "text",
+            "name": "mainModel.price"
+          },
+          {
+            "title": "单价大写",
+            "component": "text",
+            "name": "mainModel.price_dx"
+          },
+          {
+            "title": "供应商选择流程",
+            "component": "text",
+            "name": "mainModel.mSgys"
+          },
+          {
+            "title": "备注",
+            "component": "textarea",
+            "name": "mainModel.remarks",
+            "rows": "3"
+          }
+        ]
+    },
+      {
+        "title": "数量信息",
+        "pageid": "slxx",
+        "component": "panel",
+        "subComponents": [
+          {
+            "title": "",
+            "component": "table_form",
+            "basePath": "infolist",
+            "id": "slxx_table",
+            "tableForms": [
+              {
+                "title": "公鸡数量",
+                "component": "text",
+                "name": "cockno"
+              },
+              {
+                "title": "母鸡数量",
+                "component": "text",
+                "name": "henno"
+              },
+              {
+                "title": "鉴别错误",
+                "component": "text",
+                "name": "jberr"
+              },
+              {
+                "title": "鸡场名称",
+                "component": "text",
+                "name": "jcname"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "报价者信息",
+        "pageid": "bjzxx",
+        "component": "panel",
+        "subComponents": [
+          {
+            "title": "",
+            "component": "table_form",
+            "basePath": "gyslist",
+            "id": "bjzxx_table",
+            "tableForms": [
+              {
+                "title": "姓名",
+                "component": "text",
+                "name": "name"
+              },
+              {
+                "title": "电话",
+                "component": "text",
+                "name": "phone"
+              },
+              {
+                "title": "备注",
+                "component": "text",
+                "name": "note"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}
