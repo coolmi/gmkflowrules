@@ -166,7 +166,7 @@
       "title":"验收信息",
       "component":"panel",
       "pageid":"ysxx_self_page",
-      "subComponent":[
+      "subComponents":[
         {
           "component": "table_form",
           "titleIndex": 3,
