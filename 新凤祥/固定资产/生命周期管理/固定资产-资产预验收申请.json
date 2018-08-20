@@ -147,16 +147,6 @@
               "component": "text",
               "title": "采购订单",
               "name": "a_orderid"
-            },
-            {
-              "component": "text",
-              "title": "验收部门",
-              "name": "a_acorgnm"
-            },
-            {
-              "component": "text",
-              "title": "验收人员",
-              "name": "a_acnm"
             }
           ]
         }
@@ -192,11 +182,6 @@
               "component": "text",
               "title": "资产描述",
               "name": "b_propertyname"
-            },
-            {
-              "component": "text",
-              "title": "申请人",
-              "name": "b_appnm"
             },
             {
               "component": "text",
