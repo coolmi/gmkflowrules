@@ -1,0 +1,359 @@
+{
+  "id": "fx_salaryaudit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "类别",
+          "component": "select",
+          "name": "mainModel.type",
+          "options":[
+            {
+              "text": "月度",
+              "value": "1"
+            },
+            {
+              "text": "年度奖金",
+              "value": "2"
+            },
+            {
+              "text": "年度费用",
+              "value": "3"
+            },
+            {
+              "text": "其他",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "title": "年份",
+          "component": "text",
+          "name": "mainModel.year"
+        },
+        {
+          "title": "是否向财务发消息",
+          "component": "radio",
+          "name": "mainModel.isMsg",
+          "options": [
+            {
+              "title": "否",
+              "value": "1"
+            },
+            {
+              "title": "是",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "月份",
+          "component": "select",
+          "name": "mainModel.month",
+          "options":[
+            {
+              "text": "01",
+              "value": "01"
+            },
+            {
+              "text": "02",
+              "value": "02"
+            },
+            {
+              "text": "03",
+              "value": "03"
+            },
+            {
+              "text": "04",
+              "value": "04"
+            },
+            {
+              "text": "05",
+              "value": "05"
+            },
+            {
+              "text": "06",
+              "value": "06"
+            },
+            {
+              "text": "07",
+              "value": "07"
+            },
+            {
+              "text": "08",
+              "value": "08"
+            },
+            {
+              "text": "09",
+              "value": "09"
+            },
+            {
+              "text": "10",
+              "value": "10"
+            },
+            {
+              "text": "11",
+              "value": "11"
+            },
+            {
+              "text": "12",
+              "value": "12"
+            }
+          ]
+        },
+        {
+          "title": "信息发送人",
+          "component": "textarea",
+          "name": "mainModel.sendCodeName"
+        },
+        {
+          "title": "薪酬审批类别",
+          "component": "text",
+          "name": "mainModel.auditTypeName"
+        },
+        {
+          "title": "流程发起阶段",
+          "component": "select",
+          "name": "mainModel.flowType",
+          "options":[
+            {
+              "text": "阶段一",
+              "value": "1"
+            },
+            {
+              "text": "阶段二",
+              "value": "2"
+            }
+          ]
+
+        },
+        {
+          "title": "是否合并审批",
+          "component": "radio",
+          "name": "mainModel.isMerge",
+          "options": [
+            {
+              "title": "否",
+              "value": "1"
+            },
+            {
+              "title": "是",
+              "value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "当期主要变化说明",
+      "pageid": "mainintroduce",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "detail_table01",
+          "basePath": "infolist",
+          "tableForms": [
+            {
+              "title": "变化项目",
+              "component": "text",
+              "name": "changproject"
+            },
+            {
+              "title": "变化内容",
+              "component": "text",
+              "name": "changecontent"
+            },
+            {
+              "title": "薪酬应用",
+              "component": "text",
+              "name": "salaryapp"
+            },
+            {
+              "title": "信息来源",
+              "component": "text",
+              "name": "infofrom"
+            },
+            {
+              "title": "审批人",
+              "component": "text",
+              "name": "approval"
+            },
+            {
+              "title": "其他情况说明",
+              "component": "text",
+              "name": "note"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "当期薪酬发放明细",
+      "pageid": "money_detail",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "detail_table02",
+          "basePath": "detaillist",
+          "tableForms": [
+            {
+              "title": "单位",
+              "component": "text",
+              "name": "dwname"
+            },
+            {
+              "title": "人员类别",
+              "component": "text",
+              "name": "persontype"
+            },
+            {
+              "title": "人数",
+              "component": "text",
+              "name": "persons"
+            },
+            {
+              "title": "应发金额",
+              "component": "text",
+              "name": "payamount"
+            },
+            {
+              "title": "代扣个税",
+              "component": "text",
+              "name": "tax"
+            },
+            {
+              "title": "实发金额",
+              "component": "text",
+              "name": "finalamount"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "description"
+            },
+            {
+              "title": "合并单号",
+              "component": "text",
+              "name": "djbh"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
