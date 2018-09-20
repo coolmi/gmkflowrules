@@ -112,6 +112,7 @@
     {
       "title": "申请信息",
       "pageid": "applyInfo",
+      "id": "sqInfo",
       "component": "panel",
       "subComponents": [
         {
@@ -143,16 +144,17 @@
           "name": "mainModel.year"
         },
         {
+          "id": "isMsg",
           "title": "是否向财务发消息",
           "component": "radio",
           "name": "mainModel.isMsg",
           "options": [
             {
-              "title": "否",
+              "text": "否",
               "value": "1"
             },
             {
-              "title": "是",
+              "text": "是",
               "value": "0"
             }
           ]
@@ -161,6 +163,12 @@
           "title": "月份",
           "component": "select",
           "name": "mainModel.month",
+          "showLinkage":[
+            {
+              "id": "type",
+              "values":["1"]
+            }
+          ],
           "options":[
             {
               "text": "01",
@@ -215,7 +223,13 @@
         {
           "title": "信息发送人",
           "component": "textarea",
-          "name": "mainModel.sendCodeName"
+          "name": "mainModel.sendCodeName",
+          "showLinkage":[
+            {
+              "id": "isMsg",
+              "values":["0"]
+            }
+          ]
         },
         {
           "title": "薪酬审批类别",
@@ -223,6 +237,7 @@
           "name": "mainModel.auditTypeName"
         },
         {
+          "id": "flowType",
           "title": "流程发起阶段",
           "component": "select",
           "name": "mainModel.flowType",
@@ -236,20 +251,48 @@
               "value": "2"
             }
           ]
-
         },
         {
+          "id": "isMerge",
           "title": "是否合并审批",
           "component": "radio",
           "name": "mainModel.isMerge",
+          "showLinkage":[
+            {
+              "id": "flowType",
+              "values": ["2"]
+            }
+          ],
           "options": [
             {
-              "title": "否",
+              "text": "否",
               "value": "1"
             },
             {
-              "title": "是",
+              "text": "是",
               "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "合并单据号",
+          "component": "text",
+          "name": "mainModel.pappids",
+          "showLinkage":[
+            {
+              "id": "isMerge",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "流程最后办理人",
+          "component": "text",
+          "name": "mainModel.flowlastname",
+          "showLinkage":[
+            {
+              "id": "flowType",
+              "values": ["1"]
             }
           ]
         }
@@ -350,6 +393,31 @@
               "title": "合并单号",
               "component": "text",
               "name": "djbh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "合并审批附件明细",
+      "component": "panel",
+      "panel_id": "hbspfjmx_payment_panel",
+      "pageid": "hbspfjmx",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "basePath": "mergefiles",
+          "id": "files_zchtcb_table",
+          "tableForms": [
+            {
+              "title": "文件名称",
+              "component": "text",
+              "name": "filename",
+              "events": {
+                "eventType": "openDocument",
+                "filename": "filename",
+                "afrescoid": "afrescoid"
+              }
             }
           ]
         }
