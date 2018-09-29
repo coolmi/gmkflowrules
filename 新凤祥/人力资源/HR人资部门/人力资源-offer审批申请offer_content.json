@@ -1,0 +1,417 @@
+{
+  "id": "offer_content",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "vo.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "vo.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "vo.pernr",
+            "-",
+            "vo.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "vo.sysbusinessunitname",
+            "-",
+            "vo.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "vo.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "姓名",
+          "component": "text",
+          "name": "vo.name"
+        },
+        {
+          "title": "性别",
+          "component": "text",
+          "name": "vo.gender"
+        },
+        {
+          "title": "年龄",
+          "component": "text",
+          "name": "vo.age"
+        },
+        {
+          "title": "手机号",
+          "component": "text",
+          "name": "vo.mobile"
+        },
+        {
+          "title": "公司",
+          "component": "text",
+          "name": "personnelOrgData.mobile"
+        },
+        {
+          "title": "事业部",
+          "component": "text",
+          "name": "personnelOrgData.orgtext3"
+        },
+        {
+          "title": "部门",
+          "component": "text",
+          "name": "personnelOrgData.orgtext4"
+        },
+        {
+          "title": "科室",
+          "component": "text",
+          "name": "personnelOrgData.orgtext5"
+        },
+        {
+          "title": "工段",
+          "component": "text",
+          "name": "personnelOrgData.orgtext6"
+        },
+        {
+          "title": "班组",
+          "component": "text",
+          "name": "personnelOrgData.orgtext7"
+        },
+        {
+          "title": "岗位",
+          "component": "text",
+          "name": "personnelOrgData.postname"
+        }
+      ]
+    },
+    {
+      "title": "OFFER内容",
+      "pageid": "offerInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "到岗日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "vo.dgdate"
+        },
+        {
+          "title": "试用期（月）",
+          "component": "text",
+          "name": "vo.symonths"
+        },
+        {
+          "title": "工作履行地",
+          "component": "text",
+          "name": "vo.workplace"
+        },
+        {
+          "title": "试用期基本工资",
+          "component": "text",
+          "name": "vo.sysalary"
+        },
+        {
+          "title": "试用期月度岗位绩效",
+          "component": "text",
+          "name": "vo.syjx"
+        },
+        {
+          "title": "社保基数",
+          "component": "text",
+          "name": "vo.sbjs"
+        },
+        {
+          "title": "转正基本工资",
+          "component": "text",
+          "name": "vo.salary"
+        },
+        {
+          "title": "转正岗位绩效",
+          "component": "text",
+          "name": "vo.jx"
+        },
+        {
+          "title": "年终绩效奖金",
+          "component": "text",
+          "name": "vo.bonus"
+        },
+        {
+          "title": "合同年限",
+          "component": "select",
+          "name": "years",
+          "options": [
+            {
+              "text": "1年",
+              "value": "1"
+            },
+            {
+              "text": "2年",
+              "value": "2"
+            },
+            {
+              "text": "3年",
+              "value": "3"
+            },
+            {
+              "text": "5年",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "title": "offer密码",
+          "component": "text",
+          "name": "vo.password"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "vo.remark"
+        }
+      ]
+    },
+    {
+      "title": "社保信息",
+      "pageid": "sbInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "社保信息是否必填",
+          "component": "select",
+          "name": "vo.sbxxbt",
+          "options": [
+            {
+              "text": "是",
+              "value": "1"
+            },
+            {
+              "text": "否",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "社保缴纳地",
+          "component": "text",
+          "name": "vo.placeMs"
+        },
+        {
+          "title": "社保缴纳实体",
+          "component": "text",
+          "name": "vo.payPlaceMs"
+        },
+        {
+          "title": "合同实体",
+          "component": "text",
+          "name": "vo.contractPlaceMs"
+        },
+        {
+          "title": "社保缴纳基数",
+          "component": "select",
+          "name": "vo.radixCode",
+          "options": [
+            {
+              "text": "保定2616/2000",
+              "value": "RA000000000000041"
+            }
+          ]
+        },
+        {
+          "title": "社保福利套系",
+          "component": "select",
+          "name": "vo.welfareCode",
+          "options": [
+            {
+              "text": "保定五险一金-大病60元/60元/年",
+              "value": "WE000000000000092"
+            }
+          ]
+        },
+        {
+          "title": "开始缴纳日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "vo.enabledDate"
+        }
+      ]
+    },
+    {
+      "title": "通讯补贴",
+      "pageid": "txbtInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "岗位工作区域",
+          "component": "select",
+          "name": "vo.bgqy",
+          "options": [
+            {
+              "text": "聊城办公区",
+              "value": "聊城办公区"
+            },
+            {
+              "text": "聊城以外办公区",
+              "value": "聊城以外办公区"
+            }
+          ]
+        },
+        {
+          "title": "通讯补贴",
+          "component": "select",
+          "name": "vo.txbt",
+          "options": [
+            {
+              "text": "40元",
+              "value": "40元"
+            },
+            {
+              "text": "70元",
+              "value": "70元"
+            },
+            {
+              "text": "0元",
+              "value": "0元"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFFER预览",
+      "pageid": "sbInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "offer所属公司",
+          "component": "select",
+          "name": "vo.sscompany",
+          "refersToArray":{
+            "basePath":"t001list",
+            "value":"sscompany",
+            "text":["bukrs","-","butxt"]
+          }
+        },
+        {
+          "title": "对应模板",
+          "component": "select",
+          "name": "vo.offertemp",
+          "options": [
+            {
+              "text": "祥泰国际",
+              "value": "3"
+            },
+            {
+              "text": "凤祥食品",
+              "value": "2"
+            },
+            {
+              "text": "新凤祥控股集团",
+              "value": "1"
+            },
+            {
+              "text": "（空白）",
+              "value": "6"
+            },
+            {
+              "text": "祥光集团",
+              "value": "5"
+            },
+            {
+              "text": "中科凤祥",
+              "value": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

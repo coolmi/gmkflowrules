@@ -1,0 +1,207 @@
+{
+  "id": "gmkhr_monthplanrecruit",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "岗位直线经理",
+          "component": "text",
+          "name": "mainModel.r_post_leadernm"
+        },
+        {
+          "title": "岗位经理邮箱",
+          "component": "text",
+          "name": "mainModel.r_post_email"
+        },
+        {
+          "title": "合计",
+          "component": "text",
+          "name": "mainModel.hj"
+        }
+      ]
+    },
+    {
+      "title": "招聘计划明细",
+      "pageid": "plan_detail",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "detail_table",
+          "basePath": "planrecruitsubapplist",
+          "tableForms": [
+            {
+              "title": "事业部",
+              "component": "text",
+              "name": "r_bus_part_nm"
+            },
+            {
+              "title": "部门",
+              "component": "text",
+              "name": "r_usedeptnm"
+            },
+            {
+              "title": "科室",
+              "component": "text",
+              "name": "r_room_nm"
+            },
+            {
+              "title": "工段",
+              "component": "text",
+              "name": "r_station_nm"
+            },
+            {
+              "title": "班组",
+              "component": "text",
+              "name": "r_class_nm"
+            },
+            {
+              "title": "岗位职责描述",
+              "component": "text",
+              "name": "r_duty"
+            },
+            {
+              "title": "职位名称",
+              "component": "text",
+              "name": "r_postnm"
+            },
+            {
+              "title": "招聘人数",
+              "component": "text",
+              "name": "r_num"
+            },
+            {
+              "title": "需求原因",
+              "component": "text",
+              "name": "r_reasontxt"
+            },
+            {
+              "title": "到岗日期",
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "name": "r_indate"
+            },
+            {
+              "title": "年龄",
+              "component": "text",
+              "name": "r_age"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
