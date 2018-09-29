@@ -321,6 +321,8 @@
           "title": "岗位工作区域",
           "component": "select",
           "name": "vo.bgqy",
+          "editablenode": "usertask2",
+          "tasknode": "usertask2,usertask7",
           "options": [
             {
               "text": "聊城办公区",
@@ -336,7 +338,13 @@
           "title": "通讯补贴",
           "component": "select",
           "name": "vo.txbt",
+          "editablenode": "usertask2",
+          "tasknode": "usertask2,usertask7",
           "options": [
+            {
+              "text": "0元",
+              "value": "0元"
+            },
             {
               "text": "40元",
               "value": "40元"
@@ -346,8 +354,16 @@
               "value": "70元"
             },
             {
-              "text": "0元",
-              "value": "0元"
+              "text": "100元",
+              "value": "100元"
+            },
+            {
+              "text": "180元",
+              "value": "180元"
+            },
+            {
+              "text": "300元",
+              "value": "300元"
             }
           ]
         }
@@ -364,7 +380,7 @@
           "name": "vo.sscompany",
           "refersToArray":{
             "basePath":"t001list",
-            "value":"sscompany",
+            "value":"bukrs",
             "text":["bukrs","-","butxt"]
           }
         },
