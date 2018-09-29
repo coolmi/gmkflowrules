@@ -137,7 +137,7 @@
         {
           "title": "公司",
           "component": "text",
-          "name": "personnelOrgData.mobile"
+          "name": "personnelOrgData.orgtext2"
         },
         {
           "title": "事业部",
@@ -226,7 +226,7 @@
         {
           "title": "合同年限",
           "component": "select",
-          "name": "years",
+          "name": "vo.years",
           "options": [
             {
               "text": "1年",
@@ -295,25 +295,13 @@
         },
         {
           "title": "社保缴纳基数",
-          "component": "select",
-          "name": "vo.radixCode",
-          "options": [
-            {
-              "text": "保定2616/2000",
-              "value": "RA000000000000041"
-            }
-          ]
+          "component": "text",
+          "name": "vo.radixCodeMs"
         },
         {
           "title": "社保福利套系",
-          "component": "select",
-          "name": "vo.welfareCode",
-          "options": [
-            {
-              "text": "保定五险一金-大病60元/60元/年",
-              "value": "WE000000000000092"
-            }
-          ]
+          "component": "text",
+          "name": "vo.welfareCodeMs"
         },
         {
           "title": "开始缴纳日期",

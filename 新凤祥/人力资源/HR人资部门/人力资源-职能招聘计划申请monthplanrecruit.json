@@ -136,54 +136,8 @@
         },
         {
           "title": "学历要求",
-          "component": "select",
-          "name": "mainModel.r_eduid",
-          "options":[
-            {
-              "text": "初中",
-              "value": "初中"
-            },
-            {
-              "text": "高中",
-              "value": "高中"
-            },
-            {
-              "text": "中技",
-              "value": "中技"
-            },
-            {
-              "text": "中专",
-              "value": "中专"
-            },
-            {
-              "text": "大专",
-              "value": "大专"
-            },
-            {
-              "text": "本科",
-              "value": "本科"
-            },
-            {
-              "text": "硕士",
-              "value": "硕士"
-            },
-            {
-              "text": "博士",
-              "value": "博士"
-            },
-            {
-              "text": "MBA",
-              "value": "MBA"
-            },
-            {
-              "text": "EMBA",
-              "value": "EMBA"
-            },
-            {
-              "text": "其他",
-              "value": "其他"
-            }
-          ]
+          "component": "text",
+          "name": "mainModel.r_eduid"
         },
         {
           "title": "岗位职责描述",
@@ -252,26 +206,8 @@
         },
         {
           "title": "负责人",
-          "component": "select",
-          "name": "mainModel.r_fzr",
-          "options":[
-            {
-              "text": "新凤祥",
-              "value": "531a24595de62b9d015de8fa9e370001"
-            },
-            {
-              "text": "祥泰国际",
-              "value": "531a245961d77c250161e576390c000a"
-            },
-            {
-              "text": "凤翔股份",
-              "value": "531a2459621fb6a6016229e95aca0003"
-            },
-            {
-              "text": "祥光集团",
-              "value": "531a245961d77c250161e57569150009"
-            }
-          ]
+          "component": "text",
+          "name": "mainModel.r_fzrnm"
         },
         {
           "title": "其他招聘角色",
@@ -280,62 +216,8 @@
         },
         {
           "title": "职能类别",
-          "component": "select",
-          "name": "mainModel.r_znlb",
-          "options":[
-            {
-              "text": "财务/审计/税务",
-              "value": "3"
-            },
-            {
-              "text": "人力资源",
-              "value": "2"
-            },
-            {
-              "text": "房地产/建筑/物业",
-              "value": "10"
-            },
-            {
-              "text": "高级管理",
-              "value": "1"
-            },
-            {
-              "text": "法务",
-              "value": "7"
-            },
-            {
-              "text": "销售/客服/技术支持",
-              "value": "6"
-            },
-            {
-              "text": "公关/媒介",
-              "value": "5"
-            },
-            {
-              "text": "品牌/市场",
-              "value": "4"
-            },
-            {
-              "text": "IT/互联网/通信",
-              "value": "9"
-            },
-            {
-              "text": "行政/后勤/文秘",
-              "value": "8"
-            },
-            {
-              "text": "医疗、护理、生活服务",
-              "value": "13"
-            },
-            {
-              "text": "生产/制造",
-              "value": "11"
-            },
-            {
-              "text": "采购/贸易/交通物流",
-              "value": "12"
-            }
-          ]
+          "component": "text",
+          "name": "mainModel.r_znlbnm"
         },
         {
           "title": "工作地点",
