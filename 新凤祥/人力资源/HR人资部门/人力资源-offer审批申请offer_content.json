@@ -338,8 +338,8 @@
           "title": "通讯补贴",
           "component": "select",
           "name": "vo.txbt",
-          "editablenode": "usertask2",
           "tasknode": "usertask2,usertask7",
+          "editablenode": "usertask2",
           "options": [
             {
               "text": "0元",
