@@ -121,8 +121,18 @@
         },
         {
           "title": "性别",
-          "component": "text",
-          "name": "vo.gender"
+          "component": "select",
+          "name": "vo.gender",
+          "options": [
+            {
+              "text": "男",
+              "value": "1"
+            },
+            {
+              "text": "女",
+              "value": "2"
+            }
+          ]
         },
         {
           "title": "年龄",
