@@ -16,7 +16,7 @@
   },
   "forms": [
     {
-      "title": "基本信息",
+      "title": "申请信息",
       "pageid": "jbxx",
       "component": "panel",
       "subComponents": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "title": "申请信息",
+      "title": "基本信息",
       "pageid": "applyInfo",
       "component": "panel",
       "subComponents": [
@@ -257,11 +257,6 @@
           ]
         },
         {
-          "title": "offer密码",
-          "component": "text",
-          "name": "vo.password"
-        },
-        {
           "title": "备注",
           "component": "text",
           "name": "vo.remark"
@@ -374,54 +369,6 @@
             {
               "text": "300元",
               "value": "300元"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "OFFER预览",
-      "pageid": "sbInfo",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "offer所属公司",
-          "component": "select",
-          "name": "vo.sscompany",
-          "refersToArray":{
-            "basePath":"t001list",
-            "value":"bukrs",
-            "text":["bukrs","-","butxt"]
-          }
-        },
-        {
-          "title": "对应模板",
-          "component": "select",
-          "name": "vo.offertemp",
-          "options": [
-            {
-              "text": "祥泰国际",
-              "value": "3"
-            },
-            {
-              "text": "凤祥食品",
-              "value": "2"
-            },
-            {
-              "text": "新凤祥控股集团",
-              "value": "1"
-            },
-            {
-              "text": "（空白）",
-              "value": "6"
-            },
-            {
-              "text": "祥光集团",
-              "value": "5"
-            },
-            {
-              "text": "中科凤祥",
-              "value": "4"
             }
           ]
         }
