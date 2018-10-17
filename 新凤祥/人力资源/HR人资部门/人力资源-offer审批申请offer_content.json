@@ -182,7 +182,7 @@
       ]
     },
     {
-      "title": "OFFER内容",
+      "title": "OFFER信息",
       "pageid": "offerInfo",
       "component": "panel",
       "subComponents": [
@@ -297,11 +297,6 @@
           "title": "合同实体",
           "component": "text",
           "name": "vo.contractPlaceMs"
-        },
-        {
-          "title": "社保缴纳基数",
-          "component": "text",
-          "name": "vo.radixCodeMs"
         },
         {
           "title": "社保福利套系",
