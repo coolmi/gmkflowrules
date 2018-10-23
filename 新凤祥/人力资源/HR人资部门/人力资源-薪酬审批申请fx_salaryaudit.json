@@ -395,6 +395,39 @@
               "name": "djbh"
             }
           ]
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "sum_table02",
+          "basePath": "detailsum",
+          "tableForms": [
+            {
+              "title": "汇总合计",
+              "component": "text",
+              "name": "dwname"
+            },
+            {
+              "title": "人数合计",
+              "component": "text",
+              "name": "persons"
+            },
+            {
+              "title": "应发金额合计",
+              "component": "text",
+              "name": "payamount"
+            },
+            {
+              "title": "代扣个税合计",
+              "component": "text",
+              "name": "tax"
+            },
+            {
+              "title": "实发金额合计",
+              "component": "text",
+              "name": "finalamount"
+            }
+          ]
         }
       ]
     },
