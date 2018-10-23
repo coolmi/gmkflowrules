@@ -1,0 +1,186 @@
+{
+  "id": "flow_gmkoa_supplierblock",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mianModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mianModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mianModel.pernr",
+            "-",
+            "mianModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mianModel.sysbusinessunitname",
+            "-",
+            "mianModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mianModel.id"
+        }
+      ]
+    },
+    {
+      "title": "初始信息",
+      "pageid": "sqInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "name": "mianModel.titles"
+        },
+        {
+          "title": "申请类型",
+          "component": "text",
+          "name": "mianModel.operType"
+        },
+        {
+          "title": "冻结功能",
+          "component": "text",
+          "name": "mianModel.operType1"
+        }
+      ]
+    },
+    {
+      "title": "供应商信息",
+      "pageid": "supplierInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "supplier_table",
+          "basePath": "resultchilds",
+          "tableForms": [
+            {
+              "title": "所属法人",
+              "component": "text",
+              "name": "cdburks"
+            },
+            {
+              "title": "所属法人名称",
+              "component": "text",
+              "name": "cdburkstxt"
+            },
+            {
+              "title": "供应商编码",
+              "component": "text",
+              "name": "supplierId"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "supplierName"
+            },
+            {
+              "title": "采购组织",
+              "component": "text",
+              "name": "purchOrg"
+            },
+            {
+              "title": "采购组织描述",
+              "component": "text",
+              "name": "purchOrgtxt"
+            },
+            {
+              "title": "返回值",
+              "component": "text",
+              "name": "returnv"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
