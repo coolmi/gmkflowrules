@@ -106,7 +106,7 @@
       ]
     },
     {
-      "title": "报销人",
+      "title": "报销人信息",
       "pageid": "bxrxx",
       "component": "panel",
       "subComponents": [
@@ -227,7 +227,7 @@
             {
               "title": "境内/外",
               "component": "select",
-              "name": "info_budgetitem",
+              "name": "info_budgetitemdes",
               "id": "info_budgetitem_type",
               "options": [
                 {
@@ -270,33 +270,6 @@
               "name": "info_subjectcodedec"
             },
             {
-              "title": "原币金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "info_yunitprice",
-              "showLinkage": [
-                {
-                  "id": "info_budgetitem_type",
-                  "values": [
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "汇率",
-              "component": "text",
-              "name": "info_kursf",
-              "showLinkage": [
-                {
-                  "id": "info_budgetitem_type",
-                  "values": [
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
               "title": "币种",
               "component": "text",
               "name": "info_waerstxt"
@@ -306,6 +279,19 @@
               "component": "text",
               "datatype": "money",
               "name": "info_writeamount"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "info_purch",
+              "showLinkage": [
+                {
+                  "id": "info_budgetitem_type",
+                  "values": [
+                    "1"
+                  ]
+                }
+              ]
             },
             {
               "title": "费用分摊类型",
@@ -374,18 +360,6 @@
           "name": "mainModel.sused"
         },
         {
-          "title": "补(退)金额",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.pswbt"
-        },
-        {
-          "title": "补(退)金额大写",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.pwsbtd"
-        },
-        {
           "title": "预付款金额",
           "component": "text",
           "datatype": "money",
@@ -397,6 +371,18 @@
           "component": "text",
           "editablenode": "",
           "name": "mainModel.kuname"
+        },
+        {
+          "title": "补(退)金额",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pswbt"
+        },
+        {
+          "title": "补(退)金额大写",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pwsbtd"
         },
         {
           "title": "付款日期",
@@ -480,6 +466,11 @@
               ]
             },
             {
+              "title": "费用细项",
+              "component": "text",
+              "name": "info_writetypedes"
+            },
+            {
               "title": "调后科目",
               "component": "text",
               "name": "info_aftersubjectcodedes"
@@ -503,6 +494,132 @@
               "title": "实付",
               "component": "text",
               "name": "info_writeamount"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "凭证信息",
+      "pageid": "certificateInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "凭证日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.documentdate"
+        },
+        {
+          "title": "过账日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.postingdate"
+        },
+        {
+          "title": "凭证抬头文本",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.pztxt"
+        },
+        {
+          "title": "是否自动过账",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.zdgz"
+        },
+        {
+          "title": "公司代码",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.cdbukrs"
+        },
+        {
+          "title":"公司描述",
+          "component":"text",
+          "name":"mainModel.cdbutxt"
+        },
+        {
+          "title":"借方合计",
+          "component":"text",
+          "name":"mainModel.debittotals"
+        },
+        {
+          "title":"贷方合计",
+          "component":"text",
+          "name":"mainModel.credittotals"
+        },
+        {
+          "title":"凭证编码",
+          "component":"text",
+          "name":"mainModel.credentialinfor"
+        }
+      ]
+    },
+    {
+      "title": "凭证详细信息",
+      "pageid": "certificateDetailInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "certificateDetail_table",
+          "basePath": "prulist",
+          "tableForms": [
+            {
+              "title": "科目",
+              "component": "label",
+              "label": [
+                "subjectcode",
+                "-",
+                "subjectxt"
+              ]
+            },
+            {
+              "title": "科目描述",
+              "component": "text",
+              "name": "asubjectxt"
+            },
+            {
+              "title": "D/C",
+              "component": "text",
+              "name": "dc"
+            },
+            {
+              "title": "货币",
+              "component": "text",
+              "name": "currency"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "name": "ammoney"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "exchangerate"
+            },
+            {
+              "title": "本位币金额",
+              "component": "text",
+              "name": "anmoney"
+            },
+            {
+              "title": "文本",
+              "component": "textarea",
+              "name": "textv"
+            },
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "costcentertxt"
+            },
+            {
+              "title": "分配号",
+              "component": "text",
+              "name": "mentnum"
             }
           ]
         }

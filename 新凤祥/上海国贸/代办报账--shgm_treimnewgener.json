@@ -128,6 +128,11 @@
           "name": "afuser.userd"
         },
         {
+          "title": "打款账户信息",
+          "component": "text",
+          "name": "reimburse.makinginfor"
+        },
+        {
           "title": "员工编号",
           "component": "text",
           "name": "afuser.pernr"
@@ -143,9 +148,19 @@
           "name": "afuser.businessunitname"
         },
         {
+          "title": "所在公司",
+          "component": "text",
+          "name": "reimburse.cdbukrsname"
+        },
+        {
           "title": "邮箱",
           "component": "text",
           "name": "afuser.pfach"
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "name": "afuser.telnr"
         },
         {
           "title": "手机号",
@@ -156,6 +171,83 @@
           "title": "员工财务编号",
           "component": "text",
           "name": "afuser.lifnr"
+        },
+        {
+          "title": "代办手机号",
+          "component": "text",
+          "name": "afuser.gtelpr"
+        },
+        {
+          "title": "员工银行账号",
+          "component": "text",
+          "name": "afuser.bankn"
+        },
+        {
+          "title": "开户行",
+          "component": "text",
+          "name": "afuser.banka"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "报销类型",
+          "component": "select",
+          "id":"notravle",
+          "name": "reimburse.notravle",
+          "options": [
+            {
+              "text": "差旅报销",
+              "value": "0"
+            },{
+              "text": "非差旅报销",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "项目类型",
+          "component": "select",
+          "name": "reimburse.protype",
+          "options": [
+            {
+              "text": "通用",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "title": "费用承担公司",
+          "component": "label",
+          "label": [
+            "reimburse.cdbukrs",
+            "",
+            "reimburse.cdbukrsname"
+          ]
+        },
+        {
+          "title": "费用归集成本中心",
+          "component": "label",
+          "label": [
+            "reimburse.cdkostls",
+            "",
+            "reimburse.cdkostlsname"
+          ]
+        },
+        {
+          "title": "附件数",
+          "component": "text",
+          "name": "reimburse.numpg"
+        },
+        {
+          "title": "说明",
+          "component": "textarea",
+          "rows": "3",
+          "name": "reimburse.smemo"
         }
       ]
     },
@@ -233,68 +325,6 @@
               "name": "trlnrs"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "申请信息",
-      "pageid": "sqxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "报销类型",
-          "component": "select",
-          "id":"notravle",
-          "name": "reimburse.notravle",
-          "options": [
-            {
-              "text": "差旅报销",
-              "value": "0"
-            },{
-              "text": "非差旅报销",
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "title": "项目类型",
-          "component": "select",
-          "name": "reimburse.protype",
-          "options": [
-            {
-              "text": "通用",
-              "value": "0"
-            }
-          ]
-        },
-        {
-          "title": "费用承担公司",
-          "component": "label",
-          "label": [
-            "reimburse.cdbukrs",
-            "",
-            "reimburse.cdbukrsname"
-          ]
-        },
-        {
-          "title": "费用归集成本中心",
-          "component": "label",
-          "label": [
-            "reimburse.cdkostls",
-            "",
-            "reimburse.cdkostlsname"
-          ]
-        },
-        {
-          "title": "附件数",
-          "component": "text",
-          "name": "reimburse.numpg"
-        },
-        {
-          "title": "说明",
-          "component": "textarea",
-          "rows": "3",
-          "name": "reimburse.smemo"
         }
       ]
     },
