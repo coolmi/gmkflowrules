@@ -1,0 +1,478 @@
+{
+  "id": "flow_gmkoa_priceBasic",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "初始信息",
+      "pageid": "sqInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "标题",
+          "component": "text",
+          "name": "mainModel.titles"
+        },
+        {
+          "title": "事项类型",
+          "component": "radio",
+          "id": "eventType",
+          "name": "mainModel.operTpye",
+          "options": [
+            {
+              "title": "通用底价",
+              "value": "1"
+            },
+            {
+              "title": "搭赠政策",
+              "value": "2"
+            },
+            {
+              "title": "国内生品底价",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
+        },
+        {
+          "title": "价格类型",
+          "component": "text",
+          "name": "mainModel.priceType"
+        },
+        {
+          "title": "价格描述",
+          "component": "text",
+          "name": "mainModel.describes"
+        },
+        {
+          "title": "利润描述",
+          "component": "text",
+          "name": "mainModel.profits"
+        },
+        {
+          "title": "销售组织",
+          "component": "text",
+          "name": "mainModel.saleOrg",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "分销渠道",
+          "component": "text",
+          "name": "mainModel.saleWay",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "价格单位",
+          "component": "text",
+          "name": "mainModel.per",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "数量单位",
+          "component": "text",
+          "name": "mainModel.unit",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.currency",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "开始日期",
+          "component": "text",
+          "name": "mainModel.bDate",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "结束日期",
+          "component": "text",
+          "name": "mainModel.eDate",
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "通用底价明细",
+      "pageid": "currencyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "currency_table",
+          "basePath": "pricebasicchldList",
+          "tableForms": [
+            {
+              "title": "销售编码",
+              "component": "text",
+              "name": "saleOrg"
+            },
+            {
+              "title": "销售组织",
+              "component": "text",
+              "name": "saleOrgtxt"
+            },
+            {
+              "title": "分销渠道",
+              "component": "text",
+              "name": "saleWay"
+            },
+            {
+              "title": "资产/物料号",
+              "component": "label",
+              "label": [
+                "assetsID",
+                "assetstxt"
+              ]
+            },
+            {
+              "title": "供应商/客户",
+              "component": "label",
+              "label": [
+                "customerID",
+                "customerNa"
+              ]
+            },
+            {
+              "title": "数量单位",
+              "component": "text",
+              "name": "numunit"
+            },
+            {
+              "title": "币种",
+              "component": "text",
+              "name": "currency"
+            },
+            {
+              "title": "重量单位",
+              "component": "text",
+              "name": "weigunit"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "price"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "bdate"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edate"
+            }
+          ]
+        }
+      ],
+      "showLinkage": [
+        {
+          "id": "eventType",
+          "values": ["1","3"]
+        }
+      ]
+    },
+    {
+      "title": "政策明细",
+      "pageid": "policyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "policy_table",
+          "basePath": "pricegiftchldList",
+          "tableForms": [
+            {
+              "title": "销售组织",
+              "component": "text",
+              "name": "saleOrg"
+            },
+            {
+              "title": "分销渠道",
+              "component": "text",
+              "name": "saleWay"
+            },
+            {
+              "title": "供应商/客户",
+              "component": "label",
+              "label": [
+                "customerID",
+                "customerNa"
+              ]
+            },
+            {
+              "title": "物料",
+              "component": "label",
+              "label": [
+                "assetsID",
+                "assetstxt"
+              ]
+            },
+            {
+              "title": "处理状态",
+              "component": "text",
+              "name": "handleSate"
+            },
+            {
+              "title": "最小数量",
+              "component": "text",
+              "name": "minnum"
+            },
+            {
+              "title": "批量",
+              "component": "text",
+              "name": "batch"
+            },
+            {
+              "title": "搭建产品及描述",
+              "component": "text",
+              "name": "assetsID1"
+            },
+            {
+              "title": "单位1",
+              "component": "text",
+              "name": "unit1"
+            },
+            {
+              "title": "免费数量",
+              "component": "text",
+              "name": "freenum"
+            },
+            {
+              "title": "单位2",
+              "component": "text",
+              "name": "unit2"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "bdate"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edate"
+            },
+            {
+              "title": "计算类型",
+              "component": "text",
+              "name": "detype"
+            }
+          ]
+        }
+      ],
+      "showLinkage": [
+        {
+          "id": "eventType",
+          "values": ["2"]
+        }
+      ]
+    },
+    {
+      "title": "底价清单（国内生品专用）",
+      "pageid": "billInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "bill_table",
+          "basePath": "pricefreshchldList",
+          "tableForms": [
+            {
+              "title": "类别代码",
+              "component": "text",
+              "name": "mold1"
+            },
+            {
+              "title": "类别名称",
+              "component": "text",
+              "name": "mold1t"
+            },
+            {
+              "title": "品类代码",
+              "component": "text",
+              "name": "mold2"
+            },
+            {
+              "title": "品类名称",
+              "component": "text",
+              "name": "mold2t"
+            },
+            {
+              "title": "原单价",
+              "component": "text",
+              "name": "agoPrice"
+            },
+            {
+              "title": "现单价",
+              "component": "text",
+              "name": "price"
+            }
+          ]
+        }
+      ],
+      "showLinkage": [
+        {
+          "id": "eventType",
+          "values": ["3"]
+        }
+      ]
+    }
+  ]
+}
+

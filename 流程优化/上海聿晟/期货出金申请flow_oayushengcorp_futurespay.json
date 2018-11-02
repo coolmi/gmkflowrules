@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_oayushengcorp_futurespay",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,93 +115,74 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "所属法人",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.cdburks"
         },
         {
-          "title": "申请类型",
+          "title": "内外盘",
           "component": "radio",
-          "name": "mainModel.operType",
+          "name": "mainModel.intOrExt",
           "options": [
             {
-              "title": "冻结",
-              "value": "1"
+              "title": "内盘",
+              "value": "0"
             },
             {
-              "title": "解冻",
-              "value": "2"
+              "title": "外盘",
+              "value": "1"
             }
           ]
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
-      "component": "panel",
-      "subComponents": [
+          "title": "期货账户",
+          "component": "text",
+          "name": "mainModel.futureAccout"
+        },
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
-          "tableForms": [
-            {
-              "title": "所属法人",
-              "component": "text",
-              "name": "cdburks"
-            },
-            {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
-            },
-            {
-              "title": "供应商编码",
-              "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
-              "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
-            }
-          ]
+          "title": "期货公司",
+          "component": "text",
+          "name": "mainModel.futureCompy"
+        },
+        {
+          "title": "期货公司账号",
+          "component": "text",
+          "name": "mainModel.fuBankAccout"
+        },
+        {
+          "title": "账户开户行",
+          "component": "text",
+          "name": "mainModel.openBank"
+        },
+        {
+          "title": "汇入行账号",
+          "component": "text",
+          "name": "mainModel.payBank"
+        },
+        {
+          "title": "申请付款日期",
+          "component": "text",
+          "name": "mainModel.payDate"
+        },
+        {
+          "title": "申请金额",
+          "component": "text",
+          "name": "mainModel.appAmount"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.appCurrency"
+        },
+        {
+          "title": "金额大写",
+          "component": "text",
+          "name": "mainModel.chinaNumber"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.remark"
         }
       ]
     }

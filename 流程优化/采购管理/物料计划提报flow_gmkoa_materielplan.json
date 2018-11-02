@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_materielplan",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,91 +115,92 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "公司",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.cdbutxt"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
         },
         {
-          "title": "冻结功能",
+          "title": "工厂名称",
+          "component": "text",
+          "name": "mainModel.factoryName"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.cdkotxt"
+        },
+        {
+          "title": "加急采购",
           "component": "radio",
-          "name": "mainModel.operType1",
+          "name": "mainModel.urgent",
           "options": [
             {
-              "title": "记账冻结",
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
               "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
             }
           ]
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "物料计划提报子表",
+      "pageid": "materielplanInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "materielplan_table",
+          "basePath": "materielplanchlds",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "物料类别编码",
               "component": "text",
-              "name": "cdburks"
+              "name": "mtypeid"
             },
             {
-              "title": "所属法人名称",
+              "title": "物料类别",
               "component": "text",
-              "name": "cdburkstxt"
+              "name": "mtypetxt"
             },
             {
-              "title": "供应商编码",
+              "title": "物料号",
               "component": "text",
-              "name": "supplierId"
+              "name": "mcode"
             },
             {
-              "title": "供应商名称",
+              "title": "物料描述",
               "component": "text",
-              "name": "supplierName"
+              "name": "mscripe"
             },
             {
-              "title": "采购组织",
+              "title": "单位",
               "component": "text",
-              "name": "purchOrg"
+              "name": "munit"
             },
             {
-              "title": "采购组织描述",
+              "title": "需求量",
               "component": "text",
-              "name": "purchOrgtxt"
+              "name": "mcount"
             },
             {
-              "title": "返回值",
+              "title": "采购组",
               "component": "text",
-              "name": "returnv"
+              "name": "ekgrp"
+            },
+            {
+              "title": "备注",
+              "component": "textarea",
+              "name": "remark"
             }
           ]
         }

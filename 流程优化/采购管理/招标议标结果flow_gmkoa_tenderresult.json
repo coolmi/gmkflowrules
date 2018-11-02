@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_tenderresult",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,91 +115,167 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "交易类型",
+          "component": "radio",
+          "id": "trdeid",
+          "name": "mainModel.dealType",
+          "options": [
+            {
+              "title": "采购",
+              "value": "0"
+            },
+            {
+              "title": "销售",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "是否最低价",
+          "component": "radio",
+          "name": "mainModel.floorPrice",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "招标形式",
+          "component": "radio",
+          "name": "mainModel.tendMode",
+          "options": [
+            {
+              "title": "招标",
+              "value": "0"
+            },
+            {
+              "title": "议标",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "价格类型",
           "component": "text",
-          "name": "mainModel.titles"
-        },
-        {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
+          "name": "mainModel.priceType",
+          "showLinkage": [
             {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
+              "id": "trdeid",
+              "values": ["1"]
             }
           ]
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
+          "title": "招标物资分类",
+          "component": "text",
+          "name": "mainModel.goodsTypetxt",
+          "showLinkage": [
             {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
+              "id": "trdeid",
+              "values": ["0"]
             }
           ]
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
+        },
+        {
+          "title": "招标申请单",
+          "component": "text",
+          "name": "mainModel.tenderNo"
+        },
+        {
+          "title": "采购组织",
+          "component": "text",
+          "name": "mainModel.purchOrger",
+          "showLinkage": [
+            {
+              "id": "trdeid",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "付款条件",
+          "component": "text",
+          "name": "mainModel.termsPayment",
+          "showLinkage": [
+            {
+              "id": "trdeid",
+              "values": ["0"]
+            }
+          ]
+        },
+        {
+          "title": "过程及意见",
+          "component": "textarea",
+          "name": "mainModel.remarks"
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "子表信息",
+      "pageid": "childInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
+          "id": "child_table",
           "basePath": "resultchilds",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "资产/物料号",
               "component": "text",
-              "name": "cdburks"
+              "name": "assetstxt"
             },
             {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
-            },
-            {
-              "title": "供应商编码",
-              "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
+              "title": "供应商/客户",
               "component": "text",
               "name": "supplierName"
             },
             {
-              "title": "采购组织",
+              "title": "规格型号",
               "component": "text",
-              "name": "purchOrg"
+              "name": "standard"
             },
             {
-              "title": "采购组织描述",
+              "title": "单位价格",
               "component": "text",
-              "name": "purchOrgtxt"
+              "name": "per"
             },
             {
-              "title": "返回值",
+              "title": "币种",
               "component": "text",
-              "name": "returnv"
+              "name": "currencyId"
+            },
+            {
+              "title": "数量单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "price"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "bDate"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "eDate"
             }
           ]
         }

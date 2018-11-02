@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_oayushengcorp_employeeCorrection",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,93 +115,79 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "转正人编号",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.pernr"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "姓名",
+          "component": "text",
+          "name": "mainModel.pname"
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
-      "component": "panel",
-      "subComponents": [
+          "title": "转正类型",
+          "component": "text",
+          "name": "mainModel.coType"
+        },
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
-          "tableForms": [
-            {
-              "title": "所属法人",
-              "component": "text",
-              "name": "cdburks"
-            },
-            {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
-            },
-            {
-              "title": "供应商编码",
-              "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
-              "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
-            }
-          ]
+          "title": "所在岗位ID",
+          "component": "text",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "所在组织ID",
+          "component": "text",
+          "name": "mainModel.orgid"
+        },
+        {
+          "title": "所在岗位",
+          "component": "text",
+          "name": "mainModel.postna"
+        },
+        {
+          "title": "所属组织",
+          "component": "text",
+          "name": "mainModel.orgna"
+        },
+        {
+          "title": "入职日期",
+          "component": "text",
+          "name": "mainModel.entryDate"
+        },
+        {
+          "title": "拟转正时间",
+          "component": "text",
+          "name": "mainModel.coDate"
+        },
+        {
+          "title": "毕业院校",
+          "component": "text",
+          "name": "mainModel.graduate"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "mainModel.education"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "mainModel.major"
+        },
+        {
+          "title": "毕业时间",
+          "component": "text",
+          "name": "mainModel.gDate"
+        },
+        {
+          "title": "个人总结",
+          "component": "text",
+          "name": "mainModel.remarks"
+        },
+        {
+          "title": "转正结果",
+          "component": "text",
+          "name": "mainModel.opinion"
         }
       ]
     }

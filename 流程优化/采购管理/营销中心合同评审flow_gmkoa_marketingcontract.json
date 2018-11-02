@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_marketingcontract",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,91 +115,124 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "产品业务分类",
+          "component": "radio",
+          "name": "mainModel.htcpywfl",
+          "options": [
+            {
+              "title": "出口熟食",
+              "value": "出口熟食"
+            },
+            {
+              "title": "快餐熟食",
+              "value": "快餐熟食"
+            },
+            {
+              "title": "快餐生食",
+              "value": "快餐生食"
+            },
+            {
+              "title": "出口生食",
+              "value": "出口生食"
+            },
+            {
+              "title": "有机肥",
+              "value": "有机肥"
+            }
+          ]
+        },
+        {
+          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.grantMoldtxt"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "客户编码",
+          "component": "text",
+          "name": "mainModel.khbh"
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
+          "title": "客户名称",
+          "component": "text",
+          "name": "mainModel.khmc"
+        },
+        {
+          "title": "主抄送人",
+          "component": "textarea",
+          "name": "mainModel.zcs"
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "基本信息",
+      "pageid": "baseInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "base_table",
+          "basePath": "infos",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "物料编码",
               "component": "text",
-              "name": "cdburks"
+              "name": "wlbh"
             },
             {
-              "title": "所属法人名称",
+              "title": "物料描述",
               "component": "text",
-              "name": "cdburkstxt"
+              "name": "wlms"
             },
             {
-              "title": "供应商编码",
+              "title": "数量",
               "component": "text",
-              "name": "supplierId"
+              "name": "snum"
             },
             {
-              "title": "供应商名称",
+              "title": "单价",
               "component": "text",
-              "name": "supplierName"
+              "name": "price"
             },
             {
-              "title": "采购组织",
+              "title": "货币单位",
               "component": "text",
-              "name": "purchOrg"
+              "name": "hbdw"
             },
             {
-              "title": "采购组织描述",
+              "title": "合同毛利率（%）",
               "component": "text",
-              "name": "purchOrgtxt"
+              "name": "htmlv"
             },
             {
-              "title": "返回值",
+              "title": "人均贡献（元/人/时）",
               "component": "text",
-              "name": "returnv"
+              "name": "rjgx"
+            },
+            {
+              "title": "合同金额（元）",
+              "component": "text",
+              "name": "htjey"
+            },
+            {
+              "title": "合同金额（美元）",
+              "component": "text",
+              "name": "htjem"
+            },
+            {
+              "title": "合同期限（月）",
+              "component": "text",
+              "name": "htqx"
+            },
+            {
+              "title": "有效起始日期",
+              "component": "text",
+              "name": "sdate"
+            },
+            {
+              "title": "有效结束日期",
+              "component": "text",
+              "name": "edate"
             }
           ]
         }

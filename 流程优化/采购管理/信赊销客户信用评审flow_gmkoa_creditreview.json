@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_creditreview",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -110,96 +110,40 @@
       ]
     },
     {
-      "title": "初始信息",
-      "pageid": "sqInfo",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "标题",
-          "component": "text",
-          "name": "mainModel.titles"
-        },
-        {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "基本信息",
+      "pageid": "baseInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "base_table",
+          "basePath": "itemList",
           "tableForms": [
             {
-              "title": "所属法人",
-              "component": "text",
-              "name": "cdburks"
-            },
-            {
-              "title": "所属法人名称",
+              "title": "公司名称",
               "component": "text",
               "name": "cdburkstxt"
             },
             {
-              "title": "供应商编码",
+              "title": "客户",
               "component": "text",
-              "name": "supplierId"
+              "name": "customerNa"
             },
             {
-              "title": "供应商名称",
+              "title": "信用额度",
               "component": "text",
-              "name": "supplierName"
+              "name": "creditlimit"
             },
             {
-              "title": "采购组织",
+              "title": "信用期限",
               "component": "text",
-              "name": "purchOrg"
+              "name": "accperiodtxt"
             },
             {
-              "title": "采购组织描述",
+              "title": "风险种类",
               "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
+              "name": "riskl"
             }
           ]
         }

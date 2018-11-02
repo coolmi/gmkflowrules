@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_promotioncost",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,91 +115,77 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "标题名称",
           "component": "text",
           "name": "mainModel.titles"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "主抄送人",
+          "component": "textarea",
+          "name": "mainModel.senderstxt"
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
+        },
+        {
+          "title": "公司代码",
+          "component": "text",
+          "name": "mainModel.cdburkstxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.cdcostltxt"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.remarks"
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "费用详情",
+      "pageid": "costInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "cost_table",
+          "basePath": "itemList",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "日期",
               "component": "text",
-              "name": "cdburks"
+              "name": "months"
             },
             {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
+              "title": "预算内外",
+              "component": "select",
+              "name": "inbuget",
+              "options":[
+                {
+                  "text": "预算内",
+                  "value": "0"
+                },
+                {
+                  "text": "预算外",
+                  "value": "1"
+                }
+              ]
             },
             {
-              "title": "供应商编码",
+              "title": "申请金额",
               "component": "text",
-              "name": "supplierId"
+              "name": "costAmout"
             },
             {
-              "title": "供应商名称",
+              "title": "申请内容",
               "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
+              "name": "others"
             }
           ]
         }

@@ -1,0 +1,308 @@
+{
+  "id": "flow_gmkoa_contractbuy",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "初始信息",
+      "pageid": "beginInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "买/卖",
+          "component": "radio",
+          "name": "mainModel.contbuyType",
+          "options": [
+            {
+              "title": "采购",
+              "value": "0"
+            },
+            {
+              "title": "销售",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "授权业务类型",
+          "component": "radio",
+          "name": "mainModel.grantMold",
+          "options": [
+            {
+              "title": "业务1",
+              "value": "0"
+            },
+            {
+              "title": "业务2",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "合同产生形式",
+          "component": "radio",
+          "name": "mainModel.forming",
+          "options": [
+            {
+              "title": "框架协议（无价无量）",
+              "value": "0"
+            },
+            {
+              "title": "招标结果产生的",
+              "value": "1"
+            },
+            {
+              "title": "询比价/议价产生的",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "title": "招标/议标结果、询比价/议价申请单号",
+          "component": "text",
+          "name": "mainModel.otherNo"
+        },
+        {
+          "title": "公司代码",
+          "component": "text",
+          "name": "mainModel.cdburks"
+        },
+        {
+          "title": "合同标的物",
+          "component": "text",
+          "name": "mainModel.subjtMatter"
+        },
+        {
+          "title": "供应商编号",
+          "component": "text",
+          "name": "mainModel.suCuID"
+        },
+        {
+          "title": "供应商名称",
+          "component": "text",
+          "name": "mainModel.suCuName"
+        },
+        {
+          "title": "合同金额(小写)",
+          "component": "text",
+          "name": "mainModel.subjtAmout"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.currencyId"
+        },
+        {
+          "title": "汇率",
+          "component": "text",
+          "name": "mainModel.exchgeRate"
+        },
+        {
+          "title": "合同金额(人民币)",
+          "component": "text",
+          "name": "mainModel.rmbMoney"
+        },
+        {
+          "title": "合同金额大写",
+          "component": "text",
+          "name": "mainModel.chinaNumber"
+        }
+      ]
+    },
+    {
+      "title": "合同号信息",
+      "pageid": "contractInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "是否为补充类合同",
+          "component": "radio",
+          "name": "mainModel.whetherSupplementaryContract",
+          "options": [
+            {
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "原合同编号",
+          "component": "text",
+          "name": "mainModel.originalContractNumber"
+        },
+        {
+          "title": "合同编号类别",
+          "component": "text",
+          "name": "mainModel.contractNumberCategory"
+        },
+        {
+          "title": "公司信息",
+          "component": "text",
+          "name": "mainModel.companyInformation"
+        },
+        {
+          "title": "合同编号",
+          "component": "text",
+          "name": "mainModel.contractNumber"
+        }
+      ]
+    },
+    {
+      "title": "印章信息",
+      "pageid": "stampInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "用印类型",
+          "component": "text",
+          "name": "mainModel.printingType"
+        },
+        {
+          "title": "印章名称",
+          "component": "text",
+          "name": "mainModel.sealname"
+        },
+        {
+          "title": "印章类型",
+          "component": "text",
+          "name": "mainModel.sealtype"
+        },
+        {
+          "title": "印章使用一式",
+          "component": "text",
+          "name": "mainModel.sealCopies"
+        },
+        {
+          "title": "份,共",
+          "component": "text",
+          "name": "mainModel.sealNumber"
+        },
+        {
+          "title": "印章使用时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.sealUseDate"
+        },
+        {
+          "title": "印章归还时间",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.sealBackDate"
+        }
+      ]
+    }
+  ]
+}
+

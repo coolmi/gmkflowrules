@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_gmkoa_productsreturn",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -120,86 +120,92 @@
           "name": "mainModel.titles"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "主抄送人",
+          "component": "text",
+          "name": "mainModel.sendtxt"
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
+          "title": "公司",
+          "component": "text",
+          "name": "mainModel.cdburkstxt"
+        },
+        {
+          "title": "成本中心",
+          "component": "text",
+          "name": "mainModel.cdcostltxt"
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMold"
+        },
+        {
+          "title": "业务类型描述",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
+        },
+        {
+          "title": "备注",
+          "component": "text",
+          "name": "mainModel.remarks"
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "退回报废明细",
+      "pageid": "backInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "back_table",
+          "basePath": "protsreturnchldEntityList",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "客户编码",
               "component": "text",
-              "name": "cdburks"
+              "name": "customerID"
             },
             {
-              "title": "所属法人名称",
+              "title": "客户编码-名称",
               "component": "text",
-              "name": "cdburkstxt"
+              "name": "customerNa"
             },
             {
-              "title": "供应商编码",
+              "title": "物料号",
               "component": "text",
-              "name": "supplierId"
+              "name": "assetsID"
             },
             {
-              "title": "供应商名称",
+              "title": "物料号-物料名称",
               "component": "text",
-              "name": "supplierName"
+              "name": "assetstxt"
             },
             {
-              "title": "采购组织",
+              "title": "规格",
               "component": "text",
-              "name": "purchOrg"
+              "name": "standard"
             },
             {
-              "title": "采购组织描述",
+              "title": "数量",
               "component": "text",
-              "name": "purchOrgtxt"
+              "name": "amounts"
             },
             {
-              "title": "返回值",
+              "title": "单位",
               "component": "text",
-              "name": "returnv"
+              "name": "unit"
+            },
+            {
+              "title": "生产日期",
+              "component": "text",
+              "name": "prDate"
+            },
+            {
+              "title": "申请内容",
+              "component": "text",
+              "name": "remarks"
             }
           ]
         }

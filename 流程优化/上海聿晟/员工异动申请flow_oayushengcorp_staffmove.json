@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_oayushengcorp_staffmove",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,93 +115,69 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "员工编号",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.pernr"
         },
         {
-          "title": "申请类型",
-          "component": "radio",
-          "name": "mainModel.operType",
-          "options": [
-            {
-              "title": "冻结",
-              "value": "1"
-            },
-            {
-              "title": "解冻",
-              "value": "2"
-            }
-          ]
+          "title": "姓名",
+          "component": "text",
+          "name": "mainModel.pname"
         },
         {
-          "title": "冻结功能",
-          "component": "radio",
-          "name": "mainModel.operType1",
-          "options": [
-            {
-              "title": "记账冻结",
-              "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
-      "component": "panel",
-      "subComponents": [
+          "title": "所属法人",
+          "component": "text",
+          "name": "mainModel.cdburks"
+        },
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
-          "tableForms": [
-            {
-              "title": "所属法人",
-              "component": "text",
-              "name": "cdburks"
-            },
-            {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
-            },
-            {
-              "title": "供应商编码",
-              "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
-              "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
-            }
-          ]
+          "title": "入职日期",
+          "component": "text",
+          "name": "mainModel.entryDate"
+        },
+        {
+          "title": "现任岗位日期",
+          "component": "text",
+          "name": "mainModel.inpstDate"
+        },
+        {
+          "title": "学历",
+          "component": "text",
+          "name": "mainModel.educns"
+        },
+        {
+          "title": "专业",
+          "component": "text",
+          "name": "mainModel.major"
+        },
+        {
+          "title": "跳岗位日期",
+          "component": "text",
+          "name": "mainModel.moveDate"
+        },
+        {
+          "title": "调整前岗位",
+          "component": "text",
+          "name": "mainModel.agoPost"
+        },
+        {
+          "title": "调整前组织",
+          "component": "text",
+          "name": "mainModel.agoOrg"
+        },
+        {
+          "title": "调整后岗位",
+          "component": "text",
+          "name": "mainModel.laterPost"
+        },
+        {
+          "title": "调整后组织",
+          "component": "text",
+          "name": "mainModel.laterOrg"
+        },
+        {
+          "title": "原因",
+          "component": "text",
+          "name": "mainModel.reasons"
         }
       ]
     }

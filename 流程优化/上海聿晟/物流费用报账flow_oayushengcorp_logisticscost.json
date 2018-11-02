@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_oayushengcorp_logisticscost",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,93 +115,100 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
+          "title": "费用承担公司",
           "component": "text",
-          "name": "mainModel.titles"
+          "name": "mainModel.cdbukrstxt"
         },
         {
-          "title": "申请类型",
+          "title": "业务类型",
           "component": "radio",
-          "name": "mainModel.operType",
+          "name": "mainModel.busnType",
           "options": [
             {
-              "title": "冻结",
+              "title": "内贸业务",
+              "value": "0"
+            },
+            {
+              "title": "外贸业务",
               "value": "1"
             },
             {
-              "title": "解冻",
+              "title": "进口业务",
               "value": "2"
             }
           ]
         },
         {
-          "title": "冻结功能",
+          "title": "供应商",
+          "component": "text",
+          "name": "mainModel.supplierName"
+        },
+        {
+          "title": "汇入地点",
+          "component": "text",
+          "name": "mainModel.address"
+        },
+        {
+          "title": "汇入行",
+          "component": "text",
+          "name": "mainModel.openbankId"
+        },
+        {
+          "title": "汇入账户",
+          "component": "text",
+          "name": "mainModel.openAccount"
+        },
+        {
+          "title": "费用类型",
+          "component": "text",
+          "name": "mainModel.costTypet"
+        },
+        {
+          "title": "申请报账金额",
+          "component": "text",
+          "name": "mainModel.appAmout"
+        },
+        {
+          "title": "币种",
+          "component": "text",
+          "name": "mainModel.currencyId"
+        },
+        {
+          "title": "申请付款日期",
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.payDate"
+        },
+        {
+          "title": "金额大写",
+          "component": "text",
+          "name": "mainModel.chinaNumber"
+        },
+        {
+          "title": "支付类型",
           "component": "radio",
-          "name": "mainModel.operType1",
+          "name": "mainModel.payType",
           "options": [
             {
-              "title": "记账冻结",
+              "title": "国内支付",
+              "value": "0"
+            },
+            {
+              "title": "国外支付",
               "value": "1"
-            },
-            {
-              "title": "采购冻结",
-              "value": "2"
-            },
-            {
-              "title": "总冻结",
-              "value": "3"
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
-      "component": "panel",
-      "subComponents": [
+        },
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
-          "tableForms": [
-            {
-              "title": "所属法人",
-              "component": "text",
-              "name": "cdburks"
-            },
-            {
-              "title": "所属法人名称",
-              "component": "text",
-              "name": "cdburkstxt"
-            },
-            {
-              "title": "供应商编码",
-              "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
-              "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
-            }
-          ]
+          "title": "合同号",
+          "component": "text",
+          "name": "mainModel.contractNo"
+        },
+        {
+          "title": "申请内容",
+          "component": "textarea",
+          "name": "mainModel.remarks"
         }
       ]
     }

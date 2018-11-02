@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_supplierblock",
+  "id": "flow_oayushengcorp_sealapp",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,91 +115,130 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
-          "component": "text",
-          "name": "mainModel.titles"
-        },
-        {
-          "title": "申请类型",
+          "title": "用印申请类型",
           "component": "radio",
           "name": "mainModel.operType",
           "options": [
             {
-              "title": "冻结",
-              "value": "1"
+              "title": "普通用印",
+              "value": "0"
             },
             {
-              "title": "解冻",
-              "value": "2"
+              "title": "重要用印",
+              "value": "1"
             }
           ]
         },
         {
-          "title": "冻结功能",
+          "title": "是否携章外出",
           "component": "radio",
-          "name": "mainModel.operType1",
+          "id": "sealout",
+          "name": "mainModel.whetherchapter",
           "options": [
             {
-              "title": "记账冻结",
-              "value": "1"
+              "title": "是",
+              "value": "是"
             },
             {
-              "title": "采购冻结",
-              "value": "2"
+              "title": "否",
+              "value": "否"
+            }
+          ]
+        },
+        {
+          "title": "开始日期",
+          "component": "text",
+          "name": "mainModel.bdate",
+          "showLinkage": [
+            {
+              "id": "sealout",
+              "values": ["是"]
+            }
+          ]
+        },
+        {
+          "title": "结束日期",
+          "component": "text",
+          "name": "mainModel.edate",
+          "showLinkage": [
+            {
+              "id": "sealout",
+              "values": ["是"]
+            }
+          ]
+        },
+        {
+          "title": "用印文件类型",
+          "component": "text",
+          "name": "mainModel.docTypet"
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.busnTypet"
+        },
+        {
+          "title": "用印事由",
+          "component": "textarea",
+          "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "印章信息需求明细",
+      "pageid": "sealmesInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "sealmes_table",
+          "basePath": "chlds",
+          "tableForms": [
+            {
+              "title": "印章名称",
+              "component": "text",
+              "name": "sealNa"
             },
             {
-              "title": "总冻结",
-              "value": "3"
+              "title": "印章类型",
+              "component": "text",
+              "name": "sealTypet"
+            },
+            {
+              "title": "印章管理员",
+              "component": "text",
+              "name": "sNa"
             }
           ]
         }
       ]
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
+      "title": "用印文件明细",
+      "pageid": "sealFileInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
           "titleIndex": 0,
-          "id": "supplier_table",
-          "basePath": "resultchilds",
+          "id": "sealFile_table",
+          "basePath": "fileschlds",
           "tableForms": [
             {
-              "title": "所属法人",
+              "title": "文件名称",
               "component": "text",
-              "name": "cdburks"
+              "name": "docna"
             },
             {
-              "title": "所属法人名称",
+              "title": "页数",
               "component": "text",
-              "name": "cdburkstxt"
+              "name": "pages"
             },
             {
-              "title": "供应商编码",
+              "title": "份数",
               "component": "text",
-              "name": "supplierId"
-            },
-            {
-              "title": "供应商名称",
-              "component": "text",
-              "name": "supplierName"
-            },
-            {
-              "title": "采购组织",
-              "component": "text",
-              "name": "purchOrg"
-            },
-            {
-              "title": "采购组织描述",
-              "component": "text",
-              "name": "purchOrgtxt"
-            },
-            {
-              "title": "返回值",
-              "component": "text",
-              "name": "returnv"
+              "name": "copies"
             }
           ]
         }
