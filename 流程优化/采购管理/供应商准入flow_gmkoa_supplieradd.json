@@ -144,7 +144,7 @@
         {
           "title": "采购组织",
           "component": "text",
-          "name": "mainModel.purchOrg"
+          "name": "mainModel.purchOrgtxt"
         },
         {
           "title": "供应商编码",
@@ -226,7 +226,7 @@
         {
           "title": "国家",
           "component": "text",
-          "name": "mainModel.acctCnty"
+          "name": "mainModel.acctCntytext"
         },
         {
           "title": "银行",

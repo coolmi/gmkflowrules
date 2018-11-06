@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_contractbuy",
+    "id": "flow_gmkoa_contractbuy",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -147,6 +147,7 @@
         {
           "title": "合同产生形式",
           "component": "radio",
+          "id":"fortype",
           "name": "mainModel.forming",
           "options": [
             {
@@ -166,52 +167,112 @@
         {
           "title": "招标/议标结果、询比价/议价申请单号",
           "component": "text",
-          "name": "mainModel.otherNo"
+          "name": "mainModel.otherNo",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["1","2"]
+            }
+          ]
         },
         {
           "title": "公司代码",
           "component": "text",
-          "name": "mainModel.cdburks"
+          "name": "mainModel.cdburks",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "合同标的物",
           "component": "text",
-          "name": "mainModel.subjtMatter"
+          "name": "mainModel.subjtMatter",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.suCuID"
+          "name": "mainModel.suCuId",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.suCuName"
+          "name": "mainModel.suCuName",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "合同金额(小写)",
           "component": "text",
-          "name": "mainModel.subjtAmout"
+          "name": "mainModel.subjtAmout",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "币种",
           "component": "text",
-          "name": "mainModel.currencyId"
+          "name": "mainModel.currencyIdtext",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "汇率",
           "component": "text",
-          "name": "mainModel.exchgeRate"
+          "name": "mainModel.exchgeRate",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "合同金额(人民币)",
           "component": "text",
-          "name": "mainModel.rmbMoney"
+          "name": "mainModel.rmbMoney",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         },
         {
           "title": "合同金额大写",
           "component": "text",
-          "name": "mainModel.chinaNumber"
+          "name": "mainModel.chinaNumber",
+          "showLinkage":[
+            {
+              "id":"fortype",
+              "values":["0","1","2"]
+            }
+          ]
         }
       ]
     },
@@ -223,6 +284,7 @@
         {
           "title": "是否为补充类合同",
           "component": "radio",
+          "id": "replytype",
           "name": "mainModel.whetherSupplementaryContract",
           "options": [
             {
@@ -238,17 +300,23 @@
         {
           "title": "原合同编号",
           "component": "text",
-          "name": "mainModel.originalContractNumber"
+          "name": "mainModel.originalContractNumber",
+          "showLinkage":[
+            {
+              "id":"replytype",
+              "values":["0"]
+            }
+          ]
         },
         {
           "title": "合同编号类别",
           "component": "text",
-          "name": "mainModel.contractNumberCategory"
+          "name": "mainModel.contractNumberCategorytext"
         },
         {
           "title": "公司信息",
           "component": "text",
-          "name": "mainModel.companyInformation"
+          "name": "mainModel.companyInformationtext"
         },
         {
           "title": "合同编号",
@@ -265,7 +333,7 @@
         {
           "title": "用印类型",
           "component": "text",
-          "name": "mainModel.printingType"
+          "name": "mainModel.printingTypetext"
         },
         {
           "title": "印章名称",

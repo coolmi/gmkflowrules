@@ -137,7 +137,7 @@
         {
           "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMold"
+          "name": "mainModel.grantMoldtext"
         },
         {
           "title": "业务类型描述",

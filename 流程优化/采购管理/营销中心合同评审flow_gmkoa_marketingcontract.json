@@ -233,6 +233,11 @@
               "title": "有效结束日期",
               "component": "text",
               "name": "edate"
+            },
+            {
+              "title": "产品基本工艺描述",
+              "component": "text",
+              "name": "cpgyms"
             }
           ]
         }

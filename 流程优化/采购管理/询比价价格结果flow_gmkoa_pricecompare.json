@@ -1,5 +1,5 @@
 {
-  "id": "flow_gmkoa_pricecompare",
+    "id": "flow_gmkoa_pricecompare",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -132,18 +132,18 @@
             },
             {
               "title": "询价单汇总号",
-              "component": "label",
+              "component": "text",
               "name": "gathersNo"
             },
             {
               "title": "物料号",
               "component": "text",
-              "name": "rowid"
+              "name": "assetsId"
             },
             {
               "title": "物料描述",
               "component": "text",
-              "name": "purchGrouptxt"
+              "name": "assetstxt"
             },
             {
               "title": "单位",

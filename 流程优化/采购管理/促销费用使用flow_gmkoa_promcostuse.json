@@ -130,11 +130,6 @@
           "name": "mainModel.grantMoldtxt"
         },
         {
-          "title": "年度",
-          "component": "text",
-          "name": "mainModel.year"
-        },
-        {
           "title": "公司代码",
           "component": "text",
           "name": "mainModel.cdburkstxt"
@@ -213,8 +208,18 @@
         },
         {
           "title": "是否冲销",
-          "component": "text",
-          "name": "mainModel.ishx"
+          "component": "radio",
+          "name": "mainModel.ishx",
+          "options": [
+            {
+            "title": "是",
+            "value": "0"
+          },
+          {
+            "title": "否",
+            "value": "1"
+          }
+          ]
         },
         {
           "title": "凭证号",

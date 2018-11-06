@@ -117,6 +117,7 @@
         {
           "title": "核销/领用类型",
           "component": "radio",
+          "id": "hxtype",
           "name": "mainModel.writeuseroff",
           "options": [
             {
@@ -126,6 +127,12 @@
             {
               "title": "领用类型",
               "value": "B"
+            }
+          ],
+          "showLinkage":[
+            {
+              "id":"hxtype",
+              "values":["A"]
             }
           ]
         },

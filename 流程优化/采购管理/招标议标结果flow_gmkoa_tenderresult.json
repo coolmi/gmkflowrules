@@ -183,19 +183,9 @@
           ]
         },
         {
-          "title": "业务类型",
-          "component": "text",
-          "name": "mainModel.grantMoldtxt"
-        },
-        {
-          "title": "招标申请单",
-          "component": "text",
-          "name": "mainModel.tenderNo"
-        },
-        {
           "title": "采购组织",
           "component": "text",
-          "name": "mainModel.purchOrger",
+          "name": "mainModel.purchaOrgtxt",
           "showLinkage": [
             {
               "id": "trdeid",
@@ -213,6 +203,26 @@
               "values": ["0"]
             }
           ]
+        },
+        {
+          "title": "业务类型",
+          "component": "text",
+          "name": "mainModel.grantMoldtxt"
+        },
+        {
+          "title": "招标申请单",
+          "component": "text",
+          "name": "mainModel.tenderNo"
+        },
+        {
+          "title": "需求部门负责人",
+          "component": "textarea",
+          "name": "mainModel.npnr"
+        },
+        {
+          "title": "服务部门负责人",
+          "component": "textarea",
+          "name": "mainModel.spnr"
         },
         {
           "title": "过程及意见",
@@ -234,21 +244,22 @@
           "tableForms": [
             {
               "title": "资产/物料号",
-              "component": "text",
-              "name": "assetstxt"
+              "component": "label",
+              "label": [
+                "assetsId",
+                "assetstxt"
+              ]
             },
             {
               "title": "供应商/客户",
-              "component": "text",
-              "name": "supplierName"
+              "component": "label",
+              "label": [
+                "supplierId",
+                "supplierName"
+              ]
             },
             {
-              "title": "规格型号",
-              "component": "text",
-              "name": "standard"
-            },
-            {
-              "title": "单位价格",
+              "title": "定价单位",
               "component": "text",
               "name": "per"
             },
@@ -276,6 +287,11 @@
               "title": "结束日期",
               "component": "text",
               "name": "eDate"
+            },
+            {
+              "title": "SAP返回状态",
+              "component": "text",
+              "name": "returnsval"
             }
           ]
         }

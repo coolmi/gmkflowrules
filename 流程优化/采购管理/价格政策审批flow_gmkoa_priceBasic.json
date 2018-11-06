@@ -136,6 +136,10 @@
             {
               "title": "国内生品底价",
               "value": "3"
+            },
+            {
+              "title": "折扣点",
+              "value": "4"
             }
           ]
         },
@@ -217,6 +221,8 @@
         {
           "title": "开始日期",
           "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
           "name": "mainModel.bDate",
           "showLinkage": [
             {
@@ -228,6 +234,8 @@
         {
           "title": "结束日期",
           "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
           "name": "mainModel.eDate",
           "showLinkage": [
             {
@@ -254,11 +262,6 @@
           "id": "currency_table",
           "basePath": "pricebasicchldList",
           "tableForms": [
-            {
-              "title": "销售编码",
-              "component": "text",
-              "name": "saleOrg"
-            },
             {
               "title": "销售组织",
               "component": "text",
@@ -400,12 +403,12 @@
             {
               "title": "开始日期",
               "component": "text",
-              "name": "bdate"
+              "name": "bDate"
             },
             {
               "title": "结束日期",
               "component": "text",
-              "name": "edate"
+              "name": "eDate"
             },
             {
               "title": "计算类型",

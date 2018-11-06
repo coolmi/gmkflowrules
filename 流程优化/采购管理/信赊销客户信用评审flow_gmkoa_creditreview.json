@@ -121,7 +121,7 @@
           "basePath": "itemList",
           "tableForms": [
             {
-              "title": "公司名称",
+              "title": "信贷范围",
               "component": "text",
               "name": "cdburkstxt"
             },
@@ -131,19 +131,59 @@
               "name": "customerNa"
             },
             {
+              "title": "原币种",
+              "component": "radio",
+              "name": "currency",
+              "options": [
+                {
+                  "title": "人民币",
+                  "value": "CNY"
+                },
+                {
+                  "title": "美元",
+                  "value": "USD"
+                }
+              ]
+            },
+            {
+              "title": "目标币种",
+              "component": "text",
+              "name": "tocurrency"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "erate"
+            },
+            {
               "title": "信用额度",
               "component": "text",
               "name": "creditlimit"
             },
             {
-              "title": "信用期限",
+              "title": "额度",
+              "component": "text",
+              "name": "tocreditlimit"
+            },
+            {
+              "title": "付款条件",
               "component": "text",
               "name": "accperiodtxt"
             },
             {
               "title": "风险种类",
-              "component": "text",
-              "name": "riskl"
+              "component": "radio",
+              "name": "riskl",
+              "options": [
+                {
+                  "title": "低风险",
+                  "value": "001"
+                },
+                {
+                  "title": "高风险",
+                  "value": "002"
+                }
+              ]
             }
           ]
         }
