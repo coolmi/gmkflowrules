@@ -1,5 +1,5 @@
 {
-  "id": "flow_oayushengcorp_vacationapp",
+  "id": "flow_oayushengcorp_payrollsapp",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,57 +115,64 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "假期类型",
+          "title": "类型",
           "component": "text",
-          "name": "mainModel.vacTypetext"
+          "name": "mainModel.prTyptext"
         },
         {
-          "title": "计划休假天数",
+          "title": "年份",
           "component": "text",
-          "name": "mainModel.plandays"
+          "name": "mainModel.yeaerid"
         },
         {
-          "title": "计划开始日期",
+          "title": "月份",
           "component": "text",
-          "name": "mainModel.planBDate"
+          "name": "mainModel.mothidtext"
         },
         {
-          "title": "计划结束日期",
+          "title": "批准人",
           "component": "text",
-          "name": "mainModel.planEDate"
+          "name": "mainModel.ratifyna"
         },
         {
-          "title": "原因",
-          "component": "textarea",
-          "name": "mainModel.reasons"
-        },
-        {
-          "title": "实际开始日期",
-          "component": "date1",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actBDate"
-        },
-        {
-          "title": "实际结束日期",
-          "component": "date1",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actEDate"
-        },
-        {
-          "title": "实际休假天数",
+          "title": "备注",
           "component": "text",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actdays"
-        },
+          "name": "mainModel.remark"
+        }
+      ]
+    },
+    {
+      "title": "退回报废明细",
+      "pageid": "rebackInfo",
+      "component": "panel",
+      "subComponents": [
         {
-          "title": "销假说明",
-          "component": "textarea",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.remarks"
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "reback_table",
+          "basePath": "payrollschldappEntityList",
+          "tableForms": [
+            {
+              "title": "所属法人",
+              "component": "text",
+              "name": "cdburktxt"
+            },
+            {
+              "title": "人数",
+              "component": "text",
+              "name": "totals"
+            },
+            {
+              "title": "总金额",
+              "component": "text",
+              "name": "totalAmout"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "remark"
+            }
+          ]
         }
       ]
     }

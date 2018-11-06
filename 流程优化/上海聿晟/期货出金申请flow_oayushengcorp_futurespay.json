@@ -172,7 +172,7 @@
         {
           "title": "币种",
           "component": "text",
-          "name": "mainModel.appCurrency"
+          "name": "mainModel.appCurrencytext"
         },
         {
           "title": "金额大写",

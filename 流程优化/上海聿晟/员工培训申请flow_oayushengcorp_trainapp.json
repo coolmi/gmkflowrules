@@ -1,5 +1,5 @@
 {
-  "id": "flow_oayushengcorp_vacationapp",
+  "id": "flow_oayushengcorp_trainapp",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,57 +115,124 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "假期类型",
+          "title": "HR发起",
           "component": "text",
-          "name": "mainModel.vacTypetext"
+          "name": "mainModel.hrapp"
         },
         {
-          "title": "计划休假天数",
+          "title": "组织名称",
           "component": "text",
-          "name": "mainModel.plandays"
+          "name": "mainModel.orgid"
         },
         {
-          "title": "计划开始日期",
+          "title": "课程",
           "component": "text",
-          "name": "mainModel.planBDate"
+          "name": "mainModel.courses"
         },
         {
-          "title": "计划结束日期",
+          "title": "培训机构",
           "component": "text",
-          "name": "mainModel.planEDate"
+          "name": "mainModel.agency"
         },
         {
-          "title": "原因",
-          "component": "textarea",
-          "name": "mainModel.reasons"
-        },
-        {
-          "title": "实际开始日期",
-          "component": "date1",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actBDate"
-        },
-        {
-          "title": "实际结束日期",
-          "component": "date1",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actEDate"
-        },
-        {
-          "title": "实际休假天数",
+          "title": "培训时间",
           "component": "text",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
-          "name": "mainModel.actdays"
+          "name": "mainModel.tDate"
         },
         {
-          "title": "销假说明",
-          "component": "textarea",
-          "tasknode": "userTaskConfirm,userTaskmyLeader",
-          "editablenode":"userTaskConfirm",
+          "title": "地点",
+          "component": "text",
+          "name": "mainModel.address"
+        },
+        {
+          "title": "培训费",
+          "component": "text",
+          "name": "mainModel.trainCost"
+        },
+        {
+          "title": "预告差旅费",
+          "component": "text",
+          "name": "mainModel.travelCost"
+        },
+        {
+          "title": "预算内外",
+          "component": "text",
+          "name": "mainModel.inbuget"
+        },
+        {
+          "title": "培训协议",
+          "component": "text",
+          "name": "mainModel.agreeon"
+        },
+        {
+          "title": "备注",
+          "component": "text",
           "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "退回报废明细",
+      "pageid": "rebackInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "reback_table",
+          "basePath": "chlds",
+          "tableForms": [
+            {
+              "title": "培训人员",
+              "component": "text",
+              "name": "sealNa"
+            },
+            {
+              "title": "姓名",
+              "component": "text",
+              "name": "sealTypet"
+            },
+            {
+              "title": "岗位",
+              "component": "text",
+              "name": "sNa"
+            },
+            {
+              "title": "所属组织",
+              "component": "text",
+              "name": "sNa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "用印文件明细",
+      "pageid": "sealFileInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "sealFile_table",
+          "basePath": "fileschlds",
+          "tableForms": [
+            {
+              "title": "文件名称",
+              "component": "text",
+              "name": "docna"
+            },
+            {
+              "title": "页数",
+              "component": "text",
+              "name": "pages"
+            },
+            {
+              "title": "份数",
+              "component": "text",
+              "name": "copies"
+            }
+          ]
         }
       ]
     }
