@@ -117,7 +117,7 @@
         {
           "title": "HR发起",
           "component": "text",
-          "name": "mainModel.hrapp"
+          "name": "mainModel.hrapptext"
         },
         {
           "title": "组织名称",
@@ -157,12 +157,12 @@
         {
           "title": "预算内外",
           "component": "text",
-          "name": "mainModel.inbuget"
+          "name": "mainModel.inbugettext"
         },
         {
           "title": "培训协议",
           "component": "text",
-          "name": "mainModel.agreeon"
+          "name": "mainModel.agreeontext"
         },
         {
           "title": "备注",
@@ -180,57 +180,27 @@
           "component": "table_form",
           "titleIndex": 0,
           "id": "reback_table",
-          "basePath": "chlds",
+          "basePath": "trainchldappEntityList",
           "tableForms": [
             {
               "title": "培训人员",
               "component": "text",
-              "name": "sealNa"
+              "name": "pernr"
             },
             {
               "title": "姓名",
               "component": "text",
-              "name": "sealTypet"
+              "name": "pname"
             },
             {
               "title": "岗位",
               "component": "text",
-              "name": "sNa"
+              "name": "postna"
             },
             {
               "title": "所属组织",
               "component": "text",
-              "name": "sNa"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "用印文件明细",
-      "pageid": "sealFileInfo",
-      "component": "panel",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "sealFile_table",
-          "basePath": "fileschlds",
-          "tableForms": [
-            {
-              "title": "文件名称",
-              "component": "text",
-              "name": "docna"
-            },
-            {
-              "title": "页数",
-              "component": "text",
-              "name": "pages"
-            },
-            {
-              "title": "份数",
-              "component": "text",
-              "name": "copies"
+              "name": "orgna"
             }
           ]
         }

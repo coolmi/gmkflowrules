@@ -150,8 +150,18 @@
         },
         {
           "title": "价格类型",
-          "component": "text",
-          "name": "mainModel.priceType"
+          "component": "label",
+          "label": [
+            "mainModel.priceType",
+            "-",
+            "mainModel.priceTypetext"
+          ],
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["1","3"]
+            }
+          ]
         },
         {
           "title": "价格描述",
@@ -165,8 +175,12 @@
         },
         {
           "title": "销售组织",
-          "component": "text",
-          "name": "mainModel.saleOrg",
+          "component": "label",
+          "label": [
+            "mainModel.saleOrg",
+            "-",
+            "mainModel.saleOrgtext"
+          ],
           "showLinkage": [
             {
               "id": "eventType",
@@ -176,8 +190,12 @@
         },
         {
           "title": "分销渠道",
-          "component": "text",
-          "name": "mainModel.saleWay",
+          "component": "label",
+          "label": [
+            "mainModel.saleWay",
+            "-",
+            "mainModel.saleWaytxt"
+          ],
           "showLinkage": [
             {
               "id": "eventType",
@@ -186,18 +204,7 @@
           ]
         },
         {
-          "title": "价格单位",
-          "component": "text",
-          "name": "mainModel.per",
-          "showLinkage": [
-            {
-              "id": "eventType",
-              "values": ["3"]
-            }
-          ]
-        },
-        {
-          "title": "数量单位",
+          "title": "定价单位",
           "component": "text",
           "name": "mainModel.unit",
           "showLinkage": [
@@ -208,9 +215,24 @@
           ]
         },
         {
+          "title": "计量单位",
+          "component": "label",
+          "label": [
+            "mainModel.per",
+            "-",
+            "mainModel.saleOrgtext"
+          ],
+          "showLinkage": [
+            {
+              "id": "eventType",
+              "values": ["3"]
+            }
+          ]
+        },
+        {
           "title": "币种",
           "component": "text",
-          "name": "mainModel.currency",
+          "name": "mainModel.currencytxt",
           "showLinkage": [
             {
               "id": "eventType",
@@ -366,9 +388,9 @@
               ]
             },
             {
-              "title": "处理状态",
+              "title": "单位1",
               "component": "text",
-              "name": "handleSate"
+              "name": "unit1"
             },
             {
               "title": "最小数量",
@@ -386,19 +408,14 @@
               "name": "assetsID1"
             },
             {
-              "title": "单位1",
+              "title": "单位2",
               "component": "text",
-              "name": "unit1"
+              "name": "unit2"
             },
             {
               "title": "免费数量",
               "component": "text",
               "name": "freenum"
-            },
-            {
-              "title": "单位2",
-              "component": "text",
-              "name": "unit2"
             },
             {
               "title": "开始日期",

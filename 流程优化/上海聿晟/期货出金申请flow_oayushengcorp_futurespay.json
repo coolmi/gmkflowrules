@@ -117,7 +117,7 @@
         {
           "title": "所属法人",
           "component": "text",
-          "name": "mainModel.cdburks"
+          "name": "mainModel.cdburkstext"
         },
         {
           "title": "内外盘",

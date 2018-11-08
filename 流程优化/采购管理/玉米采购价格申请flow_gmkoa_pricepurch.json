@@ -1,5 +1,5 @@
 {
-  "id": "flow_oayushengcorp_futroperator",
+  "id": "flow_gmkoa_pricepurch",
   "handleOnPC": {
     "tasknode": [
       ""
@@ -115,44 +115,105 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "所属法人",
+          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.cdbutxt"
+          "name": "mainModel.grantMoldtxt"
         },
         {
-          "title": "类型",
-          "component": "radio",
-          "name": "mainModel.opetTyp",
-          "options": [
+          "title": "公司",
+          "component": "text",
+          "name": "mainModel.cdburks"
+        },
+        {
+          "title": "采购组织",
+          "component": "text",
+          "name": "mainModel.purchOrgtxt"
+        },
+        {
+          "title": "说明",
+          "component": "textarea",
+          "name": "mainModel.remarks"
+        }
+      ]
+    },
+    {
+      "title": "价格明细",
+      "pageid": "priceInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "price_table",
+          "basePath": "pricepurchlds",
+          "tableForms": [
             {
-              "title": "新增",
-              "value": "0"
+              "title": "供应商编码/名称",
+              "component": "label",
+              "label": [
+                "supplierId",
+                "supplierName"
+              ]
             },
             {
-              "title": "变更",
-              "value": "1"
+              "title": "物料编码/名称",
+              "component": "label",
+              "label": [
+                "assetsId",
+                "assetstxt"
+              ]
+            },
+            {
+              "title": "规格",
+              "component": "text",
+              "name": "standard"
+            },
+            {
+              "title": "型号",
+              "component": "text",
+              "name": "model"
+            },
+            {
+              "title": "计量单位",
+              "component": "text",
+              "name": "unit"
+            },
+            {
+              "title": "单价",
+              "component": "text",
+              "name": "price"
+            },
+            {
+              "title": "定价单位",
+              "component": "text",
+              "name": "per"
+            },
+            {
+              "title": "货币单位",
+              "component": "text",
+              "name": "currencytxt"
+            },
+            {
+              "title": "税率",
+              "component": "text",
+              "name": "taxRate"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "bDate"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "eDate"
+            },
+            {
+              "title": "SAP返回状态",
+              "component": "text",
+              "name": "returnvtxt"
             }
-          ],
-        },
-        {
-          "title": "期货账户",
-          "component": "text",
-          "name": "mainModel.futureAccout"
-        },
-        {
-          "title": "盘面授权",
-          "component": "text",
-          "name": "mainModel.elecDiskname"
-        },
-        {
-          "title": "电话授权",
-          "component": "text",
-          "name": "mainModel.telepOdername"
-        },
-        {
-          "title": "备注",
-          "component": "textarea",
-          "name": "mainModel.remark"
+          ]
         }
       ]
     }
