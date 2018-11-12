@@ -112,6 +112,7 @@
         {
           "title": "是否提高标准",
           "component": "select",
+          "id": "beup",
           "name": "travle.beup",
           "options": [
             {
