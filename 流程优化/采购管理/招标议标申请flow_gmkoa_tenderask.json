@@ -229,6 +229,16 @@
           "name": "mainModel.bidType"
         },
         {
+          "title": "需求部门负责人",
+          "component": "textarea",
+          "name": "mainModel.npnr"
+        },
+        {
+          "title": "服务部门负责人",
+          "component": "textarea",
+          "name": "mainModel.spnr"
+        },
+        {
           "title": "招标部门负责人",
           "component": "textarea",
           "name": "mainModel.tderMemberpst"
