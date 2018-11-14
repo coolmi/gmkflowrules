@@ -232,7 +232,7 @@
         {
           "title": "币种",
           "component": "text",
-          "name": "mainModel.currencytxt",
+          "name": "mainModel.currencytext",
           "showLinkage": [
             {
               "id": "eventType",
