@@ -166,6 +166,97 @@
       ]
     },
     {
+      "title": "汇总",
+      "pageid": "hz",
+      "component": "panel",
+      "subComponents": [
+        {
+          "flowshow": true,
+          "title": "合计金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_dmbtr"
+        },
+        {
+          "flowshow": true,
+          "title": "合计补助",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_subsidy"
+        },
+        {
+          "flowshow": true,
+          "title": "合计超限金额",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_ulfee"
+        },
+        {
+          "flowshow": true,
+          "title": "总计",
+          "component": "text",
+          "datatype": "money",
+          "name": "combined_all"
+        },
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "hzfylx",
+          "basePath": "rulist",
+          "tableForms": [
+            {
+              "title": "费用类型",
+              "component": "text",
+              "name": "stypes"
+            },
+            {
+              "title": "开始日期",
+              "component": "text",
+              "name": "sdates"
+            },
+            {
+              "title": "结束日期",
+              "component": "text",
+              "name": "edates"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "dmbtrs"
+            },
+            {
+              "title": "补助",
+              "component": "text",
+              "datatype": "money",
+              "name": "subsidys"
+            },
+            {
+              "title": "超限金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "ulfees"
+            },
+            {
+              "title": "不含税额",
+              "component": "text",
+              "name": "purchase"
+            },
+            {
+              "title": "超标事由",
+              "component": "text",
+              "name": "outtxt"
+            },
+            {
+              "title": "出差申请号",
+              "component": "text",
+              "name": "trlnrs"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "申请信息",
       "pageid": "sqxx",
       "component": "panel",
@@ -236,10 +327,15 @@
           "subComponents": [
             {
               "component": "formLabelLink",
-              "titleIndex": 4,
+              "titleIndex": 0,
               "id": "ccjtjtfs",
               "basePath": "ltrads",
               "linkForms": [
+                {
+                  "title": "出发地",
+                  "component": "hidden",
+                  "name": "agreek"
+                },
                 {
                   "title": "交通方式",
                   "component": "linkToMap",
@@ -311,10 +407,15 @@
           "subComponents": [
             {
               "component": "formLabelLink",
-              "titleIndex": 4,
+              "titleIndex": 0,
               "id": "snjtjtfs",
               "basePath": "citys",
               "linkForms": [
+                {
+                  "title": "出发地",
+                  "component": "hidden",
+                  "name": "agreekc"
+                },
                 {
                   "title": "交通方式",
                   "component": "linkToMap",
@@ -362,6 +463,12 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrc"
+                },
+                {
+                  "title": "超标事由",
+                  "component": "textarea",
+                  "editablenode": "",
+                  "name": "ulreac"
                 }
               ]
             }
@@ -461,10 +568,15 @@
           "subComponents": [
             {
               "component": "formLabelLink",
-              "titleIndex": 4,
+              "titleIndex": 0,
               "id": "zsjcbhzzslx",
               "basePath": "hotels",
               "linkForms": [
+                {
+                  "title": "出发地",
+                  "component": "hidden",
+                  "name": "agreekh"
+                },
                 {
                   "title": "住宿类型",
                   "component": "linkToMap",
@@ -513,6 +625,12 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnrh"
+                },
+                {
+                  "title": "超限事由",
+                  "component": "textarea",
+                  "editablenode": "",
+                  "name": "ulreah"
                 }
               ]
             }
@@ -653,87 +771,6 @@
                   "name": "colnrg"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "汇总",
-      "pageid": "hz",
-      "component": "panel",
-      "subComponents": [
-        {
-          "flowshow": true,
-          "title": "合计金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_dmbtr"
-        },
-        {
-          "flowshow": true,
-          "title": "合计补助",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_subsidy"
-        },
-        {
-          "flowshow": true,
-          "title": "合计超限金额",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_ulfee"
-        },
-        {
-          "flowshow": true,
-          "title": "总计",
-          "component": "text",
-          "datatype": "money",
-          "name": "combined_all"
-        },
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "hzfylx",
-          "basePath": "rulist",
-          "tableForms": [
-            {
-              "title": "费用类型",
-              "component": "text",
-              "name": "stypes"
-            },
-            {
-              "title": "开始日期",
-              "component": "text",
-              "name": "sdates"
-            },
-            {
-              "title": "结束日期",
-              "component": "text",
-              "name": "edates"
-            },
-            {
-              "title": "金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "dmbtrs"
-            },
-            {
-              "title": "补助",
-              "component": "text",
-              "datatype": "money",
-              "name": "subsidys"
-            },
-            {
-              "title": "超限金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "ulfees"
-            },
-            {
-              "title": "出差申请号",
-              "component": "text",
-              "name": "trlnrs"
             }
           ]
         }
