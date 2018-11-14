@@ -151,7 +151,7 @@
         {
           "title": "所在公司",
           "component": "text",
-          "name": "afuser.compayname"
+          "name": "reimburse.cdbukrsname"
         },
         {
           "title": "员工财务编码",
@@ -161,7 +161,7 @@
         {
           "title": "代办手机号",
           "component": "text",
-          "name": "afuser.gtelpr"
+          "name": "afuser.telpr"
         }
       ]
     },
@@ -292,6 +292,12 @@
                   "title": "项目号",
                   "component": "text",
                   "name": "colnr"
+                },
+                {
+                  "title": "超标事由",
+                  "component": "textarea",
+                  "editablenode": "",
+                  "name": "ulrea"
                 }
               ]
             }

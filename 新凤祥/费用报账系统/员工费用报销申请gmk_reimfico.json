@@ -194,7 +194,7 @@
               "name": "ulfees"
             },
             {
-              "title": "出差申请号",
+              "title": "超限",
               "component": "text",
               "name": "trlnrs"
             }
@@ -333,6 +333,12 @@
                   "component": "text",
                   "editablenode": "",
                   "name": "trlnr"
+                },
+                {
+                  "title": "超标事由",
+                  "component": "textarea",
+                  "editablenode": "",
+                  "name": "ulrea"
                 }
               ]
             }
