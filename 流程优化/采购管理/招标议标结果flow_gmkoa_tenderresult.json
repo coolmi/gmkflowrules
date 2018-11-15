@@ -16,7 +16,7 @@
   },
   "forms": [
     {
-      "title": "申请信息",
+      "title": "申请人信息",
       "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "title": "初始信息",
+      "title": "申请信息",
       "pageid": "sqInfo",
       "component": "panel",
       "subComponents": [
@@ -232,7 +232,7 @@
       ]
     },
     {
-      "title": "子表信息",
+      "title": "中标结果",
       "pageid": "childInfo",
       "component": "panel",
       "subComponents": [
