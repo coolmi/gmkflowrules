@@ -184,7 +184,7 @@
           "showLinkage": [
             {
               "id": "eventType",
-              "values": ["3"]
+              "values": ["3","4"]
             }
           ]
         },
@@ -199,7 +199,7 @@
           "showLinkage": [
             {
               "id": "eventType",
-              "values": ["3"]
+              "values": ["3","4"]
             }
           ]
         },
