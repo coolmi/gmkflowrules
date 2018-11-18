@@ -133,21 +133,6 @@
           "title": "成本中心",
           "component": "text",
           "name": "mainModel.cdkotxt"
-        },
-        {
-          "title": "加急采购",
-          "component": "radio",
-          "name": "mainModel.urgent",
-          "options": [
-            {
-              "title": "否",
-              "value": "0"
-            },
-            {
-              "title": "是",
-              "value": "1"
-            }
-          ]
         }
       ]
     },

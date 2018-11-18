@@ -21,7 +21,7 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "申请单号",
+          "title": "申请单号" ,
           "component": "text",
           "editablenode": "",
           "name": "mainModel.appid"
@@ -165,12 +165,12 @@
         },
         {
           "title": "价格描述",
-          "component": "text",
+          "component": "html",
           "name": "mainModel.describes"
         },
         {
           "title": "利润描述",
-          "component": "text",
+          "component": "html",
           "name": "mainModel.profits"
         },
         {
