@@ -149,6 +149,8 @@
         {
           "title": "供应商编码",
           "component": "text",
+          "tasknode": "usertask1,usertask2,usertask3",
+          "editablenode":"usertask3",
           "name": "mainModel.supplierId"
         },
         {
