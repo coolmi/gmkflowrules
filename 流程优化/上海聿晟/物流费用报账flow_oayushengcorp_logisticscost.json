@@ -211,6 +211,41 @@
           "name": "mainModel.remarks"
         }
       ]
+    },
+    {
+      "title": "详情",
+      "pageid": "detailInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "detail_table",
+          "basePath": "itemList",
+          "tableForms": [
+            {
+              "title": "成本中心",
+              "component": "text",
+              "name": "cdcostltxt"
+            },
+            {
+              "title": "成本中心负责人",
+              "component": "text",
+              "name": "cdcostlfzrname"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "name": "amount"
+            },
+            {
+              "title": "备注",
+              "component": "text",
+              "name": "note"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

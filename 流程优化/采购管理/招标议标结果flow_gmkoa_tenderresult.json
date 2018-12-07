@@ -196,7 +196,7 @@
         {
           "title": "付款条件",
           "component": "text",
-          "name": "mainModel.termsPayment",
+          "name": "mainModel.termsPaymentxt",
           "showLinkage": [
             {
               "id": "trdeid",
