@@ -153,6 +153,13 @@
 
         },
         {
+          "title": "实际调岗日期",
+          "tasknode": "usertask9,usertask10,usertask8",
+          "editablenode":"usertask9",
+          "component": "date1",
+          "name": "mainModel.tgdate_qr"
+        },
+        {
           "title": "调动前岗位",
           "component": "text",
           "name": "mainModel.tgbeforepostname"

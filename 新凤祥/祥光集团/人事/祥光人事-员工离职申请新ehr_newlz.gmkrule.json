@@ -188,7 +188,7 @@
           "component": "select",
           "name": "mainModel.leavereason",
           "editablenode": "usertask3",
-          "tasknode": "usertask3,usertask4,usertask5,usertask6",
+          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8",
           "options": [
             {
               "text": "达到法定退休年龄",
@@ -333,12 +333,12 @@
           "component": "textarea",
           "name": "mainModel.leavereasonremark",
           "editablenode": "usertask3",
-          "tasknode": "usertask3,usertask4,usertask5,usertask6"
+          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8"
         },
         {
           "title": "是否签署对外联络信息",
           "component": "radio",
-          "tasknode": "usertask4,usertask5,usertask6",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
           "editablenode": "usertask4",
           "name": "mainModel.sdwqsllxx",
           "options": [
@@ -353,15 +353,22 @@
           ]
         },
         {
-          "title": "最后工作日",
-          "tasknode": "usertask4,usertask5,usertask6",
+          "title": "预计最后工作日",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
           "editablenode":"usertask4",
           "component": "date1",
           "name": "mainModel.leavedate"
         },
         {
+          "title": "实际最后工作日",
+          "tasknode": "usertask7,usertask8,usertask6",
+          "editablenode":"usertask7",
+          "component": "date1",
+          "name": "mainModel.leavedate_qr"
+        },
+        {
           "title": "离职交接内容",
-          "tasknode": "usertask4,usertask5,usertask6",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
           "editablenode":"usertask4",
           "component": "textarea",
           "name": "mainModel.lzjjnr"
