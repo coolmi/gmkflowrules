@@ -1,0 +1,178 @@
+{
+  "id": "shgm_budgetyearadjust",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "applyInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "apply_table",
+          "basePath": "budgetyearadjustinfolist",
+          "tableForms": [
+            {
+              "title": "预算年",
+              "component": "text",
+              "name": "budgetyear"
+            },
+            {
+              "title": "公司代码",
+              "component": "text",
+              "name": "cdbutxt"
+            },
+            {
+              "title": "调出成本中心",
+              "component": "text",
+              "name": "outcdkostltxt"
+            },
+            {
+              "title": "调入成本中心",
+              "component": "text",
+              "name": "intocdkostltxt"
+            },
+            {
+              "title": "调出项目号",
+              "component": "text",
+              "name": "outcolnrtxt"
+            },
+            {
+              "title": "调入项目号",
+              "component": "text",
+              "name": "intocolnrtxt"
+            },
+            {
+              "title": "调出子项目号",
+              "component": "text",
+              "name": "intosubcolnrtxt"
+            },
+            {
+              "title": "调入子项目号",
+              "component": "text",
+              "name": "intosubcolnrtxt"
+            },
+            {
+              "title": "调出会计科目",
+              "component": "text",
+              "name": "outkotaltxt"
+            },
+            {
+              "title": "调入会计科目",
+              "component": "text",
+              "name": "outkotaltxt"
+            },
+            {
+              "title": "调整金额",
+              "component": "text",
+              "name": "amount"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

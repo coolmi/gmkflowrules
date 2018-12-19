@@ -1,0 +1,166 @@
+{
+  "id": "gmk_pinternaltrain",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "hidden",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "办公电话",
+          "component": "text",
+          "name": "mainModel.phone"
+        },
+        {
+          "title": "电子邮件",
+          "component": "text",
+          "name": "mainModel.email"
+        },
+        {
+          "title": "公司名称",
+          "component": "text",
+          "name": "mainModel.butxt"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "认证讲师等级",
+          "component": "text",
+          "name": "mainModel.course"
+        },
+        {
+          "title": "初次认证",
+          "component": "text",
+          "name": "mainModel.initialcert"
+        },
+        {
+          "title": "往期被认证课程名称",
+          "component": "text",
+          "name": "mainModel.previouscourse"
+        },
+        {
+          "title": "开发课程总课时",
+          "component": "text",
+          "name": "mainModel.developoverall"
+        },
+        {
+          "title": "年度最低授课满意度",
+          "component": "text",
+          "name": "mainModel.mnimumsatisfaction"
+        },
+        {
+          "title": "累计辅导讲师数量",
+          "component": "text",
+          "name": "mainModel.remarkfew"
+        },
+        {
+          "title": "最低授课次数/年",
+          "component": "text",
+          "name": "mainModel.minimumlecturesyear"
+        },
+        {
+          "title": "累计授课课时(h)",
+          "component": "text",
+          "name": "mainModel.cumulativetime"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.remarks",
+          "rows":"5"
+        }
+      ]
+    }
+  ]
+}
