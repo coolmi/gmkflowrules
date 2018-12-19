@@ -186,6 +186,35 @@
           "name": "contractsigning.xqbm"
         },
         {
+          "title": "类型",
+          "component": "radio",
+          "id":"leitype",
+          "name": "contractsigning.mstype",
+          "options": [
+            {
+              "text": "项目类",
+              "value": "项目类"
+            },
+            {
+              "text": "非项目类",
+              "value": "非项目类"
+            }
+          ]
+        },
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "contractsigning.mname",
+          "showLinkage": [
+            {
+              "id": "leitype",
+              "values": [
+                "项目类"
+              ]
+            }
+          ]
+        },
+        {
           "title": "需求类型",
           "component": "select",
           "id": "contractsigning_xqlx",
@@ -219,6 +248,14 @@
             {
               "text": "其他( 不必选择资产服务需求部门 )",
               "value": "QT"
+            },
+            {
+              "text": "ZC-2019年大修项目资材采购",
+              "value": "ZC"
+            },
+            {
+              "text": "XL-2019年大修项目协力外协采购",
+              "value": "XL"
             }
           ]
         },
@@ -350,6 +387,32 @@
           ]
         },
         {
+          "title": "战略合作伙伴",
+          "component": "text",
+          "name": "contractsigning.zlhzhb",
+          "showLinkage": [
+            {
+              "id": "contractsigning_gyslx",
+              "values": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "黑名单解冻原因",
+          "component": "text",
+          "name": "contractsigning.hmdjdyy",
+          "showLinkage": [
+            {
+              "id": "contractsigning_gyslx",
+              "values": [
+                "3"
+              ]
+            }
+          ]
+        },
+        {
           "title": "密级",
           "component": "select",
           "id": "contractsigning_mj",
@@ -410,6 +473,19 @@
             {
               "text": "否",
               "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "原合同编号",
+          "component": "text",
+          "name": "contractsigning.bcthbh",
+          "showLinkage": [
+            {
+              "id": "contractsigning_sfwbclht",
+              "values": [
+                "0"
+              ]
             }
           ]
         },

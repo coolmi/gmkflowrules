@@ -144,6 +144,35 @@
           ]
         },
         {
+          "title": "类型",
+          "component": "radio",
+          "id":"leitype",
+          "name": "mainModel.mstype",
+          "options": [
+            {
+              "text": "项目类",
+              "value": "项目类"
+            },
+            {
+              "text": "非项目类",
+              "value": "非项目类"
+            }
+          ]
+        },
+        {
+          "title": "项目名称",
+          "component": "text",
+          "name": "mainModel.mname",
+          "showLinkage": [
+            {
+              "id": "leitype",
+              "values": [
+                "项目类"
+              ]
+            }
+          ]
+        },
+        {
           "title": "执行状态",
           "component": "select",
           "name": "mainModel.m_exestate",
