@@ -136,6 +136,7 @@ radio:联动
       "title": "申请次数",
       "component": "linkToMap",
       "name":"sqcs",
+      "name":"sqcs",
       "linkToMap":{
         "mapBasePath":"maps",
         "linkMiddle":"num",

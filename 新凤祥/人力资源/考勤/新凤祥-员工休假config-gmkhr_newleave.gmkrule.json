@@ -1,465 +1,590 @@
 {
-	"id": "gmkhr_newleave",
-	"handleOnPC":{
-		"tasknode":[
-			""
-		],
-		"flag":[
-			"resubmit"
-		]
-	},
-	"selectPerson":{
-		"tasknode":[
-			""
-		],
-		"beforPop":false
-	},
-	
-	"forms": [{
-		"title": "基本信息",
-		"pageid": "jbxx",
-		"component": "panel",
-		"subComponents": [{
-			"title": "申请单号",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.appid"
-		},
-		{
-			"title": "申请日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.appda"
-		},
-		{
-			"title": "申请人姓名",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.pernr",
-			"-",
-			"mainModel.username"]
-		},
-		{
-			"title": "所属部门",
-			"component": "label",
-			"editablenode": "",
-			"label": ["mainModel.sysbusinessunitname",
-			"-",
-			"mainModel.sysdeptname"]
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.userid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.username"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.pernr"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.syspostname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysdeptname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.sysbusinessunitname"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.postid"
-		},
-		{
-			"title": "",
-			"component": "hidden",
-			"name": "mainModel.id"
-		}]
-	},
-	{
-		"title": "申请信息",
-		"pageid": "sqxx",
-		"component": "panel",
-		"subComponents": [
-		{
-			"title": "",
-			"id": "holidaytype",
-			"component": "hidden",
-			"name": "mainModel.holidaytype"
-		},
-		{
-			"title": "员工假期类型",
-			"component": "text",
-			"name": "mainModel.holidaytypename"
-			
-		},
-		{
-			"title": "病假类型",
-			"display": "none",
-			"component": "select",
-			"name": "mainModel.bjlx",
-			"options":[
-				{
-					"text": "请选择",
-					"value": ""
-				},
-				{
-					"text": "短期病假",
-					"value": "短期病假"
-				},
-				{
-					"text": "长期病假",
-					"value": "长期病假"
-				}
-			],
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["B01"]
-            }]
-		},
-		{
-		  "title": "直系亲属",
-		  "component": "text",
-		  "name": "mainModel.zxqs",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": ["A05"]
-						  }]
-
-		},
-		{
-			"title": "哺乳假休假方式",
-			"display": "none",
-			"component": "select",
-			"name": "mainModel.brjxjlx",
-			"options":[
-				{
-					"text": "请选择",
-					"value": ""
-				},
-				{
-					"text": "每天一次",
-					"value": "0"
-				},
-				{
-					"text": "每天两次",
-					"value": "1"
-				}
-			],
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A11"]
-            }]
-		},
-		{
-			"title": "生育胎数",
-			"display": "none",
-			"component": "select",
-			"editablenode": "usertask6",
-			"name": "mainModel.tesl",
-			"options":[
-				{
-					"text": "请选择",
-					"value": ""
-				},
-				{
-					"text": "一胞胎",
-					"value": "1"
-				},
-				{
-					"text": "双胞胎",
-					"value": "2"
-				},
-				{
-					"text": "三胞胎",
-					"value": "3"
-				},
-				{
-					"text": "四胞胎",
-					"value": "4"
-				}
-			],
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A04","A11"]
-            }]
-		},
-
-		{
-			"title": "请假开始日期",
-			"component": "date1",
-			"name": "mainModel.sdate"
-		},
-		{
-			"title": "请假结束日期",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.edate"
-		},
-		{
-			"title": "请假开始时间",
-			"display": "none",
-			"component": "date2",
-			"editablenode": "",
-			"name": "mainModel.timea",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A11"]
-            }]
-		},
-		
-		{
-			"title": "请假结束时间",
-			"display": "none",
-			"component": "date2",
-			"editablenode": "",
-			"name": "mainModel.timeb",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A11"]
-            }]
-		},
-		{
-			"title": "开始日班次",
-			"display": "none",
-			"component": "select",
-			"editablenode": "",
-			"name": "mainModel.dutya",
-			"options": [{
-					"text": "全天",
-					"value": "all"
-				},
-				{
-					"text": "下午",
-					"value": "lower"
-				}
-			],
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07"]
-            }]
-		},
-		{
-			"title": "结束日班次",
-			"display": "none",
-			"component": "select",
-			"editablenode": "",
-			"name": "mainModel.dutyb",
-			"options": [{
-					"text": "全天",
-					"value": "all"
-				},
-				{
-					"text": "上午",
-					"value": "upper"
-				}
-			],
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A02","C01","J01","B01","A03","A04","A08","A05","A07"]
-            }]
-		},
-		{
-			"title": "本次请假天数",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.thisdays",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["C01","J01","B01","A03","A04","A08","A05","A07"]
-            }]
-		},
-		{
-			"title": "休假经历的自然天数",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.comdays",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": []
-            }]
-		},
-		{
-			"title": "本次请假时数",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.thishours",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A02","A11"]
-            }]
-		},
-		{
-			"title": "享有额度(时)",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.enjoy",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["J01"]
-            }]
-		},
-		{
-			"title": "已用额度(时)",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.hasuse",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["J01"]
-            }]
-		},
-		{
-			"title": "剩余额度(时)",
-			"display": "none",
-			"component": "text",
-			"editablenode": "",
-			"name": "mainModel.surplus",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["J01"]
-            }]
-		},
-		{
-			"title": "生效日期",
-			"display": "none",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.effecta",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A11"]
-            }]
-		},
-		{
-			"title": "失效日期",
-			"display": "none",
-			"component": "date1",
-			"editablenode": "",
-			"name": "mainModel.effectb",
-			"showLinkage": [{
-                "id": "holidaytype",
-                "values": ["A11"]
-            }]
-		},
-		{
-			"title": "请假原因",
-			"component": "textarea",
-			"rows" : "3",
-			"editablenode": "",
-			"name": "mainModel.readks"
-		},
-		{
-		  "title": "转年假天数",
-		  "display": "none",
-		  "component": "text",
-		  "editablenode": "usertask5",
-		  "name": "mainModel.znjts",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": ["B01","A03","A04","A12"]
-						  }]
-		},
-		{
-		  "title": "转事假天数",
-		  "display": "none",
-		  "component": "text",
-		  "editablenode": "usertask5",
-		  "name": "mainModel.zsjts",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": ["B01","A03","A04","A12"]
-						  }]
-		},{
-			"title": "存调休小时数",
-			"display": "none",
-			"component": "text",
-			"name": "mainModel.ctxxss",
-			"showLinkage": [{
-							  "id": "holidaytype",
-							  "values": ["A02","A11"]
-							}]
-		  },
-		{
-		  "title": "可休调休天数",
-		  "display": "none",
-		  "component": "text",
-		  "name": "mainModel.ctxts",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": []
-						  }]
-		},
-		{
-		  "title": "可休调休年假天数",
-		  "display": "none",
-		  "component": "text",
-		  "name": "mainModel.ctxnjts",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": []
-						  }]
-		},
-		{
-		  "title": "当月已休事假天数",
-		  "display": "none",
-		  "component": "text",
-		  "name": "mainModel.ljsjtsm",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": ["C01"]
-						  }]
-		},
-		{
-		  "title": "当年已休事假天数",
-		  "display": "none",
-		  "component": "text",
-		  "name": "mainModel.ljsjtsy",
-		  "showLinkage": [{
-							"id": "holidaytype",
-							"values": ["C01"]
-						  }]
-		}]
-	},
-	{
-		"title": "附件信息",
-		"pageid": "fjxx",
-		"component": "panel",
-		"subComponents": []
-	},
-	{
-		"title": "审批记录",
-		"pageid": "spjl",
-		"component": "panel",
-		"subComponents": []
-	}],
-	"refers": {
-	}
+  "id": "gmkhr_newleave",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "基本信息",
+      "pageid": "jbxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "",
+          "id": "holidaytype",
+          "component": "hidden",
+          "name": "mainModel.holidaytype"
+        },
+        {
+          "title": "员工假期类型",
+          "component": "text",
+          "name": "mainModel.holidaytypename"
+        },
+        {
+          "title": "病假类型",
+          "display": "none",
+          "component": "select",
+          "name": "mainModel.bjlx",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "短期病假",
+              "value": "短期病假"
+            },
+            {
+              "text": "长期病假",
+              "value": "长期病假"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "B01"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "直系亲属",
+          "component": "text",
+          "name": "mainModel.zxqs",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A05"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "哺乳假休假方式",
+          "display": "none",
+          "component": "select",
+          "name": "mainModel.brjxjlx",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "每天一次",
+              "value": "0"
+            },
+            {
+              "text": "每天两次",
+              "value": "1"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "生育胎数",
+          "display": "none",
+          "component": "select",
+          "editablenode": "usertask6",
+          "name": "mainModel.tesl",
+          "options": [
+            {
+              "text": "请选择",
+              "value": ""
+            },
+            {
+              "text": "一胞胎",
+              "value": "1"
+            },
+            {
+              "text": "双胞胎",
+              "value": "2"
+            },
+            {
+              "text": "三胞胎",
+              "value": "3"
+            },
+            {
+              "text": "四胞胎",
+              "value": "4"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A04",
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请假开始日期",
+          "component": "date1",
+          "name": "mainModel.sdate"
+        },
+        {
+          "title": "请假结束日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.edate"
+        },
+        {
+          "title": "请假开始时间",
+          "display": "none",
+          "component": "date2",
+          "editablenode": "",
+          "name": "mainModel.timea",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请假结束时间",
+          "display": "none",
+          "component": "date2",
+          "editablenode": "",
+          "name": "mainModel.timeb",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "开始日班次",
+          "display": "none",
+          "component": "select",
+          "editablenode": "",
+          "name": "mainModel.dutya",
+          "options": [
+            {
+              "text": "全天",
+              "value": "all"
+            },
+            {
+              "text": "下午",
+              "value": "lower"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A02",
+                "C01",
+                "J01",
+                "B01",
+                "A03",
+                "A04",
+                "A08",
+                "A05",
+                "A07"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "结束日班次",
+          "display": "none",
+          "component": "select",
+          "editablenode": "",
+          "name": "mainModel.dutyb",
+          "options": [
+            {
+              "text": "全天",
+              "value": "all"
+            },
+            {
+              "text": "上午",
+              "value": "upper"
+            }
+          ],
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A02",
+                "C01",
+                "J01",
+                "B01",
+                "A03",
+                "A04",
+                "A08",
+                "A05",
+                "A07"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "本次请假天数",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.thisdays",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "C01",
+                "J01",
+                "B01",
+                "A03",
+                "A04",
+                "A08",
+                "A05",
+                "A07"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "休假经历的自然天数",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.comdays",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": []
+            }
+          ]
+        },
+        {
+          "title": "本次请假时数",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.thishours",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A02",
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "享有额度(时)",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.enjoy",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "J01"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "已用额度(时)",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.hasuse",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "J01"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "剩余额度(时)",
+          "display": "none",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.surplus",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "J01"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "生效日期",
+          "display": "none",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.effecta",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "失效日期",
+          "display": "none",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.effectb",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "请假原因",
+          "component": "textarea",
+          "rows": "3",
+          "editablenode": "",
+          "name": "mainModel.readks"
+        },
+        {
+          "title": "转年假天数",
+          "display": "none",
+          "component": "text",
+          "editablenode": "usertask5",
+          "name": "mainModel.znjts",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "B01",
+                "A03",
+                "A04",
+                "A12"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "转事假天数",
+          "display": "none",
+          "component": "text",
+          "editablenode": "usertask5",
+          "name": "mainModel.zsjts",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "B01",
+                "A03",
+                "A04",
+                "A12"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "存调休小时数",
+          "display": "none",
+          "component": "text",
+          "name": "mainModel.ctxxss",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "A02",
+                "A11"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "可休调休天数",
+          "display": "none",
+          "component": "text",
+          "name": "mainModel.ctxts",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": []
+            }
+          ]
+        },
+        {
+          "title": "可休调休年假天数",
+          "display": "none",
+          "component": "text",
+          "name": "mainModel.ctxnjts",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": []
+            }
+          ]
+        },
+        {
+          "title": "当月已休事假天数",
+          "display": "none",
+          "component": "text",
+          "name": "mainModel.ljsjtsm",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "C01"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "当年已休事假天数",
+          "display": "none",
+          "component": "text",
+          "name": "mainModel.ljsjtsy",
+          "showLinkage": [
+            {
+              "id": "holidaytype",
+              "values": [
+                "C01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "附件信息",
+      "pageid": "fjxx",
+      "component": "panel",
+      "subComponents": []
+    },
+    {
+      "title": "审批记录",
+      "pageid": "spjl",
+      "component": "panel",
+      "subComponents": []
+    }
+  ],
+  "refers": {
+  }
 }

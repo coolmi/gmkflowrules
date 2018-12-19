@@ -171,6 +171,19 @@
           ]
         },
         {
+          "title": "后补原因",
+          "component": "text",
+          "name": "contractsigning.hbyy",
+          "showLinkage": [
+            {
+              "id": "contractsigning_htzxzt",
+              "values": [
+                "1"
+              ]
+            }
+          ]
+        },
+        {
           "title": "合同标的物",
           "component": "text",
           "id": "contractsigning_htbdw",
@@ -287,9 +300,15 @@
         {
           "title": "汇率",
           "component": "text",
-          "id": "contractsigning_m_hl",
-          "editablenode": "",
-          "name": "contractsigning.m_hl"
+          "name": "contractsigning.m_hl",
+          "showLinkage": [
+            {
+              "id": "contractsigning_bz",
+              "values": [
+                "1","2","3"
+              ]
+            }
+          ]
         },
         {
           "flowshow": true,

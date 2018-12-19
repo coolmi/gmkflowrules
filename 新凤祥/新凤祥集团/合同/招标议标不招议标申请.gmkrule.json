@@ -126,7 +126,8 @@
         },
         {
           "title": "采购方式",
-          "component": "select",
+          "component": "radio",
+          "id": "cgfs_type",
           "name": "mainModel.m_cgtype",
           "options": [
             {
@@ -194,7 +195,7 @@
           "name": "mainModel.m_why",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "议标"
               ]
@@ -208,7 +209,7 @@
           "name": "mainModel.m_why",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "不招议标"
               ]
@@ -222,7 +223,7 @@
           "name": "mainModel.m_place",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
@@ -238,7 +239,7 @@
           "name": "mainModel.m_date",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
@@ -300,10 +301,11 @@
         {
           "title": "标书编制",
           "component": "select",
+          "id": "m_bidingdoc",
           "name": "mainModel.m_bidingdoc",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
@@ -327,7 +329,7 @@
           "name": "mainModel.m_participatenm",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
@@ -341,7 +343,7 @@
           "name": "mainModel.m_mainsendnm",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
@@ -355,7 +357,7 @@
           "name": "mainModel.m_zzrequirements",
           "showLinkage": [
             {
-              "id": "m_cgtype",
+              "id": "cgfs_type",
               "values": [
                 "招标","议标"
               ]
