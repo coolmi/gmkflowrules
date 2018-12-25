@@ -2,7 +2,7 @@
   "id": "gmk_officeassetsallocation",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask1","usertask6"
     ],
     "flag": [
       "resubmit"
@@ -115,9 +115,52 @@
       "component": "panel",
       "subComponents": [
         {
-          "title": "调拨事由",
-          "component": "textarea",
-          "name": "mainModel.reason"
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "sqInfo_table",
+          "basePath": "locationuserchilds",
+          "tableForms": [
+            {
+              "title": "调拨事由",
+              "component": "text",
+              "name": "remarks"
+            },
+            {
+              "title": "调拨资产所属区域",
+              "component": "text",
+              "name": "dbuseareatxt"
+            },
+            {
+              "title": "调拨资产名称",
+              "component": "text",
+              "name": "assetname"
+            },
+            {
+              "title": "调拨资产数量",
+              "component": "text",
+              "name": "dbnum"
+            },
+            {
+              "title": "使用区域",
+              "component": "text",
+              "name": "useareatxt"
+            },
+            {
+              "title": "使用位置",
+              "component": "text",
+              "name": "locations"
+            },
+            {
+              "title": "使用部门",
+              "component": "text",
+              "name": "departmentxt"
+            },
+            {
+              "title": "使用人",
+              "component": "text",
+              "name": "persontxt"
+            }
+          ]
         }
       ]
     },
@@ -153,44 +196,54 @@
               "name": "propertycode"
             },
             {
-              "title": "调出使用区域",
+              "title": "使用区域",
               "component": "text",
               "name": "useareatxt"
             },
             {
-              "title": "调出资产管理部门",
+              "title": "资产管理部门",
               "component": "text",
               "name": "assetdeptname"
             },
             {
-              "title": "调出使用位置",
+              "title": "使用位置",
               "component": "text",
               "name": "locations"
             },
             {
-              "title": "调出使用部门",
+              "title": "使用部门",
               "component": "text",
               "name": "departmentxt"
             },
             {
-              "title": "调出使用人",
+              "title": "使用人",
               "component": "text",
               "name": "persontxt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "补充填写资产调入信息",
+      "pageid": "supplementInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 0,
+          "id": "supplement_table",
+          "basePath": "locationchilds",
+          "tableForms": [
+            {
+              "title": "资产名称",
+              "component": "text",
+              "name": "assetname"
             },
             {
-              "title": "调入使用区域",
+              "title": "资产编号",
               "component": "text",
-              "name": "inuseareatxt"
-            },
-            {
-              "title": "调入资产管理部门",
-              "component": "text",
-              "name": "inassetdeptname"
-            },
-            {
-              "title": "调入使用位置",
-              "component": "text",
-              "name": "inlocations"
+              "name": "propertycode"
             },
             {
               "title": "调入部门",
@@ -198,9 +251,19 @@
               "name": "indepartmentxt"
             },
             {
-              "title": "调入使用人",
+              "title": "使用人",
               "component": "text",
               "name": "inpersontxt"
+            },
+            {
+              "title": "使用区域",
+              "component": "text",
+              "name": "inuseareatxt"
+            },
+            {
+              "title": "使用位置",
+              "component": "text",
+              "name": "inlocations"
             }
           ]
         }
