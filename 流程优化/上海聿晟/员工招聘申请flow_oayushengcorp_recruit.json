@@ -136,9 +136,17 @@
               "name": "cdburks"
             },
             {
-              "title": "岗位说明书",
-              "component": "text",
-              "name": "postdoc"
+              "component": "table_form",
+              "titleIndex": 0,
+              "id": "gwsms_table",
+              "basePath": "subFilesList",
+              "tableForms": [
+                {
+                  "title": "岗位说明书",
+                  "component": "text",
+                  "name": "filename"
+                }
+              ]
             },
             {
               "title": "期望到岗日期",

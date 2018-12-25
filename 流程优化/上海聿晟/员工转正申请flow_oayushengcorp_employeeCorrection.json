@@ -127,7 +127,7 @@
         {
           "title": "转正类型",
           "component": "text",
-          "name": "mainModel.coType"
+          "name": "mainModel.coTypetext"
         },
         {
           "title": "所在岗位ID",
@@ -177,7 +177,7 @@
         {
           "title": "毕业时间",
           "component": "text",
-          "name": "mainModel.gDate"
+          "name": "mainModel.GDate"
         },
         {
           "title": "个人总结",
@@ -187,6 +187,8 @@
         {
           "title": "转正结果",
           "component": "text",
+          "tasknode": "userTaskDeptLeader,userTaskLeader",
+          "editablenode":"userTaskDeptLeader",
           "name": "mainModel.opinion"
         }
       ]

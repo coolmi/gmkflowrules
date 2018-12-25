@@ -140,14 +140,14 @@
             },
             {
               "title": "否",
-              "value": "-1"
+              "value": "1"
             }
           ]
         },
         {
           "title": "岗位级别",
           "component": "text",
-          "name": "mainModel.mageType"
+          "name": "mainModel.mageTypetext"
         },
         {
           "title": "原因描述",
