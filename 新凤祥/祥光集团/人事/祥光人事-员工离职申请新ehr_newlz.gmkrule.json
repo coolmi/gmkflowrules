@@ -329,13 +329,6 @@
           ]
         },
         {
-          "title": "离职原因备注",
-          "component": "textarea",
-          "name": "mainModel.leavereasonremark",
-          "editablenode": "usertask3",
-          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8"
-        },
-        {
           "title": "是否签署对外联络信息",
           "component": "radio",
           "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
