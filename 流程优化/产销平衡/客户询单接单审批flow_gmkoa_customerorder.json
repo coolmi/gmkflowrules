@@ -1,8 +1,8 @@
 {
-  "id": "gmk_yearfundplan",
+  "id": "flow_gmkoa_customerorder",
   "handleOnPC": {
     "tasknode": [
-      "apply"
+      ""
     ],
     "flag": [
       "resubmit"
@@ -14,26 +14,15 @@
     ],
     "beforPop": false
   },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-          ""
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
+      "title": "申请人信息",
+      "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
         {
           "title": "申请单号",
-          "component": "text",
+          "component": "text",gmk_monthfundplan
           "editablenode": "",
           "name": "mainModel.appid"
         },
@@ -122,152 +111,170 @@
     },
     {
       "title": "申请信息",
-      "pageid": "applyInfo",
+      "pageid": "sqInfo",
       "component": "panel",
       "subComponents": [
         {
-          "title": "ITCODE",
+          "title": "业务类别",
           "component": "text",
-          "name": "mainModel.iTCODE"
+          "name": "mainModel.ywfltxt"
         },
         {
-          "title": "所属公司",
+          "title": "销售组织",
           "component": "text",
-          "name": "mainModel.bUKTXT"
+          "name": "mainModel.sapxszz"
         },
         {
-          "title": "手机",
-          "component": "text",
-          "name": "mainModel.pHONE"
+          "title": "分销渠道",
+          "component": "label",
+          "label": [
+            "mainModel.sapfxqd",
+            "-",
+            "mainModel.sapfxqdtext"
+          ]
         },
         {
-          "title": "邮箱",
+          "title": "产品组",
           "component": "text",
-          "name": "mainModel.eMAIL"
+          "name": "mainModel.sapcpztext"
         },
         {
-          "title": "业务所属公司编码",
+          "title": "客户编码",
           "component": "text",
-          "name": "mainModel.bUKRS"
+          "name": "mainModel.khbh"
         },
         {
-          "title": "业务所属公司",
+          "title": "客户名称",
           "component": "text",
-          "name": "mainModel.bUTXT"
+          "name": "mainModel.khmc"
+        },
+        {
+          "title": "销售部门",
+          "component": "text",
+          "name": "mainModel.sapxsbm"
+        },
+        {
+          "title": "业务员",
+          "component": "text",
+          "name": "mainModel.ywrname"
+        },
+        {
+          "title": "汇率",
+          "component": "text",
+          "name": "mainModel.huil"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.biz"
         }
       ]
     },
     {
-      "title": "年度资金明细表",
-      "pageid": "zjmxtable",
+      "title": "询单基本信息",
+      "pageid": "orderBaseInfo",
       "component": "panel",
       "subComponents": [
         {
           "component": "table_form",
-          "titleIndex": 0,
-          "id": "zjmx_table",
-          "basePath": "yearchildfundplanlist",
+          "titleIndex": 2,
+          "id": "orderBase_table",
+          "basePath": "infos",
           "tableForms": [
             {
-              "title": "资金计划项目名称",
+              "title": "产品类别",
               "component": "text",
-              "name": "iNFO_ZACCTXT"
+              "name": "cplbtxt"
             },
             {
-              "title": "行项目识别号",
-              "component": "textarea",
-              "name": "iNFO_INGUID"
+              "title": "物料编码",
+              "component": "text",
+              "name": "wlbh"
             },
             {
-              "title": "计划类型",
+              "title": "物料描述",
               "component": "text",
-              "name": "iNFO_ZJHTYP_TXT"
-            },
-            {
-              "title": "资金计划项目编号",
-              "component": "text",
-              "name": "iNFO_ZACCID"
-            },
-            {
-              "title": "收支类别",
-              "component": "text",
-              "name": "iNFO_ZSZ_TYP"
-            },
-            {
-              "title": "融资类型",
-              "component": "text",
-              "name": "iNFO_ZRZ_TYP"
-            },
-            {
-              "title": "计划日期",
-              "component": "text",
-              "name": "iNFO_ZJH_DATE"
-            },
-            {
-              "title": "业务单据号",
-              "component": "text",
-              "name": "iNFO_ZJH_DOC"
-            },
-            {
-              "title": "数量",
-              "component": "text",
-              "name": "iNFO_ZJH_QTY"
-            },
-            {
-              "title": "单价描述",
-              "component": "text",
-              "name": "iNFO_ZJH_DJMS"
+              "name": "wlms"
             },
             {
               "title": "单价",
               "component": "text",
-              "name": "iNFO_ZJH_PRICE"
+              "name": "price"
             },
             {
-              "title": "币种",
+              "title": "金额（元）",
               "component": "text",
-              "name": "iNFO_RTCUR"
+              "name": "htjey"
             },
             {
-              "title": "凭证币金额",
+              "title": "毛利率（%）",
               "component": "text",
-              "name": "iNFO_WRBTR"
+              "name": "htmlv"
             },
             {
-              "title": "汇率",
+              "title": "人均贡献（元/人/时）",
               "component": "text",
-              "name": "iNFO_UKURS"
+              "name": "rjgx"
             },
             {
-              "title": "银行编号",
+              "title": "单班产能",
               "component": "text",
-              "name": "iNFO_PARTNER"
+              "name": "dbcn"
             },
             {
-              "title": "银行名称",
+              "title": "需求数量",
               "component": "text",
-              "name": "iNFO_NAME_ORG"
+              "name": "snum"
             },
             {
-              "title": "人民币金额",
+              "title": "需求交期",
               "component": "text",
-              "name": "iNFO_DMBTR"
+              "name": "xqqx"
             },
             {
-              "title": "供应商描述",
+              "title": "确认数量",
               "component": "text",
-              "name": "monthfundplanSub_INFO_LIFNR_T"
+              "name": "qrnum"
             },
             {
-              "title": "备注",
+              "title": "确认交期",
               "component": "text",
-              "name": "iNFO_ZTMMARK"
+              "name": "qrqx"
+            },
+            {
+              "title": "原料不足",
+              "component": "radio",
+              "options": [
+                {
+                  "title": "否",
+                  "value": null
+                },
+                {
+                  "title": "是",
+                  "value": "1"
+                }
+              ],
+              "name": "ylbz"
+            },
+            {
+              "title": "产能不足",
+              "component": "radio",
+              "options": [
+                {
+                  "title": "否",
+                  "value": null
+                },
+                {
+                  "title": "是",
+                  "value": "1"
+                }
+              ],
+              "name": "cnbz"
             }
           ]
         }
       ]
     }
-  ],
-  "refers": {
-  }
+  ]
 }
+

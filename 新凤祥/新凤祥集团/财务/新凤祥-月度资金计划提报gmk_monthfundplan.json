@@ -254,6 +254,11 @@
               "name": "iNFO_NAME_ORG"
             },
             {
+              "title": "供应商描述",
+              "component": "text",
+              "name": "monthfundplanSub_INFO_LIFNR_T"
+            },
+            {
               "title": "备注",
               "component": "text",
               "name": "iNFO_ZTMMARK"
