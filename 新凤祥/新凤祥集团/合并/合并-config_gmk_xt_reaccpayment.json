@@ -218,6 +218,11 @@
           "title": "未付金额",
           "component": "text",
           "name": "mainModel.sYJE"
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.fKSM"
         }
       ]
     },
