@@ -188,9 +188,35 @@
               "name": "reason"
             },
             {
+              "title": "是否推荐",
+              "component": "select",
+              "name": "ifChecked",
+              "options":[
+                {
+                  "text":"推荐",
+                  "value":"true"
+                },
+                {
+                  "text":"不推荐",
+                  "value":"false"
+                }
+              ]
+            },
+            {
               "title": "意见",
-              "component": "text",
-              "name": "comments"
+              "component": "select",
+              "name": "comments",
+              "options":[
+                {
+                  "text":"同意",
+                  "value":"Y"
+                },
+                {
+                  "text":"不同意",
+                  "value":"N"
+                }
+
+              ]
             }
           ]
         }
