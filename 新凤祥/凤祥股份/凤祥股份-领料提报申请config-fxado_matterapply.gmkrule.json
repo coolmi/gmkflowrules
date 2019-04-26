@@ -116,6 +116,23 @@
       ]
     },
     {
+      "title": "申请信息",
+      "component": "panel",
+      "panel_id": "sqxx",
+      "subComponents": [
+        {
+          "title": "主抄送人员",
+          "component": "text",
+          "name": "mainModel.m_sendnms"
+        },
+        {
+          "title": "车牌号",
+          "component": "text",
+          "name": "mainModel.m_carnumber"
+        }
+        ]
+    },
+    {
       "title": "申请信息（固定表)",
       "component": "panel",
       "id": "sqxxgdb",

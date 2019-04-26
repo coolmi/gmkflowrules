@@ -292,14 +292,63 @@
                 },
                 {
                   "title": "交通方式",
-                  "component": "linkToMap",
-                  "name": "jtfs",
-                  "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
-                    "linkMiddle": "stype",
-                    "linkType": "string"
-                  }
+                  "name": "stype",
+                  "component" : "select",
+                  "id": "jtfsid",
+                  "options": [
+                    {
+                      "text": "2001-飞机商务舱",
+                      "value": "2001"
+                    },
+                    {
+                      "text": "2002-飞机经济舱",
+                      "value": "2002"
+                    },
+                    {
+                      "text": "2011-动车/高铁商务舱",
+                      "value": "2011"
+                    },
+                    {
+                      "text": "2012-动车/高铁一等座",
+                      "value": "2012"
+                    },
+                    {
+                      "text": "2013-动车/高铁二等座",
+                      "value": "2013"
+                    },
+                    {
+                      "text": "2021-火车软卧",
+                      "value": "2021"
+                    },
+                    {
+                      "text": "2022-火车硬卧",
+                      "value": "2022"
+                    },
+                    {
+                      "text": "2023-火车软座",
+                      "value": "2023"
+                    },
+                    {
+                      "text": "2024-火车硬座",
+                      "value": "2024"
+                    },
+                    {
+                      "text": "2031-长途汽车",
+                      "value": "2031"
+                    },
+                    {
+                      "text": "2041-轮船一等舱",
+                      "value": "2041"
+                    },
+                    {
+                      "text": "2042-轮船二等舱",
+                      "value": "2042"
+                    },
+                    {
+                      "text": "2051-自驾车",
+                      "value": "2051"
+                    }
+                  ]
                 },
                 {
                   "title": "交通费类型",
@@ -338,10 +387,114 @@
                   "name": "waers"
                 },
                 {
+                  "title": "票价",
+                  "component": "text",
+                  "name": "ticketPrice",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "机场建设费",
+                  "component": "text",
+                  "name": "airportConstuFee",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "燃油附加费",
+                  "component": "text",
+                  "name": "fuelSurch",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "其他税费",
+                  "component": "text",
+                  "name": "otherTaxfee",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "title": "总金额",
                   "component": "text",
                   "datatype": "money",
                   "name": "dmbtr"
+                },
+                {
+                  "title": "税率",
+                  "component": "text",
+                  "name": "taxRate",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002",
+                        "2011",
+                        "2012",
+                        "2013",
+                        "2021",
+                        "2022",
+                        "2023",
+                        "2024",
+                        "2031",
+                        "2041",
+                        "2042"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "税额",
+                  "component": "text",
+                  "name": "taxNumber",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsid",
+                      "values": [
+                        "2001",
+                        "2002",
+                        "2011",
+                        "2012",
+                        "2013",
+                        "2021",
+                        "2022",
+                        "2023",
+                        "2024",
+                        "2031",
+                        "2041",
+                        "2042"
+                      ]
+                    }
+                  ]
                 },
                 {
                   "title": "项目号",
@@ -387,14 +540,27 @@
                 },
                 {
                   "title": "交通方式",
-                  "component": "linkToMap",
-                  "name": "jtfs",
-                  "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
-                    "linkMiddle": "stypec",
-                    "linkType": "string"
-                  }
+                  "name": "stypec",
+                  "component" : "select",
+                  "id": "jtfsidc",
+                  "options": [
+                    {
+                      "text": "4001-出租车",
+                      "value": "4001"
+                    },
+                    {
+                      "text": "4002-地铁",
+                      "value": "4002"
+                    },
+                    {
+                      "text": "4003-公交车",
+                      "value": "4003"
+                    },
+                    {
+                      "text": "4004-自驾车",
+                      "value": "4004"
+                    }
+                  ]
                 },
                 {
                   "title": "交通费类型",
@@ -432,6 +598,32 @@
                   "component": "text",
                   "datatype": "money",
                   "name": "dmbtrc"
+                },
+                {
+                  "title": "税率",
+                  "component": "text",
+                  "name": "taxRatec",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsidc",
+                      "values": [
+                        "4001"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "税额",
+                  "component": "text",
+                  "name": "taxNumberc",
+                  "showLinkage": [
+                    {
+                      "id": "jtfsidc",
+                      "values": [
+                        "4001"
+                      ]
+                    }
+                  ]
                 },
                 {
                   "title": "项目号",
@@ -550,6 +742,11 @@
                   "title": "餐馆",
                   "component": "text",
                   "name": "eaterym"
+                },
+                {
+                  "title": "用餐人次",
+                  "component": "text",
+                  "name": "snum"
                 },
                 {
                   "title": "金额",

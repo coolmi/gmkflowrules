@@ -136,6 +136,11 @@
               "name": "gathersNo"
             },
             {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "supplierName"
+            },
+            {
               "title": "物料号",
               "component": "text",
               "name": "assetsId"
