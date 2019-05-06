@@ -2,7 +2,7 @@
   "id": "ado_tenderapply",
   "handleOnPC": {
     "tasknode": [
-      "usertask3","usertask4","usertask7"
+      "usertask4","usertask7"
     ],
     "flag": [
       "resubmit"
