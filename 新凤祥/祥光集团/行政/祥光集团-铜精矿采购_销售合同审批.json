@@ -250,6 +250,12 @@
           "name": "zjsh"
         },
         {
+          "title": "",
+          "component": "hidden",
+          "id": "wsmd_hidden",
+          "name": "wsmd"
+        },
+        {
           "title": "原料事业部意见",
           "component": "textarea",
           "name": "mainModel.htspyj",
@@ -366,7 +372,7 @@
           "pageid": "ywfj",
           "showLinkage": [
             {
-              "id": "fwsh_hidden",
+              "id": "htspyj_ylsh",
               "values": [
                 "true"
               ]
@@ -488,6 +494,61 @@
               "basePath": "allfiles",
               "titleIndex": 0,
               "id": "files_wlsh_table",
+              "tableForms": [
+                {
+                  "title": "文件名称",
+                  "component": "text",
+                  "name": "filename",
+                  "events": {
+                    "eventType": "openDocument",
+                    "filename": "filename",
+                    "afrescoid": "afrescoid"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "WSMD意见",
+          "component": "textarea",
+          "name": "mainModel.htspyj",
+          "id": "htspyj_wsmd",
+          "hiddenNotPost": true,
+          "editablenode": "internalaudit",
+          "validation": {
+            "pageid": "htsp_page",
+            "required": true,
+            "validateMsg": "WSMD意见必填"
+          },
+          "showLinkage": [
+            {
+              "id": "wsmd_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "WSMD条款",
+          "component": "panel",
+          "panel_id": "wsmd_panel",
+          "pageid": "ywfj",
+          "showLinkage": [
+            {
+              "id": "wsmd_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "subComponents": [
+            {
+              "component": "table_form",
+              "basePath": "allfiles",
+              "titleIndex": 0,
+              "id": "files_wsmd_table",
               "tableForms": [
                 {
                   "title": "文件名称",

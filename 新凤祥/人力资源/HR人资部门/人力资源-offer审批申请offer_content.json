@@ -368,6 +368,37 @@
           ]
         }
       ]
+    },
+    {
+      "title": "用印申请",
+      "pageid": "useapply",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "印章名称",
+          "component": "text",
+          "editablenode": "",
+          "name": "vo.sealname"
+        },
+        {
+          "title": "用印份数",
+          "component": "text",
+          "editablenode": "",
+          "name": "vo.sealnum"
+        },
+        {
+          "title": "印章管理员",
+          "component": "text",
+          "editablenode": "",
+          "name": "vo.sealadminnm"
+        },
+        {
+          "title": "印章保管区域",
+          "component": "text",
+          "editablenode": "",
+          "name": "vo.sealarea"
+        }
+      ]
     }
   ]
 }
