@@ -2,7 +2,7 @@
   "id": "flow_gmkoa_marketingcontract",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "createsapht"
     ],
     "flag": [
       "resubmit"
