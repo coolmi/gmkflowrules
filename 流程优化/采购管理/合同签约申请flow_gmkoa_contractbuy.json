@@ -2,7 +2,7 @@
     "id": "flow_gmkoa_contractbuy",
   "handleOnPC": {
     "tasknode": [
-      ""
+      "usertask5"
     ],
     "flag": [
       "resubmit"
