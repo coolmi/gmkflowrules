@@ -121,23 +121,23 @@
           "options": [
             {
               "title": "出口熟食",
-              "value": "出口熟食"
+              "value": "0"
             },
             {
               "title": "快餐熟食",
-              "value": "快餐熟食"
+              "value": "1"
             },
             {
               "title": "快餐生食",
-              "value": "快餐生食"
+              "value": "2"
             },
             {
               "title": "出口生食",
-              "value": "出口生食"
+              "value": "3"
             },
             {
               "title": "有机肥",
-              "value": "有机肥"
+              "value": "4"
             }
           ]
         },

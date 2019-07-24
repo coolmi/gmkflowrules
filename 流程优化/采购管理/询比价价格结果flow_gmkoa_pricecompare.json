@@ -53,6 +53,11 @@
           ]
         },
         {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.remark"
+        },
+        {
           "title": "",
           "component": "hidden",
           "name": "mainModel.bukrs"

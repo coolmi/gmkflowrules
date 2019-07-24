@@ -117,6 +117,7 @@
         {
           "title": "买/卖",
           "component": "radio",
+          "id": "contbuyTypeid",
           "name": "mainModel.contbuyType",
           "options": [
             {
@@ -131,38 +132,19 @@
         },
         {
           "title": "授权业务类型",
-          "component": "radio",
-          "name": "mainModel.grantMold",
-          "options": [
-            {
-              "title": "业务1",
-              "value": "0"
-            },
-            {
-              "title": "业务2",
-              "value": "1"
-            }
-          ]
+          "component": "text",
+          "name": "mainModel.grantMoldtext"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "id":"fortype",
+          "name": "mainModel.formingtype"
         },
         {
           "title": "合同产生形式",
-          "component": "radio",
-          "id":"fortype",
-          "name": "mainModel.forming",
-          "options": [
-            {
-              "title": "框架协议（无价无量）",
-              "value": "0"
-            },
-            {
-              "title": "招标结果产生的",
-              "value": "1"
-            },
-            {
-              "title": "询比价/议价产生的",
-              "value": "2"
-            }
-          ]
+          "component": "text",
+          "name": "mainModel.formingtext"
         },
         {
           "title": "招标/议标结果、询比价/议价申请单号",
@@ -171,18 +153,61 @@
           "showLinkage":[
             {
               "id":"fortype",
-              "values":["1","2"]
+              "values":["true"]
             }
           ]
         },
         {
           "title": "公司代码",
           "component": "text",
-          "name": "mainModel.cdburks",
+          "name": "mainModel.cdburkstext"
+        },
+        {
+          "title": "是否项目类",
+          "component": "radio",
+          "id": "isprojectid",
+          "name": "mainModel.isproject",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "项目文本",
+          "component": "text",
+          "name": "mainModel.projectnotext",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"isprojectid",
+              "values":["1"]
+            }
+          ]
+        },
+        {
+          "title": "需求类型",
+          "component": "text",
+          "name": "mainModel.needtypetext",
+          "showLinkage":[
+            {
+              "id":"isprojectid",
+              "values":["1"]
+            }
+          ]
+        },
+        {
+          "title": "备注",
+          "component": "textarea",
+          "name": "mainModel.remark",
+          "showLinkage":[
+            {
+              "id":"isprojectid",
+              "values":["1"]
             }
           ]
         },
@@ -192,52 +217,71 @@
           "name": "mainModel.subjtMatter",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
         {
-          "title": "供应商编号",
+          "title": "客户编号",
           "component": "text",
           "name": "mainModel.suCuId",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
         {
-          "title": "供应商名称",
+          "title": "客户名称",
           "component": "text",
           "name": "mainModel.suCuName",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
         {
           "title": "合同金额(小写)",
           "component": "text",
+          "datatype": "money",
           "name": "mainModel.subjtAmout",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
         {
           "title": "币种",
-          "component": "text",
-          "name": "mainModel.currencyIdtext",
+          "component": "radio",
+          "name": "mainModel.currencyId",
+          "options": [
+            {
+              "title": "人民币",
+              "value": "rny"
+            },
+            {
+              "title": "美元",
+              "value": "USD"
+            },
+            {
+              "title": "欧元",
+              "value": "Oyuan"
+            },
+            {
+              "title": "英镑",
+              "value": "ying"
+            }
+          ],
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
@@ -247,19 +291,20 @@
           "name": "mainModel.exchgeRate",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
         {
           "title": "合同金额(人民币)",
           "component": "text",
+          "datatype": "money",
           "name": "mainModel.rmbMoney",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
@@ -269,8 +314,8 @@
           "name": "mainModel.chinaNumber",
           "showLinkage":[
             {
-              "id":"fortype",
-              "values":["0","1","2"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         }
@@ -303,8 +348,8 @@
           "name": "mainModel.originalContractNumber",
           "showLinkage":[
             {
-              "id":"replytype",
-              "values":["0"]
+              "id":"contbuyTypeid",
+              "values":["1"]
             }
           ]
         },
@@ -314,14 +359,100 @@
           "name": "mainModel.contractNumberCategorytext"
         },
         {
-          "title": "公司信息",
-          "component": "text",
-          "name": "mainModel.companyInformationtext"
-        },
-        {
           "title": "合同编号",
           "component": "text",
-          "name": "mainModel.contractNumber"
+          "name": "mainModel.contractNumber",
+          "showLinkage":[
+            {
+              "id":"contbuyTypeid",
+              "values":["1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "采购合同明细",
+      "pageid": "procureInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "component": "table_form",
+          "titleIndex": 1,
+          "id": "procure_table",
+          "basePath": "contbuychldEntity",
+          "tableForms": [
+            {
+              "title": "供应商编码",
+              "component": "text",
+              "name": "suCuId"
+            },
+            {
+              "title": "供应商名称",
+              "component": "text",
+              "name": "suCuName"
+            },
+            {
+              "title": "合同标的物",
+              "component": "text",
+              "name": "subjtMatter"
+            },
+            {
+              "title": "金额",
+              "component": "text",
+              "datatype": "money",
+              "name": "subjtAmout"
+            },
+            {
+              "title": "汇率",
+              "component": "text",
+              "name": "exchgeRate"
+            },
+            {
+              "title": "币种",
+              "component": "radio",
+              "name": "currencyId",
+              "options": [
+                {
+                  "title": "人民币",
+                  "value": "rny"
+                },
+                {
+                  "title": "美元",
+                  "value": "USD"
+                },
+                {
+                  "title": "欧元",
+                  "value": "Oyuan"
+                },
+                {
+                  "title": "英镑",
+                  "value": "ying"
+                }
+              ]
+            },
+            {
+              "title": "合同编号",
+              "component": "text",
+              "name": "contractNumber"
+            },
+            {
+              "title": "原合同编号",
+              "component": "text",
+              "name": "originalContractNumber"
+            },
+            {
+              "title": "备注",
+              "component": "textarea",
+              "name": "remarks"
+            }
+          ]
+        }
+      ],
+      "showLinkage":[
+        {
+          "id":"contbuyTypeid",
+          "values":["0"]
         }
       ]
     },
