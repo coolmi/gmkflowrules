@@ -1,0 +1,270 @@
+{
+  "id": "flow_gmkoa_judicialaid",
+  "handleOnPC": {
+    "tasknode": [
+      ""
+    ],
+    "flag": [
+      "resubmit"
+    ]
+  },
+  "selectPerson": {
+    "tasknode": [
+      ""
+    ],
+    "beforPop": false
+  },
+  "forms": [
+    {
+      "title": "申请人信息",
+      "pageid": "sqxx",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "申请单号",
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid"
+        },
+        {
+          "title": "申请日期",
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda"
+        },
+        {
+          "title": "申请人姓名",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ]
+        },
+        {
+          "title": "所属部门",
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ]
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.bukrs"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.userid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.username"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.pernr"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.syspostname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysdeptname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.postid"
+        },
+        {
+          "title": "",
+          "component": "hidden",
+          "name": "mainModel.id"
+        }
+      ]
+    },
+    {
+      "title": "申请信息",
+      "pageid": "sqInfo",
+      "component": "panel",
+      "subComponents": [
+        {
+          "title": "司法协助类型",
+          "component": "radio",
+          "id": "aidtypelinkid",
+          "name": "mainModel.aidtype",
+          "options": [
+            {
+              "title": "财务",
+              "value": "1"
+            },
+            {
+              "title": "人力",
+              "value": "2"
+            },
+            {
+              "title": "纪委、监察委",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "title": "是否有异议",
+          "component": "radio",
+          "name": "mainModel.isdiff",
+          "options": [
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "title": "司法协助执行日期",
+          "component": "text",
+          "name": "mainModel.aiddate"
+        },
+        {
+          "title": "司法协助内容",
+          "component": "text",
+          "name": "mainModel.aidcontenttext"
+        },
+        {
+          "title": "内容",
+          "component": "textarea",
+          "name": "mainModel.detail"
+        },
+        {
+          "title": "人力部执行反馈",
+          "component": "text",
+          "name": "mainModel.hrexc",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["2"]
+            }
+          ]
+        },
+        {
+          "title": "人力执行人员",
+          "component": "text",
+          "name": "mainModel.hrexcptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["2"]
+            }
+          ]
+        },
+        {
+          "title": "人力总监",
+          "component": "text",
+          "name": "mainModel.hrdptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["2"]
+            }
+          ]
+        },
+        {
+          "title": "知晓人员",
+          "component": "text",
+          "name": "mainModel.knowptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["2"]
+            }
+          ]
+        },
+        {
+          "title": "财务部执行反馈",
+          "component": "text",
+          "name": "mainModel.finalexc",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["1", "3"]
+            }
+          ]
+        },
+        {
+          "title": "财务部执行人",
+          "component": "text",
+          "name": "mainModel.finalexeptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["1", "3"]
+            }
+          ]
+        },
+        {
+          "title": "财务总监",
+          "component": "text",
+          "name": "mainModel.cfoptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["1", "3"]
+            }
+          ]
+        },
+        {
+          "title": "资金部",
+          "component": "text",
+          "name": "mainModel.fundptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["1", "3"]
+            }
+          ]
+        },
+        {
+          "title": "知晓人员",
+          "component": "text",
+          "name": "mainModel.knowptxt",
+          "showLinkage":[
+            {
+              "id":"aidtypelinkid",
+              "values":["1", "3"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
