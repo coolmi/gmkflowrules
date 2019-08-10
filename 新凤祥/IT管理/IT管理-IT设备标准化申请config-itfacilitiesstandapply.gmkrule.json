@@ -3,7 +3,7 @@
   "forms": [
     {
       "component": "panel",
-      "pageid": "jbxx",
+      "pageid": "sqxx",
       "subComponents": [
         {
           "component": "text",

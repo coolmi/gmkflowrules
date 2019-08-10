@@ -28,7 +28,7 @@
   "forms": [
     {
       "title": "基本信息",
-      "pageid": "jbxx",
+      "pageid": "sqxx",
       "component": "panel",
       "subComponents": [
         {
@@ -213,6 +213,11 @@
           "title": "累计预付之和(含本次)",
           "component": "text",
           "name": "mainModel.zYFJE"
+        },
+        {
+          "title": "未付金额",
+          "component": "text",
+          "name": "mainModel.sYJE"
         },
         {
           "title": "未付金额",
