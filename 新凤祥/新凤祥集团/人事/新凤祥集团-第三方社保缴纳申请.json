@@ -1,214 +1,208 @@
 {
-  "id": "gmk_socialinsurance",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "被申请人姓名-岗位",
           "component": "text",
-          "name": "mainModel.m_postnm"
+          "name": "mainModel.m_postnm",
+          "title": "被申请人姓名-岗位"
         },
         {
-          "title": "所在公司",
           "component": "text",
-          "name": "mainModel.m_compnm"
+          "name": "mainModel.m_compnm",
+          "title": "所在公司"
         },
         {
-          "title": "联系方式",
           "component": "text",
-          "name": "mainModel.m_tel"
+          "name": "mainModel.m_tel",
+          "title": "联系方式"
         },
         {
-          "title": "所在部门",
           "component": "text",
-          "name": "mainModel.m_deptnm"
+          "name": "mainModel.m_deptnm",
+          "title": "所在部门"
         },
         {
-          "title": "电子邮箱",
           "component": "text",
-          "name": "mainModel.m_email"
+          "name": "mainModel.m_email",
+          "title": "电子邮箱"
         },
         {
-          "title": "缴纳起始时间",
           "component": "text",
-          "name": "mainModel.m_startdate",
           "datatype": "date",
-          "dateFormat": "yyyy-MM-dd"
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.m_startdate",
+          "title": "缴纳起始时间"
         },
         {
-          "title": "户口性质",
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.m_hjid",
           "options": [
             {
+              "flowshow": true,
               "text": "城镇",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "农村",
               "value": "1"
             }
-          ]
+          ],
+          "title": "户口性质"
         },
         {
-          "title": "户籍所在地",
           "component": "text",
-          "name": "mainModel.m_hjplace"
+          "flowshow": true,
+          "name": "mainModel.m_hjplace",
+          "title": "户籍所在地"
         },
         {
-          "title": "社保缴纳地区",
           "component": "text",
-          "name": "mainModel.m_sbdq"
+          "flowshow": true,
+          "name": "mainModel.m_sbdq",
+          "title": "社保缴纳地区"
         },
         {
-          "title": "社保缴费基数",
           "component": "text",
           "editablenode": "usertask9",
-          "name": "mainModel.m_sbjfjs"
+          "flowshow": true,
+          "name": "mainModel.m_sbjfjs",
+          "title": "社保缴费基数"
         },
         {
-          "title": "银行卡号",
           "component": "text",
-          "name": "mainModel.m_bankid"
+          "flowshow": true,
+          "name": "mainModel.m_bankid",
+          "title": "银行卡号"
         },
         {
-          "title": "银行卡开户行",
           "component": "text",
-          "name": "mainModel.m_bank"
+          "flowshow": true,
+          "name": "mainModel.m_bank",
+          "title": "银行卡开户行"
         },
         {
-          "title": "合同起始日期",
           "component": "date1",
-          "tasknode": "usertask8,usertask9",
           "editablenode": "usertask8",
+          "flowshow": true,
           "name": "mainModel.m_htqx_start",
+          "tasknode": "usertask8,usertask9",
+          "title": "合同起始日期",
           "validation": {
+            "flowshow": true,
             "pageid": "sqxx",
             "required": true,
             "validateMsg": "合同起始日期必填"
           }
         },
         {
-          "title": "合同结束日期",
           "component": "date1",
-          "tasknode": "usertask8,usertask9",
           "editablenode": "usertask8",
+          "flowshow": true,
           "name": "mainModel.m_htqx_end",
+          "tasknode": "usertask8,usertask9",
+          "title": "合同结束日期",
           "validation": {
+            "flowshow": true,
             "pageid": "sqxx",
             "required": true,
             "validateMsg": "合同结束日期必填"
           }
         },
         {
-          "title": "是否需总裁审批",
           "component": "radio",
-          "name": "mainModel.m_zcsp",
-          "tasknode": "usertask6",
           "editablenode": "usertask6",
+          "name": "mainModel.m_zcsp",
           "options": [
             {
               "text": "否",
@@ -219,13 +213,31 @@
               "value": "1"
             }
           ],
+          "tasknode": "usertask6",
+          "title": "是否需总裁审批",
           "validation": {
             "pageid": "sqxx",
             "required": true,
             "validateMsg": "是否需总裁审批必选"
           }
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "gmk_socialinsurance",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

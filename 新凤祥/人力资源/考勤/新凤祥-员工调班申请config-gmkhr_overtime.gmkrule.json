@@ -1,163 +1,191 @@
 {
-    "id": "gmkhr_overtime",
+    "forms": [
+        {
+            "component": "panel",
+            "pageid": "jbxx",
+            "subComponents": [
+                {
+                    "component": "text",
+                    "name": "mainModel.appid",
+                    "title": "申请单号"
+                },
+                {
+                    "component": "date1",
+                    "name": "mainModel.appda",
+                    "title": "申请日期"
+                },
+                {
+                    "component": "label",
+                    "label": [
+                        "mainModel.pernr",
+                        "-",
+                        "mainModel.username"
+                    ],
+                    "title": "申请人姓名"
+                },
+                {
+                    "component": "label",
+                    "label": [
+                        "mainModel.sysbusinessunitname",
+                        "-",
+                        "mainModel.sysdeptname"
+                    ],
+                    "title": "所属部门"
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.userid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.username",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.pernr",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.syspostname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.postid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.id",
+                    "title": ""
+                }
+            ],
+            "title": "基本信息"
+        },
+        {
+            "component": "panel",
+            "pageid": "sqxx",
+            "subComponents": [
+                {
+                    "component": "text",
+                    "name": "mainModel.m_deptnms",
+                    "title": "二级部门"
+                },
+                {
+                    "basePath": "overtimesublist",
+                    "cells": [
+                        {
+                            "component": "text",
+                            "datatype": "date",
+                            "dateFormat": "yyyy-MM-dd",
+                            "flowshow": true,
+                            "name": "s_date",
+                            "title": "值班日期"
+                        },
+                        {
+                            "component": "text",
+                            "datatype": "date",
+                            "dateFormat": "HH:mm",
+                            "flowshow": true,
+                            "name": "s_starttime",
+                            "title": "开始时间"
+                        },
+                        {
+                            "component": "text",
+                            "datatype": "date",
+                            "dateFormat": "HH:mm",
+                            "flowshow": true,
+                            "name": "s_endtime",
+                            "title": "结束时间"
+                        },
+                        {
+                            "component": "text",
+                            "datatype": "date",
+                            "dateFormat": "HH:mm",
+                            "flowshow": false,
+                            "name": "s_work_start",
+                            "title": "排班开始时间"
+                        },
+                        {
+                            "component": "text",
+                            "datatype": "date",
+                            "dateFormat": "HH:mm",
+                            "name": "s_work_end",
+                            "title": "排班结束时间"
+                        },
+                        {
+                            "component": "text",
+                            "name": "s_relex_hours",
+                            "title": "休息时长"
+                        },
+                        {
+                            "component": "text",
+                            "flowshow": true,
+                            "name": "s_work_hours",
+                            "title": "时长"
+                        },
+                        {
+                            "component": "textarea",
+                            "flowshow": true,
+                            "name": "s_why",
+                            "title": "原因"
+                        }
+                    ],
+                    "component": "table",
+                    "titleIndex": 0
+                }
+            ],
+            "title": "申请信息"
+        },
+        {
+            "component": "panel",
+            "pageid": "fjxx",
+            "subComponents": [],
+            "title": "附件信息"
+        },
+        {
+            "component": "panel",
+            "pageid": "spjl",
+            "subComponents": [],
+            "title": "审批记录"
+        }
+    ],
     "handleOnPC": {
-        "tasknode": [""],
-        "flag": ["resubmit"]
+        "flag": [
+            "resubmit"
+        ],
+        "tasknode": [
+            ""
+        ]
     },
+    "id": "gmkhr_overtime",
     "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "mainModel.appid"
-        },
-        {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "mainModel.appda"
-        },
-        {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["mainModel.pernr", "-", "mainModel.username"]
-        },
-        {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.userid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.username"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.pernr"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.syspostname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.postid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.id"
-        }]
-    },
-    {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "二级部门",
-            "component": "text",
-            "name": "mainModel.m_deptnms"
-        },
-        {
-            "component": "table",
-            "titleIndex": 0,
-            "basePath": "overtimesublist",
-            "cells": [{
-                "title": "值班日期",
-                "component": "text",
-                "datatype":"date",
-                "dateFormat":"yyyy-MM-dd",
-                "name": "s_date"
-            },
-            {
-                "title": "值班开始时间",
-                "component": "text",
-                "datatype":"date",
-                "dateFormat":"HH:mm",
-                "name": "s_starttime"
-            },
-            {
-                "title": "值班结束时间",
-                "component": "text",
-                "datatype":"date",
-                "dateFormat":"HH:mm",
-                "name": "s_endtime"
-            },
-            {
-                "title": "排班开始时间",
-                "component": "text",
-                "datatype":"date",
-                "dateFormat":"HH:mm",
-                "name": "s_work_start"
-            },
-            {
-                "title": "排班结束时间",
-                "component": "text",
-                "datatype":"date",
-                "dateFormat":"HH:mm",
-                "name": "s_work_end"
-            },
-            {
-                "title": "休息时长(小时)",
-                "component": "text",
-                "name": "s_relex_hours"
-            },
-            {
-                "title": "值班时长(小时)",
-                "component": "text",
-                "name": "s_work_hours"
-            },
-            {
-                "title": "值班原因",
-                "component": "textarea",
-                "name": "s_why"
-            }]
-        }]
-    },
-    {
-        "title": "附件信息",
-        "pageid": "fjxx",
-        "component": "panel",
-        "subComponents": []
-    },
-    {
-        "title": "审批记录",
-        "pageid": "spjl",
-        "component": "panel",
-        "subComponents": []
-    }]
+        "beforPop": false,
+        "tasknode": [
+            ""
+        ]
+    }
 }

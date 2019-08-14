@@ -18,7 +18,7 @@
   "forms": [
     {
       "title": "基本信息",
-      "pageid": "sqxx",
+      "pageid": "jbxx",
       "component": "panel",
       "subComponents": [
         {

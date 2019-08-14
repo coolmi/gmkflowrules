@@ -1,188 +1,168 @@
 {
-  "id": "af_ttpayment",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "ttpayment.appid"
+          "name": "ttpayment.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "ttpayment.appda"
+          "name": "ttpayment.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "ttpayment.pernr",
             "-",
             "ttpayment.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "ttpayment.sysbusinessunitname",
             "-",
             "ttpayment.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.bukrs"
+          "name": "ttpayment.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.userid"
+          "name": "ttpayment.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.username"
+          "name": "ttpayment.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.pernr"
+          "name": "ttpayment.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.syspostname"
+          "name": "ttpayment.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.sysdeptid"
+          "name": "ttpayment.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.sysdeptname"
+          "name": "ttpayment.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.sysbusinessunitid"
+          "name": "ttpayment.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.sysbusinessunitname"
+          "name": "ttpayment.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.postid"
+          "name": "ttpayment.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "ttpayment.id"
+          "name": "ttpayment.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "kkkiu",
       "component": "panel",
+      "pageid": "kkkiu",
       "subComponents": [
         {
-          "title": "付款单位",
           "component": "select",
-          "id": "ttpayment_fkdw",
           "editablenode": "",
+          "flowshow": true,
+          "id": "ttpayment_fkdw",
           "name": "ttpayment.fkdw",
           "options": [
             {
+              "flowshow": true,
               "text": "1000-阳谷铜业有限公司",
               "value": "1000"
             },
             {
+              "flowshow": true,
               "text": "1085-香港祥光国际控股有限公司",
               "value": "1085"
             },
             {
+              "flowshow": true,
               "text": "1086-香港鸿润国际控股有限公司",
               "value": "1086"
             }
-          ]
+          ],
+          "title": "付款单位"
         },
         {
-          "title": "合同号",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_htbh",
-          "editablenode": "",
-          "name": "ttpayment.htbh"
+          "name": "ttpayment.htbh",
+          "title": "合同号"
         },
         {
-          "title": "供应商编号",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_lifnrp",
-          "editablenode": "",
-          "name": "ttpayment.lifnrp"
+          "name": "ttpayment.lifnrp",
+          "title": "供应商编号"
         },
         {
-          "title": "供应商描述",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "ttpayment_lifnrtext",
-          "editablenode": "",
-          "name": "ttpayment.lifnrtext"
+          "name": "ttpayment.lifnrtext",
+          "title": "供应商描述"
         },
         {
-          "title": "采购订单编号",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_orderno",
-          "editablenode": "",
-          "name": "ttpayment.orderno"
+          "name": "ttpayment.orderno",
+          "title": "采购订单编号"
         },
         {
-          "title": "付款方式",
           "component": "text",
-          "id": "ttpayment_fkfs",
           "editablenode": "",
-          "name": "ttpayment.fkfs"
+          "id": "ttpayment_fkfs",
+          "name": "ttpayment.fkfs",
+          "title": "付款方式"
         },
         {
-          "title": "汇款用途",
           "component": "radio",
-          "id": "ttpayment_hkyt",
           "editablenode": "",
+          "id": "ttpayment_hkyt",
           "name": "ttpayment.hkyt",
           "options": [
             {
@@ -197,27 +177,28 @@
               "text": "其他费用",
               "value": "2"
             }
-          ]
+          ],
+          "title": "汇款用途"
         },
         {
-          "title": "申请付款日期",
           "component": "date1",
+          "editablenode": "",
           "id": "ttpayment_fkrq",
-          "editablenode": "",
-          "name": "ttpayment.fkrq"
+          "name": "ttpayment.fkrq",
+          "title": "申请付款日期"
         },
         {
-          "title": "付款金额",
           "component": "text",
-          "id": "ttpayment_fkje",
           "editablenode": "",
-          "name": "ttpayment.fkje"
+          "flowshow": true,
+          "id": "ttpayment_fkje",
+          "name": "ttpayment.fkje",
+          "title": "付款金额"
         },
         {
-          "title": "币种",
           "component": "select",
-          "id": "ttpayment_bz",
           "editablenode": "",
+          "id": "ttpayment_bz",
           "name": "ttpayment.bz",
           "options": [
             {
@@ -252,46 +233,47 @@
               "text": "英镑",
               "value": "GBP"
             }
-          ]
+          ],
+          "title": "币种"
         },
         {
-          "title": "付款金额大写",
           "component": "text",
           "datatype": "money2dx",
+          "dxname": "fkjeup",
+          "editablenode": "",
           "id": "ttpayment_fkjeup",
-          "editablenode": "",
           "name": "ttpayment.fkje",
-          "dxname": "fkjeup"
+          "title": "付款金额大写"
         },
         {
-          "title": "汇款路径",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_hklj",
-          "editablenode": "",
-          "name": "ttpayment.hklj"
+          "name": "ttpayment.hklj",
+          "title": "汇款路径"
         },
         {
-          "title": "收款银行",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_recbank",
-          "editablenode": "",
-          "name": "ttpayment.recbank"
+          "name": "ttpayment.recbank",
+          "title": "收款银行"
         },
         {
-          "title": "收款账号",
           "component": "text",
+          "editablenode": "",
           "id": "ttpayment_recbankno",
-          "editablenode": "",
-          "name": "ttpayment.recbankno"
+          "name": "ttpayment.recbankno",
+          "title": "收款账号"
         },
         {
-          "title": "信用证号",
           "component": "text",
-          "name": "ttpayment.xyzh"
+          "name": "ttpayment.xyzh",
+          "title": "信用证号"
         },
         {
-          "title": "付款种类",
           "component": "select",
+          "flowshow": true,
           "name": "ttpayment.fkzl",
           "options": [
             {
@@ -314,23 +296,39 @@
               "text": "最终付款",
               "value": "4"
             }
-          ]
+          ],
+          "title": "付款种类"
         },
         {
-          "title": "财务审批状态",
-          "component": "text",
-          "id": "ttpayment_spzt",
-          "editablenode": "",
-          "name": "ttpayment.spzt"
-        },
-        {
-          "title": "备注",
           "component": "textarea",
-          "id": "ttpayment_note",
           "editablenode": "",
-          "name": "ttpayment.note"
+          "flowshow": true,
+          "id": "ttpayment_note",
+          "name": "ttpayment.note",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "af_ttpayment",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

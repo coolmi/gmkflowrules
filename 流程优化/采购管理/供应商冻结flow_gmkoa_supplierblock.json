@@ -1,130 +1,115 @@
 {
-  "id": "flow_gmkoa_supplierblock",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "标题",
           "component": "text",
-          "name": "mainModel.titles"
+          "flowshow": true,
+          "name": "mainModel.titles",
+          "title": "标题"
         },
         {
-          "title": "申请类型",
           "component": "radio",
           "name": "mainModel.operType",
           "options": [
             {
+              "flowshow": true,
               "title": "冻结",
               "value": "1"
             },
@@ -132,14 +117,15 @@
               "title": "解冻",
               "value": "2"
             }
-          ]
+          ],
+          "title": "申请类型"
         },
         {
-          "title": "冻结功能",
           "component": "radio",
           "name": "mainModel.operType1",
           "options": [
             {
+              "flowshow": true,
               "title": "记账冻结",
               "value": "1"
             },
@@ -151,60 +137,80 @@
               "title": "总冻结",
               "value": "3"
             }
-          ]
+          ],
+          "title": "冻结功能"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "供应商信息",
-      "pageid": "supplierInfo",
       "component": "panel",
+      "pageid": "supplierInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "supplier_table",
           "basePath": "resultchilds",
+          "component": "table_form",
+          "id": "supplier_table",
           "tableForms": [
             {
-              "title": "所属法人",
               "component": "text",
-              "name": "cdburks"
+              "flowshow": false,
+              "name": "cdburks",
+              "title": "所属法人"
             },
             {
-              "title": "所属法人名称",
               "component": "text",
-              "name": "cdburkstxt"
+              "flowshow": true,
+              "name": "cdburkstxt",
+              "title": "所属法人名称"
             },
             {
-              "title": "供应商编码",
               "component": "text",
-              "name": "supplierId"
+              "name": "supplierId",
+              "title": "供应商编码"
             },
             {
-              "title": "供应商名称",
               "component": "text",
-              "name": "supplierName"
+              "flowshow": true,
+              "name": "supplierName",
+              "title": "供应商名称"
             },
             {
-              "title": "采购组织",
               "component": "text",
-              "name": "purchOrg"
+              "name": "purchOrg",
+              "title": "采购组织"
             },
             {
-              "title": "采购组织描述",
               "component": "text",
-              "name": "purchOrgtxt"
+              "flowshow": true,
+              "name": "purchOrgtxt",
+              "title": "采购组织描述"
             },
             {
-              "title": "返回值",
               "component": "text",
-              "name": "returnv"
+              "name": "returnv",
+              "title": "返回值"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "供应商信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_supplierblock",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

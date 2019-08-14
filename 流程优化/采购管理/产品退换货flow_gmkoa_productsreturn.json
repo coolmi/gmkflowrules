@@ -1,216 +1,225 @@
 {
-  "id": "flow_gmkoa_productsreturn",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
           "component": "text",
-          "name": "mainModel.titles"
+          "flowshow": true,
+          "name": "mainModel.titles",
+          "title": "标题"
         },
         {
-          "title": "主抄送人",
           "component": "text",
-          "name": "mainModel.sendtxt"
+          "name": "mainModel.sendtxt",
+          "title": "主抄送人"
         },
         {
-          "title": "公司",
           "component": "text",
-          "name": "mainModel.cdburkstxt"
+          "flowshow": true,
+          "name": "mainModel.cdburkstxt",
+          "title": "公司"
         },
         {
-          "title": "成本中心",
           "component": "text",
-          "name": "mainModel.cdcostltxt"
+          "flowshow": true,
+          "name": "mainModel.cdcostltxt",
+          "title": "成本中心"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtext"
+          "name": "mainModel.grantMoldtext",
+          "title": "业务类型"
         },
         {
-          "title": "业务类型描述",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型描述"
         },
         {
-          "title": "备注",
           "component": "text",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "退回报废明细",
-      "pageid": "backInfo",
       "component": "panel",
+      "pageid": "backInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "back_table",
           "basePath": "protsreturnchldEntityList",
+          "component": "table_form",
+          "id": "back_table",
           "tableForms": [
             {
-              "title": "客户编码",
               "component": "text",
-              "name": "customerID"
+              "flowshow": false,
+              "name": "customerID",
+              "title": "客户编码"
             },
             {
-              "title": "客户编码-名称",
               "component": "text",
-              "name": "customerNa"
+              "flowshow": true,
+              "name": "customerNa",
+              "title": "客户编码-名称"
             },
             {
-              "title": "物料号",
               "component": "text",
-              "name": "assetsID"
+              "flowshow": true,
+              "name": "assetsID",
+              "title": "物料号"
             },
             {
-              "title": "物料号-物料名称",
               "component": "text",
-              "name": "assetstxt"
+              "flowshow": true,
+              "name": "assetstxt",
+              "title": "物料号-物料名称"
             },
             {
-              "title": "规格",
               "component": "text",
-              "name": "standard"
+              "name": "standard",
+              "title": "规格"
             },
             {
-              "title": "数量",
               "component": "text",
-              "name": "amounts"
+              "flowshow": true,
+              "name": "amounts",
+              "title": "数量"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "生产日期",
               "component": "text",
-              "name": "prDate"
+              "name": "prDate",
+              "title": "生产日期"
             },
             {
-              "title": "申请内容",
               "component": "text",
-              "name": "remarks"
+              "flowshow": true,
+              "name": "remarks",
+              "title": "申请内容"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "退回报废明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_productsreturn",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

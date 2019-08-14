@@ -1,249 +1,261 @@
 {
-  "id": "fxgdzc_performanceacceptance",
-  "handleOnPC": {
-    "tasknode": [
-      "internalaudit"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "预算所属公司",
           "component": "text",
-          "name": "mainModel.butxt"
+          "flowshow": true,
+          "name": "mainModel.butxt",
+          "title": "预算所属公司"
         },
         {
-          "title": "需求部门",
           "component": "text",
-          "name": "mainModel.xqbmname"
+          "flowshow": true,
+          "name": "mainModel.xqbmname",
+          "title": "需求部门"
         },
         {
-          "title": "资产管理部负责人",
           "component": "text",
-          "name": "mainModel.zcglbfzrname"
+          "name": "mainModel.zcglbfzrname",
+          "title": "资产管理部负责人"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "验收行项目信息",
-      "pageid": "yshxmxx",
       "component": "panel",
+      "pageid": "yshxmxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
           "basePath": "infos",
+          "component": "formLabelLink",
           "id": "yshxmxx",
           "linkForms": [
             {
-              "title": "资产分类",
               "component": "linkToMap",
-              "name": "zcfl",
               "linkToMap": {
-                "linkToLable": "true",
-                "mapBasePath": "assettypeMaps",
                 "linkMiddle": "anlkl",
-                "linkType": "string"
-              }
+                "linkToLable": "true",
+                "linkType": "string",
+                "mapBasePath": "assettypeMaps"
+              },
+              "name": "zcfl",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "anltx"
+              "flowshow": true,
+              "name": "anltx",
+              "title": "资产描述"
             },
             {
-              "title": "成本中心",
               "component": "text",
-              "name": "kotxt"
+              "flowshow": true,
+              "name": "kotxt",
+              "title": "成本中心"
             },
             {
-              "title": "规格型号",
               "component": "text",
-              "name": "ggxx"
+              "flowshow": true,
+              "name": "ggxx",
+              "title": "规格型号"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "数量",
               "component": "text",
-              "name": "amount"
+              "flowshow": true,
+              "name": "amount",
+              "title": "数量"
             },
             {
-              "title": "金额",
               "component": "text",
-              "name": "money"
+              "name": "money",
+              "title": "金额"
             },
             {
-              "title": "合同号",
               "component": "text",
-              "name": "contract"
+              "name": "contract",
+              "title": "合同号"
             },
             {
-              "title": "订单",
               "component": "text",
-              "name": "aufnr"
+              "name": "aufnr",
+              "title": "订单"
             },
             {
-              "title": "主资产编号",
               "component": "text",
-              "name": "anln1"
+              "name": "anln1",
+              "title": "主资产编号"
             },
             {
-              "title": "资产次级编号",
               "component": "text",
-              "name": "anln2"
+              "name": "anln2",
+              "title": "资产次级编号"
             },
             {
-              "title": "供应商编号",
               "component": "text",
-              "name": "lifnr"
+              "name": "lifnr",
+              "title": "供应商编号"
             },
             {
-              "title": "供应商名称",
               "component": "text",
-              "name": "lifnrname"
+              "flowshow": true,
+              "name": "lifnrname",
+              "title": "供应商名称"
             },
             {
-              "title": "到货日期",
-              "component": "text",
-              "datatype": "date",
-              "dateFormat": "yyyy-MM-dd",
-              "name": "bldat"
-            },
-            {
-              "title": "性能验收截止日期",
-              "component": "text",
-              "datatype": "date",
-              "dateFormat": "yyyy-MM-dd",
-              "name": "aedat"
-            },
-            {
-              "title": "质保到期日",
               "component": "text",
               "datatype": "date",
               "dateFormat": "yyyy-MM-dd",
+              "flowshow": true,
+              "name": "bldat",
+              "title": "到货日期"
+            },
+            {
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "flowshow": true,
+              "name": "aedat",
+              "title": "性能验收截止日期"
+            },
+            {
+              "component": "text",
+              "datatype": "date",
+              "dateFormat": "yyyy-MM-dd",
+              "editablenode": "usertask3",
+              "flowshow": true,
               "name": "zbdat",
-              "editablenode": "usertask3"
+              "title": "质保到期日"
             },
             {
-              "title": "验收状态",
               "component": "select",
               "name": "yszt",
               "options": [
                 {
+                  "flowshow": true,
                   "text": "通过",
                   "value": "01"
                 },
                 {
+                  "flowshow": true,
                   "text": "退货",
                   "value": "03"
                 }
-              ]
+              ],
+              "title": "验收状态"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "验收行项目信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "internalaudit"
+    ]
+  },
+  "id": "fxgdzc_performanceacceptance",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

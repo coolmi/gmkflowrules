@@ -1,301 +1,318 @@
 {
-  "id": "HR-EMPLOYMENT",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask8",
-      "hringaudit",
-      "offerconfirm"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "employment.appid"
+          "name": "employment.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "employment.appda"
+          "name": "employment.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "employment.pernr",
             "-",
             "employment.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "hidden",
           "label": [
             "employment.sysbusinessunitname",
             "-",
             "employment.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.userid"
+          "name": "employment.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.username"
+          "name": "employment.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.pernr"
+          "name": "employment.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.syspostname"
+          "name": "employment.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.sysdeptid"
+          "name": "employment.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.sysdeptname"
+          "name": "employment.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.sysbusinessunitid"
+          "name": "employment.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.sysbusinessunitname"
+          "name": "employment.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.postid"
+          "name": "employment.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "employment.id"
+          "name": "employment.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "招聘申请信息",
+      "component": "panel",
       "pageid": "zpsqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "招聘负责人",
           "component": "text",
-          "name": "recruitingmanager"
+          "name": "recruitingmanager",
+          "title": "招聘负责人"
         },
         {
-          "title": "招聘申请单",
           "component": "text",
-          "name": "employment.stafappid"
+          "name": "employment.stafappid",
+          "title": "招聘申请单"
         }
-      ]
+      ],
+      "title": "招聘申请信息"
     },
     {
-      "title": "招聘需求",
-      "pageid": "zpxqxx",
       "component": "panel",
+      "pageid": "zpxqxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
-          "id": "zpxqxx_table",
           "basePath": "childrens",
+          "component": "formLabelLink",
+          "id": "zpxqxx_table",
           "linkForms": [
             {
-              "title": "录用人姓名",
               "component": "text",
-              "name": "emname"
+              "flowshow": true,
+              "name": "emname",
+              "title": "录用人姓名"
             },
             {
-              "title": "",
-              "title1": "岗位编号",
               "component": "labelLink",
               "editablenode": "",
-              "name": "cpostid",
-              "link_name": "cpostid",
               "label": [
                 "cpostid",
                 "-",
                 "staffrectchildrens.stext"
-              ]
+              ],
+              "link_name": "cpostid",
+              "name": "cpostid",
+              "title": "",
+              "title1": "岗位编号"
             },
             {
-              "title": "岗位等级",
               "component": "text",
-              "name": "cpostlevel"
+              "flowshow": true,
+              "name": "cpostlevel",
+              "title": "岗位等级"
             },
             {
-              "title": "专业",
               "component": "text",
-              "name": "major"
+              "flowshow": true,
+              "name": "major",
+              "title": "专业"
             },
             {
-              "title": "性别",
               "component": "radio",
+              "flowshow": true,
               "name": "sexid",
               "options": [
                 {
+                  "flowshow": true,
                   "text": "男",
                   "value": "0"
                 },
                 {
+                  "flowshow": true,
                   "text": "女",
                   "value": "1"
                 }
-              ]
+              ],
+              "title": "性别"
             },
             {
-              "title": "年龄",
               "component": "text",
-              "name": "age"
+              "flowshow": true,
+              "name": "age",
+              "title": "年龄"
             },
             {
-              "title": "学历",
               "component": "text",
-              "name": "education"
+              "flowshow": true,
+              "name": "education",
+              "title": "学历"
             },
             {
-              "title": "薪酬",
               "component": "text",
-              "name": "payment"
+              "flowshow": true,
+              "name": "payment",
+              "title": "薪酬"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "招聘需求"
     },
     {
-      "title": "面试评价",
-      "pageid": "mspjxx",
       "component": "panel",
+      "pageid": "mspjxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "values",
+          "component": "table_form",
           "id": "mspjxx_table",
           "tableForms": [
             {
-              "title": "录用人姓名",
               "component": "text",
-              "name": "emname"
+              "name": "emname",
+              "title": "录用人姓名"
             },
             {
-              "title": "面试官一",
               "component": "text",
+              "flowshow": true,
               "name": "interviewa",
+              "title": "面试官一",
               "tmpValueName": "interviewnamea"
             },
             {
-              "title": "面试官一意见",
               "component": "textarea",
-              "name": "evalueopiniona"
+              "flowshow": true,
+              "name": "evalueopiniona",
+              "title": "面试官一意见"
             },
             {
-              "title": "面试官二",
               "component": "text",
+              "flowshow": true,
               "name": "interviewb",
+              "title": "面试官二",
               "tmpValueName": "interviewnameb"
             },
             {
-              "title": "面试官二意见",
               "component": "textarea",
-              "name": "evalueopinionb"
+              "flowshow": true,
+              "name": "evalueopinionb",
+              "title": "面试官二意见"
             },
             {
-              "title": "面试官三",
               "component": "text",
               "name": "interviewc",
+              "title": "面试官三",
               "tmpValueName": "interviewnamec"
             },
             {
-              "title": "面试官三意见",
               "component": "textarea",
-              "name": "evalueopinionc"
+              "flowshow": true,
+              "name": "evalueopinionc",
+              "title": "面试官三意见"
             },
             {
-              "title": "能力等级",
               "component": "text",
-              "name": "abilitylevel"
+              "flowshow": true,
+              "name": "abilitylevel",
+              "title": "能力等级"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "面试评价"
     },
     {
-      "title": "offer确认",
-      "pageid": "offerqr",
       "component": "panel",
       "notShowOnHandle": true,
-      "tasknode": "offerconfirm",
+      "pageid": "offerqr",
       "subComponents": [
         {
-          "title": "类别",
           "component": "select",
+          "flowshow": true,
           "name": "employment.offertypeid",
           "options": [
             {
+              "flowshow": true,
               "text": "确认可入职",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "拒接offer",
               "value": "2"
             },
             {
+              "flowshow": true,
               "text": "接offer之后拒绝入职",
               "value": "3"
             }
-          ]
+          ],
+          "title": "类别"
         },
         {
-          "tilte": "子类别",
           "component": "checkbox",
           "name": "offertypesubid",
           "refersToArray": {
             "basePath": "subOfferaffirms",
-            "value": "id",
             "text": [
               "affirmtypetxt"
-            ]
-          }
+            ],
+            "value": "id"
+          },
+          "tilte": "子类别"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "name": "employment.offerbz"
+          "name": "employment.offerbz",
+          "title": "备注"
         }
-      ]
+      ],
+      "tasknode": "offerconfirm",
+      "title": "offer确认"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask8",
+      "hringaudit",
+      "offerconfirm"
+    ]
+  },
+  "id": "HR-EMPLOYMENT",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-
-

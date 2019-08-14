@@ -1,19 +1,262 @@
 {
-  "id": "gmk_loanextension",
+  "forms": [
+    {
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.appid",
+          "title": "申请单号"
+        },
+        {
+          "component": "date1",
+          "editablenode": "",
+          "name": "mainModel.appda",
+          "title": "申请日期"
+        },
+        {
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ],
+          "title": "申请人姓名"
+        },
+        {
+          "component": "label",
+          "editablenode": "",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ],
+          "title": "所属部门"
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.bukrs",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.userid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.username",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.pernr",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.syspostname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysdeptid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysdeptname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.postid",
+          "title": ""
+        },
+        {
+          "component": "hidden",
+          "name": "mainModel.id",
+          "title": ""
+        }
+      ],
+      "title": "基本信息"
+    },
+    {
+      "component": "panel",
+      "pageid": "applyInfo",
+      "subComponents": [
+        {
+          "component": "text",
+          "name": "mainModel.iTCODE",
+          "title": "ITCODE"
+        },
+        {
+          "component": "text",
+          "name": "mainModel.bUKTXT",
+          "title": "所属公司"
+        },
+        {
+          "component": "text",
+          "name": "mainModel.pHONE",
+          "title": "手机"
+        },
+        {
+          "component": "text",
+          "name": "mainModel.eMAIL",
+          "title": "邮箱"
+        }
+      ],
+      "title": "申请信息"
+    },
+    {
+      "component": "panel",
+      "pageid": "dkzqmx",
+      "subComponents": [
+        {
+          "basePath": "loanextensionsublist",
+          "component": "table_form",
+          "id": "dkzqmx_table",
+          "tableForms": [
+            {
+              "component": "text",
+              "name": "zQSQD",
+              "title": "展期申请单号"
+            },
+            {
+              "component": "text",
+              "name": "rANL",
+              "title": "合同号"
+            },
+            {
+              "component": "text",
+              "name": "bUKRS",
+              "title": "单位编码"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "bUTXT",
+              "title": "单位名称"
+            },
+            {
+              "component": "text",
+              "name": "pARTNER",
+              "title": "银行编码"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "nAME_ORG1",
+              "title": "银行名称"
+            },
+            {
+              "component": "text",
+              "flowshow": false,
+              "name": "sQRZPZ",
+              "title": "申请融资品种"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "xKBEZ",
+              "title": "融资品种描述"
+            },
+            {
+              "component": "text",
+              "name": "zRZBZ",
+              "title": "借款币种"
+            },
+            {
+              "component": "text",
+              "datatype": "money",
+              "flowshow": true,
+              "name": "zJKJE",
+              "title": "借款金额"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zJKLL",
+              "title": "借款利率(%)"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "jKKSR",
+              "title": "借款开始日"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "jKDQR",
+              "title": "借款到期日"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zZQBZ",
+              "title": "展期币种"
+            },
+            {
+              "component": "text",
+              "datatype": "money",
+              "flowshow": true,
+              "name": "zZQAMT",
+              "title": "展期金额"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zZQLL",
+              "title": "展期利率(%)"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zQKSR",
+              "title": "展期开始日"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zQDQR",
+              "title": "展期到期日"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "zZQYY",
+              "title": "展期原因"
+            }
+          ],
+          "titleIndex": 0
+        }
+      ],
+      "title": "贷款展期申请明细表"
+    }
+  ],
   "handleOnPC": {
-    "tasknode": [
-      "apply"
-    ],
     "flag": [
       "resubmit"
+    ],
+    "tasknode": [
+      "apply"
     ]
   },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
+  "id": "gmk_loanextension",
   "pageSelectIndex": {
     "defaultIndex": 0,
     "selectIndexArray": [
@@ -25,243 +268,11 @@
       }
     ]
   },
-  "forms": [
-    {
-      "title": "基本信息",
-      "pageid": "jbxx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "申请单号",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.appid"
-        },
-        {
-          "title": "申请日期",
-          "component": "date1",
-          "editablenode": "",
-          "name": "mainModel.appda"
-        },
-        {
-          "title": "申请人姓名",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "mainModel.pernr",
-            "-",
-            "mainModel.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "mainModel.sysbusinessunitname",
-            "-",
-            "mainModel.sysdeptname"
-          ]
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.bukrs"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.userid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.username"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.pernr"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.syspostname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.sysdeptid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.sysdeptname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.postid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "mainModel.id"
-        }
-      ]
-    },
-    {
-      "title": "申请信息",
-      "pageid": "applyInfo",
-      "component": "panel",
-      "subComponents": [
-        {
-          "title": "ITCODE",
-          "component": "text",
-          "name": "mainModel.iTCODE"
-        },
-        {
-          "title": "所属公司",
-          "component": "text",
-          "name": "mainModel.bUKTXT"
-        }
-      ,
-        {
-          "title": "手机",
-          "component": "text",
-          "name": "mainModel.pHONE"
-        }
-      ,
-        {
-          "title": "邮箱",
-          "component": "text",
-          "name": "mainModel.eMAIL"
-        }
-      ]
-    },
-    {
-      "title": "贷款展期申请明细表",
-      "pageid": "dkzqmx",
-      "component": "panel",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "dkzqmx_table",
-          "basePath": "loanextensionsublist",
-          "tableForms": [
-            {
-              "title": "展期申请单号",
-              "component": "text",
-              "name": "zQSQD"
-            },
-            {
-              "title": "合同号",
-              "component": "text",
-              "name": "rANL"
-            },
-            {
-              "title": "单位编码",
-              "component": "text",
-              "name": "bUKRS"
-            },
-            {
-              "title": "单位名称",
-              "component": "text",
-              "name": "bUTXT"
-            },
-            {
-              "title": "银行编码",
-              "component": "text",
-              "name": "pARTNER"
-            },
-            {
-              "title": "银行名称",
-              "component": "text",
-              "name": "nAME_ORG1"
-            },
-            {
-              "title": "申请融资品种",
-              "component": "text",
-              "name": "sQRZPZ"
-            },
-            {
-              "title": "融资品种描述",
-              "component": "text",
-              "name": "xKBEZ"
-            },
-            {
-              "title": "借款币种",
-              "component": "text",
-              "name": "zRZBZ"
-            },
-            {
-              "title": "借款金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "zJKJE"
-            },
-            {
-              "title": "借款利率(%)",
-              "component": "text",
-              "name": "zJKLL"
-            },
-            {
-              "title": "借款开始日",
-              "component": "text",
-              "name": "jKKSR"
-            },
-            {
-              "title": "借款到期日",
-              "component": "text",
-              "name": "jKDQR"
-            },
-            {
-              "title": "展期币种",
-              "component": "text",
-              "name": "zZQBZ"
-            },
-            {
-              "title": "展期金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "zZQAMT"
-            },
-            {
-              "title": "展期利率(%)",
-              "component": "text",
-              "name": "zZQLL"
-            },
-            {
-              "title": "展期开始日",
-              "component": "text",
-              "name": "zQKSR"
-            },
-            {
-              "title": "展期到期日",
-              "component": "text",
-              "name": "zQDQR"
-            },
-            {
-              "title": "展期原因",
-              "component": "text",
-              "name": "zZQYY"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "refers": {
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }

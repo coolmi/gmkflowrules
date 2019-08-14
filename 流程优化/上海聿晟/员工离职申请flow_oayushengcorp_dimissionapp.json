@@ -1,214 +1,230 @@
 {
-  "id": "flow_oayushengcorp_dimissionapp",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "员工编号",
           "component": "text",
-          "name": "mainModel.pernr"
+          "flowshow": true,
+          "name": "mainModel.pernr",
+          "title": "员工编号"
         },
         {
-          "title": "姓名",
           "component": "text",
-          "name": "mainModel.pname"
+          "flowshow": true,
+          "name": "mainModel.pname",
+          "title": "姓名"
         },
         {
-          "title": "离职类型",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.dimisType",
           "options": [
             {
+              "flowshow": true,
               "title": "辞职",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "合同到期",
               "value": "1"
             },
             {
+              "flowshow": true,
               "title": "退休",
               "value": "2"
             },
             {
+              "flowshow": true,
               "title": "其他",
               "value": "3"
             }
-          ]
+          ],
+          "title": "离职类型"
         },
         {
-          "title": "离职岗位ID",
           "component": "text",
-          "name": "mainModel.postid"
+          "flowshow": false,
+          "name": "mainModel.postid",
+          "title": "离职岗位ID"
         },
         {
-          "title": "所属组织ID",
           "component": "text",
-          "name": "mainModel.orgid"
+          "flowshow": false,
+          "name": "mainModel.orgid",
+          "title": "所属组织ID"
         },
         {
-          "title": "离职岗位",
           "component": "text",
-          "name": "mainModel.postna"
+          "flowshow": true,
+          "name": "mainModel.postna",
+          "title": "离职岗位"
         },
         {
-          "title": "所属组织",
           "component": "text",
-          "name": "mainModel.orgna"
+          "flowshow": true,
+          "name": "mainModel.orgna",
+          "title": "所属组织"
         },
         {
-          "title": "入职日期",
           "component": "text",
-          "name": "mainModel.entryDate"
+          "flowshow": true,
+          "name": "mainModel.entryDate",
+          "title": "入职日期"
         },
         {
-          "title": "离职日期",
           "component": "text",
-          "name": "mainModel.dimisDate"
+          "flowshow": true,
+          "name": "mainModel.dimisDate",
+          "title": "离职日期"
         },
         {
-          "title": "原因",
           "component": "text",
-          "name": "mainModel.reasons"
+          "flowshow": true,
+          "name": "mainModel.reasons",
+          "title": "原因"
         },
         {
-          "title": "原因HR",
           "component": "text",
-          "name": "mainModel.reasonsHR"
+          "flowshow": true,
+          "name": "mainModel.reasonsHR",
+          "title": "原因HR"
         },
         {
-          "title": "去向",
           "component": "text",
-          "name": "mainModel.trend"
+          "flowshow": true,
+          "name": "mainModel.trend",
+          "title": "去向"
         },
         {
-          "title": "联系地址",
           "component": "text",
-          "name": "mainModel.address"
+          "name": "mainModel.address",
+          "title": "联系地址"
         },
         {
-          "title": "联系方式",
           "component": "text",
-          "name": "mainModel.linkphone"
+          "name": "mainModel.linkphone",
+          "title": "联系方式"
         },
         {
-          "title": "备注",
           "component": "text",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_dimissionapp",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

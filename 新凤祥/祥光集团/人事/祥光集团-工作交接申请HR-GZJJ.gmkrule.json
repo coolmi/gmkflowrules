@@ -1,182 +1,189 @@
 {
-  "id": "HR-GZJJ",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "员工姓名",
           "component": "label",
+          "flowshow": true,
           "label": [
             "mainModel.m_pernr",
             "-",
             "mainModel.m_username"
-          ]
+          ],
+          "title": "员工姓名"
         },
         {
-          "title": "员工ITCODE",
           "component": "text",
-          "name": "mainModel.m_itcode"
+          "flowshow": true,
+          "name": "mainModel.m_itcode",
+          "title": "员工ITCODE"
         },
         {
-          "title": "所在部门",
           "component": "text",
-          "name": "mainModel.m_deptnm"
+          "name": "mainModel.m_deptnm",
+          "title": "所在部门"
         },
         {
-          "title": "所属公司",
           "component": "text",
-          "name": "mainModel.m_compnm"
+          "name": "mainModel.m_compnm",
+          "title": "所属公司"
         },
         {
-          "title": "成本中心",
           "component": "text",
-          "name": "mainModel.m_cbzx"
+          "name": "mainModel.m_cbzx",
+          "title": "成本中心"
         },
         {
-          "title": "邮箱",
           "component": "text",
-          "name": "mainModel.m_email"
+          "name": "mainModel.m_email",
+          "title": "邮箱"
         },
         {
-          "title": "手机号",
           "component": "text",
-          "name": "mainModel.m_tel"
+          "name": "mainModel.m_tel",
+          "title": "手机号"
         },
         {
-          "title": "办公电话",
           "component": "text",
-          "name": "mainModel.m_phone"
+          "name": "mainModel.m_phone",
+          "title": "办公电话"
         },
         {
-          "title": "交接类型",
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.m_jjtp",
           "options": [
             {
+              "flowshow": true,
               "title": "离职交接",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "异动交接",
               "value": "1"
             }
-            ]
+          ],
+          "title": "交接类型"
         },
         {
-          "title": "离司时间",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.m_leavetm"
+          "flowshow": true,
+          "name": "mainModel.m_leavetm",
+          "title": "离司时间"
         },
         {
-          "title": "说明",
           "component": "text",
-          "name": "mainModel.m_remark"
+          "flowshow": true,
+          "name": "mainModel.m_remark",
+          "title": "说明"
         }
-      ]
-     }
+      ],
+      "title": "申请信息"
+    }
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "HR-GZJJ",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
     ]
   }
+}

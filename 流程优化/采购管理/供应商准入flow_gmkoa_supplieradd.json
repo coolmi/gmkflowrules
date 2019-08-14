@@ -1,281 +1,272 @@
 {
-  "id": "flow_gmkoa_supplieradd",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "维护类型",
-      "pageid": "defendtype",
       "component": "panel",
+      "pageid": "defendtype",
       "subComponents": [
         {
-          "title": "维护类型",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.operType",
           "options": [
             {
+              "flowshow": true,
               "title": "新增准入",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "主数据修改",
               "value": "1"
             }
-          ]
+          ],
+          "title": "维护类型"
         }
-      ]
+      ],
+      "title": "维护类型"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "beginInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "公司代码",
           "component": "text",
-          "name": "mainModel.cdburkstxt"
+          "flowshow": true,
+          "name": "mainModel.cdburkstxt",
+          "title": "公司代码"
         },
         {
-          "title": "采购组织",
           "component": "text",
-          "name": "mainModel.purchOrgtxt"
+          "flowshow": true,
+          "name": "mainModel.purchOrgtxt",
+          "title": "采购组织"
         },
         {
-          "title": "供应商编码",
           "component": "text",
+          "editablenode": "usertask3",
+          "name": "mainModel.supplierId",
           "tasknode": "usertask1,usertask2,usertask3",
-          "editablenode":"usertask3",
-          "name": "mainModel.supplierId"
+          "title": "供应商编码"
         },
         {
-          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.supplierName"
+          "flowshow": true,
+          "name": "mainModel.supplierName",
+          "title": "供应商名称"
         },
         {
-          "title": "账户组",
           "component": "text",
-          "name": "mainModel.accountGroup"
+          "name": "mainModel.accountGroup",
+          "title": "账户组"
         },
         {
-          "title": "检索项",
           "component": "text",
-          "name": "mainModel.shortna"
+          "name": "mainModel.shortna",
+          "title": "检索项"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "一般数据",
+      "component": "panel",
       "pageid": "commonInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "标题",
           "component": "text",
-          "name": "mainModel.suppTypetext"
+          "flowshow": true,
+          "name": "mainModel.suppTypetext",
+          "title": "标题"
         },
         {
-          "title": "国家代码",
           "component": "text",
-          "name": "mainModel.acctCntytext"
+          "name": "mainModel.acctCntytext",
+          "title": "国家代码"
         },
         {
-          "title": "所在城市",
           "component": "text",
-          "name": "mainModel.localCitytext"
+          "name": "mainModel.localCitytext",
+          "title": "所在城市"
         },
         {
-          "title": "邮政编码",
           "component": "text",
-          "name": "mainModel.postalCode"
+          "name": "mainModel.postalCode",
+          "title": "邮政编码"
         },
         {
-          "title": "地址",
           "component": "text",
-          "name": "mainModel.address"
+          "name": "mainModel.address",
+          "title": "地址"
         },
         {
-          "title": "联系人",
           "component": "text",
-          "name": "mainModel.linkpnr"
+          "name": "mainModel.linkpnr",
+          "title": "联系人"
         },
         {
-          "title": "移动电话",
           "component": "text",
-          "name": "mainModel.mobilphone"
+          "name": "mainModel.mobilphone",
+          "title": "移动电话"
         },
         {
-          "title": "固定电话",
           "component": "text",
-          "name": "mainModel.fixphone"
+          "name": "mainModel.fixphone",
+          "title": "固定电话"
         },
         {
-          "title": "传真",
           "component": "text",
-          "name": "mainModel.faxid"
+          "name": "mainModel.faxid",
+          "title": "传真"
         },
         {
-          "title": "税务号",
           "component": "text",
-          "name": "mainModel.taxNo"
+          "name": "mainModel.taxNo",
+          "title": "税务号"
         },
         {
-          "title": "国家",
           "component": "text",
-          "name": "mainModel.acctCntytext"
+          "name": "mainModel.acctCntytext",
+          "title": "国家"
         },
         {
-          "title": "银行",
           "component": "text",
-          "name": "mainModel.openbanktxt"
+          "name": "mainModel.openbanktxt",
+          "title": "银行"
         },
         {
-          "title": "户主",
           "component": "text",
-          "name": "mainModel.acctHolder"
+          "name": "mainModel.acctHolder",
+          "title": "户主"
         },
         {
-          "title": "账号",
           "component": "text",
-          "name": "mainModel.openAccount"
+          "name": "mainModel.openAccount",
+          "title": "账号"
         },
         {
-          "title": "采购组",
           "component": "text",
-          "name": "mainModel.purchGroup"
+          "name": "mainModel.purchGroup",
+          "title": "采购组"
         }
-      ]
+      ],
+      "title": "一般数据"
     },
     {
-      "title": "采购数据",
-      "pageid": "cgInfo",
       "component": "panel",
+      "pageid": "cgInfo",
       "subComponents": [
         {
-          "title": "订单货币币种",
           "component": "text",
-          "name": "mainModel.currytext"
+          "name": "mainModel.currytext",
+          "title": "订单货币币种"
         },
         {
-          "title": "付款条件",
           "component": "text",
-          "name": "mainModel.payTermtext"
+          "flowshow": true,
+          "name": "mainModel.payTermtext",
+          "title": "付款条件"
         },
         {
-          "title": "计划交货日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.deliverDate"
+          "name": "mainModel.deliverDate",
+          "title": "计划交货日期"
         },
         {
-          "title": "付款方式",
           "component": "radio",
           "name": "mainModel.payMode",
           "options": [
@@ -287,62 +278,78 @@
               "title": "电汇",
               "value": "1"
             }
-          ]
+          ],
+          "title": "付款方式"
         }
-      ]
+      ],
+      "title": "采购数据"
     },
     {
-      "title": "财务数据",
+      "component": "panel",
       "pageid": "financeInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "统驭科目",
           "component": "text",
-          "name": "mainModel.reconAccnt"
+          "name": "mainModel.reconAccnt",
+          "title": "统驭科目"
         },
         {
-          "title": "现金管理组",
           "component": "text",
-          "name": "mainModel.cashMangt"
+          "name": "mainModel.cashMangt",
+          "title": "现金管理组"
         },
         {
-          "title": "主要供应物资",
           "component": "text",
-          "name": "mainModel.supplyGoods"
+          "name": "mainModel.supplyGoods",
+          "title": "主要供应物资"
         }
-      ]
+      ],
+      "title": "财务数据"
     },
     {
-      "title": "联系人信息",
-      "pageid": "contactInfo",
       "component": "panel",
+      "pageid": "contactInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "contact_table",
           "basePath": "supplierpeopleEntityList",
+          "component": "table_form",
+          "id": "contact_table",
           "tableForms": [
             {
-              "title": "联系人",
               "component": "text",
-              "name": "linkpnr"
+              "name": "linkpnr",
+              "title": "联系人"
             },
             {
-              "title": "联系电话",
               "component": "text",
-              "name": "mobilphone"
+              "name": "mobilphone",
+              "title": "联系电话"
             },
             {
-              "title": "备注",
               "component": "text",
-              "name": "fixphone"
+              "name": "fixphone",
+              "title": "备注"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "联系人信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_supplieradd",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

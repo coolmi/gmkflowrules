@@ -1,264 +1,272 @@
 {
-  "id": "ap_technicalchange",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxi",
       "component": "panel",
+      "pageid": "sqxi",
       "subComponents": [
         {
-          "title": " 申请单号",
           "component": "text",
-          "id": "mainModel_approvalid",
           "editablenode": "",
-          "name": "mainModel.approvalid"
+          "id": "mainModel_approvalid",
+          "name": "mainModel.approvalid",
+          "title": " 申请单号"
         },
         {
-          "title": "变更类型",
           "component": "select",
-          "id": "mainModel_changetype",
           "editablenode": "",
+          "flowshow": true,
+          "id": "mainModel_changetype",
           "name": "mainModel.changetype",
           "options": [
             {
+              "flowshow": true,
               "text": "取消立项",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "延迟",
               "value": "2"
             },
             {
+              "flowshow": true,
               "text": "修改技术方案",
               "value": "3"
             },
             {
+              "flowshow": true,
               "text": "增加预算",
               "value": "4"
             }
-          ]
+          ],
+          "title": "变更类型"
         },
         {
-          "title": "技改项目名称",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "mainModel_jgxmname",
-          "editablenode": "",
-          "name": "mainModel.jgxmname"
+          "name": "mainModel.jgxmname",
+          "title": "技改项目名称"
         },
         {
-          "title": "技改项目负责人",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_jgxmfzr",
-          "editablenode": "",
-          "name": "mainModel.jgxmfzr"
+          "name": "mainModel.jgxmfzr",
+          "title": "技改项目负责人"
         },
         {
-          "title": "项目承担单位",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_xmcddw",
-          "editablenode": "",
-          "name": "mainModel.xmcddw"
+          "name": "mainModel.xmcddw",
+          "title": "项目承担单位"
         },
         {
-          "title": "项目计划起始时间",
           "component": "date1",
+          "editablenode": "",
+          "flowshow": true,
           "id": "mainModel_xmjhstartdate",
-          "editablenode": "",
-          "name": "mainModel.xmjhstartdate"
+          "name": "mainModel.xmjhstartdate",
+          "title": "项目计划起始时间"
         },
         {
-          "title": "预算费用(元)",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "mainModel_ysfy",
-          "editablenode": "",
-          "name": "mainModel.ysfy"
+          "name": "mainModel.ysfy",
+          "title": "预算费用(元)"
         },
         {
-          "title": "第二联络人姓名",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_secondllrxm",
-          "editablenode": "",
-          "name": "mainModel.secondllrxm"
+          "name": "mainModel.secondllrxm",
+          "title": "第二联络人姓名"
         },
         {
-          "title": "第二联络人电话",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_secondllrdh",
-          "editablenode": "",
-          "name": "mainModel.secondllrdh"
+          "name": "mainModel.secondllrdh",
+          "title": "第二联络人电话"
         },
         {
-          "title": "原因说明",
           "component": "textarea",
+          "editablenode": "",
+          "flowshow": true,
           "id": "mainModel_changereason",
-          "editablenode": "",
+          "name": "mainModel.changereason",
           "rows": "3",
-          "name": "mainModel.changereason"
+          "title": "原因说明"
         },
         {
-          "title": "延迟至日期",
           "component": "date1",
-          "id": "mainModel_delaytodate",
           "editablenode": "",
-          "name": "mainModel.delaytodate"
+          "flowshow": true,
+          "id": "mainModel_delaytodate",
+          "name": "mainModel.delaytodate",
+          "title": "延迟至日期"
         },
         {
-          "title": "增加预算费用(元)",
           "component": "text",
-          "id": "mainModel_addbudgetcost",
           "editablenode": "",
-          "name": "mainModel.addbudgetcost"
+          "flowshow": true,
+          "id": "mainModel_addbudgetcost",
+          "name": "mainModel.addbudgetcost",
+          "title": "增加预算费用(元)"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "技术委员会",
-      "pageid": "gcsxz",
       "component": "panel",
+      "pageid": "gcsxz",
       "subComponents": [
         {
-          "title": "技术委员会成员",
           "component": "text",
-          "id": "mainModel_jswydeptid",
-          "tasknode": "usertask5",
           "editablenode": "usertask5",
-          "validation": {
-            "pageid": "gcsxz",
-            "required": true,
-            "validateMsg": "请填写技术委员会成员",
-            "regexs": ""
-          },
-          "name": "mainModel.jswydeptid",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
             "showformname": "jswydeptname",
-            "valuetype": [
-              "objid"
-            ],
             "showtype": [
               "nachn",
               "stext"
+            ],
+            "valuetype": [
+              "objid"
             ]
+          },
+          "id": "mainModel_jswydeptid",
+          "name": "mainModel.jswydeptid",
+          "tasknode": "usertask5",
+          "title": "技术委员会成员",
+          "validation": {
+            "pageid": "gcsxz",
+            "regexs": "",
+            "required": true,
+            "validateMsg": "请填写技术委员会成员"
           }
         }
-      ]
+      ],
+      "title": "技术委员会"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "ap_technicalchange",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

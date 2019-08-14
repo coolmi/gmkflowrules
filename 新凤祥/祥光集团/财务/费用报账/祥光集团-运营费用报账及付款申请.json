@@ -1,190 +1,197 @@
 {
-  "id": "fico_operandpay",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "费用承担公司",
           "component": "text",
-          "name": "mainModel.m_bukrsnm"
+          "flowshow": true,
+          "name": "mainModel.m_bukrsnm",
+          "title": "费用承担公司"
         },
         {
-          "title": "报账月份",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM",
-          "name": "mainModel.m_paymonth"
+          "flowshow": true,
+          "name": "mainModel.m_paymonth",
+          "title": "报账月份"
         },
         {
-          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.m_suplyid"
+          "name": "mainModel.m_suplyid",
+          "title": "供应商编号"
         },
         {
-          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.m_suplynm"
+          "flowshow": true,
+          "name": "mainModel.m_suplynm",
+          "title": "供应商"
         },
         {
-          "title": "业务内容",
           "component": "text",
-          "name": "mainModel.m_detail"
+          "name": "mainModel.m_detail",
+          "title": "业务内容"
         },
         {
-          "title": "币种",
           "component": "text",
-          "name": "mainModel.m_bz"
+          "name": "mainModel.m_bz",
+          "title": "币种"
         },
         {
-          "title": "报账金额",
           "component": "text",
-          "name": "mainModel.m_money"
+          "flowshow": true,
+          "name": "mainModel.m_money",
+          "title": "报账金额"
         },
         {
-          "title": "金额大写",
           "component": "text",
-          "name": "mainModel.m_moneydx"
+          "name": "mainModel.m_moneydx",
+          "title": "金额大写"
         },
         {
-          "title": "汇入行",
           "component": "text",
-          "name": "mainModel.m_banknm"
+          "name": "mainModel.m_banknm",
+          "title": "汇入行"
         },
         {
-          "title": "汇入账户",
           "component": "text",
-          "name": "mainModel.m_bankid"
+          "name": "mainModel.m_bankid",
+          "title": "汇入账户"
         },
         {
-          "title": "付款种类",
           "component": "text",
-          "name": "mainModel.m_paytype"
+          "name": "mainModel.m_paytype",
+          "title": "付款种类"
         },
         {
-          "title": "付款日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.m_paydate"
+          "name": "mainModel.m_paydate",
+          "title": "付款日期"
         },
         {
-          "title": "已预付款金额",
           "component": "text",
-          "name": "mainModel.m_haspay"
+          "flowshow": true,
+          "name": "mainModel.m_haspay",
+          "title": "已预付"
         },
         {
-          "title": "本次付款金额",
           "component": "text",
-          "name": "mainModel.m_thispay"
+          "flowshow": true,
+          "name": "mainModel.m_thispay",
+          "title": "本次付款"
         },
         {
-          "title": "备注",
           "component": "text",
-          "name": "mainModel.m_remark"
+          "flowshow": true,
+          "name": "mainModel.m_remark",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fico_operandpay",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

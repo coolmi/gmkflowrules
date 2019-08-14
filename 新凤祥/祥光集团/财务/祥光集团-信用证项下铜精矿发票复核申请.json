@@ -1,115 +1,99 @@
 {
-  "id": "fico_creditpurchasepay",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "贸易类型",
           "component": "select",
+          "flowshow": true,
+          "id": "mylx",
           "name": "mainModel.cglx",
-          "id":"mylx",
           "options": [
             {
               "text": "请选择",
@@ -123,240 +107,289 @@
               "text": "销售",
               "value": "2"
             }
-          ]
+          ],
+          "title": "贸易类型"
         },
         {
-          "title": "合同号1",
           "component": "text",
-          "name": "mainModel.hth"
+          "flowshow": true,
+          "name": "mainModel.hth",
+          "title": "合同号1"
         },
         {
-          "title": "合同号2",
           "component": "text",
-          "name": "mainModel.hth2"
+          "flowshow": true,
+          "name": "mainModel.hth2",
+          "title": "合同号2"
         },
         {
-          "title": "收款单位",
           "component": "label",
-          "id":"skdw",
+          "flowshow": true,
+          "id": "skdw",
           "label": [
             "mainModel.fkbukrs",
             "-",
             "mainModel.fkbutxt"
           ],
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["2"]
+              "id": "mylx",
+              "values": [
+                "2"
+              ]
             }
-          ]
+          ],
+          "title": "收款单位"
         },
         {
-          "title": "付款单位",
           "component": "label",
-          "id":"fkdw",
+          "flowshow": true,
+          "id": "fkdw",
           "label": [
             "mainModel.fkbukrs",
             "-",
             "mainModel.fkbutxt"
           ],
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
+          ],
+          "title": "付款单位"
         },
         {
-          "title": "供应商",
           "component": "text",
-          "id":"gysbh",
+          "id": "gysbh",
           "name": "mainModel.gysbh",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
+          ],
+          "title": "供应商"
         },
         {
-          "title": "客户",
           "component": "text",
-          "id":"kh",
+          "id": "kh",
           "name": "mainModel.gysbh",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["2"]
+              "id": "mylx",
+              "values": [
+                "2"
+              ]
             }
-          ]
+          ],
+          "title": "客户"
         },
         {
-          "title": "付款金额",
           "component": "text",
-          "id":"fkje",
+          "flowshow": true,
+          "id": "fkje",
           "name": "mainModel.fkje",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
-
+          ],
+          "title": "付款金额"
         },
         {
-          "title": "收款金额",
           "component": "text",
-          "id":"skje",
+          "flowshow": true,
+          "id": "skje",
           "name": "mainModel.fkje",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["2"]
+              "id": "mylx",
+              "values": [
+                "2"
+              ]
             }
-          ]
+          ],
+          "title": "收款金额"
         },
         {
-          "title": "金额大写",
           "component": "text",
-          "name": "mainModel.sqjedx"
+          "name": "mainModel.sqjedx",
+          "title": "金额大写"
         },
         {
-          "title": "币种",
           "component": "text",
-          "name": "mainModel.biztxt"
+          "name": "mainModel.biztxt",
+          "title": "币种"
         },
         {
-          "title": "",
           "component": "hidden",
+          "id": "fkbukrs",
           "name": "mainModel.fkbukrs",
-          "id":"fkbukrs"
+          "title": ""
         },
         {
-          "title": "付款种类",
           "component": "text",
-          "id":"fkzl",
+          "id": "fkzl",
           "name": "mainModel.fkzltxt",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
+          ],
+          "title": "付款种类"
         },
         {
-          "title": "收款种类",
           "component": "text",
-          "id":"skzl",
+          "id": "skzl",
           "name": "mainModel.fkzltxt",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["2"]
+              "id": "mylx",
+              "values": [
+                "2"
+              ]
             }
-          ]
+          ],
+          "title": "收款种类"
         },
-
         {
-          "title": "信用证号",
           "component": "text",
           "name": "mainModel.xyzh",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             },
             {
-              "id":"fkbukrs",
-              "values":["1000"]
+              "id": "fkbukrs",
+              "values": [
+                "1000"
+              ]
             }
-          ]
+          ],
+          "title": "信用证号"
         },
         {
-          "title": "采购订单号",
           "component": "text",
           "name": "mainModel.cgddh",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
-
+          ],
+          "title": "采购订单号"
         },
         {
-          "title": "发票预制号",
           "component": "text",
           "name": "mainModel.fpyzh",
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"mylx",
-              "values":["1"]
+              "id": "mylx",
+              "values": [
+                "1"
+              ]
             }
-          ]
+          ],
+          "title": "发票预制号"
         },
         {
-          "title": "贸易方式",
           "component": "select",
           "name": "mainModel.myfs",
-          "options":[{
-            "title": "一般贸易",
-            "value": "一般贸易"
-          },
+          "options": [
+            {
+              "title": "一般贸易",
+              "value": "一般贸易"
+            },
             {
               "title": "加工贸易",
               "value": "加工贸易"
-            }]
-        },
-        {
-          "title": "备注",
-          "component": "textarea",
-          "name": "mainModel.remark"
-        },
-        {
-          "title": "财务会计审核人",
-          "component": "text",
-          "name": "mainModel.cwkjpostname",
-          "showLinkage":[
-            {
-              "id":"fkbukrs",
-              "values":["1000"]
             }
-          ]
+          ],
+          "title": "贸易方式"
         },
         {
-          "title": "资金专员审核人",
+          "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.remark",
+          "title": "备注"
+        },
+        {
           "component": "text",
-          "tasknode": "usertask4",
+          "flowshow": true,
+          "name": "mainModel.cwkjpostname",
+          "showLinkage": [
+            {
+              "id": "fkbukrs",
+              "values": [
+                "1000"
+              ]
+            }
+          ],
+          "title": "财务会计审核"
+        },
+        {
+          "component": "text",
           "editablenode": "usertask4",
-          "notShowOnView":true,
-          "name": "mainModel.zjjlpostid",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
             "showformname": "zjjlpostname",
-            "valuetype": [
-              "objid"
-            ],
             "showtype": [
               "nachn",
               "stext"
+            ],
+            "valuetype": [
+              "objid"
             ]
-
           },
-          "validation":{
-            "pageid":"sqxx",
-            "required":true,
-            "validateMsg":"请填写资金专员办理人"
+          "name": "mainModel.zjjlpostid",
+          "notShowOnView": true,
+          "tasknode": "usertask4",
+          "title": "资金专员审核人",
+          "validation": {
+            "pageid": "sqxx",
+            "required": true,
+            "validateMsg": "请填写资金专员办理人"
           }
         },
         {
-          "title": "资金专员审核人",
           "component": "text",
+          "name": "mainModel.zjjlpostname",
           "tasknode": "usertask5",
-          "name": "mainModel.zjjlpostname"
+          "title": "资金专员审核人"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fico_creditpurchasepay",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

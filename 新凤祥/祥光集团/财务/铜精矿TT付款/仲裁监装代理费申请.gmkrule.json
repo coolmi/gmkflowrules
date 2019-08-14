@@ -1,243 +1,248 @@
 {
-  "id": "af_arbitration",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      "usertask2"
-    ],
-    "beforPop": true
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "arbitration.appid"
+          "name": "arbitration.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "arbitration.appda"
+          "name": "arbitration.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "arbitration.pernr",
             "-",
             "arbitration.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "arbitration.sysbusinessunitname",
             "-",
             "arbitration.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.bukrs"
+          "name": "arbitration.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.userid"
+          "name": "arbitration.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.username"
+          "name": "arbitration.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.pernr"
+          "name": "arbitration.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.syspostname"
+          "name": "arbitration.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.sysdeptid"
+          "name": "arbitration.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.sysdeptname"
+          "name": "arbitration.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.sysbusinessunitid"
+          "name": "arbitration.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.sysbusinessunitname"
+          "name": "arbitration.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.postid"
+          "name": "arbitration.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "arbitration.id"
+          "name": "arbitration.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "ddee",
       "component": "panel",
+      "pageid": "ddee",
       "subComponents": [
         {
-          "title": "费用承担公司",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "butxt",
-          "editablenode": "",
-          "name": "butxt"
+          "name": "butxt",
+          "title": "费用承担公司"
         },
         {
-          "title": "供应商名称",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "arbitration_gysmc",
-          "editablenode": "",
-          "name": "arbitration.gysmc"
+          "name": "arbitration.gysmc",
+          "title": "供应商名称"
         },
         {
-          "title": "汇入地点",
           "component": "text",
+          "editablenode": "",
           "id": "arbitration_hrdd",
-          "editablenode": "",
-          "name": "arbitration.hrdd"
+          "name": "arbitration.hrdd",
+          "title": "汇入地点"
         },
         {
-          "title": "汇入行",
           "component": "text",
+          "editablenode": "",
           "id": "arbitration_hrh",
-          "editablenode": "",
-          "name": "arbitration.hrh"
+          "name": "arbitration.hrh",
+          "title": "汇入行"
         },
         {
-          "title": "汇入行账号",
           "component": "text",
-          "id": "arbitration_hrhzh",
           "editablenode": "",
-          "name": "arbitration.hrhzh"
+          "id": "arbitration_hrhzh",
+          "name": "arbitration.hrhzh",
+          "title": "汇入行账号"
         },
         {
-          "title": "汇款用途",
           "component": "select",
-          "id": "arbitration_hkyt",
           "editablenode": "",
+          "flowshow": true,
+          "id": "arbitration_hkyt",
           "name": "arbitration.hkyt",
           "options": [
             {
+              "flowshow": true,
               "text": "仲裁",
-              "value": "0",
+              "value": "0"
             },
             {
+              "flowshow": true,
               "text": "监装费",
-              "value": "1",
+              "value": "1"
             },
             {
+              "flowshow": true,
               "text": "代理费",
-              "value": "2",
+              "value": "2"
             },
             {
+              "flowshow": true,
               "text": "保险费",
-              "value": "4",
+              "value": "4"
             }
-          ]
+          ],
+          "title": "汇款用途"
         },
         {
-          "title": "申请付款日期",
           "component": "date1",
+          "editablenode": "",
+          "flowshow": true,
           "id": "arbitration_fkrq",
-          "editablenode": "",
-          "name": "arbitration.fkrq"
+          "name": "arbitration.fkrq",
+          "title": "申请付款日期"
         },
         {
-          "title": "申请金额",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "arbitration_sqje",
-          "editablenode": "",
-          "name": "arbitration.sqje"
+          "name": "arbitration.sqje",
+          "title": "申请金额"
         },
         {
-          "title": "币种",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "arbitration_bizmc",
-          "editablenode": "",
           "name": "arbitration.bizmc",
+          "title": "币种"
         },
         {
-          "title": "金额大写",
           "component": "text",
+          "editablenode": "",
           "id": "arbitration_jedx",
-          "editablenode": "",
-          "name": "arbitration.jedx"
+          "name": "arbitration.jedx",
+          "title": "金额大写"
         },
         {
-          "title": "合同号",
           "component": "text",
+          "editablenode": "",
           "id": "arbitration_hth",
-          "editablenode": "",
-          "name": "arbitration.hth"
+          "name": "arbitration.hth",
+          "title": "合同号"
         },
         {
-          "title": " 备注",
           "component": "textarea",
-          "id": "arbitration_bz",
           "editablenode": "",
+          "flowshow": true,
+          "id": "arbitration_bz",
+          "name": "arbitration.bz",
           "rows": "3",
-          "name": "arbitration.bz"
+          "title": " 备注"
         },
         {
-          "title": "已申请次数",
           "component": "text",
-          "name": "arbitration.historynum"
+          "flowshow": true,
+          "name": "arbitration.historynum",
+          "title": "已申请次数"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "af_arbitration",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": true,
+    "tasknode": [
+      "usertask2"
+    ]
   }
 }
-
-
-
-

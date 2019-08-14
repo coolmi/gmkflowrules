@@ -1,126 +1,109 @@
 {
-  "id": "gmk_travle",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "travle.appid"
+          "name": "travle.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "travle.appda"
+          "name": "travle.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "travle.pernr",
             "-",
             "travle.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "travle.sysbusinessunitname",
             "-",
             "travle.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.userid"
+          "name": "travle.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.username"
+          "name": "travle.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.pernr"
+          "name": "travle.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.syspostname"
+          "name": "travle.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptid"
+          "name": "travle.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptname"
+          "name": "travle.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitid"
+          "name": "travle.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitname"
+          "name": "travle.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.postid"
+          "name": "travle.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.id"
+          "name": "travle.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "applyInfo",
       "component": "panel",
+      "pageid": "applyInfo",
       "subComponents": [
         {
-          "title": "费用承担公司",
           "component": "text",
-          "name": "travle.m_compnm"
+          "name": "travle.m_compnm",
+          "title": "费用承担公司"
         },
         {
-          "title": "费用归集成本中心",
           "component": "text",
-          "name": "travle.m_cbzxnm"
+          "name": "travle.m_cbzxnm",
+          "title": "费用归集成本中心"
         },
         {
-          "title": "是否提高标准",
           "component": "select",
           "name": "travle.beup",
           "options": [
@@ -132,14 +115,14 @@
               "text": "是",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否提高标准"
         },
         {
-          "flowshow": true,
-          "title": "提高标准原因",
           "component": "textarea",
-          "rows": 5,
+          "flowshow": true,
           "name": "travle.reason",
+          "rows": 5,
           "showLinkage": [
             {
               "id": "beup",
@@ -147,62 +130,79 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "提高标准原因"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "出差申请明细",
-      "pageid": "ccmx",
       "component": "panel",
+      "pageid": "ccmx",
       "subComponents": [
         {
-          "component": "table_ccmx",
-          "titleIndex": 1,
           "basePath": "bases",
+          "component": "table_ccmx",
           "tableForms": [
             {
-              "flowshow": true,
-              "title": "出发日期",
               "component": "date1",
-              "name": "startda"
+              "flowshow": true,
+              "name": "startda",
+              "title": "出发日期"
             },
             {
-              "title": "到达日期",
               "component": "date1",
-              "name": "endda"
+              "name": "endda",
+              "title": "到达日期"
             },
             {
-              "title": "出发地点",
               "component": "text",
-              "name": "splace"
+              "name": "splace",
+              "title": "出发地点"
             },
             {
-              "flowshow": true,
-              "title": "到达地点",
               "component": "text",
-              "name": "eplace"
+              "flowshow": true,
+              "name": "eplace",
+              "title": "到达地点"
             },
             {
-              "flowshow": true,
-              "title": "交通方式",
               "component": "text",
-              "name": "transmode"
+              "flowshow": true,
+              "name": "transmode",
+              "title": "交通方式"
             },
             {
-              "flowshow": true,
-              "title": "工作内容",
               "component": "textarea",
-              "name": "workc"
+              "flowshow": true,
+              "name": "workc",
+              "title": "工作内容"
             },
             {
-              "title": "类型",
               "component": "text",
-              "name": "tp"
+              "name": "tp",
+              "title": "类型"
             }
-          ]
+          ],
+          "titleIndex": 1
         }
-      ]
+      ],
+      "title": "出差申请明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "gmk_travle",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

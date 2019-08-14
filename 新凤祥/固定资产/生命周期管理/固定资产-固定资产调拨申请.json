@@ -1,213 +1,202 @@
 {
-  "id": "cp_transfer",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask5"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "transfer.appid"
+          "name": "transfer.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "transfer.appda"
+          "name": "transfer.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "transfer.pernr",
             "-",
             "transfer.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "transfer.sysbusinessunitname",
             "-",
             "transfer.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.userid"
+          "name": "transfer.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.username"
+          "name": "transfer.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.pernr"
+          "name": "transfer.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.syspostname"
+          "name": "transfer.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysdeptid"
+          "name": "transfer.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysdeptname"
+          "name": "transfer.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysbusinessunitid"
+          "name": "transfer.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysbusinessunitname"
+          "name": "transfer.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.postid"
+          "name": "transfer.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.id"
+          "name": "transfer.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "调拨信息",
-      "pageid": "dbxxxx",
       "component": "panel",
+      "pageid": "dbxxxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 1,
           "basePath": "childlist",
+          "component": "table_form",
           "tableForms": [
             {
-              "title": "调拨资产编号",
               "component": "text",
-              "name": "propertycode"
+              "name": "propertycode",
+              "title": "调拨资产编号"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
+              "flowshow": true,
+              "name": "propertyname",
+              "title": "资产描述"
             },
             {
-              "title": "SAP资产编号",
               "component": "text",
-              "name": "anln1"
+              "name": "anln1",
+              "title": "SAP资产编号"
             },
             {
-              "title": "SAP资产子编号",
               "component": "text",
-              "name": "anln2"
+              "name": "anln2",
+              "title": "SAP资产子编号"
             },
             {
-              "title": "技术标识号",
               "component": "text",
-              "name": "technicalcode"
+              "name": "technicalcode",
+              "title": "技术标识号"
             },
             {
-              "title": "原安装地点",
               "component": "text",
-              "name": "stort"
+              "flowshow": true,
+              "name": "stort",
+              "title": "原安装地点"
             },
             {
-              "title": "调出部门",
               "component": "label",
+              "flowshow": true,
               "label": [
                 "tcbmid",
                 "-",
                 "tcbmname"
-              ]
+              ],
+              "title": "调出部门"
             },
             {
-              "title": "调出成本中心",
               "component": "label",
               "label": [
                 "tccompcode",
                 "-",
                 "tccomcodename"
-              ]
+              ],
+              "title": "调出成本中心"
             },
             {
-              "title": "调入部门",
               "component": "label",
+              "flowshow": true,
               "label": [
                 "trbmid",
                 "-",
                 "trbmname"
-              ]
+              ],
+              "title": "调入部门"
             },
             {
-              "title": "调入成本中心",
               "component": "text",
-              "name": "trcomcodename"
+              "name": "trcomcodename",
+              "title": "调入成本中心"
             },
             {
-              "title": "调入安装地点",
               "component": "text",
-              "name": "trstort"
+              "flowshow": true,
+              "name": "trstort",
+              "title": "调入安装地点"
             },
             {
-              "title": "调拨事由",
               "component": "textarea",
-              "name": "transferreason"
+              "flowshow": true,
+              "name": "transferreason",
+              "title": "调拨事由"
             },
             {
-              "title": "调出厂部领导",
               "component": "text",
+              "name": "tcbmcbldname",
               "tasknode": "usertask9",
-              "name": "tcbmcbldname"
+              "title": "调出厂部领导"
             },
             {
-              "title": "调出分管领导",
               "component": "text",
+              "name": "tcbmfgldname",
               "tasknode": "usertask9",
-              "name": "tcbmfgldname"
+              "title": "调出分管领导"
             }
-          ]
+          ],
+          "titleIndex": 1
         }
-      ]
+      ],
+      "title": "调拨信息"
     },
     {
-      "title": "执行信息",
-      "pageid": "gdzcglyzxxx",
       "component": "panel",
-      "tasknode": "usertask5,usertask9",
+      "pageid": "gdzcglyzxxx",
       "subComponents": [
         {
-          "title": "调拨方式",
           "component": "select",
-          "name": "transfer.tbflag",
           "editablenode": "usertask5",
+          "name": "transfer.tbflag",
           "options": [
             {
               "text": "请选择",
@@ -222,6 +211,7 @@
               "value": "0"
             }
           ],
+          "title": "调拨方式",
           "validation": {
             "pageid": "gdzcglyzxxx",
             "required": true,
@@ -229,29 +219,44 @@
           }
         },
         {
-          "title": "调入分管领导",
           "component": "text",
           "editablenode": "usertask5",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
             "showformname": "zctrbmfgldname",
-            "valuetype": [
-              "objid"
-            ],
             "showtype": [
               "nachn",
               "stext"
+            ],
+            "valuetype": [
+              "objid"
             ]
           },
           "name": "transfer.zctrbmfgld",
+          "title": "调入分管领导",
           "validation": {
             "pageid": "gdzcglyzxxx",
             "required": true,
             "validationMsg": "请选择调入分管领导"
           }
         }
-      ]
+      ],
+      "tasknode": "usertask5,usertask9",
+      "title": "执行信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask5"
+    ]
+  },
+  "id": "cp_transfer",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

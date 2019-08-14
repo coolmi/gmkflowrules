@@ -1,148 +1,131 @@
 {
-  "id": "OA_LEAVE",
-  "handleOnPC": {
-    "tasknode": [
-      "ACTUAL"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "leave.appid"
+          "name": "leave.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "leave.appda"
+          "name": "leave.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "leave.pernr",
             "-",
             "nachn"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "hidden",
           "label": [
             "leave.sysbusinessunitname",
             "-",
             "leave.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.userid"
+          "name": "leave.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.username"
+          "name": "leave.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.pernr"
+          "name": "leave.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.syspostname"
+          "name": "leave.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.sysdeptid"
+          "name": "leave.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.sysdeptname"
+          "name": "leave.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.sysbusinessunitid"
+          "name": "leave.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.sysbusinessunitname"
+          "name": "leave.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.postid"
+          "name": "leave.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "leave.id"
+          "name": "leave.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "flowshow": true,
-          "title": "休假类型",
           "component": "select",
-          "name": "leave.ltype",
+          "flowshow": true,
           "id": "ltype",
+          "name": "leave.ltype",
           "refersToArray": {
             "basePath": "leaveType",
-            "value": "subty",
             "text": [
               "subty",
               "-",
               "atext"
-            ]
-          }
+            ],
+            "value": "subty"
+          },
+          "title": "休假类型"
         },
         {
-          "flowshow": true,
-          "title": "计划休假开始日期",
           "component": "date1",
-          "name": "leave.begdap"
+          "flowshow": true,
+          "name": "leave.begdap",
+          "title": "计划休假开始日期"
         },
         {
-          "flowshow": true,
-          "title": "计划休假结束日期",
           "component": "date1",
-          "name": "leave.enddap"
+          "flowshow": true,
+          "name": "leave.enddap",
+          "title": "计划休假结束日期"
         },
         {
-          "flowshow": true,
-          "title": "计划休假天数",
           "component": "text",
-          "name": "leave.lnump"
+          "flowshow": true,
+          "name": "leave.lnump",
+          "title": "计划休假天数"
         },
         {
-          "flowshow": true,
-          "title": "休假原因",
           "component": "textarea",
+          "flowshow": true,
           "name": "leave.lreas",
           "showLinkage": [
             {
@@ -152,10 +135,10 @@
                 "9016"
               ]
             }
-          ]
+          ],
+          "title": "休假原因"
         },
         {
-          "title": "已休假天数",
           "component": "text",
           "name": "leave.numberdsc",
           "showLinkage": [
@@ -166,10 +149,10 @@
                 "9004"
               ]
             }
-          ]
+          ],
+          "title": "已休假天数"
         },
         {
-          "title": "休假定额",
           "component": "text",
           "name": "leave.anzhdsc",
           "showLinkage": [
@@ -183,10 +166,10 @@
                 "9004"
               ]
             }
-          ]
+          ],
+          "title": "休假定额"
         },
         {
-          "title": "是否初婚",
           "component": "radio",
           "name": "leave.remarrynot",
           "options": [
@@ -206,10 +189,10 @@
                 "9001"
               ]
             }
-          ]
+          ],
+          "title": "是否初婚"
         },
         {
-          "title": "休假时段",
           "component": "select",
           "name": "leave.vacationtime",
           "options": [
@@ -245,10 +228,10 @@
                 "9012"
               ]
             }
-          ]
+          ],
+          "title": "休假时段"
         },
         {
-          "title": "是否头胎",
           "component": "radio",
           "name": "leave.firstborn",
           "options": [
@@ -268,10 +251,10 @@
                 "9002"
               ]
             }
-          ]
+          ],
+          "title": "是否头胎"
         },
         {
-          "title": "产假类型",
           "component": "select",
           "id": "maternity",
           "name": "leave.maternity",
@@ -292,10 +275,10 @@
                 "9002"
               ]
             }
-          ]
+          ],
+          "title": "产假类型"
         },
         {
-          "title": "时限",
           "component": "select",
           "name": "leave.limitime",
           "options": [
@@ -321,10 +304,10 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "时限"
         },
         {
-          "title": "产假描述",
           "component": "radio",
           "name": "leave.maternitydescribe",
           "options": [
@@ -350,10 +333,10 @@
                 "0"
               ]
             }
-          ]
+          ],
+          "title": "产假描述"
         },
         {
-          "title": "胞胎数",
           "component": "radio",
           "id": "births",
           "name": "leave.births",
@@ -386,10 +369,10 @@
                 "2"
               ]
             }
-          ]
+          ],
+          "title": "胞胎数"
         },
         {
-          "title": "胞胎数量",
           "component": "text",
           "name": "leave.birthsnumber",
           "showLinkage": [
@@ -405,59 +388,74 @@
                 "0"
               ]
             }
-          ]
+          ],
+          "title": "胞胎数量"
         },
         {
-          "title": "实际休假开始日期",
           "component": "date1",
-          "tasknode": "ACTUAL,LEADER",
           "editablenode": "ACTUAL,LEADER",
+          "name": "leave.begdar",
+          "tasknode": "ACTUAL,LEADER",
+          "title": "实际休假开始日期",
           "validation": {
             "pageid": "jbxx",
             "required": true,
             "validateMsg": "实际休假开始日期必填"
-          },
-          "name": "leave.begdar"
+          }
         },
         {
-          "title": "实际休假结束日期",
           "component": "date1",
-          "tasknode": "ACTUAL,LEADER",
           "editablenode": "ACTUAL,LEADER",
+          "name": "leave.enddar",
+          "tasknode": "ACTUAL,LEADER",
+          "title": "实际休假结束日期",
           "validation": {
             "pageid": "jbxx",
             "required": true,
             "validateMsg": "实际休假结束日期必填"
-          },
-          "name": "leave.enddar"
+          }
         },
         {
-          "title": "实际休假天数",
           "component": "text",
-          "tasknode": "ACTUAL,LEADER",
           "editablenode": "ACTUAL,LEADER",
+          "name": "leave.lnumr",
+          "tasknode": "ACTUAL,LEADER",
+          "title": "实际休假天数",
           "validation": {
             "pageid": "jbxx",
             "required": true,
             "validateMsg": "实际休假天数必填"
-          },
-          "name": "leave.lnumr"
+          }
         },
         {
-          "title": "核销假说明",
           "component": "textarea",
-          "tasknode": "ACTUAL,LEADER",
           "editablenode": "ACTUAL,LEADER",
+          "name": "leave.tmldt",
+          "tasknode": "ACTUAL,LEADER",
+          "title": "核销假说明",
           "validation": {
             "pageid": "jbxx",
             "required": true,
             "validateMsg": "核销假说明必填"
-          },
-          "name": "leave.tmldt"
+          }
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "ACTUAL"
+    ]
+  },
+  "id": "OA_LEAVE",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-
-

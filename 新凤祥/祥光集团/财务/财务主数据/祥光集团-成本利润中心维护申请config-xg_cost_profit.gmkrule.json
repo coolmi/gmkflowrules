@@ -1,222 +1,259 @@
 {
-  "id": "xg_cost_profit",
-  "handleOnPC": {
-    "tasknode": ["afk"],
-    "flag": ["resubmit"]
-  },
-  "selectPerson": {
-    "tasknode": [""],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "归属公司",
           "component": "label",
-          "label": ["mainModel.m_compnm"]
+          "flowshow": true,
+          "label": [
+            "mainModel.m_compnm"
+          ],
+          "title": "归属公司"
         },
         {
-          "title": "维护数据类型",
           "component": "checkbox",
+          "flowshow": true,
           "id": "whsjlx_id",
           "name": "mainModel.m_datatype",
           "options": [
             {
+              "flowshow": true,
               "text": "利润中心",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "成本中心",
               "value": "0"
             }
-          ]
+          ],
+          "title": "维护数据类型"
         },
         {
-          "title": "成本中心明细",
           "component": "panel",
-          "panel_id":"cbzxmx",
+          "panel_id": "cbzxmx",
           "subComponents": [
             {
-              "component": "table_form",
-              "titleIndex": 1,
-              "id": "cbzxmx_id",
               "basePath": "costdetaillist",
+              "component": "table_form",
+              "id": "cbzxmx_id",
               "showLinkage": [
                 {
                   "id": "whsjlx_id",
-                  "values": ["0"]
+                  "values": [
+                    "0"
+                  ]
                 }
               ],
               "tableForms": [
                 {
+                  "component": "text",
+                  "editablenode": "afk",
+                  "name": "s_costid",
                   "title": "成本中心编码",
-                  "component": "text",
-
-                  "name": "s_costid"
-
+                  "validation": {
+                    "pageid": "sqxx",
+                    "panel_id": "cbzxmx",
+                    "required": true,
+                    "table_id": "cbzxmx_id",
+                    "validateMsg": "请填写成本中心编码"
+                  }
                 },
                 {
-                  "title": "成本中心名称",
                   "component": "text",
-                  "name": "s_costnm"
+                  "flowshow": true,
+                  "name": "s_costnm",
+                  "title": "成本中心名称"
                 },
                 {
-                  "title": "公司代码",
                   "component": "text",
-                  "name": "s_compid"
+                  "flowshow": true,
+                  "name": "s_compid",
+                  "title": "公司代码"
                 },
                 {
+                  "component": "text",
+                  "editablenode": "afk",
+                  "flowshow": true,
+                  "name": "s_profit",
                   "title": "对应利润中心",
-                  "component": "text",
-                  "name": "s_profit"
+                  "validation": {
+                    "panel_id": "cbzxmx",
+                    "regexs": "",
+                    "required": true,
+                    "validateMsg": "请填写对应利润中心"
+                  }
                 }
-              ]
+              ],
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "成本中心明细"
         },
         {
-          "title": "利润中心明细",
-          "panel_id": "lrzxmx",
           "component": "panel",
+          "panel_id": "lrzxmx",
           "subComponents": [
             {
-              "component": "table_form",
-              "titleIndex": 1,
-              "id": "lrzxmx_id",
               "basePath": "profitdetaillist",
+              "component": "table_form",
+              "id": "lrzxmx_id",
               "showLinkage": [
                 {
                   "id": "whsjlx_id",
-                  "values": ["1"]
+                  "values": [
+                    "1"
+                  ]
                 }
               ],
               "tableForms": [
                 {
+                  "component": "text",
+                  "editablenode": "afk",
+                  "name": "s_profitid",
                   "title": "利润中心编码",
-                  "component": "text",
-                  "name": "s_profitid"
+                  "validation": {
+                    "panel_id": "lrzxmx",
+                    "regexs": "",
+                    "required": true,
+                    "validateMsg": "请填写利润中心编码"
+                  }
                 },
                 {
-                  "title": "利润中心名称",
                   "component": "text",
-                  "name": "s_profitnm"
+                  "name": "s_profitnm",
+                  "title": "利润中心名称"
                 },
                 {
-                  "title": "利润中心组",
                   "component": "text",
-                  "name": "s_profitgroupid"
+                  "name": "s_profitgroupid",
+                  "title": "利润中心组"
                 },
                 {
-                  "title": "利润中心组名称",
                   "component": "text",
-                  "name": "s_profitgroupnm"
+                  "name": "s_profitgroupnm",
+                  "title": "利润中心组名称"
                 },
                 {
-                  "title": "有效开始时间",
-                  "component": "text",
-                  "name": "s_start"
+                  "component": "date1",
+                  "name": "s_start",
+                  "title": "有效开始时间"
                 },
                 {
-                  "title": "有效结束时间",
-                  "component": "text",
-                  "name": "s_end"
+                  "component": "date1",
+                  "name": "s_end",
+                  "title": "有效结束时间"
                 }
-              ]
+              ],
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "利润中心明细"
         }
-
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "afk"
+    ]
+  },
+  "id": "xg_cost_profit",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

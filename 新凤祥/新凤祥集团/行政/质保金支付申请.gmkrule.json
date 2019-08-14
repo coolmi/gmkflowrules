@@ -1,229 +1,223 @@
 {
-  "id": "gmk_warranty",
-  "handleOnPC": {
-    "tasknode": [
-      
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "warranty.appid"
+          "name": "warranty.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "warranty.appda"
+          "name": "warranty.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "warranty.pernr",
             "-",
             "warranty.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "warranty.sysbusinessunitname",
             "-",
             "warranty.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.bukrs"
+          "name": "warranty.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.userid"
+          "name": "warranty.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.username"
+          "name": "warranty.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.pernr"
+          "name": "warranty.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.syspostname"
+          "name": "warranty.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.sysdeptid"
+          "name": "warranty.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.sysdeptname"
+          "name": "warranty.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.sysbusinessunitid"
+          "name": "warranty.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.sysbusinessunitname"
+          "name": "warranty.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.postid"
+          "name": "warranty.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "warranty.id"
+          "name": "warranty.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
-
-    		{
-			"title": "申请信息",
-			"pageid": "sqxx_warranty",
-			"component": "panel",
-			"subComponents": [
-				{
-					"title": "采购订单号",
-					"component": "text",
-					"id": "warranty_ordernum",
-					"editablenode": "",
-					"name": "warranty.ordernum"
-				},
-				{
-					"title": "合同号",
-					"component": "text",
-					"id": "warranty_contractnum",
-					"editablenode": "",
-					"name": "warranty.contractnum"
-				},
-				{
-					"title": "供应商编号",
-					"component": "text",
-					"id": "warranty_supplier",
-					"editablenode": "",
-					"name": "warranty.supplier"
-				},
-				{
-					"title": "供应商名称",
-					"component": "text",
-					"id": "warranty_suppliername",
-					"editablenode": "",
-					"name": "warranty.suppliername"
-				},
-				{
-					"title": "质保金额小写",
-					"component": "text",
-					"id": "warranty_warrantymo",
-					"editablenode": "",
-					"name": "warranty.warrantymo",
-					"datatype": "money"
-				},
-				{
-					"title": "质保金额大写",
-					"component": "text",
-					"id": "warranty_warrantyup",
-					"editablenode": "",
-					"name": "warranty.warrantyup"
-				},
-				{
-					"title": "质保期条款约定",
-					"component": "textarea",
-					"id": "warranty_warranty",
-					"editablenode": "",
-					"rows": "3",
-					"name": "warranty.warranty"
-				},
-				{
-					"title": "车间主任审核",
-					"component": "text",
-					"id": "warranty_odirectorname",
-					"editablenode": "",
-					"name": "warranty.odirectorname"
-				},
-				{
-					"title": "厂(部)审核",
-					"component": "text",
-					"id": "warranty_ofactoryname",
-					"editablenode": "",
-					"name": "warranty.ofactoryname"
-				},
-				{
-					"title": "采购部业务经办人审核",
-					"component": "text",
-					"id": "warranty_omembername",
-					"editablenode": "",
-					"name": "warranty.omembername"
-				},
-				{
-					"title": "采购部门负责人审核",
-					"component": "text",
-					"id": "warranty_odepartheadname",
-					"editablenode": "",
-					"name": "warranty.odepartheadname"
-				},
-				{
-					"title": "财务会计审核",
-					"component": "text",
-					"id": "warranty_ofinacouname",
-					"editablenode": "",
-					"name": "warranty.ofinacouname"
-				},
-				{
-					"title": "财务会计主管审核",
-					"component": "text",
-					"id": "warranty_ofinasupername",
-					"editablenode": "",
-					"name": "warranty.ofinasupername"
-				}
-			]
-		}
-
-
+    {
+      "component": "panel",
+      "pageid": "sqxx_warranty",
+      "subComponents": [
+        {
+          "component": "text",
+          "editablenode": "",
+          "flowshow": true,
+          "id": "warranty_ordernum",
+          "name": "warranty.ordernum",
+          "title": "采购订单号"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_contractnum",
+          "name": "warranty.contractnum",
+          "title": "合同号"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_supplier",
+          "name": "warranty.supplier",
+          "title": "供应商编号"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "flowshow": true,
+          "id": "warranty_suppliername",
+          "name": "warranty.suppliername",
+          "title": "供应商名称"
+        },
+        {
+          "component": "text",
+          "datatype": "money",
+          "editablenode": "",
+          "flowshow": true,
+          "id": "warranty_warrantymo",
+          "name": "warranty.warrantymo",
+          "title": "质保金额小写"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_warrantyup",
+          "name": "warranty.warrantyup",
+          "title": "质保金额大写"
+        },
+        {
+          "component": "textarea",
+          "editablenode": "",
+          "flowshow": true,
+          "id": "warranty_warranty",
+          "name": "warranty.warranty",
+          "rows": "3",
+          "title": "质保期条款约定"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_odirectorname",
+          "name": "warranty.odirectorname",
+          "title": "车间主任审核"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_ofactoryname",
+          "name": "warranty.ofactoryname",
+          "title": "厂(部)审核"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_omembername",
+          "name": "warranty.omembername",
+          "title": "采购部业务经办人审核"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_odepartheadname",
+          "name": "warranty.odepartheadname",
+          "title": "采购部门负责人审核"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_ofinacouname",
+          "name": "warranty.ofinacouname",
+          "title": "财务会计审核"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "id": "warranty_ofinasupername",
+          "name": "warranty.ofinasupername",
+          "title": "财务会计主管审核"
+        }
+      ],
+      "title": "申请信息"
+    }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "gmk_warranty",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
   }
 }

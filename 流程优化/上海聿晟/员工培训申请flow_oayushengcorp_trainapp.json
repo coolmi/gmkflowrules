@@ -1,211 +1,224 @@
 {
-  "id": "flow_oayushengcorp_trainapp",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "HR发起",
           "component": "text",
-          "name": "mainModel.hrapptext"
+          "name": "mainModel.hrapptext",
+          "title": "HR发起"
         },
         {
-          "title": "组织名称",
           "component": "text",
-          "name": "mainModel.orgid"
+          "flowshow": false,
+          "name": "mainModel.orgid",
+          "title": "组织名称"
         },
         {
-          "title": "课程",
           "component": "text",
-          "name": "mainModel.courses"
+          "flowshow": true,
+          "name": "mainModel.courses",
+          "title": "课程"
         },
         {
-          "title": "培训机构",
           "component": "text",
-          "name": "mainModel.agency"
+          "flowshow": true,
+          "name": "mainModel.agency",
+          "title": "培训机构"
         },
         {
-          "title": "培训时间",
           "component": "text",
-          "name": "mainModel.tDate"
+          "flowshow": true,
+          "name": "mainModel.tDate",
+          "title": "培训时间"
         },
         {
-          "title": "地点",
           "component": "text",
-          "name": "mainModel.address"
+          "flowshow": true,
+          "name": "mainModel.address",
+          "title": "地点"
         },
         {
-          "title": "培训费",
           "component": "text",
-          "name": "mainModel.trainCost"
+          "flowshow": true,
+          "name": "mainModel.trainCost",
+          "title": "培训费"
         },
         {
-          "title": "预告差旅费",
           "component": "text",
-          "name": "mainModel.travelCost"
+          "flowshow": true,
+          "name": "mainModel.travelCost",
+          "title": "预告差旅费"
         },
         {
-          "title": "预算内外",
           "component": "text",
-          "name": "mainModel.inbugettext"
+          "flowshow": true,
+          "name": "mainModel.inbugettext",
+          "title": "预算内外"
         },
         {
-          "title": "培训协议",
           "component": "text",
-          "name": "mainModel.agreeontext"
+          "flowshow": true,
+          "name": "mainModel.agreeontext",
+          "title": "培训协议"
         },
         {
-          "title": "备注",
           "component": "text",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "退回报废明细",
-      "pageid": "rebackInfo",
       "component": "panel",
+      "pageid": "rebackInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "reback_table",
           "basePath": "trainchldappEntityList",
+          "component": "table_form",
+          "id": "reback_table",
           "tableForms": [
             {
-              "title": "培训人员",
               "component": "text",
-              "name": "pernr"
+              "flowshow": true,
+              "name": "pernr",
+              "title": "培训人员"
             },
             {
-              "title": "姓名",
               "component": "text",
-              "name": "pname"
+              "flowshow": true,
+              "name": "pname",
+              "title": "姓名"
             },
             {
-              "title": "岗位",
               "component": "text",
-              "name": "postna"
+              "flowshow": true,
+              "name": "postna",
+              "title": "岗位"
             },
             {
-              "title": "所属组织",
               "component": "text",
-              "name": "orgna"
+              "flowshow": true,
+              "name": "orgna",
+              "title": "所属组织"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "退回报废明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_trainapp",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

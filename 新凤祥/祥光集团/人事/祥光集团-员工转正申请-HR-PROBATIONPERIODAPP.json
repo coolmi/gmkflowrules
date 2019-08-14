@@ -1,225 +1,242 @@
 {
-  "id": "HR-PROBATIONPERIODAPP",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "pperiodcentral.appid"
+          "name": "pperiodcentral.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "pperiodcentral.appda"
+          "name": "pperiodcentral.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "pperiodcentral.pernr",
             "-",
             "username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.userid"
+          "name": "pperiodcentral.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.username"
+          "name": "pperiodcentral.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.pernr"
+          "name": "pperiodcentral.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.syspostname"
+          "name": "pperiodcentral.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.sysdeptid"
+          "name": "pperiodcentral.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.sysdeptname"
+          "name": "pperiodcentral.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.sysbusinessunitid"
+          "name": "pperiodcentral.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.sysbusinessunitname"
+          "name": "pperiodcentral.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.postid"
+          "name": "pperiodcentral.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "pperiodcentral.id"
+          "name": "pperiodcentral.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "转正人",
           "component": "label",
           "editablenode": "",
+          "flowshow": true,
           "label": [
             "nachn"
-          ]
+          ],
+          "title": "转正人"
         },
         {
-          "title": "员工编号",
           "component": "text",
-          "name": "pperiodcentral.apernr"
+          "name": "pperiodcentral.apernr",
+          "title": "员工编号"
         },
         {
-          "title": "岗位",
           "component": "text",
-          "name": "stext"
+          "flowshow": true,
+          "name": "stext",
+          "title": "岗位"
         },
         {
-          "title": "岗位等级",
           "component": "text",
-          "name": "pperiodcentral.tempb"
+          "flowshow": true,
+          "name": "pperiodcentral.tempb",
+          "title": "岗位等级"
         },
         {
-          "title": "所在部门",
           "component": "text",
-          "name": "deptnm"
+          "name": "deptnm",
+          "title": "所在部门"
         },
         {
-          "title": "试用期",
           "component": "text",
-          "name": "pperiodcentral.probation"
+          "flowshow": true,
+          "name": "pperiodcentral.probation",
+          "title": "试用期"
         },
         {
-          "title": "转正类型",
           "component": "label",
+          "flowshow": true,
+          "label": [
+            "czlx.mgtxt"
+          ],
           "middleName": [
             "pperiodcentral.apptype",
             "massg"
           ],
-          "label": [
-            "czlx.mgtxt"
-          ]
+          "title": "转正类型"
         },
         {
-          "title": "入职日期",
           "component": "text",
-          "name": "indate"
+          "flowshow": true,
+          "name": "indate",
+          "title": "入职日期"
         },
         {
-          "title": "转正日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "pperiodcentral.bedate"
+          "flowshow": true,
+          "name": "pperiodcentral.bedate",
+          "title": "转正日期"
         },
         {
-          "title": "毕业院校",
           "component": "text",
-          "name": "graduate"
+          "name": "graduate",
+          "title": "毕业院校"
         },
         {
-          "title": "学历",
           "component": "text",
-          "name": "education"
+          "name": "education",
+          "title": "学历"
         },
         {
-          "title": "专业",
           "component": "text",
-          "name": "specialty"
+          "name": "specialty",
+          "title": "专业"
         },
         {
-          "title": "毕业日期",
           "component": "text",
-          "name": "graduated"
+          "name": "graduated",
+          "title": "毕业日期"
         },
         {
-          "title": "直线领导审核意见结果",
           "component": "select",
-          "name": "pperiodcentral.tempc",
-          "tasknode": "usertask2,usertask8,usertask3,usertask4,usertask5,usertask6",
           "editablenode": "usertask2",
+          "flowshow": true,
+          "name": "pperiodcentral.tempc",
           "options": [
             {
+              "flowshow": true,
               "text": "请选择",
               "value": ""
             },
             {
+              "flowshow": true,
               "text": "提前一个月转正",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "提前二个月转正",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "同意正常转正",
               "value": "2"
             },
             {
+              "flowshow": true,
               "text": "延长一个月转正",
               "value": "3"
             },
             {
+              "flowshow": true,
               "text": "延长两个月转正",
               "value": "4"
             },
             {
+              "flowshow": true,
               "text": "调离此岗",
               "value": "5"
             },
             {
+              "flowshow": true,
               "text": "辞退",
               "value": "6"
             }
-          ]
+          ],
+          "tasknode": "usertask2,usertask8,usertask3,usertask4,usertask5,usertask6",
+          "title": "直线领导审核意见结果"
         },
         {
-          "title": "个人总结",
           "component": "textarea",
-          "name": "pperiodcentral.sumwork"
+          "flowshow": true,
+          "name": "pperiodcentral.sumwork",
+          "title": "个人总结"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "HR-PROBATIONPERIODAPP",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

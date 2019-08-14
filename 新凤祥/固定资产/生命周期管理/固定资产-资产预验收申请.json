@@ -1,330 +1,340 @@
 {
-  "id": "gdzc_preaccess",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask3",
-      "usertask5"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
           "component": "text",
-          "title": "归属公司",
-          "name": "mainModel.compnm"
+          "name": "mainModel.compnm",
+          "title": "归属公司"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "信息列表",
       "component": "panel",
       "pageid": "xxlbaaa_ppage",
       "subComponents": [
         {
-          "component": "table_form",
           "basePath": "alist",
-          "titleIndex": 3,
+          "component": "table_form",
           "id": "xxll_aa",
           "tableForms": [
             {
               "component": "text",
-              "title": "资产编号",
-              "name": "a_propertycode"
+              "name": "a_propertycode",
+              "title": "资产编号"
             },
             {
               "component": "text",
-              "title": "SAP资产编号",
-              "name": "a_anln1"
+              "name": "a_anln1",
+              "title": "SAP资产编号"
             },
             {
               "component": "text",
-              "title": "SAP资产子编号",
-              "name": "a_anln2"
+              "name": "a_anln2",
+              "title": "SAP资产子编号"
             },
             {
               "component": "text",
-              "title": "资产描述",
-              "name": "a_propertyname"
+              "name": "a_propertyname",
+              "title": "资产描述"
             },
             {
               "component": "text",
-              "title": "采购订单",
-              "name": "a_orderid"
+              "name": "a_orderid",
+              "title": "采购订单"
             }
-          ]
+          ],
+          "titleIndex": 3
         }
-      ]
+      ],
+      "title": "信息列表"
     },
     {
-      "title": "验收信息",
       "component": "panel",
       "pageid": "ysxxlbbbb_page",
       "subComponents": [
         {
-          "component": "table_form",
           "basePath": "blist",
-          "titleIndex": 3,
+          "component": "table_form",
           "id": "xxll_bb",
           "tableForms": [
             {
               "component": "text",
-              "title": "购置申请单号",
-              "name": "b_buyappid"
+              "name": "b_buyappid",
+              "title": "购置申请单号"
             },
             {
               "component": "text",
-              "title": "资产编号",
-              "name": "b_propertycode"
+              "name": "b_propertycode",
+              "title": "资产编号"
             },
             {
               "component": "text",
-              "title": "项目类型",
-              "name": "b_projectnm"
+              "flowshow": true,
+              "name": "b_projectnm",
+              "title": "项目类型"
             },
             {
               "component": "text",
-              "title": "资产描述",
-              "name": "b_propertyname"
+              "flowshow": true,
+              "name": "b_propertyname",
+              "title": "资产描述"
             },
             {
               "component": "text",
-              "title": "合同单价(含税)",
               "datatype": "money",
-              "name": "b_corprice"
+              "flowshow": true,
+              "name": "b_corprice",
+              "title": "合同单价(含税)"
             },
             {
               "component": "text",
-              "title": "币种",
-              "name": "b_currency"
+              "name": "b_currency",
+              "title": "币种"
             },
             {
               "component": "text",
-              "title": "汇率",
-              "name": "b_rate"
+              "name": "b_rate",
+              "title": "汇率"
             },
             {
               "component": "text",
-              "title": "合同价值",
               "datatype": "money",
-              "name": "b_corvalue"
+              "flowshow": true,
+              "name": "b_corvalue",
+              "title": "合同价值"
             }
-          ]
+          ],
+          "titleIndex": 3
         }
-      ]
+      ],
+      "title": "验收信息"
     },
     {
-      "title": "资产信息",
       "component": "panel",
       "pageid": "zcxxlccc_page",
-      "tasknode": "usertask4,usertask5",
       "subComponents": [
         {
-          "component": "table_form",
           "basePath": "clist",
-          "titleIndex": 2,
+          "component": "table_form",
           "id": "xxll_cc",
           "tableForms": [
             {
               "component": "text",
-              "title": "资产编号",
-              "name": "c_propertycode"
+              "name": "c_propertycode",
+              "title": "资产编号"
             },
             {
               "component": "text",
-              "title": "项目类型",
-              "name": "c_projectnm"
+              "name": "c_projectnm",
+              "title": "项目类型"
             },
             {
               "component": "text",
-              "title": "资产描述",
-              "name": "c_propertyname"
+              "flowshow": true,
+              "name": "c_propertyname",
+              "title": "资产描述"
             },
             {
               "component": "text",
-              "title": "质保期",
-              "name": "c_guarantee_p"
+              "flowshow": true,
+              "name": "c_guarantee_p",
+              "title": "质保期"
             },
             {
               "component": "text",
-              "title": "质保单位",
-              "name": "c_guarantee_d"
+              "name": "c_guarantee_d",
+              "title": "质保单位"
             },
             {
               "component": "text",
-              "title": "安装地点",
-              "name": "c_stort"
+              "flowshow": true,
+              "name": "c_stort",
+              "title": "安装地点"
             },
             {
               "component": "text",
-              "title": "制造商",
-              "name": "c_maker"
+              "name": "c_maker",
+              "title": "制造商"
             },
             {
               "component": "text",
-              "title": "国家",
-              "name": "c_country"
+              "name": "c_country",
+              "title": "国家"
             },
             {
               "component": "textarea",
-              "title": "验收结果意见",
-              "name": "c_remark"
+              "flowshow": true,
+              "name": "c_remark",
+              "title": "验收结果意见"
             }
-          ]
+          ],
+          "titleIndex": 2
         }
-      ]
+      ],
+      "tasknode": "usertask4,usertask5",
+      "title": "资产信息"
     },
     {
-      "title": "资产验收",
       "component": "panel",
-      "pageid": "gdzcysddd_page",
       "notShowOnHandle": true,
+      "pageid": "gdzcysddd_page",
       "subComponents": [
         {
-          "component": "table_form",
           "basePath": "clist",
-          "titleIndex": 2,
+          "component": "table_form",
           "id": "xxll_cc",
           "tableForms": [
             {
               "component": "text",
-              "title": "资产编号",
-              "name": "d_propertycode"
+              "name": "d_propertycode",
+              "title": "资产编号"
             },
             {
               "component": "text",
-              "title": "合同单价",
-              "name": "d_corprice"
+              "name": "d_corprice",
+              "title": "合同单价"
             },
             {
               "component": "text",
-              "title": "币种",
-              "name": "d_currency"
+              "name": "d_currency",
+              "title": "币种"
             },
             {
               "component": "text",
-              "title": "汇率",
-              "name": "d_rate"
+              "name": "d_rate",
+              "title": "汇率"
             },
             {
               "component": "text",
-              "title": "合同价值",
-              "name": "d_corvalue"
+              "flowshow": false,
+              "name": "d_corvalue",
+              "title": "合同价值"
             },
             {
               "component": "text",
-              "title": "预算使用金额",
-              "name": "d_usevalue"
+              "name": "d_usevalue",
+              "title": "预算使用金额"
             },
             {
               "component": "text",
-              "title": "是否超预算",
-              "name": "d_outif"
+              "flowshow": true,
+              "name": "d_outif",
+              "title": "是否超预算"
             },
             {
               "component": "text",
-              "title": "超预算金额",
-              "name": "d_outvalue"
+              "flowshow": true,
+              "name": "d_outvalue",
+              "title": "超预算金额"
             }
-          ]
+          ],
+          "titleIndex": 2
         }
-      ]
+      ],
+      "title": "资产验收"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask3",
+      "usertask5"
+    ]
+  },
+  "id": "gdzc_preaccess",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

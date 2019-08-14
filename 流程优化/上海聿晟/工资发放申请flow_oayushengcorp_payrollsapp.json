@@ -1,181 +1,184 @@
 {
-  "id": "flow_oayushengcorp_payrollsapp",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "类型",
           "component": "text",
-          "name": "mainModel.prTyptext"
+          "name": "mainModel.prTyptext",
+          "title": "类型"
         },
         {
-          "title": "年份",
           "component": "text",
-          "name": "mainModel.yeaerid"
+          "name": "mainModel.yeaerid",
+          "title": "年份"
         },
         {
-          "title": "月份",
           "component": "text",
-          "name": "mainModel.mothidtext"
+          "name": "mainModel.mothidtext",
+          "title": "月份"
         },
         {
-          "title": "批准人",
           "component": "text",
-          "name": "mainModel.ratifyna"
+          "name": "mainModel.ratifyna",
+          "title": "批准人"
         },
         {
-          "title": "备注",
           "component": "text",
-          "name": "mainModel.remark"
+          "name": "mainModel.remark",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "退回报废明细",
-      "pageid": "rebackInfo",
       "component": "panel",
+      "pageid": "rebackInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "reback_table",
           "basePath": "payrollschldappEntityList",
+          "component": "table_form",
+          "id": "reback_table",
           "tableForms": [
             {
-              "title": "所属法人",
               "component": "text",
-              "name": "cdburktxt"
+              "flowshow": true,
+              "name": "cdburktxt",
+              "title": "所属法人"
             },
             {
-              "title": "人数",
               "component": "text",
-              "name": "totals"
+              "flowshow": true,
+              "name": "totals",
+              "title": "人数"
             },
             {
-              "title": "总金额",
               "component": "text",
-              "name": "totalAmout"
+              "flowshow": true,
+              "name": "totalAmout",
+              "title": "总金额"
             },
             {
-              "title": "备注",
               "component": "text",
-              "name": "remark"
+              "flowshow": true,
+              "name": "remark",
+              "title": "备注"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "退回报废明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_payrollsapp",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

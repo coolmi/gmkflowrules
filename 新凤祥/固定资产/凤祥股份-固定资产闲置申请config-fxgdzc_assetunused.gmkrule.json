@@ -1,193 +1,201 @@
 {
-  "id": "fxgdzc_assetunused",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "闲置行项目信息",
-      "pageid": "xzhxmxx",
       "component": "panel",
+      "pageid": "xzhxmxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
           "basePath": "infos",
+          "component": "formLabelLink",
           "id": "xzhxmxx",
           "linkForms": [
             {
-              "title": "法人公司编号",
               "component": "text",
-              "name": "bukrs"
+              "name": "bukrs",
+              "title": "法人公司编号"
             },
             {
-              "title": "法人公司",
               "component": "text",
-              "name": "butxt"
+              "flowshow": true,
+              "name": "butxt",
+              "title": "法人公司"
             },
             {
-              "title": "成本中心编号",
               "component": "text",
-              "name": "kostl"
+              "name": "kostl",
+              "title": "成本中心编号"
             },
             {
-              "title": "成本中心",
               "component": "text",
-              "name": "kotxt"
+              "flowshow": true,
+              "name": "kotxt",
+              "title": "成本中心"
             },
             {
-              "title": "主资产编号",
               "component": "text",
-              "name": "anln1"
+              "name": "anln1",
+              "title": "主资产编号"
             },
             {
-              "title": "资产次级编号",
               "component": "text",
-              "name": "anln2"
+              "name": "anln2",
+              "title": "资产次级编号"
             },
             {
-              "title": "资产分类编号",
               "component": "text",
-              "name": "anlkl"
+              "name": "anlkl",
+              "title": "资产分类编号"
             },
             {
-              "title": "资产分类",
               "component": "text",
-              "name": "txk50"
+              "flowshow": true,
+              "name": "txk50",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "anltx"
+              "flowshow": true,
+              "name": "anltx",
+              "title": "资产描述"
             },
             {
-              "title": "规格型号",
               "component": "text",
-              "name": "ggxx"
+              "flowshow": true,
+              "name": "ggxx",
+              "title": "规格型号"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "原数量",
               "component": "text",
-              "name": "amount"
+              "flowshow": true,
+              "name": "amount",
+              "title": "原数量"
             },
             {
-              "title": "盘点数量",
               "component": "text",
-              "name": "pamount"
+              "flowshow": true,
+              "name": "pamount",
+              "title": "盘点数量"
             },
             {
-              "title": "备注",
               "component": "text",
-              "name": "biz"
+              "flowshow": true,
+              "name": "biz",
+              "title": "备注"
             },
             {
-              "title": "资产状态",
               "component": "text",
-              "name": "zczt"
+              "flowshow": true,
+              "name": "zczt",
+              "title": "资产状态"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "闲置行项目信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "fxgdzc_assetunused",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

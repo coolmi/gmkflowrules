@@ -1,176 +1,186 @@
 {
-  "id": "flow_oayushengcorp_futuresaccount",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "开销户",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.openOrClos",
           "options": [
             {
+              "flowshow": true,
               "title": "开户",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "销户",
               "value": "1"
             }
-          ]
+          ],
+          "title": "开销户"
         },
         {
-          "title": "期货账户",
           "component": "text",
-          "name": "mainModel.futureAccout"
+          "flowshow": true,
+          "name": "mainModel.futureAccout",
+          "title": "期货账户"
         },
         {
-          "title": "所属法人",
           "component": "text",
-          "name": "mainModel.cdburkstext"
+          "flowshow": true,
+          "name": "mainModel.cdburkstext",
+          "title": "所属法人"
         },
         {
-          "title": "期货公司全称",
           "component": "text",
-          "name": "mainModel.futureCompy"
+          "flowshow": true,
+          "name": "mainModel.futureCompy",
+          "title": "期货公司全称"
         },
         {
-          "title": "账户属性",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.intOrExt",
           "options": [
             {
+              "flowshow": true,
               "title": "内盘",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "外盘",
               "value": "1"
             }
-          ]
+          ],
+          "title": "账户属性"
         },
         {
-          "title": "开销户原因",
           "component": "textarea",
-          "name": "mainModel.appCause"
+          "flowshow": true,
+          "name": "mainModel.appCause",
+          "title": "开销户原因"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "name": "mainModel.remark"
+          "flowshow": true,
+          "name": "mainModel.remark",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_futuresaccount",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

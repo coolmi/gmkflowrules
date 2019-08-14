@@ -1,176 +1,178 @@
 {
-  "id": "fi_policybuy",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "policybuy.appid"
+          "name": "policybuy.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "policybuy.appda"
+          "name": "policybuy.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "policybuy.pernr",
             "-",
             "policybuy.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "policybuy.sysbusinessunitname",
             "-",
             "policybuy.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.bukrs"
+          "name": "policybuy.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.userid"
+          "name": "policybuy.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.username"
+          "name": "policybuy.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.pernr"
+          "name": "policybuy.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.syspostname"
+          "name": "policybuy.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.sysdeptid"
+          "name": "policybuy.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.sysdeptname"
+          "name": "policybuy.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.sysbusinessunitid"
+          "name": "policybuy.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.sysbusinessunitname"
+          "name": "policybuy.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.postid"
+          "name": "policybuy.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "policybuy.id"
+          "name": "policybuy.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "合同号",
           "component": "text",
+          "editablenode": "",
           "id": "policybuy_contract",
-          "editablenode": "",
-          "name": "policybuy.contract"
+          "name": "policybuy.contract",
+          "title": "合同号"
         },
         {
-          "title": "供应商名称",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "policybuy_supplier",
-          "editablenode": "",
-          "name": "policybuy.supplier"
+          "name": "policybuy.supplier",
+          "title": "供应商名称"
         },
         {
-          "title": "货量",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "policybuy_goodsa",
-          "editablenode": "",
-          "name": "policybuy.goodsa"
+          "name": "policybuy.goodsa",
+          "title": "货量"
         },
         {
-          "title": "货值",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "policybuy_goodsv",
-          "editablenode": "",
-          "name": "policybuy.goodsv"
+          "name": "policybuy.goodsv",
+          "title": "货值"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "id": "policybuy_remark",
           "editablenode": "",
+          "flowshow": true,
+          "id": "policybuy_remark",
+          "name": "policybuy.remark",
           "rows": "3",
-          "name": "policybuy.remark"
+          "title": "备注"
         },
         {
-          "title": "保险公司名称",
           "component": "text",
+          "editablenode": "usertask3",
+          "flowshow": true,
           "name": "policybuy.company",
           "tasknode": "usertask3",
-          "editablenode": "usertask3",
+          "title": "保险公司名称",
           "validation": {
             "pageid": "sqxx",
             "required": true,
             "validateMsg": "请填写保险公司名称"
           }
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "fi_policybuy",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

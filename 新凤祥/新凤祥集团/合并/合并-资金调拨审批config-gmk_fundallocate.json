@@ -1,163 +1,168 @@
 {
-  "id": "gmk_fundallocate",
-  "handleOnPC": {
-    "tasknode": [
-      "apply"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "资金调拨子表",
       "component": "panel",
       "pageid": "zjdbzb",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "fundallocatesublist",
+          "component": "table_form",
           "id": "zjdbzb_table",
           "tableForms": [
             {
-              "title": "调拨单号",
               "component": "text",
-              "name": "dBDH"
+              "name": "dBDH",
+              "title": "调拨单号"
             },
             {
-              "title": "申请付款日期",
               "component": "text",
-              "name": "sQFKRQ"
+              "name": "sQFKRQ",
+              "title": "申请付款日期"
             },
             {
-              "title": "付款单位",
               "component": "text",
-              "name": "fKDW"
+              "flowshow": true,
+              "name": "fKDW",
+              "title": "付款单位"
             },
             {
-              "title": "收款单位",
               "component": "text",
-              "name": "sKDW"
+              "flowshow": true,
+              "name": "sKDW",
+              "title": "收款单位"
             },
             {
-              "title": "付款账户",
               "component": "text",
-              "name": "fKZH"
+              "name": "fKZH",
+              "title": "付款账户"
             },
             {
-              "title": "收款账户",
               "component": "text",
-              "name": "sKZH"
+              "name": "sKZH",
+              "title": "收款账户"
             },
             {
-              "title": "银行(付)",
               "component": "text",
-              "name": "fKZHYH"
+              "flowshow": true,
+              "name": "fKZHYH",
+              "title": "银行(付)"
             },
             {
-              "title": "银行(收)",
               "component": "text",
-              "name": "sKZHYH"
+              "flowshow": true,
+              "name": "sKZHYH",
+              "title": "银行(收)"
             },
             {
-              "title": "调拨金额",
               "component": "text",
-              "name": "dBJE"
+              "flowshow": true,
+              "name": "dBJE",
+              "title": "调拨金额"
             },
             {
-              "title": "货币码",
               "component": "text",
-              "name": "wAERS"
+              "name": "wAERS",
+              "title": "货币码"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "资金调拨子表"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "apply"
+    ]
+  },
+  "id": "gmk_fundallocate"
 }

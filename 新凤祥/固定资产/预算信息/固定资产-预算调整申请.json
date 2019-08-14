@@ -1,128 +1,112 @@
 {
-  "id": "cp_budgetadjust",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "budgetadjust.appid"
+          "name": "budgetadjust.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "budgetadjust.appda"
+          "name": "budgetadjust.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "budgetadjust.pernr",
             "-",
             "budgetadjust.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "budgetadjust.sysbusinessunitname",
             "-",
             "budgetadjust.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.userid"
+          "name": "budgetadjust.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.username"
+          "name": "budgetadjust.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.pernr"
+          "name": "budgetadjust.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.syspostname"
+          "name": "budgetadjust.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.sysdeptid"
+          "name": "budgetadjust.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.sysdeptname"
+          "name": "budgetadjust.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.sysbusinessunitid"
+          "name": "budgetadjust.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.sysbusinessunitname"
+          "name": "budgetadjust.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.postid"
+          "name": "budgetadjust.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadjust.id"
+          "name": "budgetadjust.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "预算调整原因",
           "component": "textarea",
+          "name": "budgetadjust.ystzyy",
           "rows": 4,
-          "name": "budgetadjust.ystzyy"
+          "title": "预算调整原因"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "详细信息",
-      "pageid": "ysxxxx",
       "component": "panel",
+      "pageid": "ysxxxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 19,
           "basePath": "childlist",
+          "component": "table_form",
           "tableForms": [
             {
-              "title": "调出预算项目",
               "component": "label",
               "label": [
                 "oitype",
@@ -132,10 +116,10 @@
                 "okostl",
                 "-",
                 "oorgeh"
-              ]
+              ],
+              "title": "调出预算项目"
             },
             {
-              "title": "调入预算项目",
               "component": "label",
               "label": [
                 "itype",
@@ -145,68 +129,68 @@
                 "kostl",
                 "-",
                 "orgeh"
-              ]
+              ],
+              "title": "调入预算项目"
             },
             {
-              "title": "调出预算年",
               "component": "text",
-              "name": "ogjahr"
+              "name": "ogjahr",
+              "title": "调出预算年"
             },
             {
-              "title": "调入预算年",
               "component": "text",
-              "name": "gjahr"
+              "name": "gjahr",
+              "title": "调入预算年"
             },
             {
-              "title": "调出项目号",
               "component": "text",
-              "name": "ocolnr"
+              "name": "ocolnr",
+              "title": "调出项目号"
             },
             {
-              "title": "调入项目号",
               "component": "text",
-              "name": "colnr"
+              "name": "colnr",
+              "title": "调入项目号"
             },
             {
-              "title": "调出子项目号",
               "component": "text",
-              "name": "obuzei"
+              "name": "obuzei",
+              "title": "调出子项目号"
             },
             {
-              "title": "调入子项目号",
               "component": "text",
-              "name": "buzei"
+              "name": "buzei",
+              "title": "调入子项目号"
             },
             {
-              "title": "调出公司",
               "component": "label",
               "label": [
                 "obukrs",
                 "-",
                 "obukrsname"
-              ]
+              ],
+              "title": "调出公司"
             },
             {
-              "title": "调入公司",
               "component": "label",
               "label": [
                 "bukrs",
                 "-",
                 "bukrsname"
-              ]
+              ],
+              "title": "调入公司"
             },
             {
-              "title": "调出部门",
               "component": "text",
-              "name": "obranch"
+              "name": "obranch",
+              "title": "调出部门"
             },
             {
-              "title": "调入部门",
               "component": "text",
-              "name": "branch"
+              "name": "branch",
+              "title": "调入部门"
             },
             {
-              "title": "调出项目类型",
               "component": "select",
               "name": "oitype",
               "options": [
@@ -222,124 +206,148 @@
                   "text": "技术研发",
                   "value": "X03"
                 }
-              ]
+              ],
+              "title": "调出项目类型"
             },
             {
-              "title": "调入项目类型",
               "component": "select",
+              "flowshow": true,
               "name": "itype",
               "options": [
                 {
+                  "flowshow": true,
                   "text": "日常类",
                   "value": "X01"
                 },
                 {
+                  "flowshow": true,
                   "text": "技术改造",
                   "value": "X02"
                 },
                 {
+                  "flowshow": true,
                   "text": "技术研发",
                   "value": "X03"
                 }
-              ]
+              ],
+              "title": "调入项目类型"
             },
             {
-              "title": "调出资产大类",
               "component": "text",
-              "name": "oktorgname"
+              "name": "oktorgname",
+              "title": "调出资产大类"
             },
             {
-              "title": "调入资产大类",
               "component": "text",
-              "name": "ktorgname"
+              "name": "ktorgname",
+              "title": "调入资产大类"
             },
             {
-              "title": "调出资产分类",
               "component": "text",
-              "name": "oanlklname"
+              "name": "oanlklname",
+              "title": "调出资产分类"
             },
             {
-              "title": "调入资产分类",
               "component": "text",
-              "name": "anlklname"
+              "name": "anlklname",
+              "title": "调入资产分类"
             },
             {
-              "title": "调出预算项目",
               "component": "text",
-              "name": "oitem"
+              "flowshow": true,
+              "name": "oitem",
+              "title": "调出预算项目"
             },
             {
-              "title": "调入预算项目",
               "component": "text",
-              "name": "item"
+              "flowshow": true,
+              "name": "item",
+              "title": "调入预算项目"
             },
             {
-              "title": "调出成本中心",
               "component": "text",
-              "name": "okostl"
+              "name": "okostl",
+              "title": "调出成本中心"
             },
             {
-              "title": "调入成本中心",
               "component": "text",
-              "name": "kostl"
+              "name": "kostl",
+              "title": "调入成本中心"
             },
             {
-              "title": "调出需求部门",
               "component": "text",
-              "name": "oorgeh"
+              "flowshow": true,
+              "name": "oorgeh",
+              "title": "调出需求部门"
             },
             {
-              "title": "调入需求部门",
               "component": "text",
-              "name": "orgeh"
+              "flowshow": true,
+              "name": "orgeh",
+              "title": "调入需求部门"
             },
             {
-              "title": "调出币种",
               "component": "text",
-              "name": "owaers"
+              "name": "owaers",
+              "title": "调出币种"
             },
             {
-              "title": "调入币种",
               "component": "text",
-              "name": "waers"
+              "name": "waers",
+              "title": "调入币种"
             },
             {
-              "title": "预算余额(元)",
-              "component": "text",
-              "datatype": "money",
-              "name": "ohslall"
-            },
-            {
-              "title": "预算调整额(元)",
               "component": "text",
               "datatype": "money",
-              "name": "adj_hslall"
+              "flowshow": true,
+              "name": "ohslall",
+              "title": "预算余额(元)"
+            },
+            {
+              "component": "text",
+              "datatype": "money",
+              "flowshow": true,
+              "name": "adj_hslall",
+              "title": "预算调整额(元)"
             }
-          ]
+          ],
+          "titleIndex": 19
         }
-      ]
+      ],
+      "title": "详细信息"
     },
     {
-      "title":"审批人信息",
-      "pageid":"spryxx",
-      "component":"panel",
-      "subComponents":[
+      "component": "panel",
+      "pageid": "spryxx",
+      "subComponents": [
         {
-          "title":"事业部总经理",
-          "component":"text",
-          "name":"budgetadjust.sybzjlname"
+          "component": "text",
+          "name": "budgetadjust.sybzjlname",
+          "title": "事业部总经理"
         },
         {
-          "title":"项目总监",
-          "component":"text",
-          "name":"budgetadjust.xmzjname"
+          "component": "text",
+          "name": "budgetadjust.xmzjname",
+          "title": "项目总监"
         },
         {
-          "title":"集团/固定资产管理员",
-          "component":"text",
-          "name":"budgetadjust.jtgdzcglyname"
+          "component": "text",
+          "name": "budgetadjust.jtgdzcglyname",
+          "title": "集团/固定资产管理员"
         }
-      ]
+      ],
+      "title": "审批信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "cp_budgetadjust",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

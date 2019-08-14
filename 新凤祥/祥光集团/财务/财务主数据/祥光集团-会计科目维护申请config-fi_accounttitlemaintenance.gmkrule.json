@@ -1,178 +1,185 @@
 {
-  "id": "fi_accounttitlemaintenance",
-  "handleOnPC": {
-    "tasknode": ["usertask5"],
-    "flag": ["resubmit"]
-  },
-  "selectPerson": {
-    "tasknode": [""],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "会计科目明细",
           "component": "panel",
-          "panel_id":"kjkmmmx",
+          "panel_id": "kjkmmmx",
           "subComponents": [
             {
-              "component": "table_form",
-              "titleIndex": 1,
-              "id": "kjkmmmx_id",
               "basePath": "accounttitlesubs",
+              "component": "table_form",
+              "id": "kjkmmmx_id",
               "tableForms": [
                 {
-                  "title": "控制范围",
                   "component": "text",
-                  "name": "s_kokrs"
+                  "name": "s_kokrs",
+                  "title": "控制范围"
                 },
                 {
-                  "title": "控制范围名称",
                   "component": "text",
-                  "name": "s_kokrstxt"
+                  "name": "s_kokrstxt",
+                  "title": "控制范围名称"
                 },
                 {
-                  "title": "公司代码",
                   "component": "text",
-                  "name": "s_bukrs"
+                  "name": "s_bukrs",
+                  "title": "公司代码"
                 },
                 {
-                  "title": "公司名称",
                   "component": "text",
-                  "name": "s_bukrstxt"
+                  "flowshow": true,
+                  "name": "s_bukrstxt",
+                  "title": "公司名称"
                 },
                 {
-                  "title": "科目编码",
                   "component": "text",
-                  "name": "s_kstar"
+                  "name": "s_kstar",
+                  "title": "科目编码"
                 },
                 {
-                  "title": "科目名称",
                   "component": "text",
-                  "name": "s_kstartxt"
+                  "flowshow": true,
+                  "name": "s_kstartxt",
+                  "title": "科目名称"
                 },
                 {
-                  "title": "科目货币",
                   "component": "text",
-                  "name": "s_currency"
-                },{
-                  "title": "英文翻译",
+                  "flowshow": true,
+                  "name": "s_currency",
+                  "title": "科目货币"
+                },
+                {
                   "component": "text",
-                  "name": "s_kstartxten"
+                  "name": "s_kstartxten",
+                  "title": "英文翻译"
                 }
-              ]
+              ],
+              "titleIndex": 1
             }
-          ]
-        }
-      ,{
-          "title": "是否存在科目",
+          ],
+          "title": "会计科目明细"
+        },
+        {
           "component": "radio",
+          "editablenode": "usertask4",
           "name": "hasaccount",
-          "editablenode":"usertask4",
-          "options":[
+          "options": [
             {
-              "title":"否",
-              "value":"0"
+              "title": "否",
+              "value": "0"
             },
             {
-              "title":"是",
-              "value":"1"
+              "title": "是",
+              "value": "1"
             }
-
-          ]
+          ],
+          "title": "是否存在科目"
         }
-
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask5"
+    ]
+  },
+  "id": "fi_accounttitlemaintenance",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

@@ -1,131 +1,117 @@
 {
-  "id": "fp_documentsign",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "documentsign.appid"
+          "name": "documentsign.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "documentsign.appda"
+          "name": "documentsign.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "documentsign.pernr",
             "-",
             "documentsign.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "documentsign.sysbusinessunitname",
             "-",
             "documentsign.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.userid"
+          "name": "documentsign.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.username"
+          "name": "documentsign.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.pernr"
+          "name": "documentsign.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.syspostname"
+          "name": "documentsign.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.sysdeptid"
+          "name": "documentsign.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.sysdeptname"
+          "name": "documentsign.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.sysbusinessunitid"
+          "name": "documentsign.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.sysbusinessunitname"
+          "name": "documentsign.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.postid"
+          "name": "documentsign.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "documentsign.id"
+          "name": "documentsign.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "文件签署人",
           "component": "textarea",
-          "name": "documentsign.signedname"
+          "flowshow": true,
+          "name": "documentsign.signedname",
+          "title": "文件签署人"
         },
         {
-          "title": "文件报送单位",
           "component": "testarea",
-          "name": "documentsign.documentunit"
+          "flowshow": true,
+          "name": "documentsign.documentunit",
+          "title": "文件报送单位"
         },
         {
-          "title": "用途",
           "component": "textarea",
-          "name": "documentsign.usenote"
+          "flowshow": true,
+          "name": "documentsign.usenote",
+          "title": "用途"
         },
         {
-          "title": "需要加盖印章",
           "component": "select",
           "id": "needsstamp_select",
           "name": "documentsign.needstamp",
@@ -142,20 +128,12 @@
               "text": "否",
               "value": "0"
             }
-          ]
+          ],
+          "title": "需要加盖印章"
         },
         {
-          "title": "用印类型",
           "component": "select",
           "name": "documentsign.ustype",
-          "showLinkage": [
-            {
-              "id": "needsstamp_select",
-              "values": [
-                "1"
-              ]
-            }
-          ],
           "options": [
             {
               "text": "普通用印",
@@ -165,18 +143,26 @@
               "text": "携章外出",
               "value": "1"
             }
-          ]
+          ],
+          "showLinkage": [
+            {
+              "id": "needsstamp_select",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "title": "用印类型"
         },
         {
-          "title": "印章名称",
           "component": "label",
+          "label": [
+            "sealinfors.sealtext"
+          ],
           "middleName": [
             "documentsign.sealname",
             "sealid"
           ],
-          "label": [
-            "sealinfors.sealtext"
-          ],
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -184,18 +170,18 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "印章名称"
         },
         {
-          "title": "印章类型",
           "component": "label",
+          "label": [
+            "sealetypes.sealename"
+          ],
           "middleName": [
             "documentsign.sealtype",
             "sealid"
           ],
-          "label": [
-            "sealetypes.sealename"
-          ],
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -203,32 +189,18 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "印章类型"
         },
         {
-          "title": "印章使用",
           "component": "label",
-          "showLinkage": [
-            {
-              "id": "needsstamp_select",
-              "values": [
-                "1"
-              ]
-            }
-          ],
           "label": [
             "一式",
             "documentsign.copy",
             "份,共计",
             "documentsign.gold",
             "枚"
-          ]
-        },
-        {
-          "title": "印章使用日期",
-          "component": "text",
-          "datatype": "date",
-          "dateFormat": "yyyy-MM-dd",
+          ],
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -237,13 +209,13 @@
               ]
             }
           ],
-          "name": "documentsign.begdar"
+          "title": "印章使用"
         },
         {
-          "title": "计划归还日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
+          "name": "documentsign.begdar",
           "showLinkage": [
             {
               "id": "needsstamp_select",
@@ -252,33 +224,67 @@
               ]
             }
           ],
-          "name": "documentsign.enddar"
+          "title": "印章使用日期"
+        },
+        {
+          "component": "text",
+          "datatype": "date",
+          "dateFormat": "yyyy-MM-dd",
+          "name": "documentsign.enddar",
+          "showLinkage": [
+            {
+              "id": "needsstamp_select",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "title": "计划归还日期"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "名称与数量",
-      "pageid": "qswjmcysl",
       "component": "panel",
+      "pageid": "qswjmcysl",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "bases",
+          "component": "table_form",
+          "flowshow": true,
           "tableForms": [
             {
-              "title": "文件名称",
               "component": "text",
-              "name": "filenames"
+              "flowshow": true,
+              "name": "filenames",
+              "title": "文件名称"
             },
             {
-              "title": "数量(份)",
               "component": "text",
-              "name": "numbers"
+              "flowshow": true,
+              "name": "numbers",
+              "title": "数量(份)"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "名称与数量"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fp_documentsign",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

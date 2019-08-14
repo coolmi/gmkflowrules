@@ -1,148 +1,131 @@
 {
-  "id": "it_sendsingle",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask3"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.appid"
+          "name": "sendsingle.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.appda"
+          "name": "sendsingle.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "sendsingle.pernr",
             "-",
             "sendsingle.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "sendsingle.sysbusinessunitname",
             "-",
             "sendsingle.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.bukrs"
+          "name": "sendsingle.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.userid"
+          "name": "sendsingle.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.username"
+          "name": "sendsingle.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.syspostname"
+          "name": "sendsingle.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.sysdeptid"
+          "name": "sendsingle.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.sysbusinessunitid"
+          "name": "sendsingle.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.postid"
+          "name": "sendsingle.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.id"
+          "name": "sendsingle.id",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sendsingle.proc_inst_id"
+          "name": "sendsingle.proc_inst_id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请人信息",
-      "pageid": "sqrxx",
       "component": "panel",
+      "pageid": "sqrxx",
       "subComponents": [
         {
+          "component": "text",
+          "editablenode": "",
           "flowshow": true,
-          "title": "提报人姓名",
-          "component": "text",
-          "editablenode": "",
-          "name": "sendsingle.submissioname"
+          "name": "sendsingle.submissioname",
+          "title": "提报人姓名"
         },
         {
-          "title": "提报人itcode",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.itcode"
+          "name": "sendsingle.itcode",
+          "title": "提报人itcode"
         },
         {
-          "title": "电话",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.tel"
+          "name": "sendsingle.tel",
+          "title": "电话"
         },
         {
-          "title": "手机",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.phone"
+          "name": "sendsingle.phone",
+          "title": "手机"
         },
         {
-          "title": "部门",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.itcodedeptname"
+          "name": "sendsingle.itcodedeptname",
+          "title": "部门"
         },
         {
-          "title": "公司",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.bukrsname"
+          "name": "sendsingle.bukrsname",
+          "title": "公司"
         },
         {
-          "title": "紧急程度",
           "component": "select",
           "name": "sendsingle.emerg",
           "options": [
@@ -158,15 +141,16 @@
               "text": "低",
               "value": "低"
             }
-          ]
+          ],
+          "title": "紧急程度"
         },
         {
-          "flowshow": true,
-          "title": "问题来源类别",
           "component": "select",
+          "flowshow": true,
           "name": "sendsingle.problemsource",
           "options": [
             {
+              "flowshow": false,
               "text": "生产应用系统",
               "value": "生产应用系统"
             },
@@ -182,115 +166,121 @@
               "text": "其他",
               "value": "其他"
             }
-          ]
+          ],
+          "title": "问题来源类别"
         },
         {
-          "title": "设备类别",
           "component": "select",
+          "flowshow": true,
           "name": "sendsingle.category",
           "options": [
             {
+              "flowshow": true,
               "text": "电脑",
               "value": "电脑"
             },
             {
+              "flowshow": true,
               "text": "打印机",
               "value": "打印机"
             },
             {
+              "flowshow": true,
               "text": "手机终端",
               "value": "手机终端"
             },
             {
+              "flowshow": true,
               "text": "固定电话",
               "value": "固定电话"
             },
             {
+              "flowshow": true,
               "text": "问题咨询",
               "value": "问题咨询"
             }
-          ]
+          ],
+          "title": "设备类别"
         },
         {
-          "flowshow": true,
-          "title": "问题描述",
           "component": "textarea",
-          "rows": "3",
           "editablenode": "",
-          "name": "sendsingle.semo"
+          "flowshow": true,
+          "name": "sendsingle.semo",
+          "rows": "3",
+          "title": "问题描述"
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "分配运维",
-      "pageid": "fpywxx",
       "component": "panel",
+      "pageid": "fpywxx",
       "subComponents": [
         {
-          "title": "",
           "component": "hidden",
           "editablenode": "",
-          "name": "sendsingle.operengneer"
+          "name": "sendsingle.operengneer",
+          "title": ""
         },
         {
-          "flowshow": true,
-          "title": "运维工程师",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.operengneertxt"
+          "flowshow": true,
+          "name": "sendsingle.operengneertxt",
+          "title": "运维工程师"
         },
         {
-          "title": "联系电话",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.operetel"
+          "name": "sendsingle.operetel",
+          "title": "联系电话"
         },
         {
-          "title": "分配日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.allocdate"
+          "name": "sendsingle.allocdate",
+          "title": "分配日期"
         },
         {
+          "component": "date1",
+          "editablenode": "",
           "flowshow": true,
-          "title": "期望解决日期",
-          "component": "date1",
-          "editablenode": "",
-          "name": "sendsingle.expectdate"
+          "name": "sendsingle.expectdate",
+          "title": "期望解决日期"
         }
-      ]
+      ],
+      "title": "分配运维"
     },
     {
-      "title": "运维记录",
-      "pageid": "ywjlxx",
       "component": "panel",
+      "pageid": "ywjlxx",
       "subComponents": [
         {
-          "title": "计划开始日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.sdate"
+          "name": "sendsingle.sdate",
+          "title": "计划开始日期"
         },
         {
-          "title": "计划结束日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.edate"
+          "name": "sendsingle.edate",
+          "title": "计划结束日期"
         },
         {
-          "title": "实际开始日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.actualsdate"
+          "name": "sendsingle.actualsdate",
+          "title": "实际开始日期"
         },
         {
-          "title": "实际结束日期",
           "component": "date1",
           "editablenode": "",
-          "name": "sendsingle.actualedate"
+          "name": "sendsingle.actualedate",
+          "title": "实际结束日期"
         },
         {
-          "title": "故障类型",
           "component": "select",
           "editablenode": "",
           "name": "sendsingle.faultypes",
@@ -303,27 +293,27 @@
               "text": "软件",
               "value": "software"
             }
-          ]
+          ],
+          "title": "故障类型"
         },
         {
-          "flowshow": true,
-          "title": "问题当前状态",
           "component": "textarea",
           "editablenode": "",
-          "name": "sendsingle.currentstate"
+          "flowshow": true,
+          "name": "sendsingle.currentstate",
+          "title": "问题当前状态"
         },
         {
-          "flowshow": true,
-          "title": "故障描述",
           "component": "textarea",
           "editablenode": "",
-          "name": "sendsingle.spetypedesval"
+          "flowshow": true,
+          "name": "sendsingle.spetypedesval",
+          "title": "故障描述"
         },
         {
-          "title": "是否外协",
           "component": "select",
-          "id": "outsource",
           "editablenode": "",
+          "id": "outsource",
           "name": "sendsingle.outsourc",
           "options": [
             {
@@ -334,26 +324,26 @@
               "text": "否",
               "value": "否"
             }
-          ]
+          ],
+          "title": "是否外协"
         },
         {
-          "title": "质保内外",
           "component": "text",
           "editablenode": "",
-          "name": "sendsingle.warranty"
+          "name": "sendsingle.warranty",
+          "title": "质保内外"
         },
         {
-          "flowshow": true,
-          "title": "解决方案",
           "component": "textarea",
           "editablenode": "",
-          "name": "sendsingle.solution"
+          "flowshow": true,
+          "name": "sendsingle.solution",
+          "title": "解决方案"
         },
         {
-          "flowshow": true,
-          "title": "外协费用",
           "component": "text",
           "editablenode": "",
+          "flowshow": true,
           "name": "sendsingle.outsourcost",
           "showLinkage": [
             {
@@ -362,10 +352,10 @@
                 "是"
               ]
             }
-          ]
+          ],
+          "title": "外协费用"
         },
         {
-          "title": "换件描述",
           "component": "",
           "editablenode": "",
           "name": "sendsingle.inades",
@@ -376,24 +366,20 @@
                 "是"
               ]
             }
-          ]
+          ],
+          "title": "换件描述"
         }
-      ]
+      ],
+      "title": "运维记录"
     },
     {
-      "title": "用户反馈",
-      "pageid": "yhfk",
       "component": "panel",
-      "tasknode": "usertask3,usertask5",
+      "pageid": "yhfk",
       "subComponents": [
         {
-          "flowshow": true,
-          "title": "评分",
           "component": "select",
-          "id": "satisfied",
           "editablenode": "usertask3",
-          "name": "sendsingle.satisfied",
-          "islinkage": true,
+          "flowshow": true,
           "handleLinkage": [
             {
               "id": "satisfiedisplay",
@@ -403,6 +389,9 @@
               ]
             }
           ],
+          "id": "satisfied",
+          "islinkage": true,
+          "name": "sendsingle.satisfied",
           "options": [
             {
               "text": "5",
@@ -425,6 +414,7 @@
               "value": "1"
             }
           ],
+          "title": "评分",
           "validation": {
             "pageid": "yhfk",
             "required": true,
@@ -432,12 +422,12 @@
           }
         },
         {
-          "flowshow": true,
-          "title": "反馈意见",
           "component": "textarea",
-          "rows": "3",
           "editablenode": "usertask3",
+          "flowshow": true,
           "name": "sendsingle.feedback",
+          "rows": "3",
+          "title": "反馈意见",
           "validation": {
             "pageid": "yhfk",
             "required": true,
@@ -445,20 +435,10 @@
           }
         },
         {
-          "title": "不满意项",
           "component": "select",
-          "id": "satisfiedisplay",
           "editablenode": "usertask3",
+          "id": "satisfiedisplay",
           "name": "sendsingle.satisfiedisplay",
-          "showLinkage": [
-            {
-              "id": "satisfied",
-              "values": [
-                "1",
-                "2"
-              ]
-            }
-          ],
           "options": [
             {
               "text": "响应不及时",
@@ -473,13 +453,40 @@
               "value": "NO3"
             }
           ],
+          "showLinkage": [
+            {
+              "id": "satisfied",
+              "values": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "title": "不满意项",
           "validation": {
             "pageid": "yhfk",
             "required": true,
             "validateMsg": "请选择不满意项"
           }
         }
-      ]
+      ],
+      "tasknode": "usertask3,usertask5",
+      "title": "用户反馈"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask3"
+    ]
+  },
+  "id": "it_sendsingle",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

@@ -1,200 +1,176 @@
 {
-  "id": "ap_tradecontractsigning",
-  "handleOnPC": {
-    "tasknode": [
-      "reviewbussman",
-      "nextreviewbussman"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "tradecontractsigning.appid"
+          "name": "tradecontractsigning.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "tradecontractsigning.appda"
+          "name": "tradecontractsigning.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "tradecontractsigning.pernr",
             "-",
             "tradecontractsigning.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "tradecontractsigning.sysbusinessunitname",
             "-",
             "tradecontractsigning.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.bukrs"
+          "name": "tradecontractsigning.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.userid"
+          "name": "tradecontractsigning.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.username"
+          "name": "tradecontractsigning.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.pernr"
+          "name": "tradecontractsigning.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.syspostname"
+          "name": "tradecontractsigning.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.sysdeptid"
+          "name": "tradecontractsigning.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.sysdeptname"
+          "name": "tradecontractsigning.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.sysbusinessunitid"
+          "name": "tradecontractsigning.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.sysbusinessunitname"
+          "name": "tradecontractsigning.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.postid"
+          "name": "tradecontractsigning.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "tradecontractsigning.id"
+          "name": "tradecontractsigning.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "合同标的",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "tradecontractsigning_htbd",
-          "editablenode": "",
-          "name": "tradecontractsigning.htbd"
+          "name": "tradecontractsigning.htbd",
+          "title": "合同标的"
         },
         {
-          "title": "合同类型",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "tradecontractsigning_htlx",
-          "editablenode": "",
-          "name": "tradecontractsigning.htlx"
+          "name": "tradecontractsigning.htlx",
+          "title": "合同类型"
         },
         {
-          "title": "合同描述",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "tradecontractsigning_htms",
-          "editablenode": "",
-          "name": "tradecontractsigning.htms"
+          "name": "tradecontractsigning.htms",
+          "title": "合同描述"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "合同审批人",
-      "pageid": "htsprxx",
       "component": "panel",
+      "pageid": "htsprxx",
       "subComponents": [
         {
-          "title": "法务部分派人员",
           "component": "text",
-          "id": "tradecontractsigning_lawpieassignee",
           "editablenode": "",
-          "name": "tradecontractsigning.lawpieassignee"
+          "id": "tradecontractsigning_lawpieassignee",
+          "name": "tradecontractsigning.lawpieassignee",
+          "title": "法务部分派人员"
         },
         {
-          "title": "业务授权审批人",
           "component": "text",
-          "id": "tradecontractsigning_xqbmfzr",
           "editablenode": "",
-          "name": "tradecontractsigning.xqbmfzr"
+          "id": "tradecontractsigning_xqbmfzr",
+          "name": "tradecontractsigning.xqbmfzr",
+          "title": "业务授权审批人"
         }
-      ]
+      ],
+      "title": "合同审批人"
     },
     {
-      "title": "合同号",
-      "pageid": "hthxx",
       "component": "panel",
+      "pageid": "hthxx",
       "subComponents": [
         {
-          "title": "是否为补充类合同  ",
           "component": "select",
-          "id": "tradecontractsigning_sfwbclht",
           "editablenode": "",
+          "id": "tradecontractsigning_sfwbclht",
           "name": "tradecontractsigning.sfwbclht",
           "options": [
             {
               "text": "是",
-              "value": "0",
+              "value": "0"
             },
             {
               "text": "否",
-              "value": "1",
+              "value": "1"
             }
-          ]
+          ],
+          "title": "是否为补充类合同  "
         },
         {
-          "title": "合同编号类别",
           "component": "select",
-          "id": "tradecontractsigning_htbhlb",
           "editablenode": "",
+          "id": "tradecontractsigning_htbhlb",
           "name": "tradecontractsigning.htbhlb",
           "options": [
             {
@@ -217,20 +193,22 @@
               "text": "E-其他合同（E）",
               "value": "E"
             }
-          ]
+          ],
+          "title": "合同编号类别"
         },
         {
-          "title": "公司信息",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "tradecontractsigning_gsxx",
-          "editablenode": "",
-          "name": "tradecontractsigning.gsxx"
+          "name": "tradecontractsigning.gsxx",
+          "title": "公司信息"
         },
         {
-          "title": "补充合同编号",
           "component": "text",
-          "id": "tradecontractsigning_bcthbh",
           "editablenode": "",
+          "id": "tradecontractsigning_bcthbh",
+          "name": "tradecontractsigning.bcthbh",
           "showLinkage": [
             {
               "id": "tradecontractsigning_sfwbclht",
@@ -239,13 +217,13 @@
               ]
             }
           ],
-          "name": "tradecontractsigning.bcthbh"
+          "title": "补充合同编号"
         },
         {
-          "title": "合同编号",
           "component": "text",
-          "id": "tradecontractsigning_htbh",
           "editablenode": "",
+          "id": "tradecontractsigning_htbh",
+          "name": "tradecontractsigning.htbh",
           "showLinkage": [
             {
               "id": "tradecontractsigning_sfwbclht",
@@ -254,20 +232,19 @@
               ]
             }
           ],
-          "name": "tradecontractsigning.htbh"
+          "title": "合同编号"
         }
-      ]
+      ],
+      "title": "合同号"
     },
     {
-      "title": "印章信息",
-      "pageid": "yzxx",
       "component": "panel",
+      "pageid": "yzxx",
       "subComponents": [
         {
-          "title": "用印类型",
           "component": "select",
-          "id": "tradecontractsigning_yylx",
           "editablenode": "",
+          "id": "tradecontractsigning_yylx",
           "name": "tradecontractsigning.yylx",
           "options": [
             {
@@ -278,60 +255,84 @@
               "text": "携章外出",
               "value": "1"
             }
-          ]
+          ],
+          "title": "用印类型"
         },
         {
-          "title": "印章名称",
           "component": "text",
+          "editablenode": "",
           "id": "tradecontractsigning_yzmc",
-          "editablenode": "",
-          "name": "tradecontractsigning.yzmc"
+          "name": "tradecontractsigning.yzmc",
+          "title": "印章名称"
         },
         {
-          "title": "印章类型",
           "component": "text",
+          "editablenode": "",
           "id": "tradecontractsigning_yzlx",
-          "editablenode": "",
-          "name": "tradecontractsigning.yzlx"
+          "name": "tradecontractsigning.yzlx",
+          "title": "印章类型"
         },
         {
-          "title": "用章管理员",
           "component": "text",
+          "editablenode": "",
           "id": "yzgly",
-          "editablenode": "",
-          "name": "yzgly"
+          "name": "yzgly",
+          "title": "用章管理员"
         },
         {
-          "title": "一式几份",
           "component": "text",
+          "editablenode": "",
           "id": "tradecontractsigning_yzsyfs",
-          "editablenode": "",
-          "name": "tradecontractsigning.yzsyfs"
+          "name": "tradecontractsigning.yzsyfs",
+          "title": "一式几份"
         },
         {
-          "title": "印章使用枚数",
           "component": "text",
+          "editablenode": "",
           "id": "tradecontractsigning_yzsyms",
-          "editablenode": "",
-          "name": "tradecontractsigning.yzsyms"
+          "name": "tradecontractsigning.yzsyms",
+          "title": "印章使用枚数"
         },
         {
-          "title": "使用日期",
           "component": "date1",
+          "editablenode": "",
           "id": "tradecontractsigning_yzsyrq",
-          "editablenode": "",
-          "name": "tradecontractsigning.yzsyrq"
+          "name": "tradecontractsigning.yzsyrq",
+          "title": "使用日期"
         },
         {
-          "title": "计划归还日期",
           "component": "date1",
-          "id": "tradecontractsigning_jhghrq",
           "editablenode": "",
-          "name": "tradecontractsigning.jhghrq"
+          "id": "tradecontractsigning_jhghrq",
+          "name": "tradecontractsigning.jhghrq",
+          "title": "计划归还日期"
         }
-      ]
+      ],
+      "title": "印章信息"
     }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "reviewbussman",
+      "nextreviewbussman"
+    ]
+  },
+  "id": "ap_tradecontractsigning",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
   }
 }

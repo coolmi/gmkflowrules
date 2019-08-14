@@ -1,196 +1,198 @@
 {
-  "id": "shgm_travle",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "travle.appid"
+          "name": "travle.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "travle.appda"
+          "name": "travle.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "travle.pernr",
             "-",
             "travle.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "travle.sysbusinessunitname",
             "-",
             "travle.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.userid"
+          "name": "travle.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.username"
+          "name": "travle.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.pernr"
+          "name": "travle.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.syspostname"
+          "name": "travle.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptid"
+          "name": "travle.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysdeptname"
+          "name": "travle.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitid"
+          "name": "travle.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.sysbusinessunitname"
+          "name": "travle.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.postid"
+          "name": "travle.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "travle.id"
+          "name": "travle.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "出差明细",
-      "pageid": "ccmx",
       "component": "panel",
+      "pageid": "ccmx",
       "subComponents": [
         {
-          "title": "是否提高标准",
           "component": "select",
           "id": "beup",
           "name": "travle.beup",
           "options": [
             {
+              "flowshow": true,
               "text": "否",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "是",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否提高标准"
         },
         {
-          "title": "提高标准原因",
           "component": "textarea",
-          "rows": 5,
           "name": "travle.reason",
+          "rows": 5,
           "showLinkage": [
             {
+              "flowshow": true,
               "id": "beup",
               "values": [
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "提高标准原因"
         },
         {
-          "component": "table_ccmx",
-          "titleIndex": 1,
           "basePath": "bases",
+          "component": "table_ccmx",
           "tableForms": [
             {
-              "title": "出发日期",
-              "component": "text",
-              "editablenode": "",
               "component": "date1",
-              "name": "startda"
+              "editablenode": "",
+              "name": "startda",
+              "title": "出发日期"
             },
             {
-              "title": "到达日期",
-              "component": "text",
-              "editablenode": "",
               "component": "date1",
-              "name": "endda"
+              "editablenode": "",
+              "name": "endda",
+              "title": "到达日期"
             },
             {
-              "title": "出发地点",
               "component": "text",
               "editablenode": "",
-              "name": "splace"
+              "name": "splace",
+              "title": "出发地点"
             },
             {
-              "title": "到达地点",
               "component": "text",
               "editablenode": "",
-              "name": "eplace"
+              "name": "eplace",
+              "title": "到达地点"
             },
             {
-              "title": "交通方式",
               "component": "text",
               "editablenode": "",
-              "name": "transmode"
+              "name": "transmode",
+              "title": "交通方式"
             },
             {
-              "title": "是否签约宾馆",
               "component": "text",
               "editablenode": "",
-              "name": "besign"
+              "name": "besign",
+              "title": "是否签约宾馆"
             },
             {
-              "title": "工作内容",
               "component": "textarea",
               "editablenode": "",
-              "name": "workc"
+              "flowshow": true,
+              "name": "workc",
+              "title": "工作内容"
             }
-          ]
+          ],
+          "titleIndex": 1
         }
-      ]
+      ],
+      "title": "出差明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "shgm_travle",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

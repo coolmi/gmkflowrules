@@ -1,223 +1,181 @@
 {
-  "id": "zitsblyh",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask3",
-      "usertask4",
-      "usertask5"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "budgetadd.appid"
+          "name": "budgetadd.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "budgetadd.appda"
+          "name": "budgetadd.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "budgetadd.pernr",
             "-",
             "budgetadd.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "budgetadd.sysbusinessunitname",
             "-",
             "budgetadd.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.userid"
+          "name": "budgetadd.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.username"
+          "name": "budgetadd.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.pernr"
+          "name": "budgetadd.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.syspostname"
+          "name": "budgetadd.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysdeptid"
+          "name": "budgetadd.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysdeptname"
+          "name": "budgetadd.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysbusinessunitid"
+          "name": "budgetadd.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.sysbusinessunitname"
+          "name": "budgetadd.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.postid"
+          "name": "budgetadd.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetadd.id"
+          "name": "budgetadd.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "领用详细",
-      "pageid": "lysqxxxx",
       "component": "panel",
+      "pageid": "lysqxxxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 1,
           "basePath": "childlist",
+          "component": "table_form",
           "id": "lysqxxxx_table",
           "tableForms": [
             {
-              "title": "资产类别",
               "component": "text",
-              "name": "ascatg"
+              "name": "ascatg",
+              "title": "资产类别"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
-            },{
-              "title": "型号",
-              "component": "text",
-              "name": "model"
-            },{
-              "title": "品牌",
-              "component": "text",
-              "name": "brand"
+              "flowshow": true,
+              "name": "propertyname",
+              "title": "资产描述"
             },
             {
-              "title": "参数",
-              "component": "text",
-              "name": "specification"
-            },
-            {
-              "title": "领用原因",
               "component": "textarea",
-              "name": "zlyyy"
-            },
-            {
-              "title": "使用人ITOCDE",
-              "component": "text",
-              "name": "zsyitcode"
-            },
-            {
-              "title": "申请数量",
-              "component": "text",
-              "name": "zsqsl"
-            },
-            {
-              "title": "单位",
-              "component": "text",
-              "name": "zmeins"
+              "flowshow": true,
+              "name": "zlyyy",
+              "title": "领用原因"
             },
             {
               "component": "text",
-              "title": "参考单价",
-              "datatype": "money",
-              "name": "unitprice"
+              "name": "zsyitcode",
+              "title": "使用人ITOCDE"
             },
             {
               "component": "text",
-              "title": "参考总价",
-              "datatype": "money",
-              "name": "totalprice"
+              "flowshow": true,
+              "name": "zsqsl",
+              "title": "申请数量"
             },
             {
-              "title": "申请日期",
+              "component": "text",
+              "name": "zmeins",
+              "title": "单位"
+            },
+            {
               "component": "text",
               "datatype": "date",
               "dateFormat": "yyyy-MM-dd",
-              "name": "zsbffrq"
+              "flowshow": false,
+              "name": "zsbffrq",
+              "title": "申请日期"
             }
-          ]
+          ],
+          "titleIndex": 1
         }
-      ]
+      ],
+      "title": "领用详细"
     },
     {
-      "title": "发放信息",
-      "pageid": "ITgdzcglyffxx",
-      "tasknode": "usertask3",
       "component": "panel",
+      "pageid": "ITgdzcglyffxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 1,
           "basePath": "childlist",
+          "component": "table_form",
           "id": "ITgdzcglyffxx_table",
           "tableForms": [
             {
-              "title": "资产类别",
               "component": "text",
-              "name": "ascatg"
+              "name": "ascatg",
+              "title": "资产类别"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
+              "name": "propertyname",
+              "title": "资产描述"
             },
             {
-              "title": "领用原因",
               "component": "textarea",
-              "name": "zlyyy"
+              "name": "zlyyy",
+              "title": "领用原因"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "zmeins"
+              "name": "zmeins",
+              "title": "单位"
             },
             {
-              "title": "库存数量",
               "component": "text",
-              "name": "zkcsl"
+              "name": "zkcsl",
+              "title": "库存数量"
             },
             {
-              "title": "设备运行状态",
               "component": "select",
               "name": "zsbyxzt",
               "options": [
@@ -229,43 +187,43 @@
                   "title": "存在问题",
                   "value": "2"
                 }
-              ]
+              ],
+              "title": "设备运行状态"
             },
             {
-              "title": "问题描述",
               "component": "textarea",
               "editablenode": "usertask3",
-              "name": "zwttxt"
+              "name": "zwttxt",
+              "title": "问题描述"
             },
             {
-              "title": "实际发放数量",
               "component": "text",
               "editablenode": "usertask3",
-              "name": "zsjffsl"
+              "name": "zsjffsl",
+              "title": "实际发放数量"
             }
-          ]
+          ],
+          "titleIndex": 1
         }
-      ]
+      ],
+      "tasknode": "usertask3",
+      "title": "发放信息"
     },
     {
-      "title": "接收确认",
-      "pageid": "jsrjsqrxx",
-      "tasknode": "usertask4",
       "component": "panel",
+      "pageid": "jsrjsqrxx",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "jsrjsqrxx_table",
           "basePath": "childlist",
+          "component": "table_form",
+          "id": "jsrjsqrxx_table",
           "tableForms": [
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
+              "name": "propertyname",
+              "title": "资产描述"
             },
             {
-              "title": "是否正常使用",
               "component": "select",
               "editablenode": "usertask4",
               "name": "zyszt",
@@ -278,17 +236,37 @@
                   "title": "存在问题",
                   "value": "2"
                 }
-              ]
+              ],
+              "title": "是否正常使用"
             },
             {
-              "title": "问题描述",
               "component": "textarea",
               "editablenode": "usertask4",
-              "name": "zyswt"
+              "name": "zyswt",
+              "title": "问题描述"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "tasknode": "usertask4",
+      "title": "接收确认"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask3",
+      "usertask4"
+    ]
+  },
+  "id": "zitsblyh",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

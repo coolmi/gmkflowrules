@@ -1,175 +1,198 @@
 {
-  "id": "fico_futuresac",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "开户/销户",
           "component": "select",
+          "flowshow": true,
           "id": "select_m_stype_id",
           "name": "mainModel.m_stype",
           "options": [
             {
+              "flowshow": true,
               "text": "请选择",
               "value": ""
             },
             {
+              "flowshow": true,
               "text": "开户",
               "value": "开户"
             },
             {
+              "flowshow": true,
               "text": "销户",
               "value": "销户"
             }
-          ]
+          ],
+          "title": "开户/销户"
         },
         {
-          "title": "所属法人",
           "component": "label",
+          "flowshow": true,
           "label": [
             "mainModel.m_comp",
             "-",
             "mainModel.m_compnm"
-          ]
+          ],
+          "title": "所属法人"
         },
         {
-          "title": "期货账户",
           "component": "text",
+          "flowshow": true,
           "name": "mainModel.m_accounti",
           "showLinkage": [
             {
+              "flowshow": true,
               "id": "select_m_stype_id",
               "values": [
                 "开户"
               ]
             }
-          ]
+          ],
+          "title": "期货账户"
         },
         {
-          "title": "账户属性",
+          "component": "select",
+          "flowshow": true,
+          "name": "mainModel.m_prop",
+          "options": [
+            {
+              "flowshow": true,
+              "text": "内盘",
+              "value": "0"
+            },
+            {
+              "flowshow": true,
+              "text": "外盘",
+              "value": "1"
+            }
+          ],
+          "title": "账户属性"
+        },
+        {
           "component": "text",
-          "name": "mainModel.m_prop"
+          "flowshow": true,
+          "name": "mainModel.m_qhcompnm",
+          "title": "期货公司全称"
         },
         {
-          "title": "期货公司全称",
-          "component": "text",
-          "name": "mainModel.m_qhcompnm"
-        },
-        {
-          "title": "开销户原因",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.m_why",
           "rows": 4,
-          "name": "mainModel.m_why"
+          "title": "开销户原因"
         },
         {
-          "title": "备注",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.m_remarks",
           "rows": 6,
-          "name": "mainModel.m_remarks"
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fico_futuresac",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

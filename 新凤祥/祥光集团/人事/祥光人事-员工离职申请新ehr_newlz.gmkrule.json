@@ -1,337 +1,364 @@
 {
-  "id": "ehr_newlz",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "离职人员",
           "component": "label",
+          "flowshow": true,
           "label": [
             "mainModel.lzritcode",
             "-",
-            "mainModel.lzrname"
-          ]
+            "mainModel.username"
+          ],
+          "title": "离职人员"
         },
         {
-          "title": "所属公司",
           "component": "text",
-          "name": "mainModel.lzrbutxt"
+          "name": "mainModel.lzrbutxt",
+          "title": "所属公司"
         },
         {
-          "title": "离职岗位",
           "component": "text",
-          "name": "mainModel.lzrpostname"
+          "flowshow": true,
+          "name": "mainModel.lzrpostname",
+          "title": "离职岗位"
         },
         {
-          "title": "所属部门",
           "component": "text",
-          "name": "mainModel.lzrdeptname"
+          "name": "mainModel.lzrdeptname",
+          "title": "所属部门"
         },
         {
-          "title": "离职前组织",
           "component": "text",
-          "name": "mainModel.lzrfullorg"
+          "flowshow": true,
+          "name": "mainModel.lzrfullorg",
+          "title": "离职前组织"
         },
         {
-          "title": "入职时间",
           "component": "text",
-          "name": "mainModel.rzdate"
+          "flowshow": true,
+          "name": "mainModel.rzdate",
+          "title": "入职时间"
         },
         {
-          "title": "任现岗位时间",
           "component": "text",
-          "name": "mainModel.rxgwdate"
+          "name": "mainModel.rxgwdate",
+          "title": "任现岗位时间"
         },
         {
-          "title": "学历",
           "component": "text",
-          "name": "mainModel.xueli"
+          "flowshow": true,
+          "name": "mainModel.xueli",
+          "title": "学历"
         },
         {
-          "title": "专业",
           "component": "text",
-          "name": "mainModel.zhuanye"
+          "flowshow": true,
+          "name": "mainModel.zhuanye",
+          "title": "专业"
         },
         {
-          "title": "离职日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.lzrleavedate"
-
+          "flowshow": true,
+          "name": "mainModel.lzrleavedate",
+          "title": "离职日期"
         },
         {
-          "title": "是否审计",
           "component": "radio",
           "editablenode": "internalaudit",
+          "flowshow": true,
           "name": "mainModel.saudit",
           "options": [
             {
+              "flowshow": true,
               "title": "需要",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "不需要",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否审计"
         },
         {
-          "title": "离职原因",
           "component": "textarea",
-          "name": "mainModel.lzrleavereason"
+          "flowshow": true,
+          "name": "mainModel.lzrleavereason",
+          "title": "离职原因"
         },
         {
-          "title": "离职原因",
           "component": "select",
-          "name": "mainModel.leavereason",
           "editablenode": "usertask3",
-          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8",
+          "flowshow": true,
+          "name": "mainModel.leavereason",
           "options": [
             {
+              "flowshow": true,
               "text": "退休",
               "value": "4"
             },
             {
+              "flowshow": true,
               "text": "劳动合同期满",
               "value": "3"
             },
             {
+              "flowshow": true,
               "text": "协商解除合同",
               "value": "50"
             },
             {
+              "flowshow": true,
               "text": "不适应现工作环境或工作节奏",
               "value": "5"
             },
             {
+              "flowshow": true,
               "text": "交通不便",
               "value": "48"
             },
             {
+              "flowshow": true,
               "text": "个人职业转型（创业/从教/从政）",
               "value": "44"
             },
             {
+              "flowshow": true,
               "text": "个人发展受限",
               "value": "11"
             },
             {
+              "flowshow": true,
               "text": "怀孕",
               "value": "49"
             },
             {
+              "flowshow": true,
               "text": "个人健康原因",
               "value": "14"
             },
             {
+              "flowshow": true,
               "text": "个人家庭与工作冲突",
               "value": "17"
             },
             {
+              "flowshow": true,
               "text": "绩效表现达不到公司要求",
               "value": "2"
             },
             {
+              "flowshow": true,
               "text": "与领导/同事关系不融洽",
               "value": "9"
             },
             {
+              "flowshow": true,
               "text": "不认同公司企业文化",
               "value": "6"
             },
             {
+              "flowshow": true,
               "text": "工作时间长",
               "value": "16"
             },
             {
+              "flowshow": true,
               "text": "工作强度大",
               "value": "46"
             },
             {
+              "flowshow": true,
               "text": "违反公司纪律/规定",
               "value": "37"
             },
             {
+              "flowshow": true,
               "text": "旷工三天以上(含)",
               "value": "39"
             },
             {
+              "flowshow": true,
               "text": "违反国家法律法规",
               "value": "56"
             },
             {
+              "flowshow": true,
               "text": "死亡",
               "value": "51"
             },
             {
+              "flowshow": true,
               "text": "失踪",
               "value": "52"
             },
             {
+              "flowshow": true,
               "text": "收入低于预期",
               "value": "7"
             },
             {
+              "flowshow": true,
               "text": "怀孕",
               "value": "49"
             },
             {
+              "flowshow": true,
               "text": "协商解除合同",
               "value": "50"
             },
             {
+              "flowshow": true,
               "text": "其他",
               "value": "53"
             },
             {
+              "flowshow": true,
               "text": "试用期内不符合岗位录用条件",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "绩效表现达不到公司要求",
               "value": "33"
             },
             {
+              "flowshow": true,
               "text": "对公司造成重大经济损失",
               "value": "35"
             },
             {
+              "flowshow": true,
               "text": "违反公司纪律/规定",
               "value": "37"
             },
             {
+              "flowshow": true,
               "text": "旷工三天及以上",
               "value": "39"
             },
             {
+              "flowshow": true,
               "text": "违反国家法律法规",
               "value": "41"
             },
             {
+              "flowshow": true,
               "text": "其他劳动合同法规定的法律条款",
               "value": "43"
             },
             {
+              "flowshow": true,
               "text": "死亡",
               "value": "51"
             },
             {
+              "flowshow": true,
               "text": "失踪",
               "value": "52"
             },
             {
+              "flowshow": true,
               "text": "新入职没有报道",
               "value": "55"
             }
-          ]
+          ],
+          "tasknode": "usertask3,usertask4,usertask5,usertask6,usertask7,usertask8",
+          "title": "离职原因"
         },
         {
-          "title": "是否签署对外联络信息",
           "component": "radio",
-          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
           "editablenode": "usertask4",
           "name": "mainModel.sdwqsllxx",
           "options": [
@@ -343,60 +370,79 @@
               "title": "否",
               "value": "1"
             }
-          ]
-        },
-        {
-          "title": "预计最后工作日",
+          ],
           "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
-          "editablenode":"usertask4",
-          "component": "date1",
-          "name": "mainModel.leavedate"
+          "title": "是否签署对外联络信息"
         },
         {
-          "title": "实际最后工作日",
+          "component": "date1",
+          "editablenode": "usertask4",
+          "flowshow": true,
+          "name": "mainModel.leavedate",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
+          "title": "预计最后工作日"
+        },
+        {
+          "component": "date1",
+          "editablenode": "usertask7",
+          "name": "mainModel.leavedate_qr",
           "tasknode": "usertask7,usertask8,usertask6",
-          "editablenode":"usertask7",
-          "component": "date1",
-          "name": "mainModel.leavedate_qr"
+          "title": "实际最后工作日"
         },
         {
-          "title": "离职交接内容",
-          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
-          "editablenode":"usertask4",
           "component": "textarea",
-          "name": "mainModel.lzjjnr"
+          "editablenode": "usertask4",
+          "name": "mainModel.lzjjnr",
+          "tasknode": "usertask4,usertask5,usertask6,usertask7,usertask8",
+          "title": "离职交接内容"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "交接信息会签",
-      "pageid": "jjxxhq",
       "component": "panel",
+      "pageid": "jjxxhq",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "signerMaps",
+          "component": "table_form",
           "id": "",
           "tableForms": [
             {
-              "title": "审核内容",
               "component": "text",
-              "name": "signertype"
+              "name": "signertype",
+              "title": "审核内容"
             },
             {
-              "title": "审核人岗位",
               "component": "text",
-              "name": "postname"
+              "name": "postname",
+              "title": "审核人岗位"
             },
             {
-              "title": "审核人",
               "component": "text",
-              "name": "username"
+              "name": "username",
+              "title": "审核人"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "交接信息会签"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "ehr_newlz",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

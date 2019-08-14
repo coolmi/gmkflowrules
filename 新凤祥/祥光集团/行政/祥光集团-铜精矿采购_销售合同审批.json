@@ -1,145 +1,126 @@
 {
-  "id": "adm_purchasesalecontract",
-  "hiddenFiles": {
-    "flowFlag": {
-      "tasknode": [
-        "internalaudit"
-      ]
-    }
-  },
-  "handleOnPC": {
-    "tasknode": [
-      "usertask2","usertask5"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "合同类型",
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.htlx",
           "options": [
             {
+              "flowshow": true,
               "text": "采购",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "销售",
               "value": "1"
             }
-          ]
+          ],
+          "title": "合同类型"
         },
         {
-          "title": "法人单位",
           "component": "text",
-          "name": "mainModel.frbutxt"
+          "flowshow": true,
+          "name": "mainModel.frbutxt",
+          "title": "法人单位"
         },
         {
-          "title": "供应商/采购商",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.gysmc",
           "rows": "3",
-          "name": "mainModel.gysmc"
+          "title": "供应商/采购商"
         },
         {
-          "title": "原采购合同供应商编码",
           "component": "text",
           "name": "mainModel.ycghtgysbm",
           "showLinkage": [
@@ -149,138 +130,134 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "原采购合同供应商编码"
         },
         {
-          "title": "业务类型",
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.ywlx",
           "options": [
             {
+              "flowshow": true,
               "text": "长单",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "现货",
               "value": "1"
             }
-          ]
+          ],
+          "title": "业务类型"
         },
         {
-          "title": "合同号",
           "component": "text",
-          "name": "mainModel.hth"
+          "name": "mainModel.hth",
+          "title": "合同号"
         },
         {
-          "title": "备注",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.biz",
           "rows": "4",
-          "name": "mainModel.biz"
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "合同审批",
-      "pageid": "htsp_page2",
       "component": "panel",
-      "tasknode": "usertask2,usertask5",
+      "pageid": "htsp_page2",
       "subComponents": [
         {
-          "title": "汇总意见",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.hzyj",
           "rows": 8,
-          "name": "mainModel.hzyj"
+          "title": "汇总意见"
         },
         {
-          "title": "条款明细",
           "component": "panel",
           "panel_id": "zjtk_panel",
-          "pageid": "ywfj",
           "subComponents": [
             {
-              "component": "table_form",
               "basePath": "allfiles",
-              "titleIndex": 0,
+              "component": "table_form",
               "id": "files_zjsh_table",
               "tableForms": [
                 {
-                  "title": "文件名称",
                   "component": "text",
-                  "name": "filename",
                   "events": {
+                    "afrescoid": "afrescoid",
                     "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
+                    "filename": "filename"
+                  },
+                  "name": "filename",
+                  "title": "文件名称"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "条款明细"
         }
-      ]
+      ],
+      "tasknode": "usertask2,usertask5",
+      "title": "合同审批"
     },
     {
-      "title": "合同文本",
       "component": "panel",
       "pageid": "htsp_page",
-      "tasknode": "internalaudit",
       "subComponents": [
         {
-          "title": "",
           "component": "hidden",
           "id": "fwsh_hidden",
-          "name": "fwsh"
+          "name": "fwsh",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
           "id": "wlsh_hidden",
-          "name": "wlsh"
+          "name": "wlsh",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
           "id": "ylsh_hidden",
-          "name": "ylsh"
+          "name": "ylsh",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
           "id": "zjsh_hidden",
-          "name": "zjsh"
+          "name": "zjsh",
+          "title": ""
         },
         {
-          "title": "",
-          "component": "hidden",
-          "id": "wsmd_hidden",
-          "name": "wsmd"
-        },
-        {
-          "title": "原料事业部意见",
           "component": "textarea",
-          "name": "mainModel.htspyj",
-          "id": "htspyj_ylsh",
           "editablenode": "internalaudit",
           "hiddenNotPost": true,
+          "id": "htspyj_ylsh",
+          "name": "mainModel.htspyj",
+          "showLinkage": [
+            {
+              "id": "ylsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "title": "原料事业部意见",
           "validation": {
             "pageid": "htsp_page",
             "required": true,
             "validateMsg": "原料事业部意见必填"
-          },
-          "showLinkage": [
-            {
-              "id": "ylsh_hidden",
-              "values": [
-                "true"
-              ]
-            }
-          ]
+          }
         },
         {
-          "title": "最初合同草本",
           "component": "panel",
           "panel_id": "yltk_panel",
-          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "ylsh_hidden",
@@ -291,51 +268,50 @@
           ],
           "subComponents": [
             {
-              "component": "table_form",
               "basePath": "allfiles",
-              "titleIndex": 0,
+              "component": "table_form",
               "id": "files_ylsh_table",
               "tableForms": [
                 {
-                  "title": "文件名称",
                   "component": "text",
-                  "name": "filename",
                   "events": {
+                    "afrescoid": "afrescoid",
                     "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
+                    "filename": "filename"
+                  },
+                  "name": "filename",
+                  "title": "文件名称"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "合同文本"
         },
         {
-          "title": "法务意见",
           "component": "textarea",
-          "name": "mainModel.htspyj",
-          "id": "htspyj_fwsh",
           "editablenode": "internalaudit",
           "hiddenNotPost": true,
+          "id": "htspyj_fwsh",
+          "name": "mainModel.htspyj",
+          "showLinkage": [
+            {
+              "id": "fwsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "title": "法务意见",
           "validation": {
             "pageid": "htsp_page",
             "required": true,
             "validateMsg": "法务意见必填"
-          },
-          "showLinkage": [
-            {
-              "id": "fwsh_hidden",
-              "values": [
-                "true"
-              ]
-            }
-          ]
+          }
         },
         {
-          "title": "法务条款",
           "component": "panel",
           "panel_id": "fwtk_panel",
-          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "fwsh_hidden",
@@ -346,85 +322,50 @@
           ],
           "subComponents": [
             {
-              "component": "table_form",
               "basePath": "allfiles",
-              "titleIndex": 0,
+              "component": "table_form",
               "id": "files_fwsh_table",
               "tableForms": [
                 {
-                  "title": "文件名称",
                   "component": "text",
-                  "name": "filename",
                   "events": {
+                    "afrescoid": "afrescoid",
                     "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
+                    "filename": "filename"
+                  },
+                  "name": "filename",
+                  "title": "文件名称"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "法务条款"
         },
         {
-          "title": "最初合同草本",
-          "component": "panel",
-          "panel_id": "zchtcb_panel",
-          "pageid": "ywfj",
+          "component": "textarea",
+          "editablenode": "internalaudit",
+          "hiddenNotPost": true,
+          "id": "htspyj_zjsh",
+          "name": "mainModel.htspyj",
           "showLinkage": [
             {
-              "id": "htspyj_ylsh",
+              "id": "zjsh_hidden",
               "values": [
                 "true"
               ]
             }
           ],
-          "subComponents": [
-            {
-              "component": "table_form",
-              "basePath": "fwotherfiles",
-              "titleIndex": 0,
-              "id": "files_zchtcb_table",
-              "tableForms": [
-                {
-                  "title": "文件名称",
-                  "component": "text",
-                  "name": "filename",
-                  "events": {
-                    "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
           "title": "资金意见",
-          "component": "textarea",
-          "name": "mainModel.htspyj",
-          "id": "htspyj_zjsh",
-          "editablenode": "internalaudit",
-          "hiddenNotPost": true,
           "validation": {
             "pageid": "htsp_page",
             "required": true,
             "validateMsg": "资金意见必填"
-          },
-          "showLinkage": [
-            {
-              "id": "zjsh_hidden",
-              "values": [
-                "true"
-              ]
-            }
-          ]
+          }
         },
         {
-          "title": "资金条款",
           "component": "panel",
           "panel_id": "zjtk_panel",
-          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "zjsh_hidden",
@@ -435,51 +376,50 @@
           ],
           "subComponents": [
             {
-              "component": "table_form",
               "basePath": "allfiles",
-              "titleIndex": 0,
+              "component": "table_form",
               "id": "files_zjsh_table",
               "tableForms": [
                 {
-                  "title": "文件名称",
                   "component": "text",
-                  "name": "filename",
                   "events": {
+                    "afrescoid": "afrescoid",
                     "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
+                    "filename": "filename"
+                  },
+                  "name": "filename",
+                  "title": "文件名称"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "资金条款"
         },
         {
-          "title": "物流意见",
           "component": "textarea",
-          "name": "mainModel.htspyj",
-          "id": "htspyj_wlsh",
-          "hiddenNotPost": true,
           "editablenode": "internalaudit",
+          "hiddenNotPost": true,
+          "id": "htspyj_wlsh",
+          "name": "mainModel.htspyj",
+          "showLinkage": [
+            {
+              "id": "wlsh_hidden",
+              "values": [
+                "true"
+              ]
+            }
+          ],
+          "title": "物流意见",
           "validation": {
             "pageid": "htsp_page",
             "required": true,
             "validateMsg": "物流意见必填"
-          },
-          "showLinkage": [
-            {
-              "id": "wlsh_hidden",
-              "values": [
-                "true"
-              ]
-            }
-          ]
+          }
         },
         {
-          "title": "物流条款",
           "component": "panel",
           "panel_id": "wltk_panel",
-          "pageid": "ywfj",
           "showLinkage": [
             {
               "id": "wlsh_hidden",
@@ -490,108 +430,51 @@
           ],
           "subComponents": [
             {
-              "component": "table_form",
               "basePath": "allfiles",
-              "titleIndex": 0,
+              "component": "table_form",
               "id": "files_wlsh_table",
               "tableForms": [
                 {
-                  "title": "文件名称",
                   "component": "text",
-                  "name": "filename",
                   "events": {
+                    "afrescoid": "afrescoid",
                     "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
+                    "filename": "filename"
+                  },
+                  "name": "filename",
+                  "title": "文件名称"
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "WSMD意见",
-          "component": "textarea",
-          "name": "mainModel.htspyj",
-          "id": "htspyj_wsmd",
-          "hiddenNotPost": true,
-          "editablenode": "internalaudit",
-          "validation": {
-            "pageid": "htsp_page",
-            "required": true,
-            "validateMsg": "WSMD意见必填"
-          },
-          "showLinkage": [
-            {
-              "id": "wsmd_hidden",
-              "values": [
-                "true"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "WSMD条款",
-          "component": "panel",
-          "panel_id": "wsmd_panel",
-          "pageid": "ywfj",
-          "showLinkage": [
-            {
-              "id": "wsmd_hidden",
-              "values": [
-                "true"
-              ]
+              ],
+              "titleIndex": 0
             }
           ],
-          "subComponents": [
-            {
-              "component": "table_form",
-              "basePath": "allfiles",
-              "titleIndex": 0,
-              "id": "files_wsmd_table",
-              "tableForms": [
-                {
-                  "title": "文件名称",
-                  "component": "text",
-                  "name": "filename",
-                  "events": {
-                    "eventType": "openDocument",
-                    "filename": "filename",
-                    "afrescoid": "afrescoid"
-                  }
-                }
-              ]
-            }
-          ]
+          "title": "物流条款"
         }
-      ]
-    },
-    {
-      "title": "最终确认合同",
-      "component": "panel",
-      "panel_id": "zzht_panel",
-      "pageid": "ywfj",
-      "tasknode": "usertask3,usertask4,usertask5",
-      "subComponents": [
-        {
-          "component": "table_form",
-          "basePath": "task345files",
-          "titleIndex": 0,
-          "id": "files_zzht_table",
-          "tableForms": [
-            {
-              "title": "文件名称",
-              "component": "text",
-              "name": "filename",
-              "events": {
-                "eventType": "openDocument",
-                "filename": "filename",
-                "afrescoid": "afrescoid"
-              }
-            }
-          ]
-        }
+      ],
+      "tasknode": "internalaudit",
+      "title": "合同文本"
+    }
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask2,usertask5"
+    ]
+  },
+  "hiddenFiles": {
+    "flowFlag": {
+      "tasknode": [
+        "internalaudit"
       ]
     }
-  ]
+  },
+  "id": "adm_purchasesalecontract",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

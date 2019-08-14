@@ -1,125 +1,109 @@
 {
-  "id": "flow_gmkoa_marketingcontract",
-  "handleOnPC": {
-    "tasknode": [
-      "createsapht"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "产品业务分类",
           "component": "radio",
           "name": "mainModel.htcpywfl",
           "options": [
             {
+              "flowshow": false,
               "title": "出口熟食",
               "value": "0"
             },
@@ -139,110 +123,139 @@
               "title": "有机肥",
               "value": "4"
             }
-          ]
+          ],
+          "title": "产品业务分类"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型"
         },
         {
-          "title": "客户编码",
           "component": "text",
-          "name": "mainModel.khbh"
+          "name": "mainModel.khbh",
+          "title": "客户编码"
         },
         {
-          "title": "客户名称",
           "component": "text",
-          "name": "mainModel.khmc"
+          "flowshow": true,
+          "name": "mainModel.khmc",
+          "title": "客户名称"
         },
         {
-          "title": "主抄送人",
           "component": "textarea",
-          "name": "mainModel.zcs"
+          "name": "mainModel.zcs",
+          "title": "主抄送人"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "基本信息",
-      "pageid": "baseInfo",
       "component": "panel",
+      "pageid": "baseInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "base_table",
           "basePath": "infos",
+          "component": "table_form",
+          "id": "base_table",
           "tableForms": [
             {
-              "title": "物料编码",
               "component": "text",
-              "name": "wlbh"
+              "name": "wlbh",
+              "title": "物料编码"
             },
             {
-              "title": "物料描述",
               "component": "text",
-              "name": "wlms"
+              "flowshow": true,
+              "name": "wlms",
+              "title": "物料描述"
             },
             {
-              "title": "数量",
               "component": "text",
-              "name": "snum"
+              "flowshow": true,
+              "name": "snum",
+              "title": "数量"
             },
             {
-              "title": "单价",
               "component": "text",
-              "name": "price"
+              "flowshow": true,
+              "name": "price",
+              "title": "单价"
             },
             {
-              "title": "货币单位",
               "component": "text",
-              "name": "hbdw"
+              "flowshow": true,
+              "name": "hbdw",
+              "title": "货币单位"
             },
             {
-              "title": "合同毛利率（%）",
               "component": "text",
-              "name": "htmlv"
+              "flowshow": true,
+              "name": "htmlv",
+              "title": "合同毛利率（%）"
             },
             {
-              "title": "人均贡献（元/人/时）",
               "component": "text",
-              "name": "rjgx"
+              "flowshow": true,
+              "name": "rjgx",
+              "title": "人均贡献（元/人/时）"
             },
             {
-              "title": "合同金额（元）",
               "component": "text",
-              "name": "htjey"
+              "flowshow": true,
+              "name": "htjey",
+              "title": "合同金额（元）"
             },
             {
-              "title": "合同金额（美元）",
               "component": "text",
-              "name": "htjem"
+              "flowshow": true,
+              "name": "htjem",
+              "title": "合同金额（美元）"
             },
             {
-              "title": "合同期限（月）",
               "component": "text",
-              "name": "htqx"
+              "flowshow": true,
+              "name": "htqx",
+              "title": "合同期限（月）"
             },
             {
-              "title": "有效起始日期",
               "component": "text",
-              "name": "sdate"
+              "flowshow": true,
+              "name": "sdate",
+              "title": "有效起始日期"
             },
             {
-              "title": "有效结束日期",
               "component": "text",
-              "name": "edate"
+              "flowshow": true,
+              "name": "edate",
+              "title": "有效结束日期"
             },
             {
-              "title": "产品基本工艺描述",
               "component": "text",
-              "name": "cpgyms"
+              "flowshow": true,
+              "name": "cpgyms",
+              "title": "产品基本工艺描述"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "基本信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "createsapht"
+    ]
+  },
+  "id": "flow_gmkoa_marketingcontract",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

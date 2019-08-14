@@ -1,275 +1,280 @@
 {
-  "id": "cr_carrepair",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "carrepair.appid"
+          "name": "carrepair.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "carrepair.appda"
+          "name": "carrepair.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "carrepair.pernr",
             "-",
             "carrepair.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "carrepair.sysbusinessunitname",
             "-",
             "carrepair.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.bukrs"
+          "name": "carrepair.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.userid"
+          "name": "carrepair.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.username"
+          "name": "carrepair.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.pernr"
+          "name": "carrepair.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.syspostname"
+          "name": "carrepair.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.sysdeptid"
+          "name": "carrepair.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.sysdeptname"
+          "name": "carrepair.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.sysbusinessunitid"
+          "name": "carrepair.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.sysbusinessunitname"
+          "name": "carrepair.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.postid"
+          "name": "carrepair.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "carrepair.id"
+          "name": "carrepair.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "wererrrwq",
       "component": "panel",
+      "pageid": "wererrrwq",
       "subComponents": [
         {
-          "title": "维修保养类型",
           "component": "select",
-          "id": "carrepair_urgentflag",
           "editablenode": "",
+          "flowshow": true,
+          "id": "carrepair_urgentflag",
           "name": "carrepair.urgentflag",
           "options": [
             {
+              "flowshow": true,
               "text": "正常保养",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "正常维修",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "紧急维修",
               "value": "2"
             }
-          ]
+          ],
+          "title": "维修保养类型"
         },
         {
-          "title": "维修日期",
           "component": "text",
-          "id": "carrepair_repairdate",
-          "editablenode": "",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "carrepair.repairdate"
+          "editablenode": "",
+          "flowshow": true,
+          "id": "carrepair_repairdate",
+          "name": "carrepair.repairdate",
+          "title": "维修日期"
         },
         {
-          "title": "车号",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "carrepair_carnumber",
-          "editablenode": "",
-          "name": "carrepair.carnumber"
+          "name": "carrepair.carnumber",
+          "title": "车号"
         },
         {
-          "title": "驾驶员",
           "component": "text",
+          "editablenode": "",
           "id": "carrepair_driver",
-          "editablenode": "",
-          "name": "carrepair.driver"
+          "name": "carrepair.driver",
+          "title": "驾驶员"
         },
         {
-          "title": "里程表指码",
           "component": "text",
+          "editablenode": "",
           "id": "carrepair_odometercode",
-          "editablenode": "",
-          "name": "carrepair.odometercode"
+          "name": "carrepair.odometercode",
+          "title": "里程表指码"
         },
         {
-          "title": "汽修厂",
           "component": "text",
+          "editablenode": "",
           "id": "carrepair_garage",
-          "editablenode": "",
-          "name": "carrepair.garage"
+          "name": "carrepair.garage",
+          "title": "汽修厂"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "id": "carrepair_remarks",
           "editablenode": "",
+          "flowshow": true,
+          "id": "carrepair_remarks",
+          "name": "carrepair.remarks",
           "rows": "3",
-          "name": "carrepair.remarks"
+          "title": "备注"
         },
         {
-          "title": "费用合计",
           "component": "text",
-          "id": "carrepair_totalmoney",
           "editablenode": "",
-          "name": "carrepair.totalmoney"
+          "flowshow": true,
+          "id": "carrepair_totalmoney",
+          "name": "carrepair.totalmoney",
+          "title": "费用合计"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "配件信息",
-      "pageid": "wewrwr",
       "component": "panel",
+      "pageid": "wewrwr",
       "subComponents": [
         {
-          "title": "",
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "matriallist",
+          "component": "table_form",
           "id": "LA_wewrwr",
           "tableForms": [
             {
-              "title": "分类",
               "component": "text",
+              "editablenode": "",
               "id": "partsclass",
-              "editablenode": "",
-              "name": "partsclass"
+              "name": "partsclass",
+              "title": "分类"
             },
             {
-              "title": "配件",
               "component": "text",
+              "editablenode": "",
               "id": "partsname",
-              "editablenode": "",
-              "name": "partsname"
+              "name": "partsname",
+              "title": "配件"
             },
             {
-              "title": "数量",
               "component": "text",
+              "editablenode": "",
               "id": "amount",
-              "editablenode": "",
-              "name": "amount"
+              "name": "amount",
+              "title": "数量"
             },
             {
-              "title": "单价",
               "component": "text",
+              "editablenode": "",
               "id": "unitprice",
-              "editablenode": "",
-              "name": "unitprice"
+              "name": "unitprice",
+              "title": "单价"
             },
             {
-              "title": "维修工时费",
               "component": "text",
+              "editablenode": "",
               "id": "manhours",
-              "editablenode": "",
-              "name": "manhours"
+              "name": "manhours",
+              "title": "维修工时费"
             },
             {
-              "title": "保质期",
               "component": "text",
+              "editablenode": "",
               "id": "shelflife",
-              "editablenode": "",
-              "name": "shelflife"
+              "name": "shelflife",
+              "title": "保质期"
             },
             {
-              "title": "保质方式",
               "component": "text",
-              "id": "qualityoflife",
               "editablenode": "",
-              "name": "qualityoflife"
+              "id": "qualityoflife",
+              "name": "qualityoflife",
+              "title": "保质方式"
             },
             {
-              "title": "维修内容",
               "component": "textarea",
-              "id": "repaircontent",
               "editablenode": "",
-              "name": "repaircontent"
+              "flowshow": true,
+              "id": "repaircontent",
+              "name": "repaircontent",
+              "title": "维修内容"
             }
-          ]
-        },
-      ]
+          ],
+          "title": "",
+          "titleIndex": 0
+        }
+      ],
+      "title": "配件信息"
     }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "cr_carrepair",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
   }
 }

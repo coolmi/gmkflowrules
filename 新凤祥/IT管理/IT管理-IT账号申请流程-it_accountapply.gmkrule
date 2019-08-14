@@ -1,263 +1,243 @@
 {
-  "id": "it_accountapply",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
-  "forms": [
-	{
-      "title": "基本信息",
-      "pageid": "jbxx",
-      "component": "panel",
-      "subComponents": [
+    "forms": [
         {
-          "title": "申请单号",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.appid"
-        },
-        {
-          "title": "申请日期",
-          "component": "date1",
-          "editablenode": "",
-          "name": "accountapply.appda"
-        },
-        {
-          "title": "申请人姓名",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "accountapply.pernr",
-            "-",
-            "accountapply.username"
-          ]
-        },
-        {
-          "title": "所属部门",
-          "component": "label",
-          "editablenode": "",
-          "label": [
-            "accountapply.sysbusinessunitname",
-            "-",
-            "accountapply.sysdeptname"
-          ]
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.bukrs"
-        },
-        
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.userid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.username"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.syspostname"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.sysdeptid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.sysbusinessunitid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.postid"
-        },
-        {
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.id"
-        },
-		{
-          "title": "",
-          "component": "hidden",
-          "name": "accountapply.proc_inst_id"
-        }
-      ]
-    },
-    {
-      "title": "申请信息",
-      "pageid": "sqxx",
-      "component": "panel",
-      "subComponents": [
-      {
-      "flowshow": true,
-                "title": "类型",
-                "component": "select",
-                "name": "accountapply.atype",
-                "id":"atype",
-                "options": [
-                  {
-                    "text": "公司内成员使用",
-                    "value": "1"
-                  },
-      			 {
-                    "text": "外来人员使用",
-                    "value": "2"
-                  }
-                ]
-       },
-        {
-            "flowshow": true,
-          "title": "使用人姓名",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyrname"
-        },
-		{
-		"flowshow": true,
-          "title": "ITCODE",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyritcode"
-        },
-		{
-		    "flowshow": true,
-          "title": "电话",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyrmobile"
-        },
-		{
-          "title": "使用人手机",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyrphone"
-        },
-		{
-          "title": "使用人公司",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyrbutxt",
-          "showLinkage":[
-                  {
-                      "id":"atype",
-                      "values":["1"]
-                  }
-              ]
-
-        },
-		{
-          "title": "使用人部门",
-          "component": "text",
-          "editablenode": "",
-          "name": "accountapply.accsyrdepname",
-            "showLinkage":[
-                            {
-                                "id":"atype",
-                                "values":["1"]
-                            }
-                        ]
-        },
-		{
-          "title": "账号有效开始日期",
-          "component": "date1",
-          "editablenode": "",
-          "name": "accountapply.accstartperiod"
-        },
-        {
-            "flowshow": true,
-          "title": "申请账号类型",
-          "component": "checkbox",
-          "name": "accountapply.acctype",
-          "options": [
-            {
-              "text": "OA、VPN、W3",
-              "value": "0"
-            },
-            {
-              "text": "Mail",
-              "value": "1"
-            },{
-                          "text": "SAP",
-                          "value": "4"
-            },
-            {
-             "text": "执行系统",
-              "value": "5"
-                        }
-          ]
-        },
-		{
-          "title": "申请事务类型",
-          "component": "select",
-          "name": "accountapply.acctranstype",
-          "options": [
-            {
-              "text": "新建用户",
-              "value": "0"
-            },
-			{
-              "text": "锁定用户",
-              "value": "1"
-            },
-			{
-              "text": "解锁用户",
-              "value": "2"
-            },
-			{
-              "text": "初始密码",
-              "value": "3"
-            }
-          ]
-        },
-		{
-		    "flowshow": true,
-          "title": "申请原因",
-          "component": "textarea",
-          "rows": "3",
-          "name": "accountapply.accapplyreason"
-        },
+            "component": "panel",
+            "pageid": "jbxx",
+            "subComponents": [
                 {
-                  "title": "内部顾问",
-                  "component": "text",
-                  "editablenode": "usertask2",
-                  "tasknode": "usertask2",
-                  "notShowOnView": true,
-                  "forSelectPerson": {
-                    "onclick": "getuser",
-                    "postshow": true,
-                    "showformname": "nbgwtext",
-                    "valuetype": ["objid"],
-                    "showtype": [
-                      "objid",
-                      "nachn",
-                      "stext"
-                    ]
-                  },
-                  "name": "accountapply.nbgw",
-                  "validation": {
-                    "pageid": "sqxx",
-                    "required": true,
-                    "validationMsg": "请选择内部顾问"
-                  }
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "accountapply.appid",
+                    "title": "申请单号"
+                },
+                {
+                    "component": "date1",
+                    "editablenode": "",
+                    "name": "accountapply.appda",
+                    "title": "申请日期"
+                },
+                {
+                    "component": "label",
+                    "editablenode": "",
+                    "label": [
+                        "accountapply.pernr",
+                        "-",
+                        "accountapply.username"
+                    ],
+                    "title": "申请人姓名"
+                },
+                {
+                    "component": "label",
+                    "editablenode": "",
+                    "label": [
+                        "accountapply.sysbusinessunitname",
+                        "-",
+                        "accountapply.sysdeptname"
+                    ],
+                    "title": "所属部门"
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.bukrs",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.userid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.username",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.syspostname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.sysdeptid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.sysbusinessunitid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.postid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.id",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "accountapply.proc_inst_id",
+                    "title": ""
                 }
-      ]
+            ],
+            "title": "基本信息"
+        },
+        {
+            "component": "panel",
+            "pageid": "sqxx",
+            "subComponents": [
+                {
+                    "component": "select",
+                    "flowshow": true,
+                    "id": "atype",
+                    "name": "accountapply.atype",
+                    "options": [
+                        {
+                            "text": "公司内成员使用",
+                            "value": "1"
+                        },
+                        {
+                            "text": "外来人员使用",
+                            "value": "2"
+                        }
+                    ],
+                    "title": "类型"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "flowshow": true,
+                    "name": "accountapply.accsyrname",
+                    "title": "申请人"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "flowshow": true,
+                    "name": "accountapply.accsyritcode",
+                    "title": "ITCODE"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "flowshow": true,
+                    "name": "accountapply.accsyrmobile",
+                    "title": "电话"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "accountapply.accsyrphone",
+                    "title": "使用人手机"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "accountapply.accsyrbutxt",
+                    "showLinkage": [
+                        {
+                            "id": "atype",
+                            "values": [
+                                "1"
+                            ]
+                        }
+                    ],
+                    "title": "使用人公司"
+                },
+                {
+                    "component": "text",
+                    "editablenode": "",
+                    "name": "accountapply.accsyrdepname",
+                    "showLinkage": [
+                        {
+                            "id": "atype",
+                            "values": [
+                                "1"
+                            ]
+                        }
+                    ],
+                    "title": "使用人部门"
+                },
+                {
+                    "component": "date1",
+                    "editablenode": "",
+                    "name": "accountapply.accstartperiod",
+                    "title": "账号有效开始日期"
+                },
+                {
+                    "component": "checkbox",
+                    "flowshow": true,
+                    "name": "accountapply.acctype",
+                    "options": [
+                        {
+                            "text": "OA、VPN、W3",
+                            "value": "0"
+                        },
+                        {
+                            "text": "Mail",
+                            "value": "1"
+                        },
+                        {
+                            "text": "SAP",
+                            "value": "4"
+                        },
+                        {
+                            "text": "执行系统",
+                            "value": "5"
+                        }
+                    ],
+                    "title": "账号类型"
+                },
+                {
+                    "component": "select",
+                    "name": "accountapply.acctranstype",
+                    "options": [
+                        {
+                            "text": "新建用户",
+                            "value": "0"
+                        },
+                        {
+                            "text": "锁定用户",
+                            "value": "1"
+                        },
+                        {
+                            "text": "解锁用户",
+                            "value": "2"
+                        },
+                        {
+                            "text": "初始密码",
+                            "value": "3"
+                        }
+                    ],
+                    "title": "申请事务类型"
+                },
+                {
+                    "component": "textarea",
+                    "editablenode": "",
+                    "flowshow": true,
+                    "name": "accountapply.accapplyreason",
+                    "rows": "3",
+                    "title": "申请原因"
+                }
+            ],
+            "title": "申请信息"
+        }
+    ],
+    "handleOnPC": {
+        "flag": [
+            "resubmit"
+        ],
+        "tasknode": [
+            ""
+        ]
+    },
+    "id": "it_accountapply",
+    "selectPerson": {
+        "beforPop": false,
+        "tasknode": [
+            ""
+        ]
     }
-  ]
 }

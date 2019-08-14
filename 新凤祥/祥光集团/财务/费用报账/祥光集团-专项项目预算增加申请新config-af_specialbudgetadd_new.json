@@ -1,263 +1,281 @@
 {
-  "id": "af_specialbudgetadd_new",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "budgetaddapp.appid"
+          "name": "budgetaddapp.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "budgetaddapp.appda"
+          "name": "budgetaddapp.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "budgetaddapp.pernr",
             "-",
             "budgetaddapp.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "budgetaddapp.sysbusinessunitname",
             "-",
             "budgetaddapp.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.userid"
+          "name": "budgetaddapp.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.username"
+          "name": "budgetaddapp.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.pernr"
+          "name": "budgetaddapp.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.syspostname"
+          "name": "budgetaddapp.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.sysdeptid"
+          "name": "budgetaddapp.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.sysdeptname"
+          "name": "budgetaddapp.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.sysbusinessunitid"
+          "name": "budgetaddapp.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.sysbusinessunitname"
+          "name": "budgetaddapp.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.postid"
+          "name": "budgetaddapp.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "budgetaddapp.id"
+          "name": "budgetaddapp.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "费用承担公司",
           "component": "text",
-          "name": "budgetaddapp.cdbukrsname"
+          "flowshow": false,
+          "name": "budgetaddapp.cdbukrsname",
+          "title": "费用承担公司"
         },
         {
-          "title": "所属事业部",
           "component": "text",
-          "name": "budgetaddapp.sysbusinessunitname"
+          "flowshow": false,
+          "name": "budgetaddapp.sysbusinessunitname",
+          "title": "所属事业部"
         },
         {
-          "title": "项目负责人",
           "component": "text",
-          "name": "budgetaddapp.m_zxfzrnm"
+          "name": "budgetaddapp.m_zxfzrnm",
+          "title": "项目负责人"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "费用增加录入",
-      "pageid": "fyzjlr",
       "component": "panel",
+      "pageid": "fyzjlr",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
           "basePath": "budgetaddappsub",
+          "component": "table_form",
           "id": "fyzjlr_table",
           "tableForms": [
             {
-              "title": "项目号",
               "component": "label",
-              "label": ["colnr",
+              "label": [
+                "colnr",
                 "-",
-                "conam"]
+                "conam"
+              ],
+              "title": "项目号"
             },
             {
-              "title": "调整日期",
               "component": "text",
               "datatype": "date",
               "dateFormat": "yyyy-MM-dd",
-              "name": "sdate"
+              "name": "sdate",
+              "title": "调整日期"
             },
             {
-              "title": "年份",
               "component": "text",
-              "name": "year"
+              "flowshow": true,
+              "name": "year",
+              "title": "年份"
             },
             {
-              "title": "公司",
               "component": "label",
-              "label": ["m_corporation",
+              "flowshow": true,
+              "label": [
+                "m_corporation",
                 "-",
-                "m_corporationnm"]
+                "m_corporationnm"
+              ],
+              "title": "公司"
             },
             {
-              "title": "项目子号",
               "component": "label",
-              "label": ["childcolnr",
+              "label": [
+                "childcolnr",
                 "-",
-                "childconam"]
+                "childconam"
+              ],
+              "title": "项目子号"
             },
             {
-              "title": "科目",
               "component": "label",
-              "label": ["kstar",
+              "flowshow": true,
+              "label": [
+                "kstar",
                 "-",
-                "kstarv"]
+                "kstarv"
+              ],
+              "title": "科目"
             },
             {
-              "title": "内部订单号",
               "component": "text",
-              "name": "aufnr"
+              "flowshow": true,
+              "name": "aufnr",
+              "title": "内部订单号"
             },
             {
-              "title": "部门名称",
               "component": "label",
-              "label": ["orgidd",
+              "label": [
+                "orgidd",
                 "-",
-                "conam"]
+                "conam"
+              ],
+              "title": "部门名称"
             },
             {
-              "title": "调增金额",
               "component": "text",
-              "name": "addamt"
+              "flowshow": true,
+              "name": "addamt",
+              "title": "调增金额"
             },
             {
-              "title": "调整说明",
               "component": "textarea",
-              "name": "smemo"
+              "flowshow": true,
+              "name": "smemo",
+              "title": "调整说明"
             },
             {
-              "title": "一月",
               "component": "text",
-              "name": "hsl01"
+              "name": "hsl01",
+              "title": "一月"
             },
             {
-              "title": "二月",
               "component": "text",
-              "name": "hsl02"
+              "name": "hsl02",
+              "title": "二月"
             },
             {
-              "title": "三月",
               "component": "text",
-              "name": "hsl03"
+              "name": "hsl03",
+              "title": "三月"
             },
             {
-              "title": "四月",
               "component": "text",
-              "name": "hsl04"
+              "name": "hsl04",
+              "title": "四月"
             },
             {
-              "title": "五月",
               "component": "text",
-              "name": "hsl05"
+              "name": "hsl05",
+              "title": "五月"
             },
             {
-              "title": "六月",
               "component": "text",
-              "name": "hsl06"
+              "name": "hsl06",
+              "title": "六月"
             },
             {
-              "title": "七月",
               "component": "text",
-              "name": "hsl07"
+              "name": "hsl07",
+              "title": "七月"
             },
             {
-              "title": "八月",
               "component": "text",
-              "name": "hsl08"
+              "name": "hsl08",
+              "title": "八月"
             },
             {
-              "title": "九月",
               "component": "text",
-              "name": "hsl09"
+              "name": "hsl09",
+              "title": "九月"
             },
             {
-              "title": "十月",
               "component": "text",
-              "name": "hsl10"
+              "name": "hsl10",
+              "title": "十月"
             },
             {
-              "title": "十一月",
               "component": "text",
-              "name": "hsl11"
+              "name": "hsl11",
+              "title": "十一月"
             },
             {
-              "title": "十二月",
               "component": "text",
-              "name": "hsl12"
+              "name": "hsl12",
+              "title": "十二月"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "费用增加录入"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "af_specialbudgetadd_new",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

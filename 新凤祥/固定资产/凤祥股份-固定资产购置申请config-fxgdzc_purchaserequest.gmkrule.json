@@ -1,166 +1,157 @@
 {
-  "id": "fxgdzc_purchaserequest",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask5","usertask8"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "预算标识",
           "component": "radio",
           "name": "mainModel.ysbs",
           "options": [
             {
+              "flowshow": true,
               "title": "预算内",
               "value": "N"
             },
             {
+              "flowshow": true,
               "title": "预算外",
               "value": "W"
             }
-          ]
+          ],
+          "title": "预算标识"
         },
         {
-          "title": "预算年度",
           "component": "text",
-          "name": "mainModel.ysnian"
+          "name": "mainModel.ysnian",
+          "title": "预算年度"
         },
         {
-          "title": "预算所属公司",
           "component": "text",
-          "name": "mainModel.ysbutxt"
+          "flowshow": true,
+          "name": "mainModel.ysbutxt",
+          "title": "预算所属公司"
         },
         {
-          "title": "预算成本中心",
           "component": "text",
-          "name": "mainModel.yscostname"
+          "flowshow": true,
+          "name": "mainModel.yscostname",
+          "title": "预算成本中心"
         },
         {
-          "title": "预算项目名称",
           "component": "text",
-          "name": "mainModel.ysbgname"
+          "flowshow": true,
+          "name": "mainModel.ysbgname",
+          "title": "预算项目名称"
         },
         {
-          "title": "预算性质",
           "component": "select",
           "name": "mainModel.ysnature",
           "options": [
             {
+              "flowshow": true,
               "text": "新增",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "汰换",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "改造",
               "value": "2"
             }
-          ]
+          ],
+          "title": "预算性质"
         },
         {
-          "title": "预算分类",
           "component": "select",
           "name": "mainModel.ysclsfic",
           "options": [
@@ -180,48 +171,54 @@
               "text": "效益",
               "value": "3"
             }
-          ]
+          ],
+          "title": "预算分类"
         },
         {
-          "title": "科目分配",
           "component": "select",
           "name": "mainModel.ysknttp",
           "options": [
             {
+              "flowshow": true,
               "text": "资产",
               "value": "A"
             },
             {
+              "flowshow": true,
               "text": "订单",
               "value": "F"
             }
-          ]
+          ],
+          "title": "科目分配"
         },
         {
-          "title": "购置类型",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.gzlx",
           "options": [
             {
+              "flowshow": true,
               "title": "设备类",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "基建类",
               "value": "1"
             }
-          ]
+          ],
+          "title": "购置类型"
         },
         {
-          "title": "投资复盘责任人",
           "component": "text",
-          "name": "mainModel.yszrrname"
+          "name": "mainModel.yszrrname",
+          "title": "投资复盘责任人"
         },
         {
-          "title": "建议使用年限",
           "component": "text",
-          "name": "mainModel.proposalyears",
           "editablenode": "internalaudit",
+          "name": "mainModel.proposalyears",
+          "title": "建议使用年限",
           "validation": {
             "pageid": "sqxx",
             "required": true,
@@ -229,186 +226,205 @@
           }
         },
         {
-          "title": "要求进货日期",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.yqjhrq"
+          "name": "mainModel.yqjhrq",
+          "title": "要求进货日期"
         },
         {
-          "title": "安装地点",
           "component": "text",
-          "name": "mainModel.azdd"
+          "name": "mainModel.azdd",
+          "title": "安装地点"
         },
         {
-          "title": "投资理由和效益分析说明",
           "component": "textarea",
+          "flowshow": true,
           "name": "mainModel.yssm",
-          "rows": "5"
+          "rows": "5",
+          "title": "投资理由和效益分析说明"
         },
         {
-          "title": "预算追补理由",
           "component": "textarea",
+          "flowshow": true,
           "name": "mainModel.yszbly",
-          "rows": "5"
+          "rows": "5",
+          "title": "预算追补理由"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "预算行项目信息",
-      "pageid": "yshxmxx",
       "component": "panel",
+      "pageid": "yshxmxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
           "basePath": "items",
+          "component": "formLabelLink",
           "id": "yshxx",
           "linkForms": [
             {
-              "title": "资产分类",
               "component": "linkToMap",
-              "name": "zcfl",
               "linkToMap": {
-                "linkToLable": "true",
-                "mapBasePath": "assettypeMaps",
                 "linkMiddle": "anlkl",
-                "linkType": "string"
-              }
+                "linkToLable": "true",
+                "linkType": "string",
+                "mapBasePath": "assettypeMaps"
+              },
+              "name": "zcfl",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "anltx"
+              "name": "anltx",
+              "title": "资产描述"
             },
             {
-              "title": "预计可使用年限",
               "component": "text",
-              "name": "ndjar"
+              "name": "ndjar",
+              "title": "预计可使用年限"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "总数量",
               "component": "text",
-              "name": "sumant"
+              "name": "sumant",
+              "title": "总数量"
             },
             {
-              "title": "已占用数量",
               "component": "text",
-              "name": "occupyamount"
+              "name": "occupyamount",
+              "title": "已占用数量"
             },
             {
-              "title": "已使用数量",
               "component": "text",
-              "name": "usedamount"
+              "name": "usedamount",
+              "title": "已使用数量"
             },
             {
-              "title": "剩余数量",
               "component": "text",
-              "name": "surplusamount"
+              "name": "surplusamount",
+              "title": "剩余数量"
             },
             {
-              "title": "总金额",
-              "component": "text",
-              "datatype": "money",
-              "name": "sumney"
-            },
-            {
-              "title": "已占用金额",
               "component": "text",
               "datatype": "money",
-              "name": "occupy"
+              "name": "sumney",
+              "title": "总金额"
             },
             {
-              "title": "已使用金额",
               "component": "text",
-              "name": "alreadyused"
+              "datatype": "money",
+              "name": "occupy",
+              "title": "已占用金额"
             },
             {
-              "title": "剩余金额",
               "component": "text",
-              "name": "surplus"
+              "name": "alreadyused",
+              "title": "已使用金额"
+            },
+            {
+              "component": "text",
+              "name": "surplus",
+              "title": "剩余金额"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "预算行项目信息"
     },
     {
-      "title": "购置信息",
-      "pageid": "zbxx",
       "component": "panel",
+      "pageid": "zbxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
           "basePath": "infos",
+          "component": "formLabelLink",
           "id": "gdzc_zbxx",
           "linkForms": [
             {
-              "title": "资产分类",
               "component": "linkToMap",
-              "name": "zcfl",
               "linkToMap": {
-                "linkToLable": "true",
-                "mapBasePath": "assettypeMaps",
                 "linkMiddle": "anlkl",
-                "linkType": "string"
-              }
+                "linkToLable": "true",
+                "linkType": "string",
+                "mapBasePath": "assettypeMaps"
+              },
+              "name": "zcfl",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "anltx"
+              "name": "anltx",
+              "title": "资产描述"
             },
             {
-              "title": "预计可使用年限",
               "component": "text",
-              "name": "ndjar"
+              "name": "ndjar",
+              "title": "预计可使用年限"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "规格型号",
               "component": "text",
-              "name": "ggxh"
+              "name": "ggxh",
+              "title": "规格型号"
             },
             {
-              "title": "数量",
               "component": "text",
-              "name": "gmamount"
+              "name": "gmamount",
+              "title": "数量"
             },
             {
-              "title": "预询单价",
-              "component": "text",
-              "datatype": "money",
-              "name": "yxprice"
-            },
-            {
-              "title": "预询金额",
               "component": "text",
               "datatype": "money",
-              "name": "gmmoney"
+              "name": "yxprice",
+              "title": "预询单价"
             },
             {
-              "title": "主要技术要求",
               "component": "text",
-              "name": "zyjsyq"
+              "datatype": "money",
+              "name": "gmmoney",
+              "title": "预询金额"
             },
             {
-              "title": "备注",
               "component": "text",
-              "name": "biz"
+              "name": "zyjsyq",
+              "title": "主要技术要求"
+            },
+            {
+              "component": "text",
+              "name": "biz",
+              "title": "备注"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "购置信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask5",
+      "usertask8"
+    ]
+  },
+  "id": "fxgdzc_purchaserequest",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

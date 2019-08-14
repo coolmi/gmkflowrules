@@ -1,226 +1,197 @@
 {
-  "id": "gmk_reimfico",
-  "handleOnPC": {
-    "tasknode": [
-      "accout",
-      "payment",
-      "gmkreimpament",
-      "gmkgufenreimpament",
-      "gmkreimcn"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-          "entrusted",
-          "accout",
-          "accoutmanger",
-          "payment"
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "reimburse.appid"
+          "name": "reimburse.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "reimburse.appda"
+          "name": "reimburse.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "reimburse.pernr",
             "-",
             "reimburse.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "reimburse.sysbusinessunitname",
             "-",
             "reimburse.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.bukrs"
+          "name": "reimburse.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.userid"
+          "name": "reimburse.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.username"
+          "name": "reimburse.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.pernr"
+          "name": "reimburse.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.syspostname"
+          "name": "reimburse.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.sysdeptid"
+          "name": "reimburse.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.sysdeptname"
+          "name": "reimburse.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.sysbusinessunitid"
+          "name": "reimburse.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.sysbusinessunitname"
+          "name": "reimburse.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.postid"
+          "name": "reimburse.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "reimburse.id"
+          "name": "reimburse.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "汇总",
-      "pageid": "hz",
       "component": "panel",
+      "pageid": "hz",
       "subComponents": [
         {
-          "title": "合计金额",
           "component": "text",
           "datatype": "money",
-          "name": "combined_dmbtr"
+          "name": "combined_dmbtr",
+          "title": "合计金额"
         },
         {
-          "title": "合计补助",
           "component": "text",
           "datatype": "money",
-          "name": "combined_subsidy"
+          "name": "combined_subsidy",
+          "title": "合计补助"
         },
         {
-          "title": "合计超限金额",
           "component": "text",
           "datatype": "money",
-          "name": "combined_ulfee"
+          "name": "combined_ulfee",
+          "title": "合计超限金额"
         },
         {
-          "title": "总计",
           "component": "text",
           "datatype": "money",
-          "name": "combined_all"
+          "flowshow": true,
+          "name": "combined_all",
+          "title": "总计"
         },
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "hzfylx",
           "basePath": "rulist",
+          "component": "table_form",
+          "id": "hzfylx",
           "tableForms": [
             {
-              "title": "费用类型",
               "component": "text",
-              "name": "stypes"
+              "flowshow": true,
+              "name": "stypes",
+              "title": "费用类型"
             },
             {
-              "title": "开始日期",
               "component": "text",
-              "name": "sdates"
+              "name": "sdates",
+              "title": "开始日期"
             },
             {
-              "title": "结束日期",
               "component": "text",
-              "name": "edates"
+              "name": "edates",
+              "title": "结束日期"
             },
             {
-              "title": "金额",
               "component": "text",
               "datatype": "money",
-              "name": "dmbtrs"
+              "flowshow": true,
+              "name": "dmbtrs",
+              "title": "金额"
             },
             {
-              "title": "补助",
               "component": "text",
               "datatype": "money",
-              "name": "subsidys"
+              "flowshow": true,
+              "name": "subsidys",
+              "title": "补助"
             },
             {
-              "title": "超限金额",
               "component": "text",
               "datatype": "money",
-              "name": "ulfees"
+              "flowshow": false,
+              "name": "ulfees",
+              "title": "超限金额"
             },
             {
-              "title": "不含税额",
               "component": "text",
-              "name": "purchase"
+              "name": "purchase",
+              "title": "不含税额"
             },
             {
-              "title": "超标事由",
               "component": "text",
-              "name": "outtxt"
+              "flowshow": true,
+              "name": "outtxt",
+              "title": "超标事由"
             },
             {
-              "title": "出差申请单号",
               "component": "text",
-              "name": "trlnrs"
+              "name": "trlnrs",
+              "title": "出差申请单号"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "汇总"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "报销类型",
           "component": "select",
           "name": "reimburse.notravle",
           "options": [
@@ -232,71 +203,75 @@
               "text": "非差旅报销",
               "value": "1"
             }
-          ]
+          ],
+          "title": "报销类型"
         },
         {
-          "title": "项目类型",
           "component": "select",
+          "flowshow": true,
           "name": "reimburse.protype",
           "options": [
             {
+              "flowshow": true,
               "text": "通用项目",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "专项项目",
               "value": "1"
             }
-          ]
+          ],
+          "title": "项目类型"
         },
         {
-          "title": "费用承担公司",
           "component": "label",
+          "flowshow": true,
           "label": [
             "reimburse.cdbukrs",
             "reimburse.cdbukrsname"
-          ]
+          ],
+          "title": "费用承担公司"
         },
         {
-          "title": "费用归集成本中心",
           "component": "label",
+          "flowshow": true,
           "label": [
             "reimburse.cdkostls",
             "reimburse.cdkostlsname"
-          ]
+          ],
+          "title": "费用归集成本中心"
         },
         {
-          "title": "出差申请单号",
           "component": "text",
-          "name": "reimburse.atrlnr"
+          "name": "reimburse.atrlnr",
+          "title": "出差申请单号"
         },
         {
-          "title": "说明",
           "component": "textarea",
-          "name": "reimburse.smemo"
+          "flowshow": true,
+          "name": "reimburse.smemo",
+          "title": "说明"
         },
         {
-          "title": "长途交通",
           "component": "panel",
-          "panel_id": "ctjt",
           "id": "ctjt1",
+          "panel_id": "ctjt",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id": "ccjtjtfs",
               "basePath": "ltrads",
+              "component": "formLabelLink",
+              "id": "ccjtjtfs",
               "linkForms": [
                 {
-                  "title": "出发地",
                   "component": "hidden",
-                  "name": "agreek"
+                  "name": "agreek",
+                  "title": "出发地"
                 },
                 {
-                  "title": "交通方式",
-                  "name": "stype",
-                  "component" : "select",
+                  "component": "select",
                   "id": "jtfsid",
+                  "name": "stype",
                   "options": [
                     {
                       "text": "2001-飞机商务舱",
@@ -350,46 +325,46 @@
                       "text": "2051-自驾车",
                       "value": "2051"
                     }
-                  ]
+                  ],
+                  "title": "交通方式"
                 },
                 {
-                  "title": "交通费类型",
                   "component": "linkToMap",
-                  "name": "jtflx",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "mtype",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "jtflx",
+                  "title": "交通费类型"
                 },
                 {
-                  "title": "出发日期",
                   "component": "date1",
-                  "name": "sdate"
+                  "name": "sdate",
+                  "title": "出发日期"
                 },
                 {
-                  "title": "到达日期",
                   "component": "date1",
-                  "name": "edate"
+                  "name": "edate",
+                  "title": "到达日期"
                 },
                 {
-                  "title": "出发地",
                   "component": "text",
-                  "name": "saddr"
+                  "name": "saddr",
+                  "title": "出发地"
                 },
                 {
-                  "title": "到达地",
                   "component": "text",
-                  "name": "eaddr"
+                  "name": "eaddr",
+                  "title": "到达地"
                 },
                 {
-                  "title": "币种",
                   "component": "text",
-                  "name": "waers"
+                  "name": "waers",
+                  "title": "币种"
                 },
                 {
-                  "title": "票价",
                   "component": "text",
                   "name": "ticketPrice",
                   "showLinkage": [
@@ -400,10 +375,10 @@
                         "2002"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "票价"
                 },
                 {
-                  "title": "机场建设费",
                   "component": "text",
                   "name": "airportConstuFee",
                   "showLinkage": [
@@ -414,10 +389,10 @@
                         "2002"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "机场建设费"
                 },
                 {
-                  "title": "燃油附加费",
                   "component": "text",
                   "name": "fuelSurch",
                   "showLinkage": [
@@ -428,10 +403,10 @@
                         "2002"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "燃油附加费"
                 },
                 {
-                  "title": "其他税费",
                   "component": "text",
                   "name": "otherTaxfee",
                   "showLinkage": [
@@ -442,16 +417,16 @@
                         "2002"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "其他税费"
                 },
                 {
-                  "title": "总金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtr"
+                  "name": "dmbtr",
+                  "title": "总金额"
                 },
                 {
-                  "title": "税率",
                   "component": "text",
                   "name": "taxRate",
                   "showLinkage": [
@@ -472,10 +447,10 @@
                         "2042"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "税率"
                 },
                 {
-                  "title": "税额",
                   "component": "text",
                   "name": "taxNumber",
                   "showLinkage": [
@@ -496,55 +471,55 @@
                         "2042"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "税额"
                 },
                 {
-                  "title": "项目号",
                   "component": "label",
                   "label": [
                     "colnr",
                     "-",
                     "conam"
-                  ]
+                  ],
+                  "title": "项目号"
                 },
                 {
-                  "title": "超标事由",
                   "component": "textarea",
                   "editablenode": "",
-                  "name": "ulrea"
+                  "name": "ulrea",
+                  "title": "超标事由"
                 },
                 {
-                  "title": "备注",
                   "component": "textarea",
                   "editablenode": "",
-                  "name": "smemoltrad"
+                  "name": "smemoltrad",
+                  "title": "备注"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "长途交通"
         },
         {
-          "title": "市内交通",
           "component": "panel",
-          "panel_id": "snjt",
           "id": "snjt1",
+          "panel_id": "snjt",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id": "snjtjtfs",
               "basePath": "citys",
+              "component": "formLabelLink",
+              "id": "snjtjtfs",
               "linkForms": [
                 {
-                  "title": "出发地",
                   "component": "hidden",
-                  "name": "agreekc"
+                  "name": "agreekc",
+                  "title": "出发地"
                 },
                 {
-                  "title": "交通方式",
-                  "name": "stypec",
-                  "component" : "select",
+                  "component": "select",
                   "id": "jtfsidc",
+                  "name": "stypec",
                   "options": [
                     {
                       "text": "4001-出租车",
@@ -562,47 +537,47 @@
                       "text": "4004-自驾车",
                       "value": "4004"
                     }
-                  ]
+                  ],
+                  "title": "交通方式"
                 },
                 {
-                  "title": "交通费类型",
                   "component": "linkToMap",
-                  "name": "jtflx",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "mtypec",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "jtflx",
+                  "title": "交通费类型"
                 },
                 {
-                  "title": "出发日期",
                   "component": "date1",
-                  "name": "sdatec"
+                  "name": "sdatec",
+                  "title": "出发日期"
                 },
                 {
-                  "title": "出发地",
                   "component": "text",
-                  "name": "saddrc"
+                  "name": "saddrc",
+                  "title": "出发地"
                 },
                 {
-                  "title": "到达地",
                   "component": "text",
-                  "name": "eaddrc"
+                  "name": "eaddrc",
+                  "title": "到达地"
                 },
                 {
-                  "title": "币种",
                   "component": "text",
-                  "name": "waersc"
+                  "name": "waersc",
+                  "title": "币种"
                 },
                 {
-                  "title": "总金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtrc"
+                  "name": "dmbtrc",
+                  "title": "总金额"
                 },
                 {
-                  "title": "税率",
                   "component": "text",
                   "name": "taxRatec",
                   "showLinkage": [
@@ -612,10 +587,10 @@
                         "4001"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "税率"
                 },
                 {
-                  "title": "税额",
                   "component": "text",
                   "name": "taxNumberc",
                   "showLinkage": [
@@ -625,561 +600,597 @@
                         "4001"
                       ]
                     }
-                  ]
+                  ],
+                  "title": "税额"
                 },
                 {
-                  "title": "项目号",
                   "component": "text",
-                  "name": "colnrc"
+                  "name": "colnrc",
+                  "title": "项目号"
                 },
                 {
-                  "title": "超标事由",
                   "component": "textarea",
                   "editablenode": "",
-                  "name": "ulreac"
+                  "name": "ulreac",
+                  "title": "超标事由"
                 },
                 {
-                  "title": "备注",
                   "component": "textarea",
                   "editablenode": "",
-                  "name": "smemoc"
+                  "name": "smemoc",
+                  "title": "备注"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "市内交通"
         },
         {
-          "title": "办公费用",
           "component": "panel",
-          "panel_id": "bgfy",
           "id": "bgfy1",
+          "panel_id": "bgfy",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id": "bgfybgflx",
               "basePath": "offices",
+              "component": "formLabelLink",
+              "id": "bgfybgflx",
               "linkForms": [
                 {
-                  "title": "办公费类型",
                   "component": "linkToMap",
-                  "name": "bgflx",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "stypeo",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "bgflx",
+                  "title": "办公费类型"
                 },
                 {
-                  "title": "日期",
                   "component": "date1",
-                  "name": "sdateo"
+                  "name": "sdateo",
+                  "title": "日期"
                 },
                 {
-                  "title": "金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtro"
+                  "name": "dmbtro",
+                  "title": "金额"
                 },
                 {
-                  "title": "使用人",
                   "component": "text",
-                  "name": "enameo"
+                  "name": "enameo",
+                  "title": "使用人"
                 },
                 {
-                  "title": "客户名称",
                   "component": "text",
-                  "name": "kunameo"
+                  "name": "kunameo",
+                  "title": "客户名称"
                 },
                 {
-                  "title": "项目号",
                   "component": "text",
-                  "name": "colnro"
+                  "name": "colnro",
+                  "title": "项目号"
                 },
                 {
-                  "title": "出差申请单号",
                   "component": "text",
                   "editablenode": "",
-                  "name": "trlnro"
+                  "name": "trlnro",
+                  "title": "出差申请单号"
                 }
-              ]
+              ],
+              "titleIndex": 0
             }
-          ]
+          ],
+          "title": "办公费用"
         },
         {
-          "title": "餐费",
           "component": "panel",
-          "panel_id": "zdf",
           "id": "zdf1",
+          "panel_id": "zdf",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 2,
-              "id": "zdfjtfs",
               "basePath": "mealfs",
+              "component": "formLabelLink",
+              "id": "zdfjtfs",
               "linkForms": [
                 {
-                  "title": "餐费类型",
                   "component": "linkToMap",
-                  "name": "jtfs",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "stypem",
-                    "linkType": "string"
-                  }
-                },
-                {
-                  "title": "日期",
-                  "component": "date1",
-                  "name": "sdatem"
-                },
-                {
-                  "title": "地点",
-                  "component": "text",
-                  "name": "saddrm"
-                },
-                {
-                  "title": "餐馆",
-                  "component": "text",
-                  "name": "eaterym"
-                },
-                {
-                  "title": "用餐人次",
-                  "component": "text",
-                  "name": "snum"
-                },
-                {
-                  "title": "金额",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "dmbtrm"
-                },
-                {
-                  "title": "项目号",
-                  "component": "text",
-                  "name": "colnrm"
-                },
-                {
-                  "title": "出差申请单号",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "trlnrm"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "住宿费",
-          "component": "panel",
-          "panel_id": "zsjcbhz",
-          "id": "zsjcbhz1",
-          "subComponents": [
-            {
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "id": "zsjcbhzzslx",
-              "basePath": "hotels",
-              "linkForms": [
-                {
-                  "title": "出发地",
-                  "component": "hidden",
-                  "name": "agreekh"
-                },
-                {
-                  "title": "住宿类型",
-                  "component": "linkToMap",
-                  "name": "zslx",
-                  "linkToMap": {
                     "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
-                    "linkMiddle": "stypeh",
-                    "linkType": "string"
-                  }
-                },
-                {
-                  "title": "酒店地点",
-                  "component": "text",
-                  "name": "saddrh"
-                },
-                {
-                  "title": "入住日期",
-                  "component": "date1",
-                  "name": "sdateh"
-                },
-                {
-                  "title": "退房日期",
-                  "component": "date1",
-                  "name": "edateh"
-                },
-                {
-                  "title": "币种",
-                  "component": "text",
-                  "name": "waersh"
-                },
-                {
-                  "title": "总金额",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "dmbtrh"
-                },
-                {
-                  "title": "发票税率",
-                  "component": "text",
-                  "name": "purchh"
-                },
-                {
-                  "title": "项目号",
-                  "component": "text",
-                  "name": "colnrh"
-                },
-                {
-                  "title": "餐补",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "mealsuph"
-                },
-                {
-                  "title": "扣除餐补",
-                  "component": "text",
-                  "datatype": "money",
-                  "name": "demealh"
-                },
-                {
-                  "title": "住宿原因",
-                  "component": "textarea",
-                  "name": "smemoh"
-                },
-                {
-                  "title": "超限原因",
-                  "component": "textarea",
-                  "editablenode": "",
-                  "name": "ulreah"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "培训费",
-          "component": "panel",
-          "panel_id": "pxf",
-          "id": "pxf1",
-          "subComponents": [
-            {
-              "component": "formLabelLink",
-              "titleIndex": 4,
-              "id": "pxfpxlx",
-              "basePath": "trains",
-              "linkForms": [
-                {
-                  "title": "培训类型",
-                  "component": "linkToMap",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
                   "name": "jtfs",
+                  "title": "餐费类型"
+                },
+                {
+                  "component": "date1",
+                  "name": "sdatem",
+                  "title": "日期"
+                },
+                {
+                  "component": "text",
+                  "name": "saddrm",
+                  "title": "地点"
+                },
+                {
+                  "component": "text",
+                  "name": "eaterym",
+                  "title": "餐馆"
+                },
+                {
+                  "component": "text",
+                  "name": "snum",
+                  "title": "用餐人次"
+                },
+                {
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "dmbtrm",
+                  "title": "金额"
+                },
+                {
+                  "component": "text",
+                  "name": "colnrm",
+                  "title": "项目号"
+                },
+                {
+                  "component": "text",
+                  "editablenode": "",
+                  "name": "trlnrm",
+                  "title": "出差申请单号"
+                }
+              ],
+              "titleIndex": 2
+            }
+          ],
+          "title": "餐费"
+        },
+        {
+          "component": "panel",
+          "id": "zsjcbhz1",
+          "panel_id": "zsjcbhz",
+          "subComponents": [
+            {
+              "basePath": "hotels",
+              "component": "formLabelLink",
+              "id": "zsjcbhzzslx",
+              "linkForms": [
+                {
+                  "component": "hidden",
+                  "name": "agreekh",
+                  "title": "出发地"
+                },
+                {
+                  "component": "linkToMap",
                   "linkToMap": {
+                    "linkMiddle": "stypeh",
                     "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "zslx",
+                  "title": "住宿类型"
+                },
+                {
+                  "component": "text",
+                  "name": "saddrh",
+                  "title": "酒店地点"
+                },
+                {
+                  "component": "date1",
+                  "name": "sdateh",
+                  "title": "入住日期"
+                },
+                {
+                  "component": "date1",
+                  "name": "edateh",
+                  "title": "退房日期"
+                },
+                {
+                  "component": "text",
+                  "name": "waersh",
+                  "title": "币种"
+                },
+                {
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "dmbtrh",
+                  "title": "总金额"
+                },
+                {
+                  "component": "text",
+                  "name": "purchh",
+                  "title": "发票税率"
+                },
+                {
+                  "component": "text",
+                  "name": "colnrh",
+                  "title": "项目号"
+                },
+                {
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "mealsuph",
+                  "title": "餐补"
+                },
+                {
+                  "component": "text",
+                  "datatype": "money",
+                  "name": "demealh",
+                  "title": "扣除餐补"
+                },
+                {
+                  "component": "textarea",
+                  "name": "smemoh",
+                  "title": "住宿原因"
+                },
+                {
+                  "component": "textarea",
+                  "editablenode": "",
+                  "name": "ulreah",
+                  "title": "超限原因"
+                }
+              ],
+              "titleIndex": 0
+            }
+          ],
+          "title": "住宿费"
+        },
+        {
+          "component": "panel",
+          "id": "pxf1",
+          "panel_id": "pxf",
+          "subComponents": [
+            {
+              "basePath": "trains",
+              "component": "formLabelLink",
+              "id": "pxfpxlx",
+              "linkForms": [
+                {
+                  "component": "linkToMap",
+                  "linkToMap": {
                     "linkMiddle": "stypet",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "jtfs",
+                  "title": "培训类型"
                 },
                 {
-                  "title": "开始日期",
                   "component": "date1",
-                  "name": "sdatet"
+                  "name": "sdatet",
+                  "title": "开始日期"
                 },
                 {
-                  "title": "结束日期",
                   "component": "date1",
-                  "name": "edatet"
+                  "name": "edatet",
+                  "title": "结束日期"
                 },
                 {
-                  "title": "书籍课程名称",
                   "component": "text",
-                  "name": "traint"
+                  "name": "traint",
+                  "title": "书籍课程名称"
                 },
                 {
-                  "title": "金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtrt"
+                  "name": "dmbtrt",
+                  "title": "金额"
                 },
                 {
-                  "title": "培训申请号",
                   "component": "text",
-                  "name": "tnlnrt"
+                  "name": "tnlnrt",
+                  "title": "培训申请号"
                 },
                 {
-                  "title": "项目号",
                   "component": "text",
-                  "name": "colnrt"
+                  "name": "colnrt",
+                  "title": "项目号"
                 },
                 {
-                  "title": "出差申请单号",
                   "component": "text",
                   "editablenode": "",
-                  "name": "trlnrt"
+                  "name": "trlnrt",
+                  "title": "出差申请单号"
                 }
-              ]
+              ],
+              "titleIndex": 4
             }
-          ]
+          ],
+          "title": "培训费"
         },
         {
-          "title": "通讯费",
           "component": "panel",
-          "panel_id": "txf",
           "id": "txf1",
+          "panel_id": "txf",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 1,
-              "id": "txftxlx",
               "basePath": "telnets",
+              "component": "formLabelLink",
+              "id": "txftxlx",
               "linkForms": [
                 {
-                  "title": "通讯类型",
                   "component": "linkToMap",
-                  "name": "txlx",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "stypee",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "txlx",
+                  "title": "通讯类型"
                 },
                 {
-                  "title": "月份",
                   "component": "text",
-                  "name": "sdatee"
+                  "name": "sdatee",
+                  "title": "月份"
                 },
                 {
-                  "title": "金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtre"
+                  "name": "dmbtre",
+                  "title": "金额"
                 },
                 {
-                  "title": "项目号",
                   "component": "text",
-                  "name": "colnre"
+                  "name": "colnre",
+                  "title": "项目号"
                 }
-              ]
+              ],
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "通讯费"
         },
         {
-          "title": "礼品费",
           "component": "panel",
-          "panel_id": "lpf",
           "id": "lpflpflx",
+          "panel_id": "lpf",
           "subComponents": [
             {
-              "component": "formLabelLink",
-              "titleIndex": 4,
               "basePath": "giftfees",
+              "component": "formLabelLink",
               "linkForms": [
                 {
-                  "title": "礼品费类型",
                   "component": "linkToMap",
-                  "name": "lpflx",
                   "linkToMap": {
-                    "linkToLable": "true",
-                    "mapBasePath": "mapByBukrs",
                     "linkMiddle": "stypeg",
-                    "linkType": "string"
-                  }
+                    "linkToLable": "true",
+                    "linkType": "string",
+                    "mapBasePath": "mapByBukrs"
+                  },
+                  "name": "lpflx",
+                  "title": "礼品费类型"
                 },
                 {
-                  "title": "日期",
                   "component": "date1",
-                  "name": "sdateg"
+                  "name": "sdateg",
+                  "title": "日期"
                 },
                 {
-                  "title": "金额",
                   "component": "text",
                   "datatype": "money",
-                  "name": "dmbtrg"
+                  "name": "dmbtrg",
+                  "title": "金额"
                 },
                 {
-                  "title": "事由",
                   "component": "text",
-                  "name": "smemg"
+                  "name": "smemg",
+                  "title": "事由"
                 },
                 {
-                  "title": "慰问人",
                   "component": "text",
-                  "name": "enameg"
+                  "name": "enameg",
+                  "title": "慰问人"
                 },
                 {
-                  "title": "项目号",
                   "component": "text",
-                  "name": "colnrg"
+                  "name": "colnrg",
+                  "title": "项目号"
                 },
                 {
-                  "title": "出差申请单号",
                   "component": "text",
                   "editablenode": "",
-                  "name": "trlnrg"
+                  "name": "trlnrg",
+                  "title": "出差申请单号"
                 }
-              ]
+              ],
+              "titleIndex": 4
             }
-          ]
+          ],
+          "title": "礼品费"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "财务审核",
       "component": "panel",
-      "panel_id": "cwshxx",
-      "tasknode": "account,accoutmanger,payment",
       "editablenode": "account",
       "id": "cwshxx1",
+      "panel_id": "cwshxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 4,
-          "id": "cwssxxkmms",
           "basePath": "seach",
+          "component": "formLabelLink",
+          "id": "cwssxxkmms",
           "linkForms": [
             {
-              "title": "项目号",
               "component": "text",
-              "name": "colnrf"
+              "name": "colnrf",
+              "title": "项目号"
             },
             {
-              "title": "项目号描述",
               "component": "labelLink",
               "editablenode": "",
-              "name": "colnrf",
-              "link_name": "colnrg",
               "label": [
                 "giftfees.conamg"
-              ]
+              ],
+              "link_name": "colnrg",
+              "name": "colnrf",
+              "title": "项目号描述"
             },
             {
-              "title": "子号",
               "component": "text",
-              "name": "childcolnrf"
+              "name": "childcolnrf",
+              "title": "子号"
             },
             {
-              "title": "科目编号",
               "component": "text",
-              "name": "kstarf"
+              "name": "kstarf",
+              "title": "科目编号"
             },
             {
-              "title": "科目描述",
               "component": "linkToMap",
-              "name": "kmms",
               "linkToMap": {
-                "linkToLable": "true",
-                "mapBasePath": "mapKstarLevels",
                 "linkMiddle": "kstarf",
-                "linkType": "string"
-              }
-            },
-            {
-              "title": "调整科目",
-              "component": "linkToMap",
-              "name": "tzkm",
-              "linkToMap": {
                 "linkToLable": "true",
-                "mapBasePath": "mapKstarLevels",
+                "linkType": "string",
+                "mapBasePath": "mapKstarLevels"
+              },
+              "name": "kmms",
+              "title": "科目描述"
+            },
+            {
+              "component": "linkToMap",
+              "linkToMap": {
                 "linkMiddle": "saknrf",
-                "linkType": "string"
-              }
+                "linkToLable": "true",
+                "linkType": "string",
+                "mapBasePath": "mapKstarLevels"
+              },
+              "name": "tzkm",
+              "title": "调整科目"
             },
             {
-              "title": "应付",
               "component": "text",
               "datatype": "money",
-              "name": "dmbtrf"
+              "name": "dmbtrf",
+              "title": "应付"
             },
             {
-              "title": "扣款",
               "component": "text",
               "datatype": "money",
-              "name": "cdmbtrf"
+              "name": "cdmbtrf",
+              "title": "扣款"
             },
             {
-              "title": "实付",
               "component": "text",
               "datatype": "money",
-              "name": "fwbasf"
+              "name": "fwbasf",
+              "title": "实付"
             },
             {
-              "title": "扣款说明",
               "component": "text",
-              "name": "smemof"
+              "name": "smemof",
+              "title": "扣款说明"
             }
-          ]
+          ],
+          "titleIndex": 4
         }
-      ]
+      ],
+      "tasknode": "account,accoutmanger,payment",
+      "title": "财务审核"
     },
     {
-      "title": "财务付款",
-      "pageid": "cwfk",
-      "tasknode": "payment",
       "component": "panel",
+      "pageid": "cwfk",
       "subComponents": [
         {
+          "component": "text",
+          "name": "itcodeview",
           "title": "员工ITCODE",
-          "component": "text",
-          "tmpValueName": "afuser.userd",
-          "name": "itcodeview"
+          "tmpValueName": "afuser.userd"
         },
         {
+          "component": "text",
+          "name": "deptview",
           "title": "所在部门",
-          "component": "text",
-          "tmpValueName": "afuser.orgeh",
-          "name": "deptview"
+          "tmpValueName": "afuser.orgeh"
         },
         {
+          "component": "text",
+          "name": "phoneview",
           "title": "手机号",
-          "component": "text",
-          "tmpValueName": "afuser.telpr",
-          "name": "phoneview"
+          "tmpValueName": "afuser.telpr"
         },
         {
+          "component": "text",
+          "name": "lifnrview",
           "title": "员工财务编号",
-          "component": "text",
-          "tmpValueName": "afuser.lifnr",
-          "name": "lifnrview"
+          "tmpValueName": "afuser.lifnr"
         },
         {
+          "component": "text",
+          "name": "fipay.banknp",
           "title": "员工银行账号",
-          "component": "text",
-          "tmpValueName": "bankn",
-          "name": "fipay.banknp"
+          "tmpValueName": "bankn"
         },
         {
+          "component": "text",
+          "name": "fipay.banklp",
           "title": "开户行",
-          "component": "text",
-          "tmpValueName": "banka",
-          "name": "fipay.banklp"
+          "tmpValueName": "banka"
         },
         {
-          "title": "应付金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrp"
+          "name": "fipay.cdmbtrp",
+          "title": "应付金额（RMB）"
         },
         {
-          "title": "冲备用金",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.dmbtrp"
+          "name": "fipay.dmbtrp",
+          "title": "冲备用金"
         },
         {
-          "title": "付款金额（RMB）",
           "component": "text",
           "datatype": "money",
-          "name": "fipay.cdmbtrpf"
+          "name": "fipay.cdmbtrpf",
+          "title": "付款金额（RMB）"
         }
-      ]
+      ],
+      "tasknode": "payment",
+      "title": "财务付款"
     }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "accout",
+      "payment",
+      "gmkreimpament",
+      "gmkgufenreimpament",
+      "gmkreimcn"
+    ]
+  },
+  "id": "gmk_reimfico",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": [
+          "entrusted",
+          "accout",
+          "accoutmanger",
+          "payment"
+        ]
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }

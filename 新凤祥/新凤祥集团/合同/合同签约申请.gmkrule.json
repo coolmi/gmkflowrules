@@ -1,144 +1,118 @@
 {
-  "id": "ap_contractsigning",
-  "handleOnPC": {
-    "tasknode": [
-
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "contractsigning.appid"
+          "name": "contractsigning.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "contractsigning.appda"
+          "name": "contractsigning.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "contractsigning.pernr",
             "-",
             "contractsigning.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "contractsigning.sysbusinessunitname",
             "-",
             "contractsigning.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.bukrs"
+          "name": "contractsigning.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.userid"
+          "name": "contractsigning.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.username"
+          "name": "contractsigning.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.pernr"
+          "name": "contractsigning.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.syspostname"
+          "name": "contractsigning.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.sysdeptid"
+          "name": "contractsigning.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.sysdeptname"
+          "name": "contractsigning.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.sysbusinessunitid"
+          "name": "contractsigning.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.sysbusinessunitname"
+          "name": "contractsigning.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.postid"
+          "name": "contractsigning.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "contractsigning.id"
+          "name": "contractsigning.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxi",
       "component": "panel",
+      "pageid": "sqxi",
       "subComponents": [
         {
-          "flowshow": true,
-          "title": "合同主体法人公司",
           "component": "label",
-          "id": "contractsigning_gsxx",
           "editablenode": "",
+          "flowshow": true,
+          "id": "contractsigning_gsxx",
+          "label": [
+            "t001list.butxt"
+          ],
           "middleName": [
             "contractsigning.gsxx",
             "bukrs"
           ],
-          "label": [
-            "t001list.butxt"
-          ]
+          "title": "合同主体法人公司"
         },
         {
-          "title": "是否销售类合同",
           "component": "radio",
           "name": "contractsigning.becaigou",
           "options": [
@@ -150,14 +124,14 @@
               "title": "是",
               "value": "是"
             }
-          ]
+          ],
+          "title": "是否销售类合同"
         },
         {
-          "flowshow": true,
-          "title": "合同执行状态   ",
           "component": "select",
-          "id": "contractsigning_htzxzt",
           "editablenode": "",
+          "flowshow": false,
+          "id": "contractsigning_htzxzt",
           "name": "contractsigning.htzxzt",
           "options": [
             {
@@ -168,10 +142,10 @@
               "text": "后补",
               "value": "1"
             }
-          ]
+          ],
+          "title": "合同执行状态   "
         },
         {
-          "title": "后补原因",
           "component": "text",
           "name": "contractsigning.hbyy",
           "showLinkage": [
@@ -181,57 +155,63 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "后补原因"
         },
         {
-          "title": "合同标的物",
           "component": "text",
-          "id": "contractsigning_htbdw",
           "editablenode": "",
-          "name": "contractsigning.htbdw"
-        },
-        {
           "flowshow": true,
-          "title": "需求部门",
-          "component": "text",
-          "id": "contractsigning_xqbm",
-          "editablenode": "",
-          "name": "contractsigning.xqbm"
+          "id": "contractsigning_htbdw",
+          "name": "contractsigning.htbdw",
+          "title": "合同标的物"
         },
         {
-          "title": "类型",
+          "component": "text",
+          "editablenode": "",
+          "flowshow": false,
+          "id": "contractsigning_xqbm",
+          "name": "contractsigning.xqbm",
+          "title": "需求部门"
+        },
+        {
           "component": "radio",
-          "id":"leitype",
+          "flowshow": true,
+          "id": "leitype",
           "name": "contractsigning.mstype",
           "options": [
             {
+              "flowshow": true,
               "text": "项目类",
               "value": "项目类"
             },
             {
+              "flowshow": true,
               "text": "非项目类",
               "value": "非项目类"
             }
-          ]
+          ],
+          "title": "类型"
         },
         {
-          "title": "项目名称",
           "component": "text",
+          "flowshow": true,
           "name": "contractsigning.mname",
           "showLinkage": [
             {
+              "flowshow": true,
               "id": "leitype",
               "values": [
                 "项目类"
               ]
             }
-          ]
+          ],
+          "title": "项目名称"
         },
         {
-          "title": "需求类型",
           "component": "select",
-          "id": "contractsigning_xqlx",
           "editablenode": "",
+          "id": "contractsigning_xqlx",
           "name": "contractsigning.xqlx",
           "options": [
             {
@@ -270,13 +250,13 @@
               "text": "XL-2019年大修项目协力外协采购",
               "value": "XL"
             }
-          ]
+          ],
+          "title": "需求类型"
         },
         {
-          "title": "币种  ",
           "component": "select",
-          "id": "contractsigning_bz",
           "editablenode": "",
+          "id": "contractsigning_bz",
           "name": "contractsigning.bz",
           "options": [
             {
@@ -295,38 +275,40 @@
               "text": "英镑GBP",
               "value": "3"
             }
-          ]
+          ],
+          "title": "币种  "
         },
         {
-          "title": "汇率",
           "component": "text",
           "name": "contractsigning.m_hl",
           "showLinkage": [
             {
               "id": "contractsigning_bz",
               "values": [
-                "1","2","3"
+                "1",
+                "2",
+                "3"
               ]
             }
-          ]
+          ],
+          "title": "汇率"
         },
         {
+          "component": "text",
+          "editablenode": "",
           "flowshow": true,
-          "title": "合同金额（人民币小写）",
-          "component": "text",
           "id": "contractsigning_htjexx",
-          "editablenode": "",
-          "name": "contractsigning.htjexx"
+          "name": "contractsigning.htjexx",
+          "title": "合同金额（人民币小写）"
         },
         {
-          "title": "合同金额（大写）",
           "component": "text",
-          "id": "contractsigning_htjedx",
           "editablenode": "",
-          "name": "contractsigning.htjedx"
+          "id": "contractsigning_htjedx",
+          "name": "contractsigning.htjedx",
+          "title": "合同金额（大写）"
         },
         {
-          "title": "合同形成方式",
           "component": "radio",
           "name": "contractsigning.m_xctype",
           "options": [
@@ -342,16 +324,16 @@
               "text": "不招议标",
               "value": "不招议标"
             }
-          ]
+          ],
+          "title": "合同形成方式"
         },
         {
-          "title": "招标、议标、不招议标申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "contractsigning.m_zybappid"
+          "name": "contractsigning.m_zybappid",
+          "title": "招标、议标、不招议标申请单号"
         },
         {
-          "title": "是否年度框架合同",
           "component": "radio",
           "name": "contractsigning.m_beyearht",
           "options": [
@@ -363,39 +345,43 @@
               "text": "是",
               "value": "是"
             }
-          ]
+          ],
+          "title": "是否年度框架合同"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "供应商信息",
-      "pageid": "gysxx",
       "component": "panel",
+      "pageid": "gysxx",
       "subComponents": [
         {
-          "flowshow": true,
-          "title": "供应商名称(全称)",
           "component": "text",
-          "id": "contractsigning_gysmc",
           "editablenode": "",
-          "name": "contractsigning.gysmc"
+          "flowshow": true,
+          "id": "contractsigning_gysmc",
+          "name": "contractsigning.gysmc",
+          "title": "供应商名称(全称)"
         },
         {
-          "title": "供应商类型",
           "component": "select",
-          "id": "contractsigning_gyslx",
           "editablenode": "",
+          "flowshow": true,
+          "id": "contractsigning_gyslx",
           "name": "contractsigning.gyslx",
           "options": [
             {
+              "flowshow": true,
               "text": "合格供应商",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "一次供应商",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "战略合作伙伴",
               "value": "2"
             },
@@ -403,10 +389,10 @@
               "text": "黑名单解冻",
               "value": "3"
             }
-          ]
+          ],
+          "title": "供应商类型"
         },
         {
-          "title": "战略合作伙伴",
           "component": "text",
           "name": "contractsigning.zlhzhb",
           "showLinkage": [
@@ -416,10 +402,10 @@
                 "2"
               ]
             }
-          ]
+          ],
+          "title": "战略合作伙伴"
         },
         {
-          "title": "黑名单解冻原因",
           "component": "text",
           "name": "contractsigning.hmdjdyy",
           "showLinkage": [
@@ -429,13 +415,13 @@
                 "3"
               ]
             }
-          ]
+          ],
+          "title": "黑名单解冻原因"
         },
         {
-          "title": "密级",
           "component": "select",
-          "id": "contractsigning_mj",
           "editablenode": "",
+          "id": "contractsigning_mj",
           "name": "contractsigning.mj",
           "options": [
             {
@@ -446,17 +432,17 @@
               "text": "保密",
               "value": "1"
             }
-          ]
+          ],
+          "title": "密级"
         },
         {
-          "title": "合同页数",
           "component": "text",
-          "id": "contractsigning_htys",
           "editablenode": "",
-          "name": "contractsigning.htys"
+          "id": "contractsigning_htys",
+          "name": "contractsigning.htys",
+          "title": "合同页数"
         },
         {
-          "title": "是否模板合同",
           "component": "radio",
           "editablenode": "lawpie",
           "name": "contractsigning.m_bemb",
@@ -469,20 +455,20 @@
               "title": "是",
               "value": "是"
             }
-          ]
+          ],
+          "title": "是否模板合同"
         }
-      ]
+      ],
+      "title": "供应商信息"
     },
     {
-      "title": "合同号信息",
-      "pageid": "hthxx",
       "component": "panel",
+      "pageid": "hthxx",
       "subComponents": [
         {
-          "title": "是否为补充类合同  ",
           "component": "select",
-          "id": "contractsigning_sfwbclht",
           "editablenode": "",
+          "id": "contractsigning_sfwbclht",
           "name": "contractsigning.sfwbclht",
           "options": [
             {
@@ -493,10 +479,10 @@
               "text": "否",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否为补充类合同  "
         },
         {
-          "title": "原合同编号",
           "component": "text",
           "name": "contractsigning.bcthbh",
           "showLinkage": [
@@ -506,13 +492,13 @@
                 "0"
               ]
             }
-          ]
+          ],
+          "title": "原合同编号"
         },
         {
-          "title": "合同编号类别",
           "component": "select",
-          "id": "contractsigning_htbhlb",
           "editablenode": "",
+          "id": "contractsigning_htbhlb",
           "name": "contractsigning.htbhlb",
           "options": [
             {
@@ -535,27 +521,27 @@
               "text": "E-其他合同（E）",
               "value": "E"
             }
-          ]
+          ],
+          "title": "合同编号类别"
         },
         {
-          "title": "合同编号",
           "component": "text",
-          "id": "contractsigning_htbh",
           "editablenode": "",
-          "name": "contractsigning.htbh"
+          "id": "contractsigning_htbh",
+          "name": "contractsigning.htbh",
+          "title": "合同编号"
         }
-      ]
+      ],
+      "title": "合同号信息"
     },
     {
-      "title": "印章信息",
-      "pageid": "yzxx",
       "component": "panel",
+      "pageid": "yzxx",
       "subComponents": [
         {
-          "title": "用印类型",
           "component": "select",
-          "id": "contractsigning_yylx",
           "editablenode": "",
+          "id": "contractsigning_yylx",
           "name": "contractsigning.yylx",
           "options": [
             {
@@ -566,109 +552,130 @@
               "text": "携章外出",
               "value": "1"
             }
-          ]
+          ],
+          "title": "用印类型"
         },
         {
-          "flowshow": true,
-          "title": "印章名称",
           "component": "label",
-          "id": "contractsigning_yzmc",
           "editablenode": "",
+          "flowshow": true,
+          "id": "contractsigning_yzmc",
+          "label": [
+            "sealeInforList.sealtext"
+          ],
           "middleName": [
             "contractsigning.yzmc",
             "sealid"
           ],
-          "label": [
-            "sealeInforList.sealtext"
-          ]
+          "title": "印章名称"
         },
         {
-          "title": "印章类型",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_yzlx",
-          "editablenode": "",
-          "name": "contractsigning.yzlx"
+          "name": "contractsigning.yzlx",
+          "title": "印章类型"
         },
         {
-          "title": "印章管理员",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_yzgly",
-          "editablenode": "",
-          "name": "contractsigning.yzgly"
+          "name": "contractsigning.yzgly",
+          "title": "印章管理员"
         },
         {
-          "title": "印章使用，一式几份",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_yzsyfs",
-          "editablenode": "",
-          "name": "contractsigning.yzsyfs"
+          "name": "contractsigning.yzsyfs",
+          "title": "印章使用，一式几份"
         },
         {
-          "title": "印章使用枚数",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_yzsyms",
-          "editablenode": "",
-          "name": "contractsigning.yzsyms"
+          "name": "contractsigning.yzsyms",
+          "title": "印章使用枚数"
         },
         {
-          "title": "印章使用日期",
           "component": "date1",
+          "editablenode": "",
           "id": "contractsigning_yzsyrq",
-          "editablenode": "",
-          "name": "contractsigning.yzsyrq"
+          "name": "contractsigning.yzsyrq",
+          "title": "印章使用日期"
         },
         {
-          "title": "计划归还日期",
           "component": "date1",
-          "id": "contractsigning_jhghrq",
           "editablenode": "",
-          "name": "contractsigning.jhghrq"
+          "id": "contractsigning_jhghrq",
+          "name": "contractsigning.jhghrq",
+          "title": "计划归还日期"
         }
-      ]
+      ],
+      "title": "印章信息"
     },
     {
-      "title": "合同审批人信息",
-      "pageid": "htsprxx",
       "component": "panel",
+      "pageid": "htsprxx",
       "subComponents": [
         {
-          "title": "业务承办部门部长/经理",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_m_bmbznm",
-          "editablenode": "",
-          "name": "contractsigning.m_bmbznm"
+          "name": "contractsigning.m_bmbznm",
+          "title": "业务承办部门部长/经理"
         },
         {
-          "title": "资产服务管理部门",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_zcfwglbm",
-          "editablenode": "",
-          "name": "contractsigning.zcfwglbm"
+          "name": "contractsigning.zcfwglbm",
+          "title": "资产服务管理部门"
         },
         {
-          "title": "资产服务需求部门",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_zcfwxqbm",
-          "editablenode": "",
-          "name": "contractsigning.zcfwxqbm"
+          "name": "contractsigning.zcfwxqbm",
+          "title": "资产服务需求部门"
         },
         {
-          "title": "财务部门初复审人员",
           "component": "text",
+          "editablenode": "",
           "id": "contractsigning_cwbmcfsry",
-          "editablenode": "",
-          "name": "contractsigning.cwbmcfsry"
+          "name": "contractsigning.cwbmcfsry",
+          "title": "财务部门初复审人员"
         },
         {
-          "title": "事业部总经理/职能中心总监",
           "component": "text",
-          "id": "contractsigning_xqbmfzr",
           "editablenode": "",
-          "name": "contractsigning.xqbmfzr"
+          "id": "contractsigning_xqbmfzr",
+          "name": "contractsigning.xqbmfzr",
+          "title": "事业部总经理/职能中心总监"
         }
-      ]
+      ],
+      "title": "合同审批人信息"
     }
   ],
-  "refers": {
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "ap_contractsigning",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
   }
 }

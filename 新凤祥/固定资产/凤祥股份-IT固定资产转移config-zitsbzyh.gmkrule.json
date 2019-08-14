@@ -1,273 +1,279 @@
 {
-  "id": "zitsbzyh",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask4","usertask5"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "transfer.appid"
+          "name": "transfer.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "transfer.appda"
+          "name": "transfer.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "transfer.pernr",
             "-",
             "transfer.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "transfer.sysbusinessunitname",
             "-",
             "transfer.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.userid"
+          "name": "transfer.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.username"
+          "name": "transfer.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.pernr"
+          "name": "transfer.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.syspostname"
+          "name": "transfer.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysdeptid"
+          "name": "transfer.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysdeptname"
+          "name": "transfer.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysbusinessunitid"
+          "name": "transfer.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.sysbusinessunitname"
+          "name": "transfer.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.postid"
+          "name": "transfer.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "transfer.id"
+          "name": "transfer.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "接收人信息",
-      "pageid": "jsrjbxx",
       "component": "panel",
+      "pageid": "jsrjbxx",
       "subComponents": [
         {
-          "title": "接收人ITCODE",
           "component": "text",
-          "name": "transfer.jsuserid"
+          "flowshow": true,
+          "name": "transfer.jsusername",
+          "title": "接收人"
         },
         {
-          "title": "接收人姓名",
           "component": "text",
-          "name": "transfer.jsusername"
+          "flowshow": true,
+          "name": "transfer.jsuserid",
+          "title": "ITCODE"
         },
         {
-          "title": "接收人员员工编号",
           "component": "text",
-          "name": "transfer.jspernr"
+          "name": "transfer.jspernr",
+          "title": "接收人员员工编号"
         },
         {
-          "title": "接收人员所属部门",
           "component": "text",
-          "name": "transfer.jssysdeptname"
+          "name": "transfer.jssysdeptname",
+          "title": "接收人员所属部门"
         },
         {
-          "title": "接收人岗位",
           "component": "text",
-          "name": "transfer.jssyspostid"
+          "name": "transfer.jssyspostid",
+          "title": "接收人岗位"
         },
         {
-          "title": "接收人岗位名称",
           "component": "text",
-          "name": "transfer.jssyspostname"
+          "name": "transfer.jssyspostname",
+          "title": "接收人岗位名称"
         },
         {
-          "title": "接收人公司id",
           "component": "label",
           "label": [
             "transfer.jsbukrs",
             "-",
             "transfer.jsbukrsname"
-          ]
+          ],
+          "title": "接收人公司id"
         },
         {
-          "title": "接收人成本中心",
           "component": "label",
           "label": [
             "transfer.jskostl",
             "-",
             "transfer.jsktext"
-          ]
+          ],
+          "title": "接收人成本中心"
         },
         {
-          "title": "转移原因",
           "component": "textarea",
-          "name": "transfer.zbztxt"
+          "flowshow": true,
+          "name": "transfer.zbztxt",
+          "title": "转移原因"
         }
-      ]
+      ],
+      "title": "接收人信息"
     },
     {
-      "title": "详细信息",
+      "component": "panel",
       "pageid": "zyxxxx",
-      "component": "panel",
       "subComponents": [
         {
-          "component": "table",
-          "titleIndex": 3,
-          "id": "zyxxxx_table",
           "basePath": "childlist",
           "cells": [
             {
-              "title": "资产编号",
               "component": "text",
-              "name": "propertycode"
+              "flowshow": true,
+              "name": "propertycode",
+              "title": "资产编号"
             },
             {
-              "title": "固定资产编号",
               "component": "text",
-              "name": "anln1"
+              "flowshow": true,
+              "name": "anln1",
+              "title": "固定资产编号"
             },
             {
-              "title": "资产分类",
               "component": "text",
-              "name": "ascatg"
+              "name": "ascatg",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "propertyname"
+              "name": "propertyname",
+              "title": "资产描述"
             },
             {
-              "title": "参数",
               "component": "text",
-              "name": "baspa"
+              "name": "baspa",
+              "title": "参数"
             },
             {
-              "title": "型号",
               "component": "text",
-              "name": "model"
+              "name": "model",
+              "title": "型号"
             },
             {
-              "title": "品牌",
               "component": "text",
-              "name": "brand"
+              "name": "brand",
+              "title": "品牌"
             },
             {
-              "title": "出厂编号",
               "component": "text",
-              "name": "technicalcode"
+              "name": "technicalcode",
+              "title": "出厂编号"
             }
-          ]
+          ],
+          "component": "table",
+          "id": "zyxxxx_table",
+          "titleIndex": 3
         }
-      ]
+      ],
+      "title": "详细信息"
     },
     {
-      "title": "转移明细",
-      "pageid": "zyxxmx",
       "component": "panel",
+      "pageid": "zyxxmx",
       "subComponents": [
         {
-          "component": "table",
-          "titleIndex": 1,
-          "id": "zyxxmx",
           "basePath": "childlist",
           "cells": [
             {
-              "title": "资产编号",
               "component": "label",
               "label": [
                 "propertycode",
                 "-",
                 "propertyname"
-              ]
+              ],
+              "title": "资产编号"
             },
             {
-              "title": "资产分类",
               "component": "text",
-              "name": "ascatg"
+              "name": "ascatg",
+              "title": "资产分类"
             },
             {
-              "title": "固定资产编号",
               "component": "text",
-              "name": "anln1"
+              "name": "anln1",
+              "title": "固定资产编号"
             },
             {
-              "title": "SAP资产编号",
               "component": "text",
-              "name": "technicalcode"
+              "name": "technicalcode",
+              "title": "SAP资产编号"
             },
             {
-              "title": "品牌",
               "component": "text",
-              "name": "brand"
+              "name": "brand",
+              "title": "品牌"
             },
             {
-              "title": "型号",
               "component": "text",
-              "name": "model"
+              "name": "model",
+              "title": "型号"
             },
             {
-              "title": "参数",
               "component": "text",
-              "name": "baspa"
+              "name": "baspa",
+              "title": "参数"
             }
-          ]
+          ],
+          "component": "table",
+          "id": "zyxxmx",
+          "titleIndex": 1
         }
-      ]
+      ],
+      "title": "转移明细"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask4",
+      "usertask5"
+    ]
+  },
+  "id": "zitsbzyh",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

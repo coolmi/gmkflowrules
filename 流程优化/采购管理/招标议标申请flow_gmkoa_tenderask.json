@@ -1,161 +1,144 @@
 {
-  "id": "flow_gmkoa_tenderask",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "标的物名称",
           "component": "text",
-          "name": "mainModel.subjtMatter"
+          "name": "mainModel.subjtMatter",
+          "title": "标的物名称"
         },
         {
-          "title": "公司",
           "component": "text",
-          "name": "mainModel.cdbutxt"
+          "name": "mainModel.cdbutxt",
+          "title": "公司"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型"
         },
         {
-          "title": "标的金额(原币)",
           "component": "text",
-          "name": "mainModel.subjtYamout"
+          "name": "mainModel.subjtYamout",
+          "title": "标的金额(原币)"
         },
         {
-          "title": "币种",
           "component": "text",
-          "name": "mainModel.currencyidtxt"
+          "name": "mainModel.currencyidtxt",
+          "title": "币种"
         },
         {
-          "title": "汇率",
           "component": "text",
-          "name": "mainModel.exchgeRate"
+          "name": "mainModel.exchgeRate",
+          "title": "汇率"
         },
         {
-          "title": "标的金额",
           "component": "text",
-          "name": "mainModel.subjtAmout"
+          "name": "mainModel.subjtAmout",
+          "title": "标的金额"
         },
         {
-          "title": "金额大写",
           "component": "text",
-          "name": "mainModel.chinaNumber"
+          "name": "mainModel.chinaNumber",
+          "title": "金额大写"
         },
         {
-          "title": "买卖",
           "component": "radio",
           "name": "mainModel.dealType",
           "options": [
@@ -167,10 +150,10 @@
               "title": "销售",
               "value": "销售"
             }
-          ]
+          ],
+          "title": "买卖"
         },
         {
-          "title": "招标形式",
           "component": "radio",
           "name": "mainModel.tendMode",
           "options": [
@@ -182,22 +165,22 @@
               "title": "议标",
               "value": "1"
             }
-          ]
+          ],
+          "title": "招标形式"
         },
         {
-          "title": "标的物用途",
           "component": "text",
-          "name": "mainModel.forGoal"
+          "name": "mainModel.forGoal",
+          "title": "标的物用途"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "招标要求",
-      "pageid": "requestInfo",
       "component": "panel",
+      "pageid": "requestInfo",
       "subComponents": [
         {
-          "title": "标书编制",
           "component": "radio",
           "name": "mainModel.bidDoc",
           "options": [
@@ -209,117 +192,133 @@
               "title": "不编制标书",
               "value": "1"
             }
-          ]
+          ],
+          "title": "标书编制"
         },
         {
-          "title": "招标时间",
           "component": "text",
           "datatype": "date",
           "dateFormat": "yyyy-MM-dd",
-          "name": "mainModel.tenderTime"
+          "name": "mainModel.tenderTime",
+          "title": "招标时间"
         },
         {
-          "title": "报价方式",
           "component": "text",
-          "name": "mainModel.offerType"
+          "name": "mainModel.offerType",
+          "title": "报价方式"
         },
         {
-          "title": "评标方式",
           "component": "text",
-          "name": "mainModel.bidType"
+          "name": "mainModel.bidType",
+          "title": "评标方式"
         },
         {
-          "title": "需求部门负责人",
           "component": "textarea",
-          "name": "mainModel.npnr"
+          "name": "mainModel.npnr",
+          "title": "需求部门负责人"
         },
         {
-          "title": "服务部门负责人",
           "component": "textarea",
-          "name": "mainModel.spnr"
+          "name": "mainModel.spnr",
+          "title": "服务部门负责人"
         },
         {
-          "title": "招标部门负责人",
           "component": "textarea",
-          "name": "mainModel.tderMemberpst"
+          "name": "mainModel.tderMemberpst",
+          "title": "招标部门负责人"
         },
         {
-          "title": "主要抄送人",
           "component": "textarea",
-          "name": "mainModel.notifierstxt"
+          "name": "mainModel.notifierstxt",
+          "title": "主要抄送人"
         },
         {
-          "title": "招标地点",
           "component": "textarea",
-          "name": "mainModel.tenderSite"
+          "name": "mainModel.tenderSite",
+          "title": "招标地点"
         },
         {
-          "title": "投标人的资质",
           "component": "textarea",
-          "name": "mainModel.aptitude"
+          "name": "mainModel.aptitude",
+          "title": "投标人的资质"
         },
         {
-          "title": "技术要求",
           "component": "textarea",
-          "name": "mainModel.techRequt"
+          "name": "mainModel.techRequt",
+          "title": "技术要求"
         },
         {
-          "title": "保证金要求",
           "component": "textarea",
-          "name": "mainModel.deposit"
+          "name": "mainModel.deposit",
+          "title": "保证金要求"
         },
         {
-          "title": "其他",
           "component": "textarea",
-          "name": "mainModel.others"
+          "name": "mainModel.others",
+          "title": "其他"
         }
-      ]
+      ],
+      "title": "招标要求"
     },
     {
-      "title": "投标者信息",
-      "pageid": "bidderInfo",
       "component": "panel",
+      "pageid": "bidderInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "bidder_table",
           "basePath": "tenderchlds",
+          "component": "table_form",
+          "id": "bidder_table",
           "tableForms": [
             {
-              "title": "投标者",
               "component": "text",
-              "name": "tenders"
+              "name": "tenders",
+              "title": "投标者"
             },
             {
-              "title": "描述",
               "component": "text",
-              "name": "remark"
+              "name": "remark",
+              "title": "描述"
             },
             {
-              "title": "传真",
               "component": "text",
-              "name": "faxid"
+              "name": "faxid",
+              "title": "传真"
             },
             {
-              "title": "电话",
               "component": "text",
-              "name": "fixphone"
+              "name": "fixphone",
+              "title": "电话"
             },
             {
-              "title": "邮箱",
               "component": "text",
-              "name": "mailid"
+              "name": "mailid",
+              "title": "邮箱"
             },
             {
-              "title": "其他",
               "component": "text",
-              "name": "others"
+              "name": "others",
+              "title": "其他"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "投标者信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_tenderask",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

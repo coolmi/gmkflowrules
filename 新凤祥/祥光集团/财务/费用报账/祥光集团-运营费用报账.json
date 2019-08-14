@@ -1,274 +1,271 @@
 {
-  "id": "af_operatecost",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "项目类型",
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.xmlx",
           "options": [
             {
+              "flowshow": true,
               "text": "请选择",
               "value": ""
             },
             {
+              "flowshow": true,
               "text": "日常类",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "技术改造",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "技术研发",
               "value": "2"
             }
-          ]
-        },
-        {
-          "title": "附件数",
-          "component": "text",
-          "name": "mainModel.fjs"
-        },
-        {
-          "title": "费用承担公司",
-          "component": "label",
-          "middleName": [
-            "mainModel.fybukrs",
-            "bukrs"
           ],
+          "title": "项目类型"
+        },
+        {
+          "component": "text",
+          "name": "mainModel.fjs",
+          "title": "附件数"
+        },
+        {
+          "component": "label",
+          "flowshow": true,
           "label": [
             "mainModel.fybukrs",
             "-",
             "t001list.butxt"
-          ]
+          ],
+          "middleName": [
+            "mainModel.fybukrs",
+            "bukrs"
+          ],
+          "title": "费用承担公司"
         },
         {
-          "title": "费用承担部门",
           "component": "text",
-          "name": "mainModel.fycdbm"
+          "name": "mainModel.fycdbm",
+          "title": "费用承担部门"
         },
         {
-          "title": "地域类型",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.dylx",
           "options": [
             {
+              "flowshow": true,
               "text": "境内",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "境外",
               "value": "1"
             }
-          ]
+          ],
+          "title": "地域类型"
         },
         {
-          "title": "说明",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.sm",
           "rows": 4,
-          "name": "mainModel.sm"
+          "title": "说明"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "费用列表",
-      "pageid": "fylb_page",
       "component": "panel",
+      "pageid": "fylb_page",
       "subComponents": [
         {
+          "basePath": "operatecostinfolist",
           "component": "table_form",
-          "titleIndex": 2,
+          "id": "fylb_table",
           "lTitleIndex": 2,
           "rTitleIndex": 4,
-          "basePath": "operatecostinfolist",
-          "id": "fylb_table",
           "tableForms": [
             {
-              "title": "费用大类",
               "component": "text",
-              "name": "fydlmc"
+              "name": "fydlmc",
+              "title": "费用大类"
             },
             {
-              "title": "费用小类",
               "component": "text",
-              "name": "fyxlmc"
+              "name": "fyxlmc",
+              "title": "费用小类"
             },
             {
-              "title": "报销科目",
               "component": "textarea",
+              "flowshow": true,
+              "name": "bxkmmc",
               "rows": 3,
-              "name": "bxkmmc"
+              "title": "报销科目"
             },
             {
-              "title": "成本中心",
               "component": "textarea",
+              "flowshow": true,
+              "name": "cbzxmc",
               "rows": 3,
-              "name": "cbzxmc"
+              "title": "成本中心"
             },
             {
-              "title": "申请金额",
               "component": "text",
               "datatype": "money",
-              "name": "sqjexx"
+              "flowshow": true,
+              "name": "sqjexx",
+              "title": "申请金额"
             },
             {
-              "title": "申请金额大写",
               "component": "text",
-              "name": "sqjedx"
+              "name": "sqjedx",
+              "title": "申请金额大写"
             }
-          ]
+          ],
+          "titleIndex": 2
         },
         {
-          "title": "合计",
           "component": "text",
           "datatype": "money",
-          "name": "mainModel.jesum"
+          "flowshow": true,
+          "name": "mainModel.jesum",
+          "title": "合计"
         }
-      ]
+      ],
+      "title": "费用列表"
     },
     {
-      "title": "供应商信息",
-      "pageid": "gysxx_page",
       "component": "panel",
+      "pageid": "gysxx_page",
       "subComponents": [
         {
-          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.gysbh"
+          "name": "mainModel.gysbh",
+          "title": "供应商编号"
         },
         {
-          "title": "供应商描述",
           "component": "text",
-          "name": "mainModel.gysmc"
+          "name": "mainModel.gysmc",
+          "title": "供应商描述"
         },
         {
-          "title": "汇入行",
           "component": "text",
-          "name": "mainModel.hrh"
+          "name": "mainModel.hrh",
+          "title": "汇入行"
         },
         {
-          "title": "汇入账号",
           "component": "text",
-          "name": "mainModel.hrzh"
+          "name": "mainModel.hrzh",
+          "title": "汇入账号"
         },
         {
-          "title": "合同号",
           "component": "text",
-          "name": "mainModel.hth"
+          "name": "mainModel.hth",
+          "title": "合同号"
         },
         {
-          "title": "合同约定到货日期",
           "component": "text",
-          "name": "mainModel.htyddhrq",
           "datatype": "date",
-          "dateFormat": "yyyy-MM-dd"
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.htyddhrq",
+          "title": "合同约定到货日期"
         },
         {
-          "title": "付款种类",
           "component": "select",
           "name": "mainModel.fkzl",
           "options": [
@@ -296,43 +293,60 @@
               "text": "信用证",
               "value": "4"
             }
-          ]
+          ],
+          "title": "付款种类"
         },
         {
-          "title": "付款日期",
           "component": "text",
-          "name": "mainModel.fkrq",
           "datatype": "date",
-          "dateFormat": "yyyy-MM-dd"
+          "dateFormat": "yyyy-MM-dd",
+          "name": "mainModel.fkrq",
+          "title": "付款日期"
         },
         {
-          "title": "汇款用途",
           "component": "textarea",
-          "name": "mainModel.hkyt"
+          "name": "mainModel.hkyt",
+          "title": "汇款用途"
         },
         {
-          "title": "补(退)金额",
           "component": "text",
+          "datatype": "money",
           "name": "mainModel.btjexx",
-          "datatype": "money"
+          "title": "补(退)金额"
         },
         {
-          "title": "补(退)金额(大写)",
           "component": "text",
-          "name": "mainModel.btjedx"
+          "name": "mainModel.btjedx",
+          "title": "补(退)金额(大写)"
         },
         {
-          "title": "预付款金额(小写)",
           "component": "text",
+          "datatype": "money",
           "name": "mainModel.yfkjexx",
-          "datatype": "money"
+          "title": "预付款金额(小写)"
         },
         {
-          "title": "预付款金额(大写)",
           "component": "text",
-          "name": "mainModel.yfkjedx"
+          "name": "mainModel.yfkjedx",
+          "title": "预付款金额(大写)"
         }
-      ]
+      ],
+      "title": "供应商信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "af_operatecost",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

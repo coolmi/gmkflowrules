@@ -1,143 +1,131 @@
 {
-  "id": "flow_gmkoa_versalepromoexpen",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "核销/领用类型",
           "component": "radio",
           "id": "hxtype",
           "name": "mainModel.writeuseroff",
           "options": [
             {
+              "flowshow": true,
               "title": "核销类型",
               "value": "A"
             },
             {
+              "flowshow": true,
               "title": "领用类型",
               "value": "B"
             }
           ],
-          "showLinkage":[
+          "showLinkage": [
             {
-              "id":"hxtype",
-              "values":["A"]
+              "flowshow": true,
+              "id": "hxtype",
+              "values": [
+                "A"
+              ]
             }
-          ]
+          ],
+          "title": "核销/领用类型"
         },
         {
-          "title": "是否返利",
           "component": "radio",
           "name": "mainModel.rebate",
           "options": [
@@ -149,161 +137,190 @@
               "title": "否",
               "value": "否"
             }
-          ]
+          ],
+          "title": "是否返利"
         },
         {
-          "title": "标题名称",
           "component": "text",
-          "name": "mainModel.titlename"
+          "flowshow": true,
+          "name": "mainModel.titlename",
+          "title": "标题名称"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型"
         },
         {
-          "title": "公司",
           "component": "text",
-          "name": "mainModel.cdbutxt"
+          "flowshow": false,
+          "name": "mainModel.cdbutxt",
+          "title": "公司"
         },
         {
-          "title": "成本中心",
           "component": "text",
-          "name": "mainModel.cdkotxt"
+          "name": "mainModel.cdkotxt",
+          "title": "成本中心"
         },
         {
-          "title": "主抄送人",
           "component": "textarea",
-          "name": "mainModel.sendtxt"
+          "name": "mainModel.sendtxt",
+          "title": "主抄送人"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "费用核销",
-      "pageid": "costInfo",
       "component": "panel",
+      "pageid": "costInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "cost_table",
           "basePath": "infos",
+          "component": "table_form",
+          "id": "cost_table",
           "tableForms": [
             {
-              "title": "核销年月",
               "component": "text",
-              "name": "writedate"
+              "flowshow": true,
+              "name": "writedate",
+              "title": "核销年月"
             },
             {
-              "title": "核销费用类型",
               "component": "label",
               "label": [
                 "writetype",
                 "writetypedes"
-              ]
+              ],
+              "title": "核销费用类型"
             },
             {
-              "title": "核销费用细项",
               "component": "label",
+              "flowshow": true,
               "label": [
                 "writecostype",
                 "writecostypedes"
-              ]
+              ],
+              "title": "核销费用细项"
             },
             {
-              "title": "科目编号",
               "component": "label",
               "label": [
                 "subjectcode",
                 "subjectcodedec"
-              ]
+              ],
+              "title": "科目编号"
             },
             {
-              "title": "品项",
               "component": "text",
-              "name": "itemsdec"
+              "flowshow": true,
+              "name": "itemsdec",
+              "title": "品项"
             },
             {
-              "title": "客户/项目编码",
               "component": "text",
-              "name": "customer"
+              "flowshow": true,
+              "name": "customer",
+              "title": "客户/项目编码"
             },
             {
-              "title": "客户/项目名称",
               "component": "text",
-              "name": "customertxt"
+              "name": "customertxt",
+              "title": "客户/项目名称"
             },
             {
-              "title": "渠道类型",
               "component": "text",
-              "name": "channeltypename"
+              "name": "channeltypename",
+              "title": "渠道类型"
             },
             {
-              "title": "系统名称",
               "component": "text",
-              "name": "sysname"
+              "flowshow": true,
+              "name": "sysname",
+              "title": "系统名称"
             },
             {
-              "title": "售点省份",
               "component": "text",
-              "name": "provinces"
+              "name": "provinces",
+              "title": "售点省份"
             },
             {
-              "title": "售点城市",
               "component": "text",
-              "name": "pointcity"
+              "flowshow": true,
+              "name": "pointcity",
+              "title": "售点城市"
             },
             {
-              "title": "售点县/区",
               "component": "text",
-              "name": "countydistrict"
+              "name": "countydistrict",
+              "title": "售点县/区"
             },
             {
-              "title": "售点数量",
               "component": "text",
-              "name": "saleaddress"
+              "flowshow": false,
+              "name": "saleaddress",
+              "title": "售点数量"
             },
             {
-              "title": "数量",
               "component": "text",
-              "name": "num"
+              "flowshow": true,
+              "name": "num",
+              "title": "数量"
             },
             {
-              "title": "单价",
               "component": "text",
-              "name": "unitprice"
+              "flowshow": true,
+              "name": "unitprice",
+              "title": "单价"
             },
             {
-              "title": "金额",
               "component": "text",
-              "name": "writeamount"
+              "flowshow": true,
+              "name": "writeamount",
+              "title": "金额"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "费用核销"
     },
     {
-      "title": "价税合计信息",
-      "pageid": "sumInfo",
       "component": "panel",
+      "pageid": "sumInfo",
       "subComponents": [
         {
-          "title": "发票税金",
           "component": "text",
-          "name": "mainModel.tax"
+          "name": "mainModel.tax",
+          "title": "发票税金"
         },
         {
-          "title": "价税合计",
           "component": "text",
-          "name": "mainModel.valorem"
+          "name": "mainModel.valorem",
+          "title": "价税合计"
         }
-      ]
+      ],
+      "title": "价税合计信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_versalepromoexpen",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

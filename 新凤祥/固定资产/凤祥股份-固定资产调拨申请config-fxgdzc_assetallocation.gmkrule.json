@@ -1,242 +1,257 @@
 {
-  "id": "fxgdzc_assetallocation",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask7"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "是否跨公司",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.crosscompany",
           "options": [
             {
+              "flowshow": false,
               "title": "不跨公司",
               "value": "N"
             },
             {
+              "flowshow": false,
               "title": "跨公司",
               "value": "Y"
             }
-          ]
+          ],
+          "title": "是否跨公司"
         },
         {
-          "title": "调出公司",
           "component": "text",
-          "name": "mainModel.frombutxt"
+          "flowshow": false,
+          "name": "mainModel.frombutxt",
+          "title": "调出公司"
         },
         {
-          "title": "调入公司",
           "component": "text",
-          "name": "mainModel.tobutxt"
+          "flowshow": false,
+          "name": "mainModel.tobutxt",
+          "title": "调入公司"
         },
         {
-          "title": "调出部门",
           "component": "text",
-          "name": "mainModel.fromdeptname"
+          "flowshow": true,
+          "name": "mainModel.fromdeptname",
+          "title": "调出部门"
         },
         {
-          "title": "调入部门",
           "component": "text",
-          "name": "mainModel.todeptname"
+          "flowshow": true,
+          "name": "mainModel.todeptname",
+          "title": "调入部门"
         },
         {
-          "title": "调拨理由",
           "component": "textarea",
-          "name": "mainModel.tbly"
+          "flowshow": true,
+          "name": "mainModel.tbly",
+          "title": "调拨理由"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "调拨行项目信息",
-      "pageid": "dbhxmxx",
       "component": "panel",
+      "pageid": "dbhxmxx",
       "subComponents": [
         {
-          "component": "formLabelLink",
-          "titleIndex": 0,
           "basePath": "infos",
+          "component": "formLabelLink",
           "id": "gdzc_zbxx",
           "linkForms": [
             {
-              "title": "资产分类",
               "component": "linkToMap",
-              "name": "zcfl",
               "linkToMap": {
-                "linkToLable": "true",
-                "mapBasePath": "assettypeMaps",
                 "linkMiddle": "anlkl",
-                "linkType": "string"
-              }
+                "linkToLable": "true",
+                "linkType": "string",
+                "mapBasePath": "assettypeMaps"
+              },
+              "name": "zcfl",
+              "title": "资产分类"
             },
             {
-              "title": "资产描述",
               "component": "text",
-              "name": "anltx"
+              "flowshow": true,
+              "name": "anltx",
+              "title": "资产描述"
             },
             {
-              "title": "调出成本中心",
               "component": "text",
-              "name": "fromkotxt"
+              "flowshow": true,
+              "name": "fromkotxt",
+              "title": "调出成本中心"
             },
             {
-              "title": "调入成本中心",
               "component": "text",
-              "name": "tokotxt"
+              "flowshow": true,
+              "name": "tokotxt",
+              "title": "调入成本中心"
             },
             {
-              "title": "规格型号",
               "component": "text",
-              "name": "ggxx"
+              "flowshow": true,
+              "name": "ggxx",
+              "title": "规格型号"
             },
             {
-              "title": "单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "单位"
             },
             {
-              "title": "原有数量",
               "component": "text",
-              "name": "amount"
+              "flowshow": true,
+              "name": "amount",
+              "title": "原有数量"
             },
             {
-              "title": "合同号",
               "component": "text",
-              "name": "contract"
+              "name": "contract",
+              "title": "合同号"
             },
             {
-              "title": "订单",
               "component": "text",
-              "name": "aufnr"
+              "name": "aufnr",
+              "title": "订单"
             },
             {
-              "title": "主资产编号",
               "component": "text",
-              "name": "anln1"
+              "name": "anln1",
+              "title": "主资产编号"
             },
             {
-              "title": "资产次级编号",
               "component": "text",
-              "name": "anln2"
+              "name": "anln2",
+              "title": "资产次级编号"
             },
             {
-              "title": "供应商编号",
               "component": "text",
-              "name": "lifnr"
+              "name": "lifnr",
+              "title": "供应商编号"
             },
             {
-              "title": "供应商名称",
               "component": "text",
-              "name": "lifnrname"
+              "flowshow": true,
+              "name": "lifnrname",
+              "title": "供应商名称"
             },
             {
-              "title": "调拨数量",
               "component": "text",
-              "name": "dbamount"
+              "flowshow": true,
+              "name": "dbamount",
+              "title": "调拨数量"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "调拨行项目信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask7"
+    ]
+  },
+  "id": "fxgdzc_assetallocation",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

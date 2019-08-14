@@ -1,167 +1,171 @@
 {
-  "id": "flow_oayushengcorp_recruit",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "招聘需求信息",
-      "pageid": "recruitInfo",
       "component": "panel",
+      "pageid": "recruitInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "recruit_table",
           "basePath": "itemList",
+          "component": "table_form",
+          "id": "recruit_table",
           "tableForms": [
             {
-              "title": "岗位名称",
               "component": "text",
-              "name": "postna"
+              "flowshow": true,
+              "name": "postna",
+              "title": "岗位名称"
             },
             {
-              "title": "所属部门",
               "component": "text",
-              "name": "orgna"
+              "flowshow": true,
+              "name": "orgna",
+              "title": "所属部门"
             },
             {
-              "title": "所属公司",
               "component": "text",
-              "name": "cdburks"
+              "name": "cdburks",
+              "title": "所属公司"
             },
             {
-              "component": "table_form",
-              "titleIndex": 0,
-              "id": "gwsms_table",
               "basePath": "subFilesList",
+              "component": "table_form",
+              "id": "gwsms_table",
               "tableForms": [
                 {
-                  "title": "岗位说明书",
                   "component": "text",
-                  "name": "filename"
+                  "flowshow": true,
+                  "name": "filename",
+                  "title": "岗位说明书"
                 }
-              ]
+              ],
+              "titleIndex": 0
             },
             {
-              "title": "期望到岗日期",
               "component": "text",
-              "name": "dgdate"
+              "flowshow": true,
+              "name": "dgdate",
+              "title": "期望到岗日期"
             }
-          ]
+          ],
+          "titleIndex": 0
         },
         {
-          "title": "其他招聘素质要求",
           "component": "textarea",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "其他招聘素质要求"
         }
-      ]
+      ],
+      "title": "招聘需求信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_recruit",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

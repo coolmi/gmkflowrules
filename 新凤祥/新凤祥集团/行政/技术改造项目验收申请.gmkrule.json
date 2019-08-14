@@ -1,180 +1,181 @@
 {
-  "id": "ap_technicalacceptance",
-  "handleOnPC": {
-    "tasknode": [
-      "usertask5",
-      "usertask7"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-    ],
-    "beforPop": false
-  },
-  "pageSelectIndex": {
-    "defaultIndex": 0,
-    "selectIndexArray": [
-      {
-        "selectIndex": 0,
-        "tasknode": [
-        ]
-      }
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "项目立项单号",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_approvalid",
-          "editablenode": "",
-          "name": "mainModel.approvalid"
+          "name": "mainModel.approvalid",
+          "title": "项目立项单号"
         },
         {
-          "title": "技改项目名称",
           "component": "text",
+          "editablenode": "",
+          "flowshow": true,
           "id": "mainModel_jgxmname",
-          "editablenode": "",
-          "name": "mainModel.jgxmname"
+          "name": "mainModel.jgxmname",
+          "title": "技改项目名称"
         },
         {
-          "title": "项目负责人",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_jgxmfzr",
-          "editablenode": "",
-          "name": "mainModel.jgxmfzr"
+          "name": "mainModel.jgxmfzr",
+          "title": "项目负责人"
         },
         {
-          "title": "项目承担单位",
           "component": "text",
+          "editablenode": "",
           "id": "mainModel_xmcddw",
-          "editablenode": "",
-          "name": "mainModel.xmcddw"
+          "name": "mainModel.xmcddw",
+          "title": "项目承担单位"
         },
         {
-          "title": "项目计划起始时间",
           "component": "date1",
+          "editablenode": "",
           "id": "mainModel_xmjhstartdate",
-          "editablenode": "",
-          "name": "mainModel.xmjhstartdate"
+          "name": "mainModel.xmjhstartdate",
+          "title": "项目计划起始时间"
         },
         {
-          "title": "项目实际结束时间",
           "component": "date1",
-          "id": "mainModel_xmsjenddate",
           "editablenode": "",
-          "name": "mainModel.xmsjenddate"
+          "id": "mainModel_xmsjenddate",
+          "name": "mainModel.xmsjenddate",
+          "title": "项目实际结束时间"
         },
         {
-          "title": "结项说明",
           "component": "textarea",
-          "id": "mainModel_jxsm",
           "editablenode": "",
+          "flowshow": true,
+          "id": "mainModel_jxsm",
+          "name": "mainModel.jxsm",
           "rows": "3",
-          "name": "mainModel.jxsm"
+          "title": "结项说明"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "usertask5",
+      "usertask7"
+    ]
+  },
+  "id": "ap_technicalacceptance",
+  "pageSelectIndex": {
+    "defaultIndex": 0,
+    "selectIndexArray": [
+      {
+        "selectIndex": 0,
+        "tasknode": []
+      }
+    ]
+  },
+  "refers": {},
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": []
+  }
 }

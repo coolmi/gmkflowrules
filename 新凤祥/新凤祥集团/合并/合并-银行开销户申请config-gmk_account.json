@@ -1,229 +1,262 @@
 {
-  "id": "gmk_account",
-  "handleOnPC": {
-    "tasknode": [
-      "apply"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx_page",
       "component": "panel",
+      "pageid": "sqxx_page",
       "subComponents": [
         {
           "component": "text",
-          "title": "ITCODE",
-          "name": "mainModel.iTCODE"
+          "name": "mainModel.iTCODE",
+          "title": "ITCODE"
         },
         {
           "component": "text",
-          "title": "所属公司",
-          "name": "mainModel.bUKTXT"
+          "name": "mainModel.bUKTXT",
+          "title": "所属公司"
         },
         {
           "component": "text",
-          "title": "手机",
-          "name": "mainModel.pHONE"
+          "name": "mainModel.pHONE",
+          "title": "手机"
         },
         {
           "component": "text",
-          "title": "邮箱",
-          "name": "mainModel.eMAIL"
+          "name": "mainModel.eMAIL",
+          "title": "邮箱"
         },
         {
           "component": "select",
-          "title": "业务类型",
+          "flowshow": true,
+          "id": "kHLB",
           "name": "mainModel.kHLB",
-          "id":"kHLB",
-          "options":[
+          "options": [
             {
+              "flowshow": true,
               "text": "开户",
               "value": "01"
             },
             {
+              "flowshow": true,
               "text": "销户",
               "value": "02"
             },
             {
+              "flowshow": true,
               "text": "变更",
               "value": "03"
             }
-          ]
+          ],
+          "title": "业务类型"
         },
         {
           "component": "text",
-          "title": "业务公司名称",
-          "name": "mainModel.bUTXT"
+          "flowshow": true,
+          "name": "mainModel.bUTXT",
+          "title": "业务公司名称"
         },
         {
           "component": "text",
-          "title": "开户行名称",
-          "name": "mainModel.bANKA"
+          "flowshow": true,
+          "name": "mainModel.bANKA",
+          "title": "开户行名称"
         },
         {
           "component": "text",
-          "title": "银行账号",
-          "name": "mainModel.bANKN"
+          "flowshow": false,
+          "name": "mainModel.bANKN",
+          "title": "银行账号"
         },
         {
           "component": "text",
-          "title": "账号性质",
-          "name": "mainModel.zHXZ"
+          "flowshow": true,
+          "name": "mainModel.zHXZ",
+          "title": "账号性质"
         },
         {
           "component": "text",
-          "title": "账户币种",
-          "name": "mainModel.wAERS"
+          "name": "mainModel.wAERS",
+          "title": "账户币种"
         },
         {
           "component": "text",
-          "title": "账户用途",
           "name": "mainModel.zHYT",
           "showLinkage": [
             {
+              "flowshow": true,
               "id": "kHLB",
-              "values": ["01","03"]
+              "values": [
+                "01",
+                "03"
+              ]
             }
-          ]
+          ],
+          "title": "账户用途"
         },
         {
           "component": "text",
-          "title": "账户原用途",
+          "flowshow": true,
           "name": "mainModel.zHYYT",
           "showLinkage": [
             {
               "id": "kHLB",
-              "values": ["02"]
+              "values": [
+                "02"
+              ]
             }
-          ]
+          ],
+          "title": "账户原用途"
         },
         {
           "component": "text",
-          "title": "是否开通网银",
+          "flowshow": true,
           "name": "mainModel.kTWY",
-          "showLinkage": [{
-            "id": "kHLB",
-            "values": ["01","03"]
-          }]
+          "showLinkage": [
+            {
+              "id": "kHLB",
+              "values": [
+                "01",
+                "03"
+              ]
+            }
+          ],
+          "title": "是否开通网银"
         },
         {
           "component": "textarea",
-          "title": "开户原因",
           "name": "mainModel.kHYY",
-          "showLinkage": [{
-            "id": "kHLB",
-            "values": ["01","03"]
-          }]
+          "showLinkage": [
+            {
+              "flowshow": true,
+              "id": "kHLB",
+              "values": [
+                "01",
+                "03"
+              ]
+            }
+          ],
+          "title": "开户原因"
         },
         {
           "component": "textarea",
-          "title": "销户原因",
+          "flowshow": true,
           "name": "mainModel.xHYY",
-          "showLinkage": [{
-            "id": "kHLB",
-            "values": ["02"]
-          }]
+          "showLinkage": [
+            {
+              "id": "kHLB",
+              "values": [
+                "02"
+              ]
+            }
+          ],
+          "title": "销户原因"
         },
         {
           "component": "textarea",
-          "title": "备注",
-          "name": "mainModel.bZ"
+          "flowshow": true,
+          "name": "mainModel.bZ",
+          "title": "备注"
         },
         {
           "component": "text",
-          "title": "业务执行人员",
-          "name": "mainModel.yWZXR"
+          "name": "mainModel.yWZXR",
+          "title": "业务执行人员"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "apply"
+    ]
+  },
+  "id": "gmk_account"
 }

@@ -1,206 +1,217 @@
 {
-  "id": "flow_oayushengcorp_staffmove",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "员工编号",
           "component": "text",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": "员工编号"
         },
         {
-          "title": "姓名",
           "component": "text",
-          "name": "mainModel.pname"
+          "flowshow": true,
+          "name": "mainModel.pname",
+          "title": "姓名"
         },
         {
-          "title": "所属法人",
           "component": "text",
-          "name": "mainModel.cdburkstxt"
+          "name": "mainModel.cdburkstxt",
+          "title": "所属法人"
         },
         {
-          "title": "入职日期",
           "component": "text",
-          "name": "mainModel.entryDate"
+          "flowshow": true,
+          "name": "mainModel.entryDate",
+          "title": "入职日期"
         },
         {
-          "title": "现任岗位日期",
           "component": "text",
-          "name": "mainModel.inpstDate"
+          "flowshow": true,
+          "name": "mainModel.inpstDate",
+          "title": "现任岗位日期"
         },
         {
-          "title": "学历",
           "component": "text",
-          "name": "mainModel.educns"
+          "flowshow": true,
+          "name": "mainModel.educns",
+          "title": "学历"
         },
         {
-          "title": "专业",
           "component": "text",
-          "name": "mainModel.major"
+          "flowshow": true,
+          "name": "mainModel.major",
+          "title": "专业"
         },
         {
-          "title": "拟岗位日期",
           "component": "text",
-          "name": "mainModel.moveDate"
+          "flowshow": true,
+          "name": "mainModel.moveDate",
+          "title": "拟岗位日期"
         },
         {
-          "title": "调整前岗位编号",
           "component": "text",
-          "name": "mainModel.agoPost"
+          "flowshow": false,
+          "name": "mainModel.agoPost",
+          "title": "调整前岗位编号"
         },
         {
-          "title": "调整后岗位编号",
           "component": "text",
-          "name": "mainModel.laterPost"
+          "name": "mainModel.laterPost",
+          "title": "调整后岗位编号"
         },
         {
-          "title": "调整前岗位名称",
           "component": "text",
-          "name": "mainModel.agoPosttxt"
+          "flowshow": true,
+          "name": "mainModel.agoPosttxt",
+          "title": "调整前岗位名称"
         },
         {
-          "title": "调整后岗位名称",
           "component": "text",
-          "name": "mainModel.laterPosttxt"
+          "flowshow": true,
+          "name": "mainModel.laterPosttxt",
+          "title": "调整后岗位名称"
         },
         {
-          "title": "调整前组织编号",
           "component": "text",
-          "name": "mainModel.agoOrg"
+          "name": "mainModel.agoOrg",
+          "title": "调整前组织编号"
         },
         {
-          "title": "调整后组织编号",
           "component": "text",
-          "name": "mainModel.laterOrg"
+          "name": "mainModel.laterOrg",
+          "title": "调整后组织编号"
         },
         {
-          "title": "调整前组织名称",
           "component": "text",
-          "name": "mainModel.agoOrgtxt"
+          "flowshow": true,
+          "name": "mainModel.agoOrgtxt",
+          "title": "调整前组织名称"
         },
         {
-          "title": "调整后组织名称",
           "component": "text",
-          "name": "mainModel.laterOrgtxt"
+          "flowshow": true,
+          "name": "mainModel.laterOrgtxt",
+          "title": "调整后组织名称"
         },
         {
-          "title": "原因",
           "component": "text",
-          "name": "mainModel.reasons"
+          "flowshow": true,
+          "name": "mainModel.reasons",
+          "title": "原因"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_oayushengcorp_staffmove",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

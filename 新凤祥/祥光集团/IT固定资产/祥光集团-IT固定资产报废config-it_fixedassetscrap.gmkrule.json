@@ -1,142 +1,167 @@
 {
-    "id": "it_fixedassetscrap",
+    "forms": [
+        {
+            "component": "panel",
+            "pageid": "jbxx",
+            "subComponents": [
+                {
+                    "component": "text",
+                    "name": "mainModel.appid",
+                    "title": "申请单号"
+                },
+                {
+                    "component": "date1",
+                    "name": "mainModel.appda",
+                    "title": "申请日期"
+                },
+                {
+                    "component": "label",
+                    "label": [
+                        "mainModel.pernr",
+                        "-",
+                        "mainModel.username"
+                    ],
+                    "title": "申请人姓名"
+                },
+                {
+                    "component": "label",
+                    "label": [
+                        "mainModel.sysbusinessunitname",
+                        "-",
+                        "mainModel.sysdeptname"
+                    ],
+                    "title": "所属部门"
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.userid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.username",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.pernr",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.syspostname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysdeptname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.sysbusinessunitname",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.postid",
+                    "title": ""
+                },
+                {
+                    "component": "hidden",
+                    "name": "mainModel.id",
+                    "title": ""
+                }
+            ],
+            "title": "基本信息"
+        },
+        {
+            "component": "panel",
+            "pageid": "sqxx",
+            "subComponents": [
+                {
+                    "basePath": "infos",
+                    "cells": [
+                        {
+                            "component": "text",
+                            "flowshow": true,
+                            "name": "propertycode",
+                            "title": "资产编号"
+                        },
+                        {
+                            "component": "text",
+                            "name": "anln1",
+                            "title": "固定资产编号"
+                        },
+                        {
+                            "component": "text",
+                            "flowshow": true,
+                            "name": "ascatg",
+                            "title": "资产类别"
+                        },
+                        {
+                            "component": "text",
+                            "flowshow": true,
+                            "name": "propertyname",
+                            "title": "资产描述"
+                        },
+                        {
+                            "component": "textarea",
+                            "name": "baspa",
+                            "title": "参数"
+                        },
+                        {
+                            "component": "text",
+                            "name": "model",
+                            "title": "型号"
+                        },
+                        {
+                            "component": "text",
+                            "name": "brand",
+                            "title": "品牌"
+                        },
+                        {
+                            "component": "text",
+                            "name": "ccbh",
+                            "title": "出厂编号"
+                        },
+                        {
+                            "component": "textarea",
+                            "flowshow": true,
+                            "name": "bfyy",
+                            "title": "报废原因"
+                        }
+                    ],
+                    "component": "table",
+                    "titleIndex": 3
+                }
+            ],
+            "title": "申请信息"
+        }
+    ],
     "handleOnPC": {
-        "tasknode": ["usertask7"],
-        "flag": ["resubmit"]
+        "flag": [
+            "resubmit"
+        ],
+        "tasknode": [
+            "usertask7"
+        ]
     },
+    "id": "it_fixedassetscrap",
     "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "jbxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "mainModel.appid"
-        },
-        {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "mainModel.appda"
-        },
-        {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["mainModel.pernr", "-", "mainModel.username"]
-        },
-        {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.userid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.username"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.pernr"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.syspostname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitname"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.postid"
-        },
-        {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.id"
-        }]
-    },
-    {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "component": "table",
-            "titleIndex": 3,
-            "basePath": "infos",
-            "cells": [{
-                "title": "资产编号",
-                "component": "text",
-                "name": "propertycode"
-            },
-            {
-                "title": "固定资产编号",
-                "component": "text",
-                "name": "anln1"
-            },
-            {
-                "title": "资产类别",
-                "component": "text",
-                "name": "ascatg"
-            },
-            {
-                "title": "资产描述",
-                "component": "text",
-                "name": "propertyname"
-            },
-            {
-                "title": "参数",
-                "component": "textarea",
-                "name": "baspa"
-            },
-            {
-                "title": "型号",
-                "component": "text",
-                "name": "model"
-            },
-            {
-                "title": "品牌",
-                "component": "text",
-                "name": "brand"
-            },
-            {
-                "title": "出厂编号",
-                "component": "text",
-                "name": "ccbh"
-            },
-            {
-                "title": "报废原因",
-                "component": "textarea",
-                "name": "bfyy"
-            }]
-        }]
+        "beforPop": false,
+        "tasknode": [
+            ""
+        ]
     }
-    ]
 }

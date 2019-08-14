@@ -2,7 +2,7 @@
   "forms": [
     {
       "component": "panel",
-      "pageid": "sqxx",
+      "pageid": "jbxx",
       "subComponents": [
         {
           "component": "text",
@@ -91,23 +91,28 @@
       "subComponents": [
         {
           "component": "text",
+          "flowshow": true,
           "name": "mainModel.zxbutxt",
           "title": "供应商名称"
         },
         {
           "component": "text",
+          "flowshow": true,
           "name": "mainModel.frbutxt",
           "title": "法人单位"
         },
         {
           "component": "select",
+          "flowshow": true,
           "name": "mainModel.ywlx",
           "options": [
             {
+              "flowshow": true,
               "text": "补充协议",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "修改协议",
               "value": "1"
             }
@@ -121,19 +126,23 @@
         },
         {
           "component": "textarea",
+          "flowshow": true,
           "name": "mainModel.biz",
           "rows": "4",
           "title": "协议内容"
         },
         {
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.xygz",
           "options": [
             {
+              "flowshow": true,
               "text": "否",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "是",
               "value": "1"
             }

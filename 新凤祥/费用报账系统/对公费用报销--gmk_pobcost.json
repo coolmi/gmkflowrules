@@ -1,379 +1,384 @@
 {
-  "id": "gmk_pobcost",
-  "handleOnPC": {
-    "tasknode": [
-      "compubshgmreim3",
-      "compubshgmreim7",
-      "usertask4",
-      "usertask6"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "flowshow": true,
-          "title": "费用承担公司",
           "component": "text",
-          "name": "mainModel.m_bukrsnm"
+          "flowshow": true,
+          "name": "mainModel.m_bukrsnm",
+          "title": "费用承担公司"
         },
         {
-          "flowshow": true,
-          "title": "报销说明",
           "component": "textarea",
-          "rows": 5,
           "editablenode": "",
-          "name": "mainModel.m_remark"
+          "flowshow": true,
+          "name": "mainModel.m_remark",
+          "rows": 5,
+          "title": "报销说明"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "费用列表",
-      "pageid": "fylb",
       "component": "panel",
       "id": "fylb1",
+      "pageid": "fylb",
       "subComponents": [
         {
-          "title": "",
-          "component": "formLabelLink",
-          "tabletype": "looppanel",
-          "id": "fylbfylx",
           "basePath": "pobcostsubapplist",
-          "titleIndex": 2,
+          "component": "formLabelLink",
+          "id": "fylbfylx",
           "linkForms": [
             {
+              "component": "text",
               "flowshow": true,
-              "title": "承担部门",
-              "component": "text",
-              "name": "s_deptnm"
+              "name": "s_deptnm",
+              "title": "承担部门"
             },
             {
-              "title": "控制类型",
               "component": "text",
-              "name": "s_costctypenm"
+              "name": "s_costctypenm",
+              "title": "控制类型"
             },
             {
-              "title": "业务类型",
               "component": "text",
-              "name": "s_businesstpnm"
+              "name": "s_businesstpnm",
+              "title": "业务类型"
             },
             {
-              "title": "科目类型",
               "component": "text",
-              "name": "s_ktypenm"
+              "flowshow": true,
+              "name": "s_ktypenm",
+              "title": "科目类型"
             },
             {
-              "title": "报销科目",
               "component": "text",
-              "name": "s_kstarnm"
+              "name": "s_kstarnm",
+              "title": "报销科目"
             },
             {
-              "title": "成本中心",
               "component": "text",
-              "name": "s_costnm"
+              "name": "s_costnm",
+              "title": "成本中心"
             },
             {
-              "title": "项目号描述",
               "component": "text",
-              "name": "s_projectcodenm"
+              "name": "s_projectcodenm",
+              "title": "项目号描述"
             },
             {
-              "title": "子项目描述",
               "component": "text",
-              "name": "s_projectcodesubnm"
+              "name": "s_projectcodesubnm",
+              "title": "子项目描述"
             },
             {
-              "title": "金额",
               "component": "text",
-              "name": "s_original"
+              "flowshow": false,
+              "name": "s_original",
+              "title": "金额"
             },
             {
-              "title": "币种",
               "component": "text",
-              "name": "s_currencynm"
+              "name": "s_currencynm",
+              "title": "币种"
             },
             {
-              "title": "汇率",
               "component": "text",
-              "name": "s_rate"
+              "name": "s_rate",
+              "title": "汇率"
             },
             {
-              "title": "报账金额",
               "component": "text",
               "datatype": "money",
-              "name": "s_money"
+              "flowshow": true,
+              "name": "s_money",
+              "title": "报账金额"
             }
-          ]
+          ],
+          "tabletype": "looppanel",
+          "title": "",
+          "titleIndex": 2
         }
-      ]
+      ],
+      "title": "费用列表"
     },
     {
-      "title": "费用信息",
-      "pageid": "fyxx",
       "component": "panel",
+      "pageid": "fyxx",
       "subComponents": [
         {
-          "title": "供应商编号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_supplierid"
+          "name": "mainModel.m_supplierid",
+          "title": "供应商编号"
         },
         {
+          "component": "text",
           "flowshow": true,
-          "title": "供应商描述",
-          "component": "text",
-          "name": "mainModel.m_suppliernm"
+          "name": "mainModel.m_suppliernm",
+          "title": "供应商描述"
         },
         {
-          "title": "汇入行",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_bank"
+          "name": "mainModel.m_bank",
+          "title": "汇入行"
         },
         {
-          "title": "汇入账户",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_bankn"
+          "name": "mainModel.m_bankn",
+          "title": "汇入账户"
         },
         {
-          "title": "合同号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_contract"
+          "name": "mainModel.m_contract",
+          "title": "合同号"
         },
         {
-          "title": "合同到货日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.m_arrivaldt"
+          "name": "mainModel.m_arrivaldt",
+          "title": "合同到货日期"
         },
         {
-          "title": "汇款条件",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_remitconditonnm"
+          "name": "mainModel.m_remitconditonnm",
+          "title": "汇款条件"
         },
         {
-          "title": "付款种类",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_paycls"
+          "name": "mainModel.m_paycls",
+          "title": "付款种类"
         },
         {
-          "flowshow": true,
-          "title": "汇款用途",
           "component": "textarea",
           "editablenode": "",
-          "name": "mainModel.m_payuses"
-        },
-        {
-          "title": "补(退)金额",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.m_backmoney"
-        },
-        {
-          "title": "补(退)金额大写",
-          "component": "text",
-          "editablenode": "",
-          "name": "mainModel.m_backmoneydx"
-        },
-        {
           "flowshow": true,
-          "title": "预付款金额",
+          "name": "mainModel.m_payuses",
+          "title": "汇款用途"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "flowshow": true,
+          "name": "mainModel.m_backmoney",
+          "title": "补(退)金额"
+        },
+        {
+          "component": "text",
+          "editablenode": "",
+          "name": "mainModel.m_backmoneydx",
+          "title": "补(退)金额大写"
+        },
+        {
           "component": "text",
           "datatype": "money",
           "editablenode": "",
-          "name": "mainModel.m_repay"
+          "flowshow": true,
+          "name": "mainModel.m_repay",
+          "title": "预付款金额"
         },
         {
-          "title": "预付款金额大写",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.m_repaydx"
+          "name": "mainModel.m_repaydx",
+          "title": "预付款金额大写"
         },
         {
-          "title": "付款日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.m_paydate"
+          "name": "mainModel.m_paydate",
+          "title": "付款日期"
         },
         {
-          "title": "备注",
           "component": "textarea",
           "editablenode": "",
-          "name": "mainModel.m_beizhu"
+          "flowshow": false,
+          "name": "mainModel.m_beizhu",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "费用信息"
     },
     {
-      "title": "财务审核",
-      "pageid": "cwsh",
       "component": "panel",
       "id": "cwsh1",
+      "pageid": "cwsh",
       "subComponents": [
         {
-          "title": "",
-          "component": "formLabelLink",
-          "tabletype": "looppanel",
-          "id": "cwshlb",
           "basePath": "fiviewlist",
-          "titleIndex": 2,
+          "component": "formLabelLink",
+          "id": "cwshlb",
           "linkForms": [
             {
-              "title": "科目描述",
               "component": "text",
-              "name": "k_kstarnm"
+              "name": "k_kstarnm",
+              "title": "科目描述"
             },
             {
-              "title": "SAP调整科目",
               "component": "text",
-              "name": "k_sapkstarnm"
+              "name": "k_sapkstarnm",
+              "title": "SAP调整科目"
             },
             {
-              "title": "项目号",
               "component": "text",
-              "name": "k_projectcode"
+              "name": "k_projectcode",
+              "title": "项目号"
             },
             {
-              "title": "项目子号",
               "component": "text",
-              "name": "k_projectcodesub"
+              "name": "k_projectcodesub",
+              "title": "项目子号"
             },
             {
-              "title": "调后子号",
               "component": "text",
-              "name": "k_projectcodesub_after"
+              "name": "k_projectcodesub_after",
+              "title": "调后子号"
             },
             {
-              "title": "应付",
-              "component": "text",
-              "datatype": "money",
-              "name": "k_dmbtrf"
-            },
-            {
-              "title": "扣款",
               "component": "text",
               "datatype": "money",
-              "name": "k_debit"
+              "name": "k_dmbtrf",
+              "title": "应付"
             },
             {
-              "title": "实付",
               "component": "text",
               "datatype": "money",
-              "name": "k_actpay"
+              "name": "k_debit",
+              "title": "扣款"
             },
             {
-              "title": "扣款说明",
+              "component": "text",
+              "datatype": "money",
+              "name": "k_actpay",
+              "title": "实付"
+            },
+            {
               "component": "textarea",
               "editablenode": "",
-              "name": "mainModel.k_why"
+              "name": "mainModel.k_why",
+              "title": "扣款说明"
             }
-          ]
+          ],
+          "tabletype": "looppanel",
+          "title": "",
+          "titleIndex": 2
         }
-      ]
+      ],
+      "title": "财务审核"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "compubshgmreim3",
+      "compubshgmreim7",
+      "usertask4",
+      "usertask6"
+    ]
+  },
+  "id": "gmk_pobcost",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

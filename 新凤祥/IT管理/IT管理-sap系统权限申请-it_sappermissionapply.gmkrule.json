@@ -1,172 +1,168 @@
 {
-  "id": "it_sappermissionapply",
-  "handleOnPC": {
-    "tasknode": [""],
-    "flag": ["resubmit"]
-  },
-  "selectPerson": {
-    "tasknode": ["xxglbnbsh"],
-    "beforPop": true
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "sappermissionapplyapp.appid"
+          "name": "sappermissionapplyapp.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "sappermissionapplyapp.appda"
+          "name": "sappermissionapplyapp.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "sappermissionapplyapp.pernr",
             "-",
             "sappermissionapplyapp.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "sappermissionapplyapp.sysbusinessunitname",
             "-",
             "sappermissionapplyapp.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.userid"
+          "name": "sappermissionapplyapp.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.username"
+          "name": "sappermissionapplyapp.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.pernr"
+          "name": "sappermissionapplyapp.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.syspostname"
+          "name": "sappermissionapplyapp.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.sysdeptid"
+          "name": "sappermissionapplyapp.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.sysdeptname"
+          "name": "sappermissionapplyapp.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.sysbusinessunitid"
+          "name": "sappermissionapplyapp.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.sysbusinessunitname"
+          "name": "sappermissionapplyapp.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.postid"
+          "name": "sappermissionapplyapp.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.id"
+          "name": "sappermissionapplyapp.id",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sappermissionapplyapp.proc_inst_id"
+          "name": "sappermissionapplyapp.proc_inst_id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "使用人",
           "component": "label",
+          "flowshow": true,
           "label": [
             "sappermissionapplyapp.owneritcode",
             "-",
             "sappermissionapplyapp.ownername",
             "-",
             "sappermissionapplyapp.syspostname"
-          ]
+          ],
+          "title": "使用人"
         },
         {
-          "title": "ITCode",
           "component": "text",
-          "name": "sappermissionapplyapp.owneritcode"
+          "name": "sappermissionapplyapp.owneritcode",
+          "title": "ITCode"
         },
         {
-          "title": "联系方式",
           "component": "text",
-          "name": "sappermissionapplyapp.ownermobile"
+          "name": "sappermissionapplyapp.ownermobile",
+          "title": "联系方式"
         },
         {
-          "title": "使用人公司",
           "component": "text",
-          "name": "sappermissionapplyapp.ownersyscompany"
+          "name": "sappermissionapplyapp.ownersyscompany",
+          "title": "使用人公司"
         },
         {
-          "title": "使用人部门",
           "component": "text",
-          "name": "sappermissionapplyapp.ownerdept"
+          "flowshow": true,
+          "name": "sappermissionapplyapp.ownerdept",
+          "title": "使用人部门"
         },
         {
-          "title": "使用系统",
           "component": "select",
+          "flowshow": true,
           "name": "sappermissionapplyapp.syxt",
           "options": [
             {
+              "flowshow": true,
               "text": "",
               "value": "请选择"
             },
             {
+              "flowshow": true,
               "text": "生产系统",
               "value": "0"
             },
             {
+              "flowshow": true,
               "text": "测试系统",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "开发系统",
               "value": "2"
             }
-          ]
+          ],
+          "title": "使用系统"
         },
         {
-          "title": "Sap系统用户名",
           "component": "text",
-          "name": "sappermissionapplyapp.xtyhm"
+          "flowshow": true,
+          "name": "sappermissionapplyapp.xtyhm",
+          "title": "Sap系统用户名"
         },
         {
-          "title": "是否跨事业部",
           "component": "radio",
-          "id":"ksyb",
           "name": "sappermissionapplyapp.sfksyb",
           "options": [
             {
@@ -177,49 +173,44 @@
               "text": "是",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否跨事业部"
         },
         {
-          "title": "需求涉及事业部/职能中心",
           "component": "textarea",
-          "rows": "3",
           "name": "sappermissionapplyapp.orgnms",
-          "showLinkage": [
-            {
-              "id": "ksyb",
-              "values": [
-                "1"
-              ]
-            }
-          ]
+          "rows": "3",
+          "title": "需求涉及事业部/职能中心"
         },
         {
-          "title": "使用模块",
           "component": "comma_concat",
+          "flowshow": true,
           "name": "sappermissionapplyapp.symk",
-          "refer": "symk"
+          "refer": "symk",
+          "title": "使用模块"
         },
         {
-          "title": "内部顾问给权限建议",
           "component": "textarea",
           "editablenode": "nbgw",
-          "tasknode": "nbgw,xxglbnbsh,zcsqfzrsp,gwqxfp",
-          "rows": "3",
+          "flowshow": true,
           "name": "sappermissionapplyapp.qxjy",
+          "rows": "3",
+          "tasknode": "nbgw,xxglbnbsh,zcsqfzrsp,gwqxfp",
+          "title": "内部顾问给权限建议",
           "validation": {
+            "flowshow": true,
             "pageid": "sqxx",
             "required": true,
             "validationMsg": "请填写内部顾问给权限建议"
           }
         },
         {
-          "title": "是否敏感信息",
           "component": "radio",
           "editablenode": "nbgw",
-          "tasknode": "nbgw,xxglbnbsh,zcsqfzrsp,gwqxfp",
           "name": "sappermissionapplyapp.sfmgxx",
           "options": [
             {
+              "flowshow": false,
               "text": "否",
               "value": "0"
             },
@@ -228,6 +219,8 @@
               "value": "1"
             }
           ],
+          "tasknode": "nbgw,xxglbnbsh,zcsqfzrsp,gwqxfp",
+          "title": "是否敏感信息",
           "validation": {
             "pageid": "sqxx",
             "required": true,
@@ -235,87 +228,109 @@
           }
         },
         {
-          "title": "权限申请描述",
           "component": "textarea",
+          "flowshow": true,
+          "name": "sappermissionapplyapp.qxsqms",
           "rows": "3",
-          "name": "sappermissionapplyapp.qxsqms"
+          "title": "权限申请描述"
         },
         {
-          "title": "内部顾问",
           "component": "text",
           "editablenode": "xxbpdy",
-          "tasknode": "xxbpdy",
-          "notShowOnView": true,
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
             "showformname": "nbgwtext",
-            "valuetype": ["objid"],
             "showtype": [
               "objid",
               "nachn",
               "stext"
+            ],
+            "valuetype": [
+              "objid"
             ]
           },
           "name": "sappermissionapplyapp.nbgw",
+          "notShowOnView": true,
+          "tasknode": "xxbpdy",
+          "title": "内部顾问",
           "validation": {
+            "flowshow": true,
             "pageid": "sqxx",
             "required": true,
             "validationMsg": "内部顾问必填"
           }
         },
         {
-          "title": "权限处理结果",
           "component": "textarea",
           "editablenode": "gwqxfp",
-          "rows": "3",
+          "flowshow": true,
           "name": "sappermissionapplyapp.cljg",
+          "rows": "3",
+          "title": "权限处理结果",
           "validation": {
+            "flowshow": true,
             "pageid": "sqxx",
             "required": true,
             "validationMsg": "请填写权限处理结果"
           }
         }
-      ]
+      ],
+      "title": "申请信息"
     }
   ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "it_sappermissionapply",
   "refers": {
     "symk": {
-      "dataType": "array",
       "data": [
         {
-          "value": "FICO",
-          "text": "FICO"
+          "text": "FICO",
+          "value": "FICO"
         },
         {
-          "value": "MM",
-          "text": "MM"
+          "text": "MM",
+          "value": "MM"
         },
         {
-          "value": "SD",
-          "text": "SD"
+          "text": "SD",
+          "value": "SD"
         },
         {
-          "value": "WM",
-          "text": "WM"
+          "text": "WM",
+          "value": "WM"
         },
         {
-          "value": "PP",
-          "text": "PP"
+          "text": "PP",
+          "value": "PP"
         },
         {
-          "value": "QM",
-          "text": "QM"
+          "text": "QM",
+          "value": "QM"
         },
         {
-          "value": "PM",
-          "text": "PM"
+          "text": "PM",
+          "value": "PM"
         },
         {
-          "value": "HR",
-          "text": "HR"
+          "text": "HR",
+          "value": "HR"
         }
-      ]
+      ],
+      "dataType": "array"
     }
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }

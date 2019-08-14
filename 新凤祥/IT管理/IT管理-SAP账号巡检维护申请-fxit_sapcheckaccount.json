@@ -1,225 +1,245 @@
 {
-    "id": "fxit_sapcheckaccount",
-    "handleOnPC": {
-        "tasknode": ["basisgwcl"],
-        "flag": ["resubmit"]
-    },
-    "selectPerson": {
-        "tasknode": [""],
-        "beforPop": false
-    },
-    "forms": [{
-        "title": "基本信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "申请单号",
-            "component": "text",
-            "name": "mainModel.appid"
+  "forms": [
+    {
+      "component": "panel",
+      "pageid": "jbxx",
+      "subComponents": [
+        {
+          "component": "text",
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-            "title": "申请日期",
-            "component": "date1",
-            "name": "mainModel.appda"
+          "component": "date1",
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-            "title": "申请人姓名",
-            "component": "label",
-            "label": ["mainModel.pernr", "-", "mainModel.username"]
+          "component": "label",
+          "label": [
+            "mainModel.pernr",
+            "-",
+            "mainModel.username"
+          ],
+          "title": "申请人姓名"
         },
         {
-            "title": "所属部门",
-            "component": "label",
-            "label": ["mainModel.sysbusinessunitname", "-", "mainModel.sysdeptname"]
+          "component": "label",
+          "label": [
+            "mainModel.sysbusinessunitname",
+            "-",
+            "mainModel.sysdeptname"
+          ],
+          "title": "所属部门"
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.userid"
+          "component": "hidden",
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.username"
+          "component": "hidden",
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.pernr"
+          "component": "hidden",
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.syspostname"
+          "component": "hidden",
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptid"
+          "component": "hidden",
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysdeptname"
+          "component": "hidden",
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitid"
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.sysbusinessunitname"
+          "component": "hidden",
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.postid"
+          "component": "hidden",
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.id"
+          "component": "hidden",
+          "name": "mainModel.id",
+          "title": ""
         },
-		{
-            "title": "",
-            "component": "hidden",
-            "name": "mainModel.proc_inst_id"
+        {
+          "component": "hidden",
+          "name": "mainModel.proc_inst_id",
+          "title": ""
         }
-		]
+      ],
+      "title": "基本信息"
     },
     {
-        "title": "申请信息",
-        "pageid": "sqxx",
-        "component": "panel",
-        "subComponents": [{
-            "title": "使用系统",
-            "component": "select",
-            "name": "mainModel.syxt",
-			"options":[
-				{
-					"text":"祥光集团生产系统",
-					"value":"0"
-				},
-				{
-					"text":"凤祥股份生产系统",
-					"value":"1"
-				},
-				{
-					"text":"祥光集团测试机",
-					"value":"2"
-				},
-				{
-					"text":"凤祥股份测试机",
-					"value":"3"
-				},
-				{
-					"text":"祥光集团开发机",
-					"value":"4"
-				},
-				{
-					"text":"凤祥股份开发机",
-					"value":"5"
-				}
-			
-			]
-			
+      "component": "panel",
+      "pageid": "sqxx",
+      "subComponents": [
+        {
+          "component": "select",
+          "flowshow": true,
+          "name": "mainModel.syxt",
+          "options": [
+            {
+              "flowshow": true,
+              "text": "祥光集团生产系统",
+              "value": "0"
+            },
+            {
+              "flowshow": true,
+              "text": "凤祥股份生产系统",
+              "value": "1"
+            },
+            {
+              "flowshow": true,
+              "text": "祥光集团测试机",
+              "value": "2"
+            },
+            {
+              "flowshow": true,
+              "text": "凤祥股份测试机",
+              "value": "3"
+            },
+            {
+              "flowshow": true,
+              "text": "祥光集团开发机",
+              "value": "4"
+            },
+            {
+              "flowshow": true,
+              "text": "凤祥股份开发机",
+              "value": "5"
+            }
+          ],
+          "title": "使用系统"
         },
         {
-            "title": "处理类型",
-            "component": "select",
-            "name": "mainModel.cllx",
-			"options":[
-				{
-					"text":"锁定用户",
-					"value":"1"
-				}
-			
-			]
+          "component": "select",
+          "flowshow": true,
+          "name": "mainModel.cllx",
+          "options": [
+            {
+              "flowshow": true,
+              "text": "锁定用户",
+              "value": "1"
+            }
+          ],
+          "title": "处理类型"
         },
-		{
-            "title": "排查用户名",
-            "component": "text",
-            "name": "mainModel.pcyhm"
+        {
+          "component": "text",
+          "flowshow": true,
+          "name": "mainModel.pcyhm",
+          "title": "排查用户名"
         },
-		{
-            "title": "查询限制天数",
-            "component": "text",
-            "name": "mainModel.cxxzts"
-        }]
+        {
+          "component": "text",
+          "flowshow": true,
+          "name": "mainModel.cxxzts",
+          "title": "查询限制天数"
+        }
+      ],
+      "title": "申请信息"
     },
     {
-        "title": "查询结果",
-        "pageid": "cxjg",
-        "component": "panel",
-        "subComponents": [
-			{
+      "component": "panel",
+      "pageid": "cxjg",
+      "subComponents": [
+        {
+          "basePath": "infolist",
+          "component": "formLabelLink",
+          "id": "infolist",
+          "linkForms": [
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "sapusername",
               "title": "",
-              "component": "formLabelLink",
-              "titleIndex": 0,
-              "tabletype": "looppanel",
-              "basePath": "infolist",
-			  "id": "infolist",
-              "linkForms": [
-                {
-                  "title": "",
-                  "title1": "SAP用户名",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "sapusername"
-                  
-                },
-                {
-                  "title": "",
-                  "title1": "上次登录日期",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "lastlogintime"
-                },
-				{
-				  "title": "",
-				  "title1": "用户类型",
-				  "component": "text",
-				  "editablenode": "",
-				  "name": "yhlx"
-				},
-				{
-				  "title": "",
-				  "title1": "使用人",
-				  "component": "text",
-				  "editablenode": "",
-				  "name": "syr"
-				},
-                {
-                  "title": "",
-                  "title1": "使用部门",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "sybm"
-                },
-                {
-                  "title": "",
-                  "title1": "联系方式",
-                  "component": "text",
-                  "editablenode": "",
-                  "name": "lxfs"
-                },
-
-                {
-                  "title": "",
-                  "title1": "备注",
-                  "component": "textarea",
-                  "editablenode": "",
-                  "name": "bz"
-                }
- 
-              ]
+              "title1": "SAP用户名"
+            },
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "lastlogintime",
+              "title": "",
+              "title1": "上次登录日期"
+            },
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "yhlx",
+              "title": "",
+              "title1": "用户类型"
+            },
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "syr",
+              "title": "",
+              "title1": "使用人"
+            },
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "sybm",
+              "title": "",
+              "title1": "使用部门"
+            },
+            {
+              "component": "text",
+              "editablenode": "",
+              "name": "lxfs",
+              "title": "",
+              "title1": "联系方式"
+            },
+            {
+              "component": "textarea",
+              "editablenode": "",
+              "name": "bz",
+              "title": "",
+              "title1": "备注"
             }
-		
-
-		]
+          ],
+          "tabletype": "looppanel",
+          "title": "",
+          "titleIndex": 0
+        }
+      ],
+      "title": "查询结果"
     }
-
-	]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "basisgwcl"
+    ]
+  },
+  "id": "fxit_sapcheckaccount",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

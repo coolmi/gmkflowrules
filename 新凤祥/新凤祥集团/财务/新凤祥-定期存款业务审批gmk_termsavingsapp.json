@@ -1,376 +1,269 @@
 {
-  "id": "gmk_termsavingsapp",
-  "handleOnPC": {
-    "tasknode": [
-      "apply"
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqxx",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "ITCODE",
           "component": "text",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": "ITCODE"
         },
         {
-          "title": "所属公司",
           "component": "text",
-          "name": "mainModel.bukrsnamea"
+          "name": "mainModel.bukrsnamea",
+          "title": "所属公司"
         },
         {
-          "title": "办公电话",
           "component": "text",
-          "name": "mainModel.phone"
+          "name": "mainModel.phone",
+          "title": "办公电话"
         },
         {
-          "title": "电子邮件",
           "component": "text",
-          "name": "mainModel.email"
+          "name": "mainModel.email",
+          "title": "电子邮件"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "定期存款业务审批流程子表",
-      "pageid": "tzckywsplczb",
       "component": "panel",
+      "pageid": "tzckywsplczb",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "tzckywsplczb_table",
           "basePath": "subfinancialproductsapplist",
+          "component": "table_form",
+          "id": "tzckywsplczb_table",
           "tableForms": [
             {
-              "title": "申请单号",
               "component": "text",
-              "name": "wo"
+              "name": "wo",
+              "title": "申请单号"
             },
             {
-              "title": "投资组合",
               "component": "text",
-              "name": "investPortfolio"
+              "flowshow": true,
+              "name": "investPortfolio",
+              "title": "投资组合"
             },
             {
-              "title": "公司代码",
               "component": "text",
-              "name": "bukrs"
+              "name": "bukrs",
+              "title": "公司代码"
             },
             {
-              "title": "公司名称",
               "component": "text",
-              "name": "bukrsname"
+              "flowshow": true,
+              "name": "bukrsname",
+              "title": "公司名称"
             },
             {
-              "title": "事务代码",
               "component": "text",
-              "name": "affairsCode"
+              "name": "affairsCode",
+              "title": "事务代码"
             },
             {
-              "title": "事务代码描述",
               "component": "text",
-              "name": "affairsCodeName"
+              "flowshow": true,
+              "name": "affairsCodeName",
+              "title": "事务代码描述"
             },
             {
-              "title": "产品类型",
               "component": "text",
-              "name": "productType"
+              "flowshow": true,
+              "name": "productType",
+              "title": "产品类型"
             },
             {
-              "title": "产品类型描述",
               "component": "text",
-              "name": "productTypeName"
+              "flowshow": true,
+              "name": "productTypeName",
+              "title": "产品类型描述"
             },
             {
-              "title": "币种",
               "component": "text",
-              "name": "coinType"
+              "name": "coinType",
+              "title": "币种"
             },
             {
-              "title": "金额",
               "component": "text",
-              "name": "demtr"
+              "flowshow": true,
+              "name": "demtr",
+              "title": "金额"
             },
             {
-              "title": "合作伙伴描述",
               "component": "text",
-              "name": "corpartnerName"
+              "flowshow": true,
+              "name": "corpartnerName",
+              "title": "合作伙伴描述"
             },
             {
-              "title": "产品名称",
               "component": "text",
-              "name": "productName"
+              "flowshow": true,
+              "name": "productName",
+              "title": "产品名称"
             },
             {
-              "title": "开始期限",
               "component": "text",
-              "name": "startTerm"
+              "flowshow": true,
+              "name": "startTerm",
+              "title": "开始期限"
             },
             {
-              "title": "结束期限",
               "component": "text",
-              "name": "endTerm"
+              "flowshow": true,
+              "name": "endTerm",
+              "title": "结束期限"
             },
             {
-              "title": "利率",
               "component": "text",
-              "name": "rate"
+              "flowshow": true,
+              "name": "rate",
+              "title": "利率"
             },
             {
-              "title": "利率计算方法",
               "component": "text",
-              "name": "rateCalcMethod"
+              "name": "rateCalcMethod",
+              "title": "利率计算方法"
             },
             {
-              "title": "期限天数",
               "component": "text",
-              "name": "termdays"
+              "name": "termdays",
+              "title": "期限天数"
             },
             {
-              "title": "预计投资收益",
               "component": "text",
-              "name": "expectedReturn"
+              "name": "expectedReturn",
+              "title": "预计投资收益"
             },
             {
-              "title": "通知期",
               "component": "text",
-              "name": "noticeDay"
+              "flowshow": true,
+              "name": "noticeDay",
+              "title": "通知期"
             },
             {
-              "title": "通知期单位",
               "component": "text",
-              "name": "noticeDayUnit"
+              "flowshow": true,
+              "name": "noticeDayUnit",
+              "title": "通知期单位"
             },
             {
-              "title": "频率",
               "component": "text",
-              "name": "frequency"
+              "flowshow": false,
+              "name": "frequency",
+              "title": "频率"
             },
             {
-              "title": "备注",
               "component": "text",
-              "name": "remark"
+              "flowshow": true,
+              "name": "remark",
+              "title": "备注"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "定期存款业务审批流程子表"
     }
   ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      "apply"
+    ]
+  },
+  "id": "gmk_termsavingsapp",
   "refers": {
-    "reimtype": {
-      "dataType": "array",
-      "data": [
-        {
-          "value": "1",
-          "text": "通讯费"
-        },
-        {
-          "value": "2",
-          "text": "交通费"
-        },
-        {
-          "value": "3",
-          "text": "业务招待费"
-        },
-        {
-          "value": "4",
-          "text": "餐饮费"
-        },
-        {
-          "value": "5",
-          "text": "员工其他费用"
-        }
-      ]
-    },
-    "trstsyps": {
-      "dataType": "array",
-      "data": [
-        {
-          "value": "01",
-          "text": "飞机"
-        },
-        {
-          "value": "02",
-          "text": "高铁"
-        },
-        {
-          "value": "03",
-          "text": "动车"
-        },
-        {
-          "value": "04",
-          "text": "火车400km以上"
-        },
-        {
-          "value": "05",
-          "text": "火车400km以下"
-        },
-        {
-          "value": "06",
-          "text": "轮船"
-        },
-        {
-          "value": "07",
-          "text": "汽车"
-        }
-      ]
-    },
-    "matlevels": {
-      "dataType": "array",
-      "data": [
-        {
-          "value": "0101",
-          "text": "飞机"
-        },
-        {
-          "value": "0201",
-          "text": "二等座"
-        },
-        {
-          "value": "0202",
-          "text": "无限制"
-        },
-        {
-          "value": "0301",
-          "text": "无限制"
-        },
-        {
-          "value": "0302",
-          "text": "二等座"
-        },
-        {
-          "value": "0401",
-          "text": "软卧"
-        },
-        {
-          "value": "0402",
-          "text": "硬卧"
-        },
-        {
-          "value": "0501",
-          "text": "软卧"
-        },
-        {
-          "value": "0502",
-          "text": "硬卧"
-        },
-        {
-          "value": "0503",
-          "text": "硬席"
-        },
-        {
-          "value": "0601",
-          "text": "一等舱"
-        },
-        {
-          "value": "0602",
-          "text": "二等舱"
-        },
-        {
-          "value": "0701",
-          "text": "无限制"
-        }
-      ]
-    },
     "citys": {
-      "dataType": "array",
       "data": [
         {
           "text": "请选择",
@@ -544,10 +437,67 @@
           "text": "除聊城外其他城市",
           "value": "除聊城外其他城市"
         }
-      ]
+      ],
+      "dataType": "array"
+    },
+    "matlevels": {
+      "data": [
+        {
+          "text": "飞机",
+          "value": "0101"
+        },
+        {
+          "text": "二等座",
+          "value": "0201"
+        },
+        {
+          "text": "无限制",
+          "value": "0202"
+        },
+        {
+          "text": "无限制",
+          "value": "0301"
+        },
+        {
+          "text": "二等座",
+          "value": "0302"
+        },
+        {
+          "text": "软卧",
+          "value": "0401"
+        },
+        {
+          "text": "硬卧",
+          "value": "0402"
+        },
+        {
+          "text": "软卧",
+          "value": "0501"
+        },
+        {
+          "text": "硬卧",
+          "value": "0502"
+        },
+        {
+          "text": "硬席",
+          "value": "0503"
+        },
+        {
+          "text": "一等舱",
+          "value": "0601"
+        },
+        {
+          "text": "二等舱",
+          "value": "0602"
+        },
+        {
+          "text": "无限制",
+          "value": "0701"
+        }
+      ],
+      "dataType": "array"
     },
     "month": {
-      "dataType": "array",
       "data": [
         {
           "text": "一月",
@@ -597,7 +547,72 @@
           "text": "十二月",
           "value": "12"
         }
-      ]
+      ],
+      "dataType": "array"
+    },
+    "reimtype": {
+      "data": [
+        {
+          "text": "通讯费",
+          "value": "1"
+        },
+        {
+          "text": "交通费",
+          "value": "2"
+        },
+        {
+          "text": "业务招待费",
+          "value": "3"
+        },
+        {
+          "text": "餐饮费",
+          "value": "4"
+        },
+        {
+          "text": "员工其他费用",
+          "value": "5"
+        }
+      ],
+      "dataType": "array"
+    },
+    "trstsyps": {
+      "data": [
+        {
+          "text": "飞机",
+          "value": "01"
+        },
+        {
+          "text": "高铁",
+          "value": "02"
+        },
+        {
+          "text": "动车",
+          "value": "03"
+        },
+        {
+          "text": "火车400km以上",
+          "value": "04"
+        },
+        {
+          "text": "火车400km以下",
+          "value": "05"
+        },
+        {
+          "text": "轮船",
+          "value": "06"
+        },
+        {
+          "text": "汽车",
+          "value": "07"
+        }
+      ],
+      "dataType": "array"
     }
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }

@@ -1,122 +1,106 @@
 {
-  "id": "flow_gmkoa_tenderresult",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqInfo",
       "component": "panel",
+      "pageid": "sqInfo",
       "subComponents": [
         {
-          "title": "交易类型",
           "component": "radio",
+          "flowshow": true,
           "id": "trdeid",
           "name": "mainModel.dealType",
           "options": [
@@ -128,11 +112,12 @@
               "title": "销售",
               "value": "1"
             }
-          ]
+          ],
+          "title": "交易类型"
         },
         {
-          "title": "是否最低价",
           "component": "radio",
+          "flowshow": true,
           "name": "mainModel.floorPrice",
           "options": [
             {
@@ -143,10 +128,10 @@
               "title": "否",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否最低价"
         },
         {
-          "title": "招标形式",
           "component": "radio",
           "name": "mainModel.tendMode",
           "options": [
@@ -158,145 +143,173 @@
               "title": "议标",
               "value": "1"
             }
-          ]
+          ],
+          "title": "招标形式"
         },
         {
-          "title": "价格类型",
           "component": "text",
           "name": "mainModel.priceType",
           "showLinkage": [
             {
               "id": "trdeid",
-              "values": ["1"]
+              "values": [
+                "1"
+              ]
             }
-          ]
+          ],
+          "title": "价格类型"
         },
         {
-          "title": "招标物资分类",
           "component": "text",
           "name": "mainModel.goodsTypetxt",
           "showLinkage": [
             {
               "id": "trdeid",
-              "values": ["0"]
+              "values": [
+                "0"
+              ]
             }
-          ]
+          ],
+          "title": "招标物资分类"
         },
         {
-          "title": "采购组织",
           "component": "text",
           "name": "mainModel.purchaOrgtxt",
           "showLinkage": [
             {
               "id": "trdeid",
-              "values": ["0"]
+              "values": [
+                "0"
+              ]
             }
-          ]
+          ],
+          "title": "采购组织"
         },
         {
-          "title": "付款条件",
           "component": "text",
-          "name": "mainModel.termsPaymentxt",
+          "name": "mainModel.termsPayment",
           "showLinkage": [
             {
               "id": "trdeid",
-              "values": ["0"]
+              "values": [
+                "0"
+              ]
             }
-          ]
+          ],
+          "title": "付款条件"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型"
         },
         {
-          "title": "招标申请单",
           "component": "text",
-          "name": "mainModel.tenderNo"
+          "name": "mainModel.tenderNo",
+          "title": "招标申请单"
         },
         {
-          "title": "需求部门负责人",
           "component": "textarea",
-          "name": "mainModel.npnr"
+          "name": "mainModel.npnr",
+          "title": "需求部门负责人"
         },
         {
-          "title": "服务部门负责人",
           "component": "textarea",
-          "name": "mainModel.spnr"
+          "name": "mainModel.spnr",
+          "title": "服务部门负责人"
         },
         {
-          "title": "过程及意见",
           "component": "textarea",
-          "name": "mainModel.remarks"
+          "name": "mainModel.remarks",
+          "title": "过程及意见"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "中标结果",
-      "pageid": "childInfo",
       "component": "panel",
+      "pageid": "childInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "child_table",
           "basePath": "resultchilds",
+          "component": "table_form",
+          "flowshow": false,
+          "id": "child_table",
           "tableForms": [
             {
-              "title": "资产/物料号",
               "component": "label",
+              "flowshow": true,
               "label": [
                 "assetsId",
                 "assetstxt"
-              ]
+              ],
+              "title": "资产/物料号"
             },
             {
-              "title": "供应商/客户",
               "component": "label",
+              "flowshow": true,
               "label": [
                 "supplierId",
                 "supplierName"
-              ]
+              ],
+              "title": "供应商/客户"
             },
             {
-              "title": "定价单位",
               "component": "text",
-              "name": "per"
+              "name": "per",
+              "title": "定价单位"
             },
             {
-              "title": "币种",
               "component": "text",
-              "name": "currencyId"
+              "name": "currencyId",
+              "title": "币种"
             },
             {
-              "title": "数量单位",
               "component": "text",
-              "name": "unit"
+              "name": "unit",
+              "title": "数量单位"
             },
             {
-              "title": "单价",
               "component": "text",
-              "name": "price"
+              "flowshow": true,
+              "name": "price",
+              "title": "单价"
             },
             {
-              "title": "开始日期",
               "component": "text",
-              "name": "bDate"
+              "name": "bDate",
+              "title": "开始日期"
             },
             {
-              "title": "结束日期",
               "component": "text",
-              "name": "eDate"
+              "name": "eDate",
+              "title": "结束日期"
             },
             {
-              "title": "SAP返回状态",
               "component": "text",
-              "name": "returnsval"
+              "name": "returnsval",
+              "title": "SAP返回状态"
             }
-          ]
+          ],
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "中标结果"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_tenderresult",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

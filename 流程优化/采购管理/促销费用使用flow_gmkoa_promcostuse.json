@@ -1,233 +1,239 @@
 {
-  "id": "flow_gmkoa_promcostuse",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "申请人信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
           "editablenode": "",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
           "editablenode": "",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "editablenode": "",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.bukrs"
+          "name": "mainModel.bukrs",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "申请人信息"
     },
     {
-      "title": "申请信息",
+      "component": "panel",
       "pageid": "sqInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "标题名称",
           "component": "text",
-          "name": "mainModel.titles"
+          "flowshow": true,
+          "name": "mainModel.titles",
+          "title": "标题名称"
         },
         {
-          "title": "主抄送人",
           "component": "textarea",
-          "name": "mainModel.senderstxt"
+          "name": "mainModel.senderstxt",
+          "title": "主抄送人"
         },
         {
-          "title": "业务类型",
           "component": "text",
-          "name": "mainModel.grantMoldtxt"
+          "name": "mainModel.grantMoldtxt",
+          "title": "业务类型"
         },
         {
-          "title": "公司代码",
           "component": "text",
-          "name": "mainModel.cdburkstxt"
+          "flowshow": true,
+          "name": "mainModel.cdburkstxt",
+          "title": "公司代码"
         },
         {
-          "title": "成本中心",
           "component": "text",
-          "name": "mainModel.cdcostltxt"
+          "flowshow": true,
+          "name": "mainModel.cdcostltxt",
+          "title": "成本中心"
         },
         {
-          "title": "备注",
           "component": "textarea",
-          "name": "mainModel.remarks"
+          "flowshow": true,
+          "name": "mainModel.remarks",
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "使用详情",
+      "component": "panel",
       "pageid": "useInfo",
-      "component": "panel",
       "subComponents": [
         {
-          "title": "客户信息",
           "component": "text",
-          "name": "mainModel.customerNa"
+          "flowshow": true,
+          "name": "mainModel.customerNa",
+          "title": "客户信息"
         },
         {
-          "title": "核销年月",
           "component": "text",
-          "name": "mainModel.year"
+          "name": "mainModel.year",
+          "title": "核销年月"
         }
-      ]
+      ],
+      "title": "使用详情"
     },
     {
-      "title": "费用详情",
-      "pageid": "costInfo",
       "component": "panel",
+      "pageid": "costInfo",
       "subComponents": [
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "cost_table",
           "basePath": "itemList",
+          "component": "table_form",
+          "id": "cost_table",
           "tableForms": [
             {
-              "title": "订单号",
               "component": "text",
-              "name": "orderId"
+              "flowshow": true,
+              "name": "orderId",
+              "title": "订单号"
             },
             {
-              "title": "本次使用金额",
               "component": "text",
-              "name": "orAmout"
+              "flowshow": true,
+              "name": "orAmout",
+              "title": "本次使用金额"
             },
             {
-              "title": "币种",
               "component": "text",
-              "name": "currency"
+              "name": "currency",
+              "title": "币种"
             }
-          ]
+          ],
+          "titleIndex": 0
         },
         {
-          "title": "核销金额",
           "component": "text",
-          "name": "mainModel.rebateAmout"
+          "name": "mainModel.rebateAmout",
+          "title": "核销金额"
         },
         {
-          "title": "已使用金额",
           "component": "text",
-          "name": "mainModel.usedAmout"
+          "name": "mainModel.usedAmout",
+          "title": "已使用金额"
         },
         {
-          "title": "剩余金额",
           "component": "text",
-          "name": "mainModel.restAmout"
+          "name": "mainModel.restAmout",
+          "title": "剩余金额"
         },
         {
-          "title": "是否冲销",
           "component": "radio",
           "name": "mainModel.ishx",
           "options": [
             {
-            "title": "是",
-            "value": "0"
-          },
-          {
-            "title": "否",
-            "value": "1"
-          }
-          ]
+              "title": "是",
+              "value": "0"
+            },
+            {
+              "title": "否",
+              "value": "1"
+            }
+          ],
+          "title": "是否冲销"
         },
         {
-          "title": "凭证号",
           "component": "text",
-          "name": "mainModel.pzbh"
+          "name": "mainModel.pzbh",
+          "title": "凭证号"
         }
-      ]
+      ],
+      "title": "费用详情"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "flow_gmkoa_promcostuse",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }
-

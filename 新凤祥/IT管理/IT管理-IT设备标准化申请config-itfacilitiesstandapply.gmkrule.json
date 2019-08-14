@@ -1,9 +1,8 @@
 {
-  "id": "itfacilitiesstandapply",
   "forms": [
     {
       "component": "panel",
-      "pageid": "sqxx",
+      "pageid": "jbxx",
       "subComponents": [
         {
           "component": "text",
@@ -20,7 +19,7 @@
         {
           "component": "label",
           "editablenode": "",
-          "flowshow": true,
+          "flowshow": false,
           "label": [
             "mainModel.pernr",
             "-",
@@ -31,7 +30,7 @@
         {
           "component": "label",
           "editablenode": "",
-          "flowshow": true,
+          "flowshow": false,
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
@@ -121,25 +120,92 @@
       "component": "panel",
       "pageid": "itfacisqxx",
       "subComponents": [
-        {"component": "text", "id": "pernr", "name": "mainModel.pernr", "title": "员工编号"},
-        {"component": "text", "id": "userid", "name": "mainModel.userid", "title": "ITCODE"},
-        {"component": "text", "id": "sysbusinessunitname", "name": "mainModel.sysbusinessunitname", "title": "事业部/职能中心"},
-        {"component": "text", "id": "bukrsname", "name": "mainModel.bukrsname", "title": "所属公司"},
-        {"component": "text", "id": "email", "name": "mainModel.email", "title": "邮箱"},
-        {"component": "text", "id": "tel", "name": "mainModel.tel", "title": "电话"},
         {
-          "component": "table_form",
-          "titleIndex": 0,
-          "id": "hzfylx",
+          "component": "text",
+          "id": "pernr",
+          "name": "mainModel.pernr",
+          "title": "员工编号"
+        },
+        {
+          "component": "text",
+          "flowshow": true,
+          "id": "userid",
+          "name": "mainModel.userid",
+          "title": "ITCODE"
+        },
+        {
+          "component": "text",
+          "id": "sysbusinessunitname",
+          "name": "mainModel.sysbusinessunitname",
+          "title": "事业部/职能中心"
+        },
+        {
+          "component": "text",
+          "id": "bukrsname",
+          "name": "mainModel.bukrsname",
+          "title": "所属公司"
+        },
+        {
+          "component": "text",
+          "id": "email",
+          "name": "mainModel.email",
+          "title": "邮箱"
+        },
+        {
+          "component": "text",
+          "id": "tel",
+          "name": "mainModel.tel",
+          "title": "电话"
+        },
+        {
           "basePath": "ITfacilitiesstandapplySubslist",
+          "component": "table_form",
+          "id": "hzfylx",
           "tableForms": [
-            {"title": "资产类别", "component": "text", "name": "assetTypeName"},
-            {"title": "品牌", "component": "text", "name":  "brand"},
-            {"title": "型号", "component": "text", "name":  "modelname"},
-            {"title": "资产描述", "component": "text", "name": "description"}
-          ]
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "assetTypeName",
+              "title": "资产类别"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "brand",
+              "title": "品牌"
+            },
+            {
+              "component": "text",
+              "name": "modelname",
+              "title": "型号"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "description",
+              "title": "资产描述"
+            },
+            {
+              "component": "text",
+              "name": "meins",
+              "title": "基本计量单位"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "baspa",
+              "title": "基本参数"
+            },
+            {
+              "component": "text",
+              "flowshow": true,
+              "name": "standardprice",
+              "title": "标准价格"
+            }
+          ],
+          "titleIndex": 0
         }
-  ],
+      ],
       "title": "申请信息"
     }
   ],
@@ -151,6 +217,7 @@
       "aft"
     ]
   },
+  "id": "itfacilitiesstandapply",
   "pageSelectIndex": {
     "defaultIndex": 0,
     "selectIndexArray": [

@@ -1,179 +1,179 @@
 {
-  "id": "fico_sparepartsapprovalmaterials",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
+          "component": "text",
           "flowshow": true,
-          "title": "费用公司",
-          "component": "text",
-          "name": "mainModel.cdbutxt"
+          "name": "mainModel.cdbutxt",
+          "title": "费用公司"
         },
         {
+          "component": "text",
           "flowshow": true,
-          "title": "供应商名称",
-          "component": "text",
-          "name": "mainModel.suppliername"
+          "name": "mainModel.suppliername",
+          "title": "供应商名称"
         },
         {
-          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.suppliernum"
+          "name": "mainModel.suppliernum",
+          "title": "供应商编号"
         },
         {
-          "title": "订单号",
           "component": "text",
-          "name": "mainModel.purchaseorder"
+          "name": "mainModel.purchaseorder",
+          "title": "订单号"
         },
         {
-          "title": "验收入库",
           "component": "text",
-          "name": "mainModel.whetheracceptance"
+          "name": "mainModel.whetheracceptance",
+          "title": "验收入库"
         },
         {
-          "title": "合同编号",
           "component": "text",
-          "name": "mainModel.contractnum"
+          "name": "mainModel.contractnum",
+          "title": "合同编号"
         },
         {
+          "component": "text",
           "flowshow": true,
-          "title": "已支付金额小写",
-          "component": "text",
-          "name": "mainModel.amount"
+          "name": "mainModel.amount",
+          "title": "已支付金额"
         },
         {
-          "title": "币种",
           "component": "text",
-          "name": "mainModel.currencytxt"
+          "name": "mainModel.currencytxt",
+          "title": "币种"
         },
         {
+          "component": "text",
           "flowshow": true,
-          "title": "报账金额小写",
-          "component": "text",
-          "name": "mainModel.invoiceamount"
+          "name": "mainModel.invoiceamount",
+          "title": "报账金额"
         },
         {
-          "title": "报账金额大写",
           "component": "text",
-          "name": "mainModel.amountup"
+          "name": "mainModel.amountup",
+          "title": "报账金额大写"
         },
         {
-          "flowshow": true,
-          "title": "报账事由",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.reasons",
           "rows": 4,
-          "name": "mainModel.reasons"
+          "title": "报账事由"
         },
         {
-          "flowshow": true,
-          "title": "备注",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.remarks",
           "rows": 4,
-          "name": "mainModel.remarks"
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fico_sparepartsapprovalmaterials",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

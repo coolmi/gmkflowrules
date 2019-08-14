@@ -1,188 +1,176 @@
 {
-  "id": "it_oademandapply",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "oademand.appid"
+          "name": "oademand.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "oademand.appda"
+          "name": "oademand.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "oademand.pernr",
             "-",
             "oademand.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "oademand.sysbusinessunitname",
             "-",
             "oademand.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.userid"
+          "name": "oademand.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.username"
+          "name": "oademand.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.pernr"
+          "name": "oademand.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.syspostname"
+          "name": "oademand.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.sysdeptid"
+          "name": "oademand.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.sysdeptname"
+          "name": "oademand.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.sysbusinessunitid"
+          "name": "oademand.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.sysbusinessunitname"
+          "name": "oademand.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.postid"
+          "name": "oademand.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.id"
+          "name": "oademand.id",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "oademand.proc_inst_id"
+          "name": "oademand.proc_inst_id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "应用公司名称",
-          "component": "textarea",
-          "editablenode": "",
-          "name": "oademand.useCompany"
-        },
-        {
-          "title": "选择组织",
-          "component": "textarea",
-          "editablenode": "",
-          "name": "oademand.useOrgan"
-        },
-        {
-          "title": "涉及应用模块",
           "component": "select",
           "name": "oademand.relAppModle",
-          "refer": "relAppModle"
+          "refer": "relAppModle",
+          "title": "涉及应用模块"
         },
         {
-          "title": "其他内容",
           "component": "textarea",
           "editablenode": "",
-          "name": "oademand.otherContent"
+          "name": "oademand.otherContent",
+          "title": "其他内容"
         },
         {
-          "title": "需求类别",
           "component": "select",
           "editablenode": "",
+          "flowshow": true,
           "id": "requirementTypes",
           "name": "oademand.requirementTypes",
           "options": [
             {
+              "flowshow": true,
               "title": "新增流程/功能",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "需求变更",
               "value": "1"
             },
             {
+              "flowshow": true,
               "title": "授权调整",
               "value": "2"
             },
             {
+              "flowshow": true,
               "title": "功能优化",
               "value": "3"
             },
             {
+              "flowshow": true,
               "title": "其他",
               "value": "4"
             }
-          ]
+          ],
+          "title": "需求类别"
         },
         {
-          "title": "流程名称",
           "component": "textarea",
-          "name": "oademand.newFlowname"
+          "name": "oademand.newFlowname",
+          "showLinkage": [
+            {
+              "id": "requirementTypes",
+              "values": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            }
+          ],
+          "title": "新增流程名称"
         },
         {
-          "title": "涉及流程名称",
           "component": "checkbox",
-          "name": "oademand.relfFlowname",
           "linkToArrayForCheckBox": {
             "basePath": "definitionlist",
-            "linkType": "stringArray",
             "linkEquireParam": "key",
+            "linkType": "stringArray",
             "showText": [
               "keyName"
             ]
-          }
+          },
+          "name": "oademand.relfFlowname",
+          "title": "涉及流程名称"
         },
         {
-          "title": "是否涉及其他应用系统",
           "component": "select",
           "name": "oademand.whetherRelfApp",
           "options": [
@@ -194,10 +182,10 @@
               "title": "是",
               "value": "1"
             }
-          ]
+          ],
+          "title": "是否涉及其他应用系统"
         },
         {
-          "title": "涉及外部系统",
           "component": "select",
           "editablenode": "",
           "name": "oademand.relfAppName",
@@ -210,25 +198,53 @@
               "title": "资金系统平台",
               "value": "1"
             }
-          ]
+          ],
+          "title": "涉及外部系统"
         },
         {
-          "title": "业务现状描述",
-          "editablenode": "",
           "component": "textarea",
-          "name": "oademand.businessStatusDesc"
-        },
-        {
-          "title": "期望设计描述",
           "editablenode": "",
-          "component": "textarea",
-          "name": "oademand.expectedDesignDesc"
+          "flowshow": true,
+          "name": "oademand.businessStatusDesc",
+          "title": "业务现状描述"
         },
         {
-          "title": "需求处理方式",
-          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
-          "editablenode": "OAmanagerApprove,InfoManagerApprove",
+          "component": "textarea",
+          "editablenode": "",
+          "flowshow": true,
+          "name": "oademand.expectedDesignDesc",
+          "title": "期望设计描述"
+        },
+        {
           "component": "select",
+          "editablenode": "OAmanagerApprove,zxry",
+          "name": "oademand.whetherimportant",
+          "options": [
+            {
+              "title": "请选择",
+              "value": ""
+            },
+            {
+              "title": "否",
+              "value": "0"
+            },
+            {
+              "title": "是",
+              "value": "1"
+            }
+          ],
+          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
+          "title": "是否重要",
+          "validation": {
+            "pageid": "sqxx",
+            "regexs": "",
+            "required": true,
+            "validateMsg": "请选择是否重要"
+          }
+        },
+        {
+          "component": "select",
+          "editablenode": "OAmanagerApprove,InfoManagerApprove",
           "name": "oademand.demandDealWay",
           "options": [
             {
@@ -252,98 +268,105 @@
               "value": "3"
             }
           ],
+          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
+          "title": "需求处理方式",
           "validation": {
             "pageid": "sqxx",
+            "regexs": "",
             "required": true,
-            "validateMsg": "请选择需求处理方式",
-            "regexs": ""
+            "validateMsg": "请选择需求处理方式"
           }
         },
         {
-          "title": "执行人员",
-          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
-          "editablenode": "OAmanagerApprove,InfoManagerApprove",
           "component": "text",
-          "name": "oademand.dealPerson",
-          "validation": {
-            "pageid": "sqxx",
-            "required": true,
-            "validateMsg": "请选择执行人员"
-          },
+          "editablenode": "OAmanagerApprove,InfoManagerApprove",
           "forSelectPerson": {
             "onclick": "getuser",
             "postshow": true,
             "showformname": "dealPersontext",
-            "valuetype": [
-              "objid"
-            ],
             "showtype": [
               "objid",
               "nachn",
               "stext"
+            ],
+            "valuetype": [
+              "objid"
             ]
-          }
-        },
-        {
-          "title": "需求总工时（/天）",
+          },
+          "name": "oademand.dealPerson",
           "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
-          "editablenode": "OAmanagerApprove",
-          "component": "text",
-          "name": "oademand.needDay",
+          "title": "执行人员",
           "validation": {
             "pageid": "sqxx",
             "required": true,
-            "validateMsg": "请填写需求总工时"
+            "validateMsg": "请选择执行人员"
           }
         },
         {
-          "title": "需求解决方案描述",
-          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
-          "editablenode": "OAmanagerApprove",
           "component": "textarea",
+          "editablenode": "OAmanagerApprove",
+          "flowshow": true,
           "name": "oademand.demandSolutionDesc",
+          "tasknode": "OAmanagerApprove,InfoManagerApprove,zxry",
+          "title": "需求解决方案描述",
           "validation": {
             "pageid": "sqxx",
             "required": true,
             "validateMsg": "请填写需求解决方案描述"
           }
         }
-      ]
+      ],
+      "title": "申请信息"
     }
   ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "it_oademandapply",
   "refers": {
     "relAppModle": {
-      "dataType": "array",
       "data": [
         {
-          "value": "0",
-          "text": "行政管理"
+          "text": "行政管理",
+          "value": "0"
         },
         {
-          "value": "1",
-          "text": "人力资源"
+          "text": "人力资源",
+          "value": "1"
         },
         {
-          "value": "2",
-          "text": "财务资金"
+          "text": "财务资金",
+          "value": "2"
         },
         {
-          "value": "3",
-          "text": "合同签约"
+          "text": "合同签约",
+          "value": "3"
         },
         {
-          "value": "4",
-          "text": "IT管理"
+          "text": "IT管理",
+          "value": "4"
         },
         {
-          "value": "5",
-          "text": "固定资产管理"
+          "text": "固定资产管理",
+          "value": "5"
         },
         {
-          "value": "6",
-          "text": "其他"
+          "text": "其他",
+          "value": "6"
         }
-      ]
+      ],
+      "dataType": "array"
     }
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }

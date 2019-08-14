@@ -1,180 +1,168 @@
 {
-  "id": "gmk_prubaseval",
-  "handleOnPC": {
-    "tasknode": [
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "prubaseval.appid"
+          "name": "prubaseval.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "prubaseval.appda"
+          "name": "prubaseval.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "prubaseval.pernr",
             "-",
             "prubaseval.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "prubaseval.sysbusinessunitname",
             "-",
             "prubaseval.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.userid"
+          "name": "prubaseval.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.username"
+          "name": "prubaseval.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.pernr"
+          "name": "prubaseval.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.syspostname"
+          "name": "prubaseval.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.sysdeptid"
+          "name": "prubaseval.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.sysdeptname"
+          "name": "prubaseval.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.sysbusinessunitid"
+          "name": "prubaseval.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.sysbusinessunitname"
+          "name": "prubaseval.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.postid"
+          "name": "prubaseval.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "prubaseval.id"
+          "name": "prubaseval.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx_panel",
       "component": "panel",
+      "pageid": "sqxx_panel",
       "subComponents": [
         {
-          "title": "员工编号",
           "component": "text",
-          "name": "prubaseval.pernrval"
+          "name": "prubaseval.pernrval",
+          "title": "员工编号"
         },
         {
-          "title": "员工ITCODE",
           "component": "text",
-          "name": "prubaseval.useridval"
+          "name": "prubaseval.useridval",
+          "title": "员工ITCODE"
         },
         {
-          "title": "职能中心/事业部",
           "component": "text",
-          "name": "prubaseval.bunisval"
+          "name": "prubaseval.bunisval",
+          "title": "职能中心/事业部"
         },
         {
-          "title": "职能中心/事业部",
           "component": "text",
-          "name": "prubaseval.bunisval"
+          "name": "prubaseval.bunisval",
+          "title": "职能中心/事业部"
         },
         {
-          "title": "邮箱",
           "component": "text",
-          "name": "prubaseval.email"
+          "name": "prubaseval.email",
+          "title": "邮箱"
         },
         {
-          "title": "归属公司",
           "component": "label",
           "label": [
             "prubaseval.cdbukrs",
             "prubaseval.cdbukrsname"
-          ]
+          ],
+          "title": "归属公司"
         },
         {
-          "title": "归属成本中心",
           "component": "label",
           "label": [
             "prubaseval.cdkostls",
             "prubaseval.cdkostlsname"
-          ]
+          ],
+          "title": "归属成本中心"
         },
         {
-          "title": "购置申请单号",
           "component": "text",
-          "name": "prubaseval.purchaseappid"
+          "name": "prubaseval.purchaseappid",
+          "title": "购置申请单号"
         },
         {
-          "title": "变更方式",
-          "id": "prubaseval_changeway",
           "component": "select",
+          "flowshow": true,
+          "id": "prubaseval_changeway",
           "name": "prubaseval.changeway",
           "options": [
             {
+              "flowshow": true,
               "text": "取消",
               "value": "1"
             },
             {
+              "flowshow": true,
               "text": "变更内容",
               "value": "2"
             }
-          ]
+          ],
+          "title": "变更方式"
         },
         {
-          "title": "变更事由",
           "component": "textarea",
-          "name": "prubaseval.changereason"
+          "flowshow": true,
+          "name": "prubaseval.changereason",
+          "title": "变更事由"
         },
         {
-          "title": "变更内容",
-          "panel_id": "fxjj_pruappcval1_panel",
           "component": "panel",
+          "panel_id": "fxjj_pruappcval1_panel",
           "showLinkage": [
             {
               "id": "prubaseval_changeway",
@@ -185,72 +173,78 @@
           ],
           "subComponents": [
             {
-              "title": "变更信息",
-              "component": "formLabelLink",
-              "titleIndex": 1,
-              "id": "fxjj_pruappcval1",
               "basePath": "prubasesubs",
+              "component": "formLabelLink",
+              "flowshow": true,
+              "id": "fxjj_pruappcval1",
               "linkForms": [
                 {
-                  "title": "预算项目",
                   "component": "text",
-                  "name": "item"
+                  "flowshow": true,
+                  "name": "item",
+                  "title": "预算项目"
                 },
                 {
-                  "title": "资产描述",
                   "component": "text",
-                  "name": "propertyname"
+                  "flowshow": true,
+                  "name": "propertyname",
+                  "title": "资产描述"
                 },
                 {
-                  "title": "购买数量",
                   "component": "text",
-                  "name": "amount"
+                  "flowshow": true,
+                  "name": "amount",
+                  "title": "购买数量"
                 },
                 {
-                  "title": "新规格",
                   "component": "text",
-                  "name": "specification"
+                  "flowshow": true,
+                  "name": "specification",
+                  "title": "新规格"
                 },
                 {
+                  "component": "text",
+                  "name": "model",
                   "title": "",
-                  "title1": "新型号",
-                  "component": "text",
-                  "name": "model"
+                  "title1": "新型号"
                 },
                 {
-                  "title": "新品牌",
                   "component": "text",
-                  "name": "brand"
+                  "name": "brand",
+                  "title": "新品牌"
                 },
                 {
-                  "title": "资产编号",
                   "component": "text",
-                  "name": "propertycode"
+                  "name": "propertycode",
+                  "title": "资产编号"
                 },
                 {
-                  "title": "规格",
                   "component": "text",
-                  "name": "specifisub"
+                  "name": "specifisub",
+                  "title": "规格"
                 },
                 {
+                  "component": "text",
+                  "name": "modelsub",
                   "title": "",
-                  "title1": "型号",
-                  "component": "text",
-                  "name": "modelsub"
+                  "title1": "型号"
                 },
                 {
-                  "title": "品牌",
                   "component": "text",
-                  "name": "brandsub"
+                  "flowshow": true,
+                  "name": "brandsub",
+                  "title": "品牌"
                 }
-              ]
+              ],
+              "title": "变更信息",
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "变更内容"
         },
         {
-          "title": "取消内容",
-          "panel_id": "fxjj_pruappcval2_panel",
           "component": "panel",
+          "panel_id": "fxjj_pruappcval2_panel",
           "showLinkage": [
             {
               "id": "prubaseval_changeway",
@@ -261,85 +255,83 @@
           ],
           "subComponents": [
             {
-              "title": "取消内容",
-              "component": "formLabelLink",
-              "titleIndex": 1,
-              "id": "fxjj_pruappcval2",
               "basePath": "prubasesubs",
+              "component": "formLabelLink",
+              "id": "fxjj_pruappcval2",
               "linkForms": [
                 {
-                  "title": "预算项目",
                   "component": "text",
-                  "name": "item"
+                  "name": "item",
+                  "title": "预算项目"
                 },
                 {
-                  "title": "资产描述",
                   "component": "text",
-                  "name": "propertyname"
+                  "name": "propertyname",
+                  "title": "资产描述"
                 },
                 {
-                  "title": "购买数量",
                   "component": "text",
-                  "name": "amount"
+                  "name": "amount",
+                  "title": "购买数量"
                 },
                 {
-                  "title": "规格",
                   "component": "text",
-                  "name": "specification"
+                  "name": "specification",
+                  "title": "规格"
                 },
                 {
+                  "component": "text",
+                  "name": "model",
                   "title": "",
-                  "title1": "型号",
-                  "component": "text",
-                  "name": "model"
+                  "title1": "型号"
                 },
                 {
-                  "title": "资产编号",
                   "component": "text",
-                  "name": "propertycode"
+                  "name": "propertycode",
+                  "title": "资产编号"
                 },
                 {
-                  "title": "采购执行人员",
                   "component": "text",
+                  "emptyHidden": true,
                   "name": "exusername",
-                  "emptyHidden":true
+                  "title": "采购执行人员"
                 },
-
                 {
-                  "title": "采购执行人员",
-                  "tasknode": "usertask3",
-                  "editablenode": "usertask3",
                   "component": "text",
-                  "name": "expostidlist",
-                  "showLinkage": [
-                    {
-                      "id": "prubaseval_changeway",
-                      "values": [
-                        "1"
-                      ],
-                      "linkFlag": "normal"
-                    }
-                  ],
-                  "validation": {
-                    "pageid": "sqxx_panel",
-                    "panel_id": "fxjj_pruappcval2_panel",
-                    "table_id": "fxjj_pruappcval2",
-                    "required": true,
-                    "validateMsg": "请选择执行人员"
-                  },
+                  "editablenode": "usertask3",
                   "forSelectPerson": {
                     "onclick": "getuser",
                     "postshow": true,
                     "showformname": "exusernamelist",
-                    "valuetype": ["objid"],
                     "showtype": [
                       "nachn",
                       "stext"
+                    ],
+                    "valuetype": [
+                      "objid"
                     ]
+                  },
+                  "name": "expostidlist",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "linkFlag": "normal",
+                      "values": [
+                        "1"
+                      ]
+                    }
+                  ],
+                  "tasknode": "usertask3",
+                  "title": "采购执行人员",
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "fxjj_pruappcval2_panel",
+                    "required": true,
+                    "table_id": "fxjj_pruappcval2",
+                    "validateMsg": "请选择执行人员"
                   }
                 },
                 {
-                  "title": "取消标识",
                   "component": "select",
                   "name": "cancelmark",
                   "options": [
@@ -351,16 +343,19 @@
                       "text": "否",
                       "value": "0"
                     }
-                  ]
+                  ],
+                  "title": "取消标识"
                 }
-              ]
+              ],
+              "title": "取消内容",
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "取消内容"
         },
         {
-          "title": "分配执行人",
-          "panel_id": "sqxxx_pruexechilds",
           "component": "panel",
+          "panel_id": "sqxxx_pruexechilds",
           "showLinkage": [
             {
               "id": "prubaseval_changeway",
@@ -371,152 +366,169 @@
           ],
           "subComponents": [
             {
-              "title": "",
-              "id": "sqxxx_v",
-              "component": "formLabelLink",
-              "titleIndex": 1,
               "basePath": "prubasesubs",
+              "component": "formLabelLink",
+              "id": "sqxxx_v",
               "linkForms": [
                 {
-                  "title": "资产编号",
                   "component": "text",
-                  "editable":true,
-                  "name": "propertycode"
+                  "editable": true,
+                  "name": "propertycode",
+                  "title": "资产编号"
                 },
                 {
-                  "title": "SAP资产编号",
                   "component": "text",
-                  "name": "anln1"
+                  "name": "anln1",
+                  "title": "SAP资产编号"
                 },
                 {
-                  "title": "子编号",
                   "component": "text",
-                  "name": "anln2"
+                  "name": "anln2",
+                  "title": "子编号"
                 },
                 {
-                  "title": "采购执行人员",
                   "component": "text",
                   "emptyHidden": true,
-                  "name": "exusername"
+                  "name": "exusername",
+                  "title": "采购执行人员"
                 },
                 {
-                  "title": "cc",
                   "component": "hidden",
                   "editablenode": "usertask3,usertask4",
-                  "name": "vid"
+                  "name": "vid",
+                  "title": "cc"
                 },
                 {
-                  "title": "采购执行人员",
-                  "tasknode": "usertask3",
-                  "editablenode": "usertask3",
                   "component": "text",
-                  "name": "expostidexelist",
-                  "showLinkage": [
-                    {
-                      "id": "prubaseval_changeway",
-                      "values": [
-                        "2"
-                      ],
-                      "linkFlag": "normal"
-                    }
-                  ],
-                  "validation": {
-                    "pageid": "sqxx_panel",
-                    "panel_id": "sqxxx_pruexechilds",
-                    "table_id": "sqxxx_v",
-                    "required": true,
-                    "validateMsg": "请选择执行人员"
-                  },
+                  "editablenode": "usertask3",
                   "forSelectPerson": {
                     "onclick": "getuser",
                     "postshow": true,
                     "showformname": "exusernameexelist",
-                    "valuetype": ["objid"],
                     "showtype": [
                       "nachn",
                       "stext"
+                    ],
+                    "valuetype": [
+                      "objid"
                     ]
-                  }
-                },
-                {
-                  "title": "合同单价",
-                  "component": "text",
-                  "editablenode": "usertask4",
-                  "name": "contractvalue",
-                  "validation": {
-                    "pageid": "sqxx_panel",
-                    "panel_id": "sqxxx_pruexechilds",
-                    "table_id": "sqxxx_v",
-                    "required": true,
-                    "validateMsg": "请选择合同单价"
                   },
+                  "name": "expostidexelist",
                   "showLinkage": [
                     {
                       "id": "prubaseval_changeway",
+                      "linkFlag": "normal",
                       "values": [
                         "2"
-                      ],
-                      "linkFlag": "normal"
+                      ]
                     }
-                  ]
+                  ],
+                  "tasknode": "usertask3",
+                  "title": "采购执行人员",
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "required": true,
+                    "table_id": "sqxxx_v",
+                    "validateMsg": "请选择执行人员"
+                  }
                 },
                 {
-                  "title": "币种",
+                  "component": "text",
+                  "editablenode": "usertask4",
+                  "name": "contractvalue",
+                  "showLinkage": [
+                    {
+                      "id": "prubaseval_changeway",
+                      "linkFlag": "normal",
+                      "values": [
+                        "2"
+                      ]
+                    }
+                  ],
+                  "title": "合同单价",
+                  "validation": {
+                    "pageid": "sqxx_panel",
+                    "panel_id": "sqxxx_pruexechilds",
+                    "required": true,
+                    "table_id": "sqxxx_v",
+                    "validateMsg": "请选择合同单价"
+                  }
+                },
+                {
                   "component": "text",
                   "editablenode": "usertask4",
                   "name": "waers",
                   "showLinkage": [
                     {
                       "id": "prubaseval_changeway",
+                      "linkFlag": "normal",
                       "values": [
                         "2"
-                      ],
-                      "linkFlag": "normal"
+                      ]
                     }
                   ],
+                  "title": "币种",
                   "validation": {
                     "pageid": "sqxx_panel",
                     "panel_id": "sqxxx_pruexechilds",
-                    "table_id": "sqxxx_v",
                     "required": true,
+                    "table_id": "sqxxx_v",
                     "validateMsg": "请选择币种"
                   }
                 },
                 {
-                  "title": "汇率",
                   "component": "text",
-                  "tasknode": "usertask4",
                   "editablenode": "usertask4",
                   "name": "exchangerate",
                   "showLinkage": [
                     {
                       "id": "prubaseval_changeway",
+                      "linkFlag": "normal",
                       "values": [
                         "2"
-                      ],
-                      "linkFlag": "normal"
+                      ]
                     }
                   ],
+                  "tasknode": "usertask4",
+                  "title": "汇率",
                   "validation": {
                     "pageid": "sqxx_panel",
                     "panel_id": "sqxxx_pruexechilds",
-                    "table_id": "sqxxx_v",
                     "required": true,
+                    "table_id": "sqxxx_v",
                     "validateMsg": "请选择合同单价"
                   }
                 },
                 {
-                  "title": "总价",
                   "component": "text",
-                  "tasknode": "usertask5,usertask7",
                   "datatype": "money",
-                  "name": "r_contractvalue"
+                  "name": "r_contractvalue",
+                  "tasknode": "usertask5,usertask7",
+                  "title": "总价"
                 }
-              ]
+              ],
+              "title": "",
+              "titleIndex": 1
             }
-          ]
+          ],
+          "title": "分配执行人"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": []
+  },
+  "id": "gmk_prubaseval",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

@@ -1,172 +1,178 @@
 {
-  "id": "fico_fixedassetsdailypurchase",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "jbxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "mainModel.appid"
+          "name": "mainModel.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "mainModel.appda"
+          "name": "mainModel.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "mainModel.pernr",
             "-",
             "mainModel.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "mainModel.sysbusinessunitname",
             "-",
             "mainModel.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.userid"
+          "name": "mainModel.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.username"
+          "name": "mainModel.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.pernr"
+          "name": "mainModel.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.syspostname"
+          "name": "mainModel.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptid"
+          "name": "mainModel.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysdeptname"
+          "name": "mainModel.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitid"
+          "name": "mainModel.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.sysbusinessunitname"
+          "name": "mainModel.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.postid"
+          "name": "mainModel.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "mainModel.id"
+          "name": "mainModel.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-          "title": "费用公司",
           "component": "text",
-          "name": "mainModel.cdbutxt"
+          "flowshow": true,
+          "name": "mainModel.cdbutxt",
+          "title": "费用公司"
         },
         {
-          "title": "供应商名称",
           "component": "text",
-          "name": "mainModel.suppliername"
+          "flowshow": true,
+          "name": "mainModel.suppliername",
+          "title": "供应商名称"
         },
         {
-          "title": "供应商编号",
           "component": "text",
-          "name": "mainModel.suppliernum"
+          "name": "mainModel.suppliernum",
+          "title": "供应商编号"
         },
         {
-          "title": "采购订单",
           "component": "text",
-          "name": "mainModel.purchaseorder"
+          "name": "mainModel.purchaseorder",
+          "title": "采购订单"
         },
         {
-          "title": "是否验收入库",
           "component": "text",
-          "name": "mainModel.whetheracceptance"
+          "name": "mainModel.whetheracceptance",
+          "title": "是否验收入库"
         },
         {
-          "title": "合同编号",
           "component": "text",
-          "name": "mainModel.contractnum"
+          "name": "mainModel.contractnum",
+          "title": "合同编号"
         },
         {
-          "title": "应付款比例 ",
           "component": "text",
-          "name": "mainModel.proportionaccounts"
+          "flowshow": true,
+          "name": "mainModel.proportionaccounts",
+          "title": "应付款比例 "
         },
         {
-          "title": "发票金额小写",
           "component": "text",
-          "name": "mainModel.invoiceamount"
+          "flowshow": true,
+          "name": "mainModel.invoiceamount",
+          "title": "发票金额小写"
         },
         {
-          "title": "已支付金额小写",
           "component": "text",
-          "name": "mainModel.amount"
+          "flowshow": true,
+          "name": "mainModel.amount",
+          "title": "已支付金额小写"
         },
         {
-          "title": "发票金额大写",
           "component": "text",
-          "name": "mainModel.amountup"
+          "name": "mainModel.amountup",
+          "title": "发票金额大写"
         },
         {
-          "title": "档案室是否存档",
           "component": "text",
-          "name": "mainModel.recordroom"
+          "name": "mainModel.recordroom",
+          "title": "档案室是否存档"
         },
         {
-          "title": "报账事由",
           "component": "textarea",
+          "flowshow": true,
+          "name": "mainModel.reasons",
           "rows": 4,
-          "name": "mainModel.reasons"
+          "title": "报账事由"
         }
-      ]
+      ],
+      "title": "申请信息"
     }
-  ]
+  ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "fico_fixedassetsdailypurchase",
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
+  }
 }

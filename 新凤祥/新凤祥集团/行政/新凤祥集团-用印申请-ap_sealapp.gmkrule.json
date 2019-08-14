@@ -1,141 +1,126 @@
 {
-  "id": "ap_sealapp",
-  "handleOnPC": {
-    "tasknode": [
-      ""
-    ],
-    "flag": [
-      "resubmit"
-    ]
-  },
-  "selectPerson": {
-    "tasknode": [
-      ""
-    ],
-    "beforPop": false
-  },
   "forms": [
     {
-      "title": "基本信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "jbxx",
       "subComponents": [
         {
-          "title": "申请单号",
           "component": "text",
-          "name": "sealapp.appid"
+          "name": "sealapp.appid",
+          "title": "申请单号"
         },
         {
-          "title": "申请日期",
           "component": "date1",
-          "name": "sealapp.appda"
+          "name": "sealapp.appda",
+          "title": "申请日期"
         },
         {
-          "title": "申请人姓名",
           "component": "label",
           "label": [
             "sealapp.pernr",
             "-",
             "sealapp.username"
-          ]
+          ],
+          "title": "申请人姓名"
         },
         {
-          "title": "所属部门",
           "component": "label",
           "label": [
             "sealapp.sysbusinessunitname",
             "-",
             "sealapp.sysdeptname"
-          ]
+          ],
+          "title": "所属部门"
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.userid"
+          "name": "sealapp.userid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.username"
+          "name": "sealapp.username",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.pernr"
+          "name": "sealapp.pernr",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.syspostname"
+          "name": "sealapp.syspostname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.sysdeptid"
+          "name": "sealapp.sysdeptid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.sysdeptname"
+          "name": "sealapp.sysdeptname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.sysbusinessunitid"
+          "name": "sealapp.sysbusinessunitid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.sysbusinessunitname"
+          "name": "sealapp.sysbusinessunitname",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.postid"
+          "name": "sealapp.postid",
+          "title": ""
         },
         {
-          "title": "",
           "component": "hidden",
-          "name": "sealapp.id"
+          "name": "sealapp.id",
+          "title": ""
         }
-      ]
+      ],
+      "title": "基本信息"
     },
     {
-      "title": "申请信息",
-      "pageid": "sqxx",
       "component": "panel",
+      "pageid": "sqxx",
       "subComponents": [
         {
-
-          "title": "用印类型",
           "component": "select",
+          "flowshow": true,
           "id": "unittype",
-          "name": "sealapp.sealusetype",
+          "name": "sealapp.unittype",
           "options": [
             {
+              "flowshow": true,
               "title": "普通用印",
               "value": "0"
             },
             {
+              "flowshow": true,
               "title": "携章外出",
               "value": "1"
             }
-          ]
+          ],
+          "title": "用印类型"
         },
         {
-          "title": "是否已审批用印",
           "component": "text",
-          "name": "sealapp.authorizationprocess"
+          "name": "sealapp.authorizationprocess",
+          "title": "是否已审批用印"
         },
         {
-          "title": "同行人",
           "component": "label",
-          "name": "sealapp.anameen",
           "label": [
             "sealapp.peerid",
             "-",
             "sealapp.peername"
           ],
+          "name": "sealapp.anameen",
           "showLinkage": [
             {
               "id": "unittype",
@@ -143,10 +128,10 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "同行人"
         },
         {
-          "title": "联系方式",
           "component": "text",
           "name": "sealapp.phone",
           "showLinkage": [
@@ -156,122 +141,130 @@
                 "1"
               ]
             }
-          ]
+          ],
+          "title": "联系方式"
         },
         {
-          "flowshow": true,
-          "title": "用印文件类型",
           "component": "text",
-          "name": "sealapp.filetypename"
+          "flowshow": true,
+          "name": "sealapp.filetypename",
+          "title": "用印文件类型"
         },
         {
-          "flowshow": true,
-          "title": "业务类型",
           "component": "text",
-          "name": "sealapp.filetypechaldname"
+          "flowshow": true,
+          "name": "sealapp.filetypechaldname",
+          "title": "业务类型"
         },
         {
-          "flowshow": true,
-          "title": "法务审核环节人员",
           "component": "text",
-          "name": "sealapp.legalauditname"
+          "flowshow": true,
+          "name": "sealapp.legalauditname",
+          "title": "法务审核环节人员"
         },
         {
-          "flowshow": true,
-          "title": "授权人",
           "component": "text",
-          "name": "sealapp.ownertxt"
+          "flowshow": true,
+          "name": "sealapp.ownertxt",
+          "title": "授权人"
         },
         {
-          "flowshow": true,
-          "title": "用印事由",
           "component": "textarea",
+          "flowshow": true,
+          "name": "sealapp.reason",
           "rows": "3",
-          "name": "sealapp.reason"
+          "title": "用印事由"
         },
         {
-          "title": "备注",
           "component": "textarea",
+          "flowshow": true,
+          "name": "sealapp.texta",
           "rows": "3",
-          "name": "sealapp.texta"
+          "title": "备注"
         }
-      ]
+      ],
+      "title": "申请信息"
     },
     {
-      "title": "印章需求",
-      "pageid": "yzxqmx",
       "component": "panel",
+      "pageid": "yzxqmx",
       "subComponents": [
         {
-          "title": "",
-          "component": "formLabelLink",
-          "titleIndex": 0,
-          "tabletype": "looppanel",
           "basePath": "sealdetails",
+          "component": "formLabelLink",
           "id": "sealdetails",
           "linkForms": [
             {
-              "title": "",
-              "title1": "印章名称",
               "component": "text",
-              "name": "sealname"
+              "name": "sealname",
+              "title": "",
+              "title1": "印章名称"
             },
             {
-              "title": "",
-              "title1": "印章类型",
               "component": "text",
-              "name": "sealtypename"
+              "name": "sealtypename",
+              "title": "",
+              "title1": "印章类型"
             },
             {
-              "title": "",
-              "title1": "印章保管区域",
               "component": "text",
-              "name": "sealarea"
+              "name": "cname",
+              "title": "",
+              "title1": "印章管理员"
+            },
+            {
+              "component": "text",
+              "name": "sealarea",
+              "title": "",
+              "title1": "印章保管区域"
             }
-          ]
+          ],
+          "tabletype": "looppanel",
+          "title": "",
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "印章需求"
     },
     {
-      "title": "印章文件",
-      "pageid": "yzxqwjmx",
       "component": "panel",
+      "pageid": "yzxqwjmx",
       "subComponents": [
         {
-          "title": "",
-          "component": "formLabelLink",
-          "titleIndex": 0,
-          "tabletype": "looppanel",
           "basePath": "sealfiledatails",
+          "component": "formLabelLink",
           "id": "sealfiledatails",
           "linkForms": [
             {
-              "title": "",
-              "title1": "文件名称",
               "component": "text",
-              "name": "filenames"
+              "name": "filenames",
+              "title": "",
+              "title1": "文件名称"
             },
             {
-              "title": "",
-              "title1": "页数",
               "component": "text",
-              "name": "pagenum"
+              "name": "pagenum",
+              "title": "",
+              "title1": "页数"
             },
             {
-              "title": "",
-              "title1": "份数",
               "component": "text",
-              "name": "copy"
+              "name": "copy",
+              "title": "",
+              "title1": "份数"
             }
-          ]
+          ],
+          "tabletype": "looppanel",
+          "title": "",
+          "titleIndex": 0
         }
-      ]
+      ],
+      "title": "印章文件"
     },
     {
-      "title": "业务审批授权附件",
       "component": "panel",
-      "panel_id": "ywspsqfj_panel",
       "pageid": "ywfj",
+      "panel_id": "ywspsqfj_panel",
       "showLinkage": [
         {
           "id": "authorizationprocess",
@@ -282,82 +275,98 @@
       ],
       "subComponents": [
         {
-          "component": "table_form",
           "basePath": "allfiles",
+          "component": "table_form",
           "id": "ywspsqfj_table",
           "tableForms": [
             {
-              "title": "文件名称",
               "component": "text",
-              "name": "filename",
               "events": {
+                "afrescoid": "afrescoid",
                 "eventType": "openDocument",
-                "filename": "filename",
-                "afrescoid": "afrescoid"
-              }
+                "filename": "filename"
+              },
+              "name": "filename",
+              "title": "文件名称"
             }
           ]
         }
-      ]
+      ],
+      "title": "业务审批授权附件"
     }
   ],
+  "handleOnPC": {
+    "flag": [
+      "resubmit"
+    ],
+    "tasknode": [
+      ""
+    ]
+  },
+  "id": "ap_sealapp",
   "refers": {
     "filetypemain": {
-      "dataType": "array",
       "data": [
         {
-          "value": "01",
-          "text": "安全环保节能文件"
+          "text": "安全环保节能文件",
+          "value": "01"
         },
         {
-          "value": "02",
-          "text": "财务文件"
+          "text": "财务文件",
+          "value": "02"
         },
         {
-          "value": "03",
-          "text": "法务文件"
+          "text": "法务文件",
+          "value": "03"
         },
         {
-          "value": "04",
-          "text": "进口出口贸易文件"
+          "text": "进口出口贸易文件",
+          "value": "04"
         },
         {
-          "value": "05",
-          "text": "车辆手续"
+          "text": "车辆手续",
+          "value": "05"
         },
         {
-          "value": "06",
-          "text": "人力资源文件"
+          "text": "人力资源文件",
+          "value": "06"
         },
         {
-          "value": "07",
-          "text": "项目申报文件"
+          "text": "项目申报文件",
+          "value": "07"
         },
         {
-          "value": "08",
-          "text": "工程文件"
+          "text": "工程文件",
+          "value": "08"
         },
         {
-          "value": "09",
-          "text": "证件办理、年检文件"
+          "text": "证件办理、年检文件",
+          "value": "09"
         },
         {
-          "value": "10",
-          "text": "与第三方签订的协议文件"
+          "text": "与第三方签订的协议文件",
+          "value": "10"
         },
         {
-          "value": "11",
-          "text": "期货交易文件"
+          "text": "期货交易文件",
+          "value": "11"
         },
         {
-          "value": "12",
-          "text": "其他外报文件"
+          "text": "其他外报文件",
+          "value": "12"
         },
         {
-          "value": "13",
-          "text": "提交第三方相关证明性材料"
+          "text": "提交第三方相关证明性材料",
+          "value": "13"
         }
-      ]
+      ],
+      "dataType": "array"
     }
+  },
+  "selectPerson": {
+    "beforPop": false,
+    "tasknode": [
+      ""
+    ]
   }
 }
